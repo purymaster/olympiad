@@ -318,6 +318,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 }
 
 @media (max-width:1024px) {
+    section .section {background-attachment:scroll;}
     article {text-align:center;}
     section .slide .btn_wrap {margin-top:30px;}
     section .slide .btn_wrap a {width:150px; font-size:12px; font-weight:700; line-height:38px;}
