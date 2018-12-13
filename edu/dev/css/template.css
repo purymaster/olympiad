@@ -138,6 +138,7 @@ nav .close:hover:before,nav .close:hover:after {background:#00aeba;}
     nav .menu_1depth > li {margin-top:15px; padding:0;}
     nav .menu_1depth > li:first-child {margin:0;}
     nav .menu_1depth > li .tit {float:none; width:auto; font-size:24px;}
+    nav .menu_1depth > li .tit:after {bottom:-5px;}
     nav .menu_2depth {float:none;}
     nav .menu_2depth {margin:0 -10px;}
     nav .menu_2depth li {margin:0 10px;}
@@ -355,6 +356,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
     section .slide .ideology,section .slide .business,section .slide .research {display:none;}
     article .news {margin:0;}
     article .news ul li {width:100%; padding:0;}
+    section .news_wrap .menu_tit {font-size:14px;}
 }
 
 /*=========================================================
