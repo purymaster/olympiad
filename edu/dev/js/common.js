@@ -25,8 +25,7 @@ $(function() {
 
     //네비게이션, 팝업 오픈시 스크롤 방지
     screen.on('scroll touchmove', function(e) {
-        if (screen_fix)
-            return false;
+        if (screen_fix) return false;
     });
 
     /******************** 애니메이션 정의 ********************/
@@ -78,5 +77,8 @@ $(function() {
             });
             return false;
         });
+
+        //헤더 배경 제어
+        scroll ? $('header').addClass('on') : $('header').removeClass('on');
     });
 });
