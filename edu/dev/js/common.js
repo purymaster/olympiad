@@ -81,4 +81,8 @@ $(function() {
         //헤더 배경 제어
         scroll ? $('header').addClass('on') : $('header').removeClass('on');
     });
+
+    /******************** 서브 페이지 헤더 제어 ********************/
+    $('.sub_header').addClass('on');
+
 });
