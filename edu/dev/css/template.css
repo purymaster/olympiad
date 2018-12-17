@@ -276,7 +276,7 @@ label {cursor:pointer;}
     .board_view .upload_file ul {padding:15px 0;}
     .board_view .list_link {margin:30px 0;}
     .board_view .list_link a {font-size:14px; line-height:40px;}
-    .board_view .paging_wrap dd {padding-left:40px; font-size:14px;}
+    .board_view .paging_wrap dd {padding-left:45px; font-size:14px;}
     .board_view .paging_wrap dd a {max-width:calc(100% - 65px); line-height:40px;}
     .board_view .paging_wrap dt span:after {top:-5px; left:0; font-weight:700;}
     .board_view .list_link a span:nth-child(1) {top:13px;}
