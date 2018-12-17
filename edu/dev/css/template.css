@@ -259,7 +259,7 @@ label {cursor:pointer;}
 .board_view .paging_wrap > div:first-child {border-bottom:1px solid #cdcdcd;}
 .board_view .paging_wrap dt {position:absolute;}
 .board_view .paging_wrap dt span {display:inline-block; position:relative; width:1px; text-indent:-9999px;}
-.board_view .paging_wrap dt span:after {position:absolute; top:-2px; left:30px; width:35px; font-size:14px; line-height:48px; color:#333; text-indent:0; content:attr(data-title); text-transform:capitalize;}
+.board_view .paging_wrap dt span:after {position:absolute; top:-2px; left:30px; width:40px; font-size:14px; line-height:48px; color:#333; text-indent:0; content:attr(data-title); text-transform:capitalize;}
 .board_view .paging_wrap dd {padding-left:88px; font-size:16px; line-height:0; color:#666;}
 .board_view .paging_wrap dd a {display:inline-block; overflow:hidden; max-width:calc(100% - 85px); line-height:48px; text-overflow:ellipsis; white-space:nowrap;}
 .board_view .paging_wrap dd a:hover {color:#00aeba;}
