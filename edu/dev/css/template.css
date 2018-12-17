@@ -247,8 +247,8 @@ label {cursor:pointer;}
 .board_view .upload_file ul li a {color:#999;}
 .board_view .upload_file ul li a:hover {color:#00aeba; text-decoration:underline;}
 .board_view .list_link {margin:10px 0 50px; text-align:right;}
-.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; font-size:16px; line-height:46px; color:#666; text-align:left; background:#fff;}
-.board_view .list_link a:hover {color:#fff; background:#00aeba;}
+.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-size:16px; line-height:46px; color:#666; text-align:left;}
+.board_view .list_link a:hover {background:#00aeba; color:#fff;}
 .board_view .list_link a span {position:absolute; right:15px; width:20px; height:2px; background:#00aeba;}
 .board_view .list_link a span:nth-child(1) {top:16px;}
 .board_view .list_link a span:nth-child(2) {top:22px;}
