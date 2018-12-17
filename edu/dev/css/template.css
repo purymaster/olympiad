@@ -103,7 +103,7 @@ textarea {line-height:1.5em;}
 /* 셀렉트박스 */
 select {border-radius:0; background:none; font-family:inherit; -webkit-appearance:none; -moz-appearance:none; appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0;}
 select::-ms-expand {display:none;}
-.select_form {display:inline-block; overflow:hidden; position:relative; font-size:0;}
+.select_form {display:inline-block; overflow:hidden; position:relative; z-index:0; font-size:0;}
 .select_form:before,.select_form:after {position:absolute; content:"";}
 .select_form:before {top:1px; right:41px; z-index:-1; width:20px; height:38px; background:#fff;}
 .select_form:after {top:50%; right:15px; width:10px; height:10px; margin-top:-8px; border-right:2px solid #008398; border-bottom:2px solid #008398; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
