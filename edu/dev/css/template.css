@@ -97,15 +97,17 @@ em,address,i {font-style:normal;}
 .btn_wrap button span {position:relative;}
 
 /* 입력폼 */
-input[type="text"],input[type="email"],input[type="number"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],textarea {-webkit-box-sizing:border-box; box-sizing:border-box; margin:0; padding:0; border:none; border:1px solid #cdcdcd; border-radius:0; background:none; background:#fff; font-family:inherit; font-size:14px; line-height:38px; color:#666; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box; padding:0 15px;}
+input[type="text"],input[type="email"],input[type="number"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],textarea {-webkit-box-sizing:border-box; box-sizing:border-box; height:38px; margin:0; padding:0; padding:0 15px; border:none; border:1px solid #cdcdcd; border-radius:0; background:none; background:#fff; font-family:inherit; font-size:14px; line-height:38px; color:#666; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box;}
 textarea {line-height:1.5em;}
 
 /* 셀렉트박스 */
 select {border-radius:0; background:none; font-family:inherit; -webkit-appearance:none; -moz-appearance:none; appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0;}
 select::-ms-expand {display:none;}
-.select_form {display:inline-block; position:relative; font-size:0;}
-.select_form:after { position:absolute; width:10px; height:10px; border-right:2px solid #008398; border-bottom:2px solid #008398; content:""; transform:rotate(45deg); -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); right:15px; top:50%; margin-top:-8px;}
-.select_form select {min-width:165px; padding:0 40px 0 15px; border:1px solid #cdcdcd; background:#fff; font-size:14px; line-height:38px; color:#666;}
+.select_form {display:inline-block; overflow:hidden; position:relative; font-size:0;}
+.select_form:before,.select_form:after {position:absolute; content:"";}
+.select_form:before {top:50%; right:15px; width:20px; height:20px; background:#fff;}
+.select_form:after {top:50%; right:15px; width:10px; height:10px; margin-top:-8px; border-right:2px solid #008398; border-bottom:2px solid #008398; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.select_form select {min-width:165px; height:40px; padding:0 40px 0 15px; border:1px solid #cdcdcd; background:#fff; font-size:14px; line-height:38px; color:#666;}
 
 /* 검색 */
 .search_wrap {display:inline-block; border:1px solid #cdcdcd; font-size:0;}
@@ -118,7 +120,7 @@ select::-ms-expand {display:none;}
 /* 검색 메뉴(셀렉트박스 + 검색) */
 .board_util {margin-bottom:10px; text-align:right;}
 .search_form {margin-right:-5px; font-size:0;}
-.search_form > div {margin-right:5px;}
+.search_form > div {margin-right:5px; vertical-align:middle;}
 
 /* 테이블 초기화 */
 table {width:100%; border-bottom:1px solid #cdcdcd; background:#fff; table-layout:fixed; border-collapse:collapse;}
