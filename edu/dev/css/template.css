@@ -105,7 +105,7 @@ select {border-radius:0; background:none; font-family:inherit; -webkit-appearanc
 select::-ms-expand {display:none;}
 .select_form {display:inline-block; overflow:hidden; position:relative; font-size:0;}
 .select_form:before,.select_form:after {position:absolute; content:"";}
-.select_form:before {top:1px; right:41px; width:20px; height:38px; background:#fff;}
+.select_form:before {top:1px; right:41px; z-index:-1; width:20px; height:38px; background:#fff;}
 .select_form:after {top:50%; right:15px; width:10px; height:10px; margin-top:-8px; border-right:2px solid #008398; border-bottom:2px solid #008398; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
 .select_form select {min-width:165px; height:40px; padding:0 40px 0 15px; border:1px solid #cdcdcd; background:#fff; font-size:14px; line-height:38px; color:#666;}
 
@@ -141,7 +141,7 @@ label {cursor:pointer;}
 .board_list table td.name {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .board_list table .notice th,.board_list table .notice td {padding:13px 5px;}
 .board_list table .notice td.tit a {font-size:18px; font-weight:700;}
-.board_list table .notice .notice_icon {display:block; position:relative; width:82px; padding-left:40px; border:1px solid #00aeba; border-radius:16px; font-size:14px; font-weight:700; line-height:30px; color:#00aeba; text-align:left; -webkit-border-radius:16px; -moz-border-radius:16px; -ms-border-radius:16px; -o-border-radius:16px;}
+.board_list table .notice .notice_icon {display:inline-block; position:relative; width:82px; padding-left:40px; border:1px solid #00aeba; border-radius:16px; font-size:14px; font-weight:700; line-height:30px; color:#00aeba; text-align:left; -webkit-border-radius:16px; -moz-border-radius:16px; -ms-border-radius:16px; -o-border-radius:16px;}
 .board_list table .notice .notice_icon:before {position:absolute; top:5px; left:14px; width:22px; height:20px; background-image:url(../img/sprite/sprite.png); background-position:-203px -123px; background-size:500px 500px; content:"";}
 
 @media (max-width:1024px) {
