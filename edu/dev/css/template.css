@@ -105,7 +105,7 @@ select {border-radius:0; background:none; font-family:inherit; -webkit-appearanc
 select::-ms-expand {display:none;}
 .select_form {display:inline-block; overflow:hidden; position:relative; font-size:0;}
 .select_form:before,.select_form:after {position:absolute; content:"";}
-.select_form:before {top:50%; right:15px; width:20px; height:20px; background:#fff;}
+.select_form:before {top:1px; right:1px; z-index:-1; width:40px; height:38px; background:#fff;}
 .select_form:after {top:50%; right:15px; width:10px; height:10px; margin-top:-8px; border-right:2px solid #008398; border-bottom:2px solid #008398; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
 .select_form select {min-width:165px; height:40px; padding:0 40px 0 15px; border:1px solid #cdcdcd; background:#fff; font-size:14px; line-height:38px; color:#666;}
 
