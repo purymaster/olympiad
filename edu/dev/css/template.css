@@ -86,7 +86,16 @@ em,address,i {font-style:normal;}
 *:before,*:after {-webkit-box-sizing:inherit;box-sizing:inherit;}
 .wrap {overflow-x:hidden; min-width:320px;}
 .grid_container {position:relative; max-width:1200px; margin:0 auto; padding:0 100px;}
+
+@-webkit-keyframes fadeInUp {
+    0%, 100% {-webkit-transform-origin:50% 50%; transform-origin:50% 50%;}
+}
+@keyframes fadeInUp {
+    0%, 100% {-webkit-transform-origin:50% 50%; transform-origin:50% 50%;}
+}
+
 .wait-animation {-webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
+.animated {-webkit-animation-delay:1s;}
 
 @media (max-width:1024px) {
     .grid_container {padding:0 30px;}
