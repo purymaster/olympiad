@@ -693,3 +693,47 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .tab_menu ul.type3 li {width:33.33%;}
     .tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:0; height:100%;}
 }
+
+/*=========================================================
+9. 애니메이션
+=========================================================*/
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.7.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+
+@-webkit-keyframes fadeInUp {
+    0% {-webkit-transform:translate3d(0, 100%, 0); transform:translate3d(0, 100%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+@keyframes fadeInUp {
+    0% {-webkit-transform:translate3d(0, 100%, 0); transform:translate3d(0, 100%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {-webkit-transform:translate3d(-100%, 0, 0); transform:translate3d(-100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+@keyframes fadeInLeft {
+    0% {-webkit-transform:translate3d(-100%, 0, 0); transform:translate3d(-100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {-webkit-transform:translate3d(100%, 0, 0); transform:translate3d(100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+@keyframes fadeInRight {
+    0% {-webkit-transform:translate3d(100%, 0, 0); transform:translate3d(100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+
+.fadeInUp {-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
+.fadeInLeft {-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;}
+.fadeInRight {-webkit-animation-name:fadeInRight; animation-name:fadeInRight;}
+.animated {-webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-delay:1s;}
