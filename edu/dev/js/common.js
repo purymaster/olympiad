@@ -35,7 +35,7 @@ $(function() {
         move_delay, //순차무빙 딜레이
         move_duration, //순차무빙 시간
         scroll, //스크롤 값
-        start_point = $(window).height() - 50, //애니메이션 시작 높이(밑에서부터 50px)
+        start_point = $(window).height() * 0.95, //애니메이션 시작 높이(밑에서부터 화면 높이의 5%)
         top_btn = $('.move_top'), //TOP 버튼
         top_btn_flag = 0; //TOP 버튼 상태
 
