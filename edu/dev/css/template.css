@@ -87,16 +87,6 @@ em,address,i {font-style:normal;}
 .wrap {overflow-x:hidden; min-width:320px;}
 .grid_container {position:relative; max-width:1200px; margin:0 auto; padding:0 100px;}
 
-@-webkit-keyframes fadeInUp {
-    0%, 100% {-webkit-transform-origin:50% 50%; transform-origin:50% 50%;}
-}
-@keyframes fadeInUp {
-    0%, 100% {-webkit-transform-origin:50% 50%; transform-origin:50% 50%;}
-}
-
-.wait-animation {-webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
-.animated {-webkit-animation-delay:1s;}
-
 @media (max-width:1024px) {
     .grid_container {padding:0 30px;}
 }
@@ -694,6 +684,37 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:0; height:100%;}
 }
 
+/* 대표이사 인사말 */
+.greeting_msg {overflow:hidden; position:relative; height:440px; background:-webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)),to(rgba(235,242,243,1))); background:linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(235,242,243,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ebf2f3',GradientType=1 );
+}
+.greeting_msg .tit {width:660px; margin-top:65px; padding-bottom:30px; border-bottom:1px solid #008398; font-family:"Nanum Square"; font-size:40px; line-height:1.4em; color:#005967;}
+.greeting_msg .sub_tit {margin-top:70px; font-family:"Nanum Square"; font-size:30px; line-height:1.4em; color:#333;}
+.greeting_msg img {position:absolute; top:36px; right:33px;}
+.greeting_txt p {margin-top:20px; font-size:14px; line-height:2em;}
+.greeting_txt .accent {font-size:16px; font-weight:700;}
+.greeting_txt .sign {color:#008398; text-align:right;}
+.greeting_txt .sign strong {font-weight:700; color:#333;}
+.greeting_txt .sign img {height:71px; margin-right:-12px;}
+
+@media (max-width:1280px) {
+    .greeting_msg .tit {width:500px; font-size:36px;}
+    .greeting_msg .sub_tit {font-size:24px;}
+}
+
+@media (max-width:1024px) {
+    .greeting_msg {height:270px;}
+    .greeting_msg .tit {width:auto; border:0; font-size:28px; margin-top:50px;}
+    .greeting_msg .sub_tit {margin:0; font-size:20px;}
+    .greeting_msg img {height:233px;}
+}
+
+@media (max-width:599px) {
+    .greeting_msg {height:auto; margin-bottom:30px; background:none;}
+    .greeting_msg .tit {margin:30px 0 10px; padding:0; font-size:24px;}
+    .greeting_msg .sub_tit {font-size:18px;}
+    .greeting_msg img {display:block; position:static; margin:0 auto;}
+    .greeting_txt p {margin-top:15px; font-size:14px !important; line-height:1.8em;}
+}
 /*=========================================================
 9. 애니메이션
 =========================================================*/
@@ -736,4 +757,5 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .fadeInUp {-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
 .fadeInLeft {-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;}
 .fadeInRight {-webkit-animation-name:fadeInRight; animation-name:fadeInRight;}
+.wait-animation {-webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
 .animated {-webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-delay:1s;}
