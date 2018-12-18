@@ -459,7 +459,8 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     .footer_upper .bottom_menu li {padding:2px 5px;}
     .footer_upper .bottom_menu li:after {display:none;}
     .footer_upper .sns {float:none; margin:0; margin-bottom:10px;}
-    .footer_lower .select_form {position:relative; width:100%;}
+    .footer_lower .lower_wrap {font-size:0;}
+    .footer_lower .select_form {position:relative; width:100%; margin-bottom:15px;}
     address ul li {display:block;}
     address ul li:after {display:none;}
 }
