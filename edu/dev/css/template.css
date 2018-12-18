@@ -87,6 +87,7 @@ em,address,i {font-style:normal;}
 .wrap {overflow-x:hidden; min-width:320px;}
 .grid_container {position:relative; max-width:1200px; margin:0 auto; padding:0 100px;}
 .wait-animation {-webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
+.animated {-webkit-animation-delay:1s;}
 
 @media (max-width:1024px) {
     .grid_container {padding:0 30px;}
