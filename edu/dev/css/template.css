@@ -86,6 +86,7 @@ em,address,i {font-style:normal;}
 *:before,*:after {-webkit-box-sizing:inherit;box-sizing:inherit;}
 .wrap {overflow-x:hidden; min-width:320px;}
 .grid_container {position:relative; max-width:1200px; margin:0 auto; padding:0 100px;}
+.grid_container.wide {max-width:1400px; padding:0;}
 
 @media (max-width:1024px) {
     .grid_container {padding:0 30px;}
@@ -185,7 +186,7 @@ label {cursor:pointer;}
     .board_list table td.view:before {content:"조회수 : ";}
 }
 
-/* 상단 뉴스 */
+/* 게시판(썸네일형) 최신 */
 .top_news {overflow:hidden; margin-bottom:40px; padding:40px; border:1px solid #cdcdcd; border-top:3px solid #008398;}
 .top_news .cont {float:left; width:calc(50% - 15px);}
 .top_news .img_view {height:300px; margin-right:30px; background-position:center; background-size:cover;}
@@ -217,7 +218,7 @@ label {cursor:pointer;}
     .top_news .txt_view .tit {font-size:18px;}
 }
 
-/* 뉴스 리스트 */
+/* 게시판(썸네일형) 리스트 */
 .news_list {border-top:3px solid #333; border-bottom:1px solid #333;}
 .news_list ul {overflow:hidden; margin:15px -25px;}
 .news_list ul li {float:left; width:calc(33.33% - 50px); margin:15px 25px; border:1px solid #cdcdcd;}
@@ -351,6 +352,7 @@ label {cursor:pointer;}
     .pagenation ul li {display:inline-block; float:none; margin:3px;}
     .pagenation ul li span, .pagenation ul li a {font-size:12px;}
 }
+
 /*=========================================================
 4. 헤더
 =========================================================*/
@@ -414,6 +416,7 @@ nav .close:hover:before,nav .close:hover:after {background:#00aeba;}
     nav .menu_1depth > li .tit {font-size:18px;}
     nav .menu_2depth li a {font-size:12px;}
 }
+
 /*=========================================================
 5. 푸터
 =========================================================*/
@@ -715,6 +718,22 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .greeting_msg img {display:block; position:static; margin:0 auto;}
     .greeting_txt p {margin-top:15px; font-size:14px !important; line-height:1.8em;}
 }
+
+/* 교육철학 */
+.philosophy {}
+.philosophy .jumbotron {height:570px; padding-top:80px; background-image:url(../img/bg/bg_philosophy_01.png); background-position:center; background-size:cover; color:#fff;}
+.philosophy .jumbotron .tit {font-family:"Nanum Square"; font-size:60px; line-height:1.2em;}
+.philosophy .jumbotron .sub_txt {margin-top:25px; font-family:"Nanum Square"; font-size:40px; line-height:1.4em;}
+.philosophy .upper {overflow:hidden; margin-top:75px;}
+.philosophy .upper .tit {float:left; width:33%; margin-top:-8px; font-family:"Nanum Square"; font-size:40px; line-height:1.4em;}
+.philosophy .upper .txt_wrap {float:left; width:67%; margin-top:-8px;}
+.philosophy .upper .txt {font-size:14px; line-height:2em; color:#333;}
+.philosophy .upper .txt + .txt {margin-top:15px;}
+.philosophy .lower {position:relative; margin-top:40px; padding-top:460px; background:url(../img/bg/bg_philosophy_02.png) no-repeat;}
+.philosophy .lower .tit {position:absolute; top:330px; right:0; padding:30px 20px 0 40px; background:#fff; font-family:"Nanum Square"; font-size:40px; line-height:1.4em;}
+.philosophy .lower .txt_wrap {overflow:hidden; margin:0 -15px; padding-top:45px;}
+.philosophy .lower .txt {float:left; width:calc(50% - 30px); margin:0 15px;}
+
 /*=========================================================
 9. 애니메이션
 =========================================================*/
