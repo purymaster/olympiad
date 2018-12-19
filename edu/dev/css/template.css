@@ -471,10 +471,10 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     address ul li {display:block;}
     address ul li:after {display:none;}
 }
+
 /*=========================================================
 6. 모달
 =========================================================*/
-
 
 /*=========================================================
 7. 메인 페이지 스타일
@@ -760,6 +760,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .philosophy .upper .tit,.philosophy .lower .tit {font-size:20px;}
     .philosophy .upper .txt,.philosophy .lower .txt {line-height:1.8em;}
 }
+
 /*=========================================================
 9. 애니메이션
 =========================================================*/
