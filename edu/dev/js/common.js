@@ -3,6 +3,10 @@ $(function() {
     var screen = $('html,body'),
         screen_fix = 0;
 
+    /******************** 하위브라우저 접근 차단 ********************/
+
+    if (navigator.userAgent.match(/MSIE 8/)) $('.ie8').show();
+
     /******************** 네비게이션 제어 ********************/
 
     var nav_open_btn = $('.header_wrap .menu'),

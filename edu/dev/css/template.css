@@ -92,6 +92,11 @@ em,address,i {font-style:normal;}
     .grid_container {padding:0 30px;}
 }
 
+/* 하위브라우저 접근차단 */
+.ie8 {position:fixed; top:0; left:0; z-index:9999; width:100%; height:100%; padding-top:15%; background:#fff; text-align:center;}
+.ie8 p {margin-top:30px; font-size:16px; line-height:1.5;}
+.ie8 a {display:inline-block; height:2.5em; margin-top:30px; padding:0 1em; border-radius:1.25em; background:#00aeba; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#fff; -webkit-border-radius:1.25em; -moz-border-radius:1.25em; -ms-border-radius:1.25em; -o-border-radius:1.25em;}
+
 /* 버튼 */
 .btn_wrap a,.btn_wrap button {display:inline-block; -webkit-box-sizing:inherit; box-sizing:inherit; margin:0; padding:0; border:0; background:none; color:#333; text-align:center; text-decoration:none;}
 .btn_wrap button span {position:relative;}
@@ -720,7 +725,6 @@ section .news_wrap .menu_tit {margin-top:50px;}
 }
 
 /* 교육철학 */
-.philosophy {}
 .philosophy .jumbotron {height:570px; padding-top:80px; background-image:url(../img/bg/bg_philosophy_01.png); background-position:center; background-size:cover; color:#fff;}
 .philosophy .jumbotron .tit {font-family:"Nanum Square"; font-size:60px; line-height:1.2em;}
 .philosophy .jumbotron .sub_txt {margin-top:25px; font-family:"Nanum Square"; font-size:40px; line-height:1.4em;}
@@ -729,11 +733,33 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .philosophy .upper .txt_wrap {float:left; width:67%; margin-top:-8px;}
 .philosophy .upper .txt {font-size:14px; line-height:2em; color:#333;}
 .philosophy .upper .txt + .txt {margin-top:15px;}
-.philosophy .lower {position:relative; margin-top:40px; padding-top:460px; background:url(../img/bg/bg_philosophy_02.png) no-repeat;}
+.philosophy .lower {position:relative; margin-top:40px; padding-top:460px; background:url(../img/bg/bg_philosophy_02.png) no-repeat; background-position:top center;}
 .philosophy .lower .tit {position:absolute; top:330px; right:0; padding:30px 20px 0 40px; background:#fff; font-family:"Nanum Square"; font-size:40px; line-height:1.4em;}
 .philosophy .lower .txt_wrap {overflow:hidden; margin:0 -15px; padding-top:45px;}
 .philosophy .lower .txt {float:left; width:calc(50% - 30px); margin:0 15px;}
 
+@media (max-width:1024px) {
+    .philosophy .jumbotron {height:400px; padding-top:50px;}
+    .philosophy .jumbotron .tit {font-size:46px;}
+    .philosophy .jumbotron .sub_txt {font-size:30px;}
+    .philosophy .upper {margin-top:30px;}
+    .philosophy .upper .tit {float:none; width:100%; margin:0; font-size:30px;}
+    .philosophy .upper .tit br {display:none;}
+    .philosophy .upper .txt_wrap {float:none; width:100%; margin:0; margin-top:15px;}
+    .philosophy .lower {margin-top:30px; padding-top:45%; background-size:contain;}
+    .philosophy .lower .tit {position:static; padding:0; padding-top:30px; background:none; font-size:30px;}
+    .philosophy .lower .txt_wrap {margin:0; margin-top:15px; padding:0;}
+    .philosophy .lower .txt {float:none; width:100%; margin:0;}
+    .philosophy .lower .txt + .txt {margin-top:15px;}
+}
+
+@media (max-width:599px) {
+    .philosophy .jumbotron {height:300px; padding-top:30px;}
+    .philosophy .jumbotron .tit {font-size:30px;}
+    .philosophy .jumbotron .sub_txt {font-size:20px;}
+    .philosophy .upper .tit,.philosophy .lower .tit {font-size:20px;}
+    .philosophy .upper .txt,.philosophy .lower .txt {line-height:1.8em;}
+}
 /*=========================================================
 9. 애니메이션
 =========================================================*/
@@ -750,6 +776,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
     0% {-webkit-transform:translate3d(0, 100%, 0); transform:translate3d(0, 100%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
 	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
+
 @keyframes fadeInUp {
     0% {-webkit-transform:translate3d(0, 100%, 0); transform:translate3d(0, 100%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
     100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
@@ -759,6 +786,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
     0% {-webkit-transform:translate3d(-100%, 0, 0); transform:translate3d(-100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
 	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
+
 @keyframes fadeInLeft {
     0% {-webkit-transform:translate3d(-100%, 0, 0); transform:translate3d(-100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
     100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
@@ -768,6 +796,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
     0% {-webkit-transform:translate3d(100%, 0, 0); transform:translate3d(100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
 	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
+
 @keyframes fadeInRight {
     0% {-webkit-transform:translate3d(100%, 0, 0); transform:translate3d(100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
     100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
