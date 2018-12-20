@@ -1,11 +1,29 @@
 $(function() {
 
     var screen = $('html,body'),
-        screen_fix = 0;
+        screen_fix = 0,
+        is_mobile = false; //모바일 판별 변수
 
     /******************** 하위브라우저 접근 차단 ********************/
 
     if (navigator.userAgent.match(/MSIE 8/)) $('.ie8').show();
+
+    /******************** 셀렉트박스 제어 ********************/
+
+    var select_from = $('.select_form');
+
+    select_from.find('button').on('click', function() {
+        $(this).hasClass('on') ? $(this).removeClass('on') : $(this).addClass('on');
+    })
+    select_from.find('a').on('click', function() {
+        $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
+    });
+
+    /******************** 모바일 확인 ********************/
+
+    $(window).on('load resize', function() {
+        $(this).width() > 1024 ? is_mobile = false : is_mobile = true;
+    });
 
     /******************** 상단 배너 하루 열지 않기 ********************/
 
@@ -32,6 +50,7 @@ $(function() {
 
     function close_banner() {
         upper_banner.removeClass('on');
+        $('body').removeClass('upper_banner_on');
         setTimeout(function() {
             upper_banner.hide();
         }, 200);
@@ -39,8 +58,8 @@ $(function() {
 
     (function check_cookie() {
         (get_cookie("no_pop") != "") ?
-        upper_banner.hide():
-            upper_banner.addClass('on');
+        (upper_banner.hide(), $('body').removeClass('upper_banner_on')) :
+        (upper_banner.addClass('on'), $('body').addClass('upper_banner_on'));
     })();
 
     upper_banner.find('button').on('click', function() {
@@ -52,7 +71,9 @@ $(function() {
 
     var nav_open_btn = $('.header_wrap .menu'),
         nav_close_btn = $('nav .close'),
-        nav = $('nav');
+        nav = $('nav'),
+        nav_1depth = $('.header_wrap .menu_1depth'), //모바일 1뎁스 메뉴
+        nav_2depth = $('.header_wrap .menu_2depth'); //모바일 2뎁스 메뉴
 
     //네비게이션 열기
     nav_open_btn.on('click', function() {
@@ -65,6 +86,7 @@ $(function() {
     nav_close_btn.on('click', function() {
         screen.removeClass('fixed');
         nav.removeClass('on');
+        nav_2depth.slideUp();
         screen_fix = 0;
     });
 
@@ -73,7 +95,17 @@ $(function() {
         if (screen_fix) return false;
     });
 
-    /******************** 애니메이션 정의 ********************/
+    //모바일 네비게이션 제어
+    nav_1depth.find('a').on('click', function() {
+        if (is_mobile)
+            console.log('a');
+        $(this).next('.menu_2depth').css('display') == 'block' ?
+            $('.header_wrap .menu_2depth').stop().slideUp() :
+            ($('.header_wrap .menu_2depth').stop().slideUp(),
+                $(this).next('.menu_2depth').stop().slideDown());
+    });
+
+    /******************** 스크롤 애니메이션 정의 ********************/
 
     var move_el = $('*[data-animation]'), //무빙 요소
         move_name, //무빙 정의
@@ -119,13 +151,19 @@ $(function() {
             });
             return false;
         });
-
-        //헤더 배경 제어
-        scroll ? $('header').addClass('on') : $('header').removeClass('on');
     });
 
-    /******************** 서브 페이지 헤더 제어 ********************/
+    $(window).on('load scroll resize', function() {
 
-    $('.sub_header').addClass('on');
+        //사이드메뉴 제어
+        $('.side_menu').stop().animate({
+            top: $(this).height() / 2 + $(window).scrollTop()
+        }, 1000);
+
+    });
+
+    /******************** 헤더, 서브 페이지 헤더 제어 ********************/
+
+    $('header,.sub_header').addClass('on');
 
 });

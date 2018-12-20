@@ -29,6 +29,29 @@
 	</div>
 	<div class="wrap">
 		<header>
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너 -->
+					<img src="https://via.placeholder.com/1920x210/eeeeee" class="banner pc" alt="대체텍스트">
+
+					<!-- 모바일 배너 -->
+					<img src="https://via.placeholder.com/1024x210/dddddd" class="banner mobile" alt="대체텍스트">
+
+					<div class="ctr_wrap">
+						<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+						<div class="ctr">
+							<button class="today" type="button">
+								<span>오늘 하루 열지 않기</span>
+							</button>
+							<button class="close" type="button">
+								<span>닫기</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="grid_container">
 				<div class="header_wrap">
 					<h1>
@@ -107,8 +130,8 @@
 											</ul>
 									</li>
 								</ul>
-								<button class="close mobile" type="button">메뉴 닫기</button>
 							</div>
+							<button class="close mobile" type="button">메뉴 닫기</button>
 						</div>
 					</nav>
 				</div>
@@ -123,12 +146,74 @@
 					<ul>
 						<li class="home"><a href="#">홈</a></li>
 
+						<li>
+							<div class="select_form">
+								<button type="button">올림피아드 소개</button>
+								<ul>
+
+									<li>
+										<a href="#none">올림피아드 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">초/중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">고등부</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+									<li>
+										<a href="#none">예약상담</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">학원소개</button>
+								<ul>
+
+									<li>
+										<a href="#none">학원소개</a>
+									</li>
+
+									<li>
+										<a href="#none">히스토리</a>
+									</li>
+
+									<li>
+										<a href="#none">기업수상</a>
+									</li>
+
+									<li>
+										<a href="#none">명예의전당</a>
+									</li>
+
+									<li>
+										<a href="#none">전국캠퍼스</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
 
 
 					</ul>
 				</div>
 			</div>
-			<div class="sub_content">
+			<div class="sub_content" style="height:3000px;">
 				<div class="grid_container">
 					<!-- 서브 페이지 컨텐츠 시작 -->
 					<h3 data-animation="fadeInUp" data-delay="5" class="subpage_tit">서브 페이지 타이틀</h3>
@@ -148,11 +233,12 @@
 						<li><a href="#">이메일무단수집거부</a></li>
 					</ul>
 					<div class="select_form">
-						<select name="site" id="site_link">
-							<option value="a">브랜드 사이트</option>
-							<option value="b">사이트A</option>
-							<option value="c">사이트B</option>
-						</select>
+						<button type="button">브랜드 사이트</button>
+						<ul>
+							<li><a href="#none">사이트A</a></li>
+							<li><a href="#none">사이트B</a></li>
+							<li><a href="#none">사이트C</a></li>
+						</ul>
 					</div>
 				</div>
 				<div class="footer_lower">

@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
     var screen = $('html,body'),
         screen_fix = 0;
@@ -7,6 +7,17 @@ $(function() {
 
     if (navigator.userAgent.match(/MSIE 8/)) $('.ie8').show();
 
+    /******************** 셀렉트박스 제어 ********************/
+
+    var select_from = $('.select_form');
+
+    select_from.find('button').on('click', function () {
+        $(this).hasClass('on') ? $(this).removeClass('on') : $(this).addClass('on');
+    })
+    select_from.find('a').on('click', function () {
+        $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
+    });
+
     /******************** 네비게이션 제어 ********************/
 
     var nav_open_btn = $('.header_wrap .menu'),
@@ -14,25 +25,25 @@ $(function() {
         nav = $('nav');
 
     //네비게이션 열기
-    nav_open_btn.on('click', function() {
+    nav_open_btn.on('click', function () {
         screen.addClass('fixed');
         nav.addClass('on');
         screen_fix = 1;
     });
 
     //네비게이션 닫기
-    nav_close_btn.on('click', function() {
+    nav_close_btn.on('click', function () {
         screen.removeClass('fixed');
         nav.removeClass('on');
         screen_fix = 0;
     });
 
     //네비게이션, 팝업 오픈시 스크롤 방지
-    screen.on('scroll touchmove', function(e) {
+    screen.on('scroll touchmove', function (e) {
         if (screen_fix) return false;
     });
 
-    /******************** 애니메이션 정의 ********************/
+    /******************** 스크롤 애니메이션 정의 ********************/
 
     var move_el = $('*[data-animation]'), //무빙 요소
         move_name, //무빙 정의
@@ -44,11 +55,11 @@ $(function() {
         top_btn_flag = 0; //TOP 버튼 상태
 
     move_el.addClass('wait-animation');
-    $(window).on('load scroll', function() {
+    $(window).on('load scroll', function () {
         scroll = $(this).scrollTop();
 
         //순차 애니메이션 제어
-        move_el.each(function() {
+        move_el.each(function () {
             move_name = $(this).data('animation');
             move_delay = $(this).data('delay') * 100; //단위 0.1초
             move_duration = $(this).data('duration') * 1000; //단위 1초
@@ -67,27 +78,12 @@ $(function() {
                 $(this).removeClass('wait-animation');
         });
 
-        //TOP 버튼 제어
-        scroll > $(window).height() / 2 ? //TOP 버튼 출현 시점(반 페이지 이상 스크롤)
-            top_btn.addClass('on') :
-            top_btn.removeClass('on');
-        top_btn.find('a').on('click', function() {
-            if (top_btn_flag) return false;
-            top_btn_flag = 1;
-            $('html,body').animate({
-                scrollTop: 0
-            }, 500, function() {
-                top_btn_flag = 0;
-            });
-            return false;
-        });
-
         //헤더 배경 제어
         scroll ? $('header').addClass('on') : $('header').removeClass('on');
     });
 
     /******************** 서브 페이지 헤더 제어 ********************/
-
+    
     $('.sub_header').addClass('on');
 
 });
