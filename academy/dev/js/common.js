@@ -1,7 +1,7 @@
 $(function() {
 
     var screen = $('html,body'),
-        screen_fix = 0,
+        screen_fix = false,
         is_mobile = false; //모바일 판별 변수
 
     /******************** 하위브라우저 접근 차단 ********************/
@@ -72,22 +72,22 @@ $(function() {
     var nav_open_btn = $('.header_wrap .menu'),
         nav_close_btn = $('nav .close'),
         nav = $('nav'),
-        nav_1depth = $('.header_wrap .menu_1depth'), //모바일 1뎁스 메뉴
         nav_2depth = $('.header_wrap .menu_2depth'); //모바일 2뎁스 메뉴
 
     //네비게이션 열기
     nav_open_btn.on('click', function() {
         screen.addClass('fixed');
         nav.addClass('on');
-        screen_fix = 1;
+        nav_2depth.hide();
+        screen_fix = true;
     });
 
     //네비게이션 닫기
     nav_close_btn.on('click', function() {
         screen.removeClass('fixed');
         nav.removeClass('on');
-        nav_2depth.slideUp();
-        screen_fix = 0;
+        nav_2depth.hide();
+        screen_fix = false;
     });
 
     //네비게이션, 팝업 오픈시 스크롤 방지
@@ -96,13 +96,17 @@ $(function() {
     });
 
     //모바일 네비게이션 제어
-    nav_1depth.find('a').on('click', function() {
-        if (is_mobile)
-            console.log('a');
-        $(this).next('.menu_2depth').css('display') == 'block' ?
-            $('.header_wrap .menu_2depth').stop().slideUp() :
-            ($('.header_wrap .menu_2depth').stop().slideUp(),
-                $(this).next('.menu_2depth').stop().slideDown());
+    $('.header_wrap .menu_1depth > li > a').on('click', function() {
+        if (is_mobile) {
+            $(this).next('.menu_2depth').css('display') == 'block' ?
+                nav_2depth.stop().slideUp() :
+                (nav_2depth.stop().slideUp(), $(this).next('.menu_2depth').stop().slideDown());
+            return false;
+        };
+    });
+
+    $(window).on('resize', function() {
+        is_mobile ? (nav.removeClass('on'), nav_2depth.hide()) : nav_2depth.show();
     });
 
     /******************** 스크롤 애니메이션 정의 ********************/
