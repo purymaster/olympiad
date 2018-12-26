@@ -11,12 +11,12 @@ $(function() {
 
     var select_form = $('.select_form');
 
-    select_form.on('click', 'button', function () {
+    select_form.on('click', 'button', function() {
         $(this).hasClass('on') ? $(this).removeClass('on') : $(this).addClass('on');
-    }).on('click', 'a', function () {
+    }).on('click', 'a', function() {
         $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
     });
-    $(document).on('mouseup', function (e) {
+    $(document).on('mouseup', function(e) {
         if (!select_form.is(e.target) && select_form.has(e.target).length === 0)
             select_form.find('button').removeClass('on');
     });
@@ -84,9 +84,4 @@ $(function() {
         //헤더 배경 제어
         scroll ? $('header').addClass('on') : $('header').removeClass('on');
     });
-
-    /******************** 서브 페이지 헤더 제어 ********************/
-
-    $('.sub_header').addClass('on');
-
 });

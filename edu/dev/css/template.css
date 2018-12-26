@@ -220,11 +220,13 @@ label {cursor:pointer;}
 /* 게시판(썸네일형) 리스트 */
 .news_list {border-top:3px solid #333; border-bottom:1px solid #333;}
 .news_list ul {overflow:hidden; margin:15px -25px;}
-.news_list ul li {float:left; width:calc(33.33% - 50px); margin:15px 25px; border:1px solid #cdcdcd; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.news_list ul li {float:left; width:calc(33.33% - 50px); margin:15px 25px; border:1px solid #cdcdcd; -webkit-transition:all 0.5s; transition:all 0.5s; -webkit-transform:scale(0); transform:scale(0);}
 .news_list ul li:hover {border-color:#00aeba;}
+.news_list ul li.animated {-webkit-transform:scale(1);transform:scale(1);}
 .news_list ul li a {display:block;}
-.news_list ul li .img_view {position:relative; height:225px; padding-top:145px; background-position:center; background-size:cover;}
-.news_list ul li .img_view:after {position:absolute; top:0; left:0; width:100%; height:100%; background:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)),to(rgba(0,0,0,0.65))); background:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); -webkit-backface-visibility:hidden;}
+.news_list ul li .img_view {overflow:hidden; position:relative; height:225px; padding-top:145px; background-position:center; background-size:cover;}
+.news_list ul li .img_view:after {position:absolute; top:0; left:0; width:100%; height:100%; background:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)),to(rgba(0,0,0,0.65))); background:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); -webkit-backface-visibility:hidden; -webkit-transition:all 0.5s; transition:all 0.5s; -webkit-transform-origin:top; transform-origin:top;}
+.news_list ul li:hover .img_view:after {background:rgba(0,0,0,0.65); -webkit-transform:scaleY(1); transform:scaleY(1);}
 .news_list ul li .img_view .tit {overflow:hidden; position:relative; z-index:1; height:3em; max-height:3em; margin:10px 12px; font-family:"Nanum Square"; font-size:20px; line-height:1.5em; color:#fff;}
 .news_list ul li .txt_view {padding:10px; padding-bottom:15px;}
 .news_list ul li .txt_view p {overflow:hidden; max-height:40px; font-size:12px; line-height:20px; color:#666; -webkit-transition:all 0.5s; transition:all 0.5s;}
@@ -632,7 +634,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 
 /* 페이지 공통 */
 .sub_header {position:relative; height:470px; padding-top:210px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transform:scale(1.05); transform:scale(1.05); -webkit-transition:transform 1s; -webkit-transition:-webkit-transform 1s; transition:-webkit-transform 1s; transition:transform 1s; transition:transform 1s, -webkit-transform 1s;}
-.sub_header.on {-webkit-transform:scale(1); transform:scale(1);}
+.sub_header.animated {-webkit-transform:scale(1); transform:scale(1);}
 .sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
 .sub_header h2 {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:400; line-height:1.5em;}
 .sub_header h2:after {position:absolute; right:-76px; bottom:15px; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-position:-10px -246px; background-size:1000px 1000px; content:"";}
