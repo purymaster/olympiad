@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
     var screen = $('html,body'),
         screen_fix = 0;
@@ -9,13 +9,16 @@ $(function () {
 
     /******************** 셀렉트박스 제어 ********************/
 
-    var select_from = $('.select_form');
+    var select_form = $('.select_form');
 
-    select_from.find('button').on('click', function () {
+    select_form.on('click', 'button', function () {
         $(this).hasClass('on') ? $(this).removeClass('on') : $(this).addClass('on');
-    })
-    select_from.find('a').on('click', function () {
+    }).on('click', 'a', function () {
         $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
+    });
+    $(document).on('mouseup', function (e) {
+        if (!select_form.is(e.target) && select_form.has(e.target).length === 0)
+            select_form.find('button').removeClass('on');
     });
 
     /******************** 네비게이션 제어 ********************/
@@ -25,21 +28,21 @@ $(function () {
         nav = $('nav');
 
     //네비게이션 열기
-    nav_open_btn.on('click', function () {
+    nav_open_btn.on('click', function() {
         screen.addClass('fixed');
         nav.addClass('on');
         screen_fix = 1;
     });
 
     //네비게이션 닫기
-    nav_close_btn.on('click', function () {
+    nav_close_btn.on('click', function() {
         screen.removeClass('fixed');
         nav.removeClass('on');
         screen_fix = 0;
     });
 
     //네비게이션, 팝업 오픈시 스크롤 방지
-    screen.on('scroll touchmove', function (e) {
+    screen.on('scroll touchmove', function(e) {
         if (screen_fix) return false;
     });
 
@@ -55,11 +58,11 @@ $(function () {
         top_btn_flag = 0; //TOP 버튼 상태
 
     move_el.addClass('wait-animation');
-    $(window).on('load scroll', function () {
+    $(window).on('load scroll', function() {
         scroll = $(this).scrollTop();
 
         //순차 애니메이션 제어
-        move_el.each(function () {
+        move_el.each(function() {
             move_name = $(this).data('animation');
             move_delay = $(this).data('delay') * 100; //단위 0.1초
             move_duration = $(this).data('duration') * 1000; //단위 1초
@@ -83,7 +86,7 @@ $(function () {
     });
 
     /******************** 서브 페이지 헤더 제어 ********************/
-    
+
     $('.sub_header').addClass('on');
 
 });

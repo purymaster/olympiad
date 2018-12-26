@@ -10,13 +10,16 @@ $(function() {
 
     /******************** 셀렉트박스 제어 ********************/
 
-    var select_from = $('.select_form');
+    var select_form = $('.select_form');
 
-    select_from.find('button').on('click', function() {
+    select_form.on('click', 'button', function() {
         $(this).hasClass('on') ? $(this).removeClass('on') : $(this).addClass('on');
-    })
-    select_from.find('a').on('click', function() {
+    }).on('click', 'a', function() {
         $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
+    });
+    $(document).on('mouseup', function(e) {
+        if (!select_form.is(e.target) && select_form.has(e.target).length === 0)
+            select_form.find('button').removeClass('on');
     });
 
     /******************** 모바일 확인 ********************/
