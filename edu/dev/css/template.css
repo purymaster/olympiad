@@ -557,8 +557,6 @@ article .news ul li a .txt_wrap .result {color:#ff8c3f;}
 article .news ul li a .txt_wrap .tit {font-family:"Nanum Square"; font-size:20px; line-height:1.5em; color:#333;}
 article .news ul li a .txt_wrap .txt {margin:10px 0 20px; font-size:12px; line-height:1.7em; color:#666;}
 article .news ul li a .txt_wrap .date {display:inline-block; padding:0 10px; border-radius:12px; background:#f2f2f2; font-size:12px; line-height:24px; color:#999; -webkit-border-radius:12px; -moz-border-radius:12px; -ms-border-radius:12px; -o-border-radius:12px;}
-
-/* fullpage.js 사용시 삭제 */
 section .section {background-attachment:fixed;}
 section .slide {display:table; width:100%; height:100vh; table-layout:fixed;}
 .grid_guide {display:table-cell; vertical-align:middle;}
@@ -573,17 +571,6 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .indicator ul li:first-child {margin:0;}
 .indicator ul li a {display:block; width:9px; height:9px; border:2px solid #fff; border-radius:50%; text-indent:-9999px; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%;}
 .indicator ul li.on a {background:#fff;}
-
-/* fullpage.js 인디케이터 커스터마이징 */
-#fp-nav {visibility:visible; right:30px !important; -webkit-transition:all 0.2s; transition:all 0.2s; opacity:1;}
-#fp-nav.on {visibility:hidden; opacity:0;}
-#fp-nav ul li {margin:0 !important; margin-bottom:16px !important;}
-#fp-nav ul li:before {position:absolute; top:-13px; left:11px; width:1px; height:20px; background:#fff; content:"";}
-#fp-nav ul li:first-child:before {display:none;}
-#fp-nav ul li .fp-tooltip {top:0 !important;}
-#fp-nav ul li a span {width:9px !important; height:9px !important; margin:0 !important; border:1px solid #fff !important; background:none !important;}
-#fp-nav ul li .active span {background:#fff !important;}
-#fp-nav ul li:nth-last-child(1),#fp-nav ul li:nth-last-child(2) {display:none;}
 
 @media (max-width:1280px) {
     article .grand_tit,section .slide .ideology span {font-size:40px;}

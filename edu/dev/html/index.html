@@ -102,7 +102,7 @@
 			</div>
 		</header>
 		<button class="slide_scroll" type="button">다음 슬라이드 보기</button>
-		<section class="main_content" id="fullpage">
+		<section class="main_content">
 			<!-- [D] 관리자 화면에서 배경이미지와 슬라이드별 텍스트 변경 가능 -->
 			<div class="section slide" style="background-image:url(../img/bg/bg_mainvisual_01.jpg)" ;>
 				<div class="grid_guide">
@@ -350,7 +350,6 @@
 				</footer>
 			</div>
 
-			<!-- 인디케이터(fullpage.js 사용시 삭제) -->
 			<div class="indicator">
 				<ul>
 					<li data-name="교육철학" class="on"><a href="#">교육철학</a></li>
@@ -359,59 +358,9 @@
 					<li data-name="가맹사업"><a href="#">가맹사업</a></li>
 				</ul>
 			</div>
-			<!-- //인디케이터(fullpage.js 사용시 삭제) -->
 
 		</section>
 	</div>
-
-	<!-- 
-        [메타브레인 퍼블리싱팀]
-
-        메인페이지는 레이아웃 확인을 위해 fullpage.js를 적용하여 구현하였습니다.
-        실개발 작업시 fullpage.js를 적용하셔도 좋고, 다른 방법으로 구현하셔도 좋습니다.
-        다만, fullpage.js 미적용시 다음과 같은 기능은 직접 구현해주셔야합니다.
-
-        - 수직 슬라이드 기능
-        - 마우스 모양 버튼 클릭시 다음 슬라이드로 이동 기능
-        - 슬라이드와 인디케이터 연결 및 툴팁 표시
-        - 가맹사업 슬라이드 이후부터 .slide_scroll, header, .indicator에 on 클래스 부여
-
-        반대로 fullpage.js 적용시, 특정 css를 삭제해주셔야합니다.(template.css 파일 주석 참고)
-        또, 이 페이지에 마크업된 인디케이터 역시 삭제해주셔야합니다.(.indicator)
-        마지막으로, 이 페이지의 마크업에 적용된 data-animation, data-delay값을 모두 삭제해주셔야합니다.(스크롤 기반 모션 구현이라, fullpage.js 환경에서 동작하지 않습니다.)
-        fullpage.js 미적용시 저희 팀에 한 번 연락주셨으면 합니다.
-
-        E-MAIL : chang@metabrain.com
-        TEL : 070-4208-7270
-    -->
-
-	<!-- Fullpage -->
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.js"></script>
-    <script src="https://alvarotrigo.com/fullPage/vendors/scrolloverflow.js"></script>
-    <script>
-        $(function () {
-            var slide_cnt = $('.section.slide').length;
-
-            var slide = $('#fullpage').fullpage({
-                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-                scrollOverflow: true,
-                anchors: ['Philosophy', 'Business', 'Research', 'Partner', 'News'],
-                navigationTooltips: ['교육철학', '사업영역', '연구개발', '가맹사업'],
-                showActiveTooltip: true,
-                navigation: true,
-                onLeave: function (origin, destination) {
-                    destination.index >= slide_cnt ?
-                        $('.slide_scroll,header,#fp-nav').addClass('on') :
-                        $('.slide_scroll,header,#fp-nav').removeClass('on');
-                }
-            });
-
-            $('.slide_scroll').on('click', function () {
-                $.fn.fullpage.moveSectionDown();
-            });
-        });
-    </script> -->
 
 	<!-- Masonry -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
