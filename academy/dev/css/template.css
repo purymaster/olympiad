@@ -228,12 +228,12 @@ label {cursor:pointer;}
 .news_list ul li.animated {-webkit-transform:scale(1);transform:scale(1);}
 .news_list ul li:hover {border-color:#00aeba;}
 .news_list ul li a {display:block;}
-.news_list ul li .img_view {position:relative; height:225px; background-position:center; background-size:cover;}
-.news_list ul li .img_view:after {position:absolute; top:0; left:0; width:100%; height:100%; -webkit-transition:all 0.5s; transition:all 0.5s; content:""; -webkit-backface-visibility:hidden;}
+.news_list ul li .img_view {position:relative; height:0; padding-top:77%; background-position:center; background-size:cover;}
+.news_list ul li .img_view:after {position:absolute; top:0; left:0; width:100%; height:100%; -webkit-transition:all 0.5s; transition:all 0.5s; content:""; backface-visibility:hidden; -webkit-backface-visibility:hidden;}
 .news_list ul li:hover .img_view:after {background:rgba(0,0,0,0.2);}
 .news_list ul li .txt_view {height:90px; padding:15px 20px; border-top:1px solid #cdcdcd; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .news_list ul li:hover .txt_view {border-color:#00aeba;}
-.news_list ul li .txt_view p {overflow:hidden; max-height:3em; font-size:16px; font-weight:700; line-height:1.5em; color:#333; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.news_list ul li .txt_view p {overflow:hidden; max-height:2.8em; font-size:16px; font-weight:700; line-height:1.4em; color:#333; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .news_list ul li:hover .txt_view p {color:#008398;}
 .news_list ul li .txt_view .date {display:inline-block; margin-top:5px; font-size:12px; line-height:1.5em; color:#646f72;}
 
@@ -253,14 +253,37 @@ label {cursor:pointer;}
 .news_holi_list ul {overflow:hidden;}
 .news_holi_list ul li {overflow:hidden; padding:10px 0; border-bottom:1px solid #ddd;}
 .news_holi_list ul li:last-child {border:0;}
-.news_holi_list .img_view {float:left; width:280px; height:210px; border:1px solid #cdcdcd; background-size:cover; background-position:center;}
+.news_holi_list .img_view {float:left; width:280px; height:210px; border:1px solid #cdcdcd; background-position:center; background-size:cover; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.news_holi_list ul li:hover .img_view {border-color:#00aeba;}
 .news_holi_list .txt_view {padding-left:320px;}
-.news_holi_list .txt_view p {overflow:hidden; line-height:1.6em;}
+.news_holi_list .txt_view p {overflow:hidden; line-height:1.6em; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.news_holi_list ul li:hover .txt_view p {color:#008398;}
 .news_holi_list .txt_view .tit {margin:10px 0 8px; font-family:"Nanum Square"; font-size:22px; font-weight:700; color:#333; text-overflow:ellipsis; white-space:nowrap;}
 .news_holi_list .txt_view .txt {height:6.4em; font-size:16px; color:#666;}
 .news_holi_list .txt_view .util {margin-top:15px; font-size:12px; color:#333;}
-.news_holi_list .txt_view .util .date {opacity:0.6; font-family:inherit;}
-.news_holi_list .txt_view .util > a {float:right; opacity:0.8; text-transform:uppercase; font-family:inherit;}
+.news_holi_list .txt_view .util .date {font-family:inherit; opacity:0.6;}
+.news_holi_list .txt_view .util > a {float:right; position:relative; padding-right:15px; font-family:inherit; font-weight:300; -webkit-transition:all 0.2s; transition:all 0.2s; opacity:0.8; text-transform:uppercase;}
+.news_holi_list .txt_view .util > a:before,.news_holi_list .txt_view .util > a:after {position:absolute; top:50%; right:0; width:10px; height:2px; background:#5e5e5e; -webkit-transition:all 0.2s; transition:all 0.2s; content:"";}
+.news_holi_list .txt_view .util > a:before {-webkit-transform:translateY(-50%);transform:translateY(-50%);}
+.news_holi_list .txt_view .util > a:after {margin-top:-1px; -webkit-transform:rotate(90deg); transform:rotate(90deg); -webkit-transform-origin:center; transform-origin:center;}
+.news_holi_list .txt_view .util > a:hover {color:#008398;}
+.news_holi_list .txt_view .util > a:hover:before {background:#00aeba;}
+.news_holi_list .txt_view .util > a:hover:after {right:1px; width:8px; height:8px; margin-top:-4px; border-top:2px solid #00aeba; border-right:2px solid #00aeba; background:none; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+
+@media (max-width:1024px) {
+    .news_holi_list ul li {padding:15px 0;}
+    .news_holi_list .img_view {width:250px; height:180px;}
+    .news_holi_list .txt_view {padding-left:280px;}
+    .news_holi_list .txt_view .tit {font-size:20px;}
+    .news_holi_list .txt_view .txt {font-size:14px;}
+}
+
+@media (max-width:599px) {
+    .news_holi_list .img_view {float:none; width:100%; height:0; padding-top:75%;}
+    .news_holi_list .txt_view {padding:0;}
+    .news_holi_list .txt_view .tit {font-size:18px;}
+    .news_holi_list .txt_view .txt {height:auto; max-height:3.2em;}
+}
 
 /* 게시판(일반) 뷰 */
 .board_view .info {padding:22px 30px; border-top:3px solid #333;}
@@ -282,9 +305,9 @@ label {cursor:pointer;}
 .board_view .upload_file ul li a {color:#999;}
 .board_view .upload_file ul li a:hover {color:#00aeba; text-decoration:underline;}
 .board_view .list_link {margin:10px 0 50px; text-align:right;}
-.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-size:16px; line-height:46px; color:#666; text-align:left;}
+.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-size:16px; line-height:46px; color:#666; text-align:left; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .board_view .list_link a:hover {background:#00aeba; color:#fff;}
-.board_view .list_link a span {position:absolute; right:15px; width:20px; height:2px; background:#00aeba;}
+.board_view .list_link a span {position:absolute; right:15px; width:20px; height:2px; background:#00aeba; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .board_view .list_link a span:nth-child(1) {top:16px;}
 .board_view .list_link a span:nth-child(2) {top:22px;}
 .board_view .list_link a span:nth-child(3) {top:28px;}
@@ -411,6 +434,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
     .header_wrap .menu_1depth > li {float:none;}
     .header_wrap .menu_2depth {display:none; visibility:visible; position:static; width:auto; text-align:left; -webkit-transform:none; transform:none; opacity:1;}
 }
+
 /*=========================================================
 5. 푸터
 =========================================================*/
@@ -429,7 +453,6 @@ footer {background:#333; color:#fff;}
 /*=========================================================
 6. 모달
 =========================================================*/
-
 
 /*=========================================================
 7. 메인 페이지 스타일
@@ -452,6 +475,7 @@ footer {background:#333; color:#fff;}
     .upper_banner .ctr_wrap {padding:0 30px;}
     .upper_banner .ctr {right:30px;}
 }
+
 /*=========================================================
 8. 서브 페이지별 스타일
 =========================================================*/
@@ -462,8 +486,9 @@ footer {background:#333; color:#fff;}
 .sub_header.animated {opacity:1;}
 .sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
 .sub_header h2 {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:38px; font-weight:400; line-height:1.5em;}
-.sub_content {padding:90px 0 100px;}
-.sub_content h3 {position:relative; font-family:"Nanum Square"; font-size:32px; line-height:1.5em; color:#333; text-align:center;}
+.sub_content {padding:85px 0 100px;}
+.sub_content h3 {position:relative; margin-bottom:18px; font-family:"Nanum Square"; font-size:32px; line-height:1.5em; color:#333; text-align:center;}
+.sub_content h3 + .subpage_txt {margin-top:-10px; margin-bottom:55px; font-size:16px; line-height:1.75em; color:#666; text-align:center;}
  
 @media (max-width:1024px) {
     .sub_header {height:auto; padding-top:75px;}

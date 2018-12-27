@@ -13,7 +13,7 @@ $(function() {
     var select_form = $('.select_form');
 
     select_form.on('click', 'button', function() {
-        $(this).hasClass('on') ? $(this).removeClass('on') : $(this).addClass('on');
+        $(this).toggleClass('on');
     }).on('click', 'a', function() {
         $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
     });
@@ -61,8 +61,10 @@ $(function() {
 
     (function check_cookie() {
         (get_cookie("no_pop") != "") ?
-        (upper_banner.hide(), $('body').removeClass('upper_banner_on')) :
-        (upper_banner.addClass('on'), $('body').addClass('upper_banner_on'));
+        (upper_banner.hide(),
+            $('body').removeClass('upper_banner_on')) :
+        (upper_banner.addClass('on'),
+            $('body').addClass('upper_banner_on'));
     })();
 
     upper_banner.find('button').on('click', function() {
@@ -103,13 +105,17 @@ $(function() {
         if (is_mobile) {
             $(this).next('.menu_2depth').css('display') == 'block' ?
                 nav_2depth.stop().slideUp() :
-                (nav_2depth.stop().slideUp(), $(this).next('.menu_2depth').stop().slideDown());
+                (nav_2depth.stop().slideUp(),
+                    $(this).next('.menu_2depth').stop().slideDown());
             return false;
         };
     });
 
     $(window).on('resize', function() {
-        is_mobile ? (nav.removeClass('on'), nav_2depth.hide()) : nav_2depth.show();
+        is_mobile ?
+            (nav.removeClass('on'),
+                nav_2depth.hide()) :
+            nav_2depth.show();
     });
 
     /******************** 스크롤 애니메이션 정의 ********************/
