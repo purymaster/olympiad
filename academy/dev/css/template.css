@@ -59,6 +59,7 @@ textarea:focus {outline:none;}
 :focus {outline:none;}
 em,address,i {font-style:normal;}
 .sprite {display:inline-block;}
+button span {position:relative;}
 
 /* PC, 모바일 제어 */
 .pc {display:block !important;}
