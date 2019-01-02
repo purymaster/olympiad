@@ -157,11 +157,12 @@ $(function() {
         top_btn.find('button').on('click', function() {
             if (top_btn_flag) return false;
             top_btn_flag = 1;
-            $('html,body').animate({
-                scrollTop: 0
-            }, 500, function() {
-                top_btn_flag = 0;
-            });
+            TweenLite.to($('html,body'), .5, {
+                scrollTop: 0,
+                onComplete: function() {
+                    top_btn_flag = 0;
+                }
+            })
             return false;
         });
     });
@@ -169,9 +170,9 @@ $(function() {
     $(window).on('load scroll resize', function() {
 
         //사이드메뉴 제어
-        $('.side_menu').stop().animate({
-            top: $(this).height() / 2 + $(window).scrollTop()
-        }, 1000);
-
+        TweenLite.to($('.side_menu'), 2, {
+            top: $(this).height() / 2 + $(window).scrollTop(),
+            ease: Elastic.easeOut.config(1, 0.5)
+        })
     });
 });
