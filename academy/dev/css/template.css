@@ -100,7 +100,7 @@ button span {position:relative;}
 .ie8 a {display:inline-block; height:2.5em; margin-top:30px; padding:0 1em; border-radius:1.25em; background:#00aeba; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#fff; -webkit-border-radius:1.25em; -moz-border-radius:1.25em; -ms-border-radius:1.25em; -o-border-radius:1.25em;}
 
 /* 최상단 배너 */
-.upper_banner { background-color:#ccc; -webkit-transform:scaleY(0); transform:scaleY(0); -webkit-transition:transform 0.2s; -webkit-transition:-webkit-transform 0.2s; transition:-webkit-transform 0.2s; transition:transform 0.2s; transition:transform 0.2s, -webkit-transform 0.2s; -webkit-transform-origin:top; transform-origin:top;}
+.upper_banner {background-color:#ccc; -webkit-transform:scaleY(0); transform:scaleY(0); -webkit-transform-origin:top; transform-origin:top; -webkit-transition:transform 0.2s; -webkit-transition:-webkit-transform 0.2s; transition:-webkit-transform 0.2s; transition:transform 0.2s; transition:transform 0.2s, -webkit-transform 0.2s;}
 .upper_banner.on {-webkit-transform:scaleY(1);transform:scaleY(1);}
 .upper_banner .banner_wrapper {position:relative; max-width:1920px; margin:0 auto;}
 .upper_banner .ctr_wrap {position:absolute; top:0; left:50%; width:100%; max-width:1400px; height:100%; padding:0 100px; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
