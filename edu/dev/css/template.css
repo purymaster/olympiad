@@ -82,8 +82,8 @@ button span {position:relative;}
 3. 공통 레이아웃
 =========================================================*/
 
-*[lang="en"] {font-family:"Lato"; letter-spacing:0;}
-*:before,*:after {-webkit-box-sizing:inherit;box-sizing:inherit;}
+[lang="en"] {font-family:"Lato"; letter-spacing:0;}
+:before,:after {-webkit-box-sizing:inherit;box-sizing:inherit;}
 .wrap {overflow-x:hidden; min-width:320px;}
 .grid_container {position:relative; max-width:1200px; margin:0 auto; padding:0 100px;}
 .grid_container.wide {max-width:1400px; padding:0;}
@@ -105,6 +105,11 @@ button span {position:relative;}
 .btn_wrap .link span:before,.btn_wrap .link span:after {position:absolute; top:50%; right:12px; height:1px; background:#fff; content:"";}
 .btn_wrap .link span:before {width:30px;}
 .btn_wrap .link span:after {width:10px; -webkit-transform:rotate(45deg); transform:rotate(45deg); -webkit-transform-origin:right; transform-origin:right;}
+
+@media (max-width:1024px) {
+    .btn_wrap a {font-size:12px; line-height:38px;}
+    .btn_wrap span:before,.btn_wrap span:after {right:20px !important;}
+}
 
 /* 입력폼 */
 input[type="text"],input[type="email"],input[type="number"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],textarea {-webkit-box-sizing:border-box; box-sizing:border-box; height:38px; margin:0; padding:0; padding:0 15px; border:none; border:1px solid #cdcdcd; border-radius:0; background:none; background:#fff; font-family:inherit; font-size:14px; line-height:38px; color:#666; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box;}
@@ -589,8 +594,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
     section .section {background-attachment:scroll;}
     article {text-align:center;}
     section .slide .btn_wrap {margin-top:30px;}
-    section .slide .btn_wrap a {width:150px; font-size:12px; font-weight:700; line-height:38px;}
-    section .slide .btn_wrap span:before,section .slide .btn_wrap span:after {right:20px;}
+    section .slide .btn_wrap a {width:150px;}
     section .slide_cate {line-height:1.5em;}
     section .slide_cate:after {left:50%; margin-left:-7px;}
     article .grand_tit {font-size:32px;}

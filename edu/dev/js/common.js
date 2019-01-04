@@ -42,7 +42,7 @@ $(function() {
     });
 
     //네비게이션, 팝업 오픈시 스크롤 방지
-    screen.on('scroll touchmove', function(e) {
+    screen.on('scroll touchmove', function() {
         if (screen_fix) return false;
     });
 
