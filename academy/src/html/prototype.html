@@ -1,0 +1,34 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "서브 페이지 타이틀",
+            "context" : {
+            "depth1_current" : "올림피아드 소개", 
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth2_current" : "학원소개",
+            "depth2_sublist" : ["학원소개","히스토리","기업수상","명예의전당","전국캠퍼스"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content" style="height:3000px;">
+                <div class="grid_container">
+                    <!-- 서브 페이지 컨텐츠 시작 -->
+                    <h3 data-animation="fadeInUp" data-delay="5" class="subpage_tit">서브 페이지 타이틀</h3>
+
+                    <!-- 서브 페이지 컨텐츠 끝 -->
+                </div>
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+
+/*=========================================================
+2. 리셋
+=========================================================*/
+
+html {font-size:1em; letter-spacing:-0.04em;}
+html,body {height:100%;}
+html.fixed,html.fixed body {overflow:hidden;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,button {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; font-family:'Nanum Gothic',Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box;}
+
+input[type="text"],input[type="email"],input[type="number"],button,input[type="submit"],input[type="reset"],button,input[type="tel"],button,input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; border-radius:0; -webkit-border-radius:0; -moz-border-radius:0; margin:0; padding:0; font-family:'Nanum Gothic',Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif; border:none; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; background:none; font-size:100%; letter-spacing:-0.04em;}
+body {-webkit-text-size-adjust:none; -moz-text-size-adjust:none; position:relative; background:#fff; word-break:keep-all; word-wrap:break-word; font-size:14px; line-height:1.8; color:#4c5358;}
+blockquote,q {quotes:none;}
+/* input:focus,button:focus {border:none;} */
+table {border-collapse:collapse; border-spacing:0;}
+ul,ol,li {list-style:none;}
+a:focus {outline:none !important;}
+a {text-decoration:none; color:#686f75;}
+:invalid {box-shadow:none;}
+:-moz-submit-invalid {box-shadow:none;}
+:-moz-ui-invalid {box-shadow:none;}
+button::-moz-focus-inner {border:0; padding:0; margin-top:-2px; margin-bottom:-2px;}
+input::-moz-focus-inner {border:0; padding:0; margin-top:-2px; margin-bottom:-2px;}
+img {max-width:100%; height:auto;}
+a:hover,button:hover {cursor:pointer;}
+button {background:transparent;}
+textarea:focus {outline:none;}
+:focus {outline:none;}
+em,address,i {font-style:normal;}
+button span {position:relative;}
+
+/* PC, 모바일 제어 */
+.pc {display:block !important;}
+.mobile {display:none !important;}
+
+@media screen and (max-width:1024px) {
+    .pc {display:none !important;}
+    .mobile {display:block !important;}
+}
+
+/* Placeholder */
+::-webkit-input-placeholder {font-weight:400; color:#ccc;}
+::-moz-placeholder {font-weight:400; color:#ccc;}
+:-ms-input-placeholder {font-weight:400; color:#ccc;}
+:-moz-placeholder {font-weight:400; color:#ccc;}
+
+/* Hidden */
+.hidden {overflow:hidden; position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:0; clip:rect(0 0 0 0);}

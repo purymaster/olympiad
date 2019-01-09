@@ -1,0 +1,15 @@
+<div class="sub_visual @@type">
+
+    <!-- 서브 탭메뉴 -->
+    @@if(context.has_tab) {
+    <div class="subtab_menu">
+        <ul>
+            @@for(i = 0; i < context.tab_list.length; i++){ <li><a href="#">`+context.tab_list[i]+`</a></li>
+                }
+        </ul>
+    </div>
+    }
+
+    <p class="sub_txt">@@sub_txt</p>
+    <h4 class="sub_tit">@@title</h4>
+</div>

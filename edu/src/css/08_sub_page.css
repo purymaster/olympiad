@@ -1,0 +1,151 @@
+
+/*=========================================================
+8. 서브 페이지별 스타일
+=========================================================*/
+
+/* 페이지 공통 */
+.sub_header {position:relative; height:470px; padding-top:210px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transform:scale(1.05); -moz-transform:scale(1.05); -ms-transform:scale(1.05); -o-transform:scale(1.05); transform:scale(1.05); -webkit-transition:transform 1s; -moz-transition:transform 1s; -ms-transition:transform 1s; -o-transition:transform 1s; transition:transform 1s;}
+.sub_header.animated {-webkit-transform:scale(1); -moz-transform:scale(1); -ms-transform:scale(1); -o-transform:scale(1); transform:scale(1);}
+.sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
+.sub_header h2 {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:400; line-height:1.5em;}
+.sub_header h2:after {position:absolute; right:-76px; bottom:15px; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-position:-10px -246px; background-size:1000px 1000px; content:"";}
+.sub_header .sub_tit {font-size:24px; line-height:1.5em;}
+.sub_content {padding-bottom:100px;}
+.sub_content h3 {margin:55px 0 40px; font-family:"Nanum Square"; font-size:40px; line-height:1.5em; color:#333; text-align:center;}
+
+@media (max-width:1024px) {
+    .sub_header {height:auto; padding-top:75px;}
+    .sub_header h2 {font-size:36px;}
+    .sub_header h2:after {right:-40px; bottom:10px; width:33px; height:39px; background-position:-5px -123px; background-size:500px 500px;}
+    .sub_header .sub_tit {margin-bottom:50px; font-size:18px;}
+    .sub_content {padding-bottom:50px;}
+    .sub_content h3 {margin:30px 0; font-size:28px;}
+}
+
+@media (max-width:599px) {
+    .sub_header {padding-top:75px;}
+    .sub_header h2 {font-size:24px;}
+    .sub_header h2:after {display:none;}
+    .sub_header .sub_tit {font-size:14px;}
+    .sub_content {padding-bottom:30px;}
+    .sub_content h3 {margin:30px 0; font-size:20px;}
+}
+
+/* 탭메뉴 */
+.tab_menu {display:table; position:absolute; bottom:0; left:50%; width:100%; max-width:1000px; -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); table-layout:fixed;}
+.tab_menu ul {display:table-row;}
+.tab_menu ul li {display:table-cell;}
+.tab_menu ul li a {display:block; position:relative; z-index:0; font-size:16px; line-height:55px; color:inherit;}
+.tab_menu ul li.on a,.tab_menu ul li a:hover {font-size:18px; font-weight:700; transition:all 0.2s;}
+.tab_menu ul li a:after {position:absolute; bottom:0; left:0; z-index:-1; width:calc(100% - 1px); height:100%; background:rgba(0,0,0,0.2); -webkit-transition:all 0.2s; -moz-transition:all 0.2s; -ms-transition:all 0.2s; -o-transition:all 0.2s; transition:all 0.2s; content:"";}
+.tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:-1px; height:calc(100% + 6px); background:#008398;}
+
+@media (max-width:1024px) {
+    .tab_menu {display:block; position:static; -webkit-transform:none; -moz-transform:none; -ms-transform:none; -o-transform:none; transform:none;}
+    .tab_menu ul {display:block; overflow:hidden;}
+    .tab_menu ul li {display:block; float:left; margin-top:1px;}
+    .tab_menu ul li a {font-size:14px; line-height:40px;}
+    .tab_menu ul li.on a,.tab_menu ul li a:hover {font-size:16px;}
+    .tab_menu ul.type2 li {width:50%;}
+    .tab_menu ul.type3 li {width:33.33%;}
+    .tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:0; height:100%;}
+}
+
+/* 대표이사 인사말 */
+.greeting_msg {overflow:hidden; position:relative; height:440px; background:-moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(235,242,243,1) 100%); background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(235,242,243,1) 100%); background:linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(235,242,243,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ebf2f3',GradientType=1 );
+}
+.greeting_msg .tit {width:660px; margin-top:65px; padding-bottom:30px; border-bottom:1px solid #008398; font-family:"Nanum Square"; font-size:40px; line-height:1.4em; color:#005967;}
+.greeting_msg .sub_tit {margin-top:70px; font-family:"Nanum Square"; font-size:30px; line-height:1.4em; color:#333;}
+.greeting_msg img {position:absolute; top:36px; right:33px;}
+.greeting_txt p {margin-top:20px; font-size:14px; line-height:2em;}
+.greeting_txt .accent {font-size:16px; font-weight:700;}
+.greeting_txt .sign {color:#008398; text-align:right;}
+.greeting_txt .sign strong {font-weight:700; color:#333;}
+.greeting_txt .sign img {height:71px; margin-right:-12px;}
+
+@media (max-width:1280px) {
+    .greeting_msg .tit {width:500px; font-size:36px;}
+    .greeting_msg .sub_tit {font-size:24px;}
+}
+
+@media (max-width:1024px) {
+    .greeting_msg {height:270px;}
+    .greeting_msg .tit {width:auto; border:0; font-size:28px; margin-top:50px;}
+    .greeting_msg .sub_tit {margin:0; font-size:20px;}
+    .greeting_msg img {height:233px;}
+}
+
+@media (max-width:599px) {
+    .greeting_msg {height:auto; margin-bottom:30px; background:none;}
+    .greeting_msg .tit {margin:30px 0 10px; padding:0; font-size:24px;}
+    .greeting_msg .sub_tit {font-size:18px;}
+    .greeting_msg img {display:block; position:static; margin:0 auto;}
+    .greeting_txt p {margin-top:15px; font-size:14px !important; line-height:1.8em;}
+}
+
+/* 교육철학 */
+.philosophy .jumbotron {height:570px; padding-top:80px; background-image:url(../img/bg/bg_philosophy_01.png); background-position:center; background-size:cover; color:#fff;}
+.philosophy .jumbotron .tit {font-family:"Nanum Square"; font-size:60px; line-height:1.2em;}
+.philosophy .jumbotron .sub_txt {margin-top:25px; font-family:"Nanum Square"; font-size:40px; line-height:1.4em;}
+.philosophy .upper {overflow:hidden; margin-top:75px;}
+.philosophy .upper .tit {float:left; width:33%; margin-top:-8px; font-family:"Nanum Square"; font-size:40px; line-height:1.4em;}
+.philosophy .upper .txt_wrap {float:left; width:67%; margin-top:-8px;}
+.philosophy .upper .txt {font-size:14px; line-height:2em; color:#333;}
+.philosophy .upper .txt + .txt {margin-top:15px;}
+.philosophy .lower {position:relative; margin-top:40px; padding-top:460px; background:url(../img/bg/bg_philosophy_02.png) no-repeat; background-position:top center;}
+.philosophy .lower .tit {position:absolute; top:330px; right:0; padding:30px 20px 0 40px; background:#fff; font-family:"Nanum Square"; font-size:40px; line-height:1.4em;}
+.philosophy .lower .txt_wrap {overflow:hidden; margin:0 -15px; padding-top:45px;}
+.philosophy .lower .txt {float:left; width:calc(50% - 30px); margin:0 15px;}
+
+@media (max-width:1024px) {
+    .philosophy .jumbotron {height:400px; padding-top:50px;}
+    .philosophy .jumbotron .tit {font-size:46px;}
+    .philosophy .jumbotron .sub_txt {font-size:30px;}
+    .philosophy .upper {margin-top:30px;}
+    .philosophy .upper .tit {float:none; width:100%; margin:0; font-size:30px;}
+    .philosophy .upper .tit br {display:none;}
+    .philosophy .upper .txt_wrap {float:none; width:100%; margin:0; margin-top:15px;}
+    .philosophy .lower {margin-top:30px; padding-top:45%; background-size:contain;}
+    .philosophy .lower .tit {position:static; padding:0; padding-top:30px; background:none; font-size:30px;}
+    .philosophy .lower .txt_wrap {margin:0; margin-top:15px; padding:0;}
+    .philosophy .lower .txt {float:none; width:100%; margin:0;}
+    .philosophy .lower .txt + .txt {margin-top:15px;}
+}
+
+@media (max-width:599px) {
+    .philosophy .jumbotron {height:300px; padding-top:30px;}
+    .philosophy .jumbotron .tit {font-size:30px;}
+    .philosophy .jumbotron .sub_txt {font-size:20px;}
+    .philosophy .upper .tit,.philosophy .lower .tit {font-size:20px;}
+    .philosophy .upper .txt,.philosophy .lower .txt {line-height:1.8em;}
+}
+
+/* 서브 비주얼 + 서브 탭메뉴 */
+.sub_visual {height:390px; padding-top:40px; background:purple;}
+.sub_visual .sub_txt,.sub_visual .sub_tit {font-family:"Nanum Square"; line-height:1.5em; color:#fff; text-align:center;}
+.sub_visual .sub_txt {font-size:20px; margin-top:30px;}
+.sub_visual .sub_tit {font-size:40px; font-weight:400;}
+
+.subtab_menu {text-align:center;}
+.subtab_menu ul {display:inline-block; font-size:0; border-left:1px solid #fff;}
+.subtab_menu ul li {display:inline-block; border:1px solid #fff; border-left:0;}
+.subtab_menu ul li a {display:block; min-width:190px; padding:0 10px;  font-size:14px; line-height:43px; color:#fff; transition:all 0.5s;}
+.subtab_menu ul li.on a,.subtab_menu ul li a:hover {background:#fff; font-weight:700; color:#000;}
+
+/* 컨텐츠 영역 일반 텍스트 */
+.content_txt {}
+.content_txt .main_txt {font-size:20px; font-weight:700; line-height:1.8em;}
+.content_txt .sub_txt {font-size:14px;}
+
+/* 하단 비주얼 */
+.bottom_visual {display:table; position:relative; width:100%; height:340px; background:red;}
+.bottom_visual:before {position:absolute; top:0; left:0; width:100%; height:100%; background:-moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%); background:-webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); background:linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );}
+.bottom_visual .txt_wrap {display:table-cell; position:relative; vertical-align:middle;}
+.bottom_visual .sub_txt {font-size:20px;}
+.bottom_visual .main_txt {font-size:30px;}
+.bottom_visual .link {width:200px; border-color:#008398; color:#fff; background:#00aeba;}
+.bottom_visual .link:after {background:#fff;}
+.bottom_visual .link:hover {color:#008398;}
+.bottom_visual .link:hover span:before,.bottom_visual .link:hover span:after {background:#008398;}
+
+

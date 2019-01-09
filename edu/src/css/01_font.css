@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*=========================================================
+1. 폰트
+=========================================================*/
+
+/* Lato */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+/* 나눔고딕 */
+@font-face {
+    font-family:"Nanum Gothic";
+    font-weight:normal;
+    font-style:normal;
+    src:url("../font/ngothic_regular.otf"); 
+    src:local("?"), 
+    url("../font/ngothic_regular.eot?#iefix") format("embedded-opentype"), 
+    url("../font/ngothic_regular.ttf") format("truetype"),
+    url("../font/ngothic_regular.woff") format("woff");
+}
+
+/* 나눔스퀘어 */
+@font-face {
+    font-family:"Nanum Square";
+    font-weight:normal;
+    font-style:normal;
+    src:url("../font/nsquare_regular.otf");
+    src:local("?"),
+    url("../font/nsquare_regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_regular.ttf") format("truetype"),
+    url("../font/nsquare_regular.woff") format("woff");
+}

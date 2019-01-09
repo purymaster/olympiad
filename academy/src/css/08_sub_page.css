@@ -1,0 +1,65 @@
+
+/*=========================================================
+8. 서브 페이지별 스타일
+=========================================================*/
+
+/* 페이지 공통 */
+.sub_header {position:relative; z-index:1; height:290px; margin-top:150px; padding-top:90px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transition:opacity 2s; -moz-transition:opacity 2s; -ms-transition:opacity 2s; -o-transition:opacity 2s; transition:opacity 2s; opacity:0;}
+.upper_banner_on .sub_header {margin-top:350px;}
+.sub_header.animated {opacity:1;}
+.sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
+.sub_header h2 {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:38px; font-weight:400; line-height:1.5em;}
+.sub_content {padding:85px 0 100px;}
+.sub_content h3 {position:relative; margin-bottom:18px; font-family:"Nanum Square"; font-size:32px; line-height:1.5em; color:#333; text-align:center;}
+.sub_content h3 + .subpage_txt {margin-top:-10px; margin-bottom:55px; font-size:16px; line-height:1.75em; color:#666; text-align:center;}
+ 
+@media (max-width:1024px) {
+    .sub_header {height:auto; padding-top:75px;}
+    .sub_header h2 {font-size:36px;}
+    .sub_header h2:after {right:-40px; bottom:10px; width:33px; height:39px; background-position:-5px -123px; background-size:500px 500px;}
+    .sub_header .sub_tit {margin-bottom:50px; font-size:18px;}
+    .sub_content {padding-bottom:50px;}
+    .sub_content h3 {margin:30px 0; font-size:28px;}
+}
+
+@media (max-width:599px) {
+    .sub_header {padding-top:75px;}
+    .sub_header h2 {font-size:24px;}
+    .sub_header h2:after {display:none;}
+    .sub_header .sub_tit {font-size:14px;}
+    .sub_content {padding-bottom:30px;}
+    .sub_content h3 {margin:30px 0; font-size:20px;}
+}
+
+/* 빵가루 */
+.breadcrumb {position:absolute; bottom:0; left:50%; width:100%; max-width:1200px; background:rgba(51,51,51,0.85); -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
+.breadcrumb > ul:after {display:block; clear:both; content:"";}
+.breadcrumb > ul > li {float:left; border-right:1px solid rgba(255,255,255,0.2);}
+.breadcrumb > ul > li.home a {display:block; text-indent:-9999px; width:50px; height:50px;}
+.breadcrumb > ul > li .select_form {min-width:180px; max-width:320px; background:none;}
+.breadcrumb > ul > li .select_form button {border:0; background:none; color:#cdcdcd; line-height:50px; font-size:16px;}
+.breadcrumb .select_form button + ul {width:calc(100% + 2px); margin-left:-1px; background:rgba(255,255,255,0.95); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
+
+@media (max-width:1024px) {
+    .breadcrumb {display:none;}
+}
+
+/* 탭메뉴 */
+.tab_menu {display:table; position:absolute; bottom:0; left:50%; width:100%; max-width:1000px; -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); table-layout:fixed;}
+.tab_menu ul {display:table-row;}
+.tab_menu ul li {display:table-cell;}
+.tab_menu ul li a {display:block; position:relative; z-index:0; font-size:16px; line-height:55px; color:inherit;}
+.tab_menu ul li.on a,.tab_menu ul li a:hover {font-size:18px; font-weight:700;}
+.tab_menu ul li a:after {position:absolute; bottom:0; left:0; z-index:-1; width:calc(100% - 1px); height:100%; background:rgba(0,0,0,0.2); -webkit-transition:all 0.2s; -moz-transition:all 0.2s; -ms-transition:all 0.2s; -o-transition:all 0.2s; transition:all 0.2s; content:"";}
+.tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:-1px; height:calc(100% + 6px); background:#008398;}
+
+@media (max-width:1024px) {
+    .tab_menu {display:block; position:static; -webkit-transform:none; -moz-transform:none; -ms-transform:none; -o-transform:none; transform:none;}
+    .tab_menu ul {display:block; overflow:hidden;}
+    .tab_menu ul li {display:block; float:left; margin-top:1px;}
+    .tab_menu ul li a {font-size:14px; line-height:40px;}
+    .tab_menu ul li.on a,.tab_menu ul li a:hover {font-size:16px;}
+    .tab_menu ul.type2 li {width:50%;}
+    .tab_menu ul.type3 li {width:33.33%;}
+    .tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:0; height:100%;}
+}

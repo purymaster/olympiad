@@ -1,0 +1,78 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "회사소개",
+            "sub_txt" : "About",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 2,
+            "tab_list" : ["대표이사 인사말","교육철학","연혁","찾아오시는길"]
+            }
+            })
+            <div class="sub_content">
+                <div class="grid_container">
+                    <h3 data-animation="fadeInUp" data-delay="6" class="subpage_tit">교육철학</h3>
+                </div>
+                <!-- 서브 페이지 컨텐츠 시작 -->
+                <div class="philosophy">
+                    <div class="grid_container wide jumbotron">
+                        <div class="grid_container">
+                            <p data-animation="fadeInUp" data-delay="0" class="tit">
+                                우리는 영혼이<br>
+                                살아있는 교육으로
+                            </p>
+                            <p data-animation="fadeInUp" data-delay="0" class="sub_txt">
+                                시대가 요구하는<br>
+                                큰 인물을 키워냄으로써<br>
+                                좋은 세상을 만드는 데<br>
+                                공헌한다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid_container">
+                        <div class="upper">
+                            <p class="tit" data-animation="fadeInUp" data-delay="0">
+                                교육이<br>
+                                희망입니다.
+                            </p>
+                            <div class="txt_wrap">
+                                <p class="txt">살아가는 데 있어 교육만큼 필요하고 중요한 일은 없습니다. 한 개인의 삶과 한 사회의 미래가 교육에 의해 좌우
+                                    되는 시대에 우리는 살고 있습니다. 교육의 경쟁력을 확보하지 못한 개인과 사회는 글로벌 경쟁에서 살아남을 수 없는 운명에 놓이게 되었습니다. 교육이
+                                    곧 경쟁력인 시대입니다. 이러한 시대에 교육 사업에 종사하고 있다는 사실에 우리는 커다란 자부심과 보람을 느낍니다.</p>
+                                <p class="txt">우리는 영혼이 살아있는 교육으로 시대가 요구하는 큰 인물을 키워냄으로써 좋은 세상을 만드는데 공헌하고자 합니다. 이것이
+                                    올림피아드교육의 존재이유이며, 결코 잊어서는 안 될 우리의 사명입니다.</p>
+                            </div>
+                        </div>
+                        <div class="lower">
+                            <p class="tit" data-animation="fadeInUp" data-delay="0">
+                                영혼이 살아있는 교육이란<br>
+                                혼이 담긴, 제대로 된 가르침을 말합니다.
+                            </p>
+                            <div class="txt_wrap">
+                                <p class="txt">교육은 지식과 기술의 단순한 전수가 아닙니다. 교육은한 개인을 지적으로, 인격적으로 변화시키는 행위입니다. 이를 위해선 학생을
+                                    감동시킬 수 있는 영혼의 교감이 선행되어야 합니다. 또한 교사가 지적 전문성과 도덕적 리더십을 가지고 학생을 제대로 가르쳐야 합니다. 영혼이 살아있는
+                                    교육을 통해 우리는 세계화 및 지식정보화 시대를 살아가는 데 필요한 지적 능력과 도덕적 리더십, 창의적 사고력 과 문제해결능력을 가진 큰 인물을
+                                    키워내고자 합니다.
+                                </p>
+                                <p class="txt">지식과 덕성을 겸비한 큰 인물들이 넘쳐날 때 우리 사회는 보다 살기 좋은 세상이 될것입니다. 우리는 영혼이 살아있는 교육을
+                                    실천함으로써 작게는 한 개인의 삶을 바꾸고, 크게는 우리 사회의 미래를 열어갈 것입니다. 우리의 교육적 실천이 사람과 세상을 바꿀 수 있다는 사실에
+                                    대해 우리는 커다란 책임감과 가슴 벅찬 자부심을 느낍니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 서브 페이지 컨텐츠 끝 -->
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "서브 페이지 타이틀",
+            "sub_txt" : "Subpage Title",
+            "context" : {
+            "has_tab" : true,
+            "tab_list" : ["탭메뉴1","탭메뉴2","탭메뉴3"]
+            }
+            })
+            <div class="sub_content">
+                <div class="grid_container">
+                    <!-- 서브 페이지 컨텐츠 시작 -->
+                    <h3 data-animation="fadeInUp" data-delay="6" class="subpage_tit">서브 페이지 타이틀</h3>
+
+                    <!-- 서브 페이지 컨텐츠 끝 -->
+                </div>
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

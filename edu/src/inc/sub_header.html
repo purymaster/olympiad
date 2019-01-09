@@ -1,0 +1,16 @@
+<div class="sub_header @@type" data-animation="">
+    <div class="grid_container">
+        <h2 data-animation="fadeInUp" data-delay="0">@@title</h2>
+        <p data-animation="fadeInUp" data-delay="3" class="sub_tit" lang="en">@@sub_txt</p>
+    </div>
+    @@if(context.has_tab) {
+        <div class="tab_menu">
+            <ul class="type@@context.mobile_line">
+                <!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+                @@for(i = 0; i < context.tab_list.length; i++){
+                    <li><a href="#">`+context.tab_list[i]+`</a></li>
+                }
+            </ul>
+        </div>
+    }
+</div>

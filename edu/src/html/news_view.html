@@ -1,0 +1,107 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "커뮤니티",
+            "sub_txt" : "Community",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 3,
+            "tab_list" : ["공지사항","언론기사","실적"]
+            }
+            })
+            <div class="sub_content">
+                <div class="grid_container">
+
+                    <!-- 서브 페이지 컨텐츠 시작 -->
+                    <h3 data-animation="fadeInUp" data-delay="6" class="subpage_tit">언론기사</h3>
+
+                    <!-- 게시물 뷰 -->
+                    <div class="board_view">
+
+                        <div class="info">
+                            <h4 class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</h4>
+                            <dl class="txt_info">
+                                <div class="date">
+                                    <dt>작성일</dt>
+                                    <dd>99.99.99</dd>
+                                </div>
+                                <div class="view">
+                                    <dt>조회수</dt>
+                                    <dd>999,999</dd>
+                                </div>
+                                <div class="author">
+                                    <dt>작성자</dt>
+                                    <dd>관리자관리자관리자관리자관리자</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                        <div class="content_wrap">
+                            <div class="content">
+                                <!-- 관리자 페이지 에디터를 통해 작성되는 영역 -->
+                                <img src="https://via.placeholder.com/640x480" alt="대체 텍스트">
+                                <p>글 내용입니다.</p>
+                                <p>글 내용입니다.</p>
+                                <p>긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용입니다.</p>
+                                <!-- //관리자 페이지 에디터를 통해 작성되는 영역 -->
+                            </div>
+
+                            <div class="upload_file">
+                                <ul>
+                                    <li><a href="#">1.zip</a></li>
+                                    <li><a href="#">제목이_너무길면_잘립니다_제목이_너무길면_잘립니다_제목이_너무길면_잘립니다_.zip</a></li>
+                                    <li><a href="#">2.zip</a></li>
+                                    <li><a href="#">첨부파일명은_확장자도_노출.zip</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="btn_wrap list_link">
+                            <a href="#">
+                                목록
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+
+                        <dl class="paging_wrap">
+                            <div class="prev">
+                                <dt><span data-title="prev">이전글</span></dt>
+                                <dd>
+                                    <a href="#">
+                                        긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                    </a>
+                                    <i class="file">첨부파일</i>
+                                    <i class="new">새로운 글</i>
+                                    <!-- <a href="javascript:return false;">이전글이 없습니다.</a> -->
+                                </dd>
+                            </div>
+                            <div class="next">
+                                <dt><span data-title="next">다음글</span></dt>
+                                <dd>
+                                    <a href="#">게시물 제목이 노출되는 영역입니다.</a>
+                                    <!-- <a href="javascript:return false;">다음글이 없습니다.</a> -->
+                                </dd>
+                            </div>
+                        </dl>
+
+                    </div>
+                    <!-- //게시물 뷰 -->
+
+                    <!-- 서브 페이지 컨텐츠 끝 -->
+                </div>
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>
