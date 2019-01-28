@@ -60,7 +60,7 @@ $(function () {
     };
 
     (function check_cookie() {
-        (get_cookie("no_pop") != "") ?
+        get_cookie("no_pop") != "" ?
             (upper_banner.hide(),
                 $('body').removeClass('upper_banner_on')) :
             (upper_banner.addClass('on'),

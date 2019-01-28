@@ -17,20 +17,20 @@
 /* 하위브라우저 접근차단 */
 .ie8 {display:none; position:fixed; top:0; left:0; z-index:9999; width:100%; height:100%; padding-top:15%; background:#fff; text-align:center;}
 .ie8 p {margin-top:30px; font-size:16px; line-height:1.5;}
-.ie8 a {display:inline-block; height:2.5em; margin-top:30px; padding:0 1em; border-radius:1.25em; background:#00aeba; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#fff; -webkit-border-radius:1.25em; -moz-border-radius:1.25em; -ms-border-radius:1.25em; -o-border-radius:1.25em;}
+.ie8 a {display:inline-block; height:2.5em; margin-top:30px; padding:0 1em; border-radius:1.25em; background:#00aeba; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#fff;}
 
 /* 최상단 배너 */
-.upper_banner {background-color:#ccc; transform:scaleY(0); transform-origin:top; -webkit-transition:transform 0.2s; -moz-transition:transform 0.2s; -ms-transition:transform 0.2s; -o-transition:transform 0.2s; transition:transform 0.2s;}
+.upper_banner {background-color:#ccc; transform:scaleY(0); transform-origin:top; transition:transform 0.2s;}
 .upper_banner.on {transform:scaleY(1);}
 .upper_banner .banner_wrapper {position:relative; max-width:1920px; margin:0 auto;}
-.upper_banner .ctr_wrap {position:absolute; top:0; left:50%; width:100%; max-width:1400px; height:100%; padding:0 100px; -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%);}
+.upper_banner .ctr_wrap {position:absolute; top:0; left:50%; width:100%; max-width:1400px; height:100%; padding:0 100px; transform:translateX(-50%);}
 .upper_banner .ctr {position:absolute; right:100px; bottom:15px; font-size:0; text-indent:0;}
 .upper_banner .ctr button {overflow:hidden; position:relative; margin-left:25px; padding-right:20px; font-size:14px; line-height:1em; color:#333;}
 .upper_banner .ctr.white button {color:#fff;}
 .upper_banner .ctr button:before,.upper_banner .ctr button:after {position:absolute; right:0; width:17px; height:2px; background:#333; transform-origin:right; content:"";}
 .upper_banner .ctr.white button:before,.upper_banner .ctr.white button:after {background:#fff;}
-.upper_banner .ctr button:before {top:0; -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -ms-transform:rotate(-45deg); -o-transform:rotate(-45deg); transform:rotate(-45deg);}
-.upper_banner .ctr button:after {bottom:0; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg);}
+.upper_banner .ctr button:before {top:0; transform:rotate(-45deg);}
+.upper_banner .ctr button:after {bottom:0; transform:rotate(45deg);}
 
 @media screen and (max-width:1024px) {
     .upper_banner .ctr_wrap {padding:0 30px;}
