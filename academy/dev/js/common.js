@@ -170,9 +170,9 @@ $(function() {
     $(window).on('load scroll resize', function() {
 
         //사이드메뉴 제어
-        TweenLite.to($('.side_menu'), 2, {
+        TweenLite.to($('.side_menu'), 3, {
             top: $(this).height() / 2 + $(window).scrollTop(),
-            ease: Elastic.easeOut.config(1, 0.5)
+            ease: Elastic.easeOut.config(.25, .25)
         })
     });
 });
