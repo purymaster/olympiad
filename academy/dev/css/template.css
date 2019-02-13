@@ -39,7 +39,7 @@ html,body {height:100%;}
 html.fixed,html.fixed body {overflow:hidden;}
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,button {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; font-family:'Nanum Gothic',Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box;}
 
-input[type="text"],input[type="email"],input[type="number"],input[type="submit"],input[type="reset"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-box-sizing:border-box; box-sizing:border-box; margin:0; padding:0; border:none; border-radius:0; background:none; font-family:"Nanum Gothic",Dotum,"돋움",Helvetica,"Apple SD Gothic Neo",sans-serif; font-size:100%; letter-spacing:-0.04em; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box;}
+input[type="text"],input[type="email"],input[type="number"],input[type="submit"],input[type="reset"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-box-sizing:border-box; box-sizing:border-box; margin:0; padding:0; border:none; border-radius:0; background:none; font-family:"Nanum Gothic",Dotum,"돋움",Helvetica,"Apple SD Gothic Neo",sans-serif; font-size:100%; letter-spacing:-0.025em; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box;}
 :focus {outline:none;}
 input[type="text"]:focus,input[type="password"]:focus,textarea:focus {outline:1px solid #00687f;}
 body {position:relative; background:#fff; font-size:14px; line-height:1.8; color:#4c5358; word-wrap:break-word; word-break:keep-all; -webkit-text-size-adjust:none; -moz-text-size-adjust:none;}
@@ -90,6 +90,7 @@ button span {position:relative;}
 .grid_container.inner {max-width:980px; padding:0 !important;}
 
 @media (max-width:1024px) {
+    .wrap {padding-bottom:75px;}
     .grid_container {padding:0 30px;}
 }
 
@@ -113,8 +114,8 @@ button span {position:relative;}
 
 @media screen and (max-width:1024px) {
     .upper_banner .ctr_wrap {padding:0 30px;}
-    .upper_banner .ctr {right:30px;}
-    .upper_banner .ctr button {font-size:12px;}
+    .upper_banner .ctr {right:30px; bottom:10px;}
+    .upper_banner .ctr button {margin-left:15px; font-size:12px; line-height:14px;}
 }
 
 /* 사이드 메뉴 */
@@ -556,6 +557,17 @@ footer {background:#333; color:#fff;}
 .footer_lower .lower_wrap address a {color:inherit;}
 .footer_lower .lower_wrap address span {margin:0 12px; color:rgba(255,255,255,0.2);}
 
+@media (max-width:1024px) {
+    .footer_upper .bottom_menu {margin:0 -10px;}
+    .footer_upper .bottom_menu li {margin:0 10px;}
+    .footer_upper .bottom_menu li a {font-size:14px; line-height:50px;}
+    .footer_lower .logo {margin-right:30px;}
+}
+
+@media (max-width:599px) {
+
+}
+
 /*=========================================================
 6. 모달
 =========================================================*/
@@ -571,7 +583,7 @@ footer {background:#333; color:#fff;}
 
 /* 페이지 공통 */
 .sub_header {position:relative; z-index:1; height:290px; margin-top:130px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transition:opacity 2s; transition:opacity 2s; opacity:0;}
-.upper_banner_on .sub_header {margin-top:calc(130px + 10.9375vw);}
+.upper_banner_on .sub_header {margin-top:calc(130px + 10.9375%);}
 .sub_header.animated {opacity:1;}
 .sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
 .sub_header .sub_txt {font-family:"Nanum Square"; font-size:22px; font-weight:400; line-height:1.5em;}
@@ -586,7 +598,7 @@ footer {background:#333; color:#fff;}
 
 @media (max-width:1024px) {
     .sub_header {height:150px; margin-top:65px; padding-top:40px;}
-    .upper_banner_on .sub_header {margin-top:calc(65px + 20.5078125vw);}
+    .upper_banner_on .sub_header {margin-top:calc(65px + 20.5078125%);}
     .sub_header .sub_txt {font-size:18px;}
     .sub_header h2 {font-size:30px;}
     .sub_header h2:after {right:-40px; bottom:10px; width:33px; height:39px; background-position:-5px -123px; background-size:500px 500px;}

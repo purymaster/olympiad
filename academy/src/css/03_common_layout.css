@@ -11,6 +11,7 @@
 .grid_container.inner {max-width:980px; padding:0 !important;}
 
 @media (max-width:1024px) {
+    .wrap {padding-bottom:75px;}
     .grid_container {padding:0 30px;}
 }
 
@@ -34,8 +35,8 @@
 
 @media screen and (max-width:1024px) {
     .upper_banner .ctr_wrap {padding:0 30px;}
-    .upper_banner .ctr {right:30px;}
-    .upper_banner .ctr button {font-size:12px; line-height:14px;}
+    .upper_banner .ctr {right:30px; bottom:10px;}
+    .upper_banner .ctr button {margin-left:15px; font-size:12px; line-height:14px;}
 }
 
 /* 사이드 메뉴 */

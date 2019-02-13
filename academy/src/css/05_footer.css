@@ -13,3 +13,14 @@ footer {background:#333; color:#fff;}
 .footer_lower .lower_wrap {float:left; font-size:14px; line-height:1.8em;}
 .footer_lower .lower_wrap address a {color:inherit;}
 .footer_lower .lower_wrap address span {margin:0 12px; color:rgba(255,255,255,0.2);}
+
+@media (max-width:1024px) {
+    .footer_upper .bottom_menu {margin:0 -10px;}
+    .footer_upper .bottom_menu li {margin:0 10px;}
+    .footer_upper .bottom_menu li a {font-size:14px; line-height:50px;}
+    .footer_lower .logo {margin-right:30px;}
+}
+
+@media (max-width:599px) {
+
+}
