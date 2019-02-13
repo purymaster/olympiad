@@ -35,16 +35,23 @@
 @media screen and (max-width:1024px) {
     .upper_banner .ctr_wrap {padding:0 30px;}
     .upper_banner .ctr {right:30px;}
+    .upper_banner .ctr button {font-size:12px; line-height:14px;}
 }
 
 /* 사이드 메뉴 */
-.side_menu {position:absolute; top:0; right:0; z-index:10; background:#fff; color:#646f72; text-align:center; -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); transform:translateY(-50%);}
+.side_menu {position:absolute; top:0; right:0; z-index:10; background:#fff; color:#646f72; text-align:center; transform:translateY(-50%); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .side_menu ul {border:1px solid #ddd;}
 .side_menu ul li {position:relative; width:90px; height:102px;}
 .side_menu ul li:after {content:""; position:absolute; left:50%; bottom:0; width:40px; height:1px; margin-left:-20px; background:#ddd;}
 .side_menu ul li:last-child:after {display:none;}
-.side_menu ul li a {display:block; padding-top:64px; font-family:"Nanum Square"; font-size:12px; font-weight:700; color:inherit;}
+.side_menu ul li a {display:block; position:relative; padding-top:64px; font-family:"Nanum Square"; font-size:12px; font-weight:700; color:inherit;}
 .side_menu ul li a:hover {color:#028499;}
+.side_menu ul li a:after {position:absolute; top:20px; left:50%; width:40px; height:40px; background:red; transform:translateX(-50%); content:"";}
+.side_menu ul li:nth-child(1) a:after {} /* 홈으로 */
+.side_menu ul li:nth-child(2) a:after {} /* 상담신청 */
+.side_menu ul li:nth-child(3) a:after {} /* 설명회신청 */
+.side_menu ul li:nth-child(4) a:after {} /* 입학고사 */
+.side_menu ul li:nth-child(5) a:after {} /* 캠퍼스안내 */
 .side_menu ul .counsel {height:auto; padding:16px 0;}
 .side_menu ul .counsel span {display:block; line-height:16px;}
 .side_menu ul .counsel .tit {margin-bottom:60px; color:#646f72; font-family:"Nanum Square"; font-size:12px; line-height:20px;}
@@ -54,10 +61,12 @@
 .side_menu .move_top button:after {content:""; position:absolute; left:50%; top:50%; width:10px; height:10px; margin-left:-3px; margin-top:-3px; border-left:2px solid #999; border-top:2px solid #999; transform:rotate(45deg);}
 
 @media screen and (max-width:1024px) {
-    .side_menu {position:fixed; top:auto !important; bottom:0; width:100%; border-top:1px solid #999; transform:none;}
+    .side_menu {position:fixed; top:auto !important; bottom:0; width:100%; border-top:1px solid #999; transform:none; box-shadow:0 -5px 10px 0 rgba(0,0,0,0.1);}
     .side_menu ul {overflow:hidden; border:0;}
     .side_menu ul li {float:left; width:20%; height:auto;}
     .side_menu ul li:after {display:none;}
+    .side_menu ul li a {padding-top:54px;}
+    .side_menu ul li a:after {top:10px;}
 }
 
 /* 버튼 */
@@ -92,8 +101,8 @@ textarea {line-height:1.5em;}
 @media (max-width:599px) {
     .search_wrap input[type="text"] {width:calc(100% - 44px);}
 } */
-.search_wrap {display:inline-block; position:relative; font-size:0;}
-.search_wrap input[type="text"] {min-width:120px; padding-right:32px;}
+.search_wrap {display:inline-block; position:relative; min-width:120px; font-size:0;}
+.search_wrap input[type="text"] {width:100%; padding-right:32px;}
 .search_wrap button {position:absolute; right:8px; top:7px; width:16px; height:16px; text-indent:-9999px;}
 .search_wrap button:before,.search_wrap button:after {content:""; position:absolute;}
 .search_wrap button:before {bottom:2px; right:1px; width:6px; height:2px; background:#333; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg);}

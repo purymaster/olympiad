@@ -25,7 +25,7 @@ $(function() {
     /******************** 모바일 확인 ********************/
 
     $(window).on('load resize', function() {
-        $(this).width() > 1024 ? is_mobile = false : is_mobile = true;
+        window.outerWidth > 1024 ? is_mobile = false : is_mobile = true;
     });
 
     /******************** 상단 배너 하루 열지 않기 ********************/

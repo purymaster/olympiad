@@ -4,18 +4,25 @@
 =========================================================*/
 
 /* 페이지 공통 */
-.sub_header {position:relative; z-index:1; height:290px; margin-top:150px; padding-top:90px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transition:opacity 2s; -moz-transition:opacity 2s; -ms-transition:opacity 2s; -o-transition:opacity 2s; transition:opacity 2s; opacity:0;}
-.upper_banner_on .sub_header {margin-top:350px;}
+.sub_header {position:relative; z-index:1; height:290px; margin-top:130px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transition:opacity 2s; -moz-transition:opacity 2s; -ms-transition:opacity 2s; -o-transition:opacity 2s; transition:opacity 2s; opacity:0;}
+.upper_banner_on .sub_header {margin-top:calc(130px + 10.9375vw);}
 .sub_header.animated {opacity:1;}
 .sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
-.sub_header h2 {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:38px; font-weight:400; line-height:1.5em;}
+.sub_header .sub_txt {font-family:"Nanum Square"; font-size:22px; font-weight:400; line-height:1.5em;}
+.sub_header h2 {font-family:"Nanum Square"; font-size:38px; font-weight:700; line-height:1.5em;}
 .sub_content {padding:85px 0 100px;}
 .sub_content h3 {position:relative; margin-bottom:18px; font-family:"Nanum Square"; font-size:32px; line-height:1.5em; color:#333; text-align:center;}
 .sub_content h3 + .subpage_txt {margin-top:-10px; margin-bottom:55px; font-size:16px; line-height:1.75em; color:#666; text-align:center;}
  
+@media (min-width:1921px) {
+    .upper_banner_on .sub_header {margin-top:315px;}
+}
+
 @media (max-width:1024px) {
-    .sub_header {height:auto; padding-top:75px;}
-    .sub_header h2 {font-size:36px;}
+    .sub_header {height:150px; margin-top:65px; padding-top:40px;}
+    .upper_banner_on .sub_header {margin-top:calc(65px + 20.5078125vw);}
+    .sub_header .sub_txt {font-size:18px;}
+    .sub_header h2 {font-size:30px;}
     .sub_header h2:after {right:-40px; bottom:10px; width:33px; height:39px; background-position:-5px -123px; background-size:500px 500px;}
     .sub_header .sub_tit {margin-bottom:50px; font-size:18px;}
     .sub_content {padding-bottom:50px;}
@@ -23,7 +30,8 @@
 }
 
 @media (max-width:599px) {
-    .sub_header {padding-top:75px;}
+    .sub_header {height:120px; padding-top:30px;}
+    .sub_header .sub_txt {font-size:16px;}
     .sub_header h2 {font-size:24px;}
     .sub_header h2:after {display:none;}
     .sub_header .sub_tit {font-size:14px;}
