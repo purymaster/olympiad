@@ -30,31 +30,35 @@
     </p>
 			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
 	</div>
+	<!-- //하위 브라우저 접속시 화면 -->
 	<div class="wrap">
 		<header data-animation="">
 			<!-- 메인화면 최상단 배너 -->
 			<div class="upper_banner">
 				<div class="banner_wrapper">
 
-					<!-- PC 배너 -->
-					<img src="https://via.placeholder.com/1920x210/eeeeee" class="banner pc" alt="대체텍스트">
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner pc" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
 
-					<!-- 모바일 배너 -->
-					<img src="https://via.placeholder.com/1024x210/dddddd" class="banner mobile" alt="대체텍스트">
+					<!-- 모바일 배너(1024px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1024x210" class="banner mobile" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1024/210/?random" class="banner mobile" alt="대체텍스트"> -->
 
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
 					<div class="ctr_wrap">
-						<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
-						<div class="ctr">
-							<button class="today" type="button">
-								<span>오늘 하루 열지 않기</span>
-							</button>
-							<button class="close" type="button">
-								<span>닫기</span>
-							</button>
-						</div>
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
 					</div>
 				</div>
 			</div>
+			<!-- //메인화면 최상단 배너 -->
 			<div class="header">
 				<div class="grid_container">
 					<div class="header_wrap">
@@ -237,12 +241,56 @@
 				</div>
 			</div>
 			<div class="sub_content" style="height:3000px;">
-				<div class="grid_container">
-					<!-- 서브 페이지 컨텐츠 시작 -->
-					<h3 data-animation="fadeInUp" data-delay="7" class="subpage_tit">서브 페이지 타이틀</h3>
 
-					<!-- 서브 페이지 컨텐츠 끝 -->
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap">
+					<div class="grid_container inner">
+
+
+						<!-- 탭메뉴 -->
+						<div class="tab_menu">
+							<ul>
+								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+								<li><a href="#">탭메뉴1</a></li>
+
+								<li><a href="#">탭메뉴2</a></li>
+
+								<li><a href="#">탭메뉴3</a></li>
+
+								<li><a href="#">탭메뉴4</a></li>
+
+								<li><a href="#">탭메뉴5</a></li>
+
+							</ul>
+						</div>
+						<!-- //탭메뉴 -->
+
+
+						<p class="main_tit">
+							영재학교 입시 대비를 위해서는<br>
+							<strong>과학적 창의성 및 문제해결력 평가 준비가 필수적인 요소입니다.</strong>
+						</p>
+						<p class="txt">2단계 창의적 문제해결력 평가) 개념 학습과정에서의 지식을 활용, 탐구활동 및 자료분석, 실험설계 등을 통해 학생들의 수학, 과학적 역량을
+							평가하므로 다양하고 확장된 사고를 통해 창의적인 문제해결 능력이 필요합니다.</p>
+						<p class="txt">광진 영재센터의 수학, 과학 교재는 기본 개념학습, 대표유형에 대한 학습 뿐만 아니라 단원과 연계된 탐구활동 및 스스로 생각하고 응용하고 발전시킬
+							수 있는 다양한 내용을 통해 창의력을 배양할 수 있어 영재학교 입시의 핵심 평가 요소인 창의성 및 문제해결력 평가를 대비할 수 있는 최적화된 교재로 구성되어
+							있습니다.</p>
+					</div>
 				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<p data-animation="fadeInUp" data-delay="7" class="sub_txt">제목 서브 텍스트</p>
+							<h3 data-animation="fadeInUp" data-delay="7" class="subpage_tit">주제별 제목</h3>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
 			</div>
 		</div>
 		<footer>
@@ -257,30 +305,35 @@
 					</ul>
 					<div class="select_form">
 						<button type="button">
-							<span>브랜드 사이트</span>
+							<span lang="en">family site</span>
 						</button>
 						<ul>
-							<li><a href="#none">사이트A</a></li>
-							<li><a href="#none">사이트B</a></li>
-							<li><a href="#none">사이트C</a></li>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footer_lower">
-					<!-- <ul class="sns">
-                <li class="blog"><a href="#">블로그</a></li>
-            </ul> -->
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
 					<img class="logo" src="../img/img/img_footer_logo.png" alt="수학이 즐거운 올림피아드">
 					<div class="lower_wrap">
 						<address>
-							<p>
-								서울특별시 중랑구 망우동 563-16 이안빌딩 3층<br>
-                        ㈜올림피아드교육<span>|</span>
-								대표 양환주<span>|</span>
-								TEL : <a href="tel:1899-0949">1899-0949</a><br>
-                        사업자등록번호 206-81-24574 통신판매업신고 제2012-서울중랑-0082호<br>
-                        Copyright(c) 2018 OLYMPIAD All Rights reserved.
-                    </p>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
 						</address>
 					</div>
 				</div>
@@ -304,6 +357,7 @@
 				<button type="button">페이지 맨 위로 이동</button>
 			</div>
 		</div>
+		<!-- //사이드 메뉴 -->
 	</div>
 
 </body>

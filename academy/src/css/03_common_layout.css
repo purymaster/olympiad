@@ -7,8 +7,7 @@
 :before,:after {box-sizing:inherit;}
 .wrap {overflow-x:hidden; position:relative; min-width:320px;}
 .grid_container {position:relative; max-width:1400px; margin:0 auto; padding:0 100px;}
-.grid_container.wide {max-width:1400px; padding:0 !important;}
-.grid_container.inner {max-width:980px; padding:0 !important;}
+.grid_container.inner {max-width:1180px;}
 
 @media (max-width:1024px) {
     .wrap {padding-bottom:75px;}
@@ -21,22 +20,23 @@
 .ie8 a {display:inline-block; height:2.5em; margin-top:30px; padding:0 1em; border-radius:1.25em; background:#00aeba; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#fff;}
 
 /* 최상단 배너 */
-.upper_banner {background-color:#ccc; transform:scaleY(0); transform-origin:top; transition:transform 0.2s;}
+.upper_banner {background-color:#e6eff1; transform:scaleY(0); transform-origin:top; transition:transform 0.2s;}
 .upper_banner.on {transform:scaleY(1);}
 .upper_banner .banner_wrapper {position:relative; max-width:1920px; margin:0 auto;}
-.upper_banner .ctr_wrap {position:absolute; top:0; left:50%; width:100%; max-width:1400px; height:100%; padding:0 100px; transform:translateX(-50%);}
-.upper_banner .ctr {position:absolute; right:100px; bottom:15px; font-size:0; text-indent:0;}
-.upper_banner .ctr button {overflow:hidden; position:relative; margin-left:25px; padding-right:20px; font-size:14px; line-height:1em; color:#333;}
-.upper_banner .ctr.white button {color:#fff;}
-.upper_banner .ctr button:before,.upper_banner .ctr button:after {position:absolute; right:0; width:17px; height:2px; background:#333; transform-origin:right; content:"";}
-.upper_banner .ctr.white button:before,.upper_banner .ctr.white button:after {background:#fff;}
-.upper_banner .ctr button:before {top:0; transform:rotate(-45deg);}
-.upper_banner .ctr button:after {bottom:0; transform:rotate(45deg);}
+/* .upper_banner .banner_wrapper:after {position:absolute; top:0; right:0; bottom:0; left:0; z-index:0; background:rgba(255,255,255,0.3); content:"";} */
+.upper_banner .banner_wrapper a {position:absolute; top:0; left:0; z-index:1; width:100%; height:100%;}
+.upper_banner .ctr_wrap {position:absolute; bottom:10px; left:50%; z-index:2; min-width:210px; margin-left:21%; padding:5px; background:rgba(255,255,255,0.8); font-size:0; text-indent:0; transform:translateX(-50%);}
+.upper_banner .ctr_wrap button {position:relative; margin-left:25px; padding-right:20px; font-size:14px; line-height:1em; color:#333;}
+.upper_banner .ctr_wrap button:first-child {margin:0;}
+.upper_banner .ctr_wrap.white button {color:#fff;}
+.upper_banner .ctr_wrap button:before,.upper_banner .ctr_wrap button:after {position:absolute; right:0; width:17px; height:2px; background:#333; transform-origin:right; content:"";}
+.upper_banner .ctr_wrap.white button:before,.upper_banner .ctr.white button:after {background:#fff;}
+.upper_banner .ctr_wrap button:before {top:0; transform:rotate(-45deg);}
+.upper_banner .ctr_wrap button:after {bottom:0; transform:rotate(45deg);}
 
 @media screen and (max-width:1024px) {
-    .upper_banner .ctr_wrap {padding:0 30px;}
-    .upper_banner .ctr {right:30px; bottom:10px;}
-    .upper_banner .ctr button {margin-left:15px; font-size:12px; line-height:14px;}
+    .upper_banner .ctr_wrap {right:30px; bottom:10px; left:auto; min-width:0; margin:0; transform:none;}
+    .upper_banner .ctr_wrap button {margin-left:15px; font-size:12px; line-height:14px;}
 }
 
 /* 사이드 메뉴 */
@@ -55,10 +55,11 @@
 .side_menu ul li:nth-child(5) a:after {} /* 캠퍼스안내 */
 .side_menu ul .counsel {height:auto; padding:16px 0;}
 .side_menu ul .counsel span {display:block; line-height:16px;}
-.side_menu ul .counsel .tit {margin-bottom:60px; color:#646f72; font-family:"Nanum Square"; font-size:12px; line-height:20px;}
+.side_menu ul .counsel .tit {position:relative; margin-bottom:60px; color:#646f72; font-family:"Nanum Square"; font-size:12px; line-height:20px;}
+.side_menu ul .counsel .tit:after {position:absolute; top:30px; left:50%; width:40px; height:40px; background:red; transform:translateX(-50%); content:"";}
 .side_menu ul .counsel .phone {font-family:"Lato"; font-size:14px; font-weight:700; color:#333;}
 .side_menu ul .counsel .date {font-size:10px; letter-spacing:-0.05em;}
-.side_menu .move_top button {position:relative; width:100%; height:28px; background:#333; border:1px solid #666; text-indent:-9999px;}
+.side_menu .move_top button {position:relative; width:100%; height:28px; background:#333; text-indent:-9999px;}
 .side_menu .move_top button:after {content:""; position:absolute; left:50%; top:50%; width:10px; height:10px; margin-left:-3px; margin-top:-3px; border-left:2px solid #999; border-top:2px solid #999; transform:rotate(45deg);}
 
 @media screen and (max-width:1024px) {
@@ -82,11 +83,19 @@ input[type="text"],input[type="email"],input[type="number"],input[type="tel"],in
 textarea {line-height:1.5em;}
 
 /* 셀렉트박스 */
+/* .select_form {display:inline-block; position:relative; background:#fff; font-size:14px; text-align:left;}
+.select_form button {display:block; overflow:hidden; position:relative; width:100%; padding:0 35px 0 15px; border:1px solid #cdcdcd; background:#fff; line-height:38px; color:#666; text-align:inherit; text-overflow:ellipsis; white-space:nowrap; transition:border 0.2s;}
+.select_form button:after {position:absolute; top:50%; right:15px; width:10px; height:10px; margin-top:-8px; border-right:2px solid #008398; border-bottom:2px solid #008398; transform:rotate(45deg); transition:all 0.2s; content:"";}
+.select_form button.on:after {margin-top:-4px; transform:rotate(225deg);}
+.select_form ul {visibility:hidden; position:absolute; width:100%; height:0; padding:6px 15px; border:1px solid #cdcdcd; border-top:0; transition:opacity 0.5s; opacity:0;}
+.select_form button.on + ul {visibility:visible; z-index:1; height:auto; background:#fff; opacity:1;}
+.select_form ul li a {display:block; padding:5px 0; line-height:20px; color:#666;}
+.select_form ul li a:hover {font-weight:700; color:#008398;} */
 .select_form {display:inline-block; position:relative; background:#fff; font-size:14px; text-align:left;}
-.select_form button {display:block; overflow:hidden; position:relative; width:100%; padding:0 35px 0 15px; border:1px solid #cdcdcd; background:#fff; line-height:38px; color:#666; text-align:inherit; text-overflow:ellipsis; white-space:nowrap; -webkit-transition:border 0.2s; -moz-transition:border 0.2s; -ms-transition:border 0.2s; -o-transition:border 0.2s; transition:border 0.2s;}
-.select_form button:after {position:absolute; top:50%; right:15px; width:10px; height:10px; margin-top:-8px; border-right:2px solid #008398; border-bottom:2px solid #008398; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg); -webkit-transition:all 0.2s; -moz-transition:all 0.2s; -ms-transition:all 0.2s; -o-transition:all 0.2s; transition:all 0.2s; content:"";}
-.select_form button.on:after {margin-top:-4px; -webkit-transform:rotate(225deg); -moz-transform:rotate(225deg); -ms-transform:rotate(225deg); -o-transform:rotate(225deg); transform:rotate(225deg);}
-.select_form ul {visibility:hidden; position:absolute; width:100%; height:0; padding:6px 15px; border:1px solid #cdcdcd; border-top:0; -webkit-transition:opacity 0.5s; -moz-transition:opacity 0.5s; -ms-transition:opacity 0.5s; -o-transition:opacity 0.5s; transition:opacity 0.5s; opacity:0;}
+.select_form button {display:block; overflow:hidden; position:relative; width:100%; padding:0 35px 0 15px; border:1px solid #cdcdcd; background:#fff; line-height:38px; color:#666; text-align:inherit; text-overflow:ellipsis; white-space:nowrap; transition:border 0.2s;}
+.select_form button:after {position:absolute; top:50%; right:15px; width:10px; height:10px; margin-top:-8px; border-right:2px solid #008398; border-bottom:2px solid #008398; transform:rotate(45deg); transition:all 0.2s; content:"";}
+.select_form button.on:after {margin-top:-4px; transform:rotate(225deg);}
+.select_form ul {visibility:hidden; overflow:hidden; position:absolute; width:100%; height:0; padding:6px 15px; border:1px solid #cdcdcd; border-top:0; transition:opacity 0.5s; opacity:0;}
 .select_form button.on + ul {visibility:visible; z-index:1; height:auto; background:#fff; opacity:1;}
 .select_form ul li a {display:block; padding:5px 0; line-height:20px; color:#666;}
 .select_form ul li a:hover {font-weight:700; color:#008398;}

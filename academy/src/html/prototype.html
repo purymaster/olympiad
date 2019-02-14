@@ -10,7 +10,7 @@
             "title" : "서브 페이지 타이틀",
             "subtitle" : "서브 페이지 텍스트",
             "context" : {
-            "depth1_current" : "올림피아드 소개", 
+            "depth1_current" : "올림피아드 소개",
             "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
             "depth2_current" : "학원소개",
             "depth2_sublist" : ["학원소개","히스토리","기업수상","명예의전당","전국캠퍼스"],
@@ -18,12 +18,42 @@
             }
             })
             <div class="sub_content" style="height:3000px;">
-                <div class="grid_container">
-                    <!-- 서브 페이지 컨텐츠 시작 -->
-                    <h3 data-animation="fadeInUp" data-delay="7" class="subpage_tit">서브 페이지 타이틀</h3>
 
-                    <!-- 서브 페이지 컨텐츠 끝 -->
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap">
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["탭메뉴1","탭메뉴2","탭메뉴3","탭메뉴4","탭메뉴5"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            영재학교 입시 대비를 위해서는<br>
+                            <strong>과학적 창의성 및 문제해결력 평가 준비가 필수적인 요소입니다.</strong>
+                        </p>
+                        <p class="txt">2단계 창의적 문제해결력 평가) 개념 학습과정에서의 지식을 활용, 탐구활동 및 자료분석, 실험설계 등을 통해 학생들의 수학, 과학적 역량을
+                            평가하므로 다양하고 확장된 사고를 통해 창의적인 문제해결 능력이 필요합니다.</p>
+                        <p class="txt">광진 영재센터의 수학, 과학 교재는 기본 개념학습, 대표유형에 대한 학습 뿐만 아니라 단원과 연계된 탐구활동 및 스스로 생각하고 응용하고 발전시킬
+                            수 있는 다양한 내용을 통해 창의력을 배양할 수 있어 영재학교 입시의 핵심 평가 요소인 창의성 및 문제해결력 평가를 대비할 수 있는 최적화된 교재로 구성되어
+                            있습니다.</p>
+                    </div>
                 </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <p data-animation="fadeInUp" data-delay="7" class="sub_txt">제목 서브 텍스트</p>
+                            <h3 data-animation="fadeInUp" data-delay="7" class="subpage_tit">주제별 제목</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
             </div>
         </div>
         @@include('../inc/footer.html')

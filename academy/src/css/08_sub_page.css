@@ -3,16 +3,14 @@
 8. 서브 페이지별 스타일
 =========================================================*/
 
-/* 페이지 공통 */
-.sub_header {position:relative; z-index:1; height:290px; margin-top:130px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transition:opacity 2s; -moz-transition:opacity 2s; -ms-transition:opacity 2s; -o-transition:opacity 2s; transition:opacity 2s; opacity:0;}
+/* 서브 페이지 타이틀 */
+.sub_header {position:relative; z-index:1; height:290px; margin-top:130px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; transition:opacity 2s; opacity:0;}
 .upper_banner_on .sub_header {margin-top:calc(130px + 10.9375%);}
 .sub_header.animated {opacity:1;}
 .sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
 .sub_header .sub_txt {font-family:"Nanum Square"; font-size:22px; font-weight:400; line-height:1.5em;}
 .sub_header h2 {font-family:"Nanum Square"; font-size:38px; font-weight:700; line-height:1.5em;}
-.sub_content {padding:85px 0 100px;}
-.sub_content h3 {position:relative; margin-bottom:18px; font-family:"Nanum Square"; font-size:32px; line-height:1.5em; color:#333; text-align:center;}
-.sub_content h3 + .subpage_txt {margin-top:-10px; margin-bottom:55px; font-size:16px; line-height:1.75em; color:#666; text-align:center;}
+.sub_content {padding-bottom:100px;}
  
 @media (min-width:1921px) {
     .upper_banner_on .sub_header {margin-top:315px;}
@@ -26,7 +24,6 @@
     .sub_header h2:after {right:-40px; bottom:10px; width:33px; height:39px; background-position:-5px -123px; background-size:500px 500px;}
     .sub_header .sub_tit {margin-bottom:50px; font-size:18px;}
     .sub_content {padding-bottom:50px;}
-    .sub_content h3 {margin:30px 0; font-size:28px;}
 }
 
 @media (max-width:599px) {
@@ -36,14 +33,14 @@
     .sub_header h2:after {display:none;}
     .sub_header .sub_tit {font-size:14px;}
     .sub_content {padding-bottom:30px;}
-    .sub_content h3 {margin:30px 0; font-size:20px;}
 }
 
 /* 빵가루 */
 .breadcrumb {position:absolute; bottom:0; left:50%; width:100%; max-width:1200px; background:rgba(51,51,51,0.85); -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .breadcrumb > ul:after {display:block; clear:both; content:"";}
 .breadcrumb > ul > li {float:left; border-right:1px solid rgba(255,255,255,0.2);}
-.breadcrumb > ul > li.home a {display:block; text-indent:-9999px; width:50px; height:50px;}
+.breadcrumb > ul > li.home a {display:block; position:relative; text-indent:-9999px; width:50px; height:50px;}
+.breadcrumb > ul > li.home a:before {position:absolute; top:50%; left:50%; width:16px; height:16px; margin-top:-8px; margin-left:-8px; background:red; content:"";}
 .breadcrumb > ul > li .select_form {min-width:180px; max-width:320px; background:none;}
 .breadcrumb > ul > li .select_form button {border:0; background:none; color:#cdcdcd; line-height:50px; font-size:16px;}
 .breadcrumb .select_form button + ul {width:calc(100% + 2px); margin-left:-1px; background:rgba(255,255,255,0.95); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
@@ -53,21 +50,59 @@
 }
 
 /* 탭메뉴 */
-.tab_menu {display:table; position:absolute; bottom:0; left:50%; width:100%; max-width:1000px; -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); table-layout:fixed;}
+.tab_menu {display:table; width:100%; background:#fff; table-layout:fixed;}
 .tab_menu ul {display:table-row;}
 .tab_menu ul li {display:table-cell;}
-.tab_menu ul li a {display:block; position:relative; z-index:0; font-size:16px; line-height:55px; color:inherit;}
-.tab_menu ul li.on a,.tab_menu ul li a:hover {font-size:18px; font-weight:700;}
-.tab_menu ul li a:after {position:absolute; bottom:0; left:0; z-index:-1; width:calc(100% - 1px); height:100%; background:rgba(0,0,0,0.2); -webkit-transition:all 0.2s; -moz-transition:all 0.2s; -ms-transition:all 0.2s; -o-transition:all 0.2s; transition:all 0.2s; content:"";}
-.tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:-1px; height:calc(100% + 6px); background:#008398;}
+.tab_menu ul li a {display:block; position:relative; border:1px solid #ddd; border-right:0; font-family:"Nanum Square"; font-size:18px; line-height:48px; color:inherit; text-align:center; transition:all 0.5s;}
+.tab_menu ul li:last-child a {border-right:1px solid #ddd;}
+.tab_menu ul li.on,.tab_menu ul li a:hover {border-color:#1b8fa2; background:#1b8fa2; font-weight:700; color:#fff;}
 
 @media (max-width:1024px) {
-    .tab_menu {display:block; position:static; -webkit-transform:none; -moz-transform:none; -ms-transform:none; -o-transform:none; transform:none;}
-    .tab_menu ul {display:block; overflow:hidden;}
-    .tab_menu ul li {display:block; float:left; margin-top:1px;}
-    .tab_menu ul li a {font-size:14px; line-height:40px;}
-    .tab_menu ul li.on a,.tab_menu ul li a:hover {font-size:16px;}
-    .tab_menu ul.type2 li {width:50%;}
-    .tab_menu ul.type3 li {width:33.33%;}
-    .tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:0; height:100%;}
+    .tab_menu {display:block; background:none;}
+    .tab_menu ul {display:block; overflow:hidden; border-top:1px solid #ddd; border-left:1px solid #ddd;}
+    .tab_menu ul li {float:left; width:33.33%; background:#fff;}
+    .tab_menu ul li a {border:0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:16px; line-height:2.5em;}
+}
+
+@media (max-width:599px) {
+    .tab_menu ul li {width:100%;}
+    .tab_menu ul li a {font-size:14px;}
+}
+
+/* 서브 페이지 상단 */
+.sub_upper_wrap {padding:80px 0 50px; background:#e6eff1; text-align:center;}
+.sub_upper_wrap .main_tit {position:relative; margin:75px auto 0; font-family:"Nanum Square"; font-size:40px; line-height:1.4em;}
+.sub_upper_wrap .main_tit:before {content:""; position:absolute; left:50%; top:-30px; margin-left:-9px; width:18px; height:20px; background:red;}
+.sub_upper_wrap .main_tit strong {font-family:inherit; font-weight:900;}
+.sub_upper_wrap .txt {width:60%; margin:30px auto 0; font-family:"Nanum Square"; font-size:18px; line-height:1.6em;}
+
+@media (max-width:1024px) {
+    .sub_upper_wrap {padding:30px 0;}
+    .sub_upper_wrap .main_tit {width:90%; margin-top:50px; font-size:30px;}
+    .sub_upper_wrap .main_tit br {display:none;}
+    .sub_upper_wrap .txt {width:90%; margin-top:15px; font-size:16px;}
+}
+
+@media (max-width:599px) {
+    .sub_upper_wrap .main_tit {font-size:20px;}
+    .sub_upper_wrap .txt {font-size:14px;}
+}
+
+/* 서브 페이지 내용 */
+.sub_lower_wrap {padding:80px 0 50px;}
+.sub_tit_wrap {position:relative; margin-bottom:30px; padding-top:35px; text-align:center;}
+.sub_tit_wrap:after {content:""; position:absolute; left:50%; top:0; margin-left:-9px; width:18px; height:20px; background:red;}
+.sub_tit_wrap .sub_txt {font-family:"Nanum Square"; font-size:24px; line-height:1.5em;}
+.sub_tit_wrap h3 {font-family:"Nanum Square"; font-size:32px; font-weight:700; line-height:1.5em;}
+
+@media (max-width:1024px) {
+    .sub_lower_wrap {padding:30px 0;}
+    .sub_tit_wrap {padding-top:30px;}
+    .sub_tit_wrap .sub_txt {font-size:18px;}
+    .sub_tit_wrap h3 {font-size:24px;}
+}
+
+@media (max-width:599px) {
+    .sub_tit_wrap .sub_txt {font-size:14px;}
+    .sub_tit_wrap h3 {font-size:18px;}
 }
