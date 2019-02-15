@@ -159,26 +159,123 @@
 				</div>
 			</div>
 		</header>
-		<div class="content">
+		<div class="main_content">
 
-			<!-- 메인 슬라이드 -->
-			<div class="main_slide">
+			<!-- 메인 슬라이드 영역 -->
+			<div class="main_visual">
+
+				<!-- 메인 슬라이드 -->
+				<div class="main_slide">
+					<ul class="slide">
+						<!-- [D] 현재 보이는 슬라이드 li에 on 클래스 부여 -->
+						<li style="background-image:url('https://via.placeholder.com/1920x635')" ;>
+							<div class="grid_container txt_view">
+								<div class="txt_wrap">
+									<p class="tit">수학이 즐거운 올림피아드</p>
+									<p class="txt">
+										함께 문제를 해결해 나가는 수업 과정을 통해 협동심과<br>
+                                        커뮤니케이션 능력은 물론, 발표력, 창의력까지 향상됩니다.
+                                    </p>
+								</div>
+							</div>
+						</li>
+						<li style="background-image:url('https://picsum.photos/1920/635/?random')" ;>
+							<div class="grid_container txt_view">
+								<div class="txt_wrap">
+									<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+									<p class="txt">
+										긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+									</p>
+								</div>
+							</div>
+						</li>
+						<li style="background-image:url('https://via.placeholder.com/1920x635')" ;>
+							<div class="grid_container txt_view">
+								<div class="txt_wrap">
+									<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+									<p class="txt">
+										긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="main_slide_pager">
+					<div class="grid_container">
+						<ul class="pager">
+							<!-- [D] 현재 보이는 슬라이드 li에 on 클래스 부여 -->
+							<li><a href="#">수학이 즐거운 올림피아드</a></li>
+							<li><a href="#">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</a></li>
+							<li><a href="#">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //메인 슬라이드 -->
+				<!-- [D] 화면 확인용 스크립트 -->
+				<script>
+					function show_slide(val) {
+                        $('.main_slide,.main_slide_pager').find('li').removeClass('on');
+                        $('.main_slide,.main_slide_pager').find('li:eq(' + val + ')').addClass('on');
+                    };
+                    $(function () {
+                        show_slide(0);
+                        $('.main_slide_pager a').on('click', function () {
+                            var idx = $(this).parent().prevAll().length;
+                            show_slide(idx);
+                        });
+                    });
+                </script>
+				<!-- [D] //화면 확인용 스크립트 -->
+
+				<!-- 공지사항 슬라이드 -->
+				<div class="notice_slide_wrap">
+					<div class="grid_container">
+						<div class="notice_slide">
+							<h2>공지사항</h2>
+							<ul class="slide">
+								<li class="on">
+									<div class="txt_wrap">
+										<p class="tit">올림피아드교육 입시정책 분석 설명회</p>
+										<hr>
+										<p class="txt">무엇이, 어떻게 변했을까? 초,중등 우리 아이 입시전략 이대로 괜찮을까?</p>
+										<a href="#">더보기</a>
+									</div>
+								</li>
+								<li>
+									<div class="txt_wrap">
+										<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+										<hr>
+										<p class="txt">긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용</p>
+										<a href="#">더보기</a>
+									</div>
+								</li>
+							</ul>
+							<ul class="ctr">
+								<li><button class="prev" type="button">이전</button></li>
+								<li><button class="next" type="button">다음</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //공지사항 슬라이드 -->
 
 			</div>
-			<!-- //메인 슬라이드 -->
+			<!-- //메인 슬라이드 영역 -->
 
 			<!-- 배너 영역 -->
-			<section class="main_banner">
-				<div class="grid_container">
-					<h2 class="hidden">올림피아드 주요 소식</h2>
-				</div>
-			</section>
+			<!-- <section class="main_banner">
+                <div class="grid_container">
+                    <h2 class="hidden">올림피아드 주요 소식</h2>
+
+                </div>
+            </section> -->
 			<!-- //배너 영역 -->
 
 			<!-- 올림피아드 교육 안내 -->
 			<section class="edu_list">
 				<div class="grid_container">
-					<h2>올림피아드 교육 안내 </h2>
+					<h2 class="hidden">올림피아드 교육 안내</h2>
 					<ul>
 						<li><a href="#">초등수학</a></li>
 						<li><a href="#">중등수학</a></li>

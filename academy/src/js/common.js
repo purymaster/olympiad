@@ -1,3 +1,4 @@
+
 $(function () {
 
     var screen = $('html,body'),
@@ -172,7 +173,7 @@ $(function () {
         //사이드메뉴 제어
         TweenLite.to($('.side_menu'), 3, {
             top: $(this).height() / 2 + $(window).scrollTop(),
-            ease: Elastic.easeOut.config(.25,.25)
+            ease: Elastic.easeOut.config(.25, .25)
         })
     });
 });

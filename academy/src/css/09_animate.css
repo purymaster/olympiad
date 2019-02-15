@@ -45,4 +45,4 @@
 .fadeInLeft {-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;}
 .fadeInRight {-webkit-animation-name:fadeInRight; animation-name:fadeInRight;}
 .wait-animation {-webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
-.animated {-webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-delay:1s;}
+.animated {-webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both;}

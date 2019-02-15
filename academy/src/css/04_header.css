@@ -90,5 +90,5 @@ header.animated:after {transform:scaleX(1);}
 }
 
 @media (max-width:599px) {
-    .nav_wrap {width:290px;}    
+    .nav_wrap {width:290px; padding:15px;}     
 }
