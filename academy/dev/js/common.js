@@ -2,7 +2,15 @@ $(function() {
 
     var screen = $('html,body'),
         screen_fix = false,
-        is_mobile = false; //모바일 판별 변수
+        is_mobile = false, //모바일 판별 변수
+        is_android_user = false; // useragent 안드로이드 판별 변수
+
+    /******************** Useragent 체크 ********************/
+
+    var android_validator = new Array('Android', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+    for (var word in android_validator) {
+        if (navigator.userAgent.match(android_validator[word]) != null) is_android_user = true;
+    }
 
     /******************** 하위브라우저 접근 차단 ********************/
 
@@ -60,7 +68,7 @@ $(function() {
     };
 
     (function check_cookie() {
-        get_cookie("no_pop") != "" ?
+        get_cookie("no_pop") !== "" ?
             (upper_banner.hide(),
                 $('body').removeClass('upper_banner_on')) :
             (upper_banner.addClass('on'),
@@ -74,33 +82,25 @@ $(function() {
 
     /******************** 네비게이션 제어 ********************/
 
-    var nav_open_btn = $('.header_wrap .menu'),
-        nav_close_btn = $('nav .close'),
-        nav = $('nav'),
+    var nav = $('nav'),
         nav_2depth = $('.header_wrap .menu_2depth'); //모바일 2뎁스 메뉴
 
-    //네비게이션 열기
-    nav_open_btn.on('click', function() {
-        screen.addClass('fixed');
-        nav.addClass('on');
+    //네비게이션 제어
+    $('.header_wrap').on('click', 'button', function() {
+        $('.group_nav').find('input').val('');
         nav_2depth.hide();
-        screen_fix = true;
-    });
-
-    //네비게이션 닫기
-    nav_close_btn.on('click', function() {
-        screen.removeClass('fixed');
-        nav.removeClass('on');
-        nav_2depth.hide();
-        screen_fix = false;
+        $(this).hasClass('menu') ?
+            (screen.addClass('fixed'),
+                nav.addClass('on'),
+                screen_fix = true) :
+            (screen.removeClass('fixed'),
+                nav.removeClass('on'),
+                screen_fix = false)
     });
 
     //네비게이션, 팝업 오픈시 스크롤 방지
     screen.on('scroll touchmove', function(e) {
-        if (screen_fix) {
-            e.preventDefault();
-            return false;
-        }
+        if (screen_fix) return false;
     });
 
     //모바일 네비게이션 제어
@@ -115,8 +115,11 @@ $(function() {
     });
 
     $(window).on('resize', function() {
-        is_mobile ?
+        if (!is_android_user)
+            is_mobile ?
             (nav.removeClass('on'),
+                $('.header_wrap .menu').blur(),
+                $('.group_nav').find('input').val === '',
                 nav_2depth.hide()) :
             nav_2depth.show();
     });
