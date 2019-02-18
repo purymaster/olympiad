@@ -6,7 +6,7 @@
 .main_content {margin-top:130px;}
 .upper_banner_on .main_content {margin-top:calc(130px + 10.9375%);}
 
-@media (max-width:1921px) {
+@media (min-width:1921px) {
     .upper_banner_on .main_content {margin-top:340px;}
 }
 
