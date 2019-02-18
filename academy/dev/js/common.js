@@ -45,8 +45,8 @@ $(function() {
         var ca = decoded_cookie.split(';');
         for (var i = 0; i < ca.length; i++) {
             var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1);
-            if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            while (c.charAt(0) === ' ') c = c.substring(1);
+            if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
         }
         return "";
     }
@@ -96,14 +96,15 @@ $(function() {
     });
 
     //네비게이션, 팝업 오픈시 스크롤 방지
-    screen.on('scroll touchmove', function(e) {
-        if (screen_fix) return false;
-    });
+    // screen.on('scroll touchmove', function (e) {
+    //     e.preventDefault();
+    //     if (screen_fix) return false;
+    // });
 
     //모바일 네비게이션 제어
     $('.header_wrap .menu_1depth > li > a').on('click', function() {
         if (is_mobile) {
-            $(this).next('.menu_2depth').css('display') == 'block' ?
+            $(this).next('.menu_2depth').css('display') === 'block' ?
                 nav_2depth.stop().slideUp() :
                 (nav_2depth.stop().slideUp(),
                     $(this).next('.menu_2depth').stop().slideDown());
