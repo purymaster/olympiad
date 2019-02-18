@@ -6,6 +6,10 @@
 .main_content {margin-top:130px;}
 .upper_banner_on .main_content {margin-top:calc(130px + 10.9375%);}
 
+@media (max-width:1921px) {
+    .upper_banner_on .main_content {margin-top:340px;}
+}
+
 @media (max-width:1024px) {
     .main_content {margin-top:65px;}
     .upper_banner_on .main_content {margin-top:calc(65px + 20.5078125%);}
