@@ -14,7 +14,6 @@
     src:url("../font/ngothic_regular.otf"); 
     src:local("?"), 
     url("../font/ngothic_regular.eot?#iefix") format("embedded-opentype"), 
-    url("../font/ngothic_regular.ttf") format("truetype"),
     url("../font/ngothic_regular.woff") format("woff");
 }
 
@@ -26,6 +25,27 @@
     src:url("../font/nsquare_regular.otf");
     src:local("?"),
     url("../font/nsquare_regular.eot?#iefix") format("embedded-opentype"),
-    url("../font/nsquare_regular.ttf") format("truetype"),
     url("../font/nsquare_regular.woff") format("woff");
+}
+
+/* 나눔스퀘어 L */
+@font-face {
+    font-family:"Nanum Square Light";
+    font-weight:normal;
+    font-style:normal;
+    src:url("../font/nsquare_light.otf");
+    src:local("?"),
+    url("../font/nsquare_light.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_light.woff") format("woff");
+}
+
+/* 나눔스퀘어 */
+@font-face {
+    font-family:"Nanum Square Extrabold";
+    font-weight:normal;
+    font-style:normal;
+    src:url("../font/nsquare_extrabold.otf");
+    src:local("?"),
+    url("../font/nsquare_extrabold.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_extrabold.woff") format("woff");
 }

@@ -51,11 +51,12 @@ footer {background:#505354; color:#fff;}
 
 @media (max-width:599px) {
     .footer_upper .bottom_menu {display:block; max-width:100%;}
+    .footer_upper .bottom_menu li a {font-size:12px; line-height:2em;}
     .footer_upper .select_form {position:static; width:100%;}
-    .footer_upper .select_form button {line-height:40px; background:#fff; color:#333;}
+    .footer_upper .select_form button {border:1px solid #fff; background:#505354; line-height:38px; color:#fff;}
     .footer_upper .select_form button:after {right:15px;}
-    .footer_upper .select_form button.on + ul {bottom:40px; border:1px solid #505354;  width:calc(100% + 2px); margin-left:-1px; background:#fff;}
-    .footer_upper .select_form ul li a {color:#333;}
+    .footer_upper .select_form button.on + ul {bottom:40px; width:100%; border:1px solid #fff; background:#505354;}
+    .footer_upper .select_form ul li a {color:#fff;}
     .footer_lower {padding-top:15px;}
     .footer_lower .sns {position:static; margin-bottom:15px; text-align:center;}
     .footer_lower .sns li {display:inline-block; float:none;}
