@@ -162,25 +162,237 @@
 		<div class="sub_wrap">
 			<div class="sub_header type1" data-animation="">
 				<div class="grid_container">
-					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">@@subtitle</p>
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">서브 페이지 텍스트</p>
 					<h2 data-animation="fadeInUp" data-delay="3">서브 페이지 타이틀</h2>
 				</div>
 				<div class="breadcrumb">
 					<ul>
 						<li class="home"><a href="#">홈</a></li>
 
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>올림피아드 소개</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">올림피아드 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">초/중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">고등부</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+									<li>
+										<a href="#none">예약상담</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>학원소개</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">학원소개</a>
+									</li>
+
+									<li>
+										<a href="#none">히스토리</a>
+									</li>
+
+									<li>
+										<a href="#none">기업수상</a>
+									</li>
+
+									<li>
+										<a href="#none">명예의 전당</a>
+									</li>
+
+									<li>
+										<a href="#none">전국 캠퍼스</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
 
 
 					</ul>
 				</div>
 			</div>
 			<div class="sub_content">
-				<div class="grid_container">
-					<!-- 서브 페이지 컨텐츠 시작 -->
-					<h3 data-animation="fadeInUp" data-delay="10" class="subpage_tit">서브 페이지 타이틀</h3>
 
-					<!-- 서브 페이지 컨텐츠 끝 -->
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+
+
+						<!-- 탭메뉴 -->
+						<div class="tab_menu">
+							<ul>
+								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+								<li><a href="#">탭메뉴1</a></li>
+
+								<li><a href="#">탭메뉴2</a></li>
+
+								<li><a href="#">탭메뉴3</a></li>
+
+								<li><a href="#">탭메뉴4</a></li>
+
+								<li><a href="#">탭메뉴5</a></li>
+
+							</ul>
+						</div>
+						<!-- //탭메뉴 -->
+
+
+						<p class="main_tit">
+							페이지에 내용에 대한 문구<br>
+							<strong>강조된 텍스트</strong>
+						</p>
+						<p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+							an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+							has survived not only five centuries, but also the leap into electronic typesetting,
+							remaining essentially unchanged. It was popularised in the 1960s with the release of
+							Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+							software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						<p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+							an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+							has survived not only five centuries, but also the leap into electronic typesetting,
+							remaining essentially unchanged. It was popularised in the 1960s with the release of
+							Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+							software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
 				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<p data-animation="fadeInUp" data-delay="0" class="sub_txt">제목 서브 텍스트</p>
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">주제별 제목</h3>
+							<p data-animation="fadeInUp" data-delay="4" class="txt_info">주제에 대한 <strong>설명 문구</strong>
+							</p>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<style>
+							p.guide_tit {
+                                margin: 15px 0;
+                                padding-left: 1em;
+                                background: #00687f;
+                                font-size: 16px;
+                                line-height: 2em;
+                                color: #fff;
+                            }
+                        </style>
+
+						<div class="sub_cont_wrap">
+
+							<p class="guide_tit">텍스트 목록</p>
+
+							<!-- 텍스트 목록 -->
+							<ul class="txt_list type1">
+								<li>리스트1</li>
+							</ul>
+							<!-- //텍스트 목록 -->
+
+							<p class="guide_tit">데이터 테이블</p>
+
+							<!-- 데이터 테이블 -->
+							<div class="data_table">
+								<table>
+									<colgroup>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">항목</th>
+											<th scope="col">항목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">
+												텍스트
+											</th>
+											<td>
+												<ul class="txt_list type1">
+													<li>리스트</li>
+													<li>리스트</li>
+													<li>리스트</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //데이터 테이블 -->
+
+							<!-- 데이터 테이블 -->
+							<div class="data_table" data-width="1900">
+								<table>
+									<colgroup>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">항목</th>
+											<th scope="col">항목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">
+												텍스트
+											</th>
+											<td>
+												<ul class="txt_list type1">
+													<li>리스트</li>
+													<li>리스트</li>
+													<li>리스트</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //데이터 테이블 -->
+
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
 			</div>
 		</div>
 		<footer>

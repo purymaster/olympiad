@@ -1,0 +1,112 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "전국 캠퍼스",
+            "subtitle" : "올림피아드 소개",
+            "context" : {
+            "depth1_current" : "올림피아드 소개",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth2_current" : "전국 캠퍼스",
+            "depth2_sublist" : ["학원소개","히스토리","기업수상","명예의 전당","전국 캠퍼스"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content campus_find">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+                        <p class="main_tit">
+                            <strong>올림피아드 캠퍼스 안내</strong>
+                        </p>
+
+                        <!-- 지역 검색 영역 -->
+                        <div class="campus_map_wrap">
+                            <div class="campus_option">
+                                <p class="tit">찾으시는 지역의 캠퍼스를 확인하실 수 있습니다.</p>
+
+                            </div>
+                            <div class="campus_map">
+
+                                <div class="option_wrap">
+                                    <div class="select_form" style="width:150px;">
+                                        <button type="button">
+                                            <span>시/도 선택</span>
+                                        </button>
+                                        <ul>
+                                            <li><a href="#none">서울특별시</a></li>
+                                            <li><a href="#none">부산광역시</a></li>
+                                            <li><a href="#none">대구광역시</a></li>
+                                            <li><a href="#none">인천광역시</a></li>
+                                            <li><a href="#none">광주광역시</a></li>
+                                            <li><a href="#none">대전광역시</a></li>
+                                            <li><a href="#none">울산광역시</a></li>
+                                            <li><a href="#none">세종특별자치시</a></li>
+                                            <li><a href="#none">경기도</a></li>
+                                            <li><a href="#none">강원도</a></li>
+                                            <li><a href="#none">충청북도</a></li>
+                                            <li><a href="#none">충청남도</a></li>
+                                            <li><a href="#none">전라북도</a></li>
+                                            <li><a href="#none">전라남도</a></li>
+                                            <li><a href="#none">경상북도</a></li>
+                                            <li><a href="#none">경상남도</a></li>
+                                            <li><a href="#none">제주특별자치도</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="select_form" style="width:150px;">
+                                        <button type="button">
+                                            <span>시/군/구 선택</span>
+                                        </button>
+                                        <ul>
+                                            <li><a href="#none">A구</a></li>
+                                            <li><a href="#none">B구</a></li>
+                                            <li><a href="#none">C구</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="search_wrap">
+                                    <input type="text" title="검색어 입력">
+                                    <button type="submit">검색</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- //지역 검색 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="grid_container inner">
+                                1234
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

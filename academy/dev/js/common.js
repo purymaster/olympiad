@@ -3,13 +3,14 @@ $(function() {
     var screen = $('html,body'),
         screen_fix = false,
         is_mobile = false, //모바일 판별 변수
-        is_android_user = false; // useragent 안드로이드 판별 변수
+        is_android_user = false, // useragent 안드로이드 판별 변수
+        table_width;
 
     /******************** Useragent 체크 ********************/
 
     var android_validator = new Array('Android', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
     for (var word in android_validator) {
-        if (navigator.userAgent.match(android_validator[word]) != null) is_android_user = true;
+        if (navigator.userAgent.match(android_validator[word]) !== null) is_android_user = true;
     }
 
     /******************** 하위브라우저 접근 차단 ********************/
@@ -30,10 +31,14 @@ $(function() {
             select_form.find('button').removeClass('on');
     });
 
-    /******************** 모바일 확인 ********************/
+    /******************** 모바일 판별 및 데이터 테이블 너비 적용 ********************/
 
     $(window).on('load resize', function() {
         window.outerWidth > 1024 ? is_mobile = false : is_mobile = true;
+        $('.data_table').each(function() {
+            table_width = $(this).data('width');
+            window.outerWidth > 1024 ? $(this).find('table').css('width', '') : $(this).find('table').css('width', table_width);
+        })
     });
 
     /******************** 상단 배너 하루 열지 않기 ********************/
