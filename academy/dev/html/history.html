@@ -261,27 +261,8 @@
 						<!-- 스태틱 페이지 컨텐츠 영역 -->
 						<div class="sub_cont_wrap">
 
-							<!-- 히스토리 탭메뉴 스크립트 -->
-							<script>
-								$(function () {
-                                    var view_data;
-
-                                    $('.history_wrap:eq(0)').show();
-                                    $('.history_tab li:eq(0) button').addClass('on');
-
-                                    $('.history_tab button').on('click', function () {
-                                        view_data = $(this).parent().index();
-                                        $('.history_wrap').hide();
-                                        $('.history_tab button').removeClass('on');
-                                        $('.history_wrap:eq(' + view_data + ')').show();
-                                        $(this).addClass('on');
-                                    })
-                                });
-                            </script>
-							<!-- //히스토리 탭메뉴 스크립트 -->
-
 							<!-- 히스토리 탭메뉴 -->
-							<div class="history_tab">
+							<div class="tab_menu history_tab">
 								<ul>
 									<li>
 										<button type="button">
@@ -304,7 +285,7 @@
 
 							<!-- 히스토리(2016 ~ 현재) -->
 							<h4 class="hidden">2016 ~ 현재</h4>
-							<div class="history_wrap">
+							<div class="tab_view history_wrap">
 								<span class="tit">올림피아드 학원이 걸어온길</span>
 								<div class="history_list">
 									<dl>
@@ -355,7 +336,7 @@
 
 							<!-- 히스토리(2011 ~ 2015) -->
 							<h4 class="hidden">2011 ~ 2015</h4>
-							<div class="history_wrap">
+							<div class="tab_view history_wrap">
 								<span class="tit">올림피아드 학원이 걸어온길</span>
 								<div class="history_list">
 									<dl>
@@ -422,7 +403,7 @@
 
 							<!-- 히스토리(2000 ~ 2010) -->
 							<h4 class="hidden">2000 ~ 2010</h4>
-							<div class="history_wrap">
+							<div class="tab_view history_wrap">
 								<span class="tit">올림피아드 학원이 걸어온길</span>
 								<div class="history_list">
 									<dl>

@@ -139,7 +139,9 @@ label {cursor:pointer;}
 .data_table table {width:calc(100% + 1px); margin-left:-1px; border-top:3px solid #333;}
 .data_table table th,.data_table table td {border-left:1px solid #cdcdcd;}
 .data_table table thead th {border-bottom:1px solid #333; background:#f5f5f5; font-size:16px;}
+.data_table table tr th:first-child {border-right:2px solid #cdcdcd;}
 .data_table table td.left {text-align:left;}
+.data_table.no_left_th table thead th {border-right:0;}
 
 @keyframes scroll_txt {
     0% {transform:translateX(0px);}

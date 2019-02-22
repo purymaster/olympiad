@@ -254,8 +254,10 @@
 						<script>
 							$(function () {
                                 $('.campus_find button').on('click', function () {
-                                    $('.campus_find li').removeClass('on');
-                                    $(this).parents('li').addClass('on');
+                                    $(this).parents('li').hasClass('on') ?
+                                        $('.campus_find li').removeClass('on') :
+                                        ($('.campus_find li').removeClass('on'),
+                                            $(this).parents('li').addClass('on'));
                                 });
                             });
                         </script>
@@ -345,7 +347,7 @@
 
 							<!-- 지역 검색 영역 -->
 							<div class="campus_option_wrap">
-								<p class="tit">찾으시는 지역의 캠퍼스를<br>확인하실 수 있습니다.</p>
+								<p class="tit">찾으시는 지역의 캠퍼스를<br> 확인하실 수 있습니다.</p>
 									<div class="campus_option">
 										<div class="option_wrap">
 											<div class="select_form">

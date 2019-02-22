@@ -20,7 +20,8 @@
             <div class="sub_content">
 
                 <!-- 서브 페이지 상단 -->
-                <div class="sub_upper_wrap bg"> <!-- bg 클래스 추가시 배경색 추가 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container inner">
 
                         @@include('../inc/tab.html',{
@@ -65,6 +66,51 @@
                         <!-- 스태틱 페이지 컨텐츠 영역 -->
                         <div class="sub_cont_wrap">
 
+                            <!-- 서브 페이지 내용 탭메뉴(버튼) -->
+                            <div class="tab_menu">
+                                <ul>
+                                    <li>
+                                        <button type="button">
+                                            <span>탭메뉴1</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <span>탭메뉴2</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <span>탭메뉴3</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //서브 페이지 내용 탭메뉴(링크) -->
+
+                            <!-- 서브 페이지 내용 탭메뉴 -->
+                            <div class="tab_menu" style="margin-top:10px;">
+                                <ul>
+                                    <!-- 현재 페이지에 해당되는 탭 li에 on 클래스 사용 -->
+                                    <li>
+                                        <a href="#">
+                                            <span>탭메뉴1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>탭메뉴2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>탭메뉴3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //서브 페이지 내용 탭메뉴 -->
+
                         </div>
                         <!-- //스태틱 페이지 컨텐츠 영역 -->
 
@@ -75,7 +121,8 @@
                 <!-- 서브 페이지 내용 -->
                 <div class="sub_lower_wrap" style="background-image:url('https://picsum.photos/1920/600/?random');">
                     <div class="grid_container inner">
-                        <div class="sub_tit_wrap white"> <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                        <div class="sub_tit_wrap white">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
                             <p data-animation="fadeInUp" data-delay="0" class="sub_txt">제목 서브 텍스트</p>
                             <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">주제별 제목</h3>
                             <p data-animation="fadeInUp" data-delay="4" class="txt_info">주제에 대한 <strong>설명 문구</strong>

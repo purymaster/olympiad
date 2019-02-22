@@ -129,6 +129,27 @@ $(function() {
             nav_2depth.show();
     });
 
+    /******************** 서브 페이지 내용 탭메뉴 정의 ********************/
+
+    //페이지 이동이 필요없는 탭메뉴는 button 태그 사용
+    //페이지 이동이 필요한 탭메뉴는 a 태그 사용하고 페이지 링크로 처리
+    //아래의 스크립트는 button 태그로 구성한 페이지에만 대응
+
+    var view_btn = $('.sub_lower_wrap .tab_menu button'),
+        view_list = $('.sub_lower_wrap .tab_menu li'),
+        view_data;
+
+    $('.tab_view:eq(0)').show();
+    if (view_list.has('button')) view_list.eq(0).addClass('on');
+
+    view_btn.on('click', function() {
+        view_data = $(this).parents('li').index();
+        $('.tab_view').hide();
+        view_list.removeClass('on');
+        $('.tab_view:eq(' + view_data + ')').show();
+        $(this).parents('li').addClass('on');
+    });
+
     /******************** 스크롤 애니메이션 정의 ********************/
 
     var move_el = $('*[data-animation]'), //무빙 요소
