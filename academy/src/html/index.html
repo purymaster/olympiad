@@ -10,10 +10,10 @@
             <div class="main_visual">
 
                 <!-- 메인 슬라이드 -->
-                <div class="main_slide">
-                    <ul class="slide">
+                <div class="main_slide swiper-container">
+                    <ul class="slide swiper-wrapper">
                         <!-- [D] 현재 보이는 슬라이드 li에 on 클래스 부여 -->
-                        <li style="background-image:url('https://via.placeholder.com/1920x635')" ;>
+                        <li class="swiper-slide" style="background-image:url('https://via.placeholder.com/1920x635')" ;>
                             <div class="grid_container txt_view">
                                 <div class="txt_wrap">
                                     <p class="tit">수학이 즐거운 올림피아드</p>
@@ -24,7 +24,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image:url('https://picsum.photos/1920/635/?random')" ;>
+                        <li class="swiper-slide" style="background-image:url('https://picsum.photos/1920/635/?random')"
+                            ;>
                             <div class="grid_container txt_view">
                                 <div class="txt_wrap">
                                     <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
@@ -34,7 +35,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image:url('https://via.placeholder.com/1920x635')" ;>
+                        <li class="swiper-slide" style="background-image:url('https://via.placeholder.com/1920x635')" ;>
                             <div class="grid_container txt_view">
                                 <div class="txt_wrap">
                                     <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
@@ -48,64 +49,110 @@
                 </div>
                 <div class="main_slide_pager">
                     <div class="grid_container">
-                        <ul class="pager">
-                            <!-- [D] 현재 보이는 슬라이드 li에 on 클래스 부여 -->
-                            <li><a href="#">수학이 즐거운 올림피아드</a></li>
-                            <li><a href="#">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</a></li>
-                            <li><a href="#">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</a></li>
+                        <ul class="pager pagination">
+                            <li class="bullet">수학이 즐거운 올림피아드</li>
+                            <li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li>
+                            <li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li>
                         </ul>
                     </div>
                 </div>
-                <!-- //메인 슬라이드 -->
 
                 <!-- [D] 화면 확인용 스크립트 -->
                 <script>
-                    function show_slide(val) {
-                        $('.main_slide,.main_slide_pager').find('li').removeClass('on');
-                        $('.main_slide,.main_slide_pager').find('li:eq(' + val + ')').addClass('on');
-                    };
                     $(function () {
-                        show_slide(0);
-                        $('.main_slide_pager a').on('click', function () {
-                            var idx = $(this).parent().prevAll().length;
-                            show_slide(idx);
-                        });
+                        var main_slide = new Swiper('.main_slide.swiper-container', {
+                            autoplay: {
+                                delay: 5000,
+                            },
+                            slideActiveClass: 'on',
+                            effect: 'fade',
+                            loop: true,
+                            pagination: {
+                                el: '.pagination',
+                                type: 'bullets',
+                                clickable: true,
+                                bulletClass: 'bullet',
+                                bulletActiveClass: 'on',
+                                renderBullet: function (idx) {
+                                    var main_slide_txt = [
+                                        '수학이 즐거운 올림피아드',
+                                        '긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목',
+                                        '긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목'
+                                    ]
+                                    return '<li class="bullet">' + main_slide_txt[idx] + '</li>';
+                                }
+                            }
+                        })
                     });
                 </script>
                 <!-- [D] //화면 확인용 스크립트 -->
+
+                <!-- //메인 슬라이드 -->
 
                 <!-- 공지사항 슬라이드 -->
                 <div class="notice_slide_wrap">
                     <div class="grid_container">
                         <div class="notice_slide">
                             <h2>공지사항</h2>
-                            <ul class="slide">
-                                <li class="on">
-                                    <div class="txt_wrap">
-                                        <p class="tit">올림피아드교육 입시정책 분석 설명회</p>
-                                        <hr>
-                                        <p class="txt">무엇이, 어떻게 변했을까? 초,중등 우리 아이 입시전략 이대로 괜찮을까?</p>
-                                        <a href="#">더보기</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="txt_wrap">
-                                        <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
-                                        <hr>
-                                        <p class="txt">
-                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-                                        </p>
-                                        <a href="#">더보기</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="ctr">
-                                <li><button class="prev" type="button">이전</button></li>
-                                <li><button class="next" type="button">다음</button></li>
-                            </ul>
+                            <div class="wrapper swiper-container">
+                                <ul class="slide swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="txt_wrap">
+                                            <p class="tit">올림피아드교육 입시정책 분석 설명회</p>
+                                            <hr>
+                                            <p class="txt">무엇이, 어떻게 변했을까? 초,중등 우리 아이 입시전략 이대로 괜찮을까?</p>
+                                            <a href="#">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="txt_wrap">
+                                            <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                            </p>
+                                            <hr>
+                                            <p class="txt">
+                                                긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                            </p>
+                                            <a href="#">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="txt_wrap">
+                                            <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                            </p>
+                                            <hr>
+                                            <p class="txt">
+                                                긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                            </p>
+                                            <a href="#">더보기</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="ctr">
+                                    <li class="prev">이전</li>
+                                    <li class="next">다음</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- [D] 화면 확인용 스크립트 -->
+                <script>
+                    $(function () {
+                        var notice_slide = new Swiper('.notice_slide .swiper-container', {
+                            autoplay: {
+                                delay: 5000,
+                            },
+                            loop: true,
+                            navigation: {
+                                nextEl: '.next',
+                                prevEl: '.prev',
+                            }
+                        })
+                    });
+                </script>
+                <!-- [D] //화면 확인용 스크립트 -->
+
                 <!-- //공지사항 슬라이드 -->
 
             </div>
@@ -140,53 +187,75 @@
                 <div class="grid_container">
                     <div class="review_wrap">
                         <h2>합격수기</h2>
-                        <div class="list_wrap">
-                            <ul>
+                        <div class="wrapper">
+
+                            <div class="list_wrap swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <p class="tit">1긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                            </p>
+                                            <span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                            <span class="date">9999.99.99</span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <p class="tit">2긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                            </p>
+                                            <span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                            <span class="date">9999.99.99</span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <p class="tit">3긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                            </p>
+                                            <span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                            <span class="date">9999.99.99</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="btn_wrap">
                                 <li>
-                                    <a href="#">
-                                        <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
-                                        <span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
-                                        <span class="date">9999.99.99</span>
-                                    </a>
+                                    <button type="button" class="prev">이전 수기 보기</button>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
-                                        <span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
-                                        <span class="date">9999.99.99</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
-                                        <span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
-                                        <span class="date">9999.99.99</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
-                                        <span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
-                                        <span class="date">9999.99.99</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
-                                        <span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
-                                        <span class="date">9999.99.99</span>
-                                    </a>
+                                    <button type="button" class="next">다음 수기 보기</button>
                                 </li>
                             </ul>
+
+                            <!-- [D] 화면 확인용 스크립트 -->
+                            <script>
+                                $(function () {
+                                    var review_slide = new Swiper('.review_wrap .swiper-container', {
+                                        autoplay: {
+                                            delay: 5000,
+                                        },
+                                        loop: true,
+                                        slidesPerView: 2,
+                                        slidesPerGroup: 2,
+                                        navigation: {
+                                            nextEl: '.next',
+                                            prevEl: '.prev',
+                                        },
+                                        breakpoints: {
+                                            1024: {
+                                                spaceBetween: 30
+                                            },
+                                            599: {
+                                                slidesPerView: 1,
+                                                slidesPerGroup: 1,
+                                                spaceBetween: 0
+                                            }
+                                        }
+                                    })
+                                });
+                            </script>
+                            <!-- [D] //화면 확인용 스크립트 -->
+
                         </div>
-                        <ul class="btn_wrap">
-                            <li>
-                                <button type="button" class="prev">이전 수기 보기</button>
-                            </li>
-                            <li>
-                                <button type="button" class="next">다음 수기 보기</button>
-                            </li>
-                        </ul>
                         <a href="#" class="btn_more" title="합격수기 더보기">MORE</a>
                     </div>
                 </div>
