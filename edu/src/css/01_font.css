@@ -6,26 +6,65 @@
 /* Lato */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
+/* Lato */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
 /* 나눔고딕 */
 @font-face {
     font-family:"Nanum Gothic";
     font-weight:normal;
     font-style:normal;
-    src:url("../font/ngothic_regular.otf"); 
-    src:local("?"), 
-    url("../font/ngothic_regular.eot?#iefix") format("embedded-opentype"), 
+    src:local("※"), 
+    url("../font/ngothic_regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/ngothic_regular.woff") format("woff"),
     url("../font/ngothic_regular.ttf") format("truetype"),
-    url("../font/ngothic_regular.woff") format("woff");
+    url("../font/ngothic_regular.otf") format("opentype");
 }
 
-/* 나눔스퀘어 */
+/* 나눔스퀘어 L */
+@font-face {
+    font-family:"Nanum Square";
+    font-weight:300;
+    font-style:normal;
+    src:local("※"), 
+    url("../font/nsquare_light.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_light.woff") format("woff"),
+    url("../font/nsquare_light.ttf") format("truetype"),
+    url("../font/nsquare_light.otf") format("opentype");
+}
+
+/* 나눔스퀘어 R */
 @font-face {
     font-family:"Nanum Square";
     font-weight:normal;
     font-style:normal;
-    src:url("../font/nsquare_regular.otf");
-    src:local("?"),
+    src:local("※"), 
     url("../font/nsquare_regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_regular.woff") format("woff"),
     url("../font/nsquare_regular.ttf") format("truetype"),
-    url("../font/nsquare_regular.woff") format("woff");
+    url("../font/nsquare_regular.otf") format("opentype");
+}
+
+/* 나눔스퀘어 B */
+@font-face {
+    font-family:"Nanum Square";
+    font-weight:700;
+    font-style:normal;
+    src:local("※"), 
+    url("../font/nsquare_bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_bold.woff") format("woff"),
+    url("../font/nsquare_bold.ttf") format("truetype"),
+    url("../font/nsquare_bold.otf") format("opentype");
+}
+
+/* 나눔스퀘어 EB */
+@font-face {
+    font-family:"Nanum Square";
+    font-weight:900;
+    font-style:normal;
+    src:local("※"), 
+    url("../font/nsquare_extrabold.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_extrabold.woff") format("woff"),
+    url("../font/nsquare_extrabold.ttf") format("truetype"),
+    url("../font/nsquare_extrabold.otf") format("opentype");
 }

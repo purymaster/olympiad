@@ -297,8 +297,7 @@
 						<!-- 스태틱 페이지 컨텐츠 영역 -->
 
 						<!-- Syntax Highlighter -->
-						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shCore.min.css">
-						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shThemeDefault.min.css">
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shCoreEclipse.min.css">
 						<script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
 						<script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushXml.min.js"></script>
 						<script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushCss.min.js"></script>
@@ -325,8 +324,12 @@
                             }
 
                             .syntaxhighlighter div {
-                                line-height: 1.4em !important;
                                 font-size: 12px !important;
+                                line-height: 1.4em !important;
+                            }
+
+                            .syntaxhighlighter code {
+                                font-family: 'Lato' !important;
                             }
 
                             .syntaxhighlighter .gutter {
@@ -364,11 +367,9 @@
 									<colgroup>
 										<col>
 										<col>
-										<col>
 									</colgroup>
 									<thead>
 										<tr>
-											<th scope="col">항목</th>
 											<th scope="col">항목</th>
 											<th scope="col">항목</th>
 										</tr>
@@ -376,21 +377,10 @@
 									<tbody>
 										<tr>
 											<th scope="row">
-												텍스트
+												내용
 											</th>
 											<td>
-												<ul class="txt_list type1">
-													<li>리스트</li>
-													<li>리스트</li>
-													<li>리스트</li>
-												</ul>
-											</td>
-											<td>
-												<ul class="txt_list type1">
-													<li>리스트</li>
-													<li>리스트</li>
-													<li>리스트</li>
-												</ul>
+												내용
 											</td>
 										</tr>
 									</tbody>
@@ -405,11 +395,9 @@
                                         <colgroup>
                                             <col>
                                             <col>
-                                            <col>
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th scope="col">항목</th>
                                                 <th scope="col">항목</th>
                                                 <th scope="col">항목</th>
                                             </tr>
@@ -417,21 +405,10 @@
                                         <tbody>
                                             <tr>
                                                 <th scope="row">
-                                                    텍스트
+                                                    내용
                                                 </th>
                                                 <td>
-                                                    <ul class="txt_list type1">
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                    </ul>
-                                                </td>
-                                                <td>
-                                                    <ul class="txt_list type1">
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                    </ul>
+                                                    내용
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -446,11 +423,9 @@
 									<colgroup>
 										<col>
 										<col>
-										<col>
 									</colgroup>
 									<thead>
 										<tr>
-											<th scope="col">항목</th>
 											<th scope="col">항목</th>
 											<th scope="col">항목</th>
 										</tr>
@@ -458,25 +433,10 @@
 									<tbody>
 										<tr>
 											<td>
-												<ul class="txt_list type1">
-													<li>리스트</li>
-													<li>리스트</li>
-													<li>리스트</li>
-												</ul>
+												내용
 											</td>
 											<td>
-												<ul class="txt_list type1">
-													<li>리스트</li>
-													<li>리스트</li>
-													<li>리스트</li>
-												</ul>
-											</td>
-											<td>
-												<ul class="txt_list type1">
-													<li>리스트</li>
-													<li>리스트</li>
-													<li>리스트</li>
-												</ul>
+												내용
 											</td>
 										</tr>
 									</tbody>
@@ -491,11 +451,9 @@
                                         <colgroup>
                                             <col>
                                             <col>
-                                            <col>
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th scope="col">항목</th>
                                                 <th scope="col">항목</th>
                                                 <th scope="col">항목</th>
                                             </tr>
@@ -503,25 +461,10 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <ul class="txt_list type1">
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                    </ul>
+                                                    내용
                                                 </td>
                                                 <td>
-                                                    <ul class="txt_list type1">
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                    </ul>
-                                                </td>
-                                                <td>
-                                                    <ul class="txt_list type1">
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                    </ul>
+                                                    내용
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -531,8 +474,7 @@
                             </pre>
 
 							<!-- 데이터 테이블(모바일 폭 고정) -->
-							<div class="data_table" data-width="1900" style="margin-top:10px;">
-								<!-- data-width : 고정할 너비-->
+							<div class="data_table no_left_th" data-width="1900" style="margin-top:10px;">
 								<table>
 									<colgroup>
 										<col>
@@ -546,15 +488,11 @@
 									</thead>
 									<tbody>
 										<tr>
-											<th scope="row">
-												텍스트
-											</th>
 											<td>
-												<ul class="txt_list type1">
-													<li>리스트</li>
-													<li>리스트</li>
-													<li>리스트</li>
-												</ul>
+												내용
+											</td>
+											<td>
+												내용
 											</td>
 										</tr>
 									</tbody>
@@ -564,8 +502,8 @@
 
 							<pre class="brush:html;">
                                 <!-- 데이터 테이블(모바일 폭 고정) -->
-                                <div class="data_table" data-width="1900"> 
-                                    <!-- data-width : 고정할 너비-->
+                                <div class="data_table no_left_th" data-width="1900">
+                                    <!-- data-width : 고정할 너비(px) -->
                                     <table>
                                         <colgroup>
                                             <col>
@@ -579,15 +517,11 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">
-                                                    텍스트
-                                                </th>
                                                 <td>
-                                                    <ul class="txt_list type1">
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                        <li>리스트</li>
-                                                    </ul>
+                                                    내용
+                                                </td>
+                                                <td>
+                                                    내용
                                                 </td>
                                             </tr>
                                         </tbody>

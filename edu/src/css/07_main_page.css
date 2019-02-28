@@ -17,7 +17,7 @@ section .slide .btn_wrap a:hover span:before,section .slide .btn_wrap a:hover sp
 .wrap .slide_scroll:hover:after {-webkit-transform:translateY(2px); -moz-transform:translateY(2px); -ms-transform:translateY(2px); -o-transform:translateY(2px); transform:translateY(2px);}
 section .slide_cate {position:relative; margin-bottom:30px; font-size:18px; font-weight:700; line-height:1.1em;}
 section .slide_cate:after {position:absolute; bottom:-10px; left:0; width:14px; height:1px; background:#fff; content:"";}
-article .grand_tit {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; line-height:1.4em; letter-spacing:-0.02em;}
+article .grand_tit {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:300; line-height:1.4em; letter-spacing:-0.02em;}
 article .grand_tit i {position:absolute; bottom:10px; right:-66px; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-size:1000px 1000px;}
 /* article .grand_tit i {display:inline-block; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-size:1000px 1000px; margin-left:-10px; margin-top:-20px; vertical-align:top;} */
 section .section:nth-child(1) article .grand_tit i {background-position:-10px -246px;}
@@ -81,19 +81,19 @@ article .news ul li a .txt_wrap .tit {font-family:"Nanum Square"; font-size:20px
 article .news ul li a .txt_wrap .txt {margin:10px 0 20px; font-size:12px; line-height:1.7em; color:#666;}
 article .news ul li a .txt_wrap .date {display:inline-block; padding:0 10px; border-radius:12px; background:#f2f2f2; font-size:12px; line-height:24px; color:#999; -webkit-border-radius:12px; -moz-border-radius:12px; -ms-border-radius:12px; -o-border-radius:12px;}
 section .section {background-attachment:fixed;}
+section .news_wrap {padding-top:30px;}
 section .slide {display:table; width:100%; height:100vh; table-layout:fixed;}
-.grid_guide {display:table-cell; vertical-align:middle;}
+section .slide > div {display:table-cell; vertical-align:middle;}
 section .news_wrap .menu_tit {margin-top:50px;}
 .indicator {position:fixed; top:50%; right:30px; z-index:1; -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); transform:translateY(-50%);}
-.indicator.on {display:none;}
 .indicator ul li {position:relative; margin-top:20px;}
 .indicator ul li:before {position:absolute; bottom:9px; left:4px; width:1px; height:20px; background:#fff; content:"";}
 .indicator ul li:first-child:before {display:none;}
-.indicator ul li:after {display:none; position:absolute; top:-6px; right:22px; line-height:20px; color:#fff; content:attr(data-name);}
-.indicator ul li.on:after {display:block;}
+.indicator ul li:after {visibility:hidden; position:absolute; top:-6px; right:22px; line-height:20px; color:#fff; transition:all 0.5s; opacity:0; content:attr(data-name);}
+.indicator ul li.active:after {visibility:visible; opacity:1;}
 .indicator ul li:first-child {margin:0;}
 .indicator ul li a {display:block; width:9px; height:9px; border:2px solid #fff; border-radius:50%; text-indent:-9999px; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%;}
-.indicator ul li.on a {background:#fff;}
+.indicator ul li.active a {background:#fff;}
 
 @media (max-width:1280px) {
     article .grand_tit,section .slide .ideology span {font-size:40px;}

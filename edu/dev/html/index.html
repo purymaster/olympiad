@@ -7,17 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>올림피아드교육</title>
 
-	<!-- JQuery v1.12.4 -->
-	<script src="../js/jquery-1.12.4.min.js"></script>
-
-	<!-- TweenMax -->
-	<script src="../js/TweenMax.min.js"></script>
-
-	<!-- 통합 기능 JS -->
-	<script src="../js/common.js"></script>
-
-	<!-- 통합 스타일 CSS -->
-	<link rel="stylesheet" href="../css/template.css">
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
 
 </head>
 
@@ -105,9 +98,9 @@
 			</div>
 		</header>
 		<button class="slide_scroll" type="button">다음 슬라이드 보기</button>
-		<section class="main_content">
+		<section class="main_content" id="fullpage">
 			<!-- [D] 관리자 화면에서 배경이미지와 슬라이드별 텍스트 변경 가능 -->
-			<div class="section slide" style="background-image:url(../img/bg/bg_mainvisual_01.jpg)" ;>
+			<div class="section active slide" style="background-image:url(../img/bg/bg_mainvisual_01.jpg)" ;>
 				<div class="grid_guide">
 					<div class="grid_container">
 						<article>
@@ -221,8 +214,12 @@
 											<!-- 블로그 : blog -->
 											<!-- 실적 : result -->
 											<span class="cate notice">공지사항</span>
-											<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
-											<p class="txt">긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용</p>
+											<p class="tit">
+												긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+											</p>
+											<p class="txt">
+												긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+											</p>
 											<span class="date">9999.99.99</span>
 										</div>
 									</a>
@@ -299,7 +296,7 @@
 					</article>
 				</div>
 			</div>
-			<div class="section">
+			<div class="section fp-auto-height">
 				<footer>
 					<div class="footer_upper">
 						<div class="grid_container">
@@ -355,16 +352,39 @@
 
 			<div class="indicator">
 				<ul>
-					<!-- [D] 현재 보이는 슬라이드의 li에 on 클래스 부여 -->
-					<li data-name="교육철학" class="on"><a href="#">교육철학</a></li>
-					<li data-name="사업영역"><a href="#">사업영역</a></li>
-					<li data-name="연구개발"><a href="#">연구개발</a></li>
-					<li data-name="가맹사업"><a href="#">가맹사업</a></li>
+					<!-- [D] 현재 보이는 슬라이드의 li에 active 클래스 부여 -->
+					<li data-menuanchor="Philosophy" data-name="교육철학"><a href="#">교육철학</a></li>
+					<li data-menuanchor="Business" data-name="사업영역"><a href="#">사업영역</a></li>
+					<li data-menuanchor="Research" data-name="연구개발"><a href="#">연구개발</a></li>
+					<li data-menuanchor="Partner" data-name="가맹사업"><a href="#">가맹사업</a></li>
 				</ul>
 			</div>
 
 		</section>
 	</div>
+
+	<!-- fullpage.js -->
+	<!-- scrollOverflow 기능 사용시, 유료 라이센스 필요 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
+	<script>
+		$(function() {
+			$('#fullpage').fullpage({
+				licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+				//scrollOverflow: true,
+				scrollBar: true,
+				anchors: ['Philosophy', 'Business', 'Research', 'Partner'],
+				navigationTooltips: ['교육철학', '사업영역', '연구개발', '가맹사업'],
+				showActiveTooltip: true,
+				menu: '.indicator',
+				css3: true,
+				easingcss3: 'ease-out',
+				onLeave: function(origin, destination) {
+					destination.index >= $('.section.slide').length ? $('.wrap .slide_scroll,.indicator').fadeOut() : $('.wrap .slide_scroll,.indicator').fadeIn();
+				}
+			});
+		});
+	</script>
 
 	<!-- Masonry -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
@@ -376,6 +396,9 @@
 			});
 		});
 	</script>
+
+
+
 </body>
 
 </html>

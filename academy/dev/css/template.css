@@ -232,7 +232,7 @@ textarea {line-height:1.5em;}
 .txt_list {text-align:left !important;}
 .txt_list li {position:relative; padding-left:0.75em; font-size:14px; line-height:1.5em; color:#333;}
 .txt_list li:before {content:""; position:absolute; left:0;}
-.txt_list.type1 li:before {top:8px; width:4px; height:4px; background:#333;} /* type1 : 네모 */
+.txt_list.type1 li:before {top:0.6em; width:4px; height:4px; background:#333;} /* type1 : 네모 */
 .txt_list.type2 li:before {}
 .txt_list.type3 li:before {}
 .txt_list.type4 li:before {}

@@ -121,28 +121,38 @@
 }
 
 /* 서브 비주얼 + 서브 탭메뉴 */
-.sub_visual {height:390px; padding-top:40px; background:purple;}
-.sub_visual .sub_txt,.sub_visual .sub_tit {font-family:"Nanum Square"; line-height:1.5em; color:#fff; text-align:center;}
-.sub_visual .sub_txt {font-size:20px; margin-top:30px;}
-.sub_visual .sub_tit {font-size:40px; font-weight:400;}
+.sub_visual {height:290px; padding-top:40px; background:#e6eff1;}
+.sub_visual .sub_txt,.sub_visual .sub_tit {font-family:"Nanum Square"; line-height:1.4em; color:#333; text-align:center;}
+.sub_visual .sub_txt {margin-top:45px; font-size:30px; font-weight:300;}
+.sub_visual .sub_tit {font-size:50px; font-weight:700;}
 
 .subtab_menu {text-align:center;}
-.subtab_menu ul {display:inline-block; font-size:0; border-left:1px solid #fff;}
-.subtab_menu ul li {display:inline-block; border:1px solid #fff; border-left:0;}
-.subtab_menu ul li a {display:block; min-width:190px; padding:0 10px;  font-size:14px; line-height:43px; color:#fff; transition:all 0.5s;}
-.subtab_menu ul li.on a,.subtab_menu ul li a:hover {background:#fff; font-weight:700; color:#000;}
+.subtab_menu ul {display:inline-block; font-size:0; border-left:1px solid #008398;}
+.subtab_menu ul li {display:inline-block; border:1px solid #008398; border-left:0;}
+.subtab_menu ul li a {display:block; min-width:190px; padding:0 10px;  font-size:14px; line-height:43px; color:#008398; transition:all 0.5s;}
+.subtab_menu ul li.on a,.subtab_menu ul li a:hover {background:#fff; font-weight:700;}
+
+@media (max-width:1024px) {
+
+}
+
+@media (max-width:599px) {
+
+}
 
 /* 컨텐츠 영역 일반 텍스트 */
-.content_txt {}
-.content_txt .main_txt {font-size:20px; font-weight:700; line-height:1.8em;}
-.content_txt .sub_txt {font-size:14px;}
+.content_txt {padding-top:50px;}
+.content_txt .main_txt {margin-bottom:35px; font-family:"Nanum Square"; font-size:24px; line-height:1.4em; color:#333;}
+.content_txt .main_txt strong {display:block; margin-top:10px; font-family:inherit; font-size:40px; line-height:1.4em;}
+.content_txt .sub_txt {margin-top:15px; font-size:15px; line-height:2em; color:#555;}
 
 /* 하단 비주얼 */
-.bottom_visual {display:table; position:relative; width:100%; height:340px; background:red;}
-.bottom_visual:before {position:absolute; top:0; left:0; width:100%; height:100%; background:-moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%); background:-webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); background:linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );}
+.bottom_visual {display:table; position:relative; width:100%; height:340px;}
+/* .bottom_visual:before {position:absolute; top:0; left:0; width:100%; height:100%; background:-moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%); background:-webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); background:linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );} */
 .bottom_visual .txt_wrap {display:table-cell; position:relative; vertical-align:middle;}
-.bottom_visual .sub_txt {font-size:20px;}
-.bottom_visual .main_txt {font-size:30px;}
+.bottom_visual .txt_wrap p {font-family:"Nanum Square";}
+.bottom_visual .sub_txt {font-size:30px; line-height:1.5em; color:#333;}
+.bottom_visual .main_txt {font-size:40px; font-weight:700; color:#008398; margin:5px 0 30px;}
 .bottom_visual .link {width:200px; border-color:#008398; color:#fff; background:#00aeba;}
 .bottom_visual .link:after {background:#fff;}
 .bottom_visual .link:hover {color:#008398;}
