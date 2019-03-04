@@ -3,7 +3,7 @@
 8. 메인 페이지 스타일
 =========================================================*/
 
-.main_content {margin-top:130px; margin-bottom:80px;}
+.main_content {margin-top:105px; margin-bottom:80px;}
 .upper_banner_on .main_content {margin-top:calc(130px + 10.9375%);}
 .main_content .btn_more {display:inline-block; position:relative; padding-right:25px; padding-left:16px; background:#333; font-family:"Lato"; font-size:12px; font-weight:300; line-height:30px; color:rgba(255,255,255,0.8); transition:all 0.2s; text-transform:uppercase;}
 .main_content .btn_more:hover {background:#00687f;}
