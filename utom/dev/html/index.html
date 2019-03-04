@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>올림피아드학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<div class="ie8">
+		<p>
+			본 사이트는 인터넷 익스플로러9 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+	</div>
+	<!-- //하위 브라우저 접속시 화면 -->
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner pc" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- 모바일 배너(1024px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1024x210" class="banner mobile" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1024/210/?random" class="banner mobile" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="수학이 즐거운 올림피아드">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+										<a class="login_student" href="#">재원생 로그인</a>
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">유투엠 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="">유투엠 소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">학원소개</a></li>
+													<li><a href="#">히스토리</a></li>
+													<li><a href="#">기업수상</a></li>
+													<li><a href="#">명예의전당</a></li>
+													<li><a href="#">전국캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">유투엠 학습법</a>
+												<ul class="menu_2depth">
+													<li><a href="#">초등수학</a></li>
+													<li><a href="#">중등수학</a></li>
+													<li><a href="#">초/중 캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">유투엠 프로그램</a>
+												<ul class="menu_2depth">
+													<li><a href="#">영재센터 소개</a></li>
+													<li><a href="#">광진 영재센터</a></li>
+													<li><a href="#">대치 영재센터</a></li>
+													<li><a href="#">중계 영재센터</a></li>
+													<li><a href="#">평촌 영재센터</a></li>
+													<li><a href="#">상위 1%정보</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">유투엠 체험관</a>
+												<ul class="menu_2depth">
+													<li><a href="#">고등부 특징</a></li>
+													<li><a href="#">학습프로그램</a></li>
+													<li><a href="#">대입정보센터</a></li>
+													<li><a href="#">고등캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">예약&amp;상담</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학안내</a></li>
+													<li><a href="#">상담신청</a></li>
+													<li><a href="#">설명회신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main_content">
+
+			<!-- 메인 슬라이드 영역 -->
+			<div class="main_visual">
+
+				<!-- 메인 슬라이드 -->
+				<div class="main_slide swiper-container">
+					<ul class="slide swiper-wrapper">
+						<!-- [D] 현재 보이는 슬라이드 li에 on 클래스 부여 -->
+						<li class="swiper-slide" style="background-image:url('https://via.placeholder.com/1920x635')" ;>
+							<div class="grid_container txt_view">
+								<div class="txt_wrap">
+									<p class="tit">수학이 즐거운 올림피아드</p>
+									<p class="txt">
+										함께 문제를 해결해 나가는 수업 과정을 통해 협동심과<br>
+                                        커뮤니케이션 능력은 물론, 발표력, 창의력까지 향상됩니다.
+                                    </p>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide" style="background-image:url('https://picsum.photos/1920/635/?random')" ;>
+							<div class="grid_container txt_view">
+								<div class="txt_wrap">
+									<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+									<p class="txt">
+										긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide" style="background-image:url('https://via.placeholder.com/1920x635')" ;>
+							<div class="grid_container txt_view">
+								<div class="txt_wrap">
+									<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+									<p class="txt">
+										긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="main_slide_pager">
+					<div class="grid_container">
+						<ul class="pager pagination">
+							<li class="bullet">수학이 즐거운 올림피아드</li>
+							<li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li>
+							<li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- [D] 화면 확인용 스크립트 -->
+				<script>
+					$(function () {
+                        var main_slide = new Swiper('.main_slide.swiper-container', {
+                            autoplay: {
+                                delay: 5000,
+                            },
+                            slideActiveClass: 'on',
+                            effect: 'fade',
+                            loop: true,
+                            pagination: {
+                                el: '.pagination',
+                                type: 'bullets',
+                                clickable: true,
+                                bulletClass: 'bullet',
+                                bulletActiveClass: 'on',
+                                renderBullet: function (idx) {
+                                    var main_slide_txt = [
+                                        '수학이 즐거운 올림피아드',
+                                        '긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목',
+                                        '긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목'
+                                    ]
+                                    return '<li class="bullet">' + main_slide_txt[idx] + '</li>';
+                                }
+                            }
+                        })
+                    });
+                </script>
+				<!-- [D] //화면 확인용 스크립트 -->
+
+				<!-- //메인 슬라이드 -->
+
+				<!-- 공지사항 슬라이드 -->
+				<div class="notice_slide_wrap">
+					<div class="grid_container">
+						<div class="notice_slide">
+							<h2>공지사항</h2>
+							<div class="wrapper swiper-container">
+								<ul class="slide swiper-wrapper">
+									<li class="swiper-slide">
+										<div class="txt_wrap">
+											<p class="tit">올림피아드교육 입시정책 분석 설명회</p>
+											<hr>
+											<p class="txt">무엇이, 어떻게 변했을까? 초,중등 우리 아이 입시전략 이대로 괜찮을까?</p>
+											<a href="#">더보기</a>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="txt_wrap">
+											<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+											</p>
+											<hr>
+											<p class="txt">
+												긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+											</p>
+											<a href="#">더보기</a>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="txt_wrap">
+											<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+											</p>
+											<hr>
+											<p class="txt">
+												긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+											</p>
+											<a href="#">더보기</a>
+										</div>
+									</li>
+								</ul>
+								<ul class="ctr">
+									<li class="prev">이전</li>
+									<li class="next">다음</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- [D] 화면 확인용 스크립트 -->
+				<script>
+					$(function () {
+                        var notice_slide = new Swiper('.notice_slide .swiper-container', {
+                            autoplay: {
+                                delay: 5000,
+                            },
+                            loop: true,
+                            navigation: {
+                                nextEl: '.notice_slide .next',
+                                prevEl: '.notice_slide .prev',
+                            }
+                        })
+                    });
+                </script>
+				<!-- [D] //화면 확인용 스크립트 -->
+
+				<!-- //공지사항 슬라이드 -->
+
+			</div>
+			<!-- //메인 슬라이드 영역 -->
+
+			<!-- 배너 영역 -->
+			<!-- <section class="main_banner">
+                <div class="grid_container">
+                    <h2 class="hidden">올림피아드 주요 소식</h2>
+
+                </div>
+            </section> -->
+			<!-- //배너 영역 -->
+
+			<!-- 올림피아드 교육 안내 -->
+			<section class="main_edu_list">
+				<div class="grid_container">
+					<h2 class="hidden">올림피아드 교육 안내</h2>
+					<ul>
+						<li data-animation="fadeInUp" data-delay="0"><a href="#">초등수학</a></li>
+						<li data-animation="fadeInUp" data-delay="1"><a href="#">중등수학</a></li>
+						<li data-animation="fadeInUp" data-delay="2"><a href="#">영재센터</a></li>
+						<li data-animation="fadeInUp" data-delay="3"><a href="#">고등부</a></li>
+						<li data-animation="fadeInUp" data-delay="4"><a href="#">캠퍼스안내</a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //올림피아드 교육 안내 -->
+
+			<!-- 합격수기 -->
+			<section class="main_review">
+				<div class="grid_container">
+					<div class="review_wrap">
+						<h2>합격수기</h2>
+						<div class="wrapper">
+
+							<div class="list_wrap swiper-container">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<a href="#">
+											<p class="tit">1긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+											</p>
+											<span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+											<span class="date">9999.99.99</span>
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="#">
+											<p class="tit">2긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+											</p>
+											<span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+											<span class="date">9999.99.99</span>
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="#">
+											<p class="tit">3긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+											</p>
+											<span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+											<span class="date">9999.99.99</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<ul class="btn_wrap">
+								<li>
+									<button type="button" class="prev">이전 수기 보기</button>
+								</li>
+								<li>
+									<button type="button" class="next">다음 수기 보기</button>
+								</li>
+							</ul>
+
+							<!-- [D] 화면 확인용 스크립트 -->
+							<script>
+								$(function () {
+                                    var review_slide = new Swiper('.review_wrap .swiper-container', {
+                                        autoplay: {
+                                            delay: 5000,
+                                        },
+                                        loop: true,
+                                        slidesPerView: 2,
+                                        slidesPerGroup: 2,
+                                        navigation: {
+                                            nextEl: '.review_wrap .next',
+                                            prevEl: '.review_wrap .prev',
+                                        },
+                                        breakpoints: {
+                                            1024: {
+                                                spaceBetween: 30
+                                            },
+                                            599: {
+                                                slidesPerView: 1,
+                                                slidesPerGroup: 1,
+                                                spaceBetween: 0
+                                            }
+                                        }
+                                    })
+                                });
+                            </script>
+							<!-- [D] //화면 확인용 스크립트 -->
+
+						</div>
+						<a href="#" class="btn_more" title="합격수기 더보기">MORE</a>
+					</div>
+				</div>
+			</section>
+			<!-- //합격수기 -->
+
+			<!-- 교육정보 -->
+			<section class="main_edu_info">
+				<div class="grid_container">
+					<div class="cont list">
+						<h2>교육정보</h2>
+						<ul>
+							<li>
+								<a href="#">
+									<p>긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+								</a>
+								<span class="date">9999.99.99</span>
+							</li>
+							<li>
+								<a href="#">
+									<p>긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+								</a>
+								<span class="date">9999.99.99</span>
+							</li>
+							<li>
+								<a href="#">
+									<p>긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+								</a>
+								<span class="date">9999.99.99</span>
+							</li>
+							<li>
+								<a href="#">
+									<p>긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+								</a>
+								<span class="date">9999.99.99</span>
+							</li>
+							<li>
+								<a href="#">
+									<p>긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+								</a>
+								<span class="date">9999.99.99</span>
+							</li>
+						</ul>
+						<a href="#" class="btn_more" title="교육정보 더보기">MORE</a>
+					</div>
+					<div class="cont sub_menu">
+						<ul>
+							<li data-animation="fadeInUp" data-delay="0">
+								<a href="#">
+									<span class="tit">상담신청</span>
+									<small>사전예약으로 편리하게!</small>
+								</a>
+							</li>
+							<li data-animation="fadeInUp" data-delay="1">
+								<a href="#">
+									<span class="tit">입학안내</span>
+									<small>맞춤학습을 위한 실력측정!</small>
+								</a>
+							</li>
+							<li data-animation="fadeInUp" data-delay="2">
+								<a href="#">
+									<span class="tit">설명회 신청</span>
+									<small>진행중인 설명회 신청하기!</small>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- //교육정보 -->
+
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<li><a href="#">올림피아드 소개</a></li>
+						<li><a href="#">찾아오시는길</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+					</ul>
+					<div class="select_form">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="수학이 즐거운 올림피아드">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

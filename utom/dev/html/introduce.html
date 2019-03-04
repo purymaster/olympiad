@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>올림피아드학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<div class="ie8">
+		<p>
+			본 사이트는 인터넷 익스플로러9 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+	</div>
+	<!-- //하위 브라우저 접속시 화면 -->
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner pc" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- 모바일 배너(1024px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1024x210" class="banner mobile" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1024/210/?random" class="banner mobile" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="수학이 즐거운 올림피아드">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">GLEC</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+										<a class="login_student" href="#">재원생 로그인</a>
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="">올림피아드 소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">학원소개</a></li>
+													<li><a href="#">히스토리</a></li>
+													<li><a href="#">기업수상</a></li>
+													<li><a href="#">명예의전당</a></li>
+													<li><a href="#">전국캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">초/중등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">초등수학</a></li>
+													<li><a href="#">중등수학</a></li>
+													<li><a href="#">초/중 캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">영재센터</a>
+												<ul class="menu_2depth">
+													<li><a href="#">영재센터 소개</a></li>
+													<li><a href="#">광진 영재센터</a></li>
+													<li><a href="#">대치 영재센터</a></li>
+													<li><a href="#">중계 영재센터</a></li>
+													<li><a href="#">평촌 영재센터</a></li>
+													<li><a href="#">상위 1%정보</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">고등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">고등부 특징</a></li>
+													<li><a href="#">학습프로그램</a></li>
+													<li><a href="#">대입정보센터</a></li>
+													<li><a href="#">고등캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">예약상담</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학안내</a></li>
+													<li><a href="#">상담신청</a></li>
+													<li><a href="#">설명회신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap introduce">
+			<div class="sub_header type1" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">올림피아드 소개</p>
+					<h2 data-animation="fadeInUp" data-delay="3">학원소개</h2>
+				</div>
+				<div class="breadcrumb">
+					<ul>
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>올림피아드 소개</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">올림피아드 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">초/중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">고등부</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+									<li>
+										<a href="#none">예약상담</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>학원소개</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">학원소개</a>
+									</li>
+
+									<li>
+										<a href="#none">히스토리</a>
+									</li>
+
+									<li>
+										<a href="#none">기업수상</a>
+									</li>
+
+									<li>
+										<a href="#none">명예의 전당</a>
+									</li>
+
+									<li>
+										<a href="#none">전국 캠퍼스</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+						<p class="main_tit">
+							올림피아드 학원은 재미있고 즐거운 수학, 과학적인 학습법,<br>
+							<strong>개념・원리 중심의 정통 수학학습을 지향합니다.</strong>
+						</p>
+						<p class="txt">우수한 인재양상을 위해 최상의 교육 콘텐츠 및 학습프로그램을 제공하여
+							학생들의 꿈을 이루어주는 곳, 바로 올림피아드 학원입니다.</p>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container">
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="introduce_cont">
+								<ul class="introduce_list">
+									<li>
+										<div class="introduce_mod">
+											<div class="introduce_img">
+												<img src="../img/img/img_introduce_1.jpg">
+											</div>
+											<div class="introduce_text">
+												<h4 class="introduce_tit">초·중등</h4>
+												<p class="introduce_txt">온·오프라인 연계 시스템으로 아이들의 흥미와<br> 실력향상을 동시에 이끌어내 수학에
+                                                    대한 자신감을 높입니다.<br>또한, 내신관리와 특목고·자사고 대비도 철저히하여<br>학생들이 꿈을 키워나가는데 많은
+                                                    도움이 되어주고 있습니다.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="introduce_mod cont_left">
+											<div class="introduce_img">
+												<img src="../img/img/img_introduce_2.jpg">
+											</div>
+											<div class="introduce_text text_left">
+												<h4 class="introduce_tit">영재센터</h4>
+												<p class="introduce_txt">영재성 발굴과 육성을 목적으로 체계적인 교과 과정 및<br>최고의 전문 강사진으로
+                                                    이루어져 있습니다. <br>그 결과 매년 영재학교 및 과학고 입시는 물론<br>전국 경시대회에서 놀라운 실적을 이어가고
+                                                    있습니다.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="introduce_mod">
+											<div class="introduce_img">
+												<img src="../img/img/img_introduce_3.jpg">
+											</div>
+											<div class="introduce_text">
+												<h4 class="introduce_tit">고등부</h4>
+												<p class="introduce_txt">내신 및 수능에 완벽히 대비하는 프로그램을 운영함으로써 <br>명문대 합격이라는
+                                                    고등부 학생들의 꿈을 지원하고 있습니다. <br>또한 대입정보센터는 수년간에 걸쳐 효과를 검증한 대입 컨설팅으로
+													<br>명문대 진학을 과학적, 체계적으로 뒷받침합니다.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<li><a href="#">올림피아드 소개</a></li>
+						<li><a href="#">찾아오시는길</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+					</ul>
+					<div class="select_form">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="수학이 즐거운 올림피아드">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<li><a href="#">상담신청</a></li>
+				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<li class="counsel pc">
+					<span class="tit">상담문의</span>
+					<span class="phone">1899-0949</span>
+					<span class="date">평일 10:00~19:00</span>
+				</li>
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
+	</div>
+
+</body>
+
+</html>

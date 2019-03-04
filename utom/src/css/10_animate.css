@@ -1,0 +1,48 @@
+
+/*=========================================================
+10. 애니메이션
+=========================================================*/
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.7.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+
+@-webkit-keyframes fadeInUp {
+    0% {-webkit-transform:translate3d(0, 100%, 0); -moz-transform:translate3d(0, 100%, 0); -ms-transform:translate3d(0, 100%, 0); -o-transform:translate3d(0, 100%, 0); transform:translate3d(0, 100%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+	100% {-webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0); -o-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+
+@keyframes fadeInUp {
+    0% {-webkit-transform:translate3d(0, 100%, 0); -moz-transform:translate3d(0, 100%, 0); -ms-transform:translate3d(0, 100%, 0); -o-transform:translate3d(0, 100%, 0); transform:translate3d(0, 100%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    100% {-webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0); -o-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {-webkit-transform:translate3d(-100%, 0, 0); -moz-transform:translate3d(-100%, 0, 0); -ms-transform:translate3d(-100%, 0, 0); -o-transform:translate3d(-100%, 0, 0); transform:translate3d(-100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+	100% {-webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0); -o-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+
+@keyframes fadeInLeft {
+    0% {-webkit-transform:translate3d(-100%, 0, 0); -moz-transform:translate3d(-100%, 0, 0); -ms-transform:translate3d(-100%, 0, 0); -o-transform:translate3d(-100%, 0, 0); transform:translate3d(-100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    100% {-webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0); -o-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {-webkit-transform:translate3d(100%, 0, 0); -moz-transform:translate3d(100%, 0, 0); -ms-transform:translate3d(100%, 0, 0); -o-transform:translate3d(100%, 0, 0); transform:translate3d(100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+	100% {-webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0); -o-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+
+@keyframes fadeInRight {
+    0% {-webkit-transform:translate3d(100%, 0, 0); -moz-transform:translate3d(100%, 0, 0); -ms-transform:translate3d(100%, 0, 0); -o-transform:translate3d(100%, 0, 0); transform:translate3d(100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    100% {-webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0); -o-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
+}
+
+.fadeInUp {-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
+.fadeInLeft {-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;}
+.fadeInRight {-webkit-animation-name:fadeInRight; animation-name:fadeInRight;}
+.wait-animation {-webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
+.animated {-webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both;}

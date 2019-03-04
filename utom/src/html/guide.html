@@ -1,0 +1,447 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "서브 페이지 타이틀",
+            "subtitle" : "서브 페이지 텍스트",
+            "context" : {
+            "depth1_current" : "올림피아드 소개",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth2_current" : "학원소개",
+            "depth2_sublist" : ["학원소개","히스토리","기업수상","명예의 전당","전국 캠퍼스"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["탭메뉴1","탭메뉴2","탭메뉴3","탭메뉴4","탭메뉴5"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            페이지에 내용에 대한 문구<br>
+                            <strong>강조된 텍스트</strong>
+                        </p>
+                        <p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                            has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                            has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <p data-animation="fadeInUp" data-delay="0" class="sub_txt">제목 서브 텍스트</p>
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">주제별 제목</h3>
+                            <p data-animation="fadeInUp" data-delay="4" class="txt_info">주제에 대한 <strong>설명 문구</strong>
+                            </p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+
+                        <!-- Syntax Highlighter -->
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shCoreEclipse.min.css">
+                        <script
+                            src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
+                        <script
+                            src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushXml.min.js"></script>
+                        <script
+                            src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushCss.min.js"></script>
+                        <script
+                            src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js"></script>
+                        <script>
+                            SyntaxHighlighter.defaults['toolbar'] = false;
+                            SyntaxHighlighter.all();
+                        </script>
+                        <!-- //Syntax Highlighter -->
+
+                        <style>
+                            p.guide_tit {
+                                margin: 15px 0;
+                                padding-left: 1em;
+                                background: #00687f;
+                                font-size: 16px;
+                                line-height: 2em;
+                                color: #fff;
+                            }
+
+                            .syntaxhighlighter {
+                                border: 1px solid #ccc;
+                                padding: 1em;
+                            }
+
+                            .syntaxhighlighter div {
+                                font-size: 12px !important;
+                                line-height: 1.4em !important;
+                            }
+
+                            .syntaxhighlighter code {
+                                font-family: 'Lato' !important;
+                            }
+
+                            .syntaxhighlighter .gutter {
+                                width: 35px !important;
+                            }
+
+                            .syntaxhighlighter .line.alt1 {
+                                background: #efefef !important;
+                            }
+                        </style>
+
+                        <div class="sub_cont_wrap">
+
+                            <p class="guide_tit">텍스트 목록</p>
+
+                            <!-- 텍스트 목록 -->
+                            <ul class="txt_list type1">
+                                <li>리스트1</li>
+                            </ul>
+
+                            <pre class="brush:html;">
+                                <!-- type1 : 네모 -->
+                                <ul class="txt_list type1">
+                                    <li>리스트1</li>
+                                </ul>
+                            </pre>
+
+                            <!-- //텍스트 목록 -->
+
+                            <p class="guide_tit">데이터 테이블</p>
+
+                            <!-- 데이터 테이블 -->
+                            <div class="data_table">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">항목</th>
+                                            <th scope="col">항목</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                내용
+                                            </th>
+                                            <td>
+                                                내용
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //데이터 테이블 -->
+
+                            <pre class="brush:html;">
+                                <!-- 데이터 테이블 -->
+                                <div class="data_table">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">항목</th>
+                                                <th scope="col">항목</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    내용
+                                                </th>
+                                                <td>
+                                                    내용
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //데이터 테이블 -->
+                            </pre>
+
+                            <!-- 데이터 테이블(좌측 th 없음) -->
+                            <div class="data_table no_left_th" style="margin-top:10px;">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">항목</th>
+                                            <th scope="col">항목</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                내용
+                                            </td>
+                                            <td>
+                                                내용
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //데이터 테이블(좌측 th 없음) -->
+
+                            <pre class="brush:html;">
+                                <!-- 데이터 테이블(좌측 th 없음) -->
+                                <div class="data_table no_left_th">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">항목</th>
+                                                <th scope="col">항목</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    내용
+                                                </td>
+                                                <td>
+                                                    내용
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //데이터 테이블(좌측 th 없음) -->
+                            </pre>
+
+                            <!-- 데이터 테이블(모바일 폭 고정) -->
+                            <div class="data_table no_left_th" data-width="1900" style="margin-top:10px;">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">항목</th>
+                                            <th scope="col">항목</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                내용
+                                            </td>
+                                            <td>
+                                                내용
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //데이터 테이블(모바일 폭 고정) -->
+
+                            <pre class="brush:html;">
+                                <!-- 데이터 테이블(모바일 폭 고정) -->
+                                <div class="data_table no_left_th" data-width="1900">
+                                    <!-- data-width : 고정할 너비(px) -->
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">항목</th>
+                                                <th scope="col">항목</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    내용
+                                                </td>
+                                                <td>
+                                                    내용
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //데이터 테이블(모바일 폭 고정) -->
+                            </pre>
+
+                            <!-- <p class="guide_tit">모달 팝업</p>
+
+                            <div class="modal_wrap">
+                                <div class="modal book">
+                                    <div class="modal_tit">
+                                        <span class="tit">팝업 제목</span>
+                                    </div>
+                                    <div class="modal_content">
+                                        <div class="book_wrap">
+                                            <div class="book_content">
+                                                <ul class="img">
+                                                    <li><img src="https://picsum.photos/630/900/?random" alt="책 제목">
+                                                    </li>
+                                                    <li><img src="https://picsum.photos/630/900/?random" alt="책 제목">
+                                                    </li>
+                                                </ul>
+                                                <div class="data_wrap">
+                                                    <div class="data">
+                                                        <ul class="cate">
+                                                            <li>초등3</li>
+                                                            <li>원리</li>
+                                                        </ul>
+                                                        <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                        <div class="grade">
+                                                            <span>총 6단계 수준별 교재</span>
+                                                            <ul>
+                                                                <li>원리</li>
+                                                                <li class="on">실력</li>
+                                                                <li>응용</li>
+                                                                <li>발전</li>
+                                                                <li>심화</li>
+                                                                <li>경시</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="data">
+                                                        <dl class="step">
+                                                            <div>
+                                                                <dt>개념 1단계</dt>
+                                                                <dd>만화로 보는 개념 / 개념 한눈에 보기</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>개념 2단계</dt>
+                                                                <dd>스토리텔링 / 상세 개념</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>개념 3단계</dt>
+                                                                <dd>유형별 심화개념</dd>
+                                                            </div>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="data">
+                                                        <p class="info_txt">
+                                                            같은 학년이라도 수준별, 난이도별로 기본개념과 원리를 달리 구성하여
+                                                            학생의 난이도에 맞게 개념을 이해할 수 있도록 구성했습니다.
+                                                            올림피아드수학 <strong>실력</strong> 교재는 <strong>개념 1단계</strong> 입니다.
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="book_slide">
+                                                <div class="mobile padding"></div>
+                                                <div class="slide_view">
+                                                    <div class="slide_wrap swiper-container">
+                                                        <ul class="slide swiper-wrapper">
+                                                            <li class="swiper-slide"><img
+                                                                    src="https://picsum.photos/630/900/?random" alt="">
+                                                            <li class="swiper-slide"><img
+                                                                    src="https://picsum.photos/630/900/?random" alt="">
+                                                            <li class="swiper-slide"><img
+                                                                    src="https://picsum.photos/630/900/?random" alt="">
+                                                            <li class="swiper-slide"><img
+                                                                    src="https://picsum.photos/630/900/?random" alt="">
+                                                            <li class="swiper-slide"><img
+                                                                    src="https://picsum.photos/630/900/?random" alt="">
+                                                            <li class="swiper-slide"><img
+                                                                    src="https://picsum.photos/630/900/?random" alt="">
+                                                            <li class="swiper-slide"><img
+                                                                    src="https://picsum.photos/630/900/?random" alt="">
+                                                        </ul>
+                                                        <ul class="ctr">
+                                                            <li class="prev"><button type="button">이전</button></li>
+                                                            <li class="next"><button type="button">다음</button></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <script>
+                                        $(function () {
+                                            var review_slide = new Swiper('.review_wrap .swiper-container', {
+                                                autoplay: {
+                                                    delay: 5000,
+                                                },
+                                                loop: true,
+                                                slidesPerView: 2,
+                                                slidesPerGroup: 2,
+                                                navigation: {
+                                                    nextEl: '.next',
+                                                    prevEl: '.prev',
+                                                },
+                                                breakpoints: {
+                                                    1024: {
+                                                        spaceBetween: 30
+                                                    },
+                                                    599: {
+                                                        slidesPerView: 1,
+                                                        slidesPerGroup: 1,
+                                                        spaceBetween: 0
+                                                    }
+                                                }
+                                            })
+                                        });
+                                    </script>
+
+                                    <button class="close">닫기</button>
+                                </div>
+                            </div> -->
+
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>
