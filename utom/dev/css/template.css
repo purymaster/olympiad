@@ -893,6 +893,32 @@ footer {background:#505354; color:#fff;}
 }
 
 /* 배너 영역 */
+.main_banner {margin-top:30px;}
+.banner_wrap {overflow:hidden;}
+.banner_wrap .cont {float:left; width:50%; line-height:0;}
+.banner_wrap .left {padding-right:5px;}
+.banner_wrap .right {padding-left:5px;}
+.banner_wrap  .left .large {margin-bottom:10px;}
+.banner_wrap  .right .large {margin-top:10px;}
+.banner_wrap .slide li {position:relative; height:0; background-color:#efefef; background-position:center; background-size:cover;}
+.banner_wrap .slide li .txt_wrap {position:absolute; bottom:55px; left:0; width:100%; padding:0 30px;}
+.banner_wrap .slide li .txt_wrap .tit {overflow:hidden; max-height:2.6em; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.3em;}
+.banner_wrap .slide li .txt_wrap .txt {overflow:hidden; margin-top:10px; font-size:14px; line-height:1.7em; text-overflow:ellipsis; white-space:nowrap;}
+.banner_wrap .large .slide li {padding-top:74.95762711864%;}
+.banner_wrap .small {overflow:hidden;}
+.banner_wrap .small .small_cont {float:left; width:50%;}
+.banner_wrap .small .slide li {padding-top:75%;}
+.banner_wrap .pager {position:absolute; bottom:20px; left:50%; z-index:1; width:auto; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
+.banner_wrap .pager li {float:left; width:10px; height:10px; margin:0 3px; padding:0; border:2px solid #fff; text-indent:-9999px; -webkit-transition:all 0.5s; transition:all 0.5s; cursor:pointer;}
+.banner_wrap .pager li.on {background:#fff;}
+
+@media (max-width:1024px) {
+    .banner_wrap {margin-top:-10px;}
+    .banner_wrap .cont {float:none; width:100%; margin-top:10px; padding:0 !important;}
+    .banner_wrap .slide li .txt_wrap {bottom:40px;}
+    .banner_wrap .slide li .txt_wrap .tit {max-height:1.3em; font-size:18px; text-overflow:ellipsis; white-space:nowrap;}
+    .banner_wrap .slide li .txt_wrap .txt {margin:0; font-size:12px;}
+}
 
 /* 올림피아드 교육 안내 */
 .main_edu_list {margin-top:60px;}
@@ -1024,7 +1050,6 @@ footer {background:#505354; color:#fff;}
     .main_edu_info .sub_menu ul li a .tit {font-size:16px;}
 }
 
-
 /*=========================================================
 9. 서브 페이지별 스타일
 =========================================================*/
@@ -1140,13 +1165,15 @@ footer {background:#505354; color:#fff;}
 
 /* 서브 페이지 내용 */
 .sub_lower_wrap {padding:70px 0 50px; background-size:cover; background-position:center;}
+.sub_lower_wrap .visual_wrap {display:table; width:100%;}
+.sub_lower_wrap .visual_wrap p {display:table-cell; font-family:"Nanum Square"; font-weight:700; text-align:center; vertical-align:middle;}
 .sub_tit_wrap {position:relative; margin-bottom:10px; padding-top:35px; color:#333; text-align:center;}
 .sub_tit_wrap.white {color:#fff;}
 .sub_tit_wrap:after {position:absolute; top:0; left:50%; width:18px; height:20px; margin-left:-9px; background:red; content:"";}
 .sub_tit_wrap .sub_txt {font-family:"Nanum Square"; font-size:24px; line-height:1.5em;}
 .sub_tit_wrap h3 {font-family:"Nanum Square"; font-size:32px; font-weight:900; line-height:1.5em;}
 .sub_tit_wrap .txt_info {margin-top:25px; font-size:15px; line-height:2em;}
-.sub_tit_wrap .txt_info strong {font-weight:700;}
+.sub_tit_wrap .txt_info strong {font-weight:700; color:#008398;}
 .sub_cont_wrap .tit {font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#333;}
 .sub_cont_wrap .tit strong {font-family:inherit; color:#008398;}
 .sub_cont_wrap .txt {margin-top:25px; font-size:15px; line-height:2em;}
@@ -1157,7 +1184,7 @@ footer {background:#505354; color:#fff;}
     .sub_tit_wrap {padding-top:30px;}
     .sub_tit_wrap .sub_txt {font-size:18px;}
     .sub_tit_wrap h3 {font-size:24px;}
-    .sub_tit_wrap .txt_info {font-size:14px;}
+    .sub_tit_wrap .txt_info {font-size:14px; line-height:1.8em;}
     .sub_cont_wrap .tit {font-size:24px;}
     .sub_cont_wrap .txt {margin-top:20px; font-size:14px; line-height:1.8em;}
 }
@@ -1165,7 +1192,7 @@ footer {background:#505354; color:#fff;}
 @media (max-width:599px) {
     .sub_tit_wrap .sub_txt {font-size:14px;}
     .sub_tit_wrap h3 {font-size:16px;}
-    .sub_tit_wrap .txt_info {font-size:12px;}
+    .sub_tit_wrap .txt_info {font-size:12px; line-height:1.6em;}
     .sub_cont_wrap .tit {font-size:16px;}
     .sub_cont_wrap .txt {margin-top:15px; font-size:12px; line-height:1.6em;}
 }
@@ -1216,6 +1243,20 @@ footer {background:#505354; color:#fff;}
 @media (max-width:1024px) {
     .flip_tab2 .grid5 {float:none !important; width:100%;}
     .flip_tab2 .msg_box {margin-top:30px;}
+}
+
+/* 하브루타 기반 말하는 수학 - 생각하는 힘을 키우는 말하는 수학 */
+.hav_tab1 .visual_wrap {height:200px; background:red;}
+.hav_tab1 .visual_wrap p {font-size:30px; line-height:1.4em; color:#fff;}
+
+@media (max-width:1024px) {
+    .hav_tab1 .visual_wrap {height:150px;}
+    .hav_tab1 .visual_wrap p {font-size:24px;}
+}
+
+@media (max-width:599px) {
+    .hav_tab1 .visual_wrap {height:100px;}
+    .hav_tab1 .visual_wrap p {font-size:16px;}
 }
 
 /*=========================================================

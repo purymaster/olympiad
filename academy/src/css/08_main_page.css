@@ -113,6 +113,32 @@
 }
 
 /* 배너 영역 */
+.main_banner {margin-top:30px;}
+.banner_wrap {overflow:hidden;}
+.banner_wrap .cont {float:left; width:50%; line-height:0;}
+.banner_wrap .left {padding-right:5px;}
+.banner_wrap .right {padding-left:5px;}
+.banner_wrap  .left .large {margin-bottom:10px;}
+.banner_wrap  .right .large {margin-top:10px;}
+.banner_wrap .slide li {position:relative; height:0; background-color:#efefef; background-position:center; background-size:cover;}
+.banner_wrap .slide li .txt_wrap {position:absolute; bottom:55px; left:0; width:100%; padding:0 30px;}
+.banner_wrap .slide li .txt_wrap .tit {overflow:hidden; max-height:2.6em; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.3em;}
+.banner_wrap .slide li .txt_wrap .txt {overflow:hidden; margin-top:10px; font-size:14px; line-height:1.7em; text-overflow:ellipsis; white-space:nowrap;}
+.banner_wrap .large .slide li {padding-top:74.95762711864%;}
+.banner_wrap .small {overflow:hidden;}
+.banner_wrap .small .small_cont {float:left; width:50%;}
+.banner_wrap .small .slide li {padding-top:75%;}
+.banner_wrap .pager {position:absolute; bottom:20px; left:50%; z-index:1; width:auto; transform:translateX(-50%);}
+.banner_wrap .pager li {float:left; width:10px; height:10px; margin:0 3px; padding:0; border:2px solid #fff; text-indent:-9999px; transition:all 0.5s; cursor:pointer;}
+.banner_wrap .pager li.on {background:#fff;}
+
+@media (max-width:1024px) {
+    .banner_wrap {margin-top:-10px;}
+    .banner_wrap .cont {float:none; width:100%; margin-top:10px; padding:0 !important;}
+    .banner_wrap .slide li .txt_wrap {bottom:40px;}
+    .banner_wrap .slide li .txt_wrap .tit {max-height:1.3em; font-size:18px; text-overflow:ellipsis; white-space:nowrap;}
+    .banner_wrap .slide li .txt_wrap .txt {margin:0; font-size:12px;}
+}
 
 /* 올림피아드 교육 안내 */
 .main_edu_list {margin-top:60px;}
