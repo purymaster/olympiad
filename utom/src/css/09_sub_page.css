@@ -91,7 +91,7 @@
 
 /* 서브 페이지 분할 그리드 */
 .grid_wrap {overflow:hidden; margin:0 -20px;}
-.grid_wrap .grid {margin-top:50px; padding:0 20px;}
+.grid_wrap .grid {margin-top:50px; padding:0 20px; line-height:0;}
 .grid_wrap.left .grid {float:left;}
 .grid_wrap.right .grid {float:right;}
 .grid_wrap .grid2 {width:25%;}
@@ -100,6 +100,7 @@
 .grid_wrap .grid5 {width:62.5%;}
 .grid_wrap .grid6 {width:75%;}
 .grid_wrap .grid .txt_wrap {margin-top:-5px; margin-bottom:35px;}
+.grid_wrap .grid img {width:100%; margin-bottom:15px;}
 
 @media (max-width:1024px) {
     .grid_wrap {margin:0 -15px;}
@@ -173,4 +174,20 @@
     .msg_box p {font-size:18px;}
     .msg_box:before {top:-23px;}
     .msg_box:after {bottom:-23px;}
+}
+
+/* 플립러닝 기반 학생중심 참여수업 - 플립러닝 교수학습법 */
+.flip_tab1 .msg_box {margin-top:105px;}
+
+@media (max-width:1024px) {
+    .flip_tab1 .grid5 {float:none !important; width:100%;}
+    .flip_tab1 .msg_box {margin-top:30px;}
+}
+
+/* 플립러닝 기반 학생중심 참여수업 - 학습효과가 뛰어난 학생중심 참여수업 */
+.flip_tab2 .msg_box {margin-top:105px;}
+
+@media (max-width:1024px) {
+    .flip_tab2 .grid5 {float:none !important; width:100%;}
+    .flip_tab2 .msg_box {margin-top:30px;}
 }
