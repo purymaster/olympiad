@@ -3,7 +3,7 @@
 8. 메인 페이지 스타일
 =========================================================*/
 
-.main_content {margin-top:105px; margin-bottom:80px;}
+.main_content {margin-top:130px; margin-bottom:80px;}
 .upper_banner_on .main_content {margin-top:calc(130px + 10.9375%);}
 .main_content .btn_more {display:inline-block; position:relative; padding-right:15px; font-family:"Lato"; font-size:12px; font-weight:300; line-height:30px; color:rgba(102,102,102,0.8); transition:all 0.2s; text-transform:uppercase;}
 .main_content .btn_more:hover {color:#f78920;}
@@ -149,18 +149,27 @@
 .main_edu_list ul li:hover:before {border:72px solid #fffaf3;}
 .main_edu_list ul li:last-child {margin:0;}
 .main_edu_list ul li a {display:block; position:relative; padding-top:144px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#646f72; text-align:center; transition:all 0.5s;}
+.main_edu_list ul li a:after {content:""; position:absolute; width:100px; height:100px; background:red; left:50%; top:20px; margin-left:-50px;}
+.main_edu_list ul li:nth-child(1) a:after {} /* 초등 프로그램 */
+.main_edu_list ul li:nth-child(2) a:after {} /* 중등 프로그램 */
+.main_edu_list ul li:nth-child(3) a:after {} /* 대입센터 */
+.main_edu_list ul li:nth-child(4) a:after {} /* 드림투어 */
+.main_edu_list ul li:nth-child(5) a:after {} /* 캠퍼스안내 */
 .main_edu_list ul li:hover a {color:#f78920;}
 
 @media (max-width:1024px) {
     .main_edu_list {margin-top:30px;}
-    .main_edu_list ul li a {font-size:16px;}
+    .main_edu_list ul {background:none;}
+    .main_edu_list ul li {width:20%; margin:0;}
+    .main_edu_list ul li:before {display:none;}
+    .main_edu_list ul li a {padding-top:50px; font-size:16px; line-height:2em;}
+    .main_edu_list ul li a:after {top:0; width:50px; height:50px; margin-left:-25px;}
 }
 
 @media (max-width:599px) {
-    .main_edu_list ul {padding:15px;}
     .main_edu_list ul li {width:33.33%;}
     .main_edu_list ul li:after {display:none;}
-    .main_edu_list ul li a {padding:0; padding-top:70px; font-size:14px;}
+    .main_edu_list ul li a {font-size:14px;}
     .main_edu_list ul li a:before {display:none;}
     .main_edu_list ul li a:after {top:0;}
     .main_edu_list ul li:nth-child(n+4) {margin-top:15px;}

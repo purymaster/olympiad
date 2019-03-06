@@ -62,7 +62,7 @@ header.animated:after {transform:scaleX(1);}
     .header_wrap h1 a {display:inline-block;}
     .header_wrap h1 img {height:35px;}
     .header_wrap .menu {position:absolute; top:20px; left:0; width:20px; height:20px;}
-    .header_wrap .menu span {position:absolute; right:0; width:100%; height:2px; background:#00687f;}
+    .header_wrap .menu span {position:absolute; right:0; width:100%; height:2px; background:#f78920;}
     .header_wrap .menu span:nth-child(1) {top:0;}
     .header_wrap .menu span:nth-child(2) {top:50%; right:auto; left:0; margin-top:-1px;}
     .header_wrap .menu span:nth-child(3) {bottom:0;}
@@ -78,7 +78,7 @@ header.animated:after {transform:scaleX(1);}
     nav.on {visibility:visible; background:rgba(0,0,0,0.2); opacity:1;}
     .nav_wrap {right:auto; left:0; width:50%; height:100%; padding:15px 30px; background:#fff; transform:translateX(-100%); box-shadow:10px 0 10px -5px rgba(0,0,0,0.2);}
     nav.on .nav_wrap {transform:translateX(0); transition:transform 0.5s; transition-timing-function:cubic-bezier(0.95,0,0.05,1);}
-    .nav_wrap button.close {visibility:hidden; position:absolute; top:0; right:-30px; width:30px; height:30px; background:#00687f; text-indent:-9999px; opacity:0;}
+    .nav_wrap button.close {visibility:hidden; position:absolute; top:0; right:-30px; width:30px; height:30px; background:#f78920; text-indent:-9999px; opacity:0;}
     .nav_wrap button.close:before,.nav_wrap button.close:after {position:absolute; top:50%; left:50%; width:20px; height:2px; margin-top:-1px; margin-left:-10px; background:#fff; content:"";}
     .nav_wrap button.close:before {transform:rotate(-45deg);}
     .nav_wrap button.close:after {transform:rotate(45deg);}
@@ -88,8 +88,8 @@ header.animated:after {transform:scaleX(1);}
     .navigation .menu_1depth > li {float:none; margin:0;}
     .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-size:16px; line-height:2em;}
     .navigation .menu_1depth > li:hover:after {display:none;}
-    .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; transform:none; transition:none !important; opacity:1;}
-    .navigation .menu_2depth li a {font-size:12px;}
+    .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#fffaf3; text-align:left; transform:none; transition:none !important; opacity:1;}
+    .navigation .menu_2depth li a {font-size:12px; line-height:1.8em;}
 }
 
 @media (max-width:599px) {

@@ -1,0 +1,141 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "서브 페이지 타이틀",
+            "subtitle" : "서브 페이지 텍스트",
+            "context" : {
+            "depth1_current" : "올림피아드 소개",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth2_current" : "학원소개",
+            "depth2_sublist" : ["학원소개","히스토리","기업수상","명예의 전당","전국 캠퍼스"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["탭메뉴1","탭메뉴2","탭메뉴3","탭메뉴4","탭메뉴5"]
+                        }
+                        })
+                        <p class="main_tit">
+                            페이지에 내용에 대한 문구<br>
+                            <strong>강조된 텍스트</strong>
+                        </p>
+                        <p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                            has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                            has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <div class="msg_box">
+                            <p>
+                                메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지
+                                <strong>강조메세지강조메세지강조메세지강조메세지</strong>
+                            </p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <p class="tit">제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목<strong>중요한내용중요한내용중요한내용</strong>
+                            </p>
+                            <p class="txt">
+                                내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+                            </p>
+
+                            <!-- 화면 분할 -->
+                            <div class="grid_wrap" style="margin-top:10px;">
+                                <div class="grid grid4">
+                                    1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.
+                                </div>
+                                <div class="grid grid4">
+                                    1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.
+                                </div>
+                            </div>
+                            <!-- //화면 분할 -->
+
+                            <!-- 화면 분할 -->
+                            <div class="grid_wrap" style="margin-top:10px;">
+                                <div class="grid grid3">
+                                    3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.
+                                </div>
+                                <div class="grid grid5">
+                                    3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.
+                                </div>
+                            </div>
+                            <!-- //화면 분할 -->
+
+                            <!-- 화면 분할 -->
+                            <div class="grid_wrap" style="margin-top:10px;">
+                                <div class="grid grid5">
+                                    5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.
+                                </div>
+                                <div class="grid grid3">
+                                    5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.
+                                </div>
+                            </div>
+                            <!-- //화면 분할 -->
+
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap" style="background-image:url('https://picsum.photos/1920/600/?random');">
+                    <div class="grid_container">
+                        <div class="sub_tit_wrap white">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">주제별 제목</h3>
+                            <p class="txt_info">주제에 대한 <strong>설명 문구</strong>
+                            </p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap white">
+
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>
