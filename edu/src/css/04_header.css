@@ -39,7 +39,7 @@ nav .menu_2depth li a {display:block; position:relative; font-size:16px; line-he
 nav .menu_2depth li a:after {position:absolute; bottom:0; left:0; width:100%; height:1px; background:#00aeba; -webkit-transform:scaleX(0); -moz-transform:scaleX(0); -ms-transform:scaleX(0); -o-transform:scaleX(0); transform:scaleX(0); transform-origin:right center; -webkit-transition:transform 0.2s; -moz-transition:transform 0.2s; -ms-transition:transform 0.2s; -o-transition:transform 0.2s; transition:transform 0.2s; content:"";}
 nav .menu_2depth li a:hover {color:#00aeba;}
 nav .menu_2depth li a:hover:after {-webkit-transform:scaleX(1); -moz-transform:scaleX(1); -ms-transform:scaleX(1); -o-transform:scaleX(1); transform:scaleX(1); transform-origin:left center;}
-nav .close {overflow:hidden; position:absolute; top:18px; right:3px; width:34px; height:34px; text-indent:-9999px;}
+nav .close {overflow:hidden; position:absolute; top:18px; right:0; width:34px; height:34px; text-indent:-9999px;}
 nav .close:before,nav .close:after {position:absolute; right:0; width:50px; height:1px; background:#999; transform-origin:right; content:"";}
 nav .close:before {top:0; -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -ms-transform:rotate(-45deg); -o-transform:rotate(-45deg); transform:rotate(-45deg);}
 nav .close:after {bottom:0; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg);}

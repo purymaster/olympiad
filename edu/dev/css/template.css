@@ -131,6 +131,10 @@ button span {position:relative;}
     .grid_container {padding:0 30px;}
 }
 
+@media (max-width:599px) {
+    .grid_container {padding:0 15px;}
+}
+
 /* 하위브라우저 접근차단 */
 .ie8 {display:none; position:fixed; top:0; left:0; z-index:9999; width:100%; height:100%; padding-top:15%; background:#fff; text-align:center;}
 .ie8 p {margin-top:30px; font-size:16px; line-height:1.5;}
@@ -445,7 +449,7 @@ nav .menu_2depth li a {display:block; position:relative; font-size:16px; line-he
 nav .menu_2depth li a:after {position:absolute; bottom:0; left:0; width:100%; height:1px; background:#00aeba; -webkit-transform:scaleX(0); transform:scaleX(0); -webkit-transform-origin:right center; transform-origin:right center; -webkit-transition:transform 0.2s; -webkit-transition:-webkit-transform 0.2s; transition:-webkit-transform 0.2s; transition:transform 0.2s; transition:transform 0.2s, -webkit-transform 0.2s; content:"";}
 nav .menu_2depth li a:hover {color:#00aeba;}
 nav .menu_2depth li a:hover:after {-webkit-transform:scaleX(1); transform:scaleX(1); -webkit-transform-origin:left center; transform-origin:left center;}
-nav .close {overflow:hidden; position:absolute; top:18px; right:3px; width:34px; height:34px; text-indent:-9999px;}
+nav .close {overflow:hidden; position:absolute; top:18px; right:0; width:34px; height:34px; text-indent:-9999px;}
 nav .close:before,nav .close:after {position:absolute; right:0; width:50px; height:1px; background:#999; -webkit-transform-origin:right; transform-origin:right; content:"";}
 nav .close:before {top:0; -webkit-transform:rotate(-45deg); transform:rotate(-45deg);}
 nav .close:after {bottom:0; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
@@ -688,8 +692,8 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .sub_header h2 {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:400; line-height:1.5em;}
 .sub_header h2:after {position:absolute; right:-76px; bottom:15px; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-position:-10px -246px; background-size:1000px 1000px; content:"";}
 .sub_header .sub_tit {font-size:24px; line-height:1.5em;}
-.sub_content {padding-bottom:100px;}
-.sub_content h3 {margin:55px 0 40px; font-family:"Nanum Square"; font-size:40px; line-height:1.5em; color:#333; text-align:center;}
+.sub_content {padding-top:70px; padding-bottom:100px;}
+/* .sub_content h3 {margin:55px 0 40px; font-family:"Nanum Square"; font-size:40px; line-height:1.5em; color:#333; text-align:center;} */
 
 @media (max-width:1024px) {
     .sub_header {height:auto; padding-top:75px;}
@@ -730,36 +734,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 }
 
 /* 대표이사 인사말 */
-.greeting_msg {overflow:hidden; position:relative; height:440px; background:-webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)),to(rgba(235,242,243,1))); background:linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(235,242,243,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ebf2f3',GradientType=1 );
-}
-.greeting_msg .tit {width:660px; margin-top:65px; padding-bottom:30px; border-bottom:1px solid #008398; font-family:"Nanum Square"; font-size:40px; line-height:1.4em; color:#005967;}
-.greeting_msg .sub_tit {margin-top:70px; font-family:"Nanum Square"; font-size:30px; line-height:1.4em; color:#333;}
-.greeting_msg img {position:absolute; top:36px; right:33px;}
-.greeting_txt p {margin-top:20px; font-size:14px; line-height:2em;}
-.greeting_txt .accent {font-size:16px; font-weight:700;}
-.greeting_txt .sign {color:#008398; text-align:right;}
-.greeting_txt .sign strong {font-weight:700; color:#333;}
-.greeting_txt .sign img {height:71px; margin-right:-12px;}
-
-@media (max-width:1280px) {
-    .greeting_msg .tit {width:500px; font-size:36px;}
-    .greeting_msg .sub_tit {font-size:24px;}
-}
-
-@media (max-width:1024px) {
-    .greeting_msg {height:270px;}
-    .greeting_msg .tit {width:auto; border:0; font-size:28px; margin-top:50px;}
-    .greeting_msg .sub_tit {margin:0; font-size:20px;}
-    .greeting_msg img {height:233px;}
-}
-
-@media (max-width:599px) {
-    .greeting_msg {height:auto; margin-bottom:30px; background:none;}
-    .greeting_msg .tit {margin:30px 0 10px; padding:0; font-size:24px;}
-    .greeting_msg .sub_tit {font-size:18px;}
-    .greeting_msg img {display:block; position:static; margin:0 auto;}
-    .greeting_txt p {margin-top:15px; font-size:14px !important; line-height:1.8em;}
-}
+.greeting {}
 
 /* 교육철학 */
 .philosophy .jumbotron {height:570px; padding-top:80px; background-image:url(../img/bg/bg_philosophy_01.png); background-position:center; background-size:cover; color:#fff;}

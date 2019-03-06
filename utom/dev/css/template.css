@@ -295,7 +295,6 @@ label {cursor:pointer;}
 .board_list table .notice td.tit a {font-size:18px; font-weight:700;}
 .board_list table .notice .notice_icon {display:inline-block; position:relative; width:82px; padding-left:40px; border:1px solid #00aeba; border-radius:16px; font-size:14px; font-weight:700; line-height:30px; color:#00aeba; text-align:left; -webkit-border-radius:16px; -moz-border-radius:16px; -ms-border-radius:16px; -o-border-radius:16px;}
 .board_list table .notice .notice_icon:before {position:absolute; top:5px; left:14px; width:22px; height:20px; background-image:url(../img/sprite/sprite.png); background-position:-203px -123px; background-size:500px 500px; content:"";}
-
 @media (max-width:1024px) {
     .board_list {overflow:hidden;}
     .board_list table,
@@ -333,7 +332,6 @@ label {cursor:pointer;}
 .top_news .txt_view .btn_wrap a span:before {width:30px;}
 .top_news .txt_view .btn_wrap a span:after {width:10px; -webkit-transform:rotate(45deg); transform:rotate(45deg); -webkit-transform-origin:right; transform-origin:right;}
 .top_news .txt_view .btn_wrap a:hover span:before,.top_news .txt_view .btn_wrap a:hover span:after {background:#fff;}
-
 @media (max-width:1024px) {
     .top_news {margin-bottom:30px; padding:30px;}
     .top_news .img_view {height:250px;}
@@ -342,7 +340,6 @@ label {cursor:pointer;}
     .top_news .txt_view .btn_wrap {margin-top:30px;}
     .top_news .txt_view .btn_wrap a {width:150px; font-size:12px; font-weight:700; line-height:38px;}
 }
-
 @media (max-width:599px) {
     .top_news {padding:30px 0; border-right:0; border-left:0;}
     .top_news .cont {float:none; width:100%;}
@@ -597,8 +594,8 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
 }
 
 @media (max-width:1280px) {
-    .navigation .menu_1depth {margin:4px -18px 0;}
-    .navigation .menu_1depth > li {margin:0 18px;}
+    .navigation .menu_1depth {margin:4px -15px 0;}
+    .navigation .menu_1depth > li {margin:0 15px;}
 }
 
 @media (max-width:1024px) {
@@ -777,7 +774,6 @@ footer {background:#505354; color:#fff;}
     .book_slide {position:absolute; top:0; right:0; left:0; margin:0;}
     .book_slide .padding {overflow:hidden; position:relative; z-index:-1; padding-bottom:140%; background:#ddd;}
 }
-
 
 /*=========================================================
 8. 메인 페이지 스타일
@@ -999,60 +995,57 @@ footer {background:#505354; color:#fff;}
 
 /* 교육정보 */
 .main_edu_info {overflow:hidden; position:relative; margin-top:50px;}
-.main_edu_info .cont {float:left; width:50%;}
+.main_edu_info .cont {float:left; width:38%;}
 .main_edu_info .list {position:relative; padding-right:25px;}
 .main_edu_info .list ul {overflow:hidden;}
-.main_edu_info .list ul li a {overflow:hidden; float:left; position:relative; width:calc(100% - 70px); padding-left:13px; font-size:16px; line-height:2em; color:#333; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.main_edu_info .list ul li {padding:5px 0; border-bottom:1px solid #ddd;}
+.main_edu_info .list ul li a {width:100%; font-size:16px; line-height:2em; color:#333; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .main_edu_info .list ul li a:hover {color:#00687f;}
-.main_edu_info .list ul li a:before {position:absolute; top:50%; left:0; width:4px; height:4px; margin-top:-2px; border-radius:50%; background:#646f72; content:"";}
 .main_edu_info .list ul li a p {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-.main_edu_info .list ul li span {float:right; font-family:"Lato"; font-size:12px; line-height:32px; color:#646f72;}
-.main_edu_info .btn_more {position:absolute; top:19px; left:135px;}
-.main_edu_info .sub_menu {margin-top:50px; padding-left:40px;}
-.main_edu_info .sub_menu ul {overflow:hidden; margin:0 -5px;}
-.main_edu_info .sub_menu ul li {float:left; position:relative; width:33.33%; padding:0 5px;}
-.main_edu_info .sub_menu ul li:before {position:absolute; bottom:25px; left:25px; width:45px; height:45px; background:red; content:"";}
-.main_edu_info .sub_menu ul li:after {visibility:hidden; position:absolute; top:0; left:5px; z-index:0; width:calc(100% - 10px); height:100%; border:3px solid #008398; -webkit-transition:all 0.5s; transition:all 0.5s; opacity:0; content:"";}
-.main_edu_info .sub_menu ul li:hover:after {visibility:visible; opacity:1;}
-.main_edu_info .sub_menu ul li a {display:block; position:relative; z-index:1; height:175px; padding:20px; border:1px solid #ddd; -webkit-transition:all 0.5s; transition:all 0.5s;}
-.main_edu_info .sub_menu ul li a:hover {border-color:#00687f;}
-.main_edu_info .sub_menu ul li a:before,.main_edu_info .sub_menu ul li a:after {position:absolute; right:20px; bottom:26px; width:16px; height:4px; border-radius:2px; background:#00687f; -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
+.main_edu_info .list ul li a p strong {font-weight:700; color:#248d8e;}
+.main_edu_info .list ul li span {display:block; font-family:"Lato"; font-size:12px; line-height:22px; color:#acb1b3;}
+.main_edu_info .btn_more {position:absolute; top:19px; right:30px;}
+.main_edu_info .sub_menu {margin-top:18px; width:24%;}
+.main_edu_info .sub_menu ul li {position:relative;}
+.main_edu_info .sub_menu ul li a {display:block; position:relative; z-index:1; height:105px; padding:35px 30px; padding-right:20%; -webkit-transition:all 0.5s; transition:all 0.5s; background-position:center right; background-repeat:no-repeat;}
+.main_edu_info .sub_menu ul li:nth-child(1) a {background-color:#16bccb; background-image:url(../img/bg/bg_main_info_01.png);}
+.main_edu_info .sub_menu ul li:nth-child(2) a {background-color:#109dcb; background-image:url(../img/bg/bg_main_info_02.png);}
+.main_edu_info .sub_menu ul li:nth-child(3) a {background-color:#1d72c0; background-image:url(../img/bg/bg_main_info_03.png);}
+.main_edu_info .sub_menu ul li a:before,.main_edu_info .sub_menu ul li a:after {position:absolute; top:50%; right:10%; width:24px; height:4px; margin-top:-2px; border-radius:2px; background:rgba(255,255,255,0.8); -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
 .main_edu_info .sub_menu ul li a:after {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
-.main_edu_info .sub_menu ul li a:hover:after {width:12px; height:12px; margin-right:1px; margin-bottom:-4px; border:4px solid #00687f; border-bottom:0; border-left:0; background:none; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
-.main_edu_info .sub_menu ul li a .tit {display:block; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.3em; color:#333;}
-.main_edu_info .sub_menu ul li a small {display:block; margin-top:5px; font-size:12px; line-height:1.5em; color:#646f72;}
+.main_edu_info .sub_menu ul li a:hover:after {width:16px; height:16px; margin-right:1px; margin-top:-8px; border:4px solid rgba(255,255,255,0.8); border-bottom:0; border-left:0; background:none; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.main_edu_info .sub_menu ul li a .tit {display:block; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.3em; color:#fff;}
+.main_edu_info .sub_menu ul li a small {display:block; font-size:12px; line-height:1.5em; color:#fff;}
 
 @media (max-width:1024px) {
-    .main_edu_info {margin-top:30px;}
     .main_edu_info .cont {float:none; width:100%;}
     .main_edu_info h2 {position:static; line-height:1.5em;}
     .main_edu_info .btn_more {top:3px; right:0; left:auto;}
-    .main_edu_info .list {padding:0;}
+    .main_edu_info .list {margin-bottom:30px; padding:0;}
     .main_edu_info .list ul {margin-top:15px;}
     .main_edu_info .list ul li span {color:rgba(100,111,114,0.6);}
     .main_edu_info .sub_menu {margin-top:30px; padding-left:0;}
     .main_edu_info .sub_menu ul li:before {bottom:15px; left:20px;}
-    .main_edu_info .sub_menu ul li a {height:150px; padding:15px;}
-    .main_edu_info .sub_menu ul li a:before,.main_edu_info .sub_menu ul li a:after {right:15px; bottom:21px;}
+    .main_edu_info .sub_menu ul li a {height:auto; padding:15px; background-size:contain;}
+    .main_edu_info .sub_menu ul li a:before,.main_edu_info .sub_menu ul li a:after {right:15px; bottom:21px; width:16px;}
+    .main_edu_info .sub_menu ul li a:hover:after {width:12px; height:12px; margin-top:-6px;}
+    .main_edu_info .sub_menu ul li a .tit,.main_edu_info .sub_menu ul li a small {display:inline-block; margin-right:15px;}
 }
 
 @media (max-width:599px) {
     .main_edu_info .list ul li a {font-size:14px; line-height:1.8em;}
-    .main_edu_info .list ul li span {line-height:25px;}
+    .main_edu_info .list ul li span {line-height:1.5em;}
     .main_edu_info .btn_more {top:0; line-height:25px;}
-    .main_edu_info .sub_menu ul {margin:0;}
-    .main_edu_info .sub_menu ul li {float:none; width:100%; margin-top:15px; padding:0;}
-    .main_edu_info .sub_menu ul li:first-child {margin:0;}
-    .main_edu_info .sub_menu ul li:before {top:50%; right:15px; left:auto; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
     .main_edu_info .sub_menu ul li:after {display:none;}
-    .main_edu_info .sub_menu ul li a {height:75px; border-color:#ddd !important;}
-    .main_edu_info .sub_menu ul li a:before,.main_edu_info .sub_menu ul li a:after {display:none;}
     .main_edu_info .sub_menu ul li a .tit {font-size:16px;}
+    .main_edu_info .sub_menu ul li a:before, .main_edu_info .sub_menu ul li a:after {display:none;}
 }
 
 /*=========================================================
 9. 서브 페이지별 스타일
 =========================================================*/
+
+/*************** 공통 요소 ***************/
 
 /* 서브 페이지 타이틀 */
 .sub_header {position:relative; z-index:1; height:290px; margin-top:105px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transition:opacity 2s; transition:opacity 2s; opacity:0;}
@@ -1227,6 +1220,43 @@ footer {background:#505354; color:#fff;}
     .msg_box p {font-size:18px;}
     .msg_box:before {top:-23px;}
     .msg_box:after {bottom:-23px;}
+}
+
+/*************** 개별 페이지 ***************/
+
+/* 인사말 */
+.utom_introduce .color_blue {font-weight:700; color:#008398;}
+.utom_introduce .introduce_greetings {position:relative;}
+.utom_introduce .introduce_greetings .right_img {float:right; margin-left:30px; width:48%;}
+.utom_introduce .greetings_text {padding-top:75px;}
+.utom_introduce .greetings_text .top_line_tit {position:relative; padding:20px 0; font-family:"Nanum Square"; font-size:36px; font-weight:900; line-height:1.2em;}
+.utom_introduce .greetings_text .top_line_tit:before {position:absolute; top:0; left:0; width:50px; height:3px; background-color:#008398; content:"";}
+.utom_introduce .greetings_text .greetings_sub_tit {margin-bottom:55px; font-size:24px; font-weight:700; line-height:1.5em; color:#222; font-family:"Nanum Square";}
+.utom_introduce .greetings_txt {margin-bottom:25px; font-size:15px; line-height:2em; color:#222;}
+.utom_introduce .greetings_sign {text-align:right;}
+.utom_introduce .greetings_sign .greetings_name {margin-bottom:10px; font-size:15px; font-weight:700; line-height:2em; color:#333;}
+.utom_introduce .greetings_sign .sign_img {line-height:0;}
+
+@media (max-width:1366px) {
+    .utom_introduce .greetings_text {padding-top:0;}
+	.utom_introduce .greetings_text .greetings_sub_tit {margin-bottom:30px;}
+    .utom_introduce .greetings_text br {display:none;}
+}
+
+@media (max-width:1024px) {
+	.utom_introduce .introduce_greetings .greetings_text {padding-right:0;}
+	.utom_introduce .greetings_text .top_line_tit {font-size:28px;}
+	.utom_introduce .greetings_text .greetings_sub_tit {margin-bottom:30px; font-size:16px;}
+    .utom_introduce .greetings_txt {font-size:14px; line-height:1.8em;}
+    .utom_introduce .greetings_sign .greetings_name {font-size:14px;}
+}
+
+@media (max-width:599px) {
+    .utom_introduce .introduce_greetings .right_img {float:none; width:auto; margin:0; margin-bottom:15px; text-align:center;}
+    .utom_introduce .introduce_greetings .right_img img {max-width:290px;}
+	.utom_introduce .introduce_greetings .greetings_text {padding-right:0;}
+	.utom_introduce .greetings_text .top_line_tit {font-size:24px;}
+    .utom_introduce .greetings_txt {line-height:1.6em;}
 }
 
 /* 플립러닝 기반 학생중심 참여수업 - 플립러닝 교수학습법 */

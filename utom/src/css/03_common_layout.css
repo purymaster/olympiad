@@ -175,7 +175,6 @@ label {cursor:pointer;}
 .board_list table .notice td.tit a {font-size:18px; font-weight:700;}
 .board_list table .notice .notice_icon {display:inline-block; position:relative; width:82px; padding-left:40px; border:1px solid #00aeba; border-radius:16px; font-size:14px; font-weight:700; line-height:30px; color:#00aeba; text-align:left; -webkit-border-radius:16px; -moz-border-radius:16px; -ms-border-radius:16px; -o-border-radius:16px;}
 .board_list table .notice .notice_icon:before {position:absolute; top:5px; left:14px; width:22px; height:20px; background-image:url(../img/sprite/sprite.png); background-position:-203px -123px; background-size:500px 500px; content:"";}
-
 @media (max-width:1024px) {
     .board_list {overflow:hidden;}
     .board_list table,
@@ -213,7 +212,6 @@ label {cursor:pointer;}
 .top_news .txt_view .btn_wrap a span:before {width:30px;}
 .top_news .txt_view .btn_wrap a span:after {width:10px; -webkit-transform:rotate(45deg); transform:rotate(45deg); -webkit-transform-origin:right; transform-origin:right;}
 .top_news .txt_view .btn_wrap a:hover span:before,.top_news .txt_view .btn_wrap a:hover span:after {background:#fff;}
-
 @media (max-width:1024px) {
     .top_news {margin-bottom:30px; padding:30px;}
     .top_news .img_view {height:250px;}
@@ -222,7 +220,6 @@ label {cursor:pointer;}
     .top_news .txt_view .btn_wrap {margin-top:30px;}
     .top_news .txt_view .btn_wrap a {width:150px; font-size:12px; font-weight:700; line-height:38px;}
 }
-
 @media (max-width:599px) {
     .top_news {padding:30px 0; border-right:0; border-left:0;}
     .top_news .cont {float:none; width:100%;}

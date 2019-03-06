@@ -3,6 +3,8 @@
 9. 서브 페이지별 스타일
 =========================================================*/
 
+/*************** 공통 요소 ***************/
+
 /* 서브 페이지 타이틀 */
 .sub_header {position:relative; z-index:1; height:290px; margin-top:105px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; transition:opacity 2s; opacity:0;}
 .upper_banner_on .sub_header {margin-top:calc(130px + 10.9375%);}
@@ -176,6 +178,43 @@
     .msg_box p {font-size:18px;}
     .msg_box:before {top:-23px;}
     .msg_box:after {bottom:-23px;}
+}
+
+/*************** 개별 페이지 ***************/
+
+/* 인사말 */
+.utom_introduce .color_blue {font-weight:700; color:#008398;}
+.utom_introduce .introduce_greetings {position:relative;}
+.utom_introduce .introduce_greetings .right_img {float:right; margin-left:30px; width:48%;}
+.utom_introduce .greetings_text {padding-top:75px;}
+.utom_introduce .greetings_text .top_line_tit {position:relative; padding:20px 0; font-family:"Nanum Square"; font-size:36px; font-weight:900; line-height:1.2em;}
+.utom_introduce .greetings_text .top_line_tit:before {position:absolute; top:0; left:0; width:50px; height:3px; background-color:#008398; content:"";}
+.utom_introduce .greetings_text .greetings_sub_tit {margin-bottom:55px; font-size:24px; font-weight:700; line-height:1.5em; color:#222; font-family:"Nanum Square";}
+.utom_introduce .greetings_txt {margin-bottom:25px; font-size:15px; line-height:2em; color:#222;}
+.utom_introduce .greetings_sign {text-align:right;}
+.utom_introduce .greetings_sign .greetings_name {margin-bottom:10px; font-size:15px; font-weight:700; line-height:2em; color:#333;}
+.utom_introduce .greetings_sign .sign_img {line-height:0;}
+
+@media (max-width:1366px) {
+    .utom_introduce .greetings_text {padding-top:0;}
+	.utom_introduce .greetings_text .greetings_sub_tit {margin-bottom:30px;}
+    .utom_introduce .greetings_text br {display:none;}
+}
+
+@media (max-width:1024px) {
+	.utom_introduce .introduce_greetings .greetings_text {padding-right:0;}
+	.utom_introduce .greetings_text .top_line_tit {font-size:28px;}
+	.utom_introduce .greetings_text .greetings_sub_tit {margin-bottom:30px; font-size:16px;}
+    .utom_introduce .greetings_txt {font-size:14px; line-height:1.8em;}
+    .utom_introduce .greetings_sign .greetings_name {font-size:14px;}
+}
+
+@media (max-width:599px) {
+    .utom_introduce .introduce_greetings .right_img {float:none; width:auto; margin:0; margin-bottom:15px; text-align:center;}
+    .utom_introduce .introduce_greetings .right_img img {max-width:290px;}
+	.utom_introduce .introduce_greetings .greetings_text {padding-right:0;}
+	.utom_introduce .greetings_text .top_line_tit {font-size:24px;}
+    .utom_introduce .greetings_txt {line-height:1.6em;}
 }
 
 /* 플립러닝 기반 학생중심 참여수업 - 플립러닝 교수학습법 */
