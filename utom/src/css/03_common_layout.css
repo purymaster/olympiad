@@ -21,26 +21,6 @@
 .ie8 p {margin-top:30px; font-size:16px; line-height:1.5;}
 .ie8 a {display:inline-block; height:2.5em; margin-top:30px; padding:0 1em; border-radius:1.25em; background:#00aeba; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#fff;}
 
-/* 최상단 배너 */
-.upper_banner {background-color:#e6eff1; transform:scaleY(0); transform-origin:top; transition:transform 0.2s;}
-.upper_banner.on {transform:scaleY(1);}
-.upper_banner .banner_wrapper {position:relative; max-width:1920px; margin:0 auto;}
-/* .upper_banner .banner_wrapper:after {position:absolute; top:0; right:0; bottom:0; left:0; z-index:0; background:rgba(255,255,255,0.3); content:"";} */
-.upper_banner .banner_wrapper a {position:absolute; top:0; left:0; z-index:1; width:100%; height:100%;}
-.upper_banner .ctr_wrap {position:absolute; bottom:10px; left:50%; z-index:2; min-width:210px; margin-left:21%; padding:5px; background:rgba(255,255,255,0.8); font-size:0; text-indent:0; transform:translateX(-50%);}
-.upper_banner .ctr_wrap button {position:relative; margin-left:25px; padding-right:20px; font-size:14px; line-height:1em; color:#333;}
-.upper_banner .ctr_wrap button:first-child {margin:0;}
-.upper_banner .ctr_wrap.white button {color:#fff;}
-.upper_banner .ctr_wrap button:before,.upper_banner .ctr_wrap button:after {position:absolute; right:0; width:17px; height:2px; background:#333; transform-origin:right; content:"";}
-.upper_banner .ctr_wrap.white button:before,.upper_banner .ctr.white button:after {background:#fff;}
-.upper_banner .ctr_wrap button:before {top:0; transform:rotate(-45deg);}
-.upper_banner .ctr_wrap button:after {bottom:0; transform:rotate(45deg);}
-
-@media screen and (max-width:1024px) {
-    .upper_banner .ctr_wrap {right:30px; bottom:10px; left:auto; min-width:0; margin:0; transform:none;}
-    .upper_banner .ctr_wrap button {margin-left:15px; font-size:12px; line-height:14px;}
-}
-
 /* 사이드 메뉴 */
 .side_menu {position:absolute; top:0; right:0; z-index:10; background:#fff; color:#646f72; text-align:center; transform:translateY(-50%); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .side_menu ul {border:1px solid #ddd;}
