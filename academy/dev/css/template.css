@@ -11,7 +11,7 @@
     font-family:"Nanum Gothic";
     font-weight:normal;
     font-style:normal;
-    src:local("※"), 
+    src:local("※"),
     url("../font/ngothic_regular.eot?#iefix") format("embedded-opentype"),
     url("../font/ngothic_regular.woff") format("woff"),
     url("../font/ngothic_regular.ttf") format("truetype"),
@@ -23,7 +23,7 @@
     font-family:"Nanum Square";
     font-weight:300;
     font-style:normal;
-    src:local("※"), 
+    src:local("※"),
     url("../font/nsquare_light.eot?#iefix") format("embedded-opentype"),
     url("../font/nsquare_light.woff") format("woff"),
     url("../font/nsquare_light.ttf") format("truetype"),
@@ -35,7 +35,7 @@
     font-family:"Nanum Square";
     font-weight:normal;
     font-style:normal;
-    src:local("※"), 
+    src:local("※"),
     url("../font/nsquare_regular.eot?#iefix") format("embedded-opentype"),
     url("../font/nsquare_regular.woff") format("woff"),
     url("../font/nsquare_regular.ttf") format("truetype"),
@@ -47,7 +47,7 @@
     font-family:"Nanum Square";
     font-weight:700;
     font-style:normal;
-    src:local("※"), 
+    src:local("※"),
     url("../font/nsquare_bold.eot?#iefix") format("embedded-opentype"),
     url("../font/nsquare_bold.woff") format("woff"),
     url("../font/nsquare_bold.ttf") format("truetype"),
@@ -59,12 +59,13 @@
     font-family:"Nanum Square";
     font-weight:900;
     font-style:normal;
-    src:local("※"), 
+    src:local("※"),
     url("../font/nsquare_extrabold.eot?#iefix") format("embedded-opentype"),
     url("../font/nsquare_extrabold.woff") format("woff"),
     url("../font/nsquare_extrabold.ttf") format("truetype"),
     url("../font/nsquare_extrabold.otf") format("opentype");
 }
+
 
 /*=========================================================
 2. 리셋
@@ -902,7 +903,8 @@ footer {background:#505354; color:#fff;}
 .banner_wrap .right {padding-left:5px;}
 .banner_wrap  .left .large {margin-bottom:10px;}
 .banner_wrap  .right .large {margin-top:10px;}
-.banner_wrap .slide li {position:relative; height:0; background-color:#efefef; background-position:center; background-size:cover;}
+.banner_wrap .slide li {position:relative; height:0; background-color:#efefef; background-position:center; background-size:cover; pointer-events:auto;}
+.banner_wrap .slide li a {position:absolute; top:0; right:0; bottom:0; left:0;}
 .banner_wrap .slide li .txt_wrap {position:absolute; bottom:55px; left:0; width:100%; padding:0 30px;}
 .banner_wrap .slide li .txt_wrap .tit {overflow:hidden; max-height:2.6em; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.3em;}
 .banner_wrap .slide li .txt_wrap .txt {overflow:hidden; margin-top:10px; font-size:14px; line-height:1.7em; text-overflow:ellipsis; white-space:nowrap;}
@@ -999,7 +1001,7 @@ footer {background:#505354; color:#fff;}
     .main_review .btn_more {top:0; line-height:25px;}
 }
 
-/* 교육정보1 */
+/* 교육정보 */
 .main_edu_info {overflow:hidden; position:relative; margin-top:50px;}
 .main_edu_info .cont {float:left; width:50%;}
 .main_edu_info .list {position:relative; padding-right:25px;}
@@ -1051,6 +1053,7 @@ footer {background:#505354; color:#fff;}
     .main_edu_info .sub_menu ul li a:before,.main_edu_info .sub_menu ul li a:after {display:none;}
     .main_edu_info .sub_menu ul li a .tit {font-size:16px;}
 }
+
 
 /*=========================================================
 9. 서브 페이지별 스타일

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>유투엠</title>
+	<title>GLEC어학원</title>
 
 	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
 	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
@@ -27,12 +27,38 @@
 	<!-- //하위 브라우저 접속시 화면 -->
 	<div class="wrap">
 		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner pc" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- 모바일 배너(1024px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1024x210" class="banner mobile" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1024/210/?random" class="banner mobile" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
 			<div class="header">
 				<div class="grid_container">
 					<div class="header_wrap">
 						<h1>
 							<a href="#">
-								<img src="../img/img/img_logo.png" alt="수학이 즐거운 올림피아드">
+								<img src="../img/img/img_logo.png" alt="영어로 행복한 GLEC 어학원">
 							</a>
 						</h1>
 						<button class="menu mobile" type="button">
@@ -46,6 +72,12 @@
 								<div>
 									<h2 class="hidden">올림피아드그룹 메뉴</h2>
 									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드교육</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">올림피아드수학</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
 										<div class="search_wrap">
 											<input type="text" title="검색어 입력">
 											<button type="submit">검색</button>
@@ -54,62 +86,80 @@
 									</div>
 								</div>
 								<div>
-									<h2 class="hidden">유투엠 주요 메뉴</h2>
+									<h2 class="hidden">GLEC 어학원 주요 메뉴</h2>
 									<div class="navigation">
 										<ul class="menu_1depth">
 											<li>
-												<a href="">유투엠 소개</a>
+												<a href="">GLEC 어학원</a>
 												<ul class="menu_2depth">
 													<li><a href="#">인사말</a></li>
-													<li><a href="#">유투엠 스토리</a></li>
-													<li><a href="#">유투엠 사명</a></li>
-													<li><a href="#">유투엠 인재상</a></li>
-													<li><a href="#">기업수상</a></li>
-													<li><a href="#">명예의 전당</a></li>
-													<li><a href="#">전국 캠퍼스</a></li>
+													<li><a href="#">교육방향</a></li>
+													<li><a href="#">캠퍼스안내</a></li>
 												</ul>
 											</li>
 											<li>
-												<a href="#">유투엠 학습법</a>
+												<a href="#">입학안내</a>
 												<ul class="menu_2depth">
-													<li><a href="#">플립러닝 기반 학생중심 참여수업</a></li>
-													<li><a href="#">하브루타 기반 말하는 수학</a></li>
-													<li><a href="#">뇌과학 기반의 메타인지 학습법</a></li>
+													<li><a href="#">입학절차</a></li>
+													<li><a href="#">TOSLA</a></li>
 												</ul>
 											</li>
 											<li>
-												<a href="#">유투엠 프로그램</a>
+												<a href="#">초등부</a>
 												<ul class="menu_2depth">
-													<li><a href="#">3가지 특장점</a></li>
-													<li><a href="#">4가지 말하기 학습전략</a></li>
-													<li><a href="#">프로그램 안내</a></li>
-													<li><a href="#">교재구성</a></li>
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">학기 및 레벨구성</a></li>
+													<li><a href="#">표준시간표</a></li>
+													<li><a href="#">영어도서관</a></li>
 												</ul>
 											</li>
 											<li>
-												<a href="#">유투엠 체험관</a>
+												<a href="#">중등부</a>
 												<ul class="menu_2depth">
-													<li><a href="#">말하는 수학 맛보기</a></li>
-													<li><a href="#">체험 수기</a></li>
-													<li><a href="#">언론보도</a></li>
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">학기 및 레벨구성</a></li>
+													<li><a href="#">표준시간표</a></li>
+													<li><a href="#">GLEC 플립러닝</a></li>
+													<li><a href="#">GLEC 개별학습</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">대입센터</a>
+											</li>
+											<li>
+												<a href="#">드림투어</a>
+												<ul class="menu_2depth">
+													<li><a href="#">드림투어 소개</a></li>
+													<li><a href="#">특징</a></li>
+													<li><a href="#">상담안내</a></li>
+													<li><a href="#">현장스케치</a></li>
 												</ul>
 											</li>
 											<li>
 												<a href="#">커뮤니티</a>
 												<ul class="menu_2depth">
 													<li><a href="#">공지사항</a></li>
+													<li><a href="#">합격실적</a></li>
+													<li><a href="#">홍보관</a></li>
 													<li><a href="#">교육정보</a></li>
-													<li><a href="#">현장스케치</a></li>
+													<li><a href="#">설명회후기</a></li>
+													<li><a href="#">Best Student</a></li>
+													<li><a href="#">Best of My PT</a></li>
 												</ul>
 											</li>
-											<li>
-												<a href="#">예약&amp;상담</a>
+											<!-- [D] 학습하기 메뉴는 모바일에서 제외 -->
+											<li class="pc">
+												<a href="#">학습하기</a>
 												<ul class="menu_2depth">
-													<li><a href="#">입학안내</a></li>
-													<li><a href="#">상담신청</a></li>
-													<li><a href="#">설명회신청</a></li>
+													<li><a href="#">GLEC Library</a></li>
+													<li><a href="#">GR &amp; Daily Test</a></li>
+													<li><a href="#">Dream Pop 초등</a></li>
+													<li><a href="#">Dream Pop 중등</a></li>
+													<li><a href="#">Voca 개별학습</a></li>
+													<li><a href="#">Dream Map</a></li>
 												</ul>
 											</li>
+											<!-- [D] //학습하기 메뉴는 모바일에서 제외 -->
 										</ul>
 									</div>
 								</div>
@@ -132,10 +182,10 @@
 						<li class="swiper-slide" style="background-image:url('https://via.placeholder.com/1920x635')" ;>
 							<div class="grid_container txt_view">
 								<div class="txt_wrap">
-									<p class="tit">말하는 수학의 교육혁명 U2M</p>
+									<p class="tit">수학이 즐거운 올림피아드</p>
 									<p class="txt">
-										U2M은 대한민국 NO.1 수학 올림피아드교육이 직접 연구개발하고<br>
-                                        3년에 걸쳐 검증한 차별화된 수학전문학원입니다.
+										함께 문제를 해결해 나가는 수업 과정을 통해 협동심과<br>
+                                        커뮤니케이션 능력은 물론, 발표력, 창의력까지 향상됩니다.
                                     </p>
 								</div>
 							</div>
@@ -165,9 +215,9 @@
 				<div class="main_slide_pager">
 					<div class="grid_container">
 						<ul class="pager pagination">
-							<!-- <li class="bullet">말하는 수학의 교육혁명 U2M</li>
-                            <li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li>
-                            <li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li> -->
+							<li class="bullet">수학이 즐거운 올림피아드</li>
+							<li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li>
+							<li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li>
 						</ul>
 					</div>
 				</div>
@@ -190,7 +240,7 @@
                                 bulletActiveClass: 'on',
                                 renderBullet: function (idx) {
                                     var main_slide_txt = [
-                                        '말하는 수학의 교육혁명 U2M',
+                                        '수학이 즐거운 올림피아드',
                                         '긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목',
                                         '긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목'
                                     ]
@@ -367,9 +417,9 @@
 									</ul>
 									<ul class="pager pagination">
 										<!-- <li class="bullet">1</li>
-                                        <li class="bullet">2</li>
-                                        <li class="bullet">3</li>
-                                        <li class="bullet">4</li> -->
+                                            <li class="bullet">2</li>
+                                            <li class="bullet">3</li>
+                                            <li class="bullet">4</li> -->
 									</ul>
 								</div>
 							</div>
@@ -397,9 +447,9 @@
 										</ul>
 										<ul class="pager pagination">
 											<!-- <li class="bullet">1</li>
-                                                    <li class="bullet">2</li>
-                                                    <li class="bullet">3</li>
-                                                    <li class="bullet">4</li> -->
+                                                        <li class="bullet">2</li>
+                                                        <li class="bullet">3</li>
+                                                        <li class="bullet">4</li> -->
 										</ul>
 									</div>
 								</div>
@@ -424,9 +474,9 @@
 										</ul>
 										<ul class="pager pagination">
 											<!-- <li class="bullet">1</li>
-                                                    <li class="bullet">2</li>
-                                                    <li class="bullet">3</li>
-                                                    <li class="bullet">4</li> -->
+                                                        <li class="bullet">2</li>
+                                                        <li class="bullet">3</li>
+                                                        <li class="bullet">4</li> -->
 										</ul>
 									</div>
 								</div>
@@ -460,9 +510,9 @@
 										</ul>
 										<ul class="pager pagination">
 											<!-- <li class="bullet">1</li>
-                                                    <li class="bullet">2</li>
-                                                    <li class="bullet">3</li>
-                                                    <li class="bullet">4</li> -->
+                                                        <li class="bullet">2</li>
+                                                        <li class="bullet">3</li>
+                                                        <li class="bullet">4</li> -->
 										</ul>
 									</div>
 								</div>
@@ -487,9 +537,9 @@
 										</ul>
 										<ul class="pager pagination">
 											<!-- <li class="bullet">1</li>
-                                                    <li class="bullet">2</li>
-                                                    <li class="bullet">3</li>
-                                                    <li class="bullet">4</li> -->
+                                                        <li class="bullet">2</li>
+                                                        <li class="bullet">3</li>
+                                                        <li class="bullet">4</li> -->
 										</ul>
 									</div>
 								</div>
@@ -553,9 +603,9 @@
 									</ul>
 									<ul class="pager pagination">
 										<!-- <li class="bullet">1</li>
-                                                <li class="bullet">2</li>
-                                                <li class="bullet">3</li>
-                                                <li class="bullet">4</li> -->
+                                                    <li class="bullet">2</li>
+                                                    <li class="bullet">3</li>
+                                                    <li class="bullet">4</li> -->
 									</ul>
 								</div>
 							</div>
@@ -567,26 +617,26 @@
 			</section>
 			<!-- //배너 영역 -->
 
-			<!-- 유투엠 교육 안내 -->
+			<!-- 올림피아드 교육 안내 -->
 			<section class="main_edu_list">
 				<div class="grid_container">
-					<h2 class="hidden">유투엠 교육 안내</h2>
+					<h2 class="hidden">올림피아드 교육 안내</h2>
 					<ul>
-						<li data-animation="fadeInUp" data-delay="0"><a href="#">특장점</a></li>
-						<li data-animation="fadeInUp" data-delay="1"><a href="#">말하기 학습</a></li>
-						<li data-animation="fadeInUp" data-delay="2"><a href="#">유투엠 체험</a></li>
-						<li data-animation="fadeInUp" data-delay="3"><a href="#">명예의 전당</a></li>
+						<li data-animation="fadeInUp" data-delay="0"><a href="#">초등 프로그램</a></li>
+						<li data-animation="fadeInUp" data-delay="1"><a href="#">중등 프로그램</a></li>
+						<li data-animation="fadeInUp" data-delay="2"><a href="#">대입센터</a></li>
+						<li data-animation="fadeInUp" data-delay="3"><a href="#">드림투어</a></li>
 						<li data-animation="fadeInUp" data-delay="4"><a href="#">캠퍼스안내</a></li>
 					</ul>
 				</div>
 			</section>
-			<!-- //유투엠 교육 안내 -->
+			<!-- //올림피아드 교육 안내 -->
 
-			<!-- 합격수기 -->
+			<!-- Best Student -->
 			<section class="main_review">
 				<div class="grid_container">
 					<div class="review_wrap">
-						<h2>합격수기</h2>
+						<h2>Best Student</h2>
 						<div class="wrapper">
 
 							<div class="list_wrap swiper-container">
@@ -695,60 +745,18 @@
 						</ul>
 						<a href="#" class="btn_more" title="교육정보 더보기">MORE</a>
 					</div>
-					<div class="cont list">
-						<h2>캠퍼스소식</h2>
-						<ul>
-							<li>
-								<a href="#">
-									<p>
-										<strong>[카테고리]</strong>
-										긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-									</p>
-								</a>
-								<span class="date">9999.99.99</span>
-							</li>
-							<li>
-								<a href="#">
-									<p>
-										<strong>[카테고리]</strong>
-										긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-									</p>
-								</a>
-								<span class="date">9999.99.99</span>
-							</li>
-							<li>
-								<a href="#">
-									<p>
-										<strong>[카테고리]</strong>
-										긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-									</p>
-								</a>
-								<span class="date">9999.99.99</span>
-							</li>
-							<li>
-								<a href="#">
-									<p>
-										<strong>[카테고리]</strong>
-										긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-									</p>
-								</a>
-								<span class="date">9999.99.99</span>
-							</li>
-						</ul>
-						<a href="#" class="btn_more" title="캠퍼스소식 더보기">MORE</a>
-					</div>
 					<div class="cont sub_menu">
 						<ul>
 							<li data-animation="fadeInUp" data-delay="0">
 								<a href="#">
-									<span class="tit">입학안내</span>
-									<small>맞춤학습을 위한 정확한 실력측정!</small>
+									<span class="tit">상담신청</span>
+									<small>사전예약으로 편리하게!</small>
 								</a>
 							</li>
 							<li data-animation="fadeInUp" data-delay="1">
 								<a href="#">
-									<span class="tit">상담신청</span>
-									<small>사전예약으로 편리하게!</small>
+									<span class="tit">입학안내</span>
+									<small>맞춤학습을 위한 실력측정!</small>
 								</a>
 							</li>
 							<li data-animation="fadeInUp" data-delay="2">
@@ -768,8 +776,9 @@
 			<div class="grid_container">
 				<div class="footer_upper">
 					<ul class="bottom_menu">
-						<li><a href="#">올림피아드 소개</a></li>
+						<li><a href="#">GLEC소개</a></li>
 						<li><a href="#">찾아오시는길</a></li>
+						<li><a href="#">사이트맵</a></li>
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
 						<li><a href="#">이메일무단수집거부</a></li>
@@ -790,7 +799,7 @@
 					<ul class="sns">
 						<li class="blog"><a href="#">블로그</a></li>
 					</ul>
-					<img class="logo" src="../img/img/img_footer_logo.png" alt="수학이 즐거운 올림피아드">
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="영어로 행복한 GLEC 어학원">
 					<div class="lower_wrap">
 						<address>
 							<span class="hidden">회사정보</span>
@@ -810,6 +819,25 @@
 				</div>
 			</div>
 		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<li><a href="#">상담신청</a></li>
+				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<li class="counsel pc">
+					<span class="tit">상담문의</span>
+					<span class="phone">1899-0949</span>
+					<span class="date">평일 10:00~19:00</span>
+				</li>
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
 	</div>
 </body>
 
