@@ -565,14 +565,19 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
 .navigation .menu_1depth > li:hover > a {color:#00687f;}
 .navigation .menu_2depth {visibility:hidden; position:absolute; top:60px; left:50%; min-width:150px; text-align:center; -webkit-transform:translateX(-50%); transform:translateX(-50%); opacity:0;}
 .header:hover .navigation .menu_2depth {visibility:visible; -webkit-transition:all 1s; transition:all 1s; opacity:1;}
-.navigation .menu_2depth li a {display:block; font-size:14px; line-height:2em; color:#666;}
+.navigation .menu_2depth li a {display:block; padding:0.3em 0; font-size:14px; line-height:1.4em; color:#666;}
 
 @media (max-width:1600px) {
+    .header_wrap h1 img {display:block; height:60px;}
+    .header_wrap h1 span {margin:0; margin-top:10px; font-size:16px;}
+}
+
+@media (max-width:1366px) {
     .navigation .menu_1depth {margin:4px -30px 0;}
     .navigation .menu_1depth > li {margin:0 30px;}
 }
 
-@media (max-width:1366px) {
+@media (max-width:1280px) {
     .navigation .menu_1depth {margin:4px -20px 0;}
     .navigation .menu_1depth > li {margin:0 20px;}
 }
@@ -584,7 +589,8 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
     .header:before {display:none;}
     .header_wrap h1 {padding-top:10px; text-align:center;}
     .header_wrap h1 a {display:inline-block;}
-    .header_wrap h1 img {height:40px;}
+    .header_wrap h1 img {display:inline-block; height:40px;}
+    .header_wrap h1 span {top:3px; width:auto; margin-left:5px;}
     .header_wrap .menu {position:absolute; top:20px; left:0; width:20px; height:20px;}
     .header_wrap .menu span {position:absolute; right:0; width:100%; height:2px; background:#00687f;}
     .header_wrap .menu span:nth-child(1) {top:0;}
@@ -758,8 +764,7 @@ footer {background:#505354; color:#fff;}
 8. 메인 페이지 스타일
 =========================================================*/
 
-.main_content {margin-top:130px; margin-bottom:80px;}
-.upper_banner_on .main_content {margin-top:calc(130px + 10.9375%);}
+.main_content {overflow:hidden; margin-top:130px; margin-bottom:80px; padding-top:30px;}
 .main_content .btn_more {display:inline-block; position:relative; padding-right:25px; padding-left:16px; background:#333; font-family:"Lato"; font-size:12px; font-weight:300; line-height:30px; color:rgba(255,255,255,0.8); -webkit-transition:all 0.2s; transition:all 0.2s; text-transform:uppercase;}
 .main_content .btn_more:hover {background:#00687f;}
 .main_content .btn_more:before,.main_content .btn_more:after {position:absolute; top:50%; right:10px; width:10px; height:2px; margin-top:-2px; background:rgba(255,255,255,0.8); -webkit-transition:all 0.2s; transition:all 0.2s; content:"";}
@@ -767,21 +772,32 @@ footer {background:#505354; color:#fff;}
 .main_content .btn_more:after {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
 .main_content .btn_more:hover:after {width:8px; height:8px; margin-top:-5px; border:2px solid rgba(255,255,255,0.8); border-bottom:0; border-left:0; background:none; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
 
-@media (min-width:1921px) {
-    .upper_banner_on .main_content {margin-top:340px;}
-}
 
 @media (max-width:1024px) {
     .main_content {margin-top:65px; margin-bottom:50px;}
     .main_content h2 {font-size:24px;}
-    .upper_banner_on .main_content {margin-top:calc(65px + 20.5078125%);}
 }
 
 @media (max-width:599px) {
     .main_content h2 {font-size:18px;}
 }
 
+/* 메인 슬라이드 영역 */
+.main_slide_wrap {float:left; width:60%; padding-right:60px;}
+.main_slide {}
+.main_slide .slide li {position:relative; height:815px; background-position:center; background-size:cover;}
+.main_slide .txt_wrap {position:absolute; bottom:30px; left:30px; width:calc(100% - 60px); padding:30px; background:rgba(36,141,142,0.9);}
+.main_slide .txt_wrap .cont {float:left; color:#fff;}
+.main_slide .txt_wrap .left {padding-right:30px; border-right:1px solid rgba(255,255,255,0.4);}
+.main_slide .txt_wrap span {display:block; font-weight:700; line-height:1.5em; text-align:center;}
+.main_slide .txt_wrap .sub {font-family:"Nanum Square"; font-size:14px;}
+.main_slide .txt_wrap .num {font-family:"Nanum Myeongjo"; font-size:24px; font-style:italic;}
+.main_slide .txt_wrap .tit {font-family:"Nanum Square"; font-size:20px;}
+.main_slide .txt_wrap .right {max-width:calc(100% - 230px); padding-left:25px;}
+.main_slide .txt_wrap .right p {overflow:hidden; max-height:8.5em; font-size:13px; line-height:1.7em; color:rgba(255,255,255,0.9);}
 
+/* 컨텐츠 영역 */
+.main_contents {float:left; width:40%; background:red; opacity:0.1;}
 
 /*=========================================================
 9. 서브 페이지별 스타일
@@ -1043,32 +1059,32 @@ footer {background:#505354; color:#fff;}
  */
 
  @-webkit-keyframes fadeInUp {
-    0% {-webkit-transform:translate3d(0, 100%, 0); transform:translate3d(0, 100%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(0, 30%, 0); transform:translate3d(0, 30%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
 	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @keyframes fadeInUp {
-    0% {-webkit-transform:translate3d(0, 100%, 0); transform:translate3d(0, 100%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(0, 30%, 0); transform:translate3d(0, 30%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
     100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @-webkit-keyframes fadeInLeft {
-    0% {-webkit-transform:translate3d(-100%, 0, 0); transform:translate3d(-100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(-30%, 0, 0); transform:translate3d(-30%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
 	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @keyframes fadeInLeft {
-    0% {-webkit-transform:translate3d(-100%, 0, 0); transform:translate3d(-100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(-30%, 0, 0); transform:translate3d(-30%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
     100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @-webkit-keyframes fadeInRight {
-    0% {-webkit-transform:translate3d(100%, 0, 0); transform:translate3d(100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(30%, 0, 0); transform:translate3d(30%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
 	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @keyframes fadeInRight {
-    0% {-webkit-transform:translate3d(100%, 0, 0); transform:translate3d(100%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(30%, 0, 0); transform:translate3d(30%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
     100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 

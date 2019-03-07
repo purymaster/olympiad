@@ -36,7 +36,7 @@ header.animated:after {transform:scaleX(1);}
 .navigation .menu_1depth > li:hover > a {color:#f78920;}
 .navigation .menu_2depth {visibility:hidden; position:absolute; top:60px; left:50%; min-width:150px; text-align:center; transform:translateX(-50%); opacity:0;}
 .header:hover .navigation .menu_2depth {visibility:visible; transition:all 1s; opacity:1;}
-.navigation .menu_2depth li a {display:block; font-size:14px; line-height:2em; color:#666;}
+.navigation .menu_2depth li a {display:block; padding:0.3em 0; font-size:14px; line-height:1.4em; color:#666;}
 
 @media (max-width:1600px) {
     .navigation .menu_1depth {margin:4px -30px 0;}
@@ -89,7 +89,7 @@ header.animated:after {transform:scaleX(1);}
     .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-size:16px; line-height:2em;}
     .navigation .menu_1depth > li:hover:after {display:none;}
     .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#fffaf3; text-align:left; transform:none; transition:none !important; opacity:1;}
-    .navigation .menu_2depth li a {font-size:12px; line-height:1.8em;}
+    .navigation .menu_2depth li a {font-size:12px; padding:0; line-height:1.8em;}
 }
 
 @media (max-width:599px) {

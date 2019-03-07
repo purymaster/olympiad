@@ -36,7 +36,7 @@ header.animated:after {transform:scaleX(1);}
 .navigation .menu_1depth > li:hover > a {color:#00687f;}
 .navigation .menu_2depth {visibility:hidden; position:absolute; top:60px; left:50%; min-width:150px; text-align:center; transform:translateX(-50%); opacity:0;}
 .header:hover .navigation .menu_2depth {visibility:visible; transition:all 1s; opacity:1;}
-.navigation .menu_2depth li a {display:block; font-size:14px; line-height:2em; color:#666;}
+.navigation .menu_2depth li a {display:block; padding:0.3em 0; font-size:14px; line-height:1.4em; color:#666;}
 
 @media (max-width:1600px) {
     .navigation .menu_1depth {margin:4px -40px 0;}

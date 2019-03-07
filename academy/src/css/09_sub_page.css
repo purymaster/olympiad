@@ -131,7 +131,7 @@
 .introduce .introduce_mod .introduce_text {overflow:hidden; padding:195px 0 0 60px;}
 .introduce .cont_left .introduce_img {float:right;}
 .introduce .cont_left .introduce_text {padding:195px 60px 0 0; text-align:right;}
-.introduce .introduce_text .introduce_tit {position:relative; margin-bottom:20px; font-size:20px; font-weight:bold; line-height:1.3em; color:#333;}
+.introduce .introduce_text .introduce_tit {position:relative; margin-bottom:20px; font-size:20px; font-weight:700; line-height:1.3em; color:#333; font-family:"Nanum Square";}
 .introduce .introduce_text .introduce_tit:before {position:absolute; top:-72px; left:-32px; z-index:-1; width:90px; height:90px; border:10px solid #f2f2f2; content:"";}
 .introduce .introduce_text .introduce_txt {font-size:14px; line-height:1.6em; color:#333;}
 .introduce .text_left .introduce_tit:before {left:inherit;}
