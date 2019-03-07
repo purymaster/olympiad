@@ -215,8 +215,9 @@
 				<script>
 					$(function () {
                         var main_slide = new Swiper('.main_slide.swiper-container', {
+                            simulateTouch: false,
                             autoplay: {
-                                delay: 500000,
+                                delay: 5000,
                             },
                             slideActiveClass: 'on',
                             effect: 'fade',
@@ -294,6 +295,7 @@
 				<script>
 					$(function () {
                         var notice_slide = new Swiper('.notice_slide .swiper-container', {
+                            simulateTouch: false,
                             autoplay: {
                                 delay: 5000,
                             },
@@ -327,6 +329,7 @@
 
                                     $('.banner_slide').each(function () {
                                         new Swiper(slide_class_str + slide_idx + '.swiper-container', {
+                                            simulateTouch: false,
                                             autoplay: {
                                                 delay: 5000,
                                             },
@@ -687,6 +690,7 @@
 							<script>
 								$(function () {
                                     var review_slide = new Swiper('.review_wrap .swiper-container', {
+                                        simulateTouch: false,
                                         autoplay: {
                                             delay: 5000,
                                         },

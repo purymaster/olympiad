@@ -131,9 +131,9 @@
 				<!-- 메인 슬라이드 영역 -->
 				<div class="main_slide_wrap">
 					<div class="main_slide">
-						<div class="wrapper">
-							<ul class="slide">
-								<li style="background-image:url(https://picsum.photos/660/815/?random);">
+						<div class="wrapper swiper-container">
+							<ul class="slide swiper-wrapper">
+								<li class="swiper-slide" style="background-image:url(https://picsum.photos/660/825/?random);">
 									<div class=" txt_wrap">
 										<div class="cont left">
 											<span class="sub">
@@ -145,22 +145,147 @@
 										</div>
 										<div class="cont right">
 											<p>
-												가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가
+												문제풀이 후 틀린 문제를 스스로 다시 풀거나 교사의 도움을 받아 해결한 후 문제해결과정을 학생이 거꾸로 교사에게 설명하는
+												방식으로, 교사의 코칭을 받아 완전하게 이해할 때까지 지도합니다.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/660x825);">
+									<div class=" txt_wrap">
+										<div class="cont left">
+											<span class="sub">
+                                                유투엠의 4가지<br>
+                                                말하기 학습전략
+                                            </span>
+											<span class="num">02</span>
+											<span class="tit">거꾸로 설명하기</span>
+										</div>
+										<div class="cont right">
+											<p>
+												가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가
 											</p>
 										</div>
 									</div>
 								</li>
 							</ul>
+							<ul class="ctr">
+								<li class="prev">이전 슬라이드</li>
+								<li class="next">다음 슬라이드</li>
+							</ul>
 						</div>
 					</div>
-				</div>
 
+					<!-- [D] 화면 확인용 스크립트 -->
+					<script>
+						$(function () {
+                            var main_slide = new Swiper('.main_slide .swiper-container', {
+                                simulateTouch: false,
+                                autoplay: {
+                                    delay: 5000,
+                                },
+                                slideActiveClass: 'on',
+                                effect: 'fade',
+                                loop: true,
+                                navigation: {
+                                    nextEl: '.main_slide .next',
+                                    prevEl: '.main_slide .prev',
+                                },
+                            })
+                        });
+                    </script>
+					<!-- [D] //화면 확인용 스크립트 -->
+
+				</div>
 				<!-- //메인 슬라이드 영역 -->
 
 				<!-- 컨텐츠 영역 -->
-				<div class="main_contents">
-					<section>
-						컨텐츠다
+				<div class="contents">
+					<section class="notice">
+						<h2>공지사항</h2>
+						<div class="thumb_list">
+							<ul>
+								<li>
+									<div class="cont img" style="background-image:url(https://via.placeholder.com/210x160);">
+									</div>
+									<div class="cont info">
+										<p class="tit">
+											긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+										</p>
+										<p class="txt">
+											긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+										</p>
+										<a href="#">자세히 보기</a>
+									</div>
+								</li>
+								<li>
+									<div class="cont img" style="background-image:url(https://picsum.photos/210/160/?random);">
+									</div>
+									<div class="cont info">
+										<p class="tit">
+											긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+										</p>
+										<p class="txt">
+											긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+										</p>
+										<a href="#">자세히 보기</a>
+									</div>
+								</li>
+							</ul>
+							<a href="#" class="more">MORE</a>
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<a href="#">
+										<p>긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+										<span class="date">9999.99.99</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+										<span class="date">9999.99.99</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+										<span class="date">9999.99.99</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="counsel">
+						<h2 class="hidden">상담메뉴</h2>
+						<div class="counsel_upper">
+							<ul>
+								<li data-animation="fadeInUp" data-delay="0">
+									<a href="#">상담신청</a>
+								</li>
+								<li data-animation="fadeInUp" data-delay="1">
+									<a href="#">입학안내</a>
+								</li>
+								<li data-animation="fadeInUp" data-delay="2">
+									<a href="#">설명회 신청</a>
+								</li>
+							</ul>
+						</div>
+						<div class="counsel_lower">
+							<div class="cont call" data-animation="fadeInUp" data-delay="3">
+								<a href="tel:02-3476-3003">
+									<div class="txt_wrap">
+										<span class="tit">강남세곡캠퍼스 상담문의</span>
+										<span class="tel">02-3476-3003</span>
+										<span class="time">평일 13:00 ~ 22:00</span>
+									</div>
+								</a>
+							</div>
+							<div class="cont map" data-animation="fadeInUp" data-delay="6">
+								<a href="#"> 찾아오시는 길</a>
+							</div>
+						</div>
 					</section>
 				</div>
 				<!-- //컨텐츠 영역 -->

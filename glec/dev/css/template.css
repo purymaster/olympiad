@@ -1038,6 +1038,11 @@ footer {background:#505354; color:#fff;}
 .main_edu_info .sub_menu ul li a .tit {display:block; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.3em; color:#333;}
 .main_edu_info .sub_menu ul li a small {display:block; margin-top:5px; font-size:12px; line-height:1.5em; color:#646f72;}
 
+@media (max-width:1600px) {
+    .main_edu_info .sub_menu {padding-left:0;}
+    .main_edu_info .sub_menu ul li a .tit {white-space:nowrap;}
+}
+
 @media (max-width:1024px) {
     .main_edu_info {margin-top:30px;}
     .main_edu_info .cont {float:none; width:100%;}

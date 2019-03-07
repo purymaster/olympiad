@@ -73,7 +73,7 @@ $(function () {
     };
 
     (function check_cookie() {
-        get_cookie("no_pop") !== "" ?
+        get_cookie("no_pop_academy") !== "" ?
             (upper_banner.hide(),
                 $('body').removeClass('upper_banner_on')) :
             (upper_banner.addClass('on'),
@@ -81,7 +81,7 @@ $(function () {
     })();
 
     upper_banner.find('button').on('click', function () {
-        if ($(this).hasClass('today')) set_cookie("no_pop", "y", "1"); // 1일동안 보지 않기
+        if ($(this).hasClass('today')) set_cookie("no_pop_academy", "y", "1"); // 1일동안 보지 않기
         close_banner();
     });
 
