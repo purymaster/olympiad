@@ -842,8 +842,8 @@ footer {background:#505354; color:#fff;}
     .main_slide .txt_wrap .txt {margin-top:20px; font-size:16px;}
     .main_slide .txt_wrap .txt br {display:none;}
     .main_slide_pager {background:none;}
-    .main_slide_pager .pager {position:absolute; bottom:160px; left:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
-    .main_slide_pager .pager li {width:10px; height:10px; margin:0 3px; padding:0; border:2px solid #fff; text-indent:-9999px;}
+    .main_slide_pager .pager {position:absolute; bottom:150px; left:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
+    .main_slide_pager .pager li {width:15px; height:15px; margin:0 3px; padding:0; border:2px solid #fff; text-indent:-9999px;}
     .main_slide_pager .pager li.on,.main_slide_pager .pager li:hover {background:#fff;}
 }
 
@@ -853,7 +853,7 @@ footer {background:#505354; color:#fff;}
     .main_slide .txt_wrap {display:table-cell; max-width:90vw; padding:0 0 20px 0; text-align:center; vertical-align:middle;}
     .main_slide .txt_wrap .tit {max-height:2.8em; font-size:20px; line-height:1.4em; text-overflow:clip; white-space:normal;}
     .main_slide .txt_wrap .tit:after {display:none;}
-    .main_slide .txt_wrap .txt {margin-top:15px; font-size:12px;}
+    .main_slide .txt_wrap .txt {max-height:3.2em; margin-top:15px; font-size:12px;}
 }
 
 /* 공지사항 슬라이드 */
@@ -922,11 +922,22 @@ footer {background:#505354; color:#fff;}
 .banner_wrap .pager li.on {background:#fff;}
 
 @media (max-width:1024px) {
+    .main_banner {margin-top:10px; width:calc(100% + 60px); margin-left:-30px;}
     .banner_wrap {margin-top:-10px;}
-    .banner_wrap .cont {float:none; width:100%; margin-top:10px; padding:0 !important;}
+    .banner_wrap .cont {float:none; width:100%; padding:0 !important;}
     .banner_wrap .slide li .txt_wrap {bottom:40px;}
     .banner_wrap .slide li .txt_wrap .tit {max-height:1.3em; font-size:18px; text-overflow:ellipsis; white-space:nowrap;}
     .banner_wrap .slide li .txt_wrap .txt {margin:0; font-size:12px;}
+    .banner_wrap .left .large,.banner_wrap .right .large {margin:0;}
+    .banner_wrap .small .small_cont {padding:0 !important;}
+    .banner_wrap .pager {bottom:10px;}
+    .banner_wrap .pager {left:0; width:100%; text-align:center; -webkit-transform:none; transform:none;}
+    .banner_wrap .pager li {display:inline-block; float:none; width:15px; height:15px;}
+}
+
+@media (max-width:599px) {
+    .main_banner {width:calc(100% + 30px); margin-left:-15px;}
+    .banner_wrap .slide li .txt_wrap {bottom:30px;}
 }
 
 /* 올림피아드 교육 안내 */
