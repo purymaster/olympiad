@@ -50,8 +50,8 @@
 /* 사이드 메뉴 */
 .side_menu {position:absolute; top:0; right:0; z-index:10; background:#fff; color:#646f72; text-align:center; transform:translateY(-50%); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .side_menu ul {border:1px solid #ddd;}
-.side_menu ul li {position:relative; width:90px; height:102px;}
-.side_menu ul li:after {content:""; position:absolute; left:50%; bottom:0; width:40px; height:1px; margin-left:-20px; background:#ddd;}
+.side_menu ul li {position:relative; width:90px; height:75px;}
+.side_menu ul li:after {content:""; position:absolute; left:50%; bottom:-12px; width:40px; height:1px; margin-left:-20px; background:#ddd;}
 .side_menu ul li:last-child:after {display:none;}
 .side_menu ul li a {display:block; position:relative; padding-top:64px; font-family:"Nanum Square"; font-size:12px; font-weight:700; color:inherit;}
 .side_menu ul li a:hover {color:#028499;}

@@ -11,7 +11,7 @@ header.animated:after {transform:scaleX(1);}
 .header:hover:before {height:185px;}
 .header_wrap {position:relative; font-size:0;}
 .header_wrap h1 {padding-top:20px;}
-.header_wrap h1 img {height:80px;}
+.header_wrap h1 img {height:80px; transition:all 0.5s;}
 .header_wrap h1 span {display:inline-block; overflow:hidden; position:relative; top:-7px; width:165px; margin-left:10px; font-family:"Nanum Square"; font-size:20px; font-weight:900; color:#00687f; text-overflow:ellipsis; vertical-align:bottom; white-space:nowrap;}
 .header_wrap .nav_wrap {position:absolute; top:0; right:0;}
 .group_nav {padding:12px 0; text-align:right;}
@@ -50,6 +50,7 @@ header.animated:after {transform:scaleX(1);}
 }
 
 @media (max-width:1280px) {
+    .header_wrap h1 img {height:50px;}
     .navigation .menu_1depth {margin:4px -20px 0;}
     .navigation .menu_1depth > li {margin:0 20px;}
 }
@@ -92,6 +93,7 @@ header.animated:after {transform:scaleX(1);}
     .navigation .menu_1depth > li:hover:after {display:none;}
     .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; transform:none; transition:none !important; opacity:1;}
     .navigation .menu_2depth li a {font-size:12px;}
+    .navigation .menu_2depth li a br {display:none;}
 }
 
 @media (max-width:599px) {

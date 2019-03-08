@@ -539,7 +539,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
 .header:hover:before {height:185px;}
 .header_wrap {position:relative; font-size:0;}
 .header_wrap h1 {padding-top:20px;}
-.header_wrap h1 img {height:80px;}
+.header_wrap h1 img {height:80px; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .header_wrap h1 span {display:inline-block; overflow:hidden; position:relative; top:-7px; width:165px; margin-left:10px; font-family:"Nanum Square"; font-size:20px; font-weight:900; color:#00687f; text-overflow:ellipsis; vertical-align:bottom; white-space:nowrap;}
 .header_wrap .nav_wrap {position:absolute; top:0; right:0;}
 .group_nav {padding:12px 0; text-align:right;}
@@ -578,6 +578,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
 }
 
 @media (max-width:1280px) {
+    .header_wrap h1 img {height:50px;}
     .navigation .menu_1depth {margin:4px -20px 0;}
     .navigation .menu_1depth > li {margin:0 20px;}
 }
@@ -620,6 +621,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
     .navigation .menu_1depth > li:hover:after {display:none;}
     .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; -webkit-transform:none; transform:none; -webkit-transition:none !important; transition:none !important; opacity:1;}
     .navigation .menu_2depth li a {font-size:12px;}
+    .navigation .menu_2depth li a br {display:none;}
 }
 
 @media (max-width:599px) {
@@ -635,7 +637,7 @@ footer {background:#505354; color:#fff;}
 .footer_upper .bottom_menu {overflow:hidden; margin:0 -30px;}
 .footer_upper .bottom_menu li {float:left; margin:0 30px;}
 .footer_upper .bottom_menu li a {display:inline-block; font-size:16px; font-weight:700; line-height:60px; color:rgba(255,255,255,0.7);}
-.footer_upper .bottom_menu li a:hover,.footer_upper .bottom_menu li a strong {font-weight:700; color:#00687f;}
+.footer_upper .bottom_menu li a:hover,.footer_upper .bottom_menu li a strong {font-weight:700; color:#248d8e;}
 .footer_upper .select_form {position:absolute; top:0; right:0; background:none; font-size:16px;}
 .footer_upper .select_form button {padding-right:30px; border:none; background:none; line-height:60px; color:rgba(255,255,255,0.7); text-transform:uppercase;}
 .footer_upper .select_form button:after {right:3px; border-color:#999;}
