@@ -6,11 +6,12 @@
 /*************** 공통 요소 ***************/
 
 /* 서브 페이지 타이틀 */
-.sub_header {position:relative; z-index:1; height:290px; margin-top:105px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; transition:opacity 2s; opacity:0;}
+.sub_header {position:relative; z-index:1; height:290px; margin-top:130px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; transition:opacity 2s; opacity:0;}
+.upper_banner_on .sub_header {margin-top:calc(130px + 10.9375%);}
 .sub_header.animated {opacity:1;}
 .sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
 .sub_header .sub_txt {font-family:"Nanum Square"; font-size:22px; font-weight:400; line-height:1.5em;}
-.sub_header h2 {padding:0.15em 0; font-family:"Nanum Square"; font-size:38px; font-weight:700; line-height:1.2em;}
+.sub_header h2 {font-family:"Nanum Square"; font-size:38px; font-weight:700; line-height:1.5em;}
 .sub_content {padding-bottom:100px;}
  
 @media (min-width:1921px) {
@@ -124,10 +125,10 @@
 .sub_tit_wrap h3 {font-family:"Nanum Square"; font-size:32px; font-weight:900; line-height:1.5em;}
 .sub_tit_wrap .txt_info {margin-top:25px; font-size:15px; line-height:2em;}
 .sub_tit_wrap .txt_info strong {font-weight:700; color:#008398;}
-.sub_cont_wrap .tit {font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#333;}
-.sub_cont_wrap .tit strong {font-family:inherit; color:#008398;}
-.sub_cont_wrap .txt {margin-top:25px; font-size:15px; line-height:2em;}
-.sub_cont_wrap.white .tit,.sub_cont_wrap.white .txt {color:#fff;}
+.sub_cont_wrap p.tit {font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#333;}
+.sub_cont_wrap p.tit strong {font-family:inherit; color:#008398;}
+.sub_cont_wrap p.txt {margin-top:25px; font-size:15px; line-height:2em;}
+.sub_cont_wrap.white p.tit,.sub_cont_wrap.white p.txt {color:#fff;}
 
 @media (max-width:1024px) {
     .sub_lower_wrap {padding:30px 0;}
@@ -135,16 +136,16 @@
     .sub_tit_wrap .sub_txt {font-size:18px;}
     .sub_tit_wrap h3 {font-size:24px;}
     .sub_tit_wrap .txt_info {font-size:14px; line-height:1.8em;}
-    .sub_cont_wrap .tit {font-size:24px;}
-    .sub_cont_wrap .txt {margin-top:20px; font-size:14px; line-height:1.8em;}
+    .sub_cont_wrap p.tit {font-size:24px;}
+    .sub_cont_wrap p.txt {margin-top:20px; font-size:14px; line-height:1.8em;}
 }
 
 @media (max-width:599px) {
     .sub_tit_wrap .sub_txt {font-size:14px;}
     .sub_tit_wrap h3 {font-size:16px;}
     .sub_tit_wrap .txt_info {font-size:12px; line-height:1.6em;}
-    .sub_cont_wrap .tit {font-size:16px;}
-    .sub_cont_wrap .txt {margin-top:15px; font-size:12px; line-height:1.6em;}
+    .sub_cont_wrap p.tit {font-size:16px;}
+    .sub_cont_wrap p.txt {margin-top:15px; font-size:12px; line-height:1.6em;}
 }
 
 /* 서브 페이지 내용 탭메뉴 */

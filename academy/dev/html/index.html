@@ -33,13 +33,8 @@
 
 					<!-- PC 배너(1920px x 210px) -->
 					<a href="#"></a>
-					<img src="https://via.placeholder.com/1920x210" class="banner pc" alt="대체텍스트">
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
 					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
-
-					<!-- 모바일 배너(1024px x 210px) -->
-					<a href="#"></a>
-					<img src="https://via.placeholder.com/1024x210" class="banner mobile" alt="대체텍스트">
-					<!-- <img src="https://picsum.photos/1024/210/?random" class="banner mobile" alt="대체텍스트"> -->
 
 					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
 					<div class="ctr_wrap">
@@ -162,7 +157,7 @@
 				<div class="main_slide swiper-container">
 					<ul class="slide swiper-wrapper">
 						<!-- [D] 현재 보이는 슬라이드 li에 on 클래스 부여 -->
-						<li class="swiper-slide" style="background-image:url('https://via.placeholder.com/1920x635')" ;>
+						<li class="swiper-slide" style="background-image:url('../img/sample/sample_mainlist_01.png')" ;>
 							<a href="#">
 								<div class="grid_container txt_view">
 									<div class="txt_wrap">
@@ -217,7 +212,7 @@
                         var main_slide = new Swiper('.main_slide.swiper-container', {
                             simulateTouch: false,
                             autoplay: {
-                                delay: 5000,
+                                delay: 500000,
                             },
                             slideActiveClass: 'on',
                             effect: 'fade',
@@ -338,7 +333,7 @@
                                         new Swiper(slide_class_str + slide_idx + '.swiper-container', {
                                             simulateTouch: false,
                                             autoplay: {
-                                                delay: 5000,
+                                                delay: 500000,
                                             },
                                             slideActiveClass: 'on',
                                             effect: 'fade',

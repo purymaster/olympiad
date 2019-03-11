@@ -19,7 +19,7 @@
 @media (max-width:1024px) {
     .main_content {margin-top:65px; margin-bottom:50px;}
     .main_content h2 {font-size:24px;}
-    .upper_banner_on .main_content {margin-top:calc(65px + 20.5078125%);}
+    .upper_banner_on .main_content {margin-top:calc(65px + 10.9375%);}
 }
 
 @media (max-width:599px) {
@@ -78,6 +78,7 @@
 .notice_slide li.on {visibility:visible; z-index:1; opacity:1;} */
 .notice_slide .txt_wrap {height:160px; color:#fff;}
 .notice_slide .txt_wrap .tit {overflow:hidden; height:3em; font-family:"Nanum Square"; font-size:20px; line-height:1.5em;}
+.notice_slide .txt_wrap .tit strong {font-family:inherit; color:#c65b01;}
 .notice_slide .txt_wrap hr {width:100%; height:1px; margin:3px 0 10px; border:0; background:rgba(255,255,255,0.4);}
 .notice_slide .txt_wrap .txt {overflow:hidden; height:3.4em; font-size:14px; line-height:1.7em;}
 .notice_slide li a {position:absolute; right:0; bottom:14px; padding-right:20px; font-size:12px; color:#fff;}
@@ -179,12 +180,13 @@
 }
 
 @media (max-width:599px) {
-    .main_edu_list ul li {width:33.33%;}
+    .main_edu_list ul {padding:0; border:0;}
+    .main_edu_list ul li {width:25%;}
     .main_edu_list ul li:after {display:none;}
-    .main_edu_list ul li a {font-size:14px;}
+    .main_edu_list ul li a {padding:0; padding-top:50px; font-size:12px;}
     .main_edu_list ul li a:before {display:none;}
     .main_edu_list ul li a:after {top:0;}
-    .main_edu_list ul li:nth-child(n+4) {margin-top:15px;}
+    .main_edu_list ul li:last-child {display:none;}
 }
 
 /* Best Student */
@@ -197,6 +199,7 @@
 .main_review .list_wrap li:before {position:absolute; top:20px; right:-1px; width:1px; height:50px; background:#ddd; content:"";}
 .main_review .list_wrap a p,.main_review .list_wrap a span {display:block; overflow:hidden; line-height:1.7em; text-overflow:ellipsis; white-space:nowrap;}
 .main_review .list_wrap .tit {font-size:16px; color:#333; transition:all 0.5s;}
+.main_review .list_wrap .tit strong {color:#c65b01;}
 .main_review .list_wrap a:hover .tit {color:#f78920;}
 .main_review .list_wrap .author {font-size:14px; color:#646f72;}
 .main_review .list_wrap .date {font-family:"Lato"; font-size:12px; color:rgba(100,111,114,0.6);}
@@ -246,6 +249,7 @@
 .main_edu_info .list ul li a:hover {color:#f78920;}
 .main_edu_info .list ul li a:before {position:absolute; top:50%; left:0; width:4px; height:4px; margin-top:-2px; border-radius:50%; background:#646f72; content:"";}
 .main_edu_info .list ul li a p {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.main_edu_info .list ul li a p strong {color:#c65b01}
 .main_edu_info .list ul li span {float:right; font-family:"Lato"; font-size:12px; line-height:32px; color:#646f72;}
 .main_edu_info .btn_more {position:absolute; top:19px; right:25px;}
 .main_edu_info .sub_menu {margin-top:15px; padding-left:40px;}

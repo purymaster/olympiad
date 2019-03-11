@@ -846,6 +846,7 @@ footer {background:#505354; color:#fff;}
 .main_content .contents .notice .thumb_list .img {width:210px; height:160px; background-size:cover; background-position:center;}
 .main_content .contents .notice .thumb_list .info {width:calc(100% - 210px); padding-left:30px;}
 .main_content .contents .notice .thumb_list .info .tit {overflow:hidden; max-height:2.8em; margin-top:3px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.4em; color:#333; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.main_content .contents .notice .thumb_list .info .tit strong {font-family:inherit; color:#00687f;}
 .main_content .contents .notice .thumb_list li:hover .info .tit {color:#00687f;}
 .main_content .contents .notice .thumb_list .info .txt {overflow:hidden; max-height:4.5em; margin-top:10px; font-size:14px; line-height:1.5em; color:#646f72;}
 .main_content .contents .notice .thumb_list .info a {display:inline-block; position:relative; margin-top:15px; padding-right:10px; font-size:12px; line-height:15px; color:#646f72; -webkit-transition:all 0.5s; transition:all 0.5s;}
@@ -860,6 +861,7 @@ footer {background:#505354; color:#fff;}
 .main_content .contents .notice .list a {display:block; overflow:hidden;}
 .main_content .contents .notice .list a p {overflow:hidden; position:relative; float:left; width:calc(100% - 70px); padding-left:1em; font-size:14px; line-height:42px; color:#333; text-overflow:ellipsis; white-space:nowrap; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .main_content .contents .notice .list a p:before {position:absolute; top:50%; left:0; width:4px; height:4px; margin-top:-2px; border-radius:50%; background:#646f72; content:"";}
+.main_content .contents .notice .list a p strong {color:#00687f;}
 .main_content .contents .notice .list a:hover p {color:#00687f;}
 .main_content .contents .notice .list .date {float:left; width:70px; font-family:"Lato"; font-size:12px; line-height:42px; color:#646f72; text-align:right;}
 .main_content .contents .counsel_upper {margin-top:20px;}
