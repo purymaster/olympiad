@@ -21,13 +21,13 @@ header.animated:after {transform:scaleX(1);}
 .group_nav ul li:last-child:after {display:none;}
 .group_nav ul li a {display:block; font-size:14px; font-weight:700; line-height:30px; color:#646f72;}
 .group_nav ul li a:hover {color:#00687f;}
-.group_nav .search_wrap {width:120px;}
+.group_nav .search_wrap {width:120px; min-width:0;}
 .group_nav .search_wrap input[type="text"] {height:30px; padding-right:32px; padding-left:8px; border:0; background:#f5f5f5; line-height:30px;}
 .group_nav .search_wrap button {top:7px; right:8px;}
 .group_nav .login_student {display:inline-block; width:90px; margin:3px 0 0 20px; background:#00687f; font-size:12px; line-height:26px; color:#fff; text-align:center; vertical-align:top;}
 .navigation {border-top:1px solid #eee;}
 .navigation a:hover {color:#00687f !important;}
-.navigation .menu_1depth {margin:4px -35px 0;}
+.navigation .menu_1depth {float:right; margin:4px -35px 0;}
 .navigation .menu_1depth:after {display:block; clear:both; content:"";}
 .navigation .menu_1depth > li {float:left; position:relative; margin:0 35px;}
 .navigation .menu_1depth > li:after {visibility:hidden; position:absolute; top:45px; left:50%; width:8px; height:8px; margin-left:-4px; background:#00687f; transition:all 0.5s; opacity:0; content:"";}
@@ -85,7 +85,7 @@ header.animated:after {transform:scaleX(1);}
     .nav_wrap button.close:after {transform:rotate(45deg);}
     nav.on .nav_wrap button.close {visibility:visible; opacity:1;}
     .navigation {position:static; margin-top:15px;}
-    .navigation .menu_1depth {margin:15px 0 0 0;}
+    .navigation .menu_1depth {float:none; margin:15px 0 0 0;}
     .navigation .menu_1depth > li {float:none; margin:0;}
     .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-size:16px; line-height:2em;}
     .navigation .menu_1depth > li:hover:after {display:none;}

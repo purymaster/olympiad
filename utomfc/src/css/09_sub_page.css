@@ -67,7 +67,7 @@
 }
 
 @media (max-width:599px) {
-    .sub_upper_wrap .main_tit {font-size:20px;}
+    .sub_upper_wrap .main_tit {margin-top:30px; font-size:20px;}
     .sub_upper_wrap .txt {font-size:14px;}
 }
 
