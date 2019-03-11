@@ -86,6 +86,7 @@ label {cursor:pointer;}
 .board_list table td.tit {text-align:left;}
 .board_list table td.tit a {font-size:16px; line-height:1.5em; color:#333;}
 .board_list table td.tit a:hover {color:#008398;}
+.board_list table td.tit a strong {font-family:inherit; color:#00687f;}
 .board_list table td.tit .new {display:inline; position:relative; top:-2px; font-size:12px; color:#e7833f; text-transform:uppercase;}
 .board_list table td.tit .file {display:inline-block; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-177px -123px; background-size:500px 500px; text-indent:-9999px;}
 .board_list table td.name {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
@@ -124,6 +125,7 @@ label {cursor:pointer;}
 .top_news .cont {float:left; width:calc(50% - 15px);}
 .top_news .img_view {height:0; margin-right:30px; padding-top:32%; background-position:center; background-size:cover;}
 .top_news .txt_view .tit {overflow:hidden; max-height:3em; margin-top:-5px; font-family:"Nanum Square"; font-size:30px; line-height:1.5em; color:#333; transition:all 0.5s;}
+.top_news .txt_view .tit strong {font-family:inherit; color:#00687f;}
 .top_news .txt_view .txt {overflow:hidden; max-height:5.4em; margin-top:5px; font-size:14px; line-height:1.8em; color:#666; transition:all 0.5s;}
 .top_news:hover .txt_view .tit,.top_news:hover .txt_view .txt {color:#008398;}
 .top_news .txt_view .date {display:inline-block; margin-top:15px; padding:0 10px; border-radius:12px; background:#f2f2f2; font-size:12px; line-height:24px; color:#999; -webkit-border-radius:12px; -moz-border-radius:12px; -ms-border-radius:12px; -o-border-radius:12px;}
@@ -162,6 +164,7 @@ label {cursor:pointer;}
 .news_list ul li .img_view:after {position:absolute; top:0; left:0; width:100%; height:100%; background:-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); background:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); background:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); backface-visibility:hidden; -webkit-backface-visibility:hidden; transition:all 0.5s; transform-origin:top;}
 .news_list ul li:hover .img_view:after {background:rgba(0,0,0,0.65); transform:scaleY(1);}
 .news_list ul li .img_view .tit {overflow:hidden; position:absolute; bottom:0; left:0; z-index:1; width:calc(100% - 24px); height:3em; max-height:3em; margin:10px 12px; font-family:"Nanum Square"; font-size:20px; line-height:1.5em; color:#fff;}
+.news_list ul li .img_view .tit strong {font-family:inherit; color:#00687f;}
 .news_list ul li .txt_view {padding:10px; padding-bottom:15px;}
 .news_list ul li .txt_view p {overflow:hidden; max-height:40px; font-size:12px; line-height:20px; color:#666; transition:all 0.5s;}
 .news_list ul li:hover .txt_view p {color:#008398;}
@@ -181,6 +184,7 @@ label {cursor:pointer;}
 /* 게시판(일반) 뷰 */
 .board_view .info {padding:22px 30px; border-top:3px solid #333;}
 .board_view .info .tit {font-size:24px; font-weight:700; line-height:1.5em; color:#333;}
+.board_view .info .tit strong {color:#00687f;}
 .board_view .info .txt_info {margin-top:15px; font-size:0;}
 .board_view .info .txt_info > div,.board_view .info .txt_info dt,.board_view .info .txt_info dd {display:inline-block; line-height:1.5em; vertical-align:middle;}
 .board_view .info .txt_info dt {width:17px; height:20px; margin-right:5px; background-image:url(../img/sprite/sprite.png); background-size:500px 500px; text-indent:-9999px;}
@@ -214,6 +218,7 @@ label {cursor:pointer;}
 .board_view .paging_wrap dd {padding-left:88px; font-size:16px; line-height:0; color:#666;}
 .board_view .paging_wrap dd a {display:inline-block; overflow:hidden; max-width:calc(100% - 85px); line-height:48px; text-overflow:ellipsis; white-space:nowrap;}
 .board_view .paging_wrap dd a:hover {color:#00aeba;}
+.board_view .paging_wrap dd a strong {color:#00687f;}
 .board_view .paging_wrap dd a,.board_view .paging_wrap dd i {vertical-align:middle;}
 .board_view .paging_wrap dd .file {display:inline-block; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-177px -123px; background-size:500px 500px; text-indent:-9999px;}
 .board_view .paging_wrap dd .new {display:inline-block; position:relative; width:1px; text-indent:-9999px;}

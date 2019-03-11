@@ -42,7 +42,7 @@
 .breadcrumb > ul > li.home a {display:block; position:relative; text-indent:-9999px; width:50px; height:50px;}
 .breadcrumb > ul > li.home a:before {position:absolute; top:50%; left:50%; width:16px; height:16px; margin-top:-8px; margin-left:-8px; background:red; content:"";}
 .breadcrumb > ul > li .select_form {min-width:180px; max-width:320px; background:none;}
-.breadcrumb > ul > li .select_form button {border:0; background:none; color:#cdcdcd; line-height:50px; font-size:16px;}
+.breadcrumb > ul > li .select_form button {padding:0 35px 0 20px; border:0; background:none; font-size:16px; line-height:50px; color:#cdcdcd;}
 .breadcrumb > ul > li .select_form button:after {border-color:#cdcdcd;}
 .breadcrumb .select_form button + ul {width:calc(100% + 2px); margin-left:-1px; background:rgba(255,255,255,0.95); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 

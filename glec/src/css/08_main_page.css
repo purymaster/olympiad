@@ -150,7 +150,7 @@
 
 @media (max-width:599px) {
     .main_banner {width:calc(100% + 30px); margin-left:-15px;}
-    .banner_wrap .slide li .txt_wrap {bottom:30px;}
+    .banner_wrap .slide li .txt_wrap {bottom:30px; padding:0 15px;}
 }
 
 /* 올림피아드 교육 안내 */
