@@ -33,13 +33,8 @@
 
 					<!-- PC 배너(1920px x 210px) -->
 					<a href="#"></a>
-					<img src="https://via.placeholder.com/1920x210" class="banner pc" alt="대체텍스트">
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
 					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
-
-					<!-- 모바일 배너(1024px x 210px) -->
-					<a href="#"></a>
-					<img src="https://via.placeholder.com/1024x210" class="banner mobile" alt="대체텍스트">
-					<!-- <img src="https://picsum.photos/1024/210/?random" class="banner mobile" alt="대체텍스트"> -->
 
 					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
 					<div class="ctr_wrap">
@@ -153,11 +148,11 @@
 				</div>
 			</div>
 		</header>
-		<div class="sub_wrap">
-			<div class="sub_header type1" data-animation="">
+		<div class="sub_wrap campus_map">
+			<div class="sub_header type2" data-animation="">
 				<div class="grid_container">
-					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">올림피아드 소개</p>
-					<h2 data-animation="fadeInUp" data-delay="3">명예의 전당</h2>
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">초중등부</p>
+					<h2 data-animation="fadeInUp" data-delay="3">초/중 캠퍼스</h2>
 				</div>
 				<div class="breadcrumb">
 					<ul>
@@ -166,7 +161,7 @@
 						<li>
 							<div class="select_form">
 								<button type="button">
-									<span>올림피아드 소개</span>
+									<span>초/중등부</span>
 								</button>
 								<ul>
 
@@ -202,34 +197,57 @@
 						<li>
 							<div class="select_form">
 								<button type="button">
-									<span>명예의 전당</span>
+									<span>초/중 캠퍼스</span>
 								</button>
 								<ul>
 
 									<li>
-										<a href="#none">학원소개</a>
+										<a href="#none">초등수학</a>
 									</li>
 
 									<li>
-										<a href="#none">히스토리</a>
+										<a href="#none">중등수학</a>
 									</li>
 
 									<li>
-										<a href="#none">기업수상</a>
-									</li>
-
-									<li>
-										<a href="#none">명예의 전당</a>
-									</li>
-
-									<li>
-										<a href="#none">전국 캠퍼스</a>
+										<a href="#none">초/중 캠퍼스</a>
 									</li>
 
 								</ul>
 							</div>
 						</li>
 
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>서초캠퍼스</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">광진캠퍼스</a>
+									</li>
+
+									<li>
+										<a href="#none">동대문캠퍼스</a>
+									</li>
+
+									<li>
+										<a href="#none">서초캠퍼스</a>
+									</li>
+
+									<li>
+										<a href="#none">성동캠퍼스</a>
+									</li>
+
+									<li>
+										<a href="#none">중랑캠퍼스</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
 
 					</ul>
 				</div>
@@ -240,12 +258,21 @@
 				<div class="sub_upper_wrap bg">
 					<!-- bg 클래스 추가시 배경색 추가 -->
 					<div class="grid_container inner">
+
+
+
+						<!-- 서브 페이지 상단 탭메뉴 -->
+						<div class="tab_menu">
+							<ul>
+								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+								<li><a href="#map">위치안내</a></li>
+								<li><a href="#board">공지사항</a></li>
+							</ul>
+						</div>
+						<!-- //서브 페이지 상단 탭메뉴 -->
+
 						<p class="main_tit">
-							명예의 전당에 오르신 분들을<br>
-							<strong>진심으로 축하드립니다.</strong>
-						</p>
-						<p class="txt">
-							꿈을 향해 달려가는 그 길을 올림피아드에서 응원하겠습니다.
+							<strong>위치안내</strong>
 						</p>
 					</div>
 				</div>
@@ -254,112 +281,227 @@
 				<!-- 서브 페이지 내용 -->
 				<div class="sub_lower_wrap">
 					<div class="grid_container inner">
+						<div class="map_wrap">
+							<iframe src="" frameborder="0"></iframe>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="campus_data">
+								<span class="tit">
+                                    올림피아드 학원 서초캠퍼스
+                                    <span class="address">서울 서초구 반포4동 54-10번지 청구빌딩 3,4층</span>
+								</span>
+								<div class="board_list">
+									<table>
+										<colgroup>
+											<col style="width:12%;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">
+													주소
+												</th>
+												<td>
+													서울 서초구 반포4동 54-10번지 청구빌딩 3,4층
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													연락처
+												</th>
+												<td>
+													<a href="tel:02-537-8800">02-537-8800</a>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													교통편
+												</th>
+												<td>
+													<dl class="traffic">
+														<dt>
+															<span class="hidden">각 교통수단 별 찾아오시는 방법</span>
+														</dt>
+														<dd>
+															<div class="route">
+																<strong class="transit">지하철</strong>
+																<ol>
+																	<li>고속터미널역(3,7호선) 3번 출구</li>
+																	<li>삼호가든사거리</li>
+																	<li>교대역방면 건널목</li>
+																	<li>우회전 후 직진</li>
+																	<li>농협하나로마트 골목 우회전</li>
+																	<li>서초캠퍼스(미도아파트 공원 앞)</li>
+																</ol>
+															</div>
+														</dd>
+														<dd>
+															<div class="route bus">
+																<strong class="transit">버스</strong>
+																<ol>
+																	<li>3423번, 서초01번, 서초02번, 서초10번 버스 : </li>
+																	<li>고속버스터미널</li>
+																	<li>삼호가든 1,2차 아파트 및 반포 미도 아파트(하차)</li>
+																	<li>농협하나로마트 골목 좌회전</li>
+																	<li>서초캠퍼스(미도아파트 공원 앞)</li>
+																</ol>
+															</div>
+														</dd>
+														<dd>
+															<div class="route">
+																<strong class="transit">자동차</strong>
+																<ol>
+																	<li>반포IC</li>
+																	<li>삼호가든사거리</li>
+																	<li>좌회전50m</li>
+																	<li>GS칼텍스 우회전</li>
+																	<li>농협하나로마트 골목 좌회전</li>
+																	<li>서초캠퍼스(미도아파트 공원 앞)</li>
+																</ol>
+															</div>
+														</dd>
+													</dl>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+						<p class="main_tit">
+							<strong>서초캠퍼스 공지사항</strong>
+						</p>
+						<p class="txt">
+							올림피아드학원, 서초캠퍼스의 소식을 한 눈에 볼 수 있습니다.
+						</p>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div id="board" class="sub_lower_wrap">
+					<div class="grid_container inner">
 
 						<!-- 스태틱 페이지 컨텐츠 영역 -->
 						<div class="sub_cont_wrap">
 
-							<!-- 수상내역 리스트 -->
-							<div class="news_holi_list">
-								<ul>
-									<li data-animation="fadeInUp" data-delay="0">
-										<!-- default -->
-										<div class="img_view" style="background-image:url(../img/default/default_list_thumb.png)">
-										</div>
-										<div class="txt_view">
-											<p class="tit">
-												긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-											</p>
-											<p class="txt">
-												긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-											</p>
-											<div class="util" lang="en">
-												<span class="date">9999.99.99</span>
-												<a href="#">more view</a>
-											</div>
-										</div>
-									</li>
-									<li data-animation="fadeInUp" data-delay="0">
-										<div class="img_view" style="background-image:url(https://via.placeholder.com/640x480)">
-										</div>
-										<div class="txt_view">
-											<p class="tit">2018 대한민국 교육기업대상 초중등 수학 부문 10년 연속 수상</p>
-											<p class="txt">2018년 주관 ‘대한민국 교육기업’에서 초·중등 수학 부문.
-												올림피아드 학원이 10년 연속 ‘대상’을 수상하였습니다.</p>
-											<div class="util" lang="en">
-												<span class="date">9999.99.99</span>
-												<a href="#">more view</a>
-											</div>
-										</div>
-									</li>
-									<li data-animation="fadeInUp" data-delay="0">
-										<div class="img_view" style="background-image:url(https://picsum.photos/640/480/?random)">
-										</div>
-										<div class="txt_view">
-											<p class="tit">2018 대한민국 교육기업대상 초중등 수학 부문 10년 연속 수상</p>
-											<p class="txt">2018년 주관 ‘대한민국 교육기업’에서 초·중등 수학 부문.
-												올림피아드 학원이 10년 연속 ‘대상’을 수상하였습니다.</p>
-											<div class="util" lang="en">
-												<span class="date">9999.99.99</span>
-												<a href="#">more view</a>
-											</div>
-										</div>
-									</li>
-									<!-- <li style="width:100%; margin:0; border:0; text-align:center;">작성된 게시글이 없습니다.</li> -->
-								</ul>
+							<!-- 검색 메뉴 -->
+							<div class="board_util">
+								<div class="search_form">
+									<div class="select_form">
+										<button type="button">
+											<span>전체</span>
+										</button>
+										<!-- [D] 선택항목에 따라 텍스트도 변경 -->
+										<ul>
+											<li>
+												<a href="#none">전체</a>
+											</li>
+											<li>
+												<a href="#none">제목</a>
+											</li>
+											<li>
+												<a href="#none">작성자</a>
+											</li>
+										</ul>
+									</div>
+									<div class="search_wrap">
+										<input type="text" title="검색어 입력" placeholder="검색어를 입력하세요." name="search_input">
+										<button type="submit">검색</button>
+									</div>
+								</div>
 							</div>
-							<!-- //수상내역 리스트 -->
+							<!-- //검색 메뉴 -->
 
-							<!-- 뉴스 리스트 -->
-							<div class="news_list">
-								<ul>
-									<li data-animation="">
-										<a href="#">
-											<!-- default -->
-											<div class="img_view" style="background-image:url(../img/default/default_list_thumb.png)">
-											</div>
-											<div class="txt_view">
-												<p>2018 KMO 1차 수상</p>
-												<span class="date" lang="en">9999.99.99</span>
-											</div>
-										</a>
-									</li>
-									<li data-animation="">
-										<a href="#">
-											<div class="img_view" style="background-image:url(https://via.placeholder.com/640x480)">
-											</div>
-											<div class="txt_view">
-												<p>긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-												</p>
-												<span class="date" lang="en">9999.99.99</span>
-											</div>
-										</a>
-									</li>
-									<li data-animation="">
-										<a href="#">
-											<div class="img_view" style="background-image:url(https://picsum.photos/640/480/?random)">
-											</div>
-											<div class="txt_view">
-												<p>긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-												</p>
-												<span class="date" lang="en">9999.99.99</span>
-											</div>
-										</a>
-									</li>
-									<li data-animation="">
-										<a href="#">
-											<div class="img_view" style="background-image:url(https://picsum.photos/640/480/?random)">
-											</div>
-											<div class="txt_view">
-												<p>긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-												</p>
-												<span class="date" lang="en">9999.99.99</span>
-											</div>
-										</a>
-									</li>
-									<!-- <li style="width:100%; margin:0; border:0; text-align:center;">작성된 게시글이 없습니다.</li> -->
-								</ul>
+							<!-- 게시판 리스트 -->
+							<div class="board_list">
+								<table>
+									<caption>공지사항 리스트</caption>
+									<colgroup>
+										<col style="width:11%;">
+										<col style="width:11%;">
+										<col>
+										<col style="width:12%;">
+										<col style="width:9%;">
+										<col style="width:9%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">NO</th>
+											<th scope="col">구분</th>
+											<th scope="col">제목</th>
+											<th scope="col">작성자</th>
+											<th scope="col">등록일</th>
+											<th scope="col">조회수</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="notice">
+											<th class="num" scope="row">
+												<span class="notice_icon">공지</span>
+											</th>
+											<td>서초캠퍼스</td>
+											<td class="tit">
+												<a href="#">
+													<strong>[말머리]</strong>
+													긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+												</a>
+											</td>
+											<td class="name">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</td>
+											<td class="date">99.99.99</td>
+											<td class="view">999,999</td>
+										</tr>
+										<tr class="notice">
+											<th class="num" scope="row">
+												<span class="notice_icon">공지</span>
+											</th>
+											<td>서초캠퍼스</td>
+											<td class="tit">
+												<a href="#">
+													<strong>[말머리]</strong>
+													하베르만 강남 논현 센터 신규 오픈 하였습니다.
+												</a>
+												<i class="file">첨부파일</i>
+												<i class="new">new</i>
+											</td>
+											<td class="name">관리자</td>
+											<td class="date">99.99.99</td>
+											<td class="view">999,999</td>
+										</tr>
+										<tr>
+											<th class="num" scope="row">999,999</th>
+											<td>서초캠퍼스</td>
+											<td class="tit">
+												<a href="#">
+													<strong>[말머리]</strong>
+													하베르만 공개 수업에 참여하세요!
+													<i class="file">첨부파일</i>
+													<i class="new">new</i>
+												</a>
+											</td>
+											<td class="name">관리자</td>
+											<td class="date">99.99.99</td>
+											<td class="view">999,999</td>
+										</tr>
+										<!-- <tr>
+                                                        <td colspan="6">작성된 게시글이 없습니다.</td>
+                                                    </tr> -->
+									</tbody>
+								</table>
 							</div>
-							<!-- //뉴스 리스트 -->
+							<!-- //게시판 리스트 -->
 
 							<!-- 페이징 -->
 							<div class="pagenation">
@@ -463,6 +605,10 @@
 		<div class="side_menu">
 			<ul>
 				<li class="mobile"><a href="#">홈으로</a></li>
+				<!-- [D] 로그인 한 회원에게 표시될 내용 -->
+				<li class="pc"><a href="#" target="_blank">학습하기</a></li>
+				<li class="pc"><a href="#" target="_blank">학습하기2</a></li>
+				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
 				<li><a href="#">상담신청</a></li>
 				<li><a href="#">설명회신청</a></li>
 				<li><a href="#">입학고사</a></li>

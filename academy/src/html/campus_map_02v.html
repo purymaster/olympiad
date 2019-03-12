@@ -6,44 +6,48 @@
         @@include('../inc/header.html')
         <div class="sub_wrap">
             @@include('../inc/sub_header.html',{
-            "type" : "type1",
-            "title" : "기업수상",
-            "subtitle" : "올림피아드 소개",
+            "type" : "type2",
+            "title" : "초/중 캠퍼스",
+            "subtitle" : "초중등부",
             "context" : {
-            "depth1_current" : "올림피아드 소개",
+            "depth1_current" : "초/중등부",
             "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
-            "depth2_current" : "기업수상",
-            "depth2_sublist" : ["학원소개","히스토리","기업수상","명예의 전당","전국 캠퍼스"],
-            "depth3_current" : false
+            "depth2_current" : "초/중 캠퍼스",
+            "depth2_sublist" : ["초등수학","중등수학","초/중 캠퍼스"],
+            "depth3_current" : "동대문캠퍼스",
+            "depth3_sublist" : ["광진캠퍼스","동대문캠퍼스","서초캠퍼스","성동캠퍼스","중랑캠퍼스"]
             }
             })
             <div class="sub_content">
 
                 <!-- 서브 페이지 상단 -->
                 <div class="sub_upper_wrap bg">
-
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container inner">
+
+                        <!-- 서브 페이지 상단 탭메뉴 -->
+                        <div class="tab_menu">
+                            <ul>
+                                <!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+                                <li><a href="#map">위치안내</a></li>
+                                <li class="on"><a href="#board">공지사항</a></li>
+                            </ul>
+                        </div>
+                        <!-- //서브 페이지 상단 탭메뉴 -->
+
                         <p class="main_tit">
-                            <strong>올림피아드를 사랑해주시는 여러분들이 있기에</strong><br>
-                            이와 같은 수상을 받을 수 있었습니다.
+                            <strong>동대문캠퍼스 공지사항</strong>
                         </p>
                         <p class="txt">
-                            앞으로도 계속 지금보다 더 수준 높은 프로그램과<br>
-                            양질의 교육을 제공할 수 있도록 끈임없이 노력하겠습니다.
+                            올림피아드학원, 동대문캠퍼스의 소식을 한 눈에 볼 수 있습니다.
                         </p>
                     </div>
                 </div>
                 <!-- //서브 페이지 상단 -->
 
-
                 <!-- 서브 페이지 내용 -->
                 <div class="sub_lower_wrap">
                     <div class="grid_container inner">
-                        <div class="sub_tit_wrap">
-                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">수상내역</h3>
-                            </p>
-                        </div>
 
                         <!-- 스태틱 페이지 컨텐츠 영역 -->
                         <div class="sub_cont_wrap">
@@ -53,6 +57,7 @@
 
                                 <div class="info">
                                     <h4 class="tit">
+                                        <strong>[말머리]</strong>
                                         긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
                                     </h4>
                                     <dl class="txt_info">
@@ -106,6 +111,7 @@
                                         <dt><span data-title="prev">이전글</span></dt>
                                         <dd>
                                             <a href="#">
+                                                <strong>[말머리]</strong>
                                                 긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
                                             </a>
                                             <i class="file">첨부파일</i>
@@ -116,7 +122,10 @@
                                     <div class="next">
                                         <dt><span data-title="next">다음글</span></dt>
                                         <dd>
-                                            <a href="#">게시물 제목이 노출되는 영역입니다.</a>
+                                            <a href="#">
+                                                <strong>[말머리]</strong>
+                                                게시물 제목이 노출되는 영역입니다.
+                                            </a>
                                             <!-- <a href="javascript:return false;">다음글이 없습니다.</a> -->
                                         </dd>
                                     </div>
@@ -124,7 +133,7 @@
 
                             </div>
                             <!-- //게시물 뷰 -->
-                            
+
                         </div>
                         <!-- //스태틱 페이지 컨텐츠 영역 -->
 

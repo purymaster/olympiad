@@ -208,7 +208,7 @@ textarea {line-height:1.5em;}
 .search_wrap button:after {top:0; left:0; width:13px; height:13px; border:2px solid #333; border-radius:50%;}
 
 /* 검색 메뉴(셀렉트박스 + 검색) */
-.board_util {margin-top:50px; margin-bottom:10px; text-align:right;}
+.board_util {margin-bottom:10px; text-align:right;}
 .search_form {margin-right:-5px; font-size:0;}
 .search_form > div {margin-right:5px; vertical-align:middle;}
 
@@ -394,6 +394,7 @@ label {cursor:pointer;}
 .news_thumb_list .txt_view .util > a:hover:before {background:#00aeba;}
 .news_thumb_list .txt_view .util > a:hover:after {right:1px; width:8px; height:8px; margin-top:-4px; border-top:2px solid #00aeba; border-right:2px solid #00aeba; background:none; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
 
+.news_thumb_list.major {margin-bottom:50px;}
 .news_thumb_list.major ul li {position:relative;}
 .news_thumb_list.major .img_view {width:450px; height:340px;}
 .news_thumb_list.major .txt_view {padding-left:490px;}
@@ -409,6 +410,7 @@ label {cursor:pointer;}
     .news_thumb_list .txt_view .tit {font-size:20px;}
     .news_thumb_list .txt_view .txt {font-size:14px;}
 
+    .news_thumb_list.major {margin-bottom:30px;}
     .news_thumb_list.major .img_view {width:calc(50% - 15px); height:250px;}
     .news_thumb_list.major .txt_view {float:left; width:calc(50% - 15px); margin-left:30px; padding:0;}
     .news_thumb_list.major .txt_view .tit {font-size:24px; margin-top:-4px;}
@@ -1002,9 +1004,9 @@ footer {background:#505354; color:#fff;}
 .breadcrumb > ul > li.home a {display:block; position:relative; text-indent:-9999px; width:50px; height:50px;}
 .breadcrumb > ul > li.home a:before {position:absolute; top:50%; left:50%; width:16px; height:16px; margin-top:-8px; margin-left:-8px; background:red; content:"";}
 .breadcrumb > ul > li .select_form {min-width:180px; max-width:320px; background:none;}
-.breadcrumb > ul > li .select_form button {border:0; background:none; color:#cdcdcd; line-height:50px; font-size:16px;}
+.breadcrumb > ul > li .select_form button {padding-left:20px; border:0; background:none; font-size:16px; line-height:50px; color:#cdcdcd;}
 .breadcrumb > ul > li .select_form button:after {border-color:#cdcdcd;}
-.breadcrumb .select_form button + ul {width:calc(100% + 2px); margin-left:-1px; background:rgba(255,255,255,0.95); -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
+.breadcrumb .select_form button + ul {width:calc(100% + 2px); margin-left:-1px; padding:5px 20px; background:rgba(255,255,255,0.95); -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 
 @media (max-width:1024px) {
     .breadcrumb {display:none;}
@@ -1036,7 +1038,7 @@ footer {background:#505354; color:#fff;}
 .sub_upper_wrap .tab_menu ul li {display:table-cell; overflow:hidden; white-space:nowrap;}
 .sub_upper_wrap .tab_menu ul li a {display:block; position:relative; border:1px solid #ddd; border-right:0; font-family:"Nanum Square"; font-size:18px; line-height:48px; color:inherit; text-align:center; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .sub_upper_wrap .tab_menu ul li:last-child a {border-right:1px solid #ddd;}
-.sub_upper_wrap .tab_menu ul li.on,.sub_upper_wrap .tab_menu ul li a:hover {border-color:#1b8fa2; background:#1b8fa2; font-weight:700; color:#fff;}
+.sub_upper_wrap .tab_menu ul li.on,.sub_upper_wrap .tab_menu ul li a:hover {background:#1b8fa2; font-weight:700; color:#fff;}
 
 @media (max-width:1024px) {
     .sub_upper_wrap .tab_menu {display:block; margin-top:0; background:none;}

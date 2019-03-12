@@ -1,0 +1,396 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap campus_map">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "초/중 캠퍼스",
+            "subtitle" : "초중등부",
+            "context" : {
+            "depth1_current" : "초/중등부",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth2_current" : "초/중 캠퍼스",
+            "depth2_sublist" : ["초등수학","중등수학","초/중 캠퍼스"],
+            "depth3_current" : "중랑캠퍼스",
+            "depth3_sublist" : ["광진캠퍼스","동대문캠퍼스","서초캠퍼스","성동캠퍼스","중랑캠퍼스"]
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        <!-- @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["위치안내","공지사항"]
+                        }
+                        }) -->
+
+                        <!-- 서브 페이지 상단 탭메뉴 -->
+                        <div class="tab_menu">
+                            <ul>
+                                <!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+                                <li><a href="#map">위치안내</a></li>
+                                <li><a href="#board">공지사항</a></li>
+                            </ul>
+                        </div>
+                        <!-- //서브 페이지 상단 탭메뉴 -->
+
+                        <p class="main_tit">
+                            <strong>위치안내</strong>
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div id="map" class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="map_wrap">
+                            <iframe src="" frameborder="0"></iframe>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="campus_data">
+                                <span class="tit">
+                                    올림피아드 학원 중랑캠퍼스
+                                    <span class="address">[132-230] 서울 중랑구 망우동 563-16 이안빌딩 3층</span>
+                                </span>
+                                <div class="board_list">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:12%;">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    주소
+                                                </th>
+                                                <td>
+                                                    [132-230] 서울 중랑구 망우동 563-16 이안빌딩 3층
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    연락처
+                                                </th>
+                                                <td>
+                                                    <a href="tel:02-437-3200">02-437-3200</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    교통편
+                                                </th>
+                                                <td>
+                                                    <dl class="traffic">
+                                                        <dt>
+                                                            <span class="hidden">각 교통수단 별 찾아오시는 방법</span>
+                                                        </dt>
+                                                        <dd>
+                                                            <div class="route">
+                                                                <strong class="transit">지하철</strong>
+                                                                <ol>
+                                                                    <li>망우역(경의중앙선,경춘선) 1번 출구</li>
+                                                                    <li>건널목</li>
+                                                                    <li>이마트방면</li>
+                                                                    <li>이영근닭갈비 좌회전</li>
+                                                                    <li>올림피아드학원(이안빌딩 3층)</li>
+                                                                </ol>
+                                                                <ol>
+                                                                    <li>상봉역(7,경의중앙선,경춘선) 2번 출구</li>
+                                                                    <li>망우사거리(구리방면)</li>
+                                                                    <li>건널목</li>
+                                                                    <li>이마트방면</li>
+                                                                    <li>이영근닭갈비 좌회전</li>
+                                                                    <li>올림피아드학원(이안빌딩 3층)</li>
+                                                                </ol>
+                                                            </div>
+                                                        </dd>
+                                                        <dd>
+                                                            <div class="route bus">
+                                                                <strong class="transit">버스</strong>
+                                                                <ol>
+                                                                    <li>201번 버스 : </li>
+                                                                    <li>서울시립대</li>
+                                                                    <li>회기역</li>
+                                                                    <li>상봉역</li>
+                                                                    <li>망우역 or 지구대(하차)</li>
+                                                                    <li>금란교회</li>
+                                                                    <li>구리여중고</li>
+                                                                </ol>
+                                                                <ol>
+                                                                    <li>240번 버스 : </li>
+                                                                    <li>건대입구역</li>
+                                                                    <li>화양시장</li>
+                                                                    <li>면목시장</li>
+                                                                    <li>상봉역</li>
+                                                                    <li>망우역 or 지구대(하차)</li>
+                                                                    <li>신내우체국</li>
+                                                                </ol>
+                                                                <ol>
+                                                                    <li>241번 버스 : </li>
+                                                                    <li>행당역</li>
+                                                                    <li>청량리역</li>
+                                                                    <li>서울시립대학교</li>
+                                                                    <li>망우역 or 지구대(하차)</li>
+                                                                    <li>신내 9,10 아파트 단지</li>
+                                                                </ol>
+                                                                <ol>
+                                                                    <li>260번 버스 : </li>
+                                                                    <li>신설동역</li>
+                                                                    <li>청량리역</li>
+                                                                    <li>서울시립대학교</li>
+                                                                    <li>망우역 or 지구대(하차)</li>
+                                                                    <li>신내교회앞</li>
+                                                                </ol>
+                                                                <ol>
+                                                                    <li>262번 버스 : </li>
+                                                                    <li>사가정역</li>
+                                                                    <li>면목역</li>
+                                                                    <li>상봉역</li>
+                                                                    <li>망우역 or 지구대(하차)</li>
+                                                                    <li>금란교회</li>
+                                                                    <li>양원역</li>
+                                                                </ol>
+                                                                <ol>
+                                                                    <li>272번 버스 : </li>
+                                                                    <li>신설동역</li>
+                                                                    <li>청량리역</li>
+                                                                    <li>서울시립대학교</li>
+                                                                    <li>상봉역</li>
+                                                                    <li>망우역 or 지구대(하차)</li>
+                                                                    <li>금란교회</li>
+                                                                </ol>
+                                                            </div>
+                                                        </dd>
+                                                        <dd>
+                                                            <div class="route">
+                                                                <strong class="transit">자동차</strong>
+                                                                <ol>
+                                                                    <li>상봉역</li>
+                                                                    <li>망우역삼거리</li>
+                                                                    <li>이마트방면 우회전</li>
+                                                                    <li>이영근닭갈비 좌회전(비보호)</li>
+                                                                    <li>올림피아드학원(이안빌딩 3층)</li>
+                                                                </ol>
+                                                                <ol>
+                                                                    <li>장안교</li>
+                                                                    <li>장안교사거리</li>
+                                                                    <li>사가정역</li>
+                                                                    <li>용마한신아파트교차로 좌회전</li>
+                                                                    <li>혜원사거리</li>
+                                                                    <li>이마트</li>
+                                                                    <li>이영근닭갈비 우회전</li>
+                                                                    <li>올림피아드학원(이안빌딩 3층)</li>
+                                                                </ol>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+                        <p class="main_tit">
+                            <strong>중랑캠퍼스 공지사항</strong>
+                        </p>
+                        <p class="txt">
+                            올림피아드학원, 중랑캠퍼스의 소식을 한 눈에 볼 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div id="board" class="sub_lower_wrap">
+                    <div class="grid_container inner">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+
+                            <!-- 검색 메뉴 -->
+                            <div class="board_util">
+                                <div class="search_form">
+                                    <div class="select_form">
+                                        <button type="button">
+                                            <span>전체</span>
+                                        </button>
+                                        <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                        <ul>
+                                            <li>
+                                                <a href="#none">전체</a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">제목</a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">작성자</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search_wrap">
+                                        <input type="text" title="검색어 입력" placeholder="검색어를 입력하세요." name="search_input">
+                                        <button type="submit">검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //검색 메뉴 -->
+
+                            <!-- 게시판 리스트 -->
+                            <div class="board_list">
+                                <table>
+                                    <caption>공지사항 리스트</caption>
+                                    <colgroup>
+                                        <col style="width:11%;">
+                                        <col style="width:11%;">
+                                        <col>
+                                        <col style="width:12%;">
+                                        <col style="width:9%;">
+                                        <col style="width:9%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">NO</th>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">작성자</th>
+                                            <th scope="col">등록일</th>
+                                            <th scope="col">조회수</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="notice">
+                                            <th class="num" scope="row">
+                                                <span class="notice_icon">공지</span>
+                                            </th>
+                                            <td>중랑캠퍼스</td>
+                                            <td class="tit">
+                                                <a href="#">
+                                                    <strong>[말머리]</strong>
+                                                    긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                </a>
+                                            </td>
+                                            <td class="name">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</td>
+                                            <td class="date">99.99.99</td>
+                                            <td class="view">999,999</td>
+                                        </tr>
+                                        <tr class="notice">
+                                            <th class="num" scope="row">
+                                                <span class="notice_icon">공지</span>
+                                            </th>
+                                            <td>중랑캠퍼스</td>
+                                            <td class="tit">
+                                                <a href="#">
+                                                    <strong>[말머리]</strong>
+                                                    하베르만 강남 논현 센터 신규 오픈 하였습니다.
+                                                </a>
+                                                <i class="file">첨부파일</i>
+                                                <i class="new">new</i>
+                                            </td>
+                                            <td class="name">관리자</td>
+                                            <td class="date">99.99.99</td>
+                                            <td class="view">999,999</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="num" scope="row">999,999</th>
+                                            <td>중랑캠퍼스</td>
+                                            <td class="tit">
+                                                <a href="#">
+                                                    <strong>[말머리]</strong>
+                                                    하베르만 공개 수업에 참여하세요!
+                                                    <i class="file">첨부파일</i>
+                                                    <i class="new">new</i>
+                                                </a>
+                                            </td>
+                                            <td class="name">관리자</td>
+                                            <td class="date">99.99.99</td>
+                                            <td class="view">999,999</td>
+                                        </tr>
+                                        <!-- <tr>
+                                                                <td colspan="6">작성된 게시글이 없습니다.</td>
+                                                            </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //게시판 리스트 -->
+
+                            <!-- 페이징 -->
+                            <div class="pagenation">
+                                <div class="pager">
+                                    <a class="first" href="#none">첫 페이지</a>
+                                    <a class="prev" href="#none">이전 페이지</a>
+                                    <ul>
+                                        <li>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <a href="#none">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">6</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">7</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">8</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">9</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">999</a>
+                                        </li>
+                                    </ul>
+                                    <a class="next" href="#none">다음 페이지</a>
+                                    <a class="last" href="#none">끝 페이지</a>
+                                </div>
+                            </div>
+                            <!-- //페이징 -->
+
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

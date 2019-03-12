@@ -91,7 +91,7 @@ textarea {line-height:1.5em;}
 .search_wrap button:after {top:0; left:0; width:13px; height:13px; border:2px solid #333; border-radius:50%;}
 
 /* 검색 메뉴(셀렉트박스 + 검색) */
-.board_util {margin-top:50px; margin-bottom:10px; text-align:right;}
+.board_util {margin-bottom:10px; text-align:right;}
 .search_form {margin-right:-5px; font-size:0;}
 .search_form > div {margin-right:5px; vertical-align:middle;}
 
@@ -271,6 +271,7 @@ label {cursor:pointer;}
 .news_thumb_list .txt_view .util > a:hover:before {background:#00aeba;}
 .news_thumb_list .txt_view .util > a:hover:after {right:1px; width:8px; height:8px; margin-top:-4px; border-top:2px solid #00aeba; border-right:2px solid #00aeba; background:none; transform:rotate(45deg);}
 
+.news_thumb_list.major {margin-bottom:50px;}
 .news_thumb_list.major ul li {position:relative;}
 .news_thumb_list.major .img_view {width:450px; height:340px;}
 .news_thumb_list.major .txt_view {padding-left:490px;}
@@ -286,6 +287,7 @@ label {cursor:pointer;}
     .news_thumb_list .txt_view .tit {font-size:20px;}
     .news_thumb_list .txt_view .txt {font-size:14px;}
 
+    .news_thumb_list.major {margin-bottom:30px;}
     .news_thumb_list.major .img_view {width:calc(50% - 15px); height:250px;}
     .news_thumb_list.major .txt_view {float:left; width:calc(50% - 15px); margin-left:30px; padding:0;}
     .news_thumb_list.major .txt_view .tit {font-size:24px; margin-top:-4px;}

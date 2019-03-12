@@ -1,0 +1,160 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap campus_map">
+            @@include('../inc/sub_header.html',{
+            "type" : "type3",
+            "title" : "광진 영재센터",
+            "subtitle" : "영재센터",
+            "context" : {
+            "depth1_current" : "영재센터",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth2_current" : "광진 영재센터",
+            "depth2_sublist" : ["영재센터 소개","광진 영재센터","대치 영재센터","중계 영재센터","평촌 영재센터","상위 1%정보"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["프로그램","수업 시스템","교재 안내","공지사항","위치안내"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            <strong>위치안내</strong>
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="map_wrap">
+                            <iframe src="" frameborder="0"></iframe>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="campus_data">
+                                <span class="tit">
+                                    올림피아드 학원 광진 영재센터
+                                    <span class="address">서울 광진구 자양2동 680-3 이주빌딩 6층</span>
+                                </span>
+                                <div class="board_list">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:12%;">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    주소
+                                                </th>
+                                                <td>
+                                                    서울 광진구 자양2동 680-3 이주빌딩 6층
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    연락처
+                                                </th>
+                                                <td>
+                                                    <a href="tel:02-446-0909">02-446-0909</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    교통편
+                                                </th>
+                                                <td>
+                                                    <dl class="traffic">
+                                                        <dt>
+                                                            <span class="hidden">각 교통수단 별 찾아오시는 방법</span>
+                                                        </dt>
+                                                        <dd>
+                                                            <div class="route">
+                                                                <strong class="transit">지하철</strong>
+                                                                <ol>
+                                                                    <li>2호선, 구의역 하차</li>
+                                                                    <li>4번 출구</li>
+                                                                    <li>자양사거리</li>
+                                                                    <li>잠실대교 방향</li>
+                                                                    <li>혜민간호학원 건물 6층</li>
+                                                                </ol>
+                                                            </div>
+                                                        </dd>
+                                                        <dd>
+                                                            <div class="route bus">
+                                                                <strong class="transit">버스</strong>
+                                                                <ol>
+                                                                    <li>2222번, 3220번 버스 : </li>
+                                                                    <li>건대역</li>
+                                                                    <li>건국대학교 앞</li>
+                                                                    <li>자양초등학교</li>
+                                                                    <li>자양사거리(하차)</li>
+                                                                    <li>잠실대교방면 50m</li>
+                                                                </ol>
+                                                                <ol>
+                                                                    <li>1112번 버스 : </li>
+                                                                    <li>석촌호수</li>
+                                                                    <li>잠실역</li>
+                                                                    <li>구의역(하차)</li>
+                                                                    <li>잠실대교방면 100m</li>
+                                                                </ol>
+                                                                <ol>
+                                                                    <li>1650번 버스 : </li>
+                                                                    <li>강변역(테크노마트)</li>
+                                                                    <li>구의역(하차)</li>
+                                                                    <li>잠실대교 방면 100m</li>
+                                                                </ol>
+                                                            </div>
+                                                        </dd>
+                                                        <dd>
+                                                            <div class="route">
+                                                                <strong class="transit">자동차</strong>
+                                                                <ol>
+                                                                    <li>건대역에서 구의역 방면으로 직진</li>
+                                                                    <li>자양사거리</li>
+                                                                    <li>구의역 방면 건널목 지나 우회전</li>
+                                                                    <li>잠실대교 방향</li>
+                                                                    <li>50m 직진</li>
+                                                                    <li>혜민간호학원 건물 6층</li>
+                                                                </ol>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>
