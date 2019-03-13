@@ -53,18 +53,19 @@
 }
 
 /* 서브 페이지 상단 */
-.sub_upper_wrap {padding:70px 0 50px; color:#333; text-align:center;}
+.sub_upper_wrap {padding:100px 0 50px; color:#333; text-align:center;}
 .sub_upper_wrap.bg {background:#e6eff1;}
-.sub_upper_wrap .main_tit {position:relative; margin:0 auto; font-family:"Nanum Square"; font-size:40px; line-height:1.4em; color:inherit;}
+.sub_upper_wrap .main_tit {position:relative; margin:0 auto; font-family:"Nanum Square"; font-size:40px; line-height:1.35em; color:inherit;}
 .sub_upper_wrap .main_tit:before {position:absolute; top:-30px; left:50%; width:18px; height:20px; margin-left:-9px; background:red; content:"";}
 .sub_upper_wrap .main_tit strong {font-family:"Nanum Square"; font-weight:900;}
-.sub_upper_wrap .txt {margin:30px auto 0; font-family:"Nanum Square"; font-size:18px; font-weight:300; line-height:1.6em; color:inherit;}
+.sub_upper_wrap .txt {margin:10px auto 0; font-family:"Nanum Square"; font-size:18px; font-weight:300; line-height:1.6em; color:inherit;}
 
 @media (max-width:1024px) {
     .sub_upper_wrap {padding:30px 0;}
-    .sub_upper_wrap .main_tit {width:90%; margin-top:50px; font-size:30px;}
+    .sub_upper_wrap .main_tit {width:90%; margin-top:30px; font-size:26px;}
     .sub_upper_wrap .main_tit br {display:none;}
     .sub_upper_wrap .txt {width:90%; margin-top:15px; font-size:16px;}
+    .sub_upper_wrap .txt br {display:none;}
 }
 
 @media (max-width:599px) {
@@ -81,7 +82,7 @@
 .sub_upper_wrap .tab_menu ul li.on,.sub_upper_wrap .tab_menu ul li a:hover {background:#1b8fa2; font-weight:700; color:#fff;}
 
 @media (max-width:1024px) {
-    .sub_upper_wrap .tab_menu {display:block; margin-top:0; background:none;}
+    .sub_upper_wrap .tab_menu {display:block; margin-top:0; margin-bottom:50px; background:none;}
     .sub_upper_wrap .tab_menu ul {display:block; overflow:hidden; border-top:1px solid #ddd; border-left:1px solid #ddd;}
     .sub_upper_wrap .tab_menu ul li {float:left; width:100%; background:#fff;}
     .sub_upper_wrap .tab_menu ul li a {border:0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:16px; line-height:2.5em;}
@@ -115,7 +116,9 @@
 }
 
 /* 서브 페이지 내용 */
-.sub_lower_wrap {padding:70px 0 50px; background-size:cover; background-position:center;}
+.sub_lower_wrap {padding:100px 0 50px; background-size:cover; background-position:center;}
+.sub_lower_wrap .main_tit {position:relative; margin:0 auto; font-family:"Nanum Square"; font-size:32px; line-height:1.4em; color:inherit; font-weight:900; text-align:center;}
+.sub_lower_wrap .main_tit:before {position:absolute; top:-30px; left:50%; width:18px; height:20px; margin-left:-9px; background:red; content:"";}
 .sub_lower_wrap .visual_wrap {display:table; width:100%;}
 .sub_lower_wrap .visual_wrap p {display:table-cell; font-family:"Nanum Square"; font-weight:700; text-align:center; vertical-align:middle;}
 .sub_tit_wrap {position:relative; margin-bottom:10px; padding-top:35px; color:#333; text-align:center;}
@@ -132,6 +135,7 @@
 
 @media (max-width:1024px) {
     .sub_lower_wrap {padding:30px 0;}
+    .sub_lower_wrap .main_tit {margin-top:30px; font-size:24px;}
     .sub_tit_wrap {padding-top:30px;}
     .sub_tit_wrap .sub_txt {font-size:18px;}
     .sub_tit_wrap h3 {font-size:24px;}
@@ -141,6 +145,7 @@
 }
 
 @media (max-width:599px) {
+    .sub_lower_wrap .main_tit {font-size:20px;}
     .sub_tit_wrap .sub_txt {font-size:14px;}
     .sub_tit_wrap h3 {font-size:16px;}
     .sub_tit_wrap .txt_info {font-size:12px; line-height:1.6em;}
@@ -215,6 +220,70 @@
 	.utom_introduce .introduce_greetings .greetings_text {padding-right:0;}
 	.utom_introduce .greetings_text .top_line_tit {font-size:24px;}
     .utom_introduce .greetings_txt {line-height:1.6em;}
+}
+
+/* 유투엠 사명 */
+.mission .mission_upper {position:relative; padding:50px 0; background-image:url(../img/bg/bg_utom_mission_01.jpg); background-repeat:no-repeat; background-position:calc(50% + 260px) bottom; background-size:auto;}
+.mission .mission_upper:before,.mission .mission_upper:after {position:absolute; top:0; left:0; z-index:-1; content:"";}
+.mission .mission_upper:before {top:-120px; left:calc(50% - 680px); width:336px; height:336px; background:url(../img/bg/bg_utom_mission_circle_01.png);}
+.mission .mission_upper:after {top:196px; left:calc(50% + 400px); width:256px; height:256px; background:url(../img/bg/bg_utom_mission_circle_02.png);}
+.mission .utom_mission .line_text {position:relative; z-index:1; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.6em; color:#333;}
+.mission .utom_mission .line_text:after {position:absolute; top:50%; left:0; z-index:-1; width:100%; height:16px; margin-top:-8px; background-color:#bbe5eb; content:"";}
+.mission .utom_mission .utom_mission_tit {margin-bottom:30px; font-family:"Nanum Square"; font-size:40px; font-weight:900; line-height:1.3em; color:#333;}
+.mission .utom_mission .utom_mission_txt {font-size:15px; line-height:2em; color:#222;}
+.mission .utom_cont {background-color:#f2f2f2;}
+.mission .utom_purpose {margin-top:75px;}
+.mission .utom_purpose .utom_purpose_width {max-width:890px; margin:0 auto; margin-bottom:60px;}
+.mission .utom_purpose .utom_purpose_width .purpose_list li {overflow:hidden; margin-bottom:30px; padding:30px 68px 30px 0; background-color:#fff;}
+.mission .utom_purpose .utom_purpose_width .purpose_list li:last-child {margin-bottom:0;}
+.mission .purpose_mod {position:relative; text-align:left;}
+.mission .purpose_mod:after {position:absolute; right:0; bottom:-50px; width:120px; height:120px; background-color:red; opacity:0.5; content:"";}
+.mission .purpose_mod .purpose_left {position:absolute; left:-10px; top:0; margin-top:25px;}
+.mission .purpose_mod .purpose_left .num_text {font-family:"Lato"; font-size:16px; font-weight:700; line-height:29px; color:#1fb6c1; letter-spacing:0.05em; transform:rotate(90deg);}
+.mission .purpose_mod .purpose_left .num {font-family:"Lato"; font-weight:700; color:#008ead;}
+.mission .purpose_mod .purpose_right {overflow:hidden; padding-left:90px;}
+.mission .purpose_mod .purpose_right .purpose_text {font-family:"Nanum Square"; font-size:30px; line-height:1.35em; color:#222;}
+.mission .utom_purpose .purpose_bottom_cont .purpose_list {overflow:hidden; margin:0 -20px;}
+.mission .utom_purpose .purpose_bottom_cont .purpose_list li {float:left; width:50%; padding:0 20px; font-size:15px; line-height:2em; text-align:left;}
+.mission .utom_purpose .purpose_bottom_cont .purpose_list li .color_blue {font-weight:700; color:#008398;}
+.mission .mission_lower {display:table; width:100%; height:250px; margin-bottom:-100px; padding:0; background:url(../img/bg/bg_utom_mission_02.jpg); background-position:center; background-size:cover;}
+.mission .mission_lower p {display:table-cell; font-family:"Nanum Square"; font-size:40px; font-weight:900; line-height:1.4em; color:#fff; text-align:center; vertical-align:middle;}
+
+@media (max-width:1366px) {
+    .mission .utom_purpose .purpose_bottom_cont .purpose_list li br {display:none;}
+}
+
+@media (max-width:1024px) {
+    .mission .mission_upper {min-height:380px; padding:30px 0;background-position-x:50%; background-size:455px 180px;}
+    .mission .mission_upper:before,.mission .mission_upper:after {display:none;}
+    .mission .utom_mission {margin:0;}
+    .mission .utom_mission .line_text {font-size:18px;}
+	.mission .utom_mission .utom_mission_tit {margin-bottom:15px; font-size:28px;}
+    .mission .utom_mission .utom_mission_txt {font-size:14px; line-height:1.8em;}
+    .mission .utom_mission .utom_mission_txt br {display:none;}
+    .mission .utom_purpose {margin-top:30px;}
+    .mission .utom_purpose .utom_purpose_width {max-width:100%; margin-bottom:30px;}
+    .mission .utom_purpose .utom_purpose_width .purpose_list li {padding:20px 30px 20px 0;}
+    .mission .purpose_mod .purpose_left {left:0; margin-top:12px;}
+    .mission .purpose_mod .purpose_left .num_text {font-size:12px;}
+    .mission .purpose_mod .purpose_right {padding-left:60px;}
+	.mission .purpose_mod .purpose_right .purpose_text {font-size:18px;}
+	.mission .utom_purpose .purpose_bottom_cont .purpose_list {overflow:hidden; margin:0 -15px;}
+    .mission .utom_purpose .purpose_bottom_cont .purpose_list li {padding:0 15px; font-size:14px; line-height:1.8em;}
+}
+
+@media (max-width:599px) {
+    .mission .mission_upper {min-height:440px; background-position-x:calc(50% - 20px);}
+    .mission .utom_mission .line_text {font-size:16px;}
+	.mission .utom_mission .utom_mission_tit {font-size:24px;}
+	.mission .utom_purpose .utom_purpose_width {margin-bottom:30px;}
+	.mission .utom_purpose .utom_purpose_width .purpose_list li {padding:30px 25px 30px 0;}
+	.mission .purpose_mod .purpose_left .num_text {font-size:13px;}
+	.mission .purpose_mod .purpose_right .purpose_text {font-size:20px; line-height:34px;}
+	.mission .purpose_mod .purpose_right .purpose_text br {display:none;}
+	.mission .utom_purpose .purpose_bottom_cont .purpose_list {overflow:hidden; margin:0;}
+	.mission .utom_purpose .purpose_bottom_cont .purpose_list li {float:none; width:100%; margin-bottom:20px; padding:0;}
+    .mission .utom_purpose .purpose_bottom_cont .purpose_list li:last-child {margin-bottom:0;}
 }
 
 /* 플립러닝 기반 학생중심 참여수업 - 플립러닝 교수학습법 */

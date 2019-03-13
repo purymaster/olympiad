@@ -78,7 +78,7 @@
 .notice_slide li.on {visibility:visible; z-index:1; opacity:1;} */
 .notice_slide .txt_wrap {height:160px; color:#fff;}
 .notice_slide .txt_wrap .tit {overflow:hidden; height:3em; font-family:"Nanum Square"; font-size:20px; line-height:1.5em;}
-.notice_slide .txt_wrap .tit strong {color:#00687f;}
+.notice_slide .txt_wrap .tit strong {color:#00687f; font-family:inherit;}
 .notice_slide .txt_wrap hr {width:100%; height:1px; margin:3px 0 10px; border:0; background:rgba(255,255,255,0.4);}
 .notice_slide .txt_wrap .txt {overflow:hidden; height:3.4em; font-size:14px; line-height:1.7em;}
 .notice_slide li a {position:absolute; right:0; bottom:14px; padding-right:20px; font-size:12px; color:#fff;}

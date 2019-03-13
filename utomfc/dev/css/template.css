@@ -1022,7 +1022,7 @@ footer {background:#505354; color:#fff;}
 
 @media (max-width:1024px) {
     .sub_upper_wrap {padding:30px 0;}
-    .sub_upper_wrap .main_tit {width:90%; margin-top:50px; font-size:30px;}
+    .sub_upper_wrap .main_tit {width:90%; margin-top:30px; font-size:30px;}
     .sub_upper_wrap .main_tit br {display:none;}
     .sub_upper_wrap .txt {width:90%; margin-top:15px; font-size:16px;}
 }
@@ -1041,7 +1041,7 @@ footer {background:#505354; color:#fff;}
 .sub_upper_wrap .tab_menu ul li.on,.sub_upper_wrap .tab_menu ul li a:hover {background:#1b8fa2; font-weight:700; color:#fff;}
 
 @media (max-width:1024px) {
-    .sub_upper_wrap .tab_menu {display:block; margin-top:0; background:none;}
+    .sub_upper_wrap .tab_menu {display:block; margin-top:0; margin-bottom:50px; background:none;}
     .sub_upper_wrap .tab_menu ul {display:block; overflow:hidden; border-top:1px solid #ddd; border-left:1px solid #ddd;}
     .sub_upper_wrap .tab_menu ul li {float:left; width:100%; background:#fff;}
     .sub_upper_wrap .tab_menu ul li a {border:0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:16px; line-height:2.5em;}
