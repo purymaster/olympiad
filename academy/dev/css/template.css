@@ -970,12 +970,20 @@ footer {background:#505354; color:#fff;}
 .banner_wrap .slide li .txt_wrap .tit {overflow:hidden; max-height:2.6em; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.3em;}
 .banner_wrap .slide li .txt_wrap .txt {overflow:hidden; margin-top:10px; font-size:14px; line-height:1.7em; text-overflow:ellipsis; white-space:nowrap;}
 .banner_wrap .large .slide li {padding-top:74.95762711864%;}
-.banner_wrap .small {overflow:hidden;}
+.banner_wrap .small {overflow:hidden; position:relative;}
 .banner_wrap .small .small_cont {float:left; width:50%;}
 .banner_wrap .small .slide li {padding-top:75%;}
+.banner_wrap .small .ctr li button {position:absolute; top:50%; z-index:1; width:30px; height:50px; background:rgba(0,0,0,0.7); text-indent:-9999px; -webkit-transform:translateY(-50%); transform:translateY(-50%); -webkit-transition:all 0.5s; transition:all 0.5s;}
+.banner_wrap .small .ctr li button:hover {background:#00687f;}
+.banner_wrap .small .ctr li button:before {content:""; position:absolute; width:20px; height:20px; border:2px solid #fff; left:5px; top:15px; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.banner_wrap .small .ctr li .prev {left:0;}
+.banner_wrap .small .ctr li .prev:before {border-right:0; border-top:0; margin-left:5px;}
+.banner_wrap .small .ctr li .next {right:0;}
+.banner_wrap .small .ctr li .next:before {border-left:0; border-bottom:0; margin-left:-5px;}
 .banner_wrap .pager {position:absolute; bottom:20px; left:50%; z-index:1; width:auto; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
 .banner_wrap .pager li {float:left; width:10px; height:10px; margin:0 3px; padding:0; border:2px solid #fff; text-indent:-9999px; -webkit-transition:all 0.5s; transition:all 0.5s; cursor:pointer;}
 .banner_wrap .pager li.on {background:#fff;}
+.banner_wrap .small .pager {display:none;}
 
 @media (max-width:1024px) {
     .main_banner {margin-top:10px; width:calc(100% + 60px); margin-left:-30px;}

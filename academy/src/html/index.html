@@ -184,9 +184,11 @@
                             <script>
                                 $(function () {
                                     var slide_idx = 1,
-                                        slide_class_str = '.banner_slide_0';
+                                        slide_class_str = '.banner_slide_0',
+                                        small_slide_idx = $('.small .banner_slide').length,
+                                        small_slide_nav;
 
-                                    $('.banner_slide').each(function () {
+                                    $('.large .banner_slide').each(function () {
                                         new Swiper(slide_class_str + slide_idx + '.swiper-container', {
                                             simulateTouch: false,
                                             autoplay: {
@@ -206,6 +208,33 @@
                                                 }
                                             }
                                         })
+                                        slide_idx++;
+                                    });
+
+                                    $('.small .banner_slide').each(function (idx) {
+                                        small_slide_nav = Math.floor((small_slide_idx - (idx + 1)) / 2);
+                                        new Swiper(slide_class_str + slide_idx + '.swiper-container', {
+                                            simulateTouch: false,
+                                            autoplay: {
+                                                delay: 5000,
+                                            },
+                                            // effect: 'fade',
+                                            loop: true,
+                                            navigation: {
+                                                nextEl: $('.small:eq(' + small_slide_nav + ') .ctr .next'),
+                                                prevEl: $('.small:eq(' + small_slide_nav + ') .ctr .prev'),
+                                            },
+                                            pagination: {
+                                                el: '.pagination',
+                                                type: 'bullets',
+                                                clickable: true,
+                                                bulletClass: 'bullet',
+                                                bulletActiveClass: 'on',
+                                                renderBullet: function (idx) {
+                                                    return '<li class="bullet">' + (idx + 1) + '</li>';
+                                                }
+                                            }
+                                        });
                                         slide_idx++;
                                     });
                                 });
@@ -361,6 +390,15 @@
                                 </div>
                                 <!-- //6번 슬라이드, 우측 슬라이드 -->
 
+                                <!-- 1배 사이즈 슬라이드 제어 -->
+                                <div class="ctr">
+                                    <ul>
+                                        <li><button class="prev">이전</button></li>
+                                        <li><button class="next">다음</button></li>
+                                    </ul>
+                                </div>
+                                <!-- //1배 사이즈 슬라이드 제어 -->
+
                             </div>
                             <!-- //1배 사이즈 슬라이드 -->
 
@@ -437,6 +475,15 @@
                                     </div>
                                 </div>
                                 <!-- //4번 슬라이드, 우측 슬라이드 -->
+
+                                <!-- 1배 사이즈 슬라이드 제어 -->
+                                <div class="ctr">
+                                    <ul>
+                                        <li><button class="prev">이전</button></li>
+                                        <li><button class="next">다음</button></li>
+                                    </ul>
+                                </div>
+                                <!-- //1배 사이즈 슬라이드 제어 -->
 
                             </div>
                             <!-- //1배 사이즈 슬라이드 -->
