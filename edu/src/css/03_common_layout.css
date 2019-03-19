@@ -7,6 +7,7 @@
 :before,:after {box-sizing:inherit;}
 .wrap {overflow-x:hidden; min-width:320px;}
 .grid_container {position:relative; max-width:1200px; margin:0 auto; padding:0 100px;}
+.grid_container.middle {padding:0;}
 .grid_container.wide {max-width:1400px; padding:0;}
 
 @media (max-width:1024px) {

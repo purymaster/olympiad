@@ -37,7 +37,7 @@ $(function () {
         window.outerWidth > 1024 ? is_mobile = false : is_mobile = true;
         $('.data_table').each(function () {
             table_width = $(this).data('width');
-            window.outerWidth > 1024 ? $(this).find('table').css('width', '') : $(this).find('table').css('width', table_width);
+            window.outerWidth > 1024 ? $(this).find('table').css('min-width', '') : $(this).find('table').css('min-width', table_width);
         })
     });
 

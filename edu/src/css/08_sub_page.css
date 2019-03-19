@@ -7,6 +7,7 @@
 .sub_header {position:relative; height:470px; padding-top:210px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transform:scale(1.05); -moz-transform:scale(1.05); -ms-transform:scale(1.05); -o-transform:scale(1.05); transform:scale(1.05); -webkit-transition:transform 1s; -moz-transition:transform 1s; -ms-transition:transform 1s; -o-transition:transform 1s; transition:transform 1s;}
 .sub_header.animated {-webkit-transform:scale(1); -moz-transform:scale(1); -ms-transform:scale(1); -o-transform:scale(1); transform:scale(1);}
 .sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
+.sub_header.type2 {background-image:url(../img/bg/bg_sub_type2.png);}
 .sub_header h2 {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:400; line-height:1.5em;}
 .sub_header h2:after {position:absolute; right:-76px; bottom:15px; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-position:-10px -246px; background-size:1000px 1000px; content:"";}
 .sub_header .sub_tit {font-size:24px; line-height:1.5em;}
@@ -49,6 +50,88 @@
     .tab_menu ul.type2 li {width:50%;}
     .tab_menu ul.type3 li {width:33.33%;}
     .tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:0; height:100%;}
+}
+
+/* 서브 비주얼 + 서브 탭메뉴 */
+.sub_visual {height:320px; padding-top:40px; background:#e6eff1;}
+.sub_visual .sub_txt,.sub_visual .sub_tit {font-family:"Nanum Square"; line-height:1.4em; color:#333; text-align:center;}
+.sub_visual .sub_txt {margin-top:60px; font-size:30px; font-weight:300;}
+.sub_visual .sub_tit {font-size:50px; font-weight:700;}
+
+.subtab_menu {text-align:center; margin-bottom:-20px;}
+.subtab_menu ul {display:inline-block; font-size:0; border-left:1px solid #008398;}
+.subtab_menu ul li {display:inline-block; border:1px solid #008398; border-left:0;}
+.subtab_menu ul li a {display:block; min-width:190px; padding:0 10px;  font-size:16px; line-height:48px; color:#008398; transition:all 0.5s;}
+.subtab_menu ul li.on a,.subtab_menu ul li a:hover {background:#fff; font-weight:700;}
+
+@media (max-width:1024px) {
+    .sub_visual {height:auto; margin-top:-30px; padding:30px 0;}
+    .sub_visual .sub_txt {margin-top:0; font-size:24px;}
+    .sub_visual .sub_tit {font-size:36px;}
+    .subtab_menu {margin-bottom:30px;}
+    .subtab_menu ul li a {min-width:150px;line-height:2.5em; font-size:14px;}
+}
+
+@media (max-width:599px) {
+    .sub_visual .sub_txt {font-size:18px;}
+    .sub_visual .sub_tit {font-size:24px;}
+    .subtab_menu ul {display:block; padding:0 15px; border:0;}
+    .subtab_menu ul li {display:block; border-left:1px solid #008398; border-bottom:0;}
+    .subtab_menu ul li:last-child {border-bottom:1px solid #008398;}
+    .subtab_menu ul li a {min-width:0; font-size:12px;}
+}
+
+/* 컨텐츠 영역 일반 텍스트 */
+.content_txt {padding-top:50px;}
+.content_txt .main_txt {margin-bottom:35px; font-family:"Nanum Square"; font-size:24px; line-height:1.65em; color:#333;}
+.content_txt .main_txt strong {display:block; margin-top:10px; font-family:inherit; font-size:36px; line-height:1.4em;}
+.content_txt .sub_txt {margin-top:15px; font-size:15px; line-height:2em; color:#555;}
+
+@media (max-width:1024px) {
+    .content_txt {padding-top:30px;}
+    .content_txt br {display:none;}
+    .content_txt .main_txt {margin-bottom:30px; font-size:18px; line-height:1.4em;}
+    .content_txt .main_txt strong {font-size:24px; margin:0;}
+    .content_txt .sub_txt {font-size:14px; line-height:1.8em;}
+}
+
+@media (max-width:599px) {
+    .content_txt .main_txt {font-size:16px;}
+    .content_txt .main_txt strong {font-size:20px;}
+}
+
+/* 하단 비주얼 */
+.bottom_visual {position:relative; margin-top:45px; margin-bottom:70px;}
+.bottom_visual .txt_wrap p {font-family:"Nanum Square";}
+.bottom_visual .sub_txt {font-size:30px; line-height:1.5em; color:#333;}
+.bottom_visual .main_txt {font-size:40px; line-height:1.5em; color:#008398; margin-bottom:30px;}
+.bottom_visual .link {width:200px; border-color:#008398; color:#fff; background:#00aeba;}
+.bottom_visual .link:after {background:#fff;}
+.bottom_visual .link:hover {color:#008398;}
+.bottom_visual .link:hover span:before,.bottom_visual .link:hover span:after {background:#008398;}
+.bottom_visual .logo {position:absolute; right:0; bottom:0;}
+
+@media (max-width:1024px) {
+    .bottom_visual .sub_txt {font-size:18px;}
+    .bottom_visual .main_txt {font-size:24px;}
+    .bottom_visual .logo {height:50%;}
+}
+
+@media (max-width:599px) {
+    .bottom_visual .sub_txt {font-size:16px;}
+    .bottom_visual .main_txt {font-size:20px;}
+}
+
+/* 다이어그램 비주얼 영역 */
+.diagram_view {margin-bottom:-100px; padding:50px 0; background:#f2f2f2;}
+.diagram {height:0; background-repeat:no-repeat; background-position:center; background-size:contain;}
+
+@media (max-width:1024px) {
+    .diagram_view {margin-bottom:-50px; padding:30px 0;}
+}
+
+@media (max-width:599px) {
+    .diagram_view {margin-bottom:-30px;}
 }
 
 /* 대표이사 인사말 */
@@ -123,42 +206,7 @@
     .philosophy .upper .txt,.philosophy .lower .txt {line-height:1.8em;}
 }
 
-/* 서브 비주얼 + 서브 탭메뉴 */
-.sub_visual {height:290px; padding-top:40px; background:#e6eff1;}
-.sub_visual .sub_txt,.sub_visual .sub_tit {font-family:"Nanum Square"; line-height:1.4em; color:#333; text-align:center;}
-.sub_visual .sub_txt {margin-top:45px; font-size:30px; font-weight:300;}
-.sub_visual .sub_tit {font-size:50px; font-weight:700;}
+/* 사업영역 - 수학영재교육 - 영재센터 */
+.diagram.elite_tab1 {background-image:url(../img/bg/bg_elite_tab1.png); padding-top:75%;}
 
-.subtab_menu {text-align:center;}
-.subtab_menu ul {display:inline-block; font-size:0; border-left:1px solid #008398;}
-.subtab_menu ul li {display:inline-block; border:1px solid #008398; border-left:0;}
-.subtab_menu ul li a {display:block; min-width:190px; padding:0 10px;  font-size:14px; line-height:43px; color:#008398; transition:all 0.5s;}
-.subtab_menu ul li.on a,.subtab_menu ul li a:hover {background:#fff; font-weight:700;}
-
-@media (max-width:1024px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-/* 컨텐츠 영역 일반 텍스트 */
-.content_txt {padding-top:50px;}
-.content_txt .main_txt {margin-bottom:35px; font-family:"Nanum Square"; font-size:24px; line-height:1.4em; color:#333;}
-.content_txt .main_txt strong {display:block; margin-top:10px; font-family:inherit; font-size:40px; line-height:1.4em;}
-.content_txt .sub_txt {margin-top:15px; font-size:15px; line-height:2em; color:#555;}
-
-/* 하단 비주얼 */
-.bottom_visual {display:table; position:relative; width:100%; height:340px;}
-/* .bottom_visual:before {position:absolute; top:0; left:0; width:100%; height:100%; background:-moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%); background:-webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); background:linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );} */
-.bottom_visual .txt_wrap {display:table-cell; position:relative; vertical-align:middle;}
-.bottom_visual .txt_wrap p {font-family:"Nanum Square";}
-.bottom_visual .sub_txt {font-size:30px; line-height:1.5em; color:#333;}
-.bottom_visual .main_txt {font-size:40px; font-weight:700; color:#008398; margin:5px 0 30px;}
-.bottom_visual .link {width:200px; border-color:#008398; color:#fff; background:#00aeba;}
-.bottom_visual .link:after {background:#fff;}
-.bottom_visual .link:hover {color:#008398;}
-.bottom_visual .link:hover span:before,.bottom_visual .link:hover span:after {background:#008398;}
-
-
+/* 사업영역 - 수학영재교육 - 하베르만 */

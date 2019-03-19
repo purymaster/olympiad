@@ -124,6 +124,10 @@ textarea {line-height:1.5em;}
     .select_form button {padding-left:15px;}
 }
 
+/* 체크박스 */
+
+/* 라디오박스 */
+
 /* 검색 */
 .search_wrap {display:inline-block; position:relative; min-width:220px; font-size:0;}
 .search_wrap input[type="text"] {width:100%; padding-right:40px;}
@@ -147,7 +151,7 @@ textarea {line-height:1.5em;}
 .txt_list li {position:relative; padding-left:0.75em; font-size:14px; line-height:1.5em; color:#333;}
 .txt_list li:before {content:""; position:absolute; left:0;}
 .txt_list.type1 li:before {top:0.6em; width:4px; height:4px; background:#333;} /* type1 : 네모 */
-.txt_list.type2 li:before {}
+.txt_list.type2 li:before {position:static; content:"-";} /* type2 : 대쉬 */
 .txt_list.type3 li:before {}
 .txt_list.type4 li:before {}
 
@@ -227,6 +231,8 @@ label {cursor:pointer;}
     .board_list table .notice .notice_icon {margin-bottom:15px;}
     .board_list table tr:not(.notice) th.num {display:none;}
     .board_list table td.date,.board_list table td.view {font-size:14px; font-family:inherit;}
+    .board_list table td:before {margin-right:0;}
+    .board_list table td.name,.board_list table td.date,.board_list table td.view {font-family:"Lato","Nanum Gothic"; font-size:12px;}
     .board_list table td.name:before {content:"작성자 : ";}
     .board_list table td.date:before {content:"등록일 : ";}
     .board_list table td.view:before {content:"조회수 : ";}
@@ -276,8 +282,8 @@ label {cursor:pointer;}
 .gallery ul li:hover .img_view:after {background:rgba(0,0,0,0.2);}
 .gallery ul li .txt_view {height:90px; padding:15px 20px; border-top:1px solid #cdcdcd; transition:all 0.5s;}
 .gallery ul li:hover .txt_view {border-color:#00aeba;}
-.gallery ul li .txt_view p {overflow:hidden; max-height:2.8em; font-size:16px; font-weight:700; line-height:1.4em; color:#333; transition:all 0.5s;}
-.gallery ul li .txt_view p strong {color:#00687f;}
+.gallery ul li .txt_view p {overflow:hidden; max-height:2.8em; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:1.4em; color:#333; transition:all 0.5s;}
+.gallery ul li .txt_view p strong {font-family:inherit; color:#00687f;}
 .gallery ul li:hover .txt_view p {color:#008398;}
 .gallery ul li .txt_view .date {display:inline-block; margin-top:5px; font-size:12px; line-height:1.5em; color:rgba(100,111,114,0.6);}
 
@@ -290,6 +296,7 @@ label {cursor:pointer;}
 @media (max-width:599px) {
     .gallery ul {margin:15px 0;}
     .gallery ul li {width:100%; margin:15px 0;}
+    .gallery ul li .txt_view {height:auto;}
 }
 
 /* 게시판(썸네일형) 리스트 */

@@ -1,0 +1,97 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "사업영역",
+            "sub_txt" : "Business",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 3,
+            "tab_list" : ["수학영재교육","수학전문학원","영어전문학원","해외연수","방과후수업","교재출판"]
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 시작 -->
+                <div class="grid_container middle">
+
+                    <!-- 서브 비주얼 -->
+                    @@include('../inc/sub_visual.html',{
+                    "type" : "type1",
+                    "title" : "올림피아드학원 영재센터",
+                    "sub_txt" : "최상위 1%를 위한 영재교육",
+                    "context" : {
+                    "has_tab" : true,
+                    "tab_list" : ["영재센터","하베르만"]
+                    }
+                    })
+
+                    <div class="grid_container">
+                        <div class="content_txt">
+                            <p class="main_txt">
+                                올림피아드학원 영재센터는 영재성 발굴과 육성을 목적으로
+                                <strong>
+                                    체계적인 교과과정 및 최고의 영재교육 전문 강사진으로<br>
+                                    이루어져 있습니다.
+                                </strong>
+                            </p>
+                            <p class="sub_txt">
+                                다양한 영재성의 발현과 보편적인 학습의 균형을 위해 개개인에 최적화된 학습프로그램을 제공하고 있습니다.
+                            </p>
+                            <p class="sub_txt">
+                                영재교육에 있어 가장 중요한 수학, 과학은 Basic-Advanced-Challenge의 단계를 거치면서 초등 영재부터 중/고등,<br>
+                                대학 교양과정까지 연계된 커리큘럼을 운영합니다.
+                            </p>
+                            <p class="sub_txt">
+                                특히 대학 수준의 과학 실험, 특화된 발표식 심화토론 수학, 창의력과 사고력 증진을 위한<br>
+                                ‘질문하고 생각하는 수업’을 통해 잠재된 영재성을 계발해 나가고 있습니다.
+                            </p>
+                        </div>
+                        <div class="bottom_visual">
+                            <div class="txt_wrap">
+                                <p class="sub_txt">대한민국 1% 영재를 키우는 곳,</p>
+                                <p class="main_txt">올림피아드학원 영재센터입니다.</p>
+                                <div class="btn_wrap bg_fill">
+                                    <a href="#" class="link" target="_blank" title="새창열림">
+                                        <span>홈페이지 바로가기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <img class="logo" src="../img/img/img_logo_elite.png" alt="올림피아드 영재센터 로고">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 다이어그램 비주얼 영역 -->
+                <div class="diagram_view">
+                    <div class="grid_container">
+                        <div class="diagram elite_tab1">
+                            <div class="hidden">
+                                <strong>올림피아드 수학영재교육</strong>
+                                <ul>
+                                    <li>심화토론 수학</li>
+                                    <li>수/과학 연합시스템</li>
+                                    <li>질문하고 생각하는 수업</li>
+                                    <li>KMO, 영재학교, 과학고 완벽 대비</li>
+                                    <li>대학 수준의 과학 실험</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이어그램 비주얼 영역 -->
+
+                <!-- 서브 페이지 컨텐츠 끝 -->
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>
