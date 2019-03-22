@@ -723,7 +723,7 @@ footer {background:#505354; color:#fff;}
 .footer_upper .bottom_menu li {float:left; margin:0 30px;}
 .footer_upper .bottom_menu li a {display:inline-block; font-size:16px; font-weight:700; line-height:60px; color:rgba(255,255,255,0.7);}
 .footer_upper .bottom_menu li a:hover,.footer_upper .bottom_menu li a strong {font-weight:700; color:#248d8e;}
-.footer_upper .select_form {position:absolute; top:0; right:0; background:none; font-size:16px;}
+.footer_upper .select_form {position:absolute; top:0; right:0; min-width:150px; background:none; font-size:16px;}
 .footer_upper .select_form button {padding-right:30px; border:none; background:none; line-height:60px; color:rgba(255,255,255,0.7); text-transform:uppercase;}
 .footer_upper .select_form button:after {right:3px; border-color:#999;}
 .footer_upper .select_form button.on + ul {bottom:60px; border:0; background:#505354;}
@@ -1162,6 +1162,8 @@ footer {background:#505354; color:#fff;}
 9. 서브 페이지별 스타일
 =========================================================*/
 
+/*************** 공통 요소 ***************/
+
 /* 서브 페이지 타이틀 */
 .sub_header {position:relative; z-index:1; height:290px; margin-top:130px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transition:opacity 2s; transition:opacity 2s; opacity:0;}
 .upper_banner_on .sub_header {margin-top:calc(130px + 10.9375%);}
@@ -1206,12 +1208,14 @@ footer {background:#505354; color:#fff;}
 .breadcrumb {position:absolute; bottom:0; left:50%; width:100%; max-width:1200px; background:rgba(51,51,51,0.85); -webkit-transform:translateX(-50%); transform:translateX(-50%); -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .breadcrumb > ul:after {display:block; clear:both; content:"";}
 .breadcrumb > ul > li {float:left; border-right:1px solid rgba(255,255,255,0.2);}
-.breadcrumb > ul > li.home a {display:block; position:relative; text-indent:-9999px; width:50px; height:50px;}
+.breadcrumb > ul > li.home a {display:block; position:relative; width:50px; height:50px; text-indent:-9999px;}
 .breadcrumb > ul > li.home a:before {position:absolute; top:50%; left:50%; width:16px; height:16px; margin-top:-8px; margin-left:-8px; background:red; content:"";}
 .breadcrumb > ul > li .select_form {min-width:180px; max-width:320px; background:none;}
 .breadcrumb > ul > li .select_form button {padding-left:20px; border:0; background:none; font-size:16px; line-height:50px; color:#cdcdcd;}
+.breadcrumb > ul > li .select_form button span {font-family:"Nanum Square";}
 .breadcrumb > ul > li .select_form button:after {border-color:#cdcdcd;}
 .breadcrumb .select_form button + ul {width:calc(100% + 2px); margin-left:-1px; padding:5px 20px; background:rgba(255,255,255,0.95); -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
+.breadcrumb .select_form button + ul a {font-family:"Nanum Square";}
 
 @media (max-width:1024px) {
     .breadcrumb {display:none;}
@@ -1304,6 +1308,8 @@ footer {background:#505354; color:#fff;}
     .no_sub_header .sub_upper_wrap {padding-top:30px;}
     .no_sub_header .sub_upper_wrap .main_tit:before {top:-30px;}
 }
+
+/*************** 개별 페이지 ***************/
 
 /* 학원소개 */
 .introduce .introduce_cont .introduce_list li {margin-bottom:30px;}
@@ -1530,6 +1536,146 @@ footer {background:#505354; color:#fff;}
     .campus_map .campus_data table td {font-size:12px;}
     .campus_map .campus_data .traffic .route .transit,.campus_map .campus_data .traffic .route li {font-size:12px;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* 중등수학 - 수업특징 */
+.txt.w_100 {width: 100%; }
+.middle_math_cont_1 .mm_cont1_list { margin: -10px -10px;}
+.middle_math_cont_1 .mm_cont1_list:after { content: ""; display: table; clear: both;}
+.middle_math_cont_1 .mm_cont1_list li {float: left; width: 20%; text-align: center; position: relative; padding: 10px 10px;} 
+.middle_math_cont_1 .mm_cont1_list li:before { content: ""; position: absolute; left: -10px; top: 72px; width: 26px; height: 30px; background-image: url(../img/bg/bg_triangle_icon.png); background-size: 26px 30px; }
+.middle_math_cont_1 .mm_cont1_list li:first-child:before{display: none; } 
+.middle_math_mod .mm_img {line-height: 0;margin-bottom: 15px; }
+.middle_math_mod .mm_text { font-size: 18px; line-height: 1.3em; color: #646f72; }
+.sub_lower_wrap.mm_bg_top { background-position: top;}
+.middle_math_cont_2 { display: table; table-layout: fixed; width: 100%; }
+.middle_math_cont_2 .mm_cont2_right{ line-height: 0; display: table-cell; vertical-align: middle; text-align: right; padding-right: 25px;}
+.middle_math_cont_2 .mm_cont2_left { display: table-cell; vertical-align: middle;}
+.middle_math_cont_2 .mm_cont2_left_list li { margin-bottom: 10px; background-color: #fff; border-radius: 50px; border: 2px solid #dddddd; padding: 10px 15px; } 
+.middle_math_cont_2 .mm_cont2_left_list li:last-chlid {margin-bottom: 0;} 
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width { max-width: 257px;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_2 { max-width: 293px;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_3 { max-width: 267px;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_4 { max-width: 373px;}
+.middle_math_cont_2 .mm_cont2_left_mod {text-align: center;}
+.mm_cont2_left_text { font-size: 16px; color: #333; line-height: 1.6em; font-weight: normal; font-weight: bold;}
+.mm_cont2_left_mod .mm_cont2_text_blod { font-weight: bold; color: #333; font-size: 16px; line-height: 1.6em; font-family:"Nanum Square Extrabold"; }
+
+.middle_math_cont_3 {background-image: url(../img/bg/bg_middle_math_2.jpg); background-size: cover; background-position: right; height: auto; border: 1px solid #ddd; padding: 75px 122px; }
+.middle_math_cont_3:after { content: ""; display: table; clear: both;}
+.middle_math_cont_3 .mm_cont3_text {margin-bottom: 65px; }
+.middle_math_cont_3 .mm_cont3_text .line_text {font-size: 24px; line-height: 1.3em; color: #333; position: relative; padding-left: 4px; font-weight: bold; margin-bottom: 5px;}
+.middle_math_cont_3 .mm_cont3_text .line_text:before {content: ""; position: absolute; left: 0; top: 50%; width: 400px; height: 16px; background-color: #3db4c7; opacity: 0.3; margin-top: -8px; }
+.middle_math_cont_3 .mm_cont3_tit { font-size: 42px; color: #333; line-height: 1.3em; font-family:"Nanum Square Extrabold";}
+.middle_math_cont_3 .mm_cont3_tit .blue_text { color: #008398; font-family:"Nanum Square Extrabold"; }
+.mm_cont3_img {line-height: 0; }
+.txt.w_100 {width: }
+@media screen and (max-width: 1024px) and (min-width: 1px){
+.middle_math_cont_1 .mm_cont1_list li {width: 33.3333%; }
+.middle_math_cont_1 .mm_cont1_list li:nth-child(4) { -webkit-transform: translateX(50%); transform: translateX(50%);}
+.middle_math_cont_1 .mm_cont1_list li:nth-child(5) { -webkit-transform: translateX(50%); transform: translateX(50%);}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width { max-width: 257px;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_2 { max-width: 293px;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_3 { max-width: 267px;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_4 { max-width: 373px;}
+.middle_math_cont_2 .mm_cont2_left_mod .mm_cont2_left_text {font-size: 14px; }
+.mm_cont2_left_mod .mm_cont2_text_blod { font-size: 14px;}
+.middle_math_cont_3 { padding: 30px 35px;}
+.middle_math_cont_3 .mm_cont3_text { margin-bottom: 55px;}
+.middle_math_cont_3 .mm_cont3_text .line_text { font-size: 20px; }
+.middle_math_cont_3 .mm_cont3_text .line_text:before { width: 336px;}
+.middle_math_cont_3 .mm_cont3_tit { font-size: 38px; }
+}
+
+
+
+@media (max-width:599px) and (min-width: 1px) { 
+.middle_math_cont_1 .mm_cont1_list li {width: 100%; float: none; padding-bottom: 50px; }
+.middle_math_cont_1 .mm_cont1_list li:before { -webkit-transform: rotate(90deg); transform: rotate(90deg); left: 50%; top:-32px; margin-left: -13px; }
+.middle_math_cont_1 .mm_cont1_list li:nth-child(4) { -webkit-transform: translateX(0); transform: translateX(0);}
+.middle_math_cont_1 .mm_cont1_list li:nth-child(5) { -webkit-transform: translateX(0); transform: translateX(0);}
+.middle_math_cont_2 {display: block;}
+.middle_math_cont_2 .mm_cont2_right { display: block; padding-right: 0; text-align: center; margin-bottom: 30px;}
+.middle_math_cont_2 .mm_cont2_left { display: block; text-align: center;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width { max-width: 100%;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_2 { max-width: 100%;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_3 { max-width: 100%;}
+.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_4 { max-width: 100%;}
+.mm_cont2_left_mod .mm_cont2_text_blod { font-size: 14px; }
+.middle_math_cont_3 { padding: 20px 25px;}
+.middle_math_cont_3 .mm_cont3_text { margin-bottom: 30px;}
+.middle_math_cont_3 .mm_cont3_text .line_text { font-size: 14px; }
+.middle_math_cont_3 .mm_cont3_text .line_text:before { width: 236px; height: 10px; margin-top: -5px;}
+.middle_math_cont_3 .mm_cont3_tit { font-size: 24px; }
+
+}
+
+/* 초등수학 - 수업특징 */
+.mm_cont2_left.em_table_bottom { vertical-align: bottom;}
+.elementary_math_cont {background-color: #000; opacity: 0.5; }
+.em_text { font-size: 32px; line-height: 1.3em; color: #fff; margin-bottom: 15px;}
+.mm_cont2_left_text.color_white { color: #fff;}
+.color_sky {color: #b9e6e8; }
+
+/* 초등수학 > 레벨구성 */
+.level .level_link_bx {max-width:980px; margin:0 auto;}
+.level .level_link_list {overflow:hidden; margin:-20px -20px;}
+.level .level_link_list li {float:left; width:33.3333%; padding:20px 20px;} 
+.level .level_link_list li:nth-child(1) {-webkit-transform:translateX(50%);transform:translateX(50%);}
+.level .level_link_list li:nth-child(2) {margin-right:10px; -webkit-transform:translateX(50%); transform:translateX(50%);}
+.level .level_link_list li a {display:block; position:relative; width:100%; height:300px; margin-bottom:78px; padding-top:100px; text-align:center;}
+.level .level_link_list li:nth-child(1) a {background-image:url(../img/bg/bg_link_list_01.jpg);}
+.level .level_link_list li:nth-child(2) a {background-image:url(../img/bg/bg_link_list_02.jpg);}
+.level .level_link_list li:nth-child(3) a {background-image:url(../img/bg/bg_link_list_03.jpg);}
+.level .level_link_list li:nth-child(4) a {background-image:url(../img/bg/bg_link_list_04.jpg);}
+.level .level_link_list li:nth-child(5) a {background-image:url(../img/bg/bg_link_list_05.jpg);}
+.level .level_link_list li a:before {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(0,0,0,0.5); visibility:hidden; opacity:0; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.level .level_link_list li a:hover:before {visibility:visible; opacity:1;}
+.level .link_box .link_list_tit {font-family:"Nanum Square"; font-size:40px; font-weight:700; line-height:54px; color:#fff;}
+.level .link_box .list_tit_fs {display:block; font-family:"Nanum Square"; font-size:30px; font-weight:700; text-transform:uppercase;}
+.level .link_box .arrow_text {position:relative; padding-right:12px; font-size:14px; line-height:26px; color:#fff; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.level .link_box .arrow_text:after {position:absolute; top:50%; right:0; width:8px; height:8px; margin-top:-4px; border:1px solid #fff; border-bottom:0; border-left:0; -webkit-transform:rotate(45deg); transform:rotate(45deg); content:""; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.level .link_box:hover .arrow_text {color:#008398;}
+.level .link_box:hover .arrow_text:after {right:-5px; border-color:#008398;}
+.level .level_link_list li .bottom_text {position:absolute; bottom:-78px; left:0; width:100%; padding:15px 0; border-top:2px solid #fff; text-align:center;} 
+.level .level_link_list li:nth-child(1) .bottom_text {background-color:#8ab113;}
+.level .level_link_list li:nth-child(2) .bottom_text {background-color:#469950;}
+.level .level_link_list li:nth-child(3) .bottom_text {background-color:#00aeba;}
+.level .level_link_list li:nth-child(4) .bottom_text {background-color:#008398;}
+.level .level_link_list li:nth-child(5) .bottom_text {background-color:#005967;}
+.level .level_link_list li .bottom_text p {font-size:14px; line-height:24px; color:#fff;} 
+
+@media screen and (max-width:1024px) {
+    .level .level_link_bx {padding:0 30px;}
+	.level .level_link_bx .level_link_list li {width:50%;}
+	.level .level_link_bx .level_link_list li:nth-child(1) {-webkit-transform:none;transform:none;}
+	.level .level_link_bx .level_link_list li:nth-child(2) {margin-right:0; -webkit-transform:none; transform:none;}
+	.level .link_mod .link_box .link_list_tit {font-size:36px;}
+	.level .link_mod .link_box .list_tit_fs {font-size:26px;}
+	.level .bottom_text {padding:20px 10px;}
+    .level .bottom_text p {font-size:13px;}
+}
+
+@media screen and (max-width:599px) {
+    .level .level_link_bx .level_link_list li {width:100%;}
+}
+
+
+
+
+
+
+
 
 /* 검색결과 */
 .search .keyword {color:#00687f; font-family:inherit;}

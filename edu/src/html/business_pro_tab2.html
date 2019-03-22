@@ -1,0 +1,98 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap pro_tab2">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "사업영역",
+            "sub_txt" : "Business",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 3,
+            "tab_list" : ["수학영재교육","수학전문학원","영어전문학원","해외연수","방과후수업","교재출판"]
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 시작 -->
+                <div class="grid_container middle">
+
+                    <!-- 서브 비주얼 -->
+                    @@include('../inc/sub_visual.html',{
+                    "type" : "type4",
+                    "title" : "올림피아드학원",
+                    "sub_txt" : "수학이 쉽고 즐거운 세상",
+                    "context" : {
+                    "has_tab" : true,
+                    "tab_list" : ["유투엠","올림피아드학원","거꾸로수학교실"]
+                    }
+                    })
+
+                    <div class="grid_container">
+                        <div class="content_txt">
+                            <p class="main_txt">
+                                <strong>
+                                    올림피아드학원은 재미있고 즐거운 수학, 과학적인 학습법,<br>
+                                    개념·원리 중심의 정통 수학학습을 지향합니다.
+                                </strong>
+                            </p>
+                            <p class="sub_txt">
+                                특히 디지털 수업시스템 드림원 클래스와 온라인 숙제시스템 드림원의 차별화된 시스템과 체계적인 단계별 프로그램으로<br>
+                                학습효과를 극대화하고 있습니다.
+                            </p>
+                            <p class="sub_txt">
+                                또한 영재센터와의 연계교육을 통해 수학·과학 영재를 조기에 육성, 영재학교 및 과학고 입시에 놀라운 합격신화를 이어가고 있습니다.
+                            </p>
+                            <p class="sub_txt">
+                                온&middot;오프라인 교재와 최첨단 디지털 학습모델은 아이들의 흥미와 실력향상을 동시에 이끌어내 수학에 대한 자신감을 높여줍니다.
+                            </p>
+                        </div>
+                        <div class="bottom_visual">
+                            <div class="txt_wrap">
+                                <p class="sub_txt">
+                                    수학이 쉽고 즐거워짐으로써 흥미와<br>
+                                    자신감을 높여주는 곳,
+                                </p>
+                                <p class="main_txt">올림피아드학원입니다.</p>
+                                <div class="btn_wrap bg_fill">
+                                    <a href="#" class="link" target="_blank" title="새창열림">
+                                        <span>홈페이지 바로가기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <img class="logo" src="../img/img/img_logo_academy.png" alt="올림피아드학원 로고">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 다이어그램 비주얼 영역 -->
+                <div class="diagram_view">
+                    <div class="grid_container">
+                        <div class="diagram">
+                            <div class="hidden">
+                                <strong>올림피아드 학원</strong>
+                                <ul>
+                                    <li>재미있고 즐거운 수학</li>
+                                    <li>개념원리 중심의 정통 수학학습</li>
+                                    <li>온/오프라인 블렌디드 러닝</li>
+                                    <li>토론발표식 참여 수업</li>
+                                    <li>영재센터와의 연계교육</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이어그램 비주얼 영역 -->
+
+                <!-- 서브 페이지 컨텐츠 끝 -->
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

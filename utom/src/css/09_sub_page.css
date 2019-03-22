@@ -12,7 +12,7 @@
 .sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
 .sub_header .sub_txt {font-family:"Nanum Square"; font-size:22px; font-weight:400; line-height:1.5em;}
 .sub_header h2 {font-family:"Nanum Square"; font-size:38px; font-weight:700; line-height:1.5em;}
-.sub_content {padding-bottom:100px;}
+.sub_content {min-height:740px; padding-bottom:100px;}
  
 @media (min-width:1921px) {
     .upper_banner_on .sub_header {margin-top:315px;}
@@ -25,7 +25,7 @@
     .sub_header h2 {font-size:30px;}
     .sub_header h2:after {right:-40px; bottom:10px; width:33px; height:39px; background-position:-5px -123px; background-size:500px 500px;}
     .sub_header .sub_tit {margin-bottom:50px; font-size:18px;}
-    .sub_content {padding-bottom:50px;}
+    .sub_content {min-height:0; padding-bottom:50px;}
 }
 
 @media (max-width:599px) {
@@ -45,8 +45,10 @@
 .breadcrumb > ul > li.home a:before {position:absolute; top:50%; left:50%; width:16px; height:16px; margin-top:-8px; margin-left:-8px; background:red; content:"";}
 .breadcrumb > ul > li .select_form {min-width:180px; max-width:320px; background:none;}
 .breadcrumb > ul > li .select_form button {padding-left:20px; border:0; background:none; font-size:16px; line-height:50px; color:#cdcdcd;}
+.breadcrumb > ul > li .select_form button span {font-family:"Nanum Square";}
 .breadcrumb > ul > li .select_form button:after {border-color:#cdcdcd;}
 .breadcrumb .select_form button + ul {width:calc(100% + 2px); margin-left:-1px; padding:5px 20px; background:rgba(255,255,255,0.95); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
+.breadcrumb .select_form button + ul a {font-family:"Nanum Square";}
 
 @media (max-width:1024px) {
     .breadcrumb {display:none;}
@@ -60,12 +62,15 @@
 .sub_upper_wrap .main_tit strong {font-family:"Nanum Square"; font-weight:900;}
 .sub_upper_wrap .txt {margin:10px auto 0; font-family:"Nanum Square"; font-size:18px; font-weight:300; line-height:1.6em; color:inherit;}
 
+@media (max-width:1600px) {
+    .sub_upper_wrap .main_tit br,.sub_upper_wrap .txt br {display:none;}
+}
+
 @media (max-width:1024px) {
     .sub_upper_wrap {padding:30px 0;}
     .sub_upper_wrap .main_tit {width:90%; margin-top:30px; font-size:26px;}
     .sub_upper_wrap .main_tit br {display:none;}
     .sub_upper_wrap .txt {width:90%; margin-top:15px; font-size:16px;}
-    .sub_upper_wrap .txt br {display:none;}
 }
 
 @media (max-width:599px) {
@@ -116,12 +121,13 @@
 }
 
 /* 서브 페이지 내용 */
-.sub_lower_wrap {padding:100px 0 50px; background-size:cover; background-position:center;}
+.sub_lower_wrap {padding:70px 0 50px; background-size:cover; background-position:center;}
+.sub_lower_wrap.diagram {margin-bottom:-100px; padding-bottom:100px; background:#f2f2f2;}
 .sub_lower_wrap .main_tit {position:relative; margin:0 auto; font-family:"Nanum Square"; font-size:32px; line-height:1.4em; color:inherit; font-weight:900; text-align:center;}
 .sub_lower_wrap .main_tit:before {position:absolute; top:-30px; left:50%; width:18px; height:20px; margin-left:-9px; background:red; content:"";}
 .sub_lower_wrap .visual_wrap {display:table; width:100%;}
 .sub_lower_wrap .visual_wrap p {display:table-cell; font-family:"Nanum Square"; font-weight:700; text-align:center; vertical-align:middle;}
-.sub_tit_wrap {position:relative; margin-bottom:10px; padding-top:35px; color:#333; text-align:center;}
+.sub_tit_wrap {position:relative; padding-top:35px; padding-bottom:10px; color:#333; text-align:center;}
 .sub_tit_wrap.white {color:#fff;}
 .sub_tit_wrap:after {position:absolute; top:0; left:50%; width:18px; height:20px; margin-left:-9px; background:red; content:"";}
 .sub_tit_wrap .sub_txt {font-family:"Nanum Square"; font-size:24px; line-height:1.5em;}
@@ -140,14 +146,16 @@
     .sub_tit_wrap .sub_txt {font-size:18px;}
     .sub_tit_wrap h3 {font-size:24px;}
     .sub_tit_wrap .txt_info {font-size:14px; line-height:1.8em;}
+    .sub_tit_wrap .txt_info br {display:none;}
     .sub_cont_wrap p.tit {font-size:24px;}
     .sub_cont_wrap p.txt {margin-top:20px; font-size:14px; line-height:1.8em;}
+    .sub_cont_wrap p.tit br,.sub_cont_wrap p.txt br  {display:none;}
 }
 
 @media (max-width:599px) {
     .sub_lower_wrap .main_tit {font-size:20px;}
     .sub_tit_wrap .sub_txt {font-size:14px;}
-    .sub_tit_wrap h3 {font-size:16px;}
+    .sub_tit_wrap h3 {font-size:18px;}
     .sub_tit_wrap .txt_info {font-size:12px; line-height:1.6em;}
     .sub_cont_wrap p.tit {font-size:16px;}
     .sub_cont_wrap p.txt {margin-top:15px; font-size:12px; line-height:1.6em;}
@@ -286,6 +294,61 @@
     .mission .utom_purpose .purpose_bottom_cont .purpose_list li:last-child {margin-bottom:0;}
 }
 
+/* 인재상 */
+.talent .utom_talent_txt {text-align:center;}
+.talent .utom_talent_cont {margin-top:35px; padding:40px 0; border:1px solid #ddd; line-height:0; text-align:center;}
+.talent .utom_talent_cont .utom_talent_list_box {max-width:890px; margin:0 auto;}
+.talent .utom_talent_cont .utom_talent_list_box .utom_talent_list {overflow:hidden; margin:0 -20px;}
+.talent .utom_talent_cont .utom_talent_list_box .utom_talent_list li {float:left; padding:0 20px; text-align:center;}
+.talent .talent_mod {position:relative; width:270px; height:366px; padding-top:42px; background-repeat:no-repeat; background-position:center; background-size:100%;}
+.talent .talent_mod:after {position:absolute; bottom:0; left:50%; width:100px; height:100px; margin-left:-50px; background-color:green; content:"";}
+.talent .utom_talent_list li:nth-child(1) .talent_mod {background-image:url(../img/bg/bg_talent_01.png);}
+.talent .utom_talent_list li:nth-child(2) .talent_mod {background-image:url(../img/bg/bg_talent_02.png);}
+.talent .utom_talent_list li:nth-child(3) .talent_mod {background-image:url(../img/bg/bg_talent_03.png);}
+.talent .talent_mod .mod_text_1 {margin-bottom:105px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:30px; color:#222;;}
+.talent .talent_mod .mod_text_2 {position:relative; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:30px; color:#fff;}
+.talent .utom_talent_cont .talent_text {margin-top:35px; font-size:15px; line-height:2em; color:#222;}
+
+.talent .talent_cont3 {margin-top:40px; text-align:center;}
+.talent .talent_cont3 .talent_cont3_text {margin-bottom:20px; font-family:"Nanum Square"; font-size:40px; font-weight:700; line-height:54px; color:#008398;}
+.talent .talent_cont3 .talent_cont3_img {width:100%; height:0; padding-top:52.66%; background-image:url(../img/bg/bg_talent_04.png); background-repeat:no-repeat; background-position:center; background-size:contain;}
+
+@media (max-width:1366px) {
+	.talent .utom_talent_cont .utom_talent_list_box {max-width:760px;}
+	.talent .utom_talent_cont .utom_talent_list_box .utom_talent_list {margin:0 -10px;}
+	.talent .utom_talent_cont .utom_talent_list_box .utom_talent_list li {padding:0 10px;}
+	.talent .talent_mod {width:240px; height:325px;}
+	.talent .talent_mod .mod_text_1 {margin-bottom:80px; font-size:18px;}
+    .talent .talent_mod .mod_text_2 {font-size:18px;}
+}
+
+@media (max-width:1024px) {
+    .talent .utom_talent_cont {margin-top:30px; padding:30px 0;}
+    .talent .talent_cont3 {margin-top:30px;}
+    .talent .utom_talent_cont .utom_talent_list_box {display:inline-block;}
+	.talent .utom_talent_cont .utom_talent_list_box .utom_talent_list {margin:0;}
+	.talent .utom_talent_cont .utom_talent_list_box .utom_talent_list li:last-child {margin-bottom:0;}
+    .talent .talent_mod {width:135px; height:183px; margin:0 auto; padding-top:6px;}
+    .talent .talent_mod:after {width:50px; height:50px; margin-left:-25px;}
+	.talent .talent_cont3 .talent_cont3_text {font-size:30px;}
+	.talent .talent_mod .mod_text_1 {margin-bottom:45px; font-size:16px; line-height:1.8em;}
+	.talent .talent_mod .mod_text_2 {font-size:16px; line-height:1.6em;}
+    .talent .utom_talent_cont .talent_text {font-size:14px; line-height:1.8em;}
+}
+
+@media (max-width:599px) {
+    .talent .talent_mod {padding-top:10px;}
+    .talent .utom_talent_cont {border:0; padding:0;}
+    .talent .talent_cont3 {margin-top:20px;}
+	.talent .talent_cont3 .talent_cont3_text {font-size:24px;}
+    .talent .talent_cont3 .talent_cont3_img {padding-left:0;}
+    .talent .utom_talent_cont .talent_text {font-size:12px; line-height:1.6em;}
+    .talent .utom_talent_cont .talent_text br {display:none;}
+    .talent .talent_mod .mod_text_1 {font-size:14px;}
+    .talent .talent_mod .mod_text_2 {font-size:14px;}
+    .talent .utom_talent_cont .utom_talent_list_box .utom_talent_list li {float:none; margin-bottom:15px;}
+}
+
 /* 플립러닝 기반 학생중심 참여수업 - 플립러닝 교수학습법 */
 .flip_tab1 .msg_box {margin-top:105px;}
 
@@ -314,4 +377,52 @@
 @media (max-width:599px) {
     .hav_tab1 .visual_wrap {height:100px;}
     .hav_tab1 .visual_wrap p {font-size:16px;}
+}
+
+/* 유투엠 프로그램 > 4가지 말하기 학습전략 > 질문식 수업 */
+.strategy .info_txt {margin-top:20px;}
+.strategy .info_txt .qec_text .qec_text_list {position:relative; border-bottom:1px solid #ccc;}
+.strategy .info_txt .qec_text .qec_text_list:before {position:absolute; bottom:-1px; left:50%; width:40px; height:1px; margin-left:-20px; background:#fff; content:"";}
+.strategy .info_txt .qec_text .qec_text_list:after {display:block; clear:both; content:"";}
+.strategy .info_txt .qec_text .qec_text_list li {float:left; width:calc(50% - 20px); margin-right:40px;}
+.strategy .info_txt .qec_text .qec_text_list li:last-child {margin:0;}
+.strategy .qec_mod {padding:20px 0 30px; border-top:3px solid #333;}
+.strategy .qec_mod .qec_tit {margin-bottom:25px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#222;}
+.strategy .qec_mod strong {font-family:inherit; color:#008398;}
+.strategy .qec_mod .qec_p {font-size:16px; line-height:1.6em; color:#222;}
+.strategy .info_txt .img {width:100%; height:0; margin-top:70px; padding-top:80%; background-repeat:no-repeat; background-position:center; background-size:contain;}
+.strategy .info_txt .qec_img {background-image:url(../img/bg/bg_question_expression_class_01.png);}
+.strategy .info_txt .tp_img {background-image:url(../img/bg/bg_teaching_peers_01.png);}
+.strategy .info_txt .da_img {background-image:url(../img/bg/bg_discussion_announcement_01.png);}
+.strategy .info_txt .be_img {background-image:url(../img/bg/bg_backwards_explanation_01.png);}
+.strategy .check_list {margin-top:30px; padding:40px 110px; border:3px solid #1fb6c1; background-color:#fff;}
+.strategy .check_list li {padding:33px 0 20px; border-bottom:2px dashed #97cdd1;}
+.strategy .check_list li:last-child {border:0;}
+.strategy .check_list li p {position:relative; padding:3px 0 3px 70px; font-family:"Nanum Square"; font-size:24px; line-height:34px; color:#222;}
+.strategy .check_list li p:before {position:absolute; top:-14px; left:0; width:53px; height:54px; background-image:url(../img/bg/bg_question_expression_class_02.png); content:"";}
+
+@media (max-width:1600px) {
+    .strategy .qec_text br {display:none;}
+}
+
+@media (max-width:1024px) {
+    .strategy .info_txt .qec_text .qec_text_list {border:0;}
+    .strategy .info_txt .qec_text .qec_text_list:before {display:none;}
+    .strategy .info_txt .qec_text .qec_text_list li {float:none; width:100%; margin:0; margin-bottom:30px; border-bottom:1px solid #ccc;}
+    .strategy .info_txt .qec_text .qec_text_list li:last-child {margin-bottom:0;}
+    .strategy .info_txt .img {height:479px; margin-top:30px; padding:0;}
+    .strategy .qec_mod {min-height:0; padding:15px 0;}
+    .strategy .qec_mod .qec_tit {font-size:24px; line-height:1.4em;}
+    .strategy .qec_mod .qec_p {font-size:14px;}
+    .strategy .check_list {padding:15px 30px;}
+    .strategy .check_list li {padding:15px 0;}
+    .strategy .check_list li p {padding-left:50px; font-size:18px; line-height:24px;}
+    .strategy .check_list li p:before {top:-2px; width:26px; height:27px; background-size:26px 27px;}
+}
+
+@media (max-width:599px) {
+    .strategy .info_txt .img {height:0; padding-top:80%;}
+    .strategy .qec_mod .qec_tit {font-size:18px;}
+    .strategy .qec_mod .qec_tit br {display:none;}
+    .strategy .check_list li p {padding-top:5px; padding-bottom:5px; padding-left:40px; font-size:14px; line-height:20px;}
 }

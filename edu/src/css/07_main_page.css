@@ -139,9 +139,13 @@ section .news_wrap .menu_tit {margin-top:50px;}
     section .slide .ideology span {display:block; font-size:16px;}
     section .slide .ideology .plus {width:100%; padding:3px 0;}
     section .slide .ideology span:not(.plus):after {display:none;}
-    section .slide .business {display:none; margin-top:15px;}
-    section .slide .business li a {width:70px;}
-    section .slide .research {display:none; margin-top:15px;}
+    section .slide .business {margin:0 auto; margin-top:15px; width:240px;}
+    section .slide .business li a {width:70px; padding-top:45px;}
+    section .slide .business li a:before {margin-top:-30px; margin-left:-25%; transform:scale(0.75); transform-origin:left top;}
+    section .slide .business li:nth-child(1) a:before {margin-left:-30%;}
+    section .slide .business li:nth-child(4) a:before {margin-left:-20%;}
+    section .slide .research {margin-top:15px;}
+    section .slide .research li a {width:65px; padding:8px 0; font-size:12px;}
     article .news {margin:0;}
     article .news ul li {width:100%; padding:0;}
     section .news_wrap .menu_tit {font-size:14px;}

@@ -1,0 +1,97 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap elite_tab2">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "사업영역",
+            "sub_txt" : "Business",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 3,
+            "tab_list" : ["수학영재교육","수학전문학원","영어전문학원","해외연수","방과후수업","교재출판"]
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 시작 -->
+                <div class="grid_container middle">
+
+                    <!-- 서브 비주얼 -->
+                    @@include('../inc/sub_visual.html',{
+                    "type" : "type2",
+                    "title" : "하베르만",
+                    "sub_txt" : "하브루타로 키우는 영재사고력",
+                    "context" : {
+                    "has_tab" : true,
+                    "tab_list" : ["영재센터","하베르만"]
+                    }
+                    })
+
+                    <div class="grid_container">
+                        <div class="content_txt">
+                            <p class="main_txt">
+                                하브루타는 짝을 지어 질문을 주고 받으며 토론하고
+                                논쟁하면서 생각하는 힘을 키우는 유대인의 전통적인 교육방법입니다.
+                                <strong>
+                                    왜 하브루타로 수학을 공부해야 할까요?
+                                </strong>
+                            </p>
+                            <p class="sub_txt">
+                                적극적으로 질문하고 토론하고 교구를 가지고 탐구하고 문제를 설명하는 과정에서 비판적 사고력과 창의성을 키울 수
+                                있습니다.<br>
+                                자신이 이해한 것과 이해하지 못한 것을 구분하는 메타인지 능력을 향상시켜 뛰어난 학습능력을 갖출 수 있습니다.
+                            </p>
+                            <p class="sub_txt">
+                                또한 하브루타 수업을 해온 아이들은 소통하고 협력하여 문제를 풀어가는 융합적 문제해결능력을 키울 수 있습니다.<br>
+                                토론하고 협력하여 사고력을 키우는 하브루타 학습을 통해 미래인재의 핵심역량을 갖춘 “협력하는 괴짜”로 성장할 수 있습니다.
+                            </p>
+                            <p class="sub_txt">
+                                하베르만은 수업의 전 과정에 하브루타 교수학습법을 통합하여 수준 높은 영재 사고력을 키웁니다.
+                            </p>
+                        </div>
+                        <div class="bottom_visual">
+                            <div class="txt_wrap">
+                                <p class="sub_txt">최고의 영재를 양성하는 영재사고력 수학,</p>
+                                <p class="main_txt">하베르만입니다.</p>
+                                <div class="btn_wrap bg_fill">
+                                    <a href="#" class="link" target="_blank" title="새창열림">
+                                        <span>홈페이지 바로가기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <img class="logo" src="../img/img/img_logo_hbm.png" alt="하베르만 로고">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 다이어그램 비주얼 영역 -->
+                <div class="diagram_view">
+                    <div class="grid_container">
+                        <div class="diagram">
+                            <div class="hidden">
+                                <strong>올림피아드 하베르만</strong>
+                                <ul>
+                                    <li>하브루타로 키우는 창의적인 수학</li>
+                                    <li>메타인지 기반의 질문하는 수학</li>
+                                    <li>교구로 탐구하는 체험하는 수학</li>
+                                    <li>인지과학 기반의 생각하는 수학</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이어그램 비주얼 영역 -->
+
+                <!-- 서브 페이지 컨텐츠 끝 -->
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

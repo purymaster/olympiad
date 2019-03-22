@@ -677,7 +677,7 @@ footer {background:#505354; color:#fff;}
 .footer_upper .bottom_menu li {float:left; margin:0 30px;}
 .footer_upper .bottom_menu li a {display:inline-block; font-size:16px; font-weight:700; line-height:60px; color:rgba(255,255,255,0.7);}
 .footer_upper .bottom_menu li a:hover,.footer_upper .bottom_menu li a strong {font-weight:700; color:#248d8e;}
-.footer_upper .select_form {position:absolute; top:0; right:0; background:none; font-size:16px;}
+.footer_upper .select_form {position:absolute; top:0; right:0; min-width:150px; background:none; font-size:16px;}
 .footer_upper .select_form button {padding-right:30px; border:none; background:none; line-height:60px; color:rgba(255,255,255,0.7); text-transform:uppercase;}
 .footer_upper .select_form button:after {right:3px; border-color:#999;}
 .footer_upper .select_form button.on + ul {bottom:60px; border:0; background:#505354;}
@@ -972,7 +972,7 @@ footer {background:#505354; color:#fff;}
 .sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
 .sub_header .sub_txt {font-family:"Nanum Square"; font-size:22px; font-weight:400; line-height:1.5em;}
 .sub_header h2 {padding:0.15em 0; font-family:"Nanum Square"; font-size:38px; font-weight:700; line-height:1.2em;}
-.sub_content {padding-bottom:100px;}
+.sub_content {min-height:740px; padding-bottom:100px;}
  
 @media (min-width:1921px) {
     .upper_banner_on .sub_header {margin-top:315px;}
@@ -985,7 +985,7 @@ footer {background:#505354; color:#fff;}
     .sub_header h2 {font-size:30px;}
     .sub_header h2:after {right:-40px; bottom:10px; width:33px; height:39px; background-position:-5px -123px; background-size:500px 500px;}
     .sub_header .sub_tit {margin-bottom:50px; font-size:18px;}
-    .sub_content {padding-bottom:50px;}
+    .sub_content {min-height:0; padding-bottom:50px;}
 }
 
 @media (max-width:599px) {
@@ -1005,8 +1005,10 @@ footer {background:#505354; color:#fff;}
 .breadcrumb > ul > li.home a:before {position:absolute; top:50%; left:50%; width:16px; height:16px; margin-top:-8px; margin-left:-8px; background:red; content:"";}
 .breadcrumb > ul > li .select_form {min-width:180px; max-width:320px; background:none;}
 .breadcrumb > ul > li .select_form button {padding-left:20px; border:0; background:none; font-size:16px; line-height:50px; color:#cdcdcd;}
+.breadcrumb > ul > li .select_form button span {font-family:"Nanum Square";}
 .breadcrumb > ul > li .select_form button:after {border-color:#cdcdcd;}
 .breadcrumb .select_form button + ul {width:calc(100% + 2px); margin-left:-1px; padding:5px 20px; background:rgba(255,255,255,0.95); -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
+.breadcrumb .select_form button + ul a {font-family:"Nanum Square";}
 
 @media (max-width:1024px) {
     .breadcrumb {display:none;}

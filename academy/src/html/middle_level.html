@@ -1,0 +1,441 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap level">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "서브 페이지 타이틀",
+            "subtitle" : "서브 페이지 텍스트",
+            "context" : {
+            "depth1_current" : "올림피아드 소개",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth2_current" : "학원소개",
+            "depth2_sublist" : ["학원소개","히스토리","기업수상","명예의 전당","전국 캠퍼스"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["탭메뉴1","탭메뉴2","탭메뉴3","탭메뉴4","탭메뉴5"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            페이지에 내용에 대한 문구<br>
+                            <strong>강조된 텍스트</strong>
+                        </p>
+                        <p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                            has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                            has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="sub_cont_wrap">
+                        <div class="level_link_bx">
+                            <ul class="level_link_list">
+                                <li>
+                                    <div class="link_mod">
+                                        <a href="#" class="link_box">
+                                            <p class="link_list_tit">실력<span class="list_tit_fs">Club</span></p>
+                                            <span class="arrow_text">시간표 확인하기</span>
+                                            <div class="bottom_text">
+                                                <p>개념과 원리를 정확히 이해시켜<br>학년 응용, 심화 학습을 해결</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="link_mod">
+                                        <a href="#" class="link_box">
+                                            <p class="link_list_tit">우수<span class="list_tit_fs">Club</span></p>
+                                            <span class="arrow_text">시간표 확인하기</span>
+                                            <div class="bottom_text">
+                                                <p>학년응용, 심화를 다루고 <br>수학경시대비 강화, 올림응용까지 진도</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="link_mod">
+                                        <a href="#" class="link_box">
+                                            <p class="link_list_tit">심화<span class="list_tit_fs">Club</span></p>
+                                            <span class="arrow_text">시간표 확인하기</span>
+                                            <div class="bottom_text">
+                                                <p>학년심화, 경시유형을 다루고,<br>올림응용, 심화까지 진도</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="link_mod">
+                                        <a href="#" class="link_box">
+                                            <p class="link_list_tit">영재<span class="list_tit_fs">Club</span></p>
+                                            <span class="arrow_text">시간표 확인하기</span>
+                                            <div class="bottom_text">
+                                                <p>심화 수학, 경시, 올림피아드 <br>창의사고력 강화, 영재교육원까지 대비</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="link_mod">
+                                        <a href="#" class="link_box">
+                                            <p class="link_list_tit">올림피아드<span class="list_tit_fs">Club</span></p>
+                                            <span class="arrow_text">시간표 확인하기</span>
+                                            <div class="bottom_text">
+                                                <p>올림피아드와 경시대회 대비,<br>영재고,과고 준비반</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp">영재 Club</h3>
+                            <p data-animation="fadeInUp" data-delay="4" class="txt_info animated fadeInUp">초등4,5,6학년 / <strong>주3일</strong>
+                            </p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <!-- 데이터 테이블 -->
+                            <div class="data_table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:33.33%">
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">교시</th>
+                                            <th scope="col">월/화</th>
+                                            <th scope="col">수/목</th>
+                                            <th scope="col">금/토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                1교시
+                                            </th>
+                                            <td>
+                                                학년심화
+                                            </td>
+                                            <td>
+                                                학년심화
+                                            </td>
+                                            <td>
+                                                학년심화
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                2교시
+                                            </th>
+                                            <td>
+                                                올림심화
+                                            </td>
+                                            <td>
+                                                올림심화
+                                            </td>
+                                            <td>
+                                                올림심화
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                3교시
+                                            </th>
+                                            <td>
+                                                과학이론
+                                            </td>
+                                            <td>
+                                                과학실습
+                                            </td>
+                                            <td>
+                                                창사/경시
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                4교시
+                                            </th>
+                                            <td colspan="3">
+                                                보완학습 및 개인별 Clinic
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //데이터 테이블 -->
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp">심화 Club</h3>
+                            <p data-animation="fadeInUp" data-delay="4" class="txt_info animated fadeInUp">초등4,5,6학년 / <strong>주3일</strong>
+                            </p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <!-- 데이터 테이블 -->
+                            <div class="data_table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:33.33%">
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">교시</th>
+                                            <th scope="col">월/화</th>
+                                            <th scope="col">수/목</th>
+                                            <th scope="col">금/토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                1교시
+                                            </th>
+                                            <td>
+                                                학년심화
+                                            </td>
+                                            <td>
+                                                학년심화
+                                            </td>
+                                            <td>
+                                                학년심화
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                2교시
+                                            </th>
+                                            <td>
+                                                올림심화
+                                            </td>
+                                            <td>
+                                                올림심화
+                                            </td>
+                                            <td>
+                                                올림심화
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                3교시
+                                            </th>
+                                            <td>
+                                                과학이론
+                                            </td>
+                                            <td>
+                                                과학실습
+                                            </td>
+                                            <td>
+                                                창사/경시
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                4교시
+                                            </th>
+                                            <td colspan="3">
+                                                보완학습 및 개인별 Clinic
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //데이터 테이블 -->
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp">우수 Club</h3>
+                            <p data-animation="fadeInUp" data-delay="4" class="txt_info animated fadeInUp">초등4,5학년 / <strong>주2일</strong>
+                            </p>
+                        </div>
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <!-- 데이터 테이블 -->
+                            <div class="data_table">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">교시</th>
+                                            <th scope="col">월/화</th>
+                                            <th scope="col">수/목</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                1교시
+                                            </th>
+                                            <td>
+                                                개별학습
+                                            </td>
+                                            <td>
+                                                응용학습
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                2교시
+                                            </th>
+                                            <td>
+                                                응용학습
+                                            </td>
+                                            <td>
+                                                심화학습/창사
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                3교시
+                                            </th>
+                                            <td colspan="2">
+                                                보완학습 및 개인별 Clinic
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //데이터 테이블 -->
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp">우수, 실력 Club</h3>
+                            <p data-animation="fadeInUp" data-delay="4" class="txt_info animated fadeInUp">초등3학년 / <strong>주2일</strong>
+                            </p>
+                        </div>
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <!-- 데이터 테이블 -->
+                            <div class="data_table">
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">교시</th>
+                                            <th scope="col">월/화</th>
+                                            <th scope="col">수/목</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                1교시
+                                            </th>
+                                            <td>
+                                                학년수학
+                                            </td>
+                                            <td>
+                                                학년수학
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                2교시
+                                            </th>
+                                            <td>
+                                                학년수학
+                                            </td>
+                                            <td>
+                                                창의사고력
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //데이터 테이블 -->
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

@@ -21,6 +21,16 @@ $(function () {
             select_form.find('button').removeClass('on');
     });
 
+    /******************** 모바일 판별 및 데이터 테이블 너비 적용 ********************/
+
+    $(window).on('load resize', function() {
+        window.outerWidth > 1024 ? is_mobile = false : is_mobile = true;
+        $('.data_table').each(function() {
+            table_width = $(this).data('width');
+            window.outerWidth > 1024 ? $(this).find('table').css('min-width', '') : $(this).find('table').css('min-width', table_width);
+        })
+    });
+
     /******************** 네비게이션 제어 ********************/
 
     var nav_open_btn = $('.header_wrap .menu'),

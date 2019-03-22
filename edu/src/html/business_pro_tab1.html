@@ -1,0 +1,97 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie8.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap pro_tab1">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "사업영역",
+            "sub_txt" : "Business",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 3,
+            "tab_list" : ["수학영재교육","수학전문학원","영어전문학원","해외연수","방과후수업","교재출판"]
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 시작 -->
+                <div class="grid_container middle">
+
+                    <!-- 서브 비주얼 -->
+                    @@include('../inc/sub_visual.html',{
+                    "type" : "type3",
+                    "title" : "유투엠",
+                    "sub_txt" : "말하는 수학의 교육혁명",
+                    "context" : {
+                    "has_tab" : true,
+                    "tab_list" : ["유투엠","올림피아드학원","거꾸로수학교실"]
+                    }
+                    })
+
+                    <div class="grid_container">
+                        <div class="content_txt">
+                            <p class="main_txt">
+                                유투엠은 대한민국에서 처음으로 플립러닝 학습법을 도입한 수학학원으로,
+                                <strong>
+                                    수백 년 동안 지속돼 왔던 주입식 교육을 탈피한<br>
+                                    미래 수학교육의 혁신적 모델입니다.
+                                </strong>
+                            </p>
+                            <p class="sub_txt">
+                                교실에서 교사의 일방적 강의를 듣고 집에서 숙제를 하던 기존의 수동적인 주입식 학습법을 거꾸로 뒤집어 수업 전에 개념학습을 먼저 예습한 후 수업시간에는 발표,
+                                토론 등 말하기 중심의 학생 참여수업을 합니다. 교사가 일방적 강의를 통해 설명하고 주입하는 교수법에서 학생들이 적극적으로 수업에 참여하여 질문하고,
+                                생각하고, 설명하고, 토론하는 ‘말하기’ 중심의 교수학습법으로 바뀌는 점이 핵심입니다.
+                            </p>
+                            <p class="sub_txt">
+                                활발한 문답식 수업과 또래 가르치기, 토론과 발표, 학생이 교사에게 거꾸로 설명하기 등으로 교실수업이 참여수업 방식으로 바뀌면 학생들의 학습 몰입도와 자기주도적 학습태도가 급격하게 높아집니다. 적극적인 ‘말하기’를 통해 수업시간 내내 학생들의 집중력을 높이고 끊임없이 두뇌를 자극하여 생각하게 만드는 유투엠의 ‘말하는 수학’은 학습효과가 매우 뛰어나고 자기주도 학습습관을 잡아주는 최고의 학습법입니다.
+                            </p>
+                        </div>
+                        <div class="bottom_visual">
+                            <div class="txt_wrap">
+                                <p class="sub_txt">
+                                    플립러닝 기반의 말하는 수학으로<br>
+                                    수학 실력을 획기적으로 향상시키는 곳,
+                                </p>
+                                <p class="main_txt">유투엠입니다.</p>
+                                <div class="btn_wrap bg_fill">
+                                    <a href="#" class="link" target="_blank" title="새창열림">
+                                        <span>홈페이지 바로가기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <img class="logo" src="../img/img/img_logo_utom.png" alt="유투엠 로고">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 다이어그램 비주얼 영역 -->
+                <div class="diagram_view">
+                    <div class="grid_container">
+                        <div class="diagram">
+                            <div class="hidden">
+                                <strong>올림피아드 유투엠</strong>
+                                <ul>
+                                    <li>풀립러닝기반의 말하는 수학</li>
+                                    <li>발표 토론 등 학생중심 참여수업</li>
+                                    <li>1일 3교시 완전학습 시스템</li>
+                                    <li>개별맞춤식 학습설계</li>
+                                    <li>네가지 말하기 학습전략</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이어그램 비주얼 영역 -->
+
+                <!-- 서브 페이지 컨텐츠 끝 -->
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>올림피아드학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<div class="ie8">
+		<p>
+			본 사이트는 인터넷 익스플로러9 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+	</div>
+	<!-- //하위 브라우저 접속시 화면 -->
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="수학이 즐거운 올림피아드">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">GLEC</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+										<a class="login_student" href="#">재원생 로그인</a>
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">올림피아드 소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">학원소개</a></li>
+													<li><a href="#">히스토리</a></li>
+													<li><a href="#">기업수상</a></li>
+													<li><a href="#">명예의전당</a></li>
+													<li><a href="#">전국캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">초/중등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">초등수학</a></li>
+													<li><a href="#">중등수학</a></li>
+													<li><a href="#">초/중 캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">영재센터</a>
+												<ul class="menu_2depth">
+													<li><a href="#">영재센터 소개</a></li>
+													<li><a href="#">광진 영재센터</a></li>
+													<li><a href="#">대치 영재센터</a></li>
+													<li><a href="#">중계 영재센터</a></li>
+													<li><a href="#">평촌 영재센터</a></li>
+													<li><a href="#">상위 1%정보</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">고등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">고등부 특징</a></li>
+													<li><a href="#">학습프로그램</a></li>
+													<li><a href="#">대입정보센터</a></li>
+													<li><a href="#">고등캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">예약상담</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학안내</a></li>
+													<li><a href="#">상담신청</a></li>
+													<li><a href="#">설명회신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap no_sub_header">
+
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+
+						<p class="main_tit">
+							시험과 평가 방법이 복잡할수록<br>
+							<strong>제대로 된 수학 학습이 필요합니다.</strong>
+						</p>
+						<p class="txt w_100">요즘 학교에서는 내신, 서술형 평가, 수행평가 등을 실시하며 대입에서도 수능, 면접을 봅니다.<br>올림피아드 학생들이 두각을 나타내는
+                            이유는 앞서서 준비하는 특별한 수업 덕분입니다.</p>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">개념원리 중심학습</h3>
+							<p data-animation="fadeInUp" data-delay="4" class="txt_info">수학실력 향상의 기본은 <strong>개념과 원리에 대한
+                                    완벽한 이해</strong>
+							</p>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="sub_cont_wrap">
+								<div class="middle_math_cont_1">
+									<ul class="mm_cont1_list">
+										<li>
+											<div class="middle_math_mod">
+												<div class="mm_img">
+													<img src="../img/img/img_middle_math_1.png" alt="">
+												</div>
+												<div class="mm_text">
+													<h4 class="text_center">개념설명</h4>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="middle_math_mod">
+												<div class="mm_img">
+													<img src="../img/img/img_middle_math_2.png" alt="">
+												</div>
+												<div class="mm_text">
+													<h4 class="text_center">원리이해</h4>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="middle_math_mod">
+												<div class="mm_img">
+													<img src="../img/img/img_middle_math_3.png" alt="">
+												</div>
+												<div class="mm_text">
+													<h4 class="text_center">예제풀이</h4>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="middle_math_mod">
+												<div class="mm_img">
+													<img src="../img/img/img_middle_math_4.png" alt="">
+												</div>
+												<div class="mm_text">
+													<h4 class="text_center">과제이행</h4>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="middle_math_mod">
+												<div class="mm_img">
+													<img src="../img/img/img_middle_math_5.png" alt="">
+												</div>
+												<div class="mm_text">
+													<h4 class="text_center">On/Off-line<br>피드백</h4>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap mm_bg_top" style="background-image:url('../img/bg/bg_middle_math_1.jpg');">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap white">
+							<!-- white 클래스 추가시 텍스트 흰색 변경 -->
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp" style="animation-delay: 200ms;">팀별 토론발표</h3>
+							<p data-animation="fadeInUp" data-delay="4" class="txt_info animated fadeInUp" style="animation-delay: 400ms;">학생중심 참여수업으로 능동적 학습태도 촉진
+							</p>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="middle_math_cont_2 ">
+							<div class="mm_cont2_right">
+								<img src="../img/img/img_middle_math_diagram.png" alt="">
+							</div>
+							<div class="mm_cont2_left">
+								<ul class="mm_cont2_left_list">
+									<li class="taxt_box_width">
+										<div class="mm_cont2_left_mod">
+											<h4 class="mm_cont2_left_text">적극적이고 능동적인<span class="mm_cont2_text_blod">
+                                                    학습태도</span></h4>
+										</div>
+									</li>
+									<li class="taxt_box_width_2">
+										<div class="mm_cont2_left_mod">
+											<h4 class="mm_cont2_left_text">수학에 대한 <span
+                                                    class="mm_cont2_text_blod">흥미</span>와 학습 <span
+                                                    class="mm_cont2_text_blod">동기</span> 촉진</h4>
+										</div>
+									</li>
+									<li class="taxt_box_width_3">
+										<div class="mm_cont2_left_mod">
+											<h4 class="mm_cont2_left_text"><span class="mm_cont2_text_blod">표현력 언어구사력
+                                                    발표력</span> 신장</h4>
+										</div>
+									</li>
+									<li class="taxt_box_width_4">
+										<div class="mm_cont2_left_mod">
+											<h4 class="mm_cont2_left_text">참여를 통해 학습에 대한<span
+                                                    class="mm_cont2_text_blod">몰입도와 이해도</span> 향상</h4>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">맞춤식 완전학습</h3>
+							<p data-animation="fadeInUp" data-delay="4" class="txt_info">수준별 수업을 통해 <strong>개인별 취약영역
+                                    보완</strong>
+							</p>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="sub_cont_wrap">
+								<div class="middle_math_cont_3">
+									<div class="mm_cont3_text">
+										<p class="line_text">수준별 맞춤교재, 개인별 오답 맞춤 교재</p>
+										<h3 class="mm_cont3_tit">1:1 첨삭지도로 <span class="blue_text">완전학습</span> 구현</h3>
+									</div>
+									<div class="mm_cont3_img">
+										<img src="../img/img/img_middle_math_6.png" alt="스탭1 개념완성&기본유형 > 스텝2 필수문제&유사문제 > 스탭3 개인별 자기주도학습">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<li><a href="#">올림피아드 소개</a></li>
+						<li><a href="#">찾아오시는길</a></li>
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+					</ul>
+					<div class="select_form">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="수학이 즐거운 올림피아드">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<!-- [D] 로그인 한 회원에게 표시될 내용 -->
+				<li class="pc"><a href="#" target="_blank">학습하기</a></li>
+				<li class="pc"><a href="#" target="_blank">학습하기2</a></li>
+				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
+				<li><a href="#">상담신청</a></li>
+				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<li class="counsel pc">
+					<span class="tit">상담문의</span>
+					<span class="phone">1899-0949</span>
+					<span class="date">평일 10:00~19:00</span>
+				</li>
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
+	</div>
+
+</body>
+
+</html>
