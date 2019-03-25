@@ -105,7 +105,7 @@
 
 /* 서브 페이지 내용 */
 .sub_lower_wrap {padding:40px 0 50px; background-size:cover; background-position:center;}
-.sub_tit_wrap {position:relative; margin-bottom:30px; padding-top:35px; color:#333; text-align:center;}
+.sub_tit_wrap {position:relative; padding-top:35px; padding-bottom:30px; color:#333; text-align:center;}
 .sub_tit_wrap.white {color:#fff;}
 .sub_tit_wrap:after {position:absolute; top:0; left:50%; width:18px; height:20px; margin-left:-9px; background:red; content:"";}
 .sub_tit_wrap .sub_txt {font-family:"Nanum Square"; font-size:24px; line-height:1.5em;}
@@ -378,97 +378,81 @@
     .campus_map .campus_data .traffic .route .transit,.campus_map .campus_data .traffic .route li {font-size:12px;}
 }
 
+/* 초,중등수학 - 수업특징(공통) */
+.specific .sequence ol {margin:0 -35px;}
+.specific .sequence ol:after {display:block; clear:both; content:"";}
+.specific .sequence li {float:left; position:relative; width:20%; padding:0 35px; padding-top:140px;}
+.specific .sequence li:before {position:absolute; top:0; left:50%; width:140px; height:140px; border-radius:50%; background:red; transform:translateX(-50%); content:"";}
+.specific .sequence li span {display:block; margin-top:10px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.3em; color:#646f72; text-align:center;}
+.specific .sequence li span:before,.specific .sequence li span:after {position:absolute; top:57px; left:-12px; width:0; height:0; border-top:15px solid transparent; border-bottom:15px solid transparent; border-left:26px solid #ccc; content:"";}
+.specific .sequence li span:after {margin-left:-2px; border-left-color:#fff; transform:scale(0.5);}
+.specific .sequence li:first-child span:before,.specific .sequence li:first-child span:after {display:none;}
 
+.specific .discussion {overflow:hidden; background-position:top center; background-size:cover;}
+.specific .discussion .diagram {float:left; position:relative; width:50%; height:282px; background:url(../img/bg/bg_discussion.png) no-repeat; background-position:center right 60px; z-index:1;}
+.specific .discussion.junior {background-image:url(../img/bg/bg_junior_discussion.png);}
+.specific .discussion.junior .info {position:relative; top:75px; padding:30px 0; background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM3MzczNyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzM3MzczNyIgc3RvcC1vcGFjaXR5PSIwLjIzIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNzM3MzciIHN0b3Atb3BhY2l0eT0iMC40NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background:-moz-linear-gradient(left, rgba(55,55,55,0) 0%, rgba(55,55,55,0.23) 50%, rgba(55,55,55,0.45) 100%); background:-webkit-linear-gradient(left, rgba(55,55,55,0) 0%,rgba(55,55,55,0.23) 50%,rgba(55,55,55,0.45) 100%); background:linear-gradient(to right, rgba(55,55,55,0) 0%,rgba(55,55,55,0.23) 50%,rgba(55,55,55,0.45) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00373737', endColorstr='#73373737',GradientType=1 );}
+.specific .discussion.junior .info .main_tit {font-family:"Nanum Square"; font-size:32px; font-weight:700; font-weight:700; line-height:1.3em; color:#fff;}
+.specific .discussion.junior .info .main_tit strong {font-family:inherit; font-weight:inherit; color:#b9e6e8;}
+.specific .discussion.junior .info .txt {margin-top:8px; font-size:16px; line-height:1.75em; color:#fff;}
+.specific .discussion.middle {background-image:url(../img/bg/bg_middle_discussion.png);}
+.specific .discussion.middle .info {padding-left:50%;}
+.specific .discussion.middle .info ul {padding-top:40px; padding-left:40px;}
+.specific .discussion.middle .info ul li {margin-bottom:10px;}
+.specific .discussion.middle .info ul li span {display:inline-block; padding:10px 30px; border:2px solid #ddd; border-radius:24px; background:#fff; font-size:16px; line-height:1.5em;}
+.specific .discussion.middle .info ul li strong {font-weight:700;}
 
+.specific .custom .info_wrap {padding:65px 9.16%; border:1px solid #ddd; background:url(../img/bg/bg_custom.png); background-position:right center;}
+.specific .custom .info_wrap .sub_txt {display:inline-block; position:relative;}
+.specific .custom .info_wrap .sub_txt span {display:block; position:relative; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.5em; white-space:nowrap;}
+.specific .custom .info_wrap .sub_txt:before {position:absolute; top:50%; left:0; width:100%; height:0.75em; background:#bbe5eb; transform:translateY(-50%); content:"";}
+.specific .custom .info_wrap .main_txt {font-family:"Nanum Square"; font-size:42px; font-weight:900; line-height:1.4em;}
+.specific .custom .info_wrap .main_txt strong {font-family:inherit; font-weight:inherit; color:#008398;}
+.specific .custom .info_wrap .diagram {height:153px; margin-top:50px; background:url(../img/bg/bg_custom_step.png) no-repeat; background-size:563px 153px;}
 
+@media screen and (max-width:1024px) {
+    .specific .sequence ol {margin:0;}
+    .specific .sequence li {padding:0; padding-top:70px;}
+    .specific .sequence li:before {width:70px; height:70px;}
+    .specific .sequence li span {font-size:14px;}
+    .specific .sequence li span:before,.specific .sequence li span:after {top:20px;}
 
+    .specific .discussion .diagram {height:141px; margin-top:5px; background-position:center right 15px; background-size:contain;}
+    .specific .discussion.junior .diagram {margin:15px; margin-left:0;}
+    .specific .discussion.junior .info {top:0;}
+    .specific .discussion.junior .info .main_tit {font-size:24px;}
+    .specific .discussion.junior .info .txt {font-size:12px; line-height:1.6em;}
+    .specific .discussion.middle .info ul {padding:0; padding-left:15px;}
+    .specific .discussion.middle .info ul li span {padding:3px 15px; font-size:14px;}
 
-
-
-
-
-
-
-/* 중등수학 - 수업특징 */
-.txt.w_100 {width: 100%; }
-.middle_math_cont_1 .mm_cont1_list { margin: -10px -10px;}
-.middle_math_cont_1 .mm_cont1_list:after { content: ""; display: table; clear: both;}
-.middle_math_cont_1 .mm_cont1_list li {float: left; width: 20%; text-align: center; position: relative; padding: 10px 10px;} 
-.middle_math_cont_1 .mm_cont1_list li:before { content: ""; position: absolute; left: -10px; top: 72px; width: 26px; height: 30px; background-image: url(../img/bg/bg_triangle_icon.png); background-size: 26px 30px; }
-.middle_math_cont_1 .mm_cont1_list li:first-child:before{display: none; } 
-.middle_math_mod .mm_img {line-height: 0;margin-bottom: 15px; }
-.middle_math_mod .mm_text { font-size: 18px; line-height: 1.3em; color: #646f72; }
-.sub_lower_wrap.mm_bg_top { background-position: top;}
-.middle_math_cont_2 { display: table; table-layout: fixed; width: 100%; }
-.middle_math_cont_2 .mm_cont2_right{ line-height: 0; display: table-cell; vertical-align: middle; text-align: right; padding-right: 25px;}
-.middle_math_cont_2 .mm_cont2_left { display: table-cell; vertical-align: middle;}
-.middle_math_cont_2 .mm_cont2_left_list li { margin-bottom: 10px; background-color: #fff; border-radius: 50px; border: 2px solid #dddddd; padding: 10px 15px; } 
-.middle_math_cont_2 .mm_cont2_left_list li:last-chlid {margin-bottom: 0;} 
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width { max-width: 257px;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_2 { max-width: 293px;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_3 { max-width: 267px;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_4 { max-width: 373px;}
-.middle_math_cont_2 .mm_cont2_left_mod {text-align: center;}
-.mm_cont2_left_text { font-size: 16px; color: #333; line-height: 1.6em; font-weight: normal; font-weight: bold;}
-.mm_cont2_left_mod .mm_cont2_text_blod { font-weight: bold; color: #333; font-size: 16px; line-height: 1.6em; font-family:"Nanum Square Extrabold"; }
-
-.middle_math_cont_3 {background-image: url(../img/bg/bg_middle_math_2.jpg); background-size: cover; background-position: right; height: auto; border: 1px solid #ddd; padding: 75px 122px; }
-.middle_math_cont_3:after { content: ""; display: table; clear: both;}
-.middle_math_cont_3 .mm_cont3_text {margin-bottom: 65px; }
-.middle_math_cont_3 .mm_cont3_text .line_text {font-size: 24px; line-height: 1.3em; color: #333; position: relative; padding-left: 4px; font-weight: bold; margin-bottom: 5px;}
-.middle_math_cont_3 .mm_cont3_text .line_text:before {content: ""; position: absolute; left: 0; top: 50%; width: 400px; height: 16px; background-color: #3db4c7; opacity: 0.3; margin-top: -8px; }
-.middle_math_cont_3 .mm_cont3_tit { font-size: 42px; color: #333; line-height: 1.3em; font-family:"Nanum Square Extrabold";}
-.middle_math_cont_3 .mm_cont3_tit .blue_text { color: #008398; font-family:"Nanum Square Extrabold"; }
-.mm_cont3_img {line-height: 0; }
-.txt.w_100 {width: }
-@media screen and (max-width: 1024px) and (min-width: 1px){
-.middle_math_cont_1 .mm_cont1_list li {width: 33.3333%; }
-.middle_math_cont_1 .mm_cont1_list li:nth-child(4) { -webkit-transform: translateX(50%); -moz-transform: translateX(50%); -ms-transform: translateX(50%); -o-transform: translateX(50%); transform: translateX(50%);}
-.middle_math_cont_1 .mm_cont1_list li:nth-child(5) { -webkit-transform: translateX(50%); -moz-transform: translateX(50%); -ms-transform: translateX(50%); -o-transform: translateX(50%); transform: translateX(50%);}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width { max-width: 257px;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_2 { max-width: 293px;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_3 { max-width: 267px;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_4 { max-width: 373px;}
-.middle_math_cont_2 .mm_cont2_left_mod .mm_cont2_left_text {font-size: 14px; }
-.mm_cont2_left_mod .mm_cont2_text_blod { font-size: 14px;}
-.middle_math_cont_3 { padding: 30px 35px;}
-.middle_math_cont_3 .mm_cont3_text { margin-bottom: 55px;}
-.middle_math_cont_3 .mm_cont3_text .line_text { font-size: 20px; }
-.middle_math_cont_3 .mm_cont3_text .line_text:before { width: 336px;}
-.middle_math_cont_3 .mm_cont3_tit { font-size: 38px; }
+    .specific .custom .info_wrap {padding:30px; text-align:center;}
+    .specific .custom .info_wrap .sub_txt span {font-size:18px;}
+    .specific .custom .info_wrap .main_txt {font-size:30px;}
+    .specific .custom .info_wrap .diagram {height:102px; margin-top:30px; background-position:center; background-size:contain;}
 }
 
+@media screen and (max-width:599px) {
+    .specific .sequence ol {margin:-8px 0;}
+    .specific .sequence li {width:33.33%; margin:8px 0;}
+    .specific .sequence li:nth-child(n+4) {transform:translateX(50%);}
+    .specific .sequence li span:before,.specific .sequence li span:after {top:25px; left:-8px; border-top-width:10px; border-bottom-width:10px; border-left-width:17px;}
+    .specific .sequence li span:after {margin-left:-1px;}
 
+    .specific .discussion .diagram {float:none; width:100%; background-position:center;}
+    .specific .discussion.junior .diagram {margin:0;}
+    .specific .discussion.junior .info {margin-top:30px; padding:15px 0; text-align:center; background:rgba(55,55,55,0.45);}
+    .specific .discussion.junior .info .main_tit {font-size:18px;}
+    .specific .discussion.middle .info {padding:0;}
+    .specific .discussion.middle .info ul {margin-top:30px; padding:0;}
+    .specific .discussion.middle .info ul li {text-align:center;}
+    .specific .discussion.middle .info ul li span {font-size:12px;}
 
-@media (max-width:599px) and (min-width: 1px) { 
-.middle_math_cont_1 .mm_cont1_list li {width: 100%; float: none; padding-bottom: 50px; }
-.middle_math_cont_1 .mm_cont1_list li:before { transform: rotate(90deg); left: 50%; top:-32px; margin-left: -13px; }
-.middle_math_cont_1 .mm_cont1_list li:nth-child(4) { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0);}
-.middle_math_cont_1 .mm_cont1_list li:nth-child(5) { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0);}
-.middle_math_cont_2 {display: block;}
-.middle_math_cont_2 .mm_cont2_right { display: block; padding-right: 0; text-align: center; margin-bottom: 30px;}
-.middle_math_cont_2 .mm_cont2_left { display: block; text-align: center;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width { max-width: 100%;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_2 { max-width: 100%;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_3 { max-width: 100%;}
-.middle_math_cont_2 .mm_cont2_left_list li.taxt_box_width_4 { max-width: 100%;}
-.mm_cont2_left_mod .mm_cont2_text_blod { font-size: 14px; }
-.middle_math_cont_3 { padding: 20px 25px;}
-.middle_math_cont_3 .mm_cont3_text { margin-bottom: 30px;}
-.middle_math_cont_3 .mm_cont3_text .line_text { font-size: 14px; }
-.middle_math_cont_3 .mm_cont3_text .line_text:before { width: 236px; height: 10px; margin-top: -5px;}
-.middle_math_cont_3 .mm_cont3_tit { font-size: 24px; }
-
+    .specific .custom .info_wrap .sub_txt span {font-size:14px;}
+    .specific .custom .info_wrap .main_txt {font-size:18px;}
+    .specific .custom .info_wrap .diagram {height:76px; margin-top:15px;}
 }
 
-/* 초등수학 - 수업특징 */
-.mm_cont2_left.em_table_bottom { vertical-align: bottom;}
-.elementary_math_cont {background-color: #000; opacity: 0.5; }
-.em_text { font-size: 32px; line-height: 1.3em; color: #fff; margin-bottom: 15px;}
-.mm_cont2_left_text.color_white { color: #fff;}
-.color_sky {color: #b9e6e8; }
-
-/* 초등수학 > 레벨구성 */
+/* 초등수학 - 레벨구성 */
 .level .level_link_bx {max-width:980px; margin:0 auto;}
 .level .level_link_list {overflow:hidden; margin:-20px;}
 .level .level_link_list li {float:left; width:33.33%; padding:20px;} 
@@ -518,13 +502,6 @@
     .level .level_link_list li .bottom_text {padding:5px 0;}
     .level .level_link_list li .bottom_text p {font-size:12px;}
 }
-
-
-
-
-
-
-
 
 /* 검색결과 */
 .search .keyword {color:#00687f; font-family:inherit;}
