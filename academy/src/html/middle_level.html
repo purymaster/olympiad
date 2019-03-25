@@ -6,15 +6,16 @@
         @@include('../inc/header.html')
         <div class="sub_wrap level">
             @@include('../inc/sub_header.html',{
-            "type" : "type1",
-            "title" : "서브 페이지 타이틀",
-            "subtitle" : "서브 페이지 텍스트",
+            "type" : "type2",
+            "title" : "초등수학",
+            "subtitle" : "초/중등부",
             "context" : {
-            "depth1_current" : "올림피아드 소개",
+            "depth1_current" : "초/중등부",
             "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
-            "depth2_current" : "학원소개",
-            "depth2_sublist" : ["학원소개","히스토리","기업수상","명예의 전당","전국 캠퍼스"],
-            "depth3_current" : false
+            "depth2_current" : "초등수학",
+            "depth2_sublist" : ["초등수학","중등수학","초/중 캠퍼스"],
+            "depth3_current" : "레벨구성 및 표준시간표",
+            "depth3_sublist" : ["수업특징","교재구성","레벨구성 및 표준시간표"]
             }
             })
             <div class="sub_content">
@@ -24,31 +25,13 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container inner">
 
-                        @@include('../inc/tab.html',{
-                        "context" : {
-                        "has_tab" : true,
-                        "tab_list" : ["탭메뉴1","탭메뉴2","탭메뉴3","탭메뉴4","탭메뉴5"]
-                        }
-                        })
-
                         <p class="main_tit">
-                            페이지에 내용에 대한 문구<br>
-                            <strong>강조된 텍스트</strong>
+                            입학고사를 통해 학습수준을 판단 후<br>
+                            <strong>맞춤 수업을 진행합니다.</strong>
                         </p>
-                        <p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
-                            has survived not only five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <p class="txt">내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
-                            has survived not only five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="txt">
+                            학생의 실력을 최대로 끌어올릴 수 있는 반 배정과 최적의 커리큘럼을 제시합니다.
+                        </p>
                     </div>
                 </div>
                 <!-- //서브 페이지 상단 -->
@@ -81,40 +64,37 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <div class="link_mod">
-                                        <a href="#" class="link_box">
+                                    <a href="#" class="link_box">
+                                        <div class="link_mod">
                                             <p class="link_list_tit">심화<span class="list_tit_fs">Club</span></p>
                                             <span class="arrow_text">시간표 확인하기</span>
                                             <div class="bottom_text">
                                                 <p>학년심화, 경시유형을 다루고,<br>올림응용, 심화까지 진도</p>
                                             </div>
-                                        </a>
-                                    </div>
-
+                                        </div>
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="link_mod">
-                                        <a href="#" class="link_box">
+                                    <a href="#" class="link_box">
+                                        <div class="link_mod">
                                             <p class="link_list_tit">영재<span class="list_tit_fs">Club</span></p>
                                             <span class="arrow_text">시간표 확인하기</span>
                                             <div class="bottom_text">
                                                 <p>심화 수학, 경시, 올림피아드 <br>창의사고력 강화, 영재교육원까지 대비</p>
                                             </div>
-                                        </a>
-                                    </div>
-
+                                        </div>
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="link_mod">
-                                        <a href="#" class="link_box">
+                                    <a href="#" class="link_box">
+                                        <div class="link_mod">
                                             <p class="link_list_tit">올림피아드<span class="list_tit_fs">Club</span></p>
                                             <span class="arrow_text">시간표 확인하기</span>
                                             <div class="bottom_text">
                                                 <p>올림피아드와 경시대회 대비,<br>영재고,과고 준비반</p>
                                             </div>
-                                        </a>
-                                    </div>
-
+                                        </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>

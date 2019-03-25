@@ -470,11 +470,11 @@
 
 /* 초등수학 > 레벨구성 */
 .level .level_link_bx {max-width:980px; margin:0 auto;}
-.level .level_link_list {overflow:hidden; margin:-20px -20px;}
-.level .level_link_list li {float:left; width:33.3333%; padding:20px 20px;} 
+.level .level_link_list {overflow:hidden; margin:-20px;}
+.level .level_link_list li {float:left; width:33.33%; padding:20px;} 
 .level .level_link_list li:nth-child(1) {transform:translateX(50%);}
 .level .level_link_list li:nth-child(2) {margin-right:10px; transform:translateX(50%);}
-.level .level_link_list li a {display:block; position:relative; width:100%; text-align:center; background-size:100%;}
+.level .level_link_list li a {display:block; position:relative; width:100%; text-align:center; background-size:100%; background-position:center top;}
 .level .level_link_list li:nth-child(1) a {background-image:url(../img/bg/bg_link_list_01.jpg);}
 .level .level_link_list li:nth-child(2) a {background-image:url(../img/bg/bg_link_list_02.jpg);}
 .level .level_link_list li:nth-child(3) a {background-image:url(../img/bg/bg_link_list_03.jpg);}
@@ -482,13 +482,12 @@
 .level .level_link_list li:nth-child(5) a {background-image:url(../img/bg/bg_link_list_05.jpg);}
 .level .level_link_list li a:before {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(0,0,0,0.5); visibility:hidden; opacity:0; transition:all 0.5s; z-index:0;}
 .level .level_link_list li a:hover:before {visibility:visible; opacity:1;}
-.level .level_link_list li .link_mod {z-index:1;}
+.level .level_link_list li .link_mod {position:relative; z-index:1;}
 .level .link_box .link_list_tit {padding-top:100px; font-family:"Nanum Square"; font-size:40px; font-weight:700; line-height:54px; color:#fff;}
 .level .link_box .list_tit_fs {display:block; font-family:"Nanum Square"; font-size:30px; font-weight:700; text-transform:uppercase;}
 .level .link_box .arrow_text {display:inline-block; position:relative; margin-bottom:65px; padding-right:12px; font-size:14px; line-height:26px; color:#fff; transition:all 0.5s;}
 .level .link_box .arrow_text:after {position:absolute; top:50%; right:0; width:8px; height:8px; margin-top:-4px; border:1px solid #fff; border-bottom:0; border-left:0; transform:rotate(45deg); transition:all 0.5s; content:"";}
-.level .link_box:hover .arrow_text {color:#008398;}
-.level .link_box:hover .arrow_text:after {right:-5px; border-color:#008398;}
+.level .link_box:hover .arrow_text:after {right:-5px;}
 .level .level_link_list li .bottom_text {width:100%; padding:15px 0; border-top:2px solid #fff; text-align:center;} 
 .level .level_link_list li:nth-child(1) .bottom_text {background-color:#8ab113;}
 .level .level_link_list li:nth-child(2) .bottom_text {background-color:#469950;}
@@ -499,17 +498,25 @@
 
 @media screen and (max-width:1024px) {
     .level .level_link_bx {padding:0 30px;}
-	.level .level_link_bx .level_link_list li {width:50%;}
-	.level .level_link_bx .level_link_list li:nth-child(1) {transform:none;}
-	.level .level_link_bx .level_link_list li:nth-child(2) {margin-right:0; transform:none;}
-	.level .link_mod .link_box .link_list_tit {font-size:36px;}
-	.level .link_mod .link_box .list_tit_fs {font-size:26px;}
-	.level .bottom_text {padding:20px 10px;}
-    .level .bottom_text p {font-size:13px;}
+    .level .level_link_list {margin:-15px;}
+    .level .level_link_list li {width:50%; padding:15px;} 
+    .level .level_link_list li:nth-child(1),.level .level_link_list li:nth-child(2) {margin-right:0; transform:none;}
+    .level .level_link_list li a {background-position:center;}
+    .level .link_box .link_list_tit {padding-top:30px; font-size:30px; line-height:1.5em;}
+    .level .link_box .list_tit_fs {font-size:20px; line-height:1.5em;}
+    .level .link_box .arrow_text {margin-bottom:30px;}
+    .level .level_link_list li .bottom_text {padding:8px 0;}
+    .level .level_link_list li .bottom_text p {line-height:1.5em;}
 }
 
 @media screen and (max-width:599px) {
-    .level .level_link_bx .level_link_list li {width:100%;}
+    .level .level_link_bx {padding:0 15px;}
+    .level .level_link_list {margin:-15px 0;}
+    .level .level_link_list li {width:100%; float:none; padding:15px 0;}
+    .level .link_box .link_list_tit {font-size:24px;}
+    .level .link_box .list_tit_fs {font-size:16px;}
+    .level .level_link_list li .bottom_text {padding:5px 0;}
+    .level .level_link_list li .bottom_text p {font-size:12px;}
 }
 
 
