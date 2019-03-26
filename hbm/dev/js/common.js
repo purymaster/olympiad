@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
     var screen = $('html,body'),
         screen_fix = false,
@@ -17,21 +17,21 @@ $(function () {
 
     var select_form = $('.select_form');
 
-    select_form.on('click', 'button', function () {
+    select_form.on('click', 'button', function() {
         $(this).toggleClass('on');
-    }).on('click', 'a', function () {
+    }).on('click', 'a', function() {
         $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
     });
-    $(document).on('mouseup', function (e) {
+    $(document).on('mouseup', function(e) {
         if (!select_form.is(e.target) && select_form.has(e.target).length === 0)
             select_form.find('button').removeClass('on');
     });
 
     /******************** 모바일 판별 및 데이터 테이블 너비 적용 ********************/
 
-    $(window).on('load resize', function () {
+    $(window).on('load resize', function() {
         window.outerWidth > 1024 ? is_mobile = false : is_mobile = true;
-        $('.data_table').each(function () {
+        $('.data_table').each(function() {
             table_width = $(this).data('width');
             window.outerWidth > 1024 ? $(this).find('table').css('width', '') : $(this).find('table').css('width', table_width);
         })
@@ -63,7 +63,7 @@ $(function () {
     function close_banner() {
         upper_banner.removeClass('on');
         $('body').removeClass('upper_banner_on');
-        setTimeout(function () {
+        setTimeout(function() {
             upper_banner.hide();
         }, 200);
     };
@@ -76,7 +76,7 @@ $(function () {
                 $('body').addClass('upper_banner_on'));
     })();
 
-    upper_banner.find('button').on('click', function () {
+    upper_banner.find('button').on('click', function() {
         if ($(this).hasClass('today')) set_cookie("no_pop_glec", "y", "1"); // 1일동안 보지 않기
         close_banner();
     });
@@ -87,7 +87,7 @@ $(function () {
         nav_2depth = $('.header_wrap .menu_2depth'); //모바일 2뎁스 메뉴
 
     //네비게이션 제어
-    $('.header_wrap').on('click', 'button', function () {
+    $('.header_wrap').on('click', 'button', function() {
         $('.group_nav').find('input').val('');
         nav_2depth.hide();
         $(this).hasClass('menu') ?
@@ -100,12 +100,12 @@ $(function () {
     });
 
     //네비게이션, 팝업 오픈시 스크롤 방지
-    screen.on('scroll touchmove', function (e) {
+    screen.on('scroll touchmove', function(e) {
         if (screen_fix) return false;
     });
 
     //모바일 네비게이션 제어
-    $('.header_wrap .menu_1depth > li > a').on('click', function () {
+    $('.header_wrap .menu_1depth > li > a').on('click', function() {
         if (is_mobile) {
             $(this).next('.menu_2depth').css('display') === 'block' ?
                 nav_2depth.stop().slideUp() :
@@ -115,14 +115,14 @@ $(function () {
         };
     });
 
-    $(window).on('resize', function () {
+    $(window).on('resize', function() {
         if (!is_android_user)
             is_mobile ?
-                (nav.removeClass('on'),
-                    $('.header_wrap .menu').blur(),
-                    $('.group_nav').find('input').val === '',
-                    nav_2depth.hide()) :
-                nav_2depth.show();
+            (nav.removeClass('on'),
+                $('.header_wrap .menu').blur(),
+                $('.group_nav').find('input').val === '',
+                nav_2depth.hide()) :
+            nav_2depth.show();
     });
 
     /******************** 서브 페이지 내용 탭메뉴 정의 ********************/
@@ -136,9 +136,9 @@ $(function () {
         view_data;
 
     $('.tab_view:eq(0)').show();
-    if(view_list.has('button')) view_list.eq(0).addClass('on');
+    if (view_list.has('button')) view_list.eq(0).addClass('on');
 
-    view_btn.on('click', function () {
+    view_btn.on('click', function() {
         view_data = $(this).parents('li').index();
         $('.tab_view').hide();
         view_list.removeClass('on');
@@ -158,11 +158,11 @@ $(function () {
         top_btn_flag = 0; //TOP 버튼 상태
 
     move_el.addClass('wait-animation');
-    $(window).on('load scroll', function () {
+    $(window).on('load scroll', function() {
         scroll = $(this).scrollTop();
 
         //순차 애니메이션 제어
-        move_el.each(function () {
+        move_el.each(function() {
             move_name = $(this).data('animation');
             move_delay = $(this).data('delay') * 100; //단위 0.1초
             move_duration = $(this).data('duration') * 1000; //단위 1초
@@ -182,12 +182,12 @@ $(function () {
         });
 
         //TOP 버튼 제어
-        top_btn.find('button').on('click', function () {
+        top_btn.find('button').on('click', function() {
             if (top_btn_flag) return false;
             top_btn_flag = 1;
             TweenLite.to($('html,body'), .5, {
                 scrollTop: 0,
-                onComplete: function () {
+                onComplete: function() {
                     top_btn_flag = 0;
                 }
             })
@@ -195,7 +195,7 @@ $(function () {
         });
     });
 
-    $(window).on('load scroll resize', function () {
+    $(window).on('load scroll resize', function() {
 
         //사이드메뉴 제어
         TweenLite.to($('.side_menu'), 3, {

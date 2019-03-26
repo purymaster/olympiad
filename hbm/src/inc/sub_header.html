@@ -1,0 +1,59 @@
+<div class="sub_header @@type" data-animation="">
+    <div class="grid_container">
+        <p class="sub_txt" data-animation="fadeInUp" data-delay="0">@@subtitle</p>
+        <h2 data-animation="fadeInUp" data-delay="3">@@title</h2>
+    </div>
+    <div class="breadcrumb">
+        <ul>
+            <li class="home"><a href="#">홈</a></li>
+            @@if(context.depth1_current) {
+            <li>
+                <div class="select_form">
+                    <button type="button">
+                        <span>@@context.depth1_current</span>
+                    </button>
+                    <ul>
+                        @@for (var i = 0; i < context.depth1_sublist.length; i++) { 
+                            <li>
+                                <a href="#none">`+context.depth1_sublist[i]+`</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            }
+            @@if(context.depth2_current) {
+            <li>
+                <div class="select_form">
+                    <button type="button">
+                        <span>@@context.depth2_current</span>
+                    </button>
+                    <ul>
+                        @@for (var i = 0; i < context.depth2_sublist.length; i++) { 
+                            <li>
+                                <a href="#none">`+context.depth2_sublist[i]+`</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            }
+            @@if(context.depth3_current) {
+            <li>
+                <div class="select_form">
+                    <button type="button">
+                        <span>@@context.depth3_current</span>
+                    </button>
+                    <ul>
+                        @@for (var i = 0; i < context.depth3_sublist.length; i++) { 
+                            <li>
+                                <a href="#none">`+context.depth3_sublist[i]+`</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </li>
+            }    
+        </ul>
+    </div>
+</div>
