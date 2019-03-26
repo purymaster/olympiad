@@ -6,7 +6,7 @@
 /* Lato */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
-/* 나눔고딕 */
+/* 나눔고딕 R */
 @font-face {
     font-family:"Nanum Gothic";
     font-weight:normal;
@@ -16,6 +16,18 @@
     url("../font/ngothic_regular.woff") format("woff"),
     url("../font/ngothic_regular.ttf") format("truetype"),
     url("../font/ngothic_regular.otf") format("opentype");
+}
+
+/* 나눔고딕 B */
+@font-face {
+    font-family:"Nanum Gothic";
+    font-weight:700;
+    font-style:normal;
+    src:local("※"), 
+    url("../font/ngothic_bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/ngothic_bold.woff") format("woff"),
+    url("../font/ngothic_bold.ttf") format("truetype"),
+    url("../font/ngothic_bold.otf") format("opentype");
 }
 
 /* 나눔스퀘어 L */
