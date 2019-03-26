@@ -13,10 +13,6 @@ $(function() {
         if (navigator.userAgent.match(android_validator[word]) !== null) is_android_user = true;
     }
 
-    /******************** 하위브라우저 접근 차단 ********************/
-
-    if (navigator.userAgent.match(/MSIE 8/)) $('.ie8').show();
-
     /******************** 셀렉트박스 제어 ********************/
 
     var select_form = $('.select_form');
