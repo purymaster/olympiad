@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>올림피아드학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="수학이 즐거운 올림피아드">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">GLEC</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+										<a class="login_student" href="#">재원생 로그인</a>
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">올림피아드 소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">학원소개</a></li>
+													<li><a href="#">히스토리</a></li>
+													<li><a href="#">기업수상</a></li>
+													<li><a href="#">명예의전당</a></li>
+													<li><a href="#">전국캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">초/중등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">초등수학</a></li>
+													<li><a href="#">중등수학</a></li>
+													<li><a href="#">초/중 캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">영재센터</a>
+												<ul class="menu_2depth">
+													<li><a href="#">영재센터 소개</a></li>
+													<li><a href="#">광진 영재센터</a></li>
+													<li><a href="#">대치 영재센터</a></li>
+													<li><a href="#">중계 영재센터</a></li>
+													<li><a href="#">평촌 영재센터</a></li>
+													<li><a href="#">상위 1%정보</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">고등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">고등부 특징</a></li>
+													<li><a href="#">학습프로그램</a></li>
+													<li><a href="#">대입정보센터</a></li>
+													<li><a href="#">고등캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">예약상담</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학안내</a></li>
+													<li><a href="#">상담신청</a></li>
+													<li><a href="#">설명회신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap center_info">
+			<div class="sub_header type3" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">영재센터</p>
+					<h2 data-animation="fadeInUp" data-delay="3">영재센터 소개</h2>
+				</div>
+				<div class="breadcrumb">
+					<ul>
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>영재센터</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">올림피아드 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">초/중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">고등부</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+									<li>
+										<a href="#none">예약상담</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>영재센터 소개</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">영재센터 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">광진 영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">대치 영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">중계 영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">평촌 영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">상위 1%정보</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+
+
+						<!-- 서브 페이지 상단 탭메뉴 -->
+						<div class="tab_menu">
+							<ul>
+								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+								<li><a href="#">영재학교·과학고소개</a></li>
+
+								<li><a href="#">학생로드맵</a></li>
+
+								<li><a href="#">종합관리 시스템</a></li>
+
+							</ul>
+						</div>
+						<!-- //서브 페이지 상단 탭메뉴 -->
+
+
+						<p class="main_tit">
+							올림피아드 학원의
+							<strong>영재센터를 소개합니다.</strong>
+						</p>
+						<div class="genius_intro_bx">
+							<ol>
+								<li>
+									<span class="intro_text">수학, 과학에<br> 대한 흥미</span>
+								</li>
+								<li>
+									<span class="intro_text">깊이 있는<br> 학습과 탐구</span>
+								</li>
+								<li>
+									<span class="intro_text">영재학교・과학고<br> 진학</span>
+								</li>
+							</ol>
+						</div>
+
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">영재학교란?</h3>
+							</p>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="intro_cont_wrap elite">
+								<div class="intro_cont">
+									<div class="intro_cont_img">
+									</div>
+									<div class="intro_cont_text">
+										<p>
+											전국 단위 모집학교로 현재 총 8개교가 있습니다.<br>
+                                            영재교육진흥법의 적용을 받기 때문에 영재학교에 합격하더라도 전기 모집 다른 고교와 중복지원이 가능하며, 영재학교 간에도 중복지원이
+                                            가능합니다.<br>
+											<span class="color_green">
+                                                (단,
+                                                영재성 검사일은 모든 학교가 동일합니다.)
+                                            </span><br>
+                                            대학교처럼 학점이수제로
+                                            운영되며 선행학습금지법에서 제외된 학교로 규제와 상관없이 진도를 나갈 수 있습니다. 또한 교원자격이 없는 박사급 전문가를
+                                            계약직 교원으로 채용하여
+											<strong>학생들에게 필요한 교육과정을 자유롭게 편성할 수 있습니다.</strong>
+										</p>
+									</div>
+								</div>
+								<div class="cont_step">
+									<strong>입학전형</strong>
+									<img src="../img/img/img_center_elitestep.png" alt="">
+									<div class="hidden">
+										<strong>영재학교 입학전형 순서</strong>
+										<ol>
+											<li>서류평가</li>
+											<li>영재성검사</li>
+											<li>캠프</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">과학고란?</h3>
+							</p>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="intro_cont_wrap science">
+								<div class="intro_cont">
+									<div class="intro_cont_img">
+									</div>
+									<div class="intro_cont_text">
+										<p>
+											광역단위 모집학교로 현재 전국 15개 시도에 20개 학교가 있습니다.<br>
+                                            과학고 입시는 전기고 입시에 해당되어 전국 소재 전기고 중 1곳만 지원이 가능하며, 전기고등학교에 합격할 경우 등록여부와 관계없이 후기
+                                            고등학교 입시에 응시할 수 없습니다.
+                                        </p>
+											<p>
+												과학고는 초중등교육법을 적용 받고 있기 때문에 영재학교와 달리
+												<strong>
+                                                국민공통교육과정을 반드시 이수하여야 하며 교육과정 편성 또한 영재학교에 비해 까다로운 편입니다.
+                                            </strong>
+											</p>
+									</div>
+								</div>
+								<div class="cont_step">
+									<strong>입학전형</strong>
+									<img src="../img/img/img_center_sciencestep.png" alt="">
+									<div class="hidden">
+										<strong>과학고 입학전형 순서</strong>
+										<ol>
+											<li>자기주도 학습전형</li>
+											<li>과학창의성 전형</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit"> 전국 영재학교·과학고 학교 및 정원</h3>
+							</p>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="map_wrap">
+								<div class="map">
+									<div class="hidden">
+										<strong>영재학교</strong>
+										<ul class="elite">
+											<li>인천과학예술영재학교</li>
+											<li>세종과학예술영재학교</li>
+											<li>한국과학영재학교</li>
+										</ul>
+										<strong>과학고</strong>
+										<ul class="science">
+											<li>서울과학고</li>
+											<li>경기과학고</li>
+											<li>대전과학고</li>
+											<li>대구과학고</li>
+											<li>광주과학고</li>
+										</ul>
+									</div>
+								</div>
+								<div class="data">
+									<!-- 데이터 테이블 -->
+									<div class="data_table">
+										<table>
+											<colgroup>
+												<col style="width:62%;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">학교</th>
+													<th scope="col">정원</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">
+														서울과학고
+													</th>
+													<td>
+														120명
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														경기과학고
+													</th>
+													<td>
+														120명
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														한국과학영재학교
+													</th>
+													<td>
+														120명
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														대구과학고
+													</th>
+													<td>
+														90명
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														대전과학고
+													</th>
+													<td>
+														90명
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														광주과학고
+													</th>
+													<td>
+														90명 (45+45)
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														세종과학예술영재학교
+													</th>
+													<td>
+														84명
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														인천과학예술영재학교
+													</th>
+													<td>
+														75명
+													</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<th scope="row">
+														합계
+													</th>
+													<td>
+														789명
+													</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+									<!-- //데이터 테이블 -->
+								</div>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<li><a href="#">올림피아드 소개</a></li>
+						<li><a href="#">찾아오시는길</a></li>
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+					</ul>
+					<div class="select_form">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="수학이 즐거운 올림피아드">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<!-- [D] 로그인 한 회원에게 표시될 내용 -->
+				<li class="pc"><a href="#" target="_blank">학습하기</a></li>
+				<li class="pc"><a href="#" target="_blank">학습하기2</a></li>
+				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
+				<li><a href="#">상담신청</a></li>
+				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<li class="counsel pc">
+					<span class="tit">상담문의</span>
+					<span class="phone">1899-0949</span>
+					<span class="date">평일 10:00~19:00</span>
+				</li>
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
+	</div>
+
+</body>
+
+</html>
