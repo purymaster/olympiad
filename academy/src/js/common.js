@@ -3,7 +3,7 @@ $(function () {
     var screen = $('html,body'),
         screen_fix = false,
         is_mobile = false, //모바일 판별 변수
-        is_android_user = false, // useragent 안드로이드 판별 변수
+        is_android_user = false, //useragent 안드로이드 판별 변수
         table_width;
 
     /******************** Useragent 체크 ********************/
@@ -87,11 +87,12 @@ $(function () {
         nav_2depth = $('.header_wrap .menu_2depth'); //모바일 2뎁스 메뉴
 
     //네비게이션 제어
-    $('.header_wrap').on('click', 'button', function () {
+    $('.header_wrap').on('click', 'button[type="button"]', function () {
         $('.group_nav').find('input').val('');
         nav_2depth.hide();
         $(this).hasClass('menu') ?
-            (screen.addClass('fixed'),
+            (window.scrollTop = 0,
+                screen.addClass('fixed'),
                 nav.addClass('on'),
                 screen_fix = true) :
             (screen.removeClass('fixed'),
@@ -136,7 +137,7 @@ $(function () {
         view_data;
 
     $('.tab_view:eq(0)').show();
-    if(view_list.has('button')) view_list.eq(0).addClass('on');
+    if (view_list.has('button')) view_list.eq(0).addClass('on');
 
     view_btn.on('click', function () {
         view_data = $(this).parents('li').index();
