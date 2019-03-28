@@ -425,7 +425,7 @@
 
 @media (max-width:599px) {
     .develop .develop_cont_tit {font-size:18px;}
-    .develop .develop_cont_txt {font-size:12px;}
+    .develop .develop_cont_txt {font-size:12px; line-height:1.6em;}
     .develop .diagram {margin-top:15px;}
 }
 
