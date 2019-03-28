@@ -3,14 +3,14 @@ $(function() {
     var screen = $('html,body'),
         screen_fix = false,
         is_mobile = false, //모바일 판별 변수
-        is_android_user = false, // useragent 안드로이드 판별 변수
+        is_mobile_user = false, //useragent 모바일 판별 변수
         table_width;
 
     /******************** Useragent 체크 ********************/
 
-    var android_validator = new Array('Android', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
-    for (var word in android_validator) {
-        if (navigator.userAgent.match(android_validator[word]) !== null) is_android_user = true;
+    var mobile_validator = new Array('iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+    for (var word in mobile_validator) {
+        if (navigator.userAgent.match(mobile_validator[word]) !== null) is_mobile_user = true;
     }
 
     /******************** 셀렉트박스 제어 ********************/
@@ -43,11 +43,11 @@ $(function() {
         nav_2depth = $('.header_wrap .menu_2depth'); //모바일 2뎁스 메뉴
 
     //네비게이션 제어
-    $('.header_wrap').on('click', 'button', function() {
+    $('.header_wrap').on('click', 'button[type="button"]', function() {
         $('.group_nav').find('input').val('');
-        nav_2depth.hide();
         $(this).hasClass('menu') ?
-            (screen.addClass('fixed'),
+            (nav_2depth.hide(),
+                screen.addClass('fixed'),
                 nav.addClass('on'),
                 screen_fix = true) :
             (screen.removeClass('fixed'),
@@ -72,7 +72,7 @@ $(function() {
     });
 
     $(window).on('resize', function() {
-        if (!is_android_user)
+        if (!is_mobile_user)
             is_mobile ?
             (nav.removeClass('on'),
                 $('.header_wrap .menu').blur(),

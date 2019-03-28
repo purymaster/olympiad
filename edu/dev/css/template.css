@@ -766,7 +766,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 }
 
 @media (max-width:599px) {
-    .sub_header {min-height:180px; padding-top:65px;}
+    .sub_header {min-height:180px; padding-top:85px;}
     .sub_header h2 {font-size:24px;}
     .sub_header h2:after {display:none;}
     .sub_header .sub_tit {font-size:14px;}
@@ -794,6 +794,33 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:0; height:100%;}
 }
 
+@media (max-width:599px) {
+    .tab_menu {margin-top:30px;}
+}
+
+/* 링크 탭메뉴 */
+.link_tab {display:table; width:800px; margin:0 auto 40px; border-bottom:1px solid #cdcdcd; background:#fff; table-layout:fixed;}
+.link_tab ul {display:table-row;}
+.link_tab ul li {display:table-cell;}
+.link_tab ul li a {display:block; position:relative; font-size:14px; line-height:50px; color:#333; text-align:center; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.link_tab ul li a:after {visibility:hidden; position:absolute; bottom:0; left:0; width:100%; height:5px; background:#008398; -webkit-transition:all 0.5s; transition:all 0.5s; opacity:0; content:"";}
+.link_tab ul li a:hover,.link_tab ul li a:focus {font-size:16px; font-weight:700;}
+.link_tab ul li a:hover:after,.link_tab ul li a:focus:after {visibility:visible; opacity:1;}
+
+@media (max-width:1024px) {
+    .link_tab {width:80%; margin:0 auto 60px;}
+    .link_tab ul li a {line-height:40px;}
+}
+
+@media (max-width:599px) {
+    .link_tab,.link_tab ul,.link_tab ul li {display:block; width:100%;}
+    .link_tab {border:0; padding:0 15px;}
+    .link_tab ul {border-top:1px solid #cdcdcd;}
+    .link_tab ul li {border:1px solid #cdcdcd; border-top:0;}
+    .link_tab ul li a {line-height:35px;}
+    .link_tab ul li a:after {height:3px;}
+}
+
 /* 서브 비주얼 + 서브 탭메뉴 */
 .sub_visual {height:320px; padding-top:40px; background-position:center; background-size:1200px 320px;}
 .sub_visual.type1 {background-image:url(../img/bg/bg_subvisual_01.png);} /* 영재센터 */
@@ -802,6 +829,8 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .sub_visual.type4 {background-image:url(../img/bg/bg_subvisual_04.png);} /* 올림피아드학원 */
 .sub_visual.type5 {background-image:url(../img/bg/bg_subvisual_05.png);} /* 거꾸로수학교실 */
 .sub_visual.type6 {background-image:url(../img/bg/bg_subvisual_06.png);} /* GLEC어학원 */
+.sub_visual.type7 {background-image:url(../img/bg/bg_subvisual_07.png);} /* GLEC드림투어 */
+.sub_visual.type8 {background-image:url(../img/bg/bg_subvisual_08.png);} /* 방과후수업 */
 .sub_visual .sub_txt,.sub_visual .sub_tit {font-family:"Nanum Square"; line-height:1.4em; color:#333; text-align:center;}
 .sub_visual .sub_txt {margin-top:60px; font-size:30px; font-weight:300;}
 .sub_visual .sub_tit {font-size:50px; font-weight:700;}
@@ -1070,6 +1099,77 @@ section .news_wrap .menu_tit {margin-top:50px;}
 
 /* 사업영역 - 영어전문학원 - GLEC어학원 */
 .glec .diagram {background-image:url(../img/bg/bg_glec.png); padding-top:53%;}
+
+/* 사업영역 - 해외연수 */
+.overseas .bottom_visual {display:table; width:100%; height:340px; background:url(../img/bg/bg_overseas_bottom.png) no-repeat; background-position:center right;}
+.overseas .bottom_visual .txt_wrap {display:table-cell; vertical-align:middle;}
+.overseas .diagram {background-image:url(../img/bg/bg_overseas.png); padding-top:52%;}
+
+@media (max-width:1024px) {
+    .overseas .bottom_visual {height:190px; background-size:100%;}
+}
+
+@media (max-width:599px) {
+    .overseas .bottom_visual {height:auto; background:none;}
+}
+
+/* 사업영역 - 방과후수업 */
+.afterschool .bottom_visual {display:table; width:100%; height:340px; background:url(../img/bg/bg_afterschool_bottom.png) no-repeat; background-position:center right;}
+.afterschool .bottom_visual .txt_wrap {display:table-cell; vertical-align:middle;}
+.afterschool .diagram {background-image:url(../img/bg/bg_afterschool.png); padding-top:46%;}
+
+@media (max-width:1024px) {
+    .afterschool .bottom_visual {height:190px; background-size:100%;}
+}
+
+@media (max-width:599px) {
+    .afterschool .bottom_visual {height:auto; background:none;}
+}
+
+/* 사업영역 - 교재출판 */
+.publish .sub_visual {padding-top:70px;}
+.publish .type_publish01 {} /* 수학교재 */
+.publish .type_publish02 {} /* 영어교재 */
+.publish .type_publish03 {} /* 학수고대 */
+.publish .type_publish04 {} /* 시사이슈북 */
+.publish .type_publish05 {} /* 수학이야기 */
+
+/* 연구개발 */
+.develop article {text-align:left;}
+.develop .develop_cont_tit {display:inline-block; position:relative; z-index:0; margin-bottom:24px; font-family:"Nanum Square"; font-size:50px; font-weight:400; line-height:54px; color:#fff;}
+.develop .develop_cont_tit:before {position:absolute; bottom:0; left:0; z-index:-1; width:100%; height:18px; background:#20868f; content:"";}
+.develop .develop_cont_txt {font-size:15px; line-height:1.85em; color:#fff;}
+.develop .diagram {height:0; margin-top:65px; background-repeat:no-repeat; background-position:center; background-size:contain;}
+.develop .elite {background-image:url(../img/bg/bg_develop_elite.png);}
+.develop .elite .diagram {padding-top:36%; background-image:url(../img/bg/bg_develop_elite_diagram.png);}
+.develop .math {background-image:url(../img/bg/bg_develop_math.png);}
+.develop .math .diagram {padding-top:45%; background-image:url(../img/bg/bg_develop_math_diagram.png);}
+.develop .strategy {background-image:url(../img/bg/bg_develop_strategy.png);}
+.develop .strategy .diagram {padding-top:37%; background-image:url(../img/bg/bg_develop_strategy_diagram.png);}
+.develop .gleceng {background-image:url(../img/bg/bg_develop_glec.png);}
+.develop .gleceng .diagram {padding-top:36%; background-image:url(../img/bg/bg_develop_glec_diagram.png);}
+.develop .dream {background-image:url(../img/bg/bg_develop_dream.png);}
+.develop .dream .diagram {padding-top:38%; background-image:url(../img/bg/bg_develop_dream_diagram.png);}
+.develop .slide .btn_wrap {margin-top:20px; margin-bottom:-25px;}
+.develop .slide .btn_wrap span {text-transform:capitalize;}
+
+@media (max-width:1024px) {
+    .develop .develop_cont_tit {margin-bottom:15px; font-size:24px; line-height:1.5em;}
+    .develop .develop_cont_tit:before {height:10px;}
+    .develop .develop_cont_txt {font-size:14px; line-height:1.8em;}
+    .develop .diagram {margin-top:30px;}
+    .develop .slide .btn_wrap {margin-top:15px; margin-bottom:0;}
+}
+
+@media (max-width:599px) {
+    .develop .develop_cont_tit {font-size:18px;}
+    .develop .develop_cont_txt {font-size:12px;}
+    .develop .diagram {margin-top:15px;}
+}
+
+@media (max-width:320px) {
+    .develop .develop_cont_txt {font-size:10px;}
+}
 
 /* 개인정보처리방침, 이용약관, 이메일무단수집거부 */
 .term_wrap {margin-top:5px; text-align:left;}
