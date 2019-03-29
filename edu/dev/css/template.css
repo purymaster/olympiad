@@ -1159,10 +1159,11 @@ section .news_wrap .menu_tit {margin-top:50px;}
 }
 
 @media (max-width:599px) {
-    .develop article {margin-top:50px;}
+    .develop article {margin-top:60px;}
     .develop .develop_cont_tit {font-size:18px;}
     .develop .develop_cont_txt {font-size:12px; line-height:1.6em;}
     .develop .diagram {margin-top:15px;}
+    .develop .diagram img {max-height:150px;}
 }
 
 @media (max-width:320px) {
