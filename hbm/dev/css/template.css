@@ -926,6 +926,8 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     .event_cover .pager .bullet {border-color:#fff; background:none;}
     .event_slide .ctr button {background:none;}
     .event_slide .ctr button:before,.event_slide .ctr button:after {background:#fff;}
+    .event_slide .ctr .prev {left:15px;}
+    .event_slide .ctr .next {right:15px;}
 }
 
 /* 하베르만 소개 */
@@ -970,10 +972,12 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 }
 
 @media (max-width:599px) {
+    .hbm_info {padding:0 15px;}
     .hbm_info .info_box {padding:0;}
     .hbm_info .txt_wrap {width:100%; padding:15px; background:rgba(255,255,255,0.5);}
     .hbm_info .txt_wrap p {font-size:12px;}
-    .hbm_grade ul li {width:100% !important; height:auto; padding:15px; padding-bottom:60px;}
+    .hbm_grade ul {margin-bottom:30px;}
+    .hbm_grade ul li {width:100% !important; height:auto; margin-top:15px; padding:15px; padding-bottom:60px; background-position-y:40%;}
     .hbm_grade ul li strong br {display:none;}
     .hbm_grade ul li a {padding:0 15px;}   
 }
@@ -1064,6 +1068,8 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 }
 
 @media (max-width:599px) {
+    .hbm_news .cont .more {top:15px;}
+    .hbm_news .news {margin-top:30px !important;}
     .hbm_news .bottom_menu ul li {width:100%;}
 }
 
