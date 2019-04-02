@@ -10,7 +10,6 @@
 .grid_container.inner {max-width:1180px;}
 
 @media (max-width:1024px) {
-    .wrap {padding-bottom:75px;}
     .grid_container {padding:0 30px;}
 }
 

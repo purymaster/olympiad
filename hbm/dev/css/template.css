@@ -137,7 +137,6 @@ button span {position:relative;}
 .grid_container.inner {max-width:1180px;}
 
 @media (max-width:1024px) {
-    .wrap {padding-bottom:75px;}
     .grid_container {padding:0 30px;}
 }
 
@@ -946,7 +945,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 .hbm_grade ul li:after {position:absolute; top:0; right:-1px; z-index:1; width:1px; height:100%; background:#fff; content:"";}
 .hbm_grade ul li strong {display:block; padding-bottom:20px; font-family:"Nanum Square"; font-size:30px; font-weight:400; line-height:1.35em;}
 .hbm_grade ul li .sub_txt {padding-top:20px; border-top:1px solid rgba(255,255,255,0.5); font-size:18px; line-height:1.5em;}
-.hbm_grade ul li a {position:absolute; bottom:0; left:0; width:100%; padding:0 30px; background:rgba(0,0,0,0.2); line-height:80px; color:inherit; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.hbm_grade ul li a {position:absolute; bottom:0; left:0; width:100%; padding:0 30px; background:rgba(0,0,0,0.2); font-size:16px; line-height:80px; color:inherit; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .hbm_grade ul li a:hover {background:rgba(0,174,186,0.9); color:#fff;}
 .hbm_grade ul li a:before,.hbm_grade ul li a:after {position:absolute; top:50%; right:30px; height:1px; background:#fff; -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
 .hbm_grade ul li a:before {width:40px;}
@@ -968,7 +967,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     .hbm_grade ul li:after {display:none;}
     .hbm_grade ul li strong {padding-bottom:15px; font-size:18px;}
     .hbm_grade ul li .sub_txt {padding-top:15px; font-size:12px;}
-    .hbm_grade ul li a {line-height:3em;}
+    .hbm_grade ul li a {font-size:14px; line-height:3em;}
 }
 
 @media (max-width:599px) {
