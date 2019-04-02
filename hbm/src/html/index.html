@@ -130,7 +130,7 @@
                 <script>
                     $(function () {
                         var main_slide = new Swiper('.main_slide.swiper-container', {
-                            simulateTouch: false,
+                            allowTouchMove: false,
                             autoplay: {
                                 delay: 5000,
                             },
@@ -177,17 +177,17 @@
                         <div class="event_slide swiper-container">
                             <ul class="slide swiper-wrapper">
                                 <!-- [D] 현재 보이는 슬라이드 li에 on 클래스 부여 -->
-                                <li class="swiper-slide">
-                                    <a href="#" style="background-image:url('https://via.placeholder.com/480x330')"></a>
+                                <li class="swiper-slide" style="background-image:url('https://via.placeholder.com/480x330')">
+                                    <a href="#"></a>
                                 </li>
-                                <li class="swiper-slide">
-                                    <a href="#" style="background-image:url('https://picsum.photos/480/330/?0')"></a>
+                                <li class="swiper-slide" style="background-image:url('https://picsum.photos/480/330/?0')">
+                                    <a href="#"></a>
                                 </li>
-                                <li class="swiper-slide">
-                                    <a href="#" style="background-image:url('https://picsum.photos/480/330/?1')"></a>
+                                <li class="swiper-slide" style="background-image:url('https://picsum.photos/480/330/?1')">
+                                    <a href="#"></a>
                                 </li>
-                                <li class="swiper-slide">
-                                    <a href="#" style="background-image:url('https://picsum.photos/480/330/?2')"></a>
+                                <li class="swiper-slide" style="background-image:url('https://picsum.photos/480/330/?2')">
+                                    <a href="#"></a>
                                 </li>
                             </ul>
 
@@ -214,7 +214,7 @@
                         <script>
                             $(function () {
                                 var event_slide = new Swiper('.event_slide.swiper-container', {
-                                    simulateTouch: false,
+                                    allowTouchMove: false,
                                     autoplay: {
                                         delay: 5000,
                                     },
@@ -237,7 +237,9 @@
                                     breakpoints: {
                                         1024: {
                                             spaceBetween: 30,
-                                            allowTouchMove: false
+                                        },
+                                        599: {
+                                            spaceBetween: 0
                                         }
                                     }
                                 })
@@ -261,7 +263,7 @@
                             왜 하브루타로 수학을 공부해야 할까요?
                         </p>
                         <p>
-                            적극적으로 질문하고 토론하고 문제를 설명하는 과정에서 자신이 이해하고 있는 것 과 이해하지 못한 것을 스스로 깨닫게 되며 메타인지 능력을 향상시킬 수 있습니다.
+                            적극적으로 질문하고 토론하고 문제를 설명하는 과정에서 자신이 이해하고 있는 것과 이해하지 못한 것을 스스로 깨닫게 되며 메타인지 능력을 향상시킬 수 있습니다.
                         </p>
                     </div>
                 </div>
