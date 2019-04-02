@@ -37,6 +37,15 @@ $(function () {
         })
     });
 
+    /******************** 헤더 검색창 제어 ********************/
+
+    var search_box = $('header .search_keyword .search_box');
+
+    $('.search_keyword').on('click', '.search', function () {
+        $(this).toggleClass('on');
+        search_box.toggleClass('on').find('input[type="text"]').val('');
+    });
+
     /******************** 네비게이션 제어 ********************/
 
     var nav = $('nav'),
@@ -45,7 +54,7 @@ $(function () {
     //네비게이션 제어
     $('.header_wrap').on('click', 'button[type="button"]', function () {
         $('.group_nav').find('input').val('');
-        $(this).hasClass('menu') ?
+        $(this).hasClass('open_menu') ?
             (nav_2depth.hide(),
                 screen.addClass('fixed'),
                 nav.addClass('on'),
@@ -137,26 +146,8 @@ $(function () {
                 $(this).removeClass('wait-animation');
         });
 
-        //TOP 버튼 제어
-        top_btn.find('button').on('click', function () {
-            if (top_btn_flag) return false;
-            top_btn_flag = 1;
-            TweenLite.to($('html,body'), .5, {
-                scrollTop: 0,
-                onComplete: function () {
-                    top_btn_flag = 0;
-                }
-            })
-            return false;
-        });
-    });
+        //헤더 배경 제어
+        scroll ? $('.header').addClass('on') : $('.header').removeClass('on');
 
-    $(window).on('load scroll resize', function () {
-
-        //사이드메뉴 제어
-        TweenLite.to($('.side_menu'), 3, {
-            top: $(this).height() / 2 + $(window).scrollTop(),
-            ease: Elastic.easeOut.config(.25, .25)
-        })
     });
 });

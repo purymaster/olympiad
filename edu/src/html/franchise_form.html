@@ -1,0 +1,358 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap form franchise_input">
+            @@include('../inc/sub_header.html',{
+            "type" : "type4",
+            "title" : "가맹안내",
+            "sub_txt" : "Franchise",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 3,
+            "tab_list" : ["올림피아드 가맹안내","가맹 및 개원 절차","개원 및 운영지원","가맹사업 브랜드 소개","가맹상담 신청"]
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 시작 -->
+                <div class="grid_container">
+
+                    <div class="form_wrap">
+                        <h3 class="tit">
+                            유투엠/거꾸로수학교실 <strong>가맹상담 신청</strong>
+                        </h3>
+                        <span class="must_info">
+                            <strong>*</strong> 필수작성 항목
+                        </span>
+                        <div class="form_table">
+                            <table>
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+
+                                    <!-- 성명 -->
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="name">
+                                                성명
+                                                <span class="must">필수작성 항목</span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="name" style="width:220px;">
+                                        </td>
+                                    </tr>
+                                    <!-- //성명 -->
+
+                                    <!-- 생년월일 -->
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="year">생년월일</label>
+                                        </th>
+                                        <td class="divide_3">
+                                            <!-- 년도 -->
+                                            <div class="select_form" style="width:180px;">
+                                                <button type="button" id="year">
+                                                    <span>년도</span>
+                                                </button>
+                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">9999년</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">2000년</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">1999년</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //년도 -->
+
+                                            <!-- 월 -->
+                                            <div class="select_form" style="width:110px;">
+                                                <button type="button">
+                                                    <span>월</span>
+                                                </button>
+                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">12월</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">1월</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //월 -->
+
+                                            <!-- 일 -->
+                                            <div class="select_form" style="width:110px;">
+                                                <button type="button">
+                                                    <span>월</span>
+                                                </button>
+                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">31일</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">1일</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //일 -->
+                                        </td>
+                                    </tr>
+                                    <!-- //생년월일 -->
+
+                                    <!-- 가맹 희망 브랜드 -->
+                                    <tr>
+                                        <th>
+                                            <label for="brand_1">
+                                                가맹 희망 브랜드
+                                                <span class="must">필수작성 항목</span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <div class="radio_form">
+                                                <ul>
+                                                    <li>
+                                                        <input type="radio" id="brand_1" name="brand" checked>
+                                                        <label for="brand_1">유투엠</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" id="brand_2" name="brand">
+                                                        <label for="brand_2">거꾸로수학교실</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- //가맹 희망 브랜드 -->
+
+                                    <!-- 연락처 -->
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="tel_first">
+                                                연락처
+                                                <span class="must">필수작성 항목</span>
+                                            </label>
+                                        </th>
+                                        <td class="divide_3">
+                                            <!-- 전화번호 앞자리 -->
+                                            <div class="select_form" style="width:160px;">
+                                                <button type="button" id="tel_first">
+                                                    <span>010</span>
+                                                </button>
+                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">010</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">011</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //전화번호 앞자리 -->
+
+                                            <input type="text" title="전화번호 중간자리" style="width:160px;" maxlength="4">
+                                            <input type="text" title="전화번호 뒷자리" style="width:160px;" maxlength="4">
+                                        </td>
+                                    </tr>
+                                    <!-- //연락처 -->
+
+                                    <!-- 개설 희망지역 -->
+                                    <tr>
+                                        <th scope="row" rowspan="2">
+                                            <label for="first_legion">
+                                                개설 희망지역
+                                                <span class="must">필수작성 항목</span>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <span class="label">1지망</span>
+                                            <!-- 광역시/도 -->
+                                            <div class="select_form" style="width:200px;">
+                                                <button type="button" id="first_legion">
+                                                    <span>광역시/도</span>
+                                                </button>
+                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">서울특별시</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">제주특별자치도</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //광역시/도 -->
+
+                                            <!-- 시/군/구 -->
+                                            <div class="select_form" style="width:200px;">
+                                                <button type="button">
+                                                    <span>시/군/구</span>
+                                                </button>
+                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">파주시</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">성남시 수정구</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //시/군/구 -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line_2">
+                                            <span class="label">2지망</span>
+                                            <!-- 광역시/도 -->
+                                            <div class="select_form" style="width:200px;">
+                                                <button type="button" id="year">
+                                                    <span>광역시/도</span>
+                                                </button>
+                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">서울특별시</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">제주특별자치도</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //광역시/도 -->
+
+                                            <!-- 시/군/구 -->
+                                            <div class="select_form" style="width:200px;">
+                                                <button type="button">
+                                                    <span>시/군/구</span>
+                                                </button>
+                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">파주시</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">성남시 수정구</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //시/군/구 -->
+                                        </td>
+                                    </tr>
+                                    <!-- //개설 희망지역 -->
+
+                                    <!-- 학원 운영 -->
+                                    <tr>
+                                        <th scope="row" rowspan="2">
+                                            <label for="academy_1">학원 운영</label>
+                                        </th>
+                                        <td>
+                                            <div class="radio_form">
+                                                <ul>
+                                                    <li>
+                                                        <input type="radio" id="academy_1" name="academy" checked>
+                                                        <label for="academy_1">학원 운영</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" id="academy_2" name="academy">
+                                                        <label for="academy_2">미운영</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line_2">
+                                            <span class="label">운영형태</span>
+                                            <div class="check_form">
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" id="academy_type_1" name="academy_type">
+                                                        <label for="academy_type_1">수학학원</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="academy_type_2" name="academy_type">
+                                                        <label for="academy_type_2">영어학원</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="academy_type_3" name="academy_type">
+                                                        <label for="academy_type_3">영수학원</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="academy_type_4" name="academy_type">
+                                                        <label for="academy_type_4">종합학원</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="academy_type_5" name="academy_type">
+                                                        <label for="academy_type_5">기타(교습소/공부방)</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- //학원 운영 -->
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="form_term">
+                        <dl>
+                            <div>
+                                <dt>개인정보 수집, 이용 목적</dt>
+                                <dd>가맹사업설명회 신청자 중 가맹계약자 상담 시 가맹계약 안내에 이용</dd>
+                            </div>
+                            <div>
+                                <dt>개인정보 수집 항목</dt>
+                                <dd>
+                                    필수항목 : 성명, 가맹희망 브랜드, 연락처, 개설희망 지역<br>
+                                    선택항목 : 생년월일, 학원 운영, 운영 형태
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>개인정보 보유 기간</dt>
+                                <dd>
+                                    수집된 개인정보는 서비스 제공을 위하여 1년간 보유 및 이용하며, 그 이후에는 삭제됩니다.(단, 개인 동의 시 연장 가능)<br>
+                                    정보제공자가 개인정보 삭제를 요청할 경우 즉시 삭제합니다.
+                                </dd>
+                            </div>
+                        </dl>
+                        <div class="check_form agree">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="agree" name="agree">
+                                    <label for="agree">본인은 상기의 내용을 확인했으며, 위와 같은 개인정보 수집 및 이용에 동의합니다.</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn_wrap">
+                            <button type="submit" class="link">
+                                <span>가맹상담 신청하기</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 서브 페이지 컨텐츠 끝 -->
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

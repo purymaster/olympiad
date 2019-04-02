@@ -6,6 +6,480 @@
         @@include('../inc/header.html')
         <div class="main_content">
 
+            <!-- 메인 슬라이드 영역 -->
+            <div class="main_visual">
+
+                <!-- 메인 슬라이드 -->
+                <div class="main_slide swiper-container">
+                    <ul class="slide swiper-wrapper">
+                        <!-- [D] 현재 보이는 슬라이드 li에 on 클래스 부여 -->
+                        <li class="swiper-slide"
+                            style="background-image:url('https://picsum.photos/1920/1080/?random')">
+                            <a href="#">
+                                <div class="grid_container">
+                                    <div class="txt_view">
+                                        <div class="txt_wrap">
+                                            <span class="cate">하베르만 학습법</span>
+                                            <p class="tit">메타인지 기반의 <strong>질문수학</strong></p>
+                                            <p class="sub_txt">질문 하브루타로 배우는 수학원리</p>
+                                            <p class="txt">
+                                                질문을 연결해 나가는 몰입식 사고과정을 통해 생각하는 힘을 키울 수 있습니다. <br>
+                                                하베르만의 아이들은 질문을 통해 끊임없이 생각하며 메타인지를 활성화 할 수 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"
+                            style="background-image:url('https://picsum.photos/1920/1080/?image=0')">
+                            <a href="#">
+                                <div class="grid_container">
+                                    <div class="txt_view">
+                                        <div class="txt_wrap">
+                                            <span class="cate">하베르만 학습법</span>
+                                            <p class="tit">친구와 함께하는 <strong>토론수학</strong></p>
+                                            <p class="sub_txt">하브루타와 함께하는 영재들의 토론수학</p>
+                                            <p class="txt">
+                                                하베르만의 아이들은 질문과 대화, 토론과
+                                                논쟁을 통해 <br>
+                                                탐구하고 추론하며 사고력을 확장해 영재성을 계발시킬 수 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"
+                            style="background-image:url('https://picsum.photos/1920/1080/?image=1')">
+                            <a href="#">
+                                <div class="grid_container">
+                                    <div class="txt_view">
+                                        <div class="txt_wrap">
+                                            <span class="cate">하베르만 학습법</span>
+                                            <p class="tit">교구로 체험하는 <strong>즐거운수학</strong></p>
+                                            <p class="sub_txt">구체적 조작기에 있는 우리 아이들 수학을 어떻게 이해할 수 있을까요?</p>
+                                            <p class="txt">
+                                                하베르만의 아이들은 스스로 교구를 조작해보며 수학에 대한 개념을 쉽게 이해하고 <br>
+                                                수학의 즐거움을 느끼며 사고력을 확장시킬 수
+                                                있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"
+                            style="background-image:url('https://picsum.photos/1920/1080/?image=2')">
+                            <a href="#">
+                                <div class="grid_container">
+                                    <div class="txt_view">
+                                        <div class="txt_wrap">
+                                            <span class="cate">하베르만 학습법</span>
+                                            <p class="tit">생각을 정리하는 <strong>표현학습</strong></p>
+                                            <p class="sub_txt">정리로 완성하는 수학의 정교화</p>
+                                            <p class="txt">
+                                                하베르만의 아이들은 수업에서 알게 된 것을 글이나 그림 등의 자신만의 방식으로 다양하게 표현해 보면서 <br>
+                                                오개념을 잡고 수학의 개념을
+                                                더 정확하게 이해하게 되고 재구조화 하는 능력을 계발시킬 수 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- 메인 슬라이드 네비게이터 -->
+                    <div class="main_slide_pager">
+                        <div class="grid_container">
+                            <ul class="pager pagination">
+                                <li class="bullet">
+                                    <div class="txt_wrap">
+                                        <span class="sub_txt">메타인지 기반의</span>
+                                        <strong>질문수학</strong>
+                                    </div>
+                                </li>
+                                <li class="bullet">
+                                    <div class="txt_wrap">
+                                        <span class="sub_txt">친구와 함께하는</span>
+                                        <strong>토론수학</strong>
+                                    </div>
+                                </li>
+                                <li class="bullet">
+                                    <div class="txt_wrap">
+                                        <span class="sub_txt">교구로 체험하는</span>
+                                        <strong>즐거운수학</strong>
+                                    </div>
+                                </li>
+                                <li class="bullet">
+                                    <div class="txt_wrap">
+                                        <span class="sub_txt">생각을 정리하는</span>
+                                        <strong>표현학습</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //메인 슬라이드 네비게이터 -->
+
+                </div>
+                <!-- //메인 슬라이드 -->
+
+                <!-- [D] 화면 확인용 스크립트 -->
+                <script>
+                    $(function () {
+                        var main_slide = new Swiper('.main_slide.swiper-container', {
+                            simulateTouch: false,
+                            autoplay: {
+                                delay: 5000,
+                            },
+                            slideActiveClass: 'on',
+                            effect: 'fade',
+                            loop: true,
+                            pagination: {
+                                el: '.main_slide .pagination',
+                                type: 'bullets',
+                                clickable: true,
+                                bulletClass: 'bullet',
+                                bulletActiveClass: 'on',
+                                renderBullet: function (idx) {
+                                    var main_slide_tit = [
+                                        '질문수학',
+                                        '토론수학',
+                                        '즐거운수학',
+                                        '표현학습'
+                                    ],
+                                        main_slide_txt = [
+                                            '메타인지 기반의',
+                                            '친구와 함께하는',
+                                            '교구로 체험하는',
+                                            '생각을 정리하는'
+                                        ]
+                                    return '<li class="bullet"><div class="txt_wrap"><span class="sub_txt">' + main_slide_txt[idx] + '</span><strong>' + main_slide_tit[idx] + '</strong></div></li>';
+                                }
+                            }
+                        })
+                    });
+                </script>
+                <!-- [D] //화면 확인용 스크립트 -->
+
+            </div>
+            <!-- //메인 슬라이드 영역 -->
+
+            <!-- 이벤트 배너 영역 -->
+            <section class="main_event">
+                <div class="grid_container">
+                    <h2 data-animation="fadeInUp" data-delay="0"><strong>event</strong></h2>
+
+                    <!-- 이벤트 슬라이드 -->
+                    <div class="event_cover">
+                        <div class="event_slide swiper-container">
+                            <ul class="slide swiper-wrapper">
+                                <!-- [D] 현재 보이는 슬라이드 li에 on 클래스 부여 -->
+                                <li class="swiper-slide">
+                                    <a href="#" style="background-image:url('https://via.placeholder.com/480x330')"></a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#" style="background-image:url('https://picsum.photos/480/330/?0')"></a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#" style="background-image:url('https://picsum.photos/480/330/?1')"></a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#" style="background-image:url('https://picsum.photos/480/330/?2')"></a>
+                                </li>
+                            </ul>
+
+                            <!-- 이벤트 슬라이드 컨트롤러 -->
+                            <ul class="ctr">
+                                <li>
+                                    <button class="prev" type="button">이전 슬라이드 보기</button>
+                                </li>
+                                <li>
+                                    <button class="next" type="button">다음 슬라이드 보기</button>
+                                </li>
+                            </ul>
+                            <!-- //이벤트 슬라이드 컨트롤러 -->
+
+                        </div>
+
+                        <!-- 이벤트 슬라이드 네비게이터 -->
+                        <div class="pager pagination">
+
+                        </div>
+                        <!-- //이벤트 슬라이드 네비게이터 -->
+
+                        <!-- [D] 화면 확인용 스크립트 -->
+                        <script>
+                            $(function () {
+                                var event_slide = new Swiper('.event_slide.swiper-container', {
+                                    simulateTouch: false,
+                                    autoplay: {
+                                        delay: 5000,
+                                    },
+                                    spaceBetween: 50,
+                                    loop: true,
+                                    slidesPerView: 'auto',
+                                    slidesPerGroup: 1,
+                                    centeredSlides: true,
+                                    navigation: {
+                                        nextEl: '.main_event .next',
+                                        prevEl: '.main_event .prev',
+                                    },
+                                    pagination: {
+                                        el: '.main_event .pagination',
+                                        type: 'bullets',
+                                        clickable: true,
+                                        bulletClass: 'bullet',
+                                        bulletActiveClass: 'on',
+                                    },
+                                    breakpoints: {
+                                        1024: {
+                                            spaceBetween: 30,
+                                            noSwiping: true
+                                        }
+                                    }
+                                })
+                            });
+                        </script>
+                        <!-- //[D] 화면 확인용 스크립트 -->
+
+                    </div>
+                    <!-- //이벤트 슬라이드 -->
+                </div>
+            </section>
+            <!-- //이벤트 배너 영역 -->
+
+            <!-- 하베르만 소개 -->
+            <section class="hbm_info">
+                <div class="grid_container info_box">
+                    <h2 class="hidden"><strong>하베르만 소개</strong></h2>
+                    <div class="txt_wrap">
+                        <img src="../img/img/img_info_logo.png" alt="하브루타로 키우는 영재사고력, 하베르만 영재수학 로고">
+                        <p>
+                            왜 하브루타로 수학을 공부해야 할까요?
+                        </p>
+                        <p>
+                            적극적으로 질문하고 토론하고 문제를 설명하는 과정에서 자신이 이해하고 있는 것 과 이해하지 못한 것을 스스로 깨닫게 되며 메타인지 능력을 향상시킬 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="hbm_grade">
+                    <ul>
+                        <li>
+                            <strong>
+                                영재사고력<br>
+                                KIDS 단계
+                            </strong>
+                            <p class="sub_txt">
+                                6세 A~D 과정 프로그램
+                            </p>
+                            <a href="#">자세히보기</a>
+                        </li>
+                        <li>
+                            <strong>
+                                영재사고력<br>
+                                KIDS 단계
+                            </strong>
+                            <p class="sub_txt">
+                                7세 E~H 과정 프로그램
+                            </p>
+                            <a href="#">자세히보기</a>
+                        </li>
+                        <li>
+                            <strong>
+                                영재사고력<br>
+                                Junior 단계
+                            </strong>
+                            <p class="sub_txt">
+                                8세 A~D 과정 프로그램
+                            </p>
+                            <a href="#">자세히보기</a>
+                        </li>
+                        <li>
+                            <strong>
+                                영재사고력<br>
+                                Junior 단계
+                            </strong>
+                            <p class="sub_txt">
+                                9세 E~H 과정 프로그램
+                            </p>
+                            <a href="#">자세히보기</a>
+                        </li>
+                        <li>
+                            <strong>
+                                영재사고력<br>
+                                Junior 단계
+                            </strong>
+                            <p class="sub_txt">
+                                10세 I~L 과정 프로그램
+                            </p>
+                            <a href="#">자세히보기</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- //하베르만 소개 -->
+
+            <!-- 우리는 하베르만 -->
+            <section class="hbm_story">
+                <div class="grid_container">
+                    <h2 data-animation="fadeInUp" data-delay="0">우리는 <strong>하베르만</strong></h2>
+                    <div class="story_wrap">
+                        <ul>
+                            <li>
+                                <div class="img_wrap"
+                                    style="background-image:url('https://picsum.photos/340/220/?random')"></div>
+                                <div class="txt_wrap">
+                                    <p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+                                    <span class="date">9999.99.99</span>
+                                </div>
+                                <a href="#" class="link">자세히보기</a>
+                            </li>
+                            <li>
+                                <div class="img_wrap"
+                                    style="background-image:url('https://via.placeholder.com/340x220')"></div>
+                                <div class="txt_wrap">
+                                    <p class="tit">영재사고력 KIDS단계 수업현장</p>
+                                    <span class="date">9999.99.99</span>
+                                </div>
+                                <a href="#" class="link">자세히보기</a>
+                            </li>
+                            <li>
+                                <div class="img_wrap"
+                                    style="background-image:url('https://picsum.photos/340/220/?random')"></div>
+                                <div class="txt_wrap">
+                                    <p class="tit">영재사고력 KIDS단계 수업현장</p>
+                                    <span class="date">9999.99.99</span>
+                                </div>
+                                <a href="#" class="link">자세히보기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- //우리는 하베르만 -->
+
+            <!-- 공지사항 & 센터소식 -->
+            <section class="hbm_news">
+                <div class="grid_container">
+                    <div class="cont_wrap">
+
+                        <!-- 공지사항 -->
+                        <div class="cont notice">
+                            <h2 data-animation="fadeInUp" data-delay="0"><strong>공지사항</strong></h2>
+                            <ul class="notice_list">
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <strong>[말머리]</strong>
+                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                        </p>
+                                        <span class="date">9999.99.99</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <strong>[설명회]</strong>
+                                            하브루타로 키우는 영재 사고력
+                                        </p>
+                                        <span class="date">9999.99.99</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <strong>[설명회]</strong>
+                                            하브루타로 키우는 영재 사고력
+                                        </p>
+                                        <span class="date">9999.99.99</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="more">공지사항 더보기</a>
+                        </div>
+                        <!-- 공지사항 -->
+
+                        <!-- 센터소식 -->
+                        <div class="cont news">
+                            <h2 data-animation="fadeInUp" data-delay="0"><strong>센터소식</strong></h2>
+                            <div class="news_view">
+                                <a href="#">
+                                    <p class="tit">
+                                        <strong>[말머리]</strong>
+                                        긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                    </p>
+                                    <p class="txt">
+                                        긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                    </p>
+                                    <span class="date">9999.99.99</span>
+                                </a>
+                            </div>
+                            <a href="#" class="more">센터소식 더보기</a>
+                        </div>
+                        <!-- 센터소식 -->
+
+                    </div>
+                    <div class="bottom_menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="txt_wrap">
+                                        <strong>교사채용</strong>
+                                        <p>하베르만 영재를 교육할 선생님을 모집합니다.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="txt_wrap">
+                                        <strong>가맹안내</strong>
+                                        <p>올림피아드와 함께 할 신규 파트너를 찾습니다.</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <!-- //공지사항 & 센터소식 -->
+
+            <!-- 학원 운영시간 및 상담안내 -->
+            <section class="counsel_info">
+                <div class="grid_container">
+                    <div class="info_wrap">
+                        <h2 data-animation="fadeInUp" data-delay="0">
+                            학원 운영시간 및<br>
+                            <strong>상담안내</strong>
+                        </h2>
+                        <dl>
+                            <div class="time">
+                                <dt class="hidden">학원 운영시간</dt>
+                                <dd>
+                                    <span>월~금</span>
+                                    15:00 ~ 22:00
+                                </dd>
+                                <dd>
+                                    <span>토요일</span>
+                                    12:00 ~ 17:00
+                                </dd>
+                            </div>
+                            <div class="info">
+                                <dt class="hidden">상담안내 전화번호</dt>
+                                <dd>
+                                    <a href="tel:1588-8282">1588-8282</a>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                </div>
+            </section>
+            <!-- //학원 운영시간 및 상담안내 -->
+
         </div>
         @@include('../inc/footer.html')
     </div>
