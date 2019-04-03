@@ -92,6 +92,11 @@ header:hover .navigation .menu_2depth {visibility:visible; transition:all 1s; op
     .nav_wrap button.close:after {transform:rotate(45deg);}
     nav.on .nav_wrap button.close {visibility:visible; opacity:1;}
     .nav_wrap .menu {float:none;}
+    .nav_wrap .call_num {position:absolute; left:0; bottom:0; padding:15px;}
+    .nav_wrap .call_num dl {width:100%; font-size:0;}
+    .nav_wrap .call_num dt,.nav_wrap .call_num dd {display:inline-block; font-family:"Nanum Square"; font-weight:700; line-height:20px; vertical-align:middle;}
+    .nav_wrap .call_num dt {font-size:14px;}
+    .nav_wrap .call_num dd {margin-left:10px; font-size:18px; color:#008398;}
 
     .group_nav .login {display:inline-block; float:none; margin:0; border-color:#008398; background:#00aeba;}
 

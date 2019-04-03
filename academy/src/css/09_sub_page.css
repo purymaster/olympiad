@@ -427,6 +427,15 @@
     .specific .merit p {padding-top:180px; font-size:12px;}
 }
 
+/* 초,중등수학 - 교재구성(공통) */
+.book_info {}
+
+/* 초등수학 - 교재구성 */
+.book_info.junior {}
+
+/* 중등수학 - 교재구성 */
+.book_info.middle {}
+
 /* 초등수학 - 레벨구성 */
 .junior_level .level_link_bx {max-width:980px; margin:0 auto;}
 .junior_level .level_link_list {overflow:hidden; margin:-20px;}
@@ -591,7 +600,7 @@
     .campus_map .campus_data .traffic .route .transit,.campus_map .campus_data .traffic .route li {font-size:12px;}
 }
 
-/* 영재센터 > 영재센터 소개 */
+/* 영재센터 - 영재센터 소개 */
 .center_info .genius_intro_bx {position:relative; padding-top:40px;}
 .center_info .genius_intro_bx:after {position:absolute; top:214px; left:0; width:100%; height:2px; background-color:#fff; content:"";}
 .center_info .genius_intro_bx ol {overflow:hidden;}

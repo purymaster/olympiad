@@ -4,8 +4,30 @@
     @@include('../inc/ie9.html')
     <div class="wrap">
         @@include('../inc/header.html')
-        <div class="sub_wrap" style="height:500px; background:red;">
-            1234
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "서브 페이지 타이틀",
+            "subtitle" : "서브 페이지 텍스트 <strong>강조</strong>",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 3,
+            "tab_list" : ["탭메뉴1","탭메뉴2","탭메뉴3"]
+            }
+            })
+
+            <div class="sub_content">
+                
+                <!-- 서브 페이지 컨텐츠 영역 -->
+
+                <div class="grid_container">
+                    1234
+                </div>
+
+                <!-- //서브 페이지 컨텐츠 영역 -->
+
+            </div>
+
         </div>
         @@include('../inc/footer.html')
     </div>

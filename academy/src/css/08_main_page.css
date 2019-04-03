@@ -131,6 +131,9 @@
 .banner_wrap .small {overflow:hidden; position:relative;}
 .banner_wrap .small .small_cont {float:left; width:50%;}
 .banner_wrap .small .slide li {padding-top:75%;}
+.banner_wrap .small .slide li .txt_wrap {bottom:20px;}
+.banner_wrap .small .slide li .txt_wrap .tit {max-height:1.3em; font-size:18px;}
+.banner_wrap .small .slide li .txt_wrap .txt {font-size:12px; margin-top:5px;}
 .banner_wrap .small .ctr li button {position:absolute; top:50%; z-index:1; width:30px; height:50px; background:rgba(0,0,0,0.7); text-indent:-9999px; transform:translateY(-50%); transition:all 0.5s;}
 .banner_wrap .small .ctr li button:hover {background:#00687f;}
 .banner_wrap .small .ctr li button:before {content:""; position:absolute; width:20px; height:20px; border:2px solid #fff; left:5px; top:15px; transform:rotate(45deg);}

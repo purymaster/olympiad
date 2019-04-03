@@ -719,6 +719,11 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
     .navigation .menu_1depth > li:hover:after {display:none;}
     .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; -webkit-transform:none; transform:none; -webkit-transition:none !important; transition:none !important; opacity:1;}
     .navigation .menu_2depth li a {font-size:12px;}
+    .nav_wrap .call_num {position:absolute; left:0; bottom:0; padding:15px;}
+    .nav_wrap .call_num dl {width:100%; font-size:0;}
+    .nav_wrap .call_num dt,.nav_wrap .call_num dd {display:inline-block; font-family:"Nanum Square"; font-weight:700; line-height:20px; vertical-align:middle;}
+    .nav_wrap .call_num dt {font-size:14px;}
+    .nav_wrap .call_num dd {margin-left:10px; font-size:18px; color:#008398;}
 }
 
 @media (max-width:599px) {
@@ -757,8 +762,9 @@ footer {background:#505354; color:#fff;}
 .footer_lower .lower_wrap address .copyright {font-size:12px;}
 
 @media (max-width:1280px) {
-    .footer_upper .bottom_menu {margin:0 -20px;}
-    .footer_upper .bottom_menu li {margin:0 20px;}
+    .footer_upper .bottom_menu {margin:0 -15px;}
+    .footer_upper .bottom_menu li {margin:0 15px;}
+    .footer_upper .bottom_menu li a {font-size:14px;}
 }
 
 @media (max-width:1024px) {
@@ -992,6 +998,9 @@ footer {background:#505354; color:#fff;}
 .banner_wrap .small {overflow:hidden; position:relative;}
 .banner_wrap .small .small_cont {float:left; width:50%;}
 .banner_wrap .small .slide li {padding-top:75%;}
+.banner_wrap .small .slide li .txt_wrap {bottom:20px;}
+.banner_wrap .small .slide li .txt_wrap .tit {max-height:1.3em; font-size:18px;}
+.banner_wrap .small .slide li .txt_wrap .txt {font-size:12px; margin-top:5px;}
 .banner_wrap .small .ctr li button {position:absolute; top:50%; z-index:1; width:30px; height:50px; background:rgba(0,0,0,0.7); text-indent:-9999px; -webkit-transform:translateY(-50%); transform:translateY(-50%); -webkit-transition:all 0.5s; transition:all 0.5s;}
 .banner_wrap .small .ctr li button:hover {background:#00687f;}
 .banner_wrap .small .ctr li button:before {content:""; position:absolute; width:20px; height:20px; border:2px solid #fff; left:5px; top:15px; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
@@ -1598,6 +1607,15 @@ footer {background:#505354; color:#fff;}
     .specific .merit p {padding-top:180px; font-size:12px;}
 }
 
+/* 초,중등수학 - 교재구성(공통) */
+.book_info {}
+
+/* 초등수학 - 교재구성 */
+.book_info.junior {}
+
+/* 중등수학 - 교재구성 */
+.book_info.middle {}
+
 /* 초등수학 - 레벨구성 */
 .junior_level .level_link_bx {max-width:980px; margin:0 auto;}
 .junior_level .level_link_list {overflow:hidden; margin:-20px;}
@@ -1762,7 +1780,7 @@ footer {background:#505354; color:#fff;}
     .campus_map .campus_data .traffic .route .transit,.campus_map .campus_data .traffic .route li {font-size:12px;}
 }
 
-/* 영재센터 > 영재센터 소개 */
+/* 영재센터 - 영재센터 소개 */
 .center_info .genius_intro_bx {position:relative; padding-top:40px;}
 .center_info .genius_intro_bx:after {position:absolute; top:214px; left:0; width:100%; height:2px; background-color:#fff; content:"";}
 .center_info .genius_intro_bx ol {overflow:hidden;}

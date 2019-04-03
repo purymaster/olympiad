@@ -31,8 +31,9 @@ footer {background:#505354; color:#fff;}
 .footer_lower .lower_wrap address .copyright {font-size:12px;}
 
 @media (max-width:1280px) {
-    .footer_upper .bottom_menu {margin:0 -20px;}
-    .footer_upper .bottom_menu li {margin:0 20px;}
+    .footer_upper .bottom_menu {margin:0 -15px;}
+    .footer_upper .bottom_menu li {margin:0 15px;}
+    .footer_upper .bottom_menu li a {font-size:14px;}
 }
 
 @media (max-width:1024px) {
