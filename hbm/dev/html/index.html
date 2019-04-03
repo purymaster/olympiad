@@ -387,9 +387,9 @@
 						</p>
 					</div>
 				</div>
-				<div class="hbm_grade">
-					<ul>
-						<li data-animation="fadeInUp" data-delay="0">
+				<div class="hbm_grade swiper-container">
+					<ul class="slide swiper-wrapper">
+						<li class="swiper-slide">
 							<strong>
                                 영재사고력<br>
                                 KIDS 단계
@@ -399,7 +399,7 @@
 							</p>
 							<a href="#">자세히보기</a>
 						</li>
-						<li data-animation="fadeInUp" data-delay="1">
+						<li class="swiper-slide">
 							<strong>
                                 영재사고력<br>
                                 KIDS 단계
@@ -409,7 +409,7 @@
 							</p>
 							<a href="#">자세히보기</a>
 						</li>
-						<li data-animation="fadeInUp" data-delay="2">
+						<li class="swiper-slide">
 							<strong>
                                 영재사고력<br>
                                 Junior 단계
@@ -419,7 +419,7 @@
 							</p>
 							<a href="#">자세히보기</a>
 						</li>
-						<li data-animation="fadeInUp" data-delay="3">
+						<li class="swiper-slide">
 							<strong>
                                 영재사고력<br>
                                 Junior 단계
@@ -429,7 +429,7 @@
 							</p>
 							<a href="#">자세히보기</a>
 						</li>
-						<li data-animation="fadeInUp" data-delay="4">
+						<li class="swiper-slide">
 							<strong>
                                 영재사고력<br>
                                 Junior 단계
@@ -440,6 +440,39 @@
 							<a href="#">자세히보기</a>
 						</li>
 					</ul>
+
+					<ul class="ctr">
+						<li><button type="button" class="prev">이전</button></li>
+						<li><button type="button" class="prev">다음</button></li>
+					</ul>
+
+					<!-- [D] 화면 확인용 스크립트 -->
+					<script>
+						$(function () {
+                            var grade_slide = new Swiper('.hbm_grade.swiper-container', {
+                                allowTouchMove: false,
+                                autoplay: {
+                                    delay: 5000,
+                                },
+                                loop: true,
+                                navigation: {
+                                    nextEl: '.hbm_grade .next',
+                                    prevEl: '.hbm_grade .prev',
+                                },
+                                slidesPerView: 5,
+                                breakpoints: {
+                                    1024: {
+                                        slidesPerView: 1,
+                                    },
+                                }
+                            })
+                            $(window).on('resize', function () {
+                                grade_slide.autoplay.start();
+                            });
+                        });
+                    </script>
+					<!-- //[D] 화면 확인용 스크립트 -->
+
 				</div>
 			</section>
 			<!-- //하베르만 소개 -->

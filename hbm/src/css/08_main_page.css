@@ -115,22 +115,7 @@
 .hbm_info .txt_wrap img {margin-bottom:45px;}
 .hbm_info .txt_wrap p {margin-bottom:1.6em; font-size:15px; line-height:1.6em;}
 .hbm_info .txt_wrap p:last-child {margin:0;}
-.hbm_grade ul {overflow:hidden;}
-.hbm_grade ul li {float:left; position:relative; width:20%; height:570px; padding:35px 30px; color:#fff; background-position:center; background-size:cover;}
-.hbm_grade ul li:nth-child(1) {background-image:url(../img/bg/bg_main_grade_01.jpg);} /* 6세 */
-.hbm_grade ul li:nth-child(2) {background-image:url(../img/bg/bg_main_grade_02.jpg);} /* 7세 */
-.hbm_grade ul li:nth-child(3) {background-image:url(../img/bg/bg_main_grade_03.jpg);} /* 8세 */
-.hbm_grade ul li:nth-child(4) {background-image:url(../img/bg/bg_main_grade_04.jpg);} /* 9세 */
-.hbm_grade ul li:nth-child(5) {background-image:url(../img/bg/bg_main_grade_05.jpg);} /* 10세 */
-.hbm_grade ul li:after {position:absolute; top:0; right:-1px; z-index:1; width:1px; height:100%; background:#fff; content:"";}
-.hbm_grade ul li strong {display:block; padding-bottom:20px; font-family:"Nanum Square"; font-size:30px; font-weight:400; line-height:1.35em;}
-.hbm_grade ul li .sub_txt {padding-top:20px; border-top:1px solid rgba(255,255,255,0.5); font-size:18px; line-height:1.5em;}
-.hbm_grade ul li a {position:absolute; bottom:0; left:0; width:100%; padding:0 30px; background:rgba(0,0,0,0.2); font-size:16px; line-height:80px; color:inherit; transition:all 0.5s;}
-.hbm_grade ul li a:hover {background:rgba(0,174,186,0.9); color:#fff;}
-.hbm_grade ul li a:before,.hbm_grade ul li a:after {position:absolute; top:50%; right:30px; height:1px; background:#fff; -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
-.hbm_grade ul li a:before {width:40px;}
-.hbm_grade ul li a:after {width:10px; transform:rotate(45deg); transform-origin:right center;}
-.hbm_grade ul li a:hover:before,.hbm_grade ul li a:hover:after {right:25px; background:#fff;}
+
 
 @media (max-width:1280px) {
     .hbm_grade ul li strong {font-size:24px;}
@@ -141,13 +126,7 @@
     .hbm_info .txt_wrap {width:50%; height:auto; padding:30px;}
     .hbm_info .txt_wrap img {height:49px; margin-bottom:15px;}
     .hbm_info .txt_wrap p {font-size:12px;}
-    .hbm_grade {margin-top:-30px;}
-    .hbm_grade ul li {width:50%; height:250px; padding:30px;}
-    .hbm_grade ul li:nth-child(n+3) {width:33.33%;}
-    .hbm_grade ul li:after {display:none;}
-    .hbm_grade ul li strong {padding-bottom:15px; font-size:18px;}
-    .hbm_grade ul li .sub_txt {padding-top:15px; font-size:12px;}
-    .hbm_grade ul li a {font-size:14px; line-height:3em;}
+    
 }
 
 @media (max-width:599px) {
@@ -155,10 +134,7 @@
     .hbm_info .info_box {padding:0;}
     .hbm_info .txt_wrap {width:100%; padding:15px; background:rgba(255,255,255,0.5);}
     .hbm_info .txt_wrap p {font-size:12px;}
-    .hbm_grade ul {margin-bottom:30px;}
-    .hbm_grade ul li {width:100% !important; height:auto; margin-top:15px; padding:15px; padding-bottom:60px; background-position-y:40%;}
-    .hbm_grade ul li strong br {display:none;}
-    .hbm_grade ul li a {padding:0 15px;}   
+    
 }
 
 /* 우리는 하베르만 */

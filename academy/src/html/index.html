@@ -56,9 +56,9 @@
                 <div class="main_slide_pager">
                     <div class="grid_container">
                         <ul class="pager pagination">
-                            <li class="bullet">수학이 즐거운 올림피아드</li>
+                            <!-- <li class="bullet">수학이 즐거운 올림피아드</li>
                             <li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li>
-                            <li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li>
+                            <li class="bullet">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</li> -->
                         </ul>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                 <script>
                     $(function () {
                         var main_slide = new Swiper('.main_slide.swiper-container', {
-                            simulateTouch: false,
+                            allowTouchMove: false,
                             autoplay: {
                                 delay: 5000,
                             },
@@ -154,7 +154,7 @@
                 <script>
                     $(function () {
                         var notice_slide = new Swiper('.notice_slide .swiper-container', {
-                            simulateTouch: false,
+                            allowTouchMove: false,
                             autoplay: {
                                 delay: 5000,
                             },
@@ -190,7 +190,7 @@
 
                                     $('.large .banner_slide').each(function () {
                                         new Swiper(slide_class_str + slide_idx + '.swiper-container', {
-                                            simulateTouch: false,
+                                            allowTouchMove: false,
                                             autoplay: {
                                                 delay: 5000,
                                             },
@@ -214,7 +214,7 @@
                                     $('.small .banner_slide').each(function (idx) {
                                         small_slide_nav = Math.floor((small_slide_idx - (idx + 1)) / 2);
                                         new Swiper(slide_class_str + slide_idx + '.swiper-container', {
-                                            simulateTouch: false,
+                                            allowTouchMove: false,
                                             autoplay: {
                                                 delay: 5000,
                                             },
@@ -639,7 +639,7 @@
                             <script>
                                 $(function () {
                                     var review_slide = new Swiper('.review_wrap .swiper-container', {
-                                        simulateTouch: false,
+                                        allowTouchMove: false,
                                         autoplay: {
                                             delay: 5000,
                                         },
