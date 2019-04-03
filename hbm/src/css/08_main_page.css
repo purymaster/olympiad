@@ -22,7 +22,7 @@
 .main_slide .slide .txt_view {position:relative; height:100vh; min-height:640px;}
 .main_slide .slide .txt_wrap {position:absolute; bottom:260px; left:0; color:#fff;}
 .main_slide .slide .txt_wrap span,.main_slide .slide .txt_wrap p {animation-play-state:paused;}
-.main_slide .slide li.on .txt_wrap span,.main_slide .slide li.on .txt_wrap p {animation:1s both fadeInUp;}
+.main_slide .slide li.on .txt_wrap span,.main_slide .slide li.on .txt_wrap p {animation:1s both fadeInUp; -ms-animation-play-state:running;}
 .main_slide .slide .txt_wrap .cate {display:inline-block; border-top:1px solid #fff; border-bottom:1px solid #fff; font-size:18px; line-height:33px;}
 .main_slide .slide .txt_wrap .tit {overflow:hidden; margin-top:10px; font-family:"Nanum Square"; font-size:50px; font-weight:300; line-height:1.4em; text-overflow:ellipsis; white-space:nowrap; animation-delay:0.2s !important;}
 .main_slide .slide .txt_wrap .tit strong {font-family:inherit; font-weight:400;}
