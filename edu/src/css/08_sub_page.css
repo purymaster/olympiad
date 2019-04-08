@@ -401,30 +401,30 @@
 .publish .type_publish03 {background-image:url(../img/bg/bg_type_publish03.jpg);} /* 학수고대 */
 .publish .type_publish04 {background-image:url(../img/bg/bg_type_publish04.jpg);} /* 시사이슈북 */
 .publish .type_publish05 {background-image:url(../img/bg/bg_type_publish05.jpg);} /* 수학이야기 */
-.publish_book {margin-top:45px; padding:50px; background-color:#fff;}
-.publish_book .publish_list {overflow:hidden; margin:0 -15px;} 
-.publish_book .publish_list li {float:left; width:16.66%; padding:0 15px;}
-.publish_book .publish_list li img {border:1px solid #ccc;}
-.publish_text {margin-bottom:70px; text-align:center;}
-.publish_text .main_tit {display:block; margin-bottom:12px; font-family:"Nanum Square"; font-size:30px; font-weight:normal; line-height:1.6em; color:#008398;}
-.publish_text p {font-size:14px; line-height:2em;} 
+.publish .publish_book {margin-top:45px; padding:50px; background-color:#fff;}
+.publish .publish_book .publish_list {overflow:hidden; margin:0 -15px;} 
+.publish .publish_book .publish_list li {float:left; width:16.66%; padding:0 15px;}
+.publish .publish_book .publish_list li img {border:1px solid #ccc;}
+.publish .publish_text {margin-bottom:70px; padding:0 50px; text-align:center;}
+.publish .publish_text .main_tit {display:block; margin-bottom:12px; font-family:"Nanum Square"; font-size:30px; font-weight:normal; line-height:1.6em; color:#008398;}
+.publish .publish_text p {font-size:14px; line-height:2em;} 
 
 @media (max-width:1024px) {
     .publish .sub_visual {margin-bottom:0; padding-top:50px;}
-    .publish_book {padding:30px;}
-    .publish_book .publish_list {margin:-15px;}
-    .publish_book .publish_list li {width:33.33%; padding:15px; text-align:center; line-height:0;}
-    .publish_book .publish_list li img {width:100%; max-width:120px;}
-	.publish_text {margin-bottom:30px; padding:30px 0;}
-    .publish_text .main_tit {font-size:24px;}
-    .publish_text p {line-height:1.8em;}
+    .publish .publish_book {padding:30px;}
+    .publish .publish_book .publish_list {margin:-15px;}
+    .publish .publish_book .publish_list li {width:33.33%; padding:15px; text-align:center; line-height:0;}
+    .publish .publish_book .publish_list li img {width:100%; max-width:120px;}
+	.publish .publish_text {margin-bottom:30px; padding:30px 0;}
+    .publish .publish_text .main_tit {font-size:24px;}
+    .publish .publish_text p {line-height:1.8em;}
 }
 
 @media (max-width:599px) {
-    .publish_book {position:relative; left:-15px; width:calc(100% + 30px); padding:30px 15px;}
-	.publish_text .main_tit {font-size:18px;}
-	.publish_text p {font-size:12px;}
-    .publish_text p br {display:none;}
+    .publish .publish_book {position:relative; left:-15px; width:calc(100% + 30px); padding:30px 15px;}
+	.publish .publish_text .main_tit {font-size:18px;}
+	.publish .publish_text p {font-size:12px;}
+    .publish .publish_text p br {display:none;}
 }
 
 /* 연구개발 */
@@ -464,18 +464,27 @@
     .develop .diagram img {max-height:120px;}
 }
 
+/* 가맹안내 - 공통 */
+.franchise_mod_cont {height:360px; margin-bottom:50px; padding:50px 30px; background-position:center; background-size:cover; text-align:center;}
+.franchise_mod_cont .tit {margin-bottom:20px; font-family:"Nanum Square"; font-size:40px; line-height:1.4em; color:#fff;} 
+.franchise_mod_cont .txt {font-family:"Nanum Square"; font-size:16px; line-height:1.75em; color:#fff;}
 
+@media (max-width:1024px) {
+    .franchise_mod_cont {height:auto; margin-bottom:30px; padding:30px;}
+    .franchise_mod_cont .tit {margin-bottom:15px; font-size:24px;}
+    .franchise_mod_cont .txt {font-size:14px;}
+    .franchise_mod_cont .txt br {display:none;}
+}
 
-
-
-
-
-
-
-
+@media (max-width:599px) {
+    .franchise_mod_cont {padding:30px 15px;}
+    .franchise_mod_cont .tit {font-size:18px;}
+    .franchise_mod_cont .tit br {display:none;}
+    .franchise_mod_cont .txt {font-size:12px; line-height:1.6em;}
+}
 
 /* 가맹안내 - 개원 및 운영지원 */
-.franchise_tab3 { padding-bottom: 70px;}
+/* .franchise_tab3 { padding-bottom: 70px;}
 .franchise_tab3 ul { overflow: hidden; margin: -20px; }
 .franchise_tab3 ul li {float: left; width: 50%; padding: 20px; }
 .franchise_tab3 ul li:nth-child(9) { clear: both;}
@@ -499,101 +508,99 @@
 @media (max-width:599px) { 
 .franchise_tab3 ul li .tab_text .tab_list_tit { font-size: 18px; }
 .franchise_tab3 ul li .tab_text p {font-size: 12px; line-height: 20px; } 
-}
-/* 가맹안내 - 가맹안내 */
-.franchise_mod_cont {height:360px; margin-bottom:50px;padding:50px 20px; background-image:url(../img/bg/bg_franchise_infor_01.jpg); background-size:cover; text-align:center;}
-.franchise_mod_cont .nfor_cont_tit {margin-bottom:20px;font-size:40px; line-height:55px; color:#fff;}
-.franchise_mod_cont p {font-size:16px; line-height:28px; color:#fff;}
-.franchise_infor .franchise_infor_cont2 {margin-bottom:50px;}
-.franchise_infor .franchise_infor_cont2:after {display:table; clear:both; content:"";}
-.franchise_infor .franchise_infor_cont2 .cont2_img {float:left; width:445px; height:446px; margin-right:60px;background-image:url(../img/bg/bg_franchise_infor_02.png); background-repeat:no-repeat; background-size:445px 446px; background-position: center;}
-.franchise_infor .franchise_infor_cont2 .cont2_text {overflow:hidden;}
-.franchise_infor .franchise_infor_cont2 .cont2_text p {margin-bottom:30px;font-size:15px; line-height:28px; color:#333;}
-.franchise_infor .franchise_infor_cont2 .cont2_text p:last-child {margin-bottom:0;}
-.franchise_infor .diagram_view .diagram_text {margin-bottom:50px;text-align:center;}
-.franchise_infor .diagram_view .diagram_text .diagram_tit {margin-bottom:20px;font-family:"Nanum Square"; font-size:40px; font-weight:700; line-height:54px; color:#008398;}
-.franchise_infor .diagram_view .diagram_text p {font-size:16px; line-height:28px; color:#333;}
-@media (max-width:1024px) {
-.franchise_mod_cont {height:auto;}
-.franchise_mod_cont .nfor_cont_tit {font-size:32px;}
-.franchise_mod_cont p {font-size:14px;}
-.franchise_mod_cont p br {display:none;}
-.franchise_infor .franchise_infor_cont2 .cont2_img {float:none; margin:0 auto; margin-bottom:30px;}
-.franchise_infor .franchise_infor_cont2 .cont2_text p {font-size:14px;}
-.franchise_infor .diagram_view .diagram_text .diagram_tit {font-size:32px;}
-.franchise_infor .diagram_view .diagram_text p {font-size:14px;}
-.franchise_infor .diagram_view .diagram_text p br {display:none;}
-}
-@media (max-width:599px) {
-.franchise_infor .franchise_mod_cont {padding:30px 20px;}
-.franchise_mod_cont .nfor_cont_tit {font-size:28px; line-height:35px;}
-.franchise_mod_cont p {font-size:12px; line-height:24px;}
-.franchise_infor .franchise_infor_cont2 .cont2_img {width:223px; height:223px; background-size:223px 223px;}
-.franchise_infor .franchise_infor_cont2 .cont2_text p {margin-bottom:15px;font-size:12px; line-height:24px;}
-.franchise_infor .diagram_view .diagram_text {margin-bottom:30px;}
-.franchise_infor .diagram_view .diagram_text .diagram_tit {font-size:28px;}
-.franchise_infor .diagram_view .diagram_text p {font-size:12px; line-height:24px;}
-}
+} */
 
-/* 가맹안내 - 가맹사업 브랜드 */
-.franchise_mod_cont.franchise_brand { background-image: url(../img/bg/bg_franchise_brand_01.jpg);}
-.franchise_brand_cont {background-color: #fff; padding: 30px; max-width: 900px; margin: -154px auto 70px;}
-.franchise_brand_cont ul li {margin-bottom:65px;}
-.franchise_brand_cont ul li:last-child { margin-bottom: 0;}
-.franchise_brand_cont ul li .brand_logo { float: left; background-repeat: no-repeat; width: 215px; height: 98px; background-size: 215px 98px; margin-right: 50px; margin-top: 30px;}
-.franchise_brand_cont ul li:nth-child(1) .brand_logo {background-image: url(../img/bg/bg_franchise_brand_02.jpg); }
-.franchise_brand_cont ul li:nth-child(2) .brand_logo {background-image: url(../img/bg/bg_franchise_brand_03.jpg); }
-.franchise_brand_cont ul li .brand_text { overflow: hidden; position: relative; padding-left: 50px;}
-.franchise_brand_cont ul li .brand_text:before { content: ""; position: absolute; left: 0; top: 0; width: 2px; height: 100%; border-left: 2px dotted #bebebe; }
-.brand_text .brand_tit { font-size: 24px; color: #222; line-height: 54px; font-family:"Nanum Square"; font-weight: 700; }
-.brand_text .txt {font-size: 15px; line-height: 28px; color: #555; margin-bottom: 15px;}
-.brand_text .txt:last-child { margin-bottom: 0;}
-.brand_link_cont { position: relative; padding-top: 30px; margin-bottom: 70px; overflow: hidden;}
-.brand_link_cont:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 1px; background-color: #dcdcdc;}
-.brand_link_cont .brand_link_text { float: left; position: relative; padding-left: 80px;}
-.brand_link_cont .brand_link_text::before { content:""; position: absolute; left: 0; top: 50%; background-image: url(../img/bg/bg_franchise_brand_04.png); background-repeat: no-repeat; width: 66px; height: 65px; background-size: 66px 65px; margin-top: -33px;} 
-.brand_link_cont .brand_link_text .link_tit { font-size: 24px; line-height: 54px; color: #222; font-family:"Nanum Square"; font-weight: 700;}
-.brand_link_cont .brand_link_text p {font-size: 16px; line-height: 21px; color: #555;font-family:"Nanum Square";} 
-.brand_link_cont .brand_link_text .tel { font-size: 30px; color: #555; line-height: 21px; margin-left: 15px; font-family:"OpenSans"}
-.brand_link_cont .brand_link_text .color_blue { color: #00aeba; font-family:"OpenSans"; font-weight: 700;}
-.brand_link_cont .brand_link_btn {float:right; margin-top: 10px; }
-.brand_link_cont .brand_link_btn .bottom_visual { margin-top: 0; margin-bottom: 0;}
-.brand_link_cont .brand_link_btn .bottom_visual .link { width: 253px; padding: 10px 20px;}
+/* 가맹안내 - 올림피아드 가맹안내 */
+.franchise_info .franchise_mod_cont {background-image:url(../img/bg/bg_subvisual_franchise_info.jpg);}
+.franchise_info .info_wrap {margin-bottom:50px;}
+.franchise_info .info_wrap:after {display:table; clear:both; content:"";}
+.franchise_info .info_wrap .img {float:left; width:50%; padding-right:55px;}
+.franchise_info .info_wrap .txt {overflow:hidden; width:50%; margin-top:-6px;}
+.franchise_info .info_wrap .txt p {margin-bottom:15px; font-size:15px; line-height:1.85em; color:#333;}
+.franchise_info .info_wrap .txt p:last-child {margin-bottom:0;}
+.franchise_info .diagram_view .diagram_txt {margin-bottom:50px; text-align:center;}
+.franchise_info .diagram_view .diagram_txt .tit {margin-bottom:12px; font-family:"Nanum Square"; font-size:40px; font-weight:700; line-height:1.35em; color:#008398;}
+.franchise_info .diagram_view .diagram_txt .txt {font-family:"Nanum Square"; font-size:16px; line-height:1.75em; color:#333;}
+.franchise_info .diagram {padding-top:57%; background-image:url(../img/bg/bg_franchise_info_diagram.png);}
+.franchise_info .counsel_wrap {display:none;}
 
 @media (max-width:1024px) {
-.franchise_brand_cont { margin: 0 auto 50px; padding: 15px; }
-.franchise_brand_cont ul li .brand_logo { margin-right: 20px; width: 108px; height: 49px; background-size:108px 49px;}    
-.franchise_brand_cont ul li .brand_text {padding-left: 20px; }   
-.brand_text .brand_tit {font-size: 20px; }
-.brand_text .txt { font-size: 14px; line-height: 20px;}
-/* .brand_link_cont .brand_link_text::before {background-size: 33px 33px; width: 33px; height: 33px; } */
-.brand_link_cont .brand_link_text { float: none;}
-.brand_link_cont .brand_link_btn { float: none; margin-top: 20px; margin-left: 80px;}
-.brand_link_cont .brand_link_text .link_tit { font-size: 20px; }
-.brand_link_cont .brand_link_text p { font-size: 14px; } 
-.brand_link_cont .brand_link_text .tel { font-size: 26px;}     
+    .franchise_info .info_wrap {margin-bottom:30px;}
+    .franchise_info .info_wrap .img {float:none; width:100%; margin-bottom:30px; padding:0; text-align:center;}
+    .franchise_info .info_wrap .img img {height:223px;}
+	.franchise_info .info_wrap .txt {width:100%; margin:0;}
+    .franchise_info .info_wrap .txt p {font-size:14px; line-height:1.8em;}
+    .franchise_info .diagram_view .diagram_txt {margin-bottom:30px;}
+	.franchise_info .diagram_view .diagram_txt .tit {font-size:24px;}
+	.franchise_info .diagram_view .diagram_txt .txt {font-size:14px;}
+    .franchise_info .diagram_view .diagram_txt .txt br {display:none;}
+}
+
+@media (max-width:599px) {
+    .franchise_info .info_wrap .txt p {font-size:12px; line-height:1.6em;}
+    .franchise_info .diagram_view {margin:0;}
+	.franchise_info .diagram_view .diagram_txt {margin-bottom:30px;}
+    .franchise_info .diagram_view .diagram_txt .tit {font-size:18px;}
+    .franchise_info .diagram_view .diagram_txt .txt {font-size:12px; line-height:1.6em;}
+    .franchise_info .counsel_wrap {display:block;}
+    .franchise_info .counsel {padding-top:30px;}
+    .franchise_info .counsel .txt_wrap {position:relative; padding-top:80px; font-family:"Nanum Square"; text-align:center;}
+    .franchise_info .counsel .txt_wrap:before {position:absolute; top:0; left:50%; width:66px; height:65px; background:red; transform:translateX(-50%); content:"";}
+    .franchise_info .counsel .txt_wrap .tit {font-family:inherit; font-size:18px; font-weight:700; line-height:1.5em; color:#222;}
+    .franchise_info .counsel .txt_wrap .txt {margin-top:15px; font-family:inherit; font-size:14px; line-height:1.5em; color:#555;}
+    .franchise_info .counsel .txt_wrap .tel {display:block; font-family:inherit; font-size:18px; line-height:1.5em;}
+    .franchise_info .counsel .txt_wrap .tel a {font-weight:700; color:#00aeba;}
+}
+
+/* 가맹안내 - 가맹사업 브랜드 소개 */
+.franchise_brand .franchise_mod_cont {background-image:url(../img/bg/bg_subvisual_franchise_brand.jpg);}
+.franchise_brand .info_wrap {width:calc(100% - 100px); margin:0 auto; margin-top:-155px; padding:40px 45px 0; background:#fff;}
+.franchise_brand .info_wrap ul li {margin-bottom:65px;}
+.franchise_brand .info_wrap ul li .logo {float:left; width:260px; padding-top:30px;}
+.franchise_brand .info_wrap ul li.utom .logo img {height:98px;}
+.franchise_brand .info_wrap ul li.reverse .logo img {height:89px;}
+.franchise_brand .info_wrap ul li .info_txt {overflow:hidden; position:relative; margin:-5px 0; padding-left:50px; border-left:2px dotted #bebebe;}
+.franchise_brand .info_wrap ul li .info_txt .tit {margin-bottom:5px; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.5em; color:#222;}
+.franchise_brand .info_wrap ul li .info_txt .txt {margin-bottom:15px; font-size:15px; line-height:1.85em; color:#555;}
+.franchise_brand .info_wrap ul li .info_txt .txt:last-child {margin-bottom:0;}
+.franchise_brand .counsel {overflow:hidden; position:relative; padding-top:40px; border-top:1px solid #dcdcdc;}
+.franchise_brand .counsel .txt_wrap {float:left; position:relative; padding-left:85px; font-family:"Nanum Square";}
+.franchise_brand .counsel .txt_wrap:before {position:absolute; top:0; left:0; width:66px; height:65px; background:red; content:"";} 
+.franchise_brand .counsel .txt_wrap .tit {margin-top:-6px; font-family:inherit; font-size:24px; font-weight:700; line-height:1.5em; color:#222;}
+.franchise_brand .counsel .txt_wrap .txt {margin-top:10px; font-family:inherit; font-size:16px; line-height:20px; color:#555;}
+.franchise_brand .counsel .txt_wrap .tel {margin-left:15px; font-family:inherit; font-size:30px; line-height:20px;}
+.franchise_brand .counsel .txt_wrap .tel a {font-weight:700; color:#00aeba;}
+.franchise_brand .counsel .btn_wrap {float:right;}
+.franchise_brand .counsel .btn_wrap a {width:250px; border:0; background:#00aeba; font-size:18px; font-weight:700; line-height:70px; color:#fff;}
+.franchise_brand .counsel .btn_wrap .link span:before,.franchise_brand .counsel .btn_wrap .link span:after {right:20px;}
+
+@media (max-width:1024px) {
+    .franchise_brand .info_wrap {width:100%; margin:0 auto 30px; padding:0;}
+    .franchise_brand .info_wrap ul li {margin-bottom:30px;}
+    .franchise_brand .info_wrap ul li .logo {padding:0; width:250px;}
+    .franchise_brand .info_wrap ul li .info_txt {padding-left:30px;}   
+    .franchise_brand .info_wrap ul li .info_txt .tit {font-size:18px; line-height:28px; margin-bottom:15px;}
+    .franchise_brand .info_wrap ul li .info_txt .txt {font-size:14px;}
+    .franchise_brand .counsel {padding-top:30px;}
+    .franchise_brand .counsel .txt_wrap {float:none;}
+    .franchise_brand .counsel .btn_wrap {float:none; margin-top:30px;}
+    .franchise_brand .counsel .btn_wrap a {width:220px; font-size:16px; line-height:50px;}
+    .franchise_brand .counsel .txt_wrap .tit {font-size:18px;}
+    .franchise_brand .counsel .txt_wrap .txt {margin-top:5px;}
+    .franchise_brand .counsel .txt_wrap .tel {font-size:24px;}
 }
 @media (max-width:599px) {
-.franchise_brand_cont ul li .brand_logo { float: none; margin: 0 auto 20px; }
-.franchise_brand_cont ul li .brand_text { padding-left: 0; padding-top: 20px;}
-.franchise_brand_cont ul li .brand_text:before { width: 100%; height: 2px; border-top: 2px dotted #bebebe;  }
-.brand_text .brand_tit {font-size: 18px; }
-.brand_text .txt { font-size: 12px;}
-.brand_link_cont .brand_link_text .link_tit { font-size: 18px; line-height: 30px; }
-.brand_link_cont .brand_link_text p { font-size: 12px; line-height: 30px; } 
-.brand_link_cont .brand_link_text .tel { font-size: 22px; display:block; margin-top: 15px; margin-left: 0; line-height: 15px; }   
-.brand_link_cont .brand_link_btn .txt_wrap { text-align: left;}
+    .franchise_brand .info_wrap ul li .logo {text-align:center; float:none; width:auto; margin:0 auto 15px; line-height:0;}
+    .franchise_brand .info_wrap ul li .info_txt {padding-top:15px; padding-left:0; border:0; border-top:2px dotted #dcdcdc; text-align:center;}
+    .franchise_brand .info_wrap ul li .info_txt .txt {font-size:12px; line-height:1.6em;}
+    .franchise_brand .counsel .txt_wrap {padding:0; padding-top:80px; text-align:center;}
+    .franchise_brand .counsel .txt_wrap:before {left:50%; transform:translateX(-50%);}
+    .franchise_brand .counsel .txt_wrap .tit {margin:0;}
+    .franchise_brand .counsel .txt_wrap .txt {margin-top:15px; font-size:14px; line-height:1.5em;}
+    .franchise_brand .counsel .txt_wrap .tel {display:block; margin:0; line-height:1.5em; font-size:18px;}
+    .franchise_brand .counsel .btn_wrap {text-align:center;}
+    .franchise_brand .counsel .btn_wrap a {font-size:14px; line-height:40px;}
 }
-
-
-
-
-
-
-
-
-
-
 
 /* 가맹안내 - 가맹상담 신청 */
 .franchise_input .form_wrap .tit {margin-bottom:0; font-size:30px;}

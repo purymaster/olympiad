@@ -24,8 +24,8 @@
 .ie9 a {display:inline-block; height:2.5em; margin-top:30px; padding:0 1em; border-radius:1.25em; background:#00aeba; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#fff; -webkit-border-radius:1.25em; -moz-border-radius:1.25em; -ms-border-radius:1.25em; -o-border-radius:1.25em;}
 
 /* 버튼 */
-.btn_wrap a,.btn_wrap button {display:inline-block; box-sizing:inherit; margin:0; padding:0 20px; border:1px solid #333; background:none; font-size:14px; line-height:46px; color:#333; text-align:left; text-decoration:none; text-transform:uppercase;}
-.btn_wrap.bg_fill a,.btn_wrap.bg_fill button {position:relative; z-index:0; text-align:left;}
+.btn_wrap a,.btn_wrap button {display:inline-block; position:relative; box-sizing:inherit; margin:0; padding:0 20px; border:1px solid #333; background:none; font-size:14px; line-height:46px; color:#333; text-align:left; text-decoration:none; text-transform:uppercase;}
+.btn_wrap.bg_fill a,.btn_wrap.bg_fill button {z-index:0; text-align:left;}
 .btn_wrap.bg_fill a:after,.btn_wrap.bg_fill button:after {position:absolute; top:0; right:0; bottom:0; left:0; z-index:-1; transform:scaleX(0); transform-origin:right center; transition:transform 0.2s; content:"";}
 .btn_wrap.bg_fill a:hover:after,.btn_wrap.bg_fill button:hover:after {transform:scaleX(1); transform-origin:left center;}
 .btn_wrap .link span:before,.btn_wrap .link span:after {position:absolute; top:50%; right:12px; height:1px; background:#fff; content:"";}

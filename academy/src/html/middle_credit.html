@@ -1,0 +1,62 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap middle_credit">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "중등수학",
+            "subtitle" : "초/중등부",
+            "context" : {
+            "depth1_current" : "초/중등부",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth2_current" : "중등수학",
+            "depth2_sublist" : ["초등수학","중등수학","초/중 캠퍼스"],
+            "depth3_current" : "내신대비",
+            "depth3_sublist" : ["수업특징","교재구성","레벨구성 및 표준시간표", "내신대비", "특목고입시"]
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        <p class="main_tit">
+                            내신이 중요해지고 있는 추세에 맞춰<br>
+                            <strong>내신관리를 빈틈없이 지도합니다.</strong>
+                        </p>
+                        <p class="txt">
+                            올림피아드의 완벽한 내신 대비는 최고의 결과를 약속합니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="sub_cont_wrap">
+                        <div class="grid_container inner">
+                            <div class="sub_tit_wrap">
+                                <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">수학 Q팡</h3>
+                                <p data-animation="fadeInUp" data-delay="2" class="txt_info">
+                                    Q팡은 올림피아드교육에서 수학과 게임을 접목하여 개발한 수학 내신 대비 프로그램입니다.<br>
+                                    다소 지루할 수 있는 내신대비 문제풀이를 <strong>게임형식으로 재미있게</strong> 공부할 수 있도록 도와줍니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

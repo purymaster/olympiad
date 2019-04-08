@@ -128,13 +128,21 @@
 }
 
 /* 서브 페이지 내용 탭메뉴 */
-.sub_lower_wrap .tab_menu {display:table; width:100%;}
+.sub_lower_wrap .tab_menu {display:table; width:100%; table-layout:fixed;}
 .sub_lower_wrap .tab_menu ul {display:table-row;}
 .sub_lower_wrap .tab_menu li {display:table-cell;}
-.sub_lower_wrap .tab_menu button,.sub_lower_wrap .tab_menu a {display:inline-block; position:relative; width:100%; border:1px solid #ddd; border-right:0; background:#f8f8f8; font-size:18px; line-height:48px; color:#333; text-align:center;}
+.sub_lower_wrap .tab_menu button,.sub_lower_wrap .tab_menu a {display:inline-block; position:relative; width:100%; border:1px solid #ddd; border-right:0; background:#f8f8f8; font-family:"Nanum Square"; font-size:18px; line-height:48px; color:#333; text-align:center;}
 .sub_lower_wrap .tab_menu li.on button,.sub_lower_wrap .tab_menu li.on a {border-bottom:0; background:#fff; font-weight:700; color:#008398;}
 .sub_lower_wrap .tab_menu li.on button:after,.sub_lower_wrap .tab_menu li.on a:after {position:absolute; top:-1px; left:-1px; width:calc(100% + 1px); height:3px; background:#008398; content:"";}
 .sub_lower_wrap .tab_menu li:last-child button,.sub_lower_wrap .tab_menu li:last-child a {border-right:1px solid #ddd;}
+
+@media screen and (max-width:1024px) {
+    .sub_lower_wrap .tab_menu button,.sub_lower_wrap .tab_menu a {font-size:16px; line-height:38px;}
+}
+
+@media screen and (max-width:599px) {
+    .sub_lower_wrap .tab_menu button,.sub_lower_wrap .tab_menu a {font-size:12px; line-height:28px;}
+}
 
 /* 서브 헤더 없는 페이지 공통 */
 .no_sub_header .sub_content {margin-top:130px;}
@@ -212,7 +220,6 @@
 
 @media screen and (max-width:1024px) {
     .history .sub_lower_wrap {margin-bottom:0; padding-bottom:0; background:none;}
-    .history .history_tab button {font-size:16px; line-height:38px;}
     .history .history_wrap .tit {background-size:90px; width:150px; height:150px; border-width:5px;}
     .history .history_list {padding-left:180px;}
     .history .history_list dd {font-size:14px;}
@@ -220,7 +227,6 @@
 }
 
 @media screen and (max-width:599px) {
-    .history .history_tab button {font-size:12px; line-height:28px;}
     .history .history_wrap {margin-top:30px;}
     .history .history_wrap .tit {display:block; float:none; width:100%; height:auto; border-width:3px; background:none; font-size:16px; font-weight:700; font-family:"Nanum Square"; line-height:2em; text-align:center; text-indent:0;}
     .history .history_list {padding:0;}
@@ -428,13 +434,151 @@
 }
 
 /* 초,중등수학 - 교재구성(공통) */
-.book_info {}
+.book_info .book_wrap {text-align:center;}
+.book_info .book_list {display:inline-block; position:relative; text-align:center; line-height:0;}
+.book_info .book_list:after {position:absolute; bottom:38px; left:0; width:100%; height:1px; background:#ddd; content:"";}
+.book_info .book_list ul {margin:0 -5px; font-size:0;}
+.book_info .book_list li {display:inline-block; padding:0 5px;}
+.book_info .book_list li img {width:100%; border:1px solid #ddd;}
+.book_info .book_list .book4 li {width:25%;}
+.book_info .book_list .book6 li {width:16.66%;}
+.book_info .book_list .book8 li {width:12.5%;}
+.book_info .book_list .txt {display:block; position:relative; padding-top:22px; font-family:"Nanum Square"; font-size:18px; line-height:34px; text-align:center;}
+.book_info .book_list .txt strong {font-family:inherit; font-weight:700; text-transform:capitalize;}
+.book_info .book_list .txt:after {position:absolute; top:12px; left:50%; z-index:1; width:10px; height:10px; margin-left:-5px; background:#1c9eb3; content:"";}
+.book_info .book_list.combine ul {display:inline-block;}
+.book_info .book_list.combine li {width:auto !important;}
+.book_info .book_list.combine li img {width:auto;}
+.book_info .pdf_viewer {margin-top:45px}
+
+@media screen and (max-width:1024px) {
+    .book_info .book_list:after {display:none;}
+    .book_info .book_list .txt {font-size:16px; line-height:1.4em; padding-top:15px;}
+    .book_info .book_list .txt:after {display:none;}
+    .book_info .book_list.combine li {width:25% !important;}
+}
+
+@media screen and (max-width:599px) {
+    .book_info .book_list .txt {font-size:14px;}
+    .book_info .book_list li,.book_info .book_list.combine li {width:50% !important; margin-bottom:15px;}
+    .book_info .book_list li img {width:100% !important;}
+}
 
 /* 초등수학 - 교재구성 */
 .book_info.junior {}
 
 /* 중등수학 - 교재구성 */
-.book_info.middle {}
+.book_info.middle .point_list ul {margin:0 -3px; font-size:0; text-align:center;}
+.book_info.middle .point_list ul li {display:inline-block; width:25%; padding:0 3px;}
+.book_info.middle .point_list ul li .list_box {display:table; width:100%; height:112px; padding:8px; border:3px dotted #ccc; border-radius:56px; vertical-align:middle;}
+.book_info.middle .point_list ul li .txt_wrap {display:table-cell; border-radius:45px; background:rgba(255,255,255,0.65); font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.4em; color:#008398; vertical-align:middle;}
+.book_info.middle .sub_upper_wrap .point_list {margin-top:25px;}
+.book_info.middle .sub_lower_wrap .point_list ul li .txt_wrap {background:#eff5f6;}
+
+.book_info.middle .program_info {margin-top:35px;}
+.book_info.middle .program_tit {font-size:20px; line-height:1.5em; font-family:"Nanum Sqaure"; font-weight:700; color:#333;}
+
+.book_info.middle dl {margin-top:15px; padding-bottom:15px;}
+.book_info.middle dl > div {overflow:hidden; position:relative; margin-bottom:10px;}
+.book_info.middle dl > div:last-child {margin:0;}
+.book_info.middle dl .subject {background:#e6eff1;}
+.book_info.middle dl .student {background:#e6f1e8;}
+.book_info.middle dl .school {background:#f1f0e6;}
+.book_info.middle dl .last {background:#ededed;}
+.book_info.middle dl > div:after {position:absolute; top:0; left:160px; width:20px; height:100%; background:#fff; content:"";}
+.book_info.middle dt {float:left; width:180px; padding:25px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em; color:#333;}
+.book_info.middle dd {float:left; position:relative; width:calc(100% - 180px); padding:25px 0; background:#fff; border-top:3px solid #333; border-bottom:1px solid #ddd;}
+.book_info.middle dd .program {overflow:hidden;}
+.book_info.middle dd .program > li {float:left; position:relative; width:50%; padding:0 20px;}
+.book_info.middle dd .program > li:only-child {width:100%;}
+.book_info.middle dd .program > li:nth-child(even) {padding-left:40px;}
+.book_info.middle dd .program > li:nth-child(even):before {position:absolute; top:3px; left:0; width:1px; height:150px; background:#ddd; content:"";}
+.book_info.middle dd .program > li .tit {display:block; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.3em; text-transform:uppercase;}
+.book_info.middle .subject .program > li .tit {color:#277b8e;}
+.book_info.middle .student .program > li .tit {color:#2d803c;}
+.book_info.middle .school .program > li .tit {color:#7c752b;}
+.book_info.middle .last .program > li .tit {color:#333;}
+.book_info.middle dd .program > li .tit strong {display:block; font-family:inherit; font-weight:400; font-style:italic; text-decoration:underline;}
+.book_info.middle dd .program > li .sub_txt {margin-top:15px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.6em;}
+.book_info.middle dd .program > li .txt_list {margin-top:5px;}
+.book_info.middle dd .program > li .txt_list li {font-size:16px; line-height:1.5em; padding:0.1em 0 0.1em 0.75em;}
+.book_info.middle dd .program > li .txt_list li:before {top:0.7em;}
+
+.book_info.middle .manage {overflow:hidden; position:relative; margin-top:15px;}
+.book_info.middle .manage:after {position:absolute; top:0; left:50%; width:1px; height:100%; background:#ddd; content:"";}
+.book_info.middle .manage > li {overflow:hidden; float:left; position:relative; width:50%;}
+.book_info.middle .manage > li:nth-child(even) {text-align:right;}
+.book_info.middle .manage > li:nth-child(-n+2) {margin-bottom:80px;}
+.book_info.middle .manage > li img {width:150px;}
+.book_info.middle .manage > li:nth-child(odd) img {float:left;}
+.book_info.middle .manage > li:nth-child(even) img {float:right;}
+.book_info.middle .manage .txt_wrap {float:left; position:absolute; width:calc(100% - 150px); padding:0 20px;}
+.book_info.middle .manage > li:nth-child(odd) .txt_wrap {top:0; right:0;}
+.book_info.middle .manage > li:nth-child(even) .txt_wrap {bottom:0; left:0;}
+.book_info.middle .manage > li:nth-child(even) .txt_wrap .txt_list {text-align:right !important;}
+.book_info.middle .manage > li:nth-child(even) .txt_wrap .txt_list li {display:inline-block; word-break:break-all;}
+.book_info.middle .manage .txt_wrap strong {font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:2em;}
+.book_info.middle .manage .txt_wrap .txt_list li {padding:0.1em 0 0.1em 0.75em; font-size:16px; line-height:1.5em;}
+.book_info.middle .manage .txt_wrap .txt_list li:before {top:0.7em;}
+
+@media screen and (max-width:1024px) {
+    .book_info.middle .point_list ul li .txt_wrap {font-size:14px;}
+    .book_info.middle .point_list ul li .list_box {padding:5px; border-width:2px;}
+    .book_info.middle .book_list .txt {font-size:12px;}
+
+    .book_info.middle .program_info {margin-top:30px;}
+    .book_info.middle .program_tit {text-align:center; font-size:18px;}
+    .book_info.middle dl > div {margin-bottom:30px;}
+    .book_info.middle dl > div:after {display:none;}
+    .book_info.middle dt {width:110px; font-size:16px; padding:15px;}
+    .book_info.middle dd {width:calc(100% - 110px); padding:15px 0; border-top:1px solid #ddd;}
+    .book_info.middle dd .program > li {padding:0 15px;}
+    .book_info.middle dd .program > li:nth-child(even) {padding-left:15px;}
+    .book_info.middle dd .program > li .tit {font-size:20px;}
+    .book_info.middle dd .program > li .sub_txt {font-size:16px;}
+    .book_info.middle dd .program > li .txt_list li {font-size:14px;}
+
+    .book_info.middle .manage:after {display:none;}
+    .book_info.middle .manage > li {min-height:130px;}
+    .book_info.middle .manage > li img {width:75px; float:left !important;}
+    .book_info.middle .manage .txt_wrap {float:none; position:static; padding-right:15px; padding-left:90px; width:100%; text-align:left;}
+    .book_info.middle .manage .txt_wrap .txt_list li {font-size:14px;}
+    .book_info.middle .manage > li:nth-child(even) .txt_wrap .txt_list li {text-align:left; display:block; word-break:keep-all;}
+    .book_info.middle .manage > li:nth-child(-n+2) {margin-bottom:30px;}
+    .book_info.middle .manage .txt_wrap strong {font-size:16px;}
+}
+
+@media screen and (max-width:599px) {
+    .book_info.middle .point_list ul li {width:100%; margin-bottom:15px;}
+    .book_info.middle .point_list ul li:last-child {margin:0;}
+    .book_info.middle .point_list ul li .list_box {height:45px;}
+    .book_info.middle .point_list ul li .txt_wrap br {display:none;}
+    .book_info.middle .book_list .txt {font-size:14px;}
+
+    .book_info.middle .program_info {padding-top:15px; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+    .book_info.middle dl > div {margin-bottom:15px; background:none !important; text-align:center;}
+    .book_info.middle dt {display:inline-block; float:none; width:auto; padding:10px 15px; border-radius:22px; font-size:14px; text-align:center;}
+    .book_info.middle .subject dt {background:#e6eff1;}
+    .book_info.middle .student dt {background:#e6f1e8;}
+    .book_info.middle .school dt {background:#f1f0e6;}
+    .book_info.middle .last dt {background:#ededed;}
+    .book_info.middle dt br {display:none;}
+    .book_info.middle dd {float:none; width:100%; padding-top:0; border:0; background:none;}
+    .book_info.middle dd .program > li {float:none; width:100%; padding:15px; text-align:center;}
+    .book_info.middle dd .program > li:nth-child(even):before {display:none;}
+    .book_info.middle dd .program > li .tit {font-size:16px;}
+    .book_info.middle dd .program > li .sub_txt {font-size:14px;}
+    .book_info.middle dd .program > li .txt_list li {padding:0; text-align:center;}
+    .book_info.middle dd .program > li .txt_list li:before {display:none;}
+
+    .book_info.middle .manage > li {width:100%; min-height:0; margin-bottom:30px !important; text-align:center !important;}
+    .book_info.middle .manage > li img {float:none !important;}
+    .book_info.middle .manage .txt_wrap {padding:0;}
+    .book_info.middle .manage .txt_wrap strong {display:block; line-height:1.6em; text-align:center;}
+    .book_info.middle .manage .txt_wrap .txt_list {margin-top:5px;}
+    .book_info.middle .manage .txt_wrap .txt_list li {text-align:center !important; padding:0;}
+    .book_info.middle .manage .txt_wrap .txt_list li:before {display:none;}
+}
 
 /* 초등수학 - 레벨구성 */
 .junior_level .level_link_bx {max-width:980px; margin:0 auto;}
@@ -559,6 +703,9 @@
     .middle_level .level_schedule_mod .top_text .top_txt {font-size:12px; line-height:1.6em;}
     .middle_level .level_schedule_mod .bottom_text .bottom_txt {font-size:16px;}
 }
+
+/* 중등수학 - 내신대비 */
+.middle_credit {}
 
 /* 캠퍼스 위치안내(공통) */
 .campus_map .map_wrap {position:relative; height:460px; margin-top:-10px; background:#eee;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>올림피아드</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link rel="stylesheet" href="map_asset/coding.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="map_asset/map.js"></script>
+    <script>
+        $(function () {
+            var param = 'url',
+                url_data = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
+
+            url_data == null ? alert('url 파라미터 값을 받아오지 못하였습니다. 파라미터 값을 확인해주시길 바랍니다.') : $('#canvas').attr('src', url_data[1] || 0);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="viewer">
+        <p class="warning">
+            모바일 테스트용 뷰어입니다.<br>
+            iframe의 스크롤바로 인해 실제 디바이스 화면과 다를게 보일 수 있으니<br>
+            정식 화면 검수는 반드시 실제 모바일 디바이스로 해주시길 바랍니다.
+        </p>
+        <div class="opt_list">
+            <ul>
+                <li class="mobile"><button>모바일 폰 사이즈 보기</button></li>
+                <li class="tablet"><button>태블릿 사이즈 보기</button></li>
+            </ul>
+        </div>
+        <div class="canvas_wrap">
+            <iframe src="null" frameborder="0" id="canvas" scrolling-x="no"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

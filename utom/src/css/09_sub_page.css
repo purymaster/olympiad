@@ -389,7 +389,7 @@
 .strategy .qec_mod {padding:20px 0 30px; border-top:3px solid #333;}
 .strategy .qec_mod .qec_tit {margin-bottom:25px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#222;}
 .strategy .qec_mod strong {font-family:inherit; color:#008398;}
-.strategy .qec_mod .qec_p {font-size:16px; line-height:1.6em; color:#222;}
+.strategy .qec_mod .qec_p {font-size:15px; line-height:2em; color:#222;}
 .strategy .info_txt .img {width:100%; height:0; margin-top:70px; padding-top:80%; background-repeat:no-repeat; background-position:center; background-size:contain;}
 .strategy .info_txt .qec_img {background-image:url(../img/bg/bg_question_expression_class_01.png);}
 .strategy .info_txt .tp_img {background-image:url(../img/bg/bg_teaching_peers_01.png);}

@@ -3,67 +3,23 @@
 7. 모달
 =========================================================*/
 
-.modal_wrap {position:fixed; top:0; right:0; bottom:0; left:0; z-index:100; background:rgba(51,51,51,0.6);}
-.modal {position:absolute; top:50%; left:50%; max-width:780px; max-height:calc(100vh - 60px); background:#fff; transform:translate(-50%, -50%); width:calc(100% - 60px);}
-.modal_tit {padding-left:30px; background:#efefef;}
-.modal_tit .tit {display:block; overflow:hidden; position:relative; padding:0 50px 0 10px; font-size:14px; font-weight:700; line-height:40px; color:#333; text-overflow:ellipsis; white-space:nowrap;}
-.modal_tit .tit:before {position:absolute; top:50%; left:0; width:4px; height:4px; margin-top:-2px; background:#008398; content:"";}
-.modal_content {overflow-y:auto; max-height:calc(100vh - 100px); padding:40px 30px;}
-.modal .close {position:absolute; top:13px; right:30px; width:14px; height:14px; text-indent:-9999px;}
-.modal .close:before,.modal .close:after {position:absolute; top:50%; left:50%; width:18px; height:2px; margin-top:-1px; margin-left:-9px; background:#333; transform:rotate(-45deg); transition:all 0.5s; content:"";}
-.modal .close:after {transform:rotate(45deg);}
-.modal .close:hover:before,.modal .close:hover:after {background:#008398;}
+.modal_wrap {visibility:hidden; position:fixed; top:0; right:0; bottom:0; left:0; z-index:100; background:rgba(51,51,51,0.6); transition:all 0.5s; opacity:0;}
+.modal_wrap.on {visibility:visible; opacity:1;}
+.modal {position:absolute; top:50%; left:50%; width:calc(100% - 60px); max-width:360px; max-height:calc(100vh - 60px); background:#fff; transform:translate(-50%, -50%);}
+.modal.confirm {padding:30px; border:1px solid #ddd; text-align:center;}
+.modal.confirm .msg {font-size:16px; font-weight:700; line-height:1.75em; color:#333;}
+.modal.confirm .sub_txt {font-size:14px; line-height:1.7em; color:#333;}
+.modal.confirm input[type="password"] {margin-top:15px;}
+.modal.confirm .warning {margin-top:5px; font-size:12px; color:#00687f;}
+.modal.confirm .btn_wrap {margin-top:15px; font-size:0;}
+.modal.confirm .btn_wrap button,.modal.confirm .btn_wrap a {display:inline-block; min-width:100px; margin:0 2px; padding:0 10px; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:40px; color:#fff; text-align:center; vertical-align:top;}
+.modal.confirm .btn_wrap .cancel {background:#555;}
+.modal.confirm .btn_wrap .submit {background:#00687f;}
 
-/* 교재 정보 팝업 */
-.book_content {}
-.book_content:after {display:block; clear:both; content:"";}
-.book_content .img {float:left; width:330px; margin-right:30px; font-size:0;}
-.book_content .img img {width:100%; border:1px solid #ddd;}
-.book_content .data_wrap {float:left; width:calc(100% - 360px); margin-top:-10px;}
-.book_content .data {padding:10px 0; border-bottom:1px solid #ddd;}
-.book_content .data:last-child {border:0;}
-.book_content .data .cate {display:inline-block; overflow:hidden; border:1px solid #ccc; border-radius:12px; padding:0 8px;}
-.book_content .data .cate li {float:left; position:relative; padding:0 6px; font-size:12px; line-height:22px; color:#999;}
-.book_content .data .cate li:after {position:absolute; top:50%; right:0; width:1px; height:10px; margin-top:-5px; background:#ccc; content:"";}
-.book_content .data .cate li:last-child:after {display:none;}
-.book_content .data .tit {margin-top:8px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.4em; color:#333;}
-.book_content .data .txt {margin-top:6px; font-size:14px; line-height:1.7em; color:#646f72;}
-.book_content .data .grade {overflow:hidden; margin-top:15px; font-size:12px;}
-.book_content .data .grade span {float:left; position:relative; padding-right:17px; font-weight:700; line-height:20px; color:#333;}
-.book_content .data .grade span:after {position:absolute; top:50%; right:0; width:1px; height:12px; margin-top:-6px; background:#ddd; content:"";}
-.book_content .data .grade ul {overflow:hidden; float:left; position:relative; padding-left:17px;}
-.book_content .data .grade ul li {float:left; line-height:20px; color:#646f72;}
-.book_content .data .grade ul li.on {color:#008ead;}
-.book_content .data .grade ul li:after {display:inline-block; width:12px; color:#646f72; text-align:center; content:"-";}
-.book_content .data .grade ul li:last-child:after {display:none;}
-.book_content .data .step {font-size:12px;}
-.book_content .data .step > div {overflow:hidden; padding:5px 0;}
-.book_content .data .step dt {float:left; position:relative; padding-left:10px; font-weight:700; line-height:20px; color:#333;}
-.book_content .data .step dt:after {position:absolute; top:8px; left:0; width:4px; height:4px; border-radius:50%; background:#333; content:"";}
-.book_content .data .step dd {padding-left:90px; line-height:20px; color:#646f72;}
-.book_content .data .info_txt {font-size:12px; line-height:1.8em; color:#646f72;}
-.book_content .data .info_txt strong {font-weight:400; color:#008ead;}
-.book_slide {position:relative; margin:20px auto 0;}
-.book_slide .slide_view {position:relative;}
-.book_slide .slide_wrap {overflow:hidden; width:640px; height:140px; margin:0 auto;}
-.book_slide .slide_wrap .slide {overflow:hidden; margin:0 -4px;}
-.book_slide .slide_wrap .slide li {float:left; position:relative; margin:0 4px; line-height:0; cursor:pointer;}
-.book_slide .slide_wrap .slide li:after {position:absolute; top:0; left:0; width:100%; height:100%; border:1px solid #ddd; transition:all 0.5s; content:"";}
-.book_slide .slide_wrap .slide li.on:after,.book_slide .slide_wrap .slide li:hover:after {border:5px solid #008398;}
-.book_slide .slide_wrap .slide li img {width:100px; height:140px;}
-.book_slide .slide_wrap .ctr li button {position:absolute; width:14px; height:25px; top:50%; transform:translateY(-50%); text-indent:-9999px;}
-.book_slide .slide_wrap .ctr .prev button {left:0;}
-.book_slide .slide_wrap .ctr .next button {right:0;}
-.book_slide .slide_wrap .ctr li button:before {content:""; position:absolute; width:20px; height:20px; top:2px; border:3px solid #ddd; transform:rotate(45deg); transition:all 0.5s;}
-.book_slide .slide_wrap .ctr .prev button:before {left:4px; border-right:0; border-top:0;}
-.book_slide .slide_wrap .ctr .next button:before {right:4px; border-left:0; border-bottom:0;}
-.book_slide .slide_wrap .ctr li:hover button:before {border-color:#008398;}
-
-@media screen and (max-width:1024px) {
-    .book_wrap {position:relative;}
-    .book_content .img {overflow:hidden; float:none; position:relative; z-index:1; width:auto; margin:0; padding-bottom:140%; border:0;}
-    .book_content .img img {position:absolute; top:50%; left:50%; width:auto; max-height:100%; transform:translate(-50%, -50%);}
-    .book_content .data_wrap {float:none; width:auto; margin:0; margin-top:160px;}
-    .book_slide {position:absolute; top:0; right:0; left:0; margin:0;}
-    .book_slide .padding {overflow:hidden; position:relative; z-index:-1; padding-bottom:140%; background:#ddd;}
+@media (max-width:599px) {
+    .modal {max-width:calc(100% - 30px); max-height:calc(100vh - 30px);}
+    .modal.confirm {padding:15px;}
+    .modal.confirm .msg {font-size:14px;}
+    .modal.confirm .sub_txt {font-size:12px;}
+    .modal.confirm .btn_wrap button,.modal.confirm .btn_wrap a {min-width:70px; font-size:14px; line-height:2em;}
 }

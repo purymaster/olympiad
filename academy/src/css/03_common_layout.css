@@ -57,24 +57,23 @@
 /* 사이드 메뉴 */
 .side_menu {position:absolute; top:0; right:0; z-index:10; background:#fff; color:#646f72; text-align:center; transform:translateY(-50%); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .side_menu ul {border:1px solid #ddd;}
-.side_menu ul li {position:relative; width:90px; height:75px;}
-.side_menu ul li:after {content:""; position:absolute; left:50%; bottom:-12px; width:40px; height:1px; margin-left:-20px; background:#ddd;}
+.side_menu ul li {position:relative; width:90px; height:85px;}
+.side_menu ul li:after {content:""; position:absolute; left:50%; bottom:-6px; width:40px; height:1px; margin-left:-20px; background:#ddd;}
 .side_menu ul li:last-child:after {display:none;}
 .side_menu ul li a {display:block; position:relative; padding-top:64px; font-family:"Nanum Square"; font-size:12px; font-weight:700; color:inherit;}
 .side_menu ul li a:hover {color:#028499;}
 .side_menu ul li a:after {position:absolute; top:20px; left:50%; width:40px; height:40px; background-image:url(../img/sprite/sprite.png); background-size:500px; transform:translateX(-50%); content:"";}
 .side_menu ul li:nth-child(1) a:after {width:39px; height:39px; background-position:-5px -122px;} /* 홈으로 */
 .side_menu ul li:nth-child(1) a:hover:after {background-position:-49px -122px;}
-.side_menu ul li:nth-child(2) a:after {width:40px; height:40px; background:red;} /* 학습하기 */
-.side_menu ul li:nth-child(3) a:after {width:40px; height:40px; background:red;} /* 학습하기2 */
-.side_menu ul li:nth-child(4) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담신청 */
-.side_menu ul li:nth-child(4) a:hover:after {background-position:-95px -74px;}
-.side_menu ul li:nth-child(5) a:after {width:38px; height:38px; background-position:-138px -74px;} /* 설명회신청 */
-.side_menu ul li:nth-child(5) a:hover:after {background-position:-181px -74px;}
-.side_menu ul li:nth-child(6) a:after {width:34px; height:34px; background-position:-224px -74px;} /* 입학고사 */
-.side_menu ul li:nth-child(6) a:hover:after {background-position:-263px -74px;}
-.side_menu ul li:nth-child(7) a:after {width:39px; height:39px; background-position:-302px -74px;} /* 캠퍼스안내 */
-.side_menu ul li:nth-child(7) a:hover:after {background-position:-346px -74px;}
+.side_menu ul li:nth-child(2) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담신청 */
+.side_menu ul li:nth-child(2) a:hover:after {background-position:-95px -74px;}
+.side_menu ul li:nth-child(3) a:after {width:38px; height:38px; background-position:-138px -74px;} /* 설명회신청 */
+.side_menu ul li:nth-child(3) a:hover:after {background-position:-181px -74px;}
+.side_menu ul li:nth-child(4) a:after {width:34px; height:34px; background-position:-224px -74px;} /* 입학고사 */
+.side_menu ul li:nth-child(4) a:hover:after {background-position:-263px -74px;}
+.side_menu ul li:nth-child(5) a:after {width:39px; height:39px; background-position:-302px -74px;} /* 캠퍼스안내 */
+.side_menu ul li:nth-child(5) a:hover:after {background-position:-346px -74px;}
+.side_menu ul li:nth-child(6) a:after {background:red;} /* 재원생 학습 */
 .side_menu ul .counsel {height:auto; padding:16px 0;}
 .side_menu ul .counsel span {display:block; line-height:16px;}
 .side_menu ul .counsel .tit {position:relative; margin-bottom:60px; color:#646f72; font-family:"Nanum Square"; font-size:12px; line-height:20px;}
@@ -379,10 +378,44 @@ label {cursor:pointer;}
 .board_view .upload_file {border-top:1px solid #cdcdcd;}
 .board_view .upload_file ul {overflow:hidden; padding:15px 20px;}
 .board_view .upload_file ul li {overflow:hidden; float:left; position:relative; max-width:500px; margin-right:20px; padding-left:28px; text-overflow:ellipsis; white-space:nowrap;}
-.board_view .upload_file ul li:before {position:absolute; top:3px; left:0; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-177px -123px; background-size:500px 500px; content:""; background:red;}
+.board_view .upload_file ul li:before {position:absolute; top:3px; left:0; width:21px; height:17px; background:red; background-image:url(../img/sprite/sprite.png); background-position:-177px -123px; background-size:500px 500px; content:"";}
 .board_view .upload_file ul li a {color:#999;}
 .board_view .upload_file ul li a:hover {color:#00aeba; text-decoration:underline;}
-.board_view .list_link {margin:10px 0 50px; text-align:right;}
+.board_view .reply_wrap {margin-top:105px;}
+.board_view .reply_wrap .total {margin-bottom:15px; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:1.5em; color:#0d0d0c;}
+.board_view .reply_wrap .total strong {font-family:inherit; font-weight:inherit; color:#00687f;}
+.board_view .reply_wrap .list > li {border-bottom:1px solid #ddd;}
+.board_view .reply_wrap .list > li .view {position:relative; padding:20px 0;}
+.board_view .reply_wrap .depth_1 > .list {border-top:1px solid #ddd;}
+.board_view .reply_wrap .depth_2 {padding:10px 60px; border-top:1px solid #ddd; background:#f7fafb;}
+.board_view .reply_wrap .depth_2 > .list > li {position:relative;}
+.board_view .reply_wrap .depth_2 > .list > li:before {position:absolute; top:5px; left:-45px; width:25px; height:25px; border-bottom:1px solid #ddd; border-left:1px solid #ddd; content:"";}
+.board_view .reply_wrap .txt_wrap span,.board_view .reply_wrap .txt_wrap p {display:block; font-size:14px; line-height:1.7em;}
+.board_view .reply_wrap .txt_wrap .author {overflow:hidden; font-weight:700; color:#333; text-overflow:ellipsis; white-space:nowrap;}
+.board_view .reply_wrap .txt_wrap p {position:relative;}
+.board_view .reply_wrap .txt_wrap .secret {display:inline-block; padding-right:20px;}
+.board_view .reply_wrap .txt_wrap .secret:after {position:absolute; top:50%; right:0; width:11px; height:16px; margin-top:-8px; background:red; content:"";}
+.board_view .reply_wrap .txt_wrap .date {margin-top:7px; color:#666;}
+.board_view .reply_wrap .ctr {position:absolute; right:0; bottom:10px; font-size:0;}
+.board_view .reply_wrap .ctr li {display:inline-block; margin-left:5px;}
+.board_view .reply_wrap .ctr button {padding:0 14px; border:1px solid #ccc; background:#fff; font-size:14px; line-height:28px; color:#888; transition:all 0.5s;}
+.board_view .reply_wrap .ctr button:hover {border-color:#42adaa; color:#42adaa;}
+.board_view .reply_wrap .ctr button strong {margin-left:5px; font-weight:400; color:#42adaa;}
+.board_view .reply_wrap .input_wrap {margin:30px 0;}
+.board_view .reply_wrap .depth_2 .input_wrap {margin:0; margin-top:-1px; padding-top:30px; padding-bottom:20px; border-top:1px solid #ddd;}
+.board_view .reply_wrap .input_wrap .author_info {overflow:hidden;}
+.board_view .reply_wrap .input_wrap .author_info li {float:left;}
+.board_view .reply_wrap .input_wrap .author_info li input {width:160px; margin-right:6px;}
+.board_view .reply_wrap .input_wrap .author_txt {margin-top:5px; background:#fff; line-height:0;}
+.board_view .reply_wrap .input_wrap .author_txt textarea {width:100%; height:120px; padding:13px 16px;}
+.board_view .reply_wrap .input_wrap .txt_ctr {overflow:hidden; border:1px solid #ddd; border-top:0;}
+.board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
+.board_view .reply_wrap .input_wrap .txt_ctr label {float:left; position:relative; margin-left:20px; padding-left:20px; font-weight:700; line-height:50px; color:#a29f9a;}
+.board_view .reply_wrap .input_wrap .txt_ctr label:before {position:absolute; top:50%; left:0; width:14px; height:21px; background:red; transform:translateY(-50%); content:"";}
+.board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"]:checked + label {color:#42adaa;}
+.board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"]:checked + label:before {background:blue;}
+.board_view .reply_wrap .input_wrap .txt_ctr button {float:right; width:100px; background:#008398; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:50px; color:#fff;}
+.board_view .list_link {margin:60px 0 50px; text-align:right;}
 .board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-size:16px; line-height:46px; color:#666; text-align:left; transition:all 0.5s;}
 .board_view .list_link a:hover {background:#00aeba; color:#fff;}
 .board_view .list_link a span {position:absolute; right:15px; width:20px; height:2px; background:#00aeba; transition:all 0.5s;}
@@ -401,9 +434,10 @@ label {cursor:pointer;}
 .board_view .paging_wrap dd a:hover {color:#00aeba;}
 .board_view .paging_wrap dd a,.board_view .paging_wrap dd i {vertical-align:middle;}
 .board_view .paging_wrap dd a strong {color:#00687f;}
-.board_view .paging_wrap dd .file {display:inline-block; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-177px -123px; background-size:500px 500px; text-indent:-9999px; background:red;}
+.board_view .paging_wrap dd .file {display:inline-block; width:21px; height:17px; background:red; background-image:url(../img/sprite/sprite.png); background-position:-177px -123px; background-size:500px 500px; text-indent:-9999px;}
 .board_view .paging_wrap dd .new {display:inline-block; position:relative; width:1px; text-indent:-9999px;}
 .board_view .paging_wrap dd .new:after {position:absolute; top:0; left:0; width:30px; font-size:12px; color:#e7833f; text-indent:0; content:"new"; text-transform:uppercase;}
+
 
 @media (max-width:1024px) {
     .board_view .info {padding:15px 0;}
@@ -411,6 +445,15 @@ label {cursor:pointer;}
     .board_view .info .txt_info dd {font-size:14px;}
     .board_view .content {padding:30px 0; line-height:1.8em;}
     .board_view .upload_file ul {padding:15px 0;}
+    .board_view .reply_wrap {margin-top:30px;}
+    .board_view .reply_wrap .txt_wrap .date {font-size:12px;}
+    .board_view .reply_wrap .ctr {position:static; margin-top:15px;}
+    .board_view .reply_wrap .ctr li {margin:0; margin-right:5px;}
+    .board_view .reply_wrap .ctr button {padding:0 10px; font-size:12px; line-height:2em;}
+    .board_view .reply_wrap .depth_2 {padding:10px 30px;}
+    .board_view .reply_wrap .depth_2 > .list > li:before {top:15px; left:-20px; width:15px; height:15px;}
+    .board_view .reply_wrap .input_wrap .txt_ctr label {margin-left:15px; font-size:14px; line-height:40px;}
+    .board_view .reply_wrap .input_wrap .txt_ctr button {width:80px; font-size:14px; line-height:40px;}
     .board_view .list_link {margin:30px 0;}
     .board_view .list_link a {font-size:14px; line-height:40px;}
     .board_view .paging_wrap dd {padding-left:45px; font-size:14px;}
@@ -426,6 +469,11 @@ label {cursor:pointer;}
     .board_view .info .txt_info dd {font-size:12px;}
     .board_view .upload_file ul li {float:none; font-size:12px;}
     .board_view .upload_file ul li:before {top:1px;}
+    .board_view .reply_wrap .depth_2 {padding:10px 15px;}
+    .board_view .reply_wrap .depth_2 > .list > li:before {left:-10px; width:5px;}
+    .board_view .reply_wrap .input_wrap .author_info li {float:none;}
+    .board_view .reply_wrap .input_wrap .author_info li input {width:100%; margin:0; margin-bottom:5px;}
+    .board_view .reply_wrap .input_wrap .author_txt {margin:0;}
     .board_view .list_link {text-align:center;}
     .board_view .list_link a {width:100%; text-align:center;}
     .board_view .list_link a span {display:none;}
