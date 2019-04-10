@@ -182,20 +182,20 @@ textarea {line-height:1.5em;}
 .check_form ul {overflow:hidden; margin-bottom:-10px; padding:11px 0; font-size:0;}
 .check_form ul li {overflow:hidden; float:left; margin-bottom:10px; line-height:1;}
 .check_form input[type='checkbox'] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
-.check_form input[type='checkbox'] + label {float:left; position:relative; margin-right:30px; padding-left:21px; font-size:14px; line-height:16px; color:#333; cursor:pointer;}
+.check_form input[type='checkbox'] + label {float:left; position:relative; margin-right:30px; padding-left:23px; font-size:14px; line-height:16px; color:#333; cursor:pointer;}
 .check_form ul li:last-child input[type='checkbox'] + label {margin-right:0;}
-.check_form input[type='checkbox'] + label:before {display:inline-block; position:absolute; top:0; left:0; width:16px; height:16px; border:1px solid #dedede; background:#fff; content:''; -webkit-box-sizing:border-box; box-sizing:border-box;}
-.check_form input[type="checkbox"]:checked + label:after {position:absolute; top:1px; left:4px; width:8px; height:10px; border:2px solid #00687f; border-top:0; border-left:0; -webkit-transform:rotate(45deg) skew(10deg); transform:rotate(45deg) skew(10deg); content:"";}
+.check_form input[type='checkbox'] + label:before {display:inline-block; position:absolute; top:0; left:2px; width:16px; height:16px; border:1px solid #dedede; background:#fff; content:''; -webkit-box-sizing:border-box; box-sizing:border-box;}
+.check_form input[type="checkbox"]:checked + label:after {position:absolute; top:1px; left:6px; width:8px; height:10px; border:2px solid #00687f; border-top:0; border-left:0; -webkit-transform:rotate(45deg) skew(10deg); transform:rotate(45deg) skew(10deg); content:"";}
 .check_form input[type='checkbox']:disabled + label:before {background:#dedede;}
 
 /* 라디오버튼 */
 .radio_form ul {overflow:hidden; margin-bottom:-10px; padding:11px 0; font-size:0;}
 .radio_form ul li {overflow:hidden; float:left; margin-bottom:10px; line-height:1;}
 .radio_form input[type='radio'] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
-.radio_form input[type='radio'] + label {float:left; position:relative; margin-right:30px; padding-left:21px; font-size:14px; line-height:16px; color:#333; cursor:pointer;}
+.radio_form input[type='radio'] + label {float:left; position:relative; margin-right:30px; padding-left:23px; font-size:14px; line-height:16px; color:#333; cursor:pointer;}
 .radio_form ul li:last-child input[type="radio"] + label {margin-right:0;}
-.radio_form input[type="radio"] + label:before {display:inline-block; position:absolute; top:0; left:0; -webkit-box-sizing:border-box; box-sizing:border-box; width:16px; height:16px; border:1px solid #dedede; border-radius:50%; content:"";}
-.radio_form input[type='radio']:checked + label:after {display:inline-block; position:absolute; top:5px; left:5px; width:6px; height:6px; border-radius:50%; background:#00687f; content:'';}
+.radio_form input[type="radio"] + label:before {display:inline-block; position:absolute; top:0; left:2px; -webkit-box-sizing:border-box; box-sizing:border-box; width:16px; height:16px; border:1px solid #dedede; border-radius:50%; content:"";}
+.radio_form input[type='radio']:checked + label:after {display:inline-block; position:absolute; top:5px; left:7px; width:6px; height:6px; border-radius:50%; background:#00687f; content:'';}
 
 /* 검색 */
 .search_wrap {display:inline-block; border:1px solid #cdcdcd; font-size:0;}
