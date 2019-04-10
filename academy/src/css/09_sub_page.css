@@ -556,6 +556,7 @@
     .book_info.middle .book_list .txt {font-size:14px;}
 
     .book_info.middle .program_info {padding-top:15px; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+    .book_info.middle .program_tit {font-size:16px;}
     .book_info.middle dl > div {margin-bottom:15px; background:none !important; text-align:center;}
     .book_info.middle dt {display:inline-block; float:none; width:auto; padding:10px 15px; border-radius:22px; font-size:14px; text-align:center;}
     .book_info.middle .subject dt {background:#e6eff1;}
@@ -705,9 +706,162 @@
 }
 
 /* 중등수학 - 내신대비 */
-.middle_credit {}
+.middle_credit .qpang .info_wrap {margin-top:110px; padding-bottom:40px; background:#f5f5f5;}
+.middle_credit .qpang .info_wrap .img_list {overflow:hidden; margin:0 -5px; line-height:0; transform:translateY(-50%);}
+.middle_credit .qpang .info_wrap .img_list li {float:left; width:33.33%; padding:0 5px;}
+.middle_credit .qpang .info_wrap .img_list li img {width:320px;}
+.middle_credit .qpang .info_wrap ol {overflow:hidden; position:relative; margin-top:-70px;}
+.middle_credit .qpang .info_wrap ol:before {position:absolute; top:50%; left:30px; width:calc(100% - 60px); margin-top:-2px; border-top:3px dotted #ddd; content:"";}
+.middle_credit .qpang .info_wrap ol li {display:table; float:left; position:relative; width:20%; height:140px; table-layout:fixed;} 
+.middle_credit .qpang .info_wrap ol li:before {position:absolute; top:0; left:50%; width:140px; height:140px; border-radius:50%; background:#1c9eb3; transform:translateX(-50%); content:"";}
+.middle_credit .qpang .info_wrap ol li:after {position:absolute; top:50%; left:0; width:10px; height:10px; margin-top:-5px; margin-left:-5px; border-radius:50%; background:#1c9eb3; content:"";}
+.middle_credit .qpang .info_wrap ol li:first-child:after {display:none;}
+.middle_credit .qpang .info_wrap ol li span {display:table-cell; position:relative; z-index:1; width:100%; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.6em; color:#fff; text-align:center; vertical-align:middle;}
+.middle_credit .qpang .about {margin:0 -10px; margin-top:50px; text-align:center;}
+.middle_credit .qpang .about:after {display:block; clear:both; content:"";}
+.middle_credit .qpang .about .txt_wrap {float:left; position:relative; width:calc(50% - 20px); margin:0 10px; padding:30px; padding-top:40px; border:3px solid #ddd;}
+.middle_credit .qpang .about .txt_wrap .tit {position:absolute; top:-13px; left:50%; padding:0 70px; background:#fff; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:25px; color:#333; white-space:nowrap; transform:translateX(-50%);}
+.middle_credit .qpang .about .txt_wrap .tit:before,.middle_credit .qpang .about .txt_wrap .tit:after {position:absolute; top:0; width:38px; height:25px; background:red; content:"";}
+.middle_credit .qpang .about .txt_wrap .tit:before {left:14px;}
+.middle_credit .qpang .about .txt_wrap .tit:after {right:14px;}
+.middle_credit .qpang .about .txt_wrap .txt {color:#333; font-size:16px; line-height:1.75em;}
+.middle_credit .qpang .about .txt_wrap .txt strong {font-weight:700;}
+.middle_credit .qpang .detail {margin-top:40px;}
+.middle_credit .qpang .detail dl > div {overflow:hidden; position:relative; margin-top:10px;}
+.middle_credit .qpang .detail dl > div:after {content:""; position:absolute; width:20px; height:100%; background:#fff; top:0; left:160px;}
+.middle_credit .qpang .detail dl .subject {background:#e6eff1;}
+.middle_credit .qpang .detail dl .student {background:#e6f1e8;}
+.middle_credit .qpang .detail dl .school {background:#f1f0e6;}
+.middle_credit .qpang .detail dt {float:left; width:180px; padding:25px 20px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em; color:#333;}
+.middle_credit .qpang .detail dd {float:left; width:calc(100% - 180px); background:#fff; border-top:3px solid #333;}
+.middle_credit .qpang .detail dd li {overflow:hidden; position:relative; padding:10px 0; border-bottom:1px solid #ddd;}
+.middle_credit .qpang .detail dd img {float:left; width:300px;}
+.middle_credit .qpang .detail dd .txt_wrap {position:absolute; bottom:0; left:300px; padding:10px 0 10px 20px;}
+.middle_credit .qpang .detail dd .txt_wrap .tit {display:block; font-family:"Nanum Square"; font-size:40px; font-weight:700; line-height:1.1em; color:#333; text-transform:uppercase;}
+.middle_credit .qpang .detail dd .txt_wrap .sub_tit {display:block; font-family:"Nanum Square"; font-size:20px; font-weight:700; font-style:italic; line-height:1.6em; color:#333; text-decoration:underline;}
+.middle_credit .qpang .detail dd .txt_wrap .txt {font-size:16px; line-height:1.75em;}
 
-/* 캠퍼스 위치안내(공통) */
+.middle_credit .other_subject ul {overflow:hidden; margin:0 -5px; line-height:0;}
+.middle_credit .other_subject ul li {float:left; width:50%; padding:0 5px;}
+
+.middle_credit .plan .tit {margin-bottom:15px; font-size:20px; line-height:1.5em; text-align:center;}
+.middle_credit .plan td {padding:20px 30px;}
+.middle_credit .plan td .txt_list li {line-height:1.7em;}
+.middle_credit .plan td .txt_list strong {font-weight:400; color:#008398;}
+.middle_credit .plan td dl {color:#333;}
+.middle_credit .plan td dl > div:first-child {margin-bottom:40px;}
+.middle_credit .plan td dt {margin-bottom:10px;font-size:16px; font-weight:700; line-height:1.5em;}
+.middle_credit .plan td dd {font-size:14px; line-height:1.7em;}
+
+@media screen and (max-width:1366px) {
+    .middle_credit .qpang .info_wrap {margin:0; padding:30px 0;}
+    .middle_credit .qpang .info_wrap .img_list {transform:none;}
+    .middle_credit .qpang .info_wrap ol {margin-top:30px;}
+    .middle_credit .qpang .info_wrap ol li {height:100px;}
+    .middle_credit .qpang .info_wrap ol li:before {height:100px; width:100px;}
+    .middle_credit .qpang .info_wrap ol li span {font-size:16px; line-height:1.4em;}
+    .middle_credit .qpang .about .txt_wrap .tit {padding:0 50px; font-size:18px;}
+    .middle_credit .qpang .about .txt_wrap .tit:before {left:7px;}
+    .middle_credit .qpang .about .txt_wrap .tit:after {right:7px;}
+    .middle_credit .qpang .about .txt_wrap .txt br {display:none;}
+    .middle_credit .qpang .detail dd img {width:250px;}
+    .middle_credit .qpang .detail dd .txt_wrap {padding-left:265px; position:static;}
+}
+
+@media screen and (max-width:1024px) {
+    .middle_credit .qpang .info_wrap ol li {height:80px;}
+    .middle_credit .qpang .info_wrap ol li:before {width:80px; height:80px;}
+    .middle_credit .qpang .info_wrap ol li span {font-size:14px;}
+    .middle_credit .qpang .about {margin:0;}
+    .middle_credit .qpang .about .txt_wrap {float:none; width:100%; margin:0; margin-top:30px; padding:15px; padding-top:20px;}
+    .middle_credit .qpang .about .txt_wrap .tit {font-size:16px;}
+    .middle_credit .qpang .about .txt_wrap .txt {font-size:14px; line-height:1.6em;}
+    .middle_credit .qpang .detail{margin-top:30px;}
+    .middle_credit .qpang .detail dl > div:after {display:none;}
+    .middle_credit .qpang .detail dt {padding:15px; width:110px; font-size:16px;}
+    .middle_credit .qpang .detail dd {width:calc(100% - 110px); border-top:1px solid #ddd;}
+    .middle_credit .qpang .detail dd li {padding:15px; line-height:0; text-align:center;}
+    .middle_credit .qpang .detail dd img {float:none;}
+    .middle_credit .qpang .detail dd .txt_wrap {margin-top:15px; padding:0;}
+    .middle_credit .qpang .detail dd .txt_wrap .tit {font-size:30px;}
+    .middle_credit .qpang .detail dd .txt_wrap .sub_tit {font-size:18px;}
+    .middle_credit .qpang .detail dd .txt_wrap .txt {font-size:14px; line-height:1.6em;}
+
+    .middle_credit .plan .tit {font-size:18px;}
+}
+
+@media screen and (max-width:599px) {
+    .middle_credit .qpang .info_wrap {position:relative; left:-15px; width:calc(100% + 30px);}
+    .middle_credit .qpang .info_wrap .img_list {margin:-15px 0;}
+    .middle_credit .qpang .info_wrap .img_list li {float:none; width:100%; padding:15px 0; text-align:center;}
+    .middle_credit .qpang .info_wrap ol:before {top:0; left:50%; width:auto; height:100%; margin:0; border:0; border-left:3px dotted #ddd;}
+    .middle_credit .qpang .info_wrap ol li:before,.middle_credit .qpang .info_wrap ol li:after {display:none;}
+    .middle_credit .qpang .info_wrap ol li {display:block; float:none; width:100%; height:auto; line-height:0; text-align:center; margin-bottom:15px;}
+    .middle_credit .qpang .info_wrap ol li:last-child {margin:0;}
+    .middle_credit .qpang .info_wrap ol li span {display:inline-block; width:auto; padding:0 15px; border-radius:1em; background:#1c9eb3; line-height:2em;}
+    .middle_credit .qpang .info_wrap ol li span br {display:none;}
+    .middle_credit .qpang .detail dl > div {background:none !important; text-align:center;}
+    .middle_credit .qpang .detail dt {display:inline-block; width:auto; float:none; padding:10px 15px; border-radius:22px; font-size:14px; margin-bottom:15px;}
+    .middle_credit .qpang .detail .subject dt {background:#e6eff1;}
+    .middle_credit .qpang .detail .student dt {background:#e6f1e8;}
+    .middle_credit .qpang .detail .school dt {background:#f1f0e6;}
+    .middle_credit .qpang .detail dt br {display:none;}
+    .middle_credit .qpang .detail dd {width:100%; border:0;}
+    .middle_credit .qpang .detail dd li {padding:15px 0; border:0;}
+    .middle_credit .qpang .detail dd .txt_wrap .tit {font-size:18px;}
+    .middle_credit .qpang .detail dd .txt_wrap .sub_tit {font-size:16px;}
+
+    .middle_credit .other_subject ul {margin:-15px 0;}
+    .middle_credit .other_subject ul li {float:none; width:100%; padding:15px 0;}
+
+    .middle_credit .plan .tit {font-size:16px;}
+}
+
+/* 광진영재센터 수업 시스템 */
+.campus_system td {line-height:1.7em;}
+.campus_system .study_step {overflow:hidden; margin:0 -10px;}
+.campus_system .study_step .cont {float:left; width:50%; padding:0 10px; text-align:center;}
+.campus_system .study_step .tit_wrap {display:table; position:relative; width:100%; height:60px; margin-bottom:8px; background:#333; table-layout:fixed;}
+.campus_system .study_step .tit_wrap .tit {display:table-cell; padding:0 15px; font-family:"Nanum Square"; font-size:20px; line-height:1.5em; color:#fff; vertical-align:middle;}
+.campus_system .study_step .tit_wrap .tit strong {font-family:inherit;}
+.campus_system .study_step ol {height:390px; margin:4px 0;}
+.campus_system .study_step ol li {display:table; position:relative; width:100%; padding:4px 0; border-top:2px solid #fff; border-bottom:2px solid #fff; background:#f0f0f0;}
+.campus_system .study_step ol li:before {position:absolute; top:50%; left:30px; z-index:0; font-family:"Lato"; font-style:italic; color:#ddd; transform:translateY(-50%);}
+.campus_system .study_step ol li:nth-child(1):before {content:"1";}
+.campus_system .study_step ol li:nth-child(2):before {content:"2";}
+.campus_system .study_step ol li:nth-child(3):before {content:"3";}
+.campus_system .study_step ol li:nth-child(4):before {content:"4";}
+.campus_system .study_step .step3 li {height:33.33%;}
+.campus_system .study_step .step3 li:before {font-size:80px;}
+.campus_system .study_step .step4 li {height:25%;}
+.campus_system .study_step .step4 li:before {font-size:64px;}
+.campus_system .study_step ol li:after {position:absolute; top:-7px; left:50%; width:0; height:0; margin-left:-7px; border-top:12px solid #333; border-right:7px solid transparent; border-left:7px solid transparent; content:"";}
+.campus_system .study_step ol li:first-child:after {display:none;}
+.campus_system .study_step ol li .txt_wrap {display:table-cell; position:relative; z-index:1; padding:0 15px; vertical-align:middle;}
+.campus_system .study_step ol li .txt_wrap strong {display:block; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.4em;}
+.campus_system .study_step ol li .txt_wrap .txt {margin-top:8px; font-size:16px; line-height:1.6em;}
+
+@media screen and (max-width:1024px) {
+    .campus_system td {line-height:1.5em;}
+    .campus_system .study_step {margin:0;}
+    .campus_system .study_step .cont {padding:0; width:100%; float:none;}
+    .campus_system .study_step .tit_wrap {height:40px;}
+    .campus_system .study_step .tit_wrap .tit {font-size:18px;}
+    .campus_system .study_step ol {height:300px;}
+    .campus_system .study_step ol li .txt_wrap strong {font-size:16px;}
+    .campus_system .study_step ol li .txt_wrap .txt {font-size:14px;}
+    .campus_system .study_step ol li .txt_wrap .txt br {display:none;}
+}
+
+@media screen and (max-width:599px) {
+    .campus_system .study_step .tit_wrap {height:30px;}
+    .campus_system .study_step .tit_wrap .tit {font-size:14px;}
+    .campus_system .study_step ol li:before {left:15px;}
+    .campus_system .study_step ol li .txt_wrap strong {font-size:14px;}
+    .campus_system .study_step ol li .txt_wrap .txt {font-size:12px;}
+}
+
+/* 영재센터 위치안내(공통) */
 .campus_map .map_wrap {position:relative; height:460px; margin-top:-10px; background:#eee;}
 .campus_map .map_wrap iframe {position:absolute; top:0; left:0; width:100%; height:100%;}
 .campus_map .campus_data {margin-top:40px;}

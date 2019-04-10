@@ -709,17 +709,17 @@ section .slide .research li a:hover:after {height:calc(100% + 5px); background:#
 section .news_wrap .menu_tit {position:relative; margin:150px 0 50px; font-family:"Nanum Square"; font-size:40px; font-weight:400; line-height:85px; color:#333; text-align:center;}
 section .news_wrap .menu_tit:after {position:absolute; bottom:0; left:50%; width:28px; height:1px; margin-left:-14px; background:#333; content:"";}
 article .news {margin:0 -25px; padding-bottom:80px; text-align:left;}
-article .news ul {font-size:0;}
-article .news ul li {width:33.33%; padding:0 25px;}
+article .news ul {overflow:hidden; font-size:0;}
+article .news ul li {float:left; width:33.33%; padding:0 25px;}
 article .news ul li a {display:block;}
 article .news ul li a .txt_wrap {padding:20px; padding-top:10px;}
 article .news ul li a .txt_wrap .cate {display:inline-block; font-size:14px; font-weight:700; line-height:30px;}
 article .news ul li a .txt_wrap .notice {color:#00aeba;}
 article .news ul li a .txt_wrap .blog {color:#3b9f47;}
 article .news ul li a .txt_wrap .result {color:#ff8c3f;}
-article .news ul li a .txt_wrap .tit {font-family:"Nanum Square"; font-size:20px; line-height:1.5em; color:#333;}
+article .news ul li a .txt_wrap .tit {overflow:hidden; height:3em; font-family:"Nanum Square"; font-size:20px; line-height:1.5em; color:#333;}
 article .news ul li a .txt_wrap .tit strong {font-family:inherit; color:#00687f;}
-article .news ul li a .txt_wrap .txt {margin:10px 0 20px; font-size:12px; line-height:1.7em; color:#666;}
+article .news ul li a .txt_wrap .txt {overflow:hidden; height:3.4em; margin:10px 0 20px; font-size:12px; line-height:1.7em; color:#666;}
 article .news ul li a .txt_wrap .date {display:inline-block; padding:0 10px; border-radius:12px; background:#f2f2f2; font-size:12px; line-height:24px; color:#999; -webkit-border-radius:12px; -moz-border-radius:12px; -ms-border-radius:12px; -o-border-radius:12px;}
 section .section {background-attachment:fixed;}
 section .news_wrap {padding-top:30px;}
@@ -834,7 +834,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .tab_menu {display:table; position:absolute; bottom:0; left:50%; width:100%; max-width:1000px; -webkit-transform:translateX(-50%); transform:translateX(-50%); table-layout:fixed;}
 .tab_menu ul {display:table-row;}
 .tab_menu ul li {display:table-cell;}
-.tab_menu ul li a {display:block; position:relative; z-index:0; font-size:16px; line-height:55px; color:inherit;}
+.tab_menu ul li a {display:block; position:relative; z-index:0; font-size:16px; line-height:55px; color:inherit; white-space:nowrap;}
 .tab_menu ul li.on a,.tab_menu ul li a:hover {font-size:18px; font-weight:700; -webkit-transition:all 0.2s; transition:all 0.2s;}
 .tab_menu ul li a:after {position:absolute; bottom:0; left:0; z-index:-1; width:calc(100% - 1px); height:100%; background:rgba(0,0,0,0.2); -webkit-transition:all 0.2s; transition:all 0.2s; content:"";}
 .tab_menu ul li.on a:after,.tab_menu ul li a:hover:after {bottom:-1px; height:calc(100% + 6px); background:#008398;}
@@ -856,7 +856,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 }
 
 @media (max-width:320px) {
-    .tab_menu ul li a {font-size:10px !important;}
+    .tab_menu ul li a {font-size:11px !important;}
 }
 
 /* 링크 탭메뉴 */
@@ -1214,7 +1214,9 @@ section .news_wrap .menu_tit {margin-top:50px;}
 }
 
 @media (max-width:599px) {
-    .publish .publish_book {position:relative; left:-15px; width:calc(100% + 30px); padding:30px 15px;}
+    .publish .sub_visual {padding-top:30px; padding-bottom:0;}
+    .publish .publish_book {position:relative; left:-15px; width:calc(100% + 30px); margin-top:30px; padding:30px 15px;}
+    .publish .publish_text {padding-top:0;}
 	.publish .publish_text .main_tit {font-size:18px;}
 	.publish .publish_text p {font-size:12px;}
     .publish .publish_text p br {display:none;}
@@ -1276,38 +1278,11 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .franchise_mod_cont .txt {font-size:12px; line-height:1.6em;}
 }
 
-/* 가맹안내 - 개원 및 운영지원 */
-/* .franchise_tab3 { padding-bottom: 70px;}
-.franchise_tab3 ul { overflow: hidden; margin: -20px; }
-.franchise_tab3 ul li {float: left; width: 50%; padding: 20px; }
-.franchise_tab3 ul li:nth-child(9) { clear: both;}
-.franchise_tab3 ul li:nth-child(even) { transform: translateY(70px);}
-.franchise_tab3 ul li .tab_img { line-height: 0; }
-.franchise_tab3 ul li .tab_text {  background-color: #fff; margin-top:-70px; width: 90%;  padding: 15px 15px 15px 10%; float: right; position: relative;  }
-.franchise_tab3 ul li .tab_text .tab_list_tit { font-size: 24px; line-height: 54px; color:#222;  font-family:"Nanum Square"; font-weight: 700;}
-.franchise_tab3 ul li .tab_text p { font-size: 15px; line-height: 28px; color: #555;}
-@media (max-width:1024px) { 
-.franchise_tab3 ul li:nth-child(even) { transform: none;}
-.franchise_tab3 ul li { float: none; width: 100%; margin-bottom: 50px; }     
-.franchise_tab3 ul li .tab_img img {width: 480px; margin: 0 auto; display: block; }
-.franchise_tab3 ul li .tab_text { text-align: center;}
-.franchise_tab3 ul li .tab_text .tab_list_tit { font-size: 20px; }
-.franchise_tab3 ul li .tab_text p {font-size: 14px; }
-.franchise_tab3 { padding-bottom: 0;}
-.franchise_tab3 ul { margin: 0;}
-.franchise_tab3 ul li {margin-bottom: 30px; padding: 0; }
-.franchise_tab3 ul li .tab_text {width: 100%; padding: 15px 0; margin-top: 0; float: none; }
-}
-@media (max-width:599px) { 
-.franchise_tab3 ul li .tab_text .tab_list_tit { font-size: 18px; }
-.franchise_tab3 ul li .tab_text p {font-size: 12px; line-height: 20px; } 
-} */
-
 /* 가맹안내 - 올림피아드 가맹안내 */
 .franchise_info .franchise_mod_cont {background-image:url(../img/bg/bg_subvisual_franchise_info.jpg);}
 .franchise_info .info_wrap {margin-bottom:50px;}
 .franchise_info .info_wrap:after {display:table; clear:both; content:"";}
-.franchise_info .info_wrap .img {float:left; width:50%; padding-right:55px;}
+.franchise_info .info_wrap .img {float:left; width:50%; padding-right:51px;}
 .franchise_info .info_wrap .txt {overflow:hidden; width:50%; margin-top:-6px;}
 .franchise_info .info_wrap .txt p {margin-bottom:15px; font-size:15px; line-height:1.85em; color:#333;}
 .franchise_info .info_wrap .txt p:last-child {margin-bottom:0;}
@@ -1320,7 +1295,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 @media (max-width:1024px) {
     .franchise_info .info_wrap {margin-bottom:30px;}
     .franchise_info .info_wrap .img {float:none; width:100%; margin-bottom:30px; padding:0; text-align:center;}
-    .franchise_info .info_wrap .img img {height:223px;}
+    .franchise_info .info_wrap .img img {height:212px;}
 	.franchise_info .info_wrap .txt {width:100%; margin:0;}
     .franchise_info .info_wrap .txt p {font-size:14px; line-height:1.8em;}
     .franchise_info .diagram_view .diagram_txt {margin-bottom:30px;}
@@ -1343,6 +1318,97 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .franchise_info .counsel .txt_wrap .txt {margin-top:15px; font-family:inherit; font-size:14px; line-height:1.5em; color:#555;}
     .franchise_info .counsel .txt_wrap .tel {display:block; font-family:inherit; font-size:18px; line-height:1.5em;}
     .franchise_info .counsel .txt_wrap .tel a {font-weight:700; color:#00aeba;}
+}
+
+/* 가맹안내 - 가맹 및 개원 절차 */
+.franchise_step .step_wrap {padding-bottom:10px; background:url(../img/bg/bg_franchise_step.png); background-position:center; background-size:cover;}
+.franchise_step .step_wrap .step_tit {margin:0; padding-top:45px; font-size:30px;}
+.franchise_step .step_wrap ol {margin:60px -35px 0;}
+.franchise_step .step_wrap ol:after {display:block; clear:both; content:"";}
+.franchise_step .step_wrap ol li {float:left; position:relative; width:20%; margin-bottom:50px; line-height:0; text-align:center;}
+.franchise_step .step_wrap ol li:nth-child(6) {margin-right:20%;}
+.franchise_step .step_wrap ol li:nth-child(n+5) {float:right;}
+.franchise_step .step_wrap ol li:after {position:absolute; top:50%; right:0; width:18px; height:18px; border:2px solid #01aeba; -webkit-transform:rotate(45deg) translateY(-50%); transform:rotate(45deg) translateY(-50%); content:"";}
+.franchise_step .step_wrap ol li:nth-child(-n+5):after {margin-right:2px; border-bottom:0; border-left:0;;}
+.franchise_step .step_wrap ol li:nth-child(n+5):after {margin-right:-8px; border-top:0; border-right:0;}
+.franchise_step .step_wrap ol li:nth-child(5):after {display:none;}
+.franchise_step .step_wrap ol li:nth-child(6):before {position:absolute; top:-5px; left:102%; width:49%; height:85px; border-right:3px dotted #01aeba; border-bottom:3px dotted #01aeba; content:"";}
+.franchise_step .step_wrap ol li .step {display:inline-block; position:relative; width:150px; height:150px; border-radius:50%; background:#fff; -webkit-box-shadow:0 0 20px 0 rgba(0,0,0,0.1); box-shadow:0 0 20px 0 rgba(0,0,0,0.1);}
+.franchise_step .step_wrap ol li .step .num {position:absolute; top:-0.75em; left:0; font-family:"Lato"; font-size:20px; font-weight:700; line-height:1.5em; color:#00aeba; letter-spacing:0;}
+.franchise_step .step_wrap ol li .step .txt_wrap {display:table; width:100%; padding-top:75px;}
+.franchise_step .step_wrap ol li .step .txt_wrap:before {position:absolute; top:25px; left:50%; width:46px; height:46px; background:red; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.franchise_step .step_wrap ol li .step .txt_wrap .txt {display:table-cell; height:2.8em; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:1.4em; color:#333; vertical-align:middle;}
+.franchise_step .step_txt ol > li {padding:40px 0 35px; border-bottom:1px solid #ddd;}
+.franchise_step .step_txt ol > li .tit {display:block; margin-bottom:5px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em; color:#222;}
+.franchise_step .step_txt ol > li .txt {font-size:15px; line-height:1.8em; color:#555;}
+.franchise_step .step_txt .img_list {line-height:0; margin:25px -10px 0; overflow:hidden;}
+.franchise_step .step_txt .img_list li {width:33.33%; float:left; padding:0 10px;}
+.franchise_step .step_txt .img_list li img {width:100%;}
+.franchise_step .step_txt .smart_edu {margin-top:25px;}
+.franchise_step .step_txt .smart_edu dt {float:left; font-size:16px; font-weight:700; line-height:28px; color:#008398;}
+.franchise_step .step_txt .smart_edu dt:after {margin:0 0.2em; color:#333; content:":";}
+.franchise_step .step_txt .smart_edu dd {overflow:hidden; font-size:15px; line-height:28px;}
+
+@media (max-width:1024px) {
+    .franchise_step .step_wrap {margin-top:-30px; padding-bottom:0;}
+    .franchise_step .step_wrap .step_tit {padding-top:30px;}
+    .franchise_step .step_wrap ol {margin:0; margin-top:30px;}
+    .franchise_step .step_wrap ol li {float:left !important; margin-right:0 !important; width:33.33%; margin-bottom:30px;}
+    .franchise_step .step_wrap ol li:before,.franchise_step .step_wrap ol li:after {display:none;}
+    .franchise_step .step_wrap ol li .step {width:120px; height:120px;}
+    .franchise_step .step_wrap ol li .step .num {font-size:18px;}
+    .franchise_step .step_wrap ol li .step .txt_wrap {padding-top:70px;}
+    .franchise_step .step_wrap ol li .step .txt_wrap:before {top:15px;}
+    .franchise_step .step_wrap ol li .step .txt_wrap .txt {font-size:14px;}
+    .franchise_step .step_txt ol > li {padding:15px 0;}
+    .franchise_step .step_txt ol > li .tit {margin-bottom:15px; font-size:18px;}
+    .franchise_step .step_txt ol > li .txt {font-size:14px; line-height:1.6em;}
+    .franchise_step .step_txt .smart_edu dt {font-size:14px; line-height:1.6em;}
+    .franchise_step .step_txt .smart_edu dd {font-size:14px; line-height:1.6em;}
+    .franchise_step .step_txt .img_list,.franchise_step .step_txt .smart_edu {margin-top:15px;}
+}
+
+@media (max-width:599px) {
+    .franchise_step .step_wrap ol li {padding-bottom:2.8em; font-size:12px;}
+    .franchise_step .step_wrap ol li .step {width:80px; height:80px;}
+    .franchise_step .step_wrap ol li .step .num {font-size:16px;}
+    .franchise_step .step_wrap ol li .step .txt_wrap {padding-top:90px;}
+    .franchise_step .step_wrap ol li .step .txt_wrap:before {top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);}
+    .franchise_step .step_wrap ol li .step .txt_wrap .txt {font-size:12px;}
+    .franchise_step .step_txt ol > li {text-align:center;}
+    .franchise_step .step_txt ol > li .tit {font-size:16px;}
+    .franchise_step .step_txt ol > li .txt {font-size:12px;}
+    .franchise_step .step_txt .img_list {margin:0; margin-top:15px;}
+    .franchise_step .step_txt .img_list li {width:100%; margin-bottom:15px; padding:0;}
+    .franchise_step .step_txt .img_list li:last-child {margin:0;}
+    .franchise_step .step_txt .smart_edu dt {float:none; margin:10px 0;}
+    .franchise_step .step_txt .smart_edu dt:after {display:none;}
+    .franchise_step .step_txt .smart_edu dd {font-size:12px;}
+    .franchise_step .step_txt .smart_edu dd br {display:none;}
+}
+
+/* 가맹안내 - 개원 및 운영지원 */
+.franchise_support .support_wrap ul {overflow:hidden;}
+.franchise_support .support_wrap ul li {float:left; position:relative; width:calc(50% - 20px); margin-right:40px; margin-bottom:120px;}
+.franchise_support .support_wrap ul li:nth-child(even) {margin-right:0; -webkit-transform:translateY(70px); transform:translateY(70px);}
+.franchise_support .support_wrap ul li .tab_img {line-height:0;}
+.franchise_support .support_wrap ul li .txt_wrap {position:absolute; right:0; bottom:70px; width:90%; padding:25px 0 0 30px; background-color:#fff; -webkit-transform:translateY(100%); transform:translateY(100%);}
+.franchise_support .support_wrap ul li .txt_wrap .tit {margin-bottom:5px; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.5em; color:#222;}
+.franchise_support .support_wrap ul li .txt_wrap .txt {font-size:15px; line-height:1.8em; color:#555;}
+
+@media (max-width:1024px) {
+    .franchise_support .support_wrap ul li {width:calc(50% - 15px); margin-right:30px; margin-bottom:0;}
+    .franchise_support .support_wrap ul li:nth-child(even) {-webkit-transform:none;transform:none;}
+    .franchise_support .support_wrap ul li .txt_wrap {position:static; width:100%; min-height:200px; padding:15px 0; -webkit-transform:none; transform:none;}
+    .franchise_support .support_wrap ul li .txt_wrap .tit {font-size:20px;}
+    .franchise_support .support_wrap ul li .txt_wrap .txt {font-size:14px;}
+}
+
+@media (max-width:599px) {
+    .franchise_support .support_wrap ul li {float:none; width:100%; margin:0; margin-bottom:15px;}
+    .franchise_support .support_wrap ul li .txt_wrap {min-height:0; text-align:center;}
+    .franchise_support .support_wrap ul li .txt_wrap .tit {font-size:16px;}
+    .franchise_support .support_wrap ul li .txt_wrap .txt {font-size:12px; line-height:1.6em;}
 }
 
 /* 가맹안내 - 가맹사업 브랜드 소개 */
