@@ -9,32 +9,70 @@
     <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     <link rel="stylesheet" href="map_asset/coding.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="map_asset/map.js"></script>
     <script>
         $(function () {
+
+            //파라미터 설정
             var param = 'url',
                 url_data = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
 
             url_data == null ? alert('url 파라미터 값을 받아오지 못하였습니다. 파라미터 값을 확인해주시길 바랍니다.') : $('#canvas').attr('src', url_data[1] || 0);
+
+            //슬라이더
+            $("#slider").slider({
+                min: 20,
+                max: 100,
+                value: 100,
+                orientation: "horizontal",
+                slide: function (event, ui) {
+                    $(this).parent().find('.scale').text(ui.value);
+                    $('.canvas_wrap').css('transform', 'scale(' + ui.value / 100 + ')');
+                }
+            });
+
+            //디바이스 선택
+            $('.opt_list').find('button').on('click', function () {
+                $('.canvas_wrap').removeClass('mobile tablet').addClass($(this).data('device')).css('transform', 'scale(1)');
+                $('.slider_wrap').find('.scale').text('100');
+                $('#slider').find('span').css('left', '100%');
+            });
         });
     </script>
 </head>
 
 <body>
     <div class="viewer">
-        <p class="warning">
-            모바일 테스트용 뷰어입니다.<br>
-            iframe의 스크롤바로 인해 실제 디바이스 화면과 다를게 보일 수 있으니<br>
-            정식 화면 검수는 반드시 실제 모바일 디바이스로 해주시길 바랍니다.
-        </p>
-        <div class="opt_list">
-            <ul>
-                <li class="mobile"><button>모바일 폰 사이즈 보기</button></li>
-                <li class="tablet"><button>태블릿 사이즈 보기</button></li>
-            </ul>
+
+        <div class="ctr">
+            <p class="warning">
+                모바일 테스트용 뷰어입니다.<br>
+                실제 디바이스 화면과 다를게 보일 수 있으니<br>
+                정식 화면 검수는 반드시<br>
+                <strong>실제 모바일 디바이스</strong>로 해주시길 바랍니다.
+            </p>
+            <div class="opt_list">
+                <ul>
+                    <li class="mobile">
+                        <button data-device="mobile">모바일 폰 사이즈 보기</button>
+                    </li>
+                    <li class="tablet">
+                        <button data-device="tablet">태블릿 사이즈 보기</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider_wrap">
+                배율 조절
+                <span class="scale">100</span>%
+                <div id="slider"></div>
+            </div>
         </div>
-        <div class="canvas_wrap">
-            <iframe src="null" frameborder="0" id="canvas" scrolling-x="no"></iframe>
+
+        <div class="view">
+            <div class="canvas_wrap mobile">
+                <iframe src="null" frameborder="0" id="canvas" scrolling-x="no"></iframe>
+            </div>
         </div>
     </div>
 </body>

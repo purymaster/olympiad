@@ -45,16 +45,24 @@ section iframe {width:100%; height:100%;}
 pre {margin-bottom:10px; font-size:12px; line-height:1.5;}
 
 /* Viewer */
-.viewer {padding:10px; text-align:center;}
-.viewer .warning {font-size:14px; line-height:1.6em; color:red;}
-.viewer .opt_list {margin-top:10px; font-size:0; text-align:center;}
-.viewer .opt_list li {display:inline-block; margin:0 5px;}
+.viewer {overflow:hidden; padding:10px; font-size:14px; line-height:1.6em;}
+.viewer .ctr {position:fixed; left:0; top:0; width:300px; padding:10px;}
+.viewer .warning strong {color:red;}
+.viewer .opt_list {overflow:hidden; margin:0 -5px; margin-top:10px; font-size:0;}
+.viewer .opt_list li {float:left; margin:0 5px;}
 .viewer .opt_list li button {width:50px; height:50px; text-indent:-9999px;}
 .viewer .opt_list li.mobile button {background:url(icon_mobile.gif);}
 .viewer .opt_list li.tablet button {background:url(icon_tab.gif);}
-.canvas_wrap {width:395px; height:774px; margin:0 auto; padding:171px 37px 147px 38px; background:url(bg_mobile.png); transition:all 0.5s;}
-#canvas {overflow-x:hidden; width:320px; height:454px;}
-
+.canvas_wrap {margin:0 auto; transform-origin:top; transition:all 0.1s;}
+.canvas_wrap.mobile {width:434px; height:886px; padding:183px 29px 149px 30px; background:url(bg_mobile.png);} /* IPhone 6 */
+.canvas_wrap.tablet {width:860px; height:1296px; padding:201px 45px 135px 47px; background:url(bg_tablet.png);} /* IPad Mini */
+#canvas {overflow-x:hidden; transition:all 0.1s;}
+.canvas_wrap.mobile #canvas {width:375px; height:554px;}
+.canvas_wrap.tablet #canvas {width:768px; height:960px;}
+.slider_wrap {margin-top:30px;}
+#slider {position:relative; width:calc(100% - 10px); height:10px; margin:10px auto;}
+#slider:before {position:absolute; top:50%; width:100%; height:2px; margin-top:-1px; background:#eee; content:"";}
+#slider span {display:inline-block; position:absolute; width:10px; height:10px; margin-left:-5px; border-radius:50%; background:red;}
 
 /* Map */
 .map_wrap {padding:10px;}
@@ -71,7 +79,7 @@ table.list {width:100%; min-width:1280px; border-top:1px solid #999; border-bott
 table.list th,table.list td {overflow:hidden; padding:5px; border-top:1px solid #eee; border-left:1px solid #ccc; font-size:12px; line-height:20px; text-overflow:ellipsis; white-space:nowrap;}
 table.list th {border-top:1px solid #999; border-left:1px solid #999;}
 table.list td a {color:#666; text-decoration:none;}
-table.list tr.hover td,table.list tr.hover td a {background:#999; color:#fff;}
+table.list tr.hover td {background:#999; color:#fff;}
 table.list tr.part td {border-top:1px solid #ccc;}
 table.list tr th:first-child,table.list tr td:first-child {border-left:0;}
 table.list tr:first-child td {border-top:1px solid #999;}
@@ -84,6 +92,9 @@ table.list th.memo {width:30%;}
 table.list th.link {width:80px;}
 table.list td {color:#666;}
 table.list td.center {text-align:center;}
+table.list td a {display:inline-block; height:20px; margin:0 2px; background-size:100%; text-indent:-9999px;}
+table.list td a.pc {width:23px; background-image:url(icon_pcview.png);}
+table.list td a.mobile {width:13px; background-image:url(icon_moview.png);}
 em.ico {display:inline-block; width:20px; border-radius:5px; font-size:12px; font-style:normal; line-height:20px; color:#fff; text-align:center; text-transform:uppercase;}
 em.ico.standby {background:#666;}
 em.ico.work {background:#1e90ff;}
@@ -107,7 +118,6 @@ em.ico.modify {background:#ff1493;}
     .table_wrap:before {display:inline-block; margin-bottom:5px; font-size:12px; line-height:1.5em; color:red; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
 }
 
-
 @media only screen and (max-width:1024px) {
     header {text-align:center;}
 	header h1 {position:static;}
@@ -119,5 +129,6 @@ em.ico.modify {background:#ff1493;}
 	.guide_wrap > ul > li {padding-left:8px; font-size:12px; text-indent:-8px;}
 	.slide_wrap {position:static; height:auto; border:0; background:#fff;}
 	.map_wrap .info {padding:5px;}
-	.map_wrap .tit {text-align:center;}
+    .map_wrap .tit {text-align:center;}
+    table.list td a.mobile {display:none;}
 }

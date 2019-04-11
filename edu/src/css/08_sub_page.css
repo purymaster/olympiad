@@ -235,7 +235,7 @@
 .philosophy .lower .txt {float:left; width:calc(50% - 30px); margin:0 15px;}
 
 @media (max-width:1024px) {
-    .philosophy .jumbotron {height:400px; padding-top:50px;}
+    .philosophy .jumbotron {height:400px; margin-top:-30px; padding-top:50px;}
     .philosophy .jumbotron .tit {font-size:46px;}
     .philosophy .jumbotron .sub_txt {font-size:30px;}
     .philosophy .upper {margin-top:30px;}
@@ -749,8 +749,6 @@
 
 .term_wrap.term li .term_tit {font-weight:700;}
 .term_wrap.term li .term_txt {margin-top:0;}
-
-.term_wrap.email .term_txt {margin-top:45px;}
 
 /* 사이트맵 */
 .sitemap_list {margin-top:50px; border-top:3px solid #333; text-align:left;}
