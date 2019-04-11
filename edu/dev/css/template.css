@@ -1260,22 +1260,33 @@ section .news_wrap .menu_tit {margin-top:50px;}
 }
 
 /* 가맹안내 - 공통 */
-.franchise_mod_cont {height:360px; margin-bottom:50px; padding:50px 30px; background-position:center; background-size:cover; text-align:center;}
-.franchise_mod_cont .tit {margin-bottom:20px; font-family:"Nanum Square"; font-size:40px; line-height:1.4em; color:#fff;} 
-.franchise_mod_cont .txt {font-family:"Nanum Square"; font-size:16px; line-height:1.75em; color:#fff;}
+.franchise_mod_cont {display:table; width:100%; height:360px; margin-bottom:50px; padding:0 30px; background-position:center; background-size:cover; text-align:center;}
+.franchise_mod_cont .txt_wrap {display:table-cell; vertical-align:middle;}
+.franchise_mod_cont .tit {font-family:"Nanum Square"; font-size:40px; line-height:1.4em; color:#fff;} 
+.franchise_mod_cont .tit strong {font-family:inherit; font-weight:700;}
+.franchise_mod_cont .txt {margin-top:20px; font-family:"Nanum Square"; font-size:16px; line-height:1.75em; color:#fff;}
+.franchise_step_txt .step_info > li {padding:40px 0 35px; border-bottom:1px solid #ddd;}
+.franchise_step_txt .step_info > li .tit {display:block; margin-bottom:5px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em; color:#222;}
+.franchise_step_txt .step_info > li .txt {font-size:15px; line-height:1.8em; color:#555;}
 
 @media (max-width:1024px) {
-    .franchise_mod_cont {height:auto; margin-bottom:30px; padding:30px;}
-    .franchise_mod_cont .tit {margin-bottom:15px; font-size:24px;}
-    .franchise_mod_cont .txt {font-size:14px;}
+    .franchise_mod_cont {height:auto !important; margin-bottom:30px; padding:30px;}
+    .franchise_mod_cont .tit {font-size:24px;}
+    .franchise_mod_cont .txt {margin-top:15px; font-size:14px;}
     .franchise_mod_cont .txt br {display:none;}
-}
+    .franchise_step_txt .step_info > li {padding:15px 0;}
+    .franchise_step_txt .step_info > li .tit {margin-bottom:15px; font-size:18px;}
+    .franchise_step_txt .step_info > li .txt {font-size:14px; line-height:1.6em;}
+} 
 
 @media (max-width:599px) {
     .franchise_mod_cont {padding:30px 15px;}
     .franchise_mod_cont .tit {font-size:18px;}
     .franchise_mod_cont .tit br {display:none;}
     .franchise_mod_cont .txt {font-size:12px; line-height:1.6em;}
+    .franchise_step_txt .step_info > li {text-align:center;}
+    .franchise_step_txt .step_info > li .tit {font-size:16px;}
+    .franchise_step_txt .step_info > li .txt {font-size:12px;}
 }
 
 /* 가맹안내 - 올림피아드 가맹안내 */
@@ -1313,7 +1324,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .franchise_info .counsel_wrap {display:block;}
     .franchise_info .counsel {padding-top:30px;}
     .franchise_info .counsel .txt_wrap {position:relative; padding-top:80px; font-family:"Nanum Square"; text-align:center;}
-    .franchise_info .counsel .txt_wrap:before {position:absolute; top:0; left:50%; width:66px; height:65px; background:red; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+    .franchise_info .counsel .txt_wrap:before {position:absolute; top:0; left:50%; width:66px; height:65px; background-image:url(../img/sprite/sprite.png); background-position:-5px -216px; background-size:500px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
     .franchise_info .counsel .txt_wrap .tit {font-family:inherit; font-size:18px; font-weight:700; line-height:1.5em; color:#222;}
     .franchise_info .counsel .txt_wrap .txt {margin-top:15px; font-family:inherit; font-size:14px; line-height:1.5em; color:#555;}
     .franchise_info .counsel .txt_wrap .tel {display:block; font-family:inherit; font-size:18px; line-height:1.5em;}
@@ -1336,18 +1347,24 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .franchise_step .step_wrap ol li .step {display:inline-block; position:relative; width:150px; height:150px; border-radius:50%; background:#fff; -webkit-box-shadow:0 0 20px 0 rgba(0,0,0,0.1); box-shadow:0 0 20px 0 rgba(0,0,0,0.1);}
 .franchise_step .step_wrap ol li .step .num {position:absolute; top:-0.75em; left:0; font-family:"Lato"; font-size:20px; font-weight:700; line-height:1.5em; color:#00aeba; letter-spacing:0;}
 .franchise_step .step_wrap ol li .step .txt_wrap {display:table; width:100%; padding-top:75px;}
-.franchise_step .step_wrap ol li .step .txt_wrap:before {position:absolute; top:25px; left:50%; width:46px; height:46px; background:red; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.franchise_step .step_wrap ol li .step .txt_wrap:before {position:absolute; top:25px; left:50%; height:45px; background-image:url(../img/sprite/sprite.png); background-size:500px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.franchise_step .step_wrap ol li:nth-child(1) .step .txt_wrap:before {width:48px; background-position:-5px -166px;}
+.franchise_step .step_wrap ol li:nth-child(2) .step .txt_wrap:before {width:45px; background-position:-58px -166px;}
+.franchise_step .step_wrap ol li:nth-child(3) .step .txt_wrap:before {width:41px; background-position:-108px -166px;}
+.franchise_step .step_wrap ol li:nth-child(4) .step .txt_wrap:before {width:34px; background-position:-154px -166px;}
+.franchise_step .step_wrap ol li:nth-child(5) .step .txt_wrap:before {width:41px; margin-left:3px; background-position:-193px -166px;}
+.franchise_step .step_wrap ol li:nth-child(6) .step .txt_wrap:before {width:45px; background-position:-239px -166px;}
+.franchise_step .step_wrap ol li:nth-child(7) .step .txt_wrap:before {width:43px; background-position:-289px -166px;}
+.franchise_step .step_wrap ol li:nth-child(8) .step .txt_wrap:before {width:44px; background-position:-337px -166px;}
+.franchise_step .step_wrap ol li:nth-child(9) .step .txt_wrap:before {width:27px; background-position:-386px -166px;}
 .franchise_step .step_wrap ol li .step .txt_wrap .txt {display:table-cell; height:2.8em; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:1.4em; color:#333; vertical-align:middle;}
-.franchise_step .step_txt ol > li {padding:40px 0 35px; border-bottom:1px solid #ddd;}
-.franchise_step .step_txt ol > li .tit {display:block; margin-bottom:5px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em; color:#222;}
-.franchise_step .step_txt ol > li .txt {font-size:15px; line-height:1.8em; color:#555;}
-.franchise_step .step_txt .img_list {line-height:0; margin:25px -10px 0; overflow:hidden;}
-.franchise_step .step_txt .img_list li {width:33.33%; float:left; padding:0 10px;}
-.franchise_step .step_txt .img_list li img {width:100%;}
-.franchise_step .step_txt .smart_edu {margin-top:25px;}
-.franchise_step .step_txt .smart_edu dt {float:left; font-size:16px; font-weight:700; line-height:28px; color:#008398;}
-.franchise_step .step_txt .smart_edu dt:after {margin:0 0.2em; color:#333; content:":";}
-.franchise_step .step_txt .smart_edu dd {overflow:hidden; font-size:15px; line-height:28px;}
+.franchise_step .franchise_step_txt .img_list {line-height:0; margin:25px -10px 0; overflow:hidden;}
+.franchise_step .franchise_step_txt .img_list li {width:33.33%; float:left; padding:0 10px;}
+.franchise_step .franchise_step_txt .img_list li img {width:100%;}
+.franchise_step .franchise_step_txt .smart_edu {margin-top:25px;}
+.franchise_step .franchise_step_txt .smart_edu dt {float:left; font-size:16px; font-weight:700; line-height:28px; color:#008398;}
+.franchise_step .franchise_step_txt .smart_edu dt:after {margin:0 0.2em; color:#333; content:":";}
+.franchise_step .franchise_step_txt .smart_edu dd {overflow:hidden; font-size:15px; line-height:28px;}
 
 @media (max-width:1024px) {
     .franchise_step .step_wrap {margin-top:-30px; padding-bottom:0;}
@@ -1360,12 +1377,9 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .franchise_step .step_wrap ol li .step .txt_wrap {padding-top:70px;}
     .franchise_step .step_wrap ol li .step .txt_wrap:before {top:15px;}
     .franchise_step .step_wrap ol li .step .txt_wrap .txt {font-size:14px;}
-    .franchise_step .step_txt ol > li {padding:15px 0;}
-    .franchise_step .step_txt ol > li .tit {margin-bottom:15px; font-size:18px;}
-    .franchise_step .step_txt ol > li .txt {font-size:14px; line-height:1.6em;}
-    .franchise_step .step_txt .smart_edu dt {font-size:14px; line-height:1.6em;}
-    .franchise_step .step_txt .smart_edu dd {font-size:14px; line-height:1.6em;}
-    .franchise_step .step_txt .img_list,.franchise_step .step_txt .smart_edu {margin-top:15px;}
+    .franchise_step .franchise_step_txt .smart_edu dt {font-size:14px; line-height:1.6em;}
+    .franchise_step .franchise_step_txt .smart_edu dd {font-size:14px; line-height:1.6em;}
+    .franchise_step .franchise_step_txt .img_list,.franchise_step .franchise_step_txt .smart_edu {margin-top:15px;}
 }
 
 @media (max-width:599px) {
@@ -1375,44 +1389,33 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .franchise_step .step_wrap ol li .step .txt_wrap {padding-top:90px;}
     .franchise_step .step_wrap ol li .step .txt_wrap:before {top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);}
     .franchise_step .step_wrap ol li .step .txt_wrap .txt {font-size:12px;}
-    .franchise_step .step_txt ol > li {text-align:center;}
-    .franchise_step .step_txt ol > li .tit {font-size:16px;}
-    .franchise_step .step_txt ol > li .txt {font-size:12px;}
-    .franchise_step .step_txt .img_list {margin:0; margin-top:15px;}
-    .franchise_step .step_txt .img_list li {width:100%; margin-bottom:15px; padding:0;}
-    .franchise_step .step_txt .img_list li:last-child {margin:0;}
-    .franchise_step .step_txt .smart_edu dt {float:none; margin:10px 0;}
-    .franchise_step .step_txt .smart_edu dt:after {display:none;}
-    .franchise_step .step_txt .smart_edu dd {font-size:12px;}
-    .franchise_step .step_txt .smart_edu dd br {display:none;}
+    .franchise_step .franchise_step_txt .img_list {margin:0; margin-top:15px;}
+    .franchise_step .franchise_step_txt .img_list li {width:100%; margin-bottom:15px; padding:0;}
+    .franchise_step .franchise_step_txt .img_list li:last-child {margin:0;}
+    .franchise_step .franchise_step_txt .smart_edu dt {float:none; margin:10px 0;}
+    .franchise_step .franchise_step_txt .smart_edu dt:after {display:none;}
+    .franchise_step .franchise_step_txt .smart_edu dd {font-size:12px;}
+    .franchise_step .franchise_step_txt .smart_edu dd br {display:none;}
 }
 
 /* 가맹안내 - 개원 및 운영지원 */
-.franchise_support .support_wrap ul {overflow:hidden;}
-.franchise_support .support_wrap ul li {float:left; position:relative; width:calc(50% - 20px); margin-right:40px; margin-bottom:120px;}
-.franchise_support .support_wrap ul li:nth-child(even) {margin-right:0; -webkit-transform:translateY(70px); transform:translateY(70px);}
-.franchise_support .support_wrap ul li .tab_img {line-height:0;}
-.franchise_support .support_wrap ul li .txt_wrap {position:absolute; right:0; bottom:70px; width:90%; padding:25px 0 0 30px; background-color:#fff; -webkit-transform:translateY(100%); transform:translateY(100%);}
-.franchise_support .support_wrap ul li .txt_wrap .tit {margin-bottom:5px; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.5em; color:#222;}
-.franchise_support .support_wrap ul li .txt_wrap .txt {font-size:15px; line-height:1.8em; color:#555;}
+.franchise_support .franchise_mod_cont {height:300px; margin-bottom:0; background-image:url(../img/bg/bg_subvisual_franchise_support.jpg);}
+.franchise_support .img_list {overflow:hidden; margin:-7px; margin-top:25px; line-height:0;}
+.franchise_support .img_list li {float:left; margin:7px;}
+.franchise_support .img_list img {height:165px; border:1px solid #ddd;}
+.franchise_support .img_list.brand img {height:128px;}
 
 @media (max-width:1024px) {
-    .franchise_support .support_wrap ul li {width:calc(50% - 15px); margin-right:30px; margin-bottom:0;}
-    .franchise_support .support_wrap ul li:nth-child(even) {-webkit-transform:none;transform:none;}
-    .franchise_support .support_wrap ul li .txt_wrap {position:static; width:100%; min-height:200px; padding:15px 0; -webkit-transform:none; transform:none;}
-    .franchise_support .support_wrap ul li .txt_wrap .tit {font-size:20px;}
-    .franchise_support .support_wrap ul li .txt_wrap .txt {font-size:14px;}
+    .franchise_support .img_list {margin-top:15px;}
 }
 
 @media (max-width:599px) {
-    .franchise_support .support_wrap ul li {float:none; width:100%; margin:0; margin-bottom:15px;}
-    .franchise_support .support_wrap ul li .txt_wrap {min-height:0; text-align:center;}
-    .franchise_support .support_wrap ul li .txt_wrap .tit {font-size:16px;}
-    .franchise_support .support_wrap ul li .txt_wrap .txt {font-size:12px; line-height:1.6em;}
+    .franchise_support .img_list li {float:none;}
 }
 
 /* 가맹안내 - 가맹사업 브랜드 소개 */
 .franchise_brand .franchise_mod_cont {background-image:url(../img/bg/bg_subvisual_franchise_brand.jpg);}
+.franchise_brand .franchise_mod_cont .txt_wrap {-webkit-transform:translateY(-64px);transform:translateY(-64px);}
 .franchise_brand .info_wrap {width:calc(100% - 100px); margin:0 auto; margin-top:-155px; padding:40px 45px 0; background:#fff;}
 .franchise_brand .info_wrap ul li {margin-bottom:65px;}
 .franchise_brand .info_wrap ul li .logo {float:left; width:260px; padding-top:30px;}
@@ -1424,7 +1427,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .franchise_brand .info_wrap ul li .info_txt .txt:last-child {margin-bottom:0;}
 .franchise_brand .counsel {overflow:hidden; position:relative; padding-top:40px; border-top:1px solid #dcdcdc;}
 .franchise_brand .counsel .txt_wrap {float:left; position:relative; padding-left:85px; font-family:"Nanum Square";}
-.franchise_brand .counsel .txt_wrap:before {position:absolute; top:0; left:0; width:66px; height:65px; background:red; content:"";} 
+.franchise_brand .counsel .txt_wrap:before {position:absolute; top:0; left:0; width:66px; height:65px; background-image:url(../img/sprite/sprite.png); background-position:-5px -216px; background-size:500px; content:"";}
 .franchise_brand .counsel .txt_wrap .tit {margin-top:-6px; font-family:inherit; font-size:24px; font-weight:700; line-height:1.5em; color:#222;}
 .franchise_brand .counsel .txt_wrap .txt {margin-top:10px; font-family:inherit; font-size:16px; line-height:20px; color:#555;}
 .franchise_brand .counsel .txt_wrap .tel {margin-left:15px; font-family:inherit; font-size:30px; line-height:20px;}
@@ -1434,6 +1437,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .franchise_brand .counsel .btn_wrap .link span:before,.franchise_brand .counsel .btn_wrap .link span:after {right:20px;}
 
 @media (max-width:1024px) {
+    .franchise_brand .franchise_mod_cont .txt_wrap {-webkit-transform:none;transform:none;}
     .franchise_brand .info_wrap {width:100%; margin:0 auto 30px; padding:0;}
     .franchise_brand .info_wrap ul li {margin-bottom:30px;}
     .franchise_brand .info_wrap ul li .logo {padding:0; width:250px;}
