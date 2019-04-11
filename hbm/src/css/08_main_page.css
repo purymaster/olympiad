@@ -41,6 +41,10 @@
 .main_slide_pager .pager li .sub_txt {font-size:18px; font-weight:300;}
 .main_slide_pager .pager li strong {font-size:24px; font-weight:400;}
 
+@media (max-height:768px) {
+    .main_slide .slide .txt_wrap {bottom:180px;}
+}
+
 @media (max-width:1024px) {
     .main_slide .slide li {min-height:0;}
     .main_slide .slide .txt_view {display:table; width:100%; min-height:0; table-layout:fixed;}

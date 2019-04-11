@@ -37,6 +37,50 @@ $(function () {
         })
     });
 
+    /******************** 상단 배너 하루 열지 않기 ********************/
+
+    var upper_banner = $('.upper_banner');
+
+    function set_cookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    };
+
+    function get_cookie(cname) {
+        var name = cname + "=";
+        var decoded_cookie = decodeURIComponent(document.cookie);
+        var ca = decoded_cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1);
+            if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+        }
+        return "";
+    }
+
+    function close_banner() {
+        upper_banner.removeClass('on');
+        $('body').removeClass('upper_banner_on');
+        setTimeout(function () {
+            upper_banner.hide();
+        }, 200);
+    };
+
+    (function check_cookie() {
+        get_cookie("no_pop_hbm") !== "" ?
+            (upper_banner.hide(),
+                $('body').removeClass('upper_banner_on')) :
+            (upper_banner.addClass('on'),
+                $('body').addClass('upper_banner_on'));
+    })();
+
+    upper_banner.find('button').on('click', function () {
+        if ($(this).hasClass('today')) set_cookie("no_pop_hbm", "y", "1"); // 1일동안 보지 않기
+        close_banner();
+    });
+
     /******************** 헤더 검색창 제어 ********************/
 
     var search_box = $('header .search_keyword .search_box');
