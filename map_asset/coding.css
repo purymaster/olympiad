@@ -120,6 +120,8 @@ em.ico.modify {background:#ff1493;}
     table.list th.memo {width:0;}
     table.list th.link {width:40px;}
     table.list td a.mobile {display:none;}
+    table.list thead tr th:nth-child(2),
+    table.list tbody tr td:nth-child(2) {border-left:0;}
 }
 
 @media (max-width:599px) {
