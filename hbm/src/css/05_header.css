@@ -23,10 +23,11 @@ header:hover .header_wrap h1 .alter {opacity:1; visibility:visible;}
 .nav_wrap {position:absolute; top:20px; right:50px; padding:25px 0;}
 .nav_wrap .menu {float:right;}
 
+.group_nav {margin-left:48px; font-size:0;}
 .group_nav:after {display:block; clear:both; content:"";}
-.group_nav .login {float:left; position:relative; margin-left:48px; padding:0 15px 0 25px; border:1px solid #fff; border-radius:14px; font-size:12px; line-height:26px; color:#fff; transition:all 0.5s;}
-header:hover .group_nav .login {border-color:#008398; background:#00aeba;}
-.group_nav .login:before {position:absolute; top:50%; left:12px; width:9px; height:12px; margin-top:-6px; background:red; content:"";}
+.group_nav .btn {float:left; position:relative; margin:0 5px; padding:0 15px 0 25px; border:1px solid #fff; border-radius:14px; font-size:12px; line-height:26px; color:#fff; transition:all 0.5s;}
+header:hover .group_nav .btn {border-color:#008398; background:#00aeba;}
+.group_nav .btn:before {position:absolute; top:50%; left:12px; width:9px; height:12px; margin-top:-6px; background:red; content:"";}
 
 .navigation a {color:#fff; transition:all 0.5s;}
 .navigation a:hover {color:#00aeba !important;}
@@ -56,9 +57,10 @@ header:hover .navigation .menu_2depth {visibility:visible; transition:all 1s; op
 @media (max-width:1280px) {
     .header_wrap h1 img {height:auto;}
     .header_wrap h1 a {width:126px; height:45px; margin-top:8px;}
-    .group_nav .login {margin-left:18px;}
+    .group_nav {margin-left:18px;}
     .group_nav .search_keyword .search {margin-left:10px;}
-    .navigation .menu_1depth > li {margin:0 15px;}
+    .navigation .menu_1depth > li {margin:0 8px;}
+    .navigation .menu_1depth > li > a {font-size:14px;}
 }
  
 @media (max-width:1024px) {
@@ -82,6 +84,7 @@ header:hover .navigation .menu_2depth {visibility:visible; transition:all 1s; op
     .header_wrap .open_menu:focus span:nth-child(1) {width:14px; transform:rotate(45deg);}
     .header_wrap .open_menu:focus span:nth-child(2) {width:90%;}
     .header_wrap .open_menu:focus span:nth-child(3) {width:14px; transform:rotate(-45deg);}
+    .group_nav {margin:0;}
     nav {visibility:hidden; position:fixed; top:0; left:0; z-index:1; width:100%; height:100%; transition:all 0.5s; opacity:0;}
     nav.on {visibility:visible; background:rgba(0,0,0,0.2); opacity:1;}
     .nav_wrap {position:static; width:50%; height:100%; padding:0; padding:15px 30px; background:#fff; text-align:left; transform:translateX(-100%); box-shadow:10px 0 10px -5px rgba(0,0,0,0.2);}
@@ -98,14 +101,15 @@ header:hover .navigation .menu_2depth {visibility:visible; transition:all 1s; op
     .nav_wrap .call_num dt {font-size:14px;}
     .nav_wrap .call_num dd {margin-left:10px; font-size:18px; color:#008398;}
 
-    .group_nav .login {display:inline-block; float:none; margin:0; border-color:#008398; background:#00aeba;}
+    .group_nav {margin:0 -5px;}
+    .group_nav .btn {display:inline-block; float:none; border-color:#008398; background:#00aeba;}
 
     .navigation .menu_1depth {float:none; margin:0; margin-top:15px;}
     .navigation .menu_1depth > li {float:none; margin:0;}
     .navigation .menu_1depth > li:hover:after {display:none;}
     .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-weight:700; line-height:2em; color:#333;}
     .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; transform:none; transition:none !important; opacity:1;}
-    .navigation .menu_2depth li a {padding:0; font-size:14px; line-height:2em;}
+    .navigation .menu_2depth li a {padding:0.3em 0; font-size:12px; line-height:1.4em;}
     .navigation .menu_2depth li a:hover {text-decoration:none;}
 
     .search_keyword {top:13px; z-index:0; width:100%; text-align:right;}

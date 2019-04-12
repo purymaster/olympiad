@@ -22,7 +22,7 @@
 }
  
 @media (max-width:1024px) {
-    .upper_banner_on .sub_header {margin-top:calc(65px + 20.5078125%);}
+    .upper_banner_on .sub_header {margin-top:calc(50px + 10.9375%);}
     .sub_header .sub_header_wrap {margin-top:50px; height:240px;}
     .sub_header .tit_wrap {padding-top:70px;}
     .sub_header .sub_txt {font-size:20px;}
