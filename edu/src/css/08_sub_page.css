@@ -137,7 +137,7 @@
 }
 
 @media (max-width:599px) {
-    .content_txt .main_txt {font-size:16px;}
+    .content_txt .main_txt {font-size:14px;}
     .content_txt .main_txt strong {font-size:20px;}
     .content_txt .sub_txt {font-size:12px; line-height:1.6em;}
 }
