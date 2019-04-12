@@ -72,10 +72,10 @@ pre {margin-bottom:10px; font-size:12px; line-height:1.5;}
 .map_wrap .info .process dt,.map_wrap .info .process dd {float:left; margin-right:5px;}
 .map_wrap .info .process dd {color:red;}
 .map_wrap .info .status {overflow:hidden; float:right;}
-.map_wrap .info .status li {float:left; margin-left:5px;}
-.map_wrap .info .status li em {margin-right:5px;}
+.map_wrap .info .status li {float:left; margin-left:3px;}
+.map_wrap .info .status li em {margin-right:3px;}
 .table_wrap {overflow-x:auto;}
-table.list {width:100%; min-width:1280px; border-top:1px solid #999; border-bottom:1px solid #999; font-size:0; word-break:break-all; table-layout:fixed;}
+table.list {width:100%; min-width:768px; border-top:1px solid #999; border-bottom:1px solid #999; font-size:0; word-break:break-all; table-layout:fixed;}
 table.list th,table.list td {overflow:hidden; padding:5px; border-top:1px solid #eee; border-left:1px solid #ccc; font-size:12px; line-height:20px; text-overflow:ellipsis; white-space:nowrap;}
 table.list th {border-top:1px solid #999; border-left:1px solid #999;}
 table.list td a {color:#666; text-decoration:none;}
@@ -101,8 +101,22 @@ em.ico.work {background:#1e90ff;}
 em.ico.end {background:#32cd32;}
 em.ico.modify {background:#ff1493;}
 
-@media only screen and (max-width:1280px) {
+@media (max-width:1024px) {
+    header {text-align:center;}
+	header h1 {position:static;}
+	header {height:auto; padding:10px 0; font-size:0;}
+	nav {overflow-x:auto; width:100%;}
+	nav ul {position:static; margin-top:10px; white-space:nowrap;}
+	nav ul li a {font-size:14px; line-height:19px;}
+    section {position:static; padding-top:80px; overflow:hidden;}
+	.guide_wrap > ul > li {padding-left:8px; font-size:12px; text-indent:-8px;}
+	.slide_wrap {position:static; height:auto; border:0; background:#fff;}
+	.map_wrap .info {padding:5px;}
+    .map_wrap .tit {text-align:center;}
+    table.list td a.mobile {display:none;}
+}
 
+@media (max-width:800px) {
     @-webkit-keyframes scroll_txt {
         0% {-webkit-transform:translateX(0px);transform:translateX(0px);}
         50% {-webkit-transform:translateX(10px);transform:translateX(10px);}
@@ -116,19 +130,15 @@ em.ico.modify {background:#ff1493;}
     }
     
     .table_wrap:before {display:inline-block; margin-bottom:5px; font-size:12px; line-height:1.5em; color:red; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
-}
 
-@media only screen and (max-width:1024px) {
-    header {text-align:center;}
-	header h1 {position:static;}
-	header {height:auto; padding:10px 0; font-size:0;}
-	nav {overflow-x:auto; width:100%;}
-	nav ul {position:static; margin-top:10px; white-space:nowrap;}
-	nav ul li a {font-size:14px; line-height:19px;}
-    section {position:static; padding-top:80px; overflow:hidden;}
-	.guide_wrap > ul > li {padding-left:8px; font-size:12px; text-indent:-8px;}
-	.slide_wrap {position:static; height:auto; border:0; background:#fff;}
-	.map_wrap .info {padding:5px;}
-    .map_wrap .tit {text-align:center;}
-    table.list td a.mobile {display:none;}
+    table thead tr th:nth-child(1),
+    table thead tr th:nth-child(6),
+    table thead tr th:nth-child(9),
+    table thead tr th:nth-child(7),
+    table thead tr th:nth-child(10),
+    table tbody tr td:nth-child(1),
+    table tbody tr td:nth-child(6),
+    table tbody tr td:nth-child(9),
+    table tbody tr td:nth-child(7),
+    table tbody tr td:nth-child(10) {display:none;}
 }

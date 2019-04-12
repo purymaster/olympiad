@@ -134,6 +134,12 @@
 .sub_tit_wrap h3 {font-family:"Nanum Square"; font-size:32px; font-weight:900; line-height:1.5em;}
 .sub_tit_wrap .txt_info {margin-top:25px; font-size:15px; line-height:2em;}
 .sub_tit_wrap .txt_info strong {font-weight:700; color:#008398;}
+.sub_col_tit {text-align:center;}
+.sub_col_tit p {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:24px; font-weight:900; line-height:1.5em;}
+.sub_col_tit p:before,.sub_col_tit p:after {position:absolute; top:50%; width:50px; height:1px; background:#000; opacity:0.5; content:"";}
+.sub_col_tit p:before {left:-65px;}
+.sub_col_tit p:after {right:-65px;}
+.sub_tit_wrap + .sub_col_tit {margin-top:45px;}
 .sub_cont_wrap p.tit {font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#333;}
 .sub_cont_wrap p.tit strong {font-family:inherit; color:#008398;}
 .sub_cont_wrap p.txt {margin-top:25px; font-size:15px; line-height:2em;}
@@ -147,6 +153,9 @@
     .sub_tit_wrap h3 {font-size:24px;}
     .sub_tit_wrap .txt_info {font-size:14px; line-height:1.8em;}
     .sub_tit_wrap .txt_info br {display:none;}
+    .sub_col_tit p {font-size:20px;}
+    .sub_col_tit p:before,.sub_col_tit p:after {display:none;}
+    .sub_tit_wrap + .sub_col_tit {margin-top:15px;}
     .sub_cont_wrap p.tit {font-size:24px;}
     .sub_cont_wrap p.txt {margin-top:20px; font-size:14px; line-height:1.8em;}
     .sub_cont_wrap p.tit br,.sub_cont_wrap p.txt br  {display:none;}
@@ -157,6 +166,7 @@
     .sub_tit_wrap .sub_txt {font-size:14px;}
     .sub_tit_wrap h3 {font-size:18px;}
     .sub_tit_wrap .txt_info {font-size:12px; line-height:1.6em;}
+    .sub_col_tit p {font-size:16px;}
     .sub_cont_wrap p.tit {font-size:16px;}
     .sub_cont_wrap p.txt {margin-top:15px; font-size:12px; line-height:1.6em;}
 }

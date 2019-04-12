@@ -682,7 +682,7 @@
 .franchise_input .form_term dl > div {margin-bottom:20px;}
 .franchise_input .form_term dd {font-size:15px; line-height:24px; color:#333;}
 .franchise_input .form_term .agree {margin-top:30px;}
-.franchise_input .form_term .agree label {padding-left:1.5em; font-size:16px;}
+.franchise_input .form_term .agree label {padding-left:2em; font-size:16px;}
 .franchise_input .form_term .btn_wrap {margin-top:15px;}
 .franchise_input .form_term .btn_wrap button {padding-right:90px; padding-left:20px; border-color:#00889c; background:#00aeba; font-size:18px; font-weight:700; line-height:48px; color:#fff;}
 .franchise_input .form_term .btn_wrap button span:before,.franchise_input .form_term .btn_wrap button span:after {right:-70px; transition:all 0.5s;}
