@@ -6,12 +6,10 @@
 /*************** 공통 요소 ***************/
 
 /* 서브 페이지 타이틀 */
-.sub_header {position:relative; z-index:0; background-position:center; background-size:cover; color:#fff; text-align:center;}
+.sub_header {position:relative; z-index:0; background-color:#ccc; background-position:center; background-size:cover; color:#fff; text-align:center;}
 /* .sub_header:after {position:absolute; top:0; right:0; bottom:0; left:0; background:#000; transform:scaleY(1); transform-origin:top; transition:all .5s; transition-delay:.5s; opacity:1; content:"";}
 .sub_header.animated:after {transform:scaleY(0); opacity:0;} */
 .upper_banner_on .sub_header {margin-top:10.9375%;}
-.sub_header.type1 {background-image:url(../img/bg/bg_subheader_01.jpg);}
-.sub_header.type2 {background-image:url(../img/bg/bg_subheader_02.jpg);}
 .sub_header .sub_header_wrap {height:480px;}
 .sub_header .tit_wrap {padding-top:200px; }
 .sub_header .sub_txt {font-family:"Nanum Square"; font-size:24px; font-weight:300; line-height:1.45em;}

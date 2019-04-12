@@ -17,10 +17,11 @@ $(function() {
 
     var select_form = $('.select_form');
 
-    select_form.on('click', 'button', function() {
+    select_form.on('click', 'button[type="button"]', function() {
+        select_form.find('button').removeClass('on');
         $(this).toggleClass('on');
     }).on('click', 'a', function() {
-        $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
+        $(this).closest('ul').siblings('button').removeClass('on').find('span').html($(this).text());
     });
     $(document).on('mouseup', function(e) {
         if (!select_form.is(e.target) && select_form.has(e.target).length === 0)

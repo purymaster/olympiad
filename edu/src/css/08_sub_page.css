@@ -6,12 +6,8 @@
 /*************** 공통 요소 ***************/
 
 /* 페이지 공통 */
-.sub_header {position:relative; height:470px; padding-top:210px; background-position:center; background-size:cover; color:#fff; text-align:center; transform:scale(1.05); transition:transform 1s;}
+.sub_header {position:relative; height:470px; padding-top:210px; background-color:#ccc; background-position:center; background-size:cover; color:#fff; text-align:center; transform:scale(1.05); transition:transform 1s;}
 .sub_header.animated {transform:scale(1);}
-.sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);} /* 회사소개 */
-.sub_header.type2 {background-image:url(../img/bg/bg_sub_type2.png);} /* 사업영역 */
-.sub_header.type4 {background-image:url(../img/bg/bg_sub_type4.png);} /* 가맹안내 */
-.sub_header.type5 {background-image:url(../img/bg/bg_sub_type5.png);} /* 커뮤니티 */
 .sub_header h2 {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:400; line-height:1.5em;}
 .sub_header h2:after {position:absolute; right:-76px; bottom:15px; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-position:-10px -246px; background-size:1000px 1000px; content:"";}
 .sub_header .sub_tit {font-size:24px; line-height:1.5em;}

@@ -799,12 +799,8 @@ section .news_wrap .menu_tit {margin-top:50px;}
 /*************** 공통 요소 ***************/
 
 /* 페이지 공통 */
-.sub_header {position:relative; height:470px; padding-top:210px; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transform:scale(1.05); transform:scale(1.05); -webkit-transition:-webkit-transform 1s; transition:-webkit-transform 1s; transition:transform 1s; transition:transform 1s, -webkit-transform 1s;}
+.sub_header {position:relative; height:470px; padding-top:210px; background-color:#ccc; background-position:center; background-size:cover; color:#fff; text-align:center; -webkit-transform:scale(1.05); transform:scale(1.05); -webkit-transition:-webkit-transform 1s; transition:-webkit-transform 1s; transition:transform 1s; transition:transform 1s, -webkit-transform 1s;}
 .sub_header.animated {-webkit-transform:scale(1);transform:scale(1);}
-.sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);} /* 회사소개 */
-.sub_header.type2 {background-image:url(../img/bg/bg_sub_type2.png);} /* 사업영역 */
-.sub_header.type4 {background-image:url(../img/bg/bg_sub_type4.png);} /* 가맹안내 */
-.sub_header.type5 {background-image:url(../img/bg/bg_sub_type5.png);} /* 커뮤니티 */
 .sub_header h2 {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:400; line-height:1.5em;}
 .sub_header h2:after {position:absolute; right:-76px; bottom:15px; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-position:-10px -246px; background-size:1000px 1000px; content:"";}
 .sub_header .sub_tit {font-size:24px; line-height:1.5em;}
@@ -1475,7 +1471,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
 .franchise_input .form_term dl > div {margin-bottom:20px;}
 .franchise_input .form_term dd {font-size:15px; line-height:24px; color:#333;}
 .franchise_input .form_term .agree {margin-top:30px;}
-.franchise_input .form_term .agree label {padding-left:1.5em; font-size:16px;}
+.franchise_input .form_term .agree label {padding-left:2em; font-size:16px;}
 .franchise_input .form_term .btn_wrap {margin-top:15px;}
 .franchise_input .form_term .btn_wrap button {padding-right:90px; padding-left:20px; border-color:#00889c; background:#00aeba; font-size:18px; font-weight:700; line-height:48px; color:#fff;}
 .franchise_input .form_term .btn_wrap button span:before,.franchise_input .form_term .btn_wrap button span:after {right:-70px; -webkit-transition:all 0.5s; transition:all 0.5s;}

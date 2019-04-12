@@ -8,6 +8,7 @@ $(function () {
     var select_form = $('.select_form');
 
     select_form.on('click', 'button', function () {
+        select_form.find('button').removeClass('on');
         $(this).toggleClass('on');
     }).on('click', 'a', function () {
         $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');

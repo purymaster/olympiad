@@ -6,18 +6,9 @@
 /*************** 공통 요소 ***************/
 
 /* 서브 페이지 타이틀 */
-.sub_header {position:relative; z-index:1; height:290px; margin-top:130px; padding-top:80px; background-position:center; background-size:cover; color:#fff; text-align:center; transition:opacity 2s; opacity:0;}
+.sub_header {position:relative; z-index:1; height:290px; margin-top:130px; padding-top:80px; background-color:#ccc; background-position:center; background-size:cover; color:#fff; text-align:center; transition:opacity 2s; opacity:0;}
 .upper_banner_on .sub_header {margin-top:calc(130px + 10.9375%);}
 .sub_header.animated {opacity:1;}
-.sub_header.type1 {background-image:url(../img/bg/bg_sub_type1.png);}
-.sub_header.type2 {background-image:url(../img/bg/bg_sub_type2.png);}
-.sub_header.type3 {background-image:url(../img/bg/bg_sub_type3.png);}
-/*.sub_header.type4 {background-image:url(../img/bg/bg_sub_type4.png);}
-.sub_header.type5 {background-image:url(../img/bg/bg_sub_type5.png);}
-.sub_header.type6 {background-image:url(../img/bg/bg_sub_type6.png);} */
-.sub_header.type4 {background:red;}
-.sub_header.type5 {background:red;}
-.sub_header.type6 {background:red;}
 .sub_header .sub_txt {font-family:"Nanum Square"; font-size:22px; font-weight:400; line-height:1.5em;}
 .sub_header h2 {font-family:"Nanum Square"; font-size:38px; font-weight:700; line-height:1.5em;}
 .sub_content {min-height:740px; padding-bottom:100px;}
@@ -837,18 +828,38 @@
 .middle_manage .point_list ul li .txt_wrap {display:table-cell; border-radius:45px; background:rgba(255,255,255,0.65); font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.4em; color:#008398; vertical-align:middle;}
 .middle_manage .sub_upper_wrap .point_list {margin-top:25px;}
 .middle_manage .sub_lower_wrap .point_list ul li .txt_wrap {background:#eff5f6;}
-.middle_manage .talk_wrap {}
-.middle_manage .talk_wrap .talk_list {}
-.middle_manage .talk_wrap .target {}
-.middle_manage .talk_wrap .txt_list li {}
-.middle_manage .sdlc {}
-.middle_manage .sdlc_wrap {}
-.middle_manage .sdlc_wrap ul {}
-.middle_manage .sdlc_wrap ul li {}
+.middle_manage .talk_wrap {padding:25px 0 35px 110px; border:1px solid #ddd; background:url(../img/bg/bg_middlemanage_talk.png) no-repeat; background-position:right bottom;}
+.middle_manage .talk_wrap .talk_list {margin-bottom:25px;}
+.middle_manage .talk_wrap .talk_list:last-child {margin:0;}
+.middle_manage .talk_wrap .target {font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.8em; color:#00aeba;}
+.middle_manage .talk_wrap .txt_list li {font-size:16px; line-height:1.75em;}
+.middle_manage .talk_wrap .txt_list li:before {top:0.7em;}
+.middle_manage .sdlc {margin-bottom:-100px; background:url(../img/bg/bg_middlemanage_sdlc.jpg); background-position:center; background-size:cover;}
+.middle_manage .sdlc_wrap ul {overflow:hidden;}
+.middle_manage .sdlc_wrap ul li {float:left; position:relative; width:25%; padding:160px 30px 5px; font-size:16px; line-height:1.5em; color:#fff; text-align:center;}
+.middle_manage .sdlc_wrap ul li:after {position:absolute; top:15px; right:0; width:1px; height:220px; background:rgba(255,255,255,0.4); content:"";}
+.middle_manage .sdlc_wrap ul li:last-child:after {display:none;}
+.middle_manage .sdlc_wrap ul li p:before,.middle_manage .sdlc_wrap ul li p:after {position:absolute; top:0; left:50%; transform:translateX(-50%); content:"";}
+.middle_manage .sdlc_wrap ul li p:before {width:130px; height:130px; border-radius:50%; background:#00aeba; opacity:0.7;}
+.middle_manage .sdlc_wrap ul li p:after {width:160px; height:140px; background:red;}
+.middle_manage .btn_wrap {margin-top:110px; text-align:center;}
+.middle_manage .btn_wrap a {width:220px; background:#008398; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff;}
 
 @media screen and (max-width:1024px) {
     .middle_manage .point_list ul li .txt_wrap {font-size:14px;}
     .middle_manage .point_list ul li .list_box {padding:5px; border-width:2px;}
+    .middle_manage .talk_wrap {overflow:hidden; padding:30px 15px; padding-bottom:160px; background-position-x:center; background-size:290px 160px;}
+    .middle_manage .talk_wrap .talk_list {float:left; width:50%; margin:0; padding:0 15px;}
+    .middle_manage .talk_wrap .target {font-size:18px;}
+    .middle_manage .talk_wrap .txt_list li {font-size:14px;}
+    .middle_manage .sdlc {margin-bottom:-50px;}
+    .middle_manage .sdlc_wrap ul {margin:0 -15px;}
+    .middle_manage .sdlc_wrap ul li {padding:80px 15px 0; font-size:14px;}
+    .middle_manage .sdlc_wrap ul li:after {top:0;}
+    .middle_manage .sdlc_wrap ul li p:before {width:65px; height:65px;}
+    .middle_manage .sdlc_wrap ul li p:after {width:80px; height:70px;}
+    .middle_manage .btn_wrap {margin-top:50px;}
+    .middle_manage .btn_wrap a {width:200px; font-size:16px; line-height:40px;}
 }
 
 @media screen and (max-width:599px) {
@@ -856,6 +867,15 @@
     .middle_manage .point_list ul li:last-child {margin:0;}
     .middle_manage .point_list ul li .list_box {height:45px;}
     .middle_manage .point_list ul li .txt_wrap br {display:none;}
+    .middle_manage .talk_wrap .talk_list {width:100%; margin-bottom:15px; padding:0; text-align:center;}
+    .middle_manage .talk_wrap .target {font-size:16px;}
+    .middle_manage .talk_wrap .txt_list li {padding:0; text-align:center;}
+    .middle_manage .talk_wrap .txt_list li:before {display:none;}
+    .middle_manage .sdlc {margin-bottom:-30px;}
+    .middle_manage .sdlc_wrap ul li {float:none; width:100%; margin-bottom:15px;}
+    .middle_manage .sdlc_wrap ul li:after {display:none;}
+    .middle_manage .btn_wrap {margin-top:30px;}
+    .middle_manage .btn_wrap a {width:150px; font-size:14px; line-height:30px;}
 }
 
 
