@@ -74,7 +74,7 @@ pre {margin-bottom:10px; font-size:12px; line-height:1.5;}
 .map_wrap .info .status {overflow:hidden; float:right;}
 .map_wrap .info .status li {float:left; margin-left:3px;}
 .map_wrap .info .status li em {margin-right:3px;}
-.table_wrap {overflow-x:auto;}
+.table_wrap {overflow:auto;}
 table.list {width:100%; border-top:1px solid #999; border-bottom:1px solid #999; font-size:0; word-break:break-all; table-layout:fixed;}
 table.list th,table.list td {overflow:hidden; padding:5px; border-top:1px solid #eee; border-left:1px solid #ccc; font-size:12px; line-height:20px; text-overflow:ellipsis; white-space:nowrap;}
 table.list th {border-top:1px solid #999; border-left:1px solid #999;}
