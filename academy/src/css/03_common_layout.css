@@ -18,7 +18,7 @@
     .grid_container {padding:0 15px;}
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.wrap {overflow-y:hidden;}
 }
 
@@ -42,7 +42,7 @@
 .upper_banner .ctr_wrap button:before {top:0; transform:rotate(-45deg);}
 .upper_banner .ctr_wrap button:after {bottom:0; transform:rotate(45deg);}
 
-@media screen and (max-width:1024px) {
+@media (max-width:1024px) {
     .upper_banner .ctr_wrap {right:0; bottom:0; left:auto; min-width:0; margin:0; transform:none;}
     .upper_banner .ctr_wrap button {width:16px; margin-left:15px; padding-right:12px; font-size:12px; line-height:14px;}
     .upper_banner .ctr_wrap button:last-child {display:none;}
@@ -50,7 +50,7 @@
     .upper_banner .ctr_wrap button:before,.upper_banner .ctr_wrap button:after {width:22px;}
 }
 
-@media screen and (max-width:599px) {
+@media (max-width:599px) {
     .upper_banner .ctr_wrap {transform:scale(0.75); transform-origin:right bottom;}
 }
 
@@ -85,7 +85,7 @@
 .side_menu .move_top button:hover {background:#008398;}
 .side_menu .move_top button:hover:after {border-color:#fff;}
 
-@media screen and (max-width:1024px) {
+@media (max-width:1024px) {
     .side_menu {position:fixed; top:auto !important; bottom:0; width:100%; border-top:1px solid #999; transform:none; box-shadow:0 -5px 10px 0 rgba(0,0,0,0.1);}
     .side_menu ul {overflow:hidden; border:0;}
     .side_menu ul li {float:left; width:20%; height:auto;}

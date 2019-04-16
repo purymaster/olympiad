@@ -32,7 +32,7 @@ button span {position:relative; font:inherit;}
 .pc {display:block !important;}
 .mobile {display:none !important;}
 
-@media screen and (max-width:1024px) {
+@media (max-width:1024px) {
     .pc {display:none !important;}
     .mobile {display:block !important;}
 }

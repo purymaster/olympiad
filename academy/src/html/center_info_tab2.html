@@ -1,0 +1,259 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap roadmap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type3",
+            "title" : "영재센터 소개",
+            "subtitle" : "영재센터",
+            "context" : {
+            "depth1_current" : "영재센터",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth2_current" : "영재센터 소개",
+            "depth2_sublist" : ["영재센터 소개","광진 영재센터","대치 영재센터","중계 영재센터","평촌 영재센터","상위 1%정보"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["영재학교·과학고소개","학생로드맵","종합관리 시스템"]
+                        }
+                        })
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">영재학교 입학의 학습 로드맵 추천코스</h3>
+                            </p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="elite">
+                                <ol>
+                                    <li>
+                                        <span class="grade">초등3</span>
+                                        <div class="txt_wrap">
+                                            <strong>초등과정 선행</strong><br>
+                                            기본+심화<br>
+                                            약 1년간 진행
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="grade">초등4</span>
+                                        <div class="txt_wrap">
+                                            <strong>중등과정 선행</strong><br>
+                                            기본+심화<br>
+                                            약 1년간 진행
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="grade">초등5</span>
+                                        <div class="txt_wrap">
+                                            <strong>수상,수하,수1</strong><br>
+                                            기본+심화<br>
+                                            약 1년간 진행
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="grade">초등6</span>
+                                        <div class="txt_wrap">
+                                            <strong>경시과정</strong><br>
+                                            입문+실전<br>
+                                            약 1년간 진행
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="grade">중등1</span>
+                                    </li>
+                                    <li>
+                                        <span class="grade">중등2</span>
+                                        <div class="txt_wrap">
+                                            <strong>영재학교</strong><br>
+                                            입시과정
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="grade">중등3</span>
+                                        <div class="txt_wrap">
+                                            <strong>영재학교 입학</strong>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">수학 학습 로드맵</h3>
+                            </p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="math">
+                                <ul class="math_rodemap">
+                                    <li>
+                                        <div class="tit">고등선행</div>
+                                        <ul class="txt_list type1">
+                                            <li>수 상+수 하</li>
+                                            <li>기본+실력</li>
+                                            <li>4개월+4개월</li>
+                                            <li class="defi">
+                                                <span>주당</span>
+                                                8시간 기준
+                                            </li>
+                                            <li>"중등 기하 심화 필수"</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="tit">경시입문</div>
+                                        <ul class="txt_list type1">
+                                            <li class="defi">
+                                                <span>해석</span>
+                                                기초 해석학
+                                            </li>
+                                            <li class="defi">
+                                                <span>정수</span>
+                                                기초 정수론
+                                            </li>
+                                            <li class="defi">
+                                                <span>기하</span>
+                                                기하 작도
+                                            </li>
+                                            <li class="defi">
+                                                <span>조합</span>
+                                                카운팅 기초
+                                            </li>
+                                            <li class="defi">
+                                                <span>기간</span>
+                                                3개월
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="tit">경시실전</div>
+                                        <ul class="txt_list type1">
+                                            <li class="defi">
+                                                <span>해석</span>
+                                                해석 심화
+                                            </li>
+                                            <li class="defi">
+                                                <span>정수</span>
+                                                정수론 심화
+                                            </li>
+                                            <li class="defi">
+                                                <span>기하</span>
+                                                기하학 심화
+                                            </li>
+                                            <li class="defi">
+                                                <span>조합</span>
+                                                카운팅 완성 및 논증조합
+                                            </li>
+                                            <li class="defi">
+                                                <span>기간</span>
+                                                6~18개월
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="tit">영재학교 입시</div>
+                                        <ul class="txt_list type1">
+                                            <li>입사에 필요한 경시내용 정리</li>
+                                            <li>창의사고력 수학</li>
+                                            <li>영재학교 기출 실전모의고사</li>
+                                            <li class="defi">
+                                                <span>기간</span>
+                                                8개월
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">영재학교 대비 수학 교육 내용</h3>
+                            </p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="math_edu">
+                                <ul class="edu_list">
+                                    <li>
+                                        <p class="tit">
+                                            영재학교 입시에 필요한 경시 4대 영역 정리
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="tit">
+                                            경시 이외의 중등과정 내용 심화
+                                        </p>
+                                        <ul class="txt_list type1">
+                                            <li>대수 : 통계, 함수 그래프 등</li>
+                                            <li>기하 : 입체기하, 작도, 기하의 최대・최소 등</li>
+                                            <li>조합 : 확률</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="tit">
+                                            창의 사고력 수학
+                                        </p>
+                                        <ul class="txt_list type1">
+                                            <li>과목별 융합문제, 실생활 연관 문제</li>
+                                            <li>교육 과정 범위 내의 논리 수학</li>
+                                            <li>국내 영재원 및 해외 영재 프로그램 주요 주제 정리</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="tit">
+                                            지원 학교별 실전 모의고사
+                                        </p>
+                                        <ul class="txt_list type1">
+                                            <li>학생 개인별 맞춤형 지원학교 진로 지도</li>
+                                            <li>연합모의고사를 통해 지원 학교별 나의 위치 파악 가능</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>
