@@ -1997,19 +1997,6 @@ footer {background:#505354; color:#fff;}
     .middle_credit .plan .tit {font-size:16px;}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 중등수학 - 특목고입시 */
 .middle_manage .point_list ul {margin:0 -3px; font-size:0; text-align:center;}
 .middle_manage .point_list ul li {display:inline-block; width:25%; padding:0 3px;}
@@ -2067,14 +2054,6 @@ footer {background:#505354; color:#fff;}
     .middle_manage .btn_wrap a {width:150px; font-size:14px; line-height:30px;}
 }
 
-
-
-
-
-
-
-
-
 /* 광진영재센터 수업 시스템 */
 .campus_system td {line-height:1.7em;}
 .campus_system .study_step {overflow:hidden; margin:0 -10px;}
@@ -2118,6 +2097,15 @@ footer {background:#505354; color:#fff;}
     .campus_system .study_step ol li .txt_wrap strong {font-size:14px;}
     .campus_system .study_step ol li .txt_wrap .txt {font-size:12px;}
 }
+
+/* 광진영재센터 교재 안내 */
+.campus_book .column {margin-top:-10px;}
+.campus_book .column_tit {margin-top:55px; margin-bottom:25px; font-family:"Nanum Square"; font-size:20px; line-height:1.5em;}
+.campus_book .column .column_tit:first-child {margin-top:0;}
+.campus_book table td {padding:17px 50px;}
+.campus_book .img_wrap ul li img {border:1px solid #ddd;}
+.campus_book .txt_wrap {padding:20px 0; border-top:1px solid #ccc; border-bottom:1px solid #333;}
+.campus_book .txt_list li {font-size:16px; line-height:1.75em;}
 
 /* 영재센터 위치안내(공통) */
 .campus_map .map_wrap {position:relative; height:460px; margin-top:-10px; background:#eee;}

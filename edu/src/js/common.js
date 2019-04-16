@@ -8,21 +8,22 @@ $(function () {
     var select_form = $('.select_form');
 
     select_form.on('click', 'button', function () {
-        select_form.find('button').removeClass('on');
-        $(this).toggleClass('on');
+        ($(this).hasClass('on')) ?
+            select_form.find('button').removeClass('on') :
+            (select_form.find('button').removeClass('on'), $(this).addClass('on'));
     }).on('click', 'a', function () {
         $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
     });
-    $(document).on('mouseup', function (e) {
+    $(document).on('mouseup touchend', function (e) {
         if (!select_form.is(e.target) && select_form.has(e.target).length === 0)
             select_form.find('button').removeClass('on');
     });
 
     /******************** 모바일 판별 및 데이터 테이블 너비 적용 ********************/
 
-    $(window).on('load resize', function() {
+    $(window).on('load resize', function () {
         window.outerWidth > 1024 ? is_mobile = false : is_mobile = true;
-        $('.data_table').each(function() {
+        $('.data_table').each(function () {
             table_width = $(this).data('width');
             window.outerWidth > 1024 ? $(this).find('table').css('min-width', '') : $(this).find('table').css('min-width', table_width);
         })
