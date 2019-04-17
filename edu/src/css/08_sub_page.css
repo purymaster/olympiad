@@ -391,12 +391,13 @@
 }
 
 /* 사업영역 - 교재출판 */
-.publish .sub_visual {margin-bottom:135px; padding-top:70px;}
-.publish .type_publish01 {background-image:url(../img/bg/bg_type_publish01.jpg);} /* 수학교재 */
-.publish .type_publish02 {background-image:url(../img/bg/bg_type_publish02.jpg);} /* 영어교재 */
-.publish .type_publish03 {background-image:url(../img/bg/bg_type_publish03.jpg);} /* 학수고대 */
-.publish .type_publish04 {background-image:url(../img/bg/bg_type_publish04.jpg);} /* 시사이슈북 */
-.publish .type_publish05 {background-image:url(../img/bg/bg_type_publish05.jpg);} /* 수학이야기 */
+.publish .sub_visual {margin-bottom:135px; padding-top:70px; background:#e6eff1;}
+/* .publish .type_publish01 {background-image:url(../img/bg/bg_type_publish01.jpg);}
+.publish .type_publish02 {background-image:url(../img/bg/bg_type_publish02.jpg);}
+.publish .type_publish03 {background-image:url(../img/bg/bg_type_publish03.jpg);}
+.publish .type_publish04 {background-image:url(../img/bg/bg_type_publish04.jpg);}
+.publish .type_publish05 {background-image:url(../img/bg/bg_type_publish05.jpg);} */
+
 .publish .publish_book {margin-top:45px; padding:50px; background-color:#fff;}
 .publish .publish_book .publish_list {overflow:hidden; margin:0 -15px;} 
 .publish .publish_book .publish_list li {float:left; width:16.66%; padding:0 15px;}
@@ -471,6 +472,8 @@
 .franchise_step_txt .step_info > li {padding:40px 0 35px; border-bottom:1px solid #ddd;}
 .franchise_step_txt .step_info > li .tit {display:block; margin-bottom:5px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em; color:#222;}
 .franchise_step_txt .step_info > li .txt {font-size:15px; line-height:1.8em; color:#555;}
+.franchise_step_txt .notice {margin-top:35px; font-size:13px; line-height:1.5em; color:#00aeba;}
+.franchise_step_txt .notice:before {content:"*";}
 
 @media (max-width:1024px) {
     .franchise_mod_cont {height:auto !important; margin-bottom:30px; padding:30px;}
@@ -480,6 +483,7 @@
     .franchise_step_txt .step_info > li {padding:15px 0;}
     .franchise_step_txt .step_info > li .tit {margin-bottom:15px; font-size:18px;}
     .franchise_step_txt .step_info > li .txt {font-size:14px; line-height:1.6em;}
+    .franchise_step_txt .notice {margin-top:15px; font-size:12px;}
 } 
 
 @media (max-width:599px) {

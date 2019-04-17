@@ -354,7 +354,7 @@ label {cursor:pointer;}
 .board_view .info .txt_info .author dt {background-position:-277px -122px;}
 .board_view .content_wrap {border-top:1px solid #333; border-bottom:1px solid #333;}
 .board_view .content {padding:50px 30px; font-size:14px; line-height:2em; color:#666;}
-.board_view .content img {display:block; margin:0 auto; margin-bottom:1em;}
+.board_view .content img,.board_view .content iframe {display:block; max-width:100%; margin:0 auto; margin-bottom:1em;}
 .board_view .upload_file {border-top:1px solid #cdcdcd;}
 .board_view .upload_file ul {overflow:hidden; padding:15px 20px;}
 .board_view .upload_file ul li {overflow:hidden; float:left; position:relative; max-width:500px; margin-right:20px; padding-left:28px; text-overflow:ellipsis; white-space:nowrap;}

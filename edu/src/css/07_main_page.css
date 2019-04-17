@@ -72,7 +72,7 @@ article .news {margin:0 -25px; padding-bottom:80px; text-align:left;}
 article .news ul {overflow:hidden; font-size:0;}
 article .news ul li {float:left; width:33.33%; padding:0 25px;}
 article .news ul li a {display:block;}
-article .news ul li a .txt_wrap {padding:20px; padding-top:10px;}
+article .news ul li a .txt_wrap {padding:10px 0;}
 article .news ul li a .txt_wrap .cate {display:inline-block; font-size:14px; font-weight:700; line-height:30px;}
 article .news ul li a .txt_wrap .notice {color:#00aeba;}
 article .news ul li a .txt_wrap .blog {color:#3b9f47;}

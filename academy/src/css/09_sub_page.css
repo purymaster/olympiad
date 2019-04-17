@@ -962,9 +962,11 @@
 .roadmap .elite ol li:nth-child(7) .grade {color:#0b8da2;}
 .roadmap .elite ol li .txt_wrap {display:table-cell; width:100%; font-size:14px; line-height:1.7em; color:#fff; text-align:center; vertical-align:middle;}
 .roadmap .elite ol li:nth-child(7) .txt_wrap {font-size:18px; font-family:"Nanum Square";}
+.roadmap .elite ol li .txt_wrap strong {font-family:inherit;}
+.roadmap .math {background:#f5f5f5;}
 .roadmap .math_rodemap {overflow:hidden; position:relative; margin-bottom:50px;}
-.roadmap .math_rodemap:after {position:absolute; top:24px; left:0; z-index:-1; width:100%; height:1px; border-top:3px dotted #ddd; content:"";}
-.roadmap .math_rodemap > li {float:left; width:25%;}
+.roadmap .math_rodemap:after {position:absolute; top:24px; left:0; z-index:0; width:100%; height:1px; border-top:3px dotted #ddd; content:"";}
+.roadmap .math_rodemap > li {float:left; position:relative; z-index:1; width:25%;}
 .roadmap .math_rodemap > li .tit {width:175px; margin:0 auto; border-radius:25px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; text-align:center;}
 .roadmap .math_rodemap > li:nth-child(1) .tit {background:#3cb3c6;}
 .roadmap .math_rodemap > li:nth-child(2) .tit {background:#26a5b9;}
@@ -975,12 +977,83 @@
 .roadmap .math_rodemap .txt_list .defi {padding-left:3.35em; text-indent:-2.6em;}
 .roadmap .math_rodemap .txt_list li span {font-weight:700;}
 .roadmap .math_rodemap .txt_list li span:after {margin:0 0.1em 0 0.2em; content:":";}
-
-
+.roadmap .edu_list {margin-top:-10px;}
+.roadmap .edu_list > li {position:relative; margin-top:10px; padding-left:50px;}
+.roadmap .edu_list > li:before {position:absolute; top:0; left:0; margin-top:-5px; font-family:"Nanum Square"; font-size:60px; font-weight:900; line-height:1em; color:#ddd; content:"#";}
+.roadmap .edu_list > li .tit {width:100%; padding:0 35px; border:3px solid #ddd; border-radius:25px; background:#fff; font-size:16px; font-weight:700; line-height:44px; color:#333;}
+.roadmap .edu_list .txt_list {margin-top:10px; padding-left:35px;}
+.roadmap .edu_list .txt_list li {line-height:1.7em;}
+.roadmap .table img {max-width:980px;}
+.roadmap .muth {background:#f5f5f5;}
+.roadmap .course_list {margin-top:-35px; padding:0 50px;}
+.roadmap .course_list > li {overflow:hidden; margin-top:35px;}
+.roadmap .course_list .tit {float:left; width:80px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:25px; color:#333;}
+.roadmap .course_wrap {float:left; position:relative; z-index:1; width:calc(100% - 60px); margin:0 -10px;}
+.roadmap .course_wrap:before {position:absolute; top:50%; left:10px; z-index:0; width:calc(100% - 20px); margin-top:-2px; border-top:3px dotted #ddd; content:"";}
+.roadmap .course {font-size:0; text-align:center;}
+.roadmap .course li {display:inline-block; width:25%; padding:0 10px; line-height:44px; text-align:center;}
+.roadmap .course li:first-child {float:left;}
+.roadmap .course li:last-child {float:right; margin-right:0;}
+.roadmap .course li span {display:block; position:relative; border:3px solid #ddd; border-radius:25px; background:#fff; color:#333; font-size:16px;}
+.roadmap .course li:first-child span,.roadmap .course li:last-child span {font-family:"Nanum Square"; font-size:18px; font-weight:700; color:#fff;}
+.roadmap .course li:first-child span {border-color:#3cb3c6; background:#3cb3c6;;}
+.roadmap .course li:last-child span {border-color:#018499; background:#018499;;}
 
 @media (max-width:1280px) {
     .roadmap .elite ol li {width:14.28% !important;}
     .roadmap .elite ol li .txt_wrap {font-size:14px !important;}
+    .roadmap .course_list {padding:0;}
+}
+
+@media (max-width:1200px) {
+    .roadmap .table {overflow-x:auto;}
+    .roadmap .table:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
+}
+
+@media (max-width:1024px) {
+    .roadmap .elite {margin:-10px 0; padding:0;}
+    .roadmap .elite ol {background:none;}
+    .roadmap .elite ol li {width:25% !important; margin:15px 0; padding:0 10px; background:#3db4c7;}
+    .roadmap .elite ol li:last-child {width:50% !important;}
+    .roadmap .elite ol li:before {height:100%; top:0;}
+    .roadmap .elite ol li:nth-child(4n+1):before {display:none;}
+    .roadmap .elite ol li .grade {font-size:16px; line-height:30px; left:0; top:-30px;}
+    .roadmap .math_rodemap {margin:0 -15px; margin-bottom:30px;}
+    .roadmap .math_rodemap:after {display:none;}
+    .roadmap .math_rodemap > li {width:50%;}
+    .roadmap .math_rodemap > li .tit {width:calc(100% - 30px); font-size:16px; line-height:40px;}
+    .roadmap .math_rodemap .txt_list {width:calc(100% - 30px); padding:0;}
+    .roadmap .table img {display:block; margin:0 auto;}
+    .roadmap .course_list > li {margin-top:15px;}
+    .roadmap .course_list .tit {font-size:14px; line-height:20px; width:50px;}
+    .roadmap .course_wrap {width:calc(100% - 30px);}
+    .roadmap .course li {font-size:14px; line-height:34px;}
+    .roadmap .course li span {font-family:"Nanum Square"; font-size:14px !important;}
+}
+
+@media (max-width:599px) {
+    .roadmap .elite ol {position:relative;}
+    .roadmap .elite ol:before {position:absolute; top:20px; left:50%; width:1px; height:calc(100% - 40px); margin-left:-2px; border-left:3px dotted #ddd; content:"";}
+    .roadmap .elite ol li {width:100% !important; height:auto; margin:10px 0; padding:5px 0; border-radius:10em;}
+    .roadmap .elite ol li:nth-child(5) {display:none;}
+    .roadmap .elite ol li:last-child {width:100% !important;}
+    .roadmap .elite ol li .grade {display:block; position:static; color:#fff !important; text-align:center;}
+    .roadmap .elite ol li:before {display:none !important;}
+    .roadmap .elite ol li .txt_wrap {display:block; line-height:2em;}
+    .roadmap .elite ol li .txt_wrap br {display:none;}
+    .roadmap .math_rodemap > li {float:none; width:100%; text-align:center;}
+    .roadmap .math_rodemap > li .tit {display:inline-block; width:auto; padding:0 15px; font-size:14px; line-height:30px;}
+    .roadmap .math_rodemap .txt_list li {padding:0; text-align:center;}
+    .roadmap .math_rodemap .txt_list li:before {display:none;}
+    .roadmap .edu_list > li {padding:0;}
+    .roadmap .edu_list > li:before {display:none;}
+    .roadmap .edu_list > li .tit {padding:0 15px; font-size:14px; line-height:34px; text-align:center;}
+    .roadmap .edu_list .txt_list {padding-left:0;}
+    .roadmap .course_list .tit {display:block; float:none; width:100%; text-align:center; font-size:16px; line-height:2em;}
+    .roadmap .course_list .tit br {display:none;}
+    .roadmap .course_wrap {float:none; width:auto;}
+    .roadmap .course_wrap:before {border:0; border-left:3px dotted #ddd; width:1px; height:100%; top:15px; left:50%; margin-left:-2px;}
+    .roadmap .course li {float:none !important; width:100%; line-height:2em; margin-top:10px;}
 }
 
 /* 광진영재센터 - 프로그램 */
