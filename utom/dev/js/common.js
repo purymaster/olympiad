@@ -34,12 +34,12 @@ $(function() {
 
     var select_form = $('.select_form');
 
-    select_form.on('click', 'button[type="button"]', function() {
+    select_form.on('click', 'button', function() {
         ($(this).hasClass('on')) ?
         select_form.find('button').removeClass('on'):
             (select_form.find('button').removeClass('on'), $(this).addClass('on'));
     }).on('click', 'a', function() {
-        $(this).closest('ul').siblings('button').removeClass('on').find('span').html($(this).text());
+        $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
     });
     $(document).on('mouseup touchend', function(e) {
         if (!select_form.is(e.target) && select_form.has(e.target).length === 0)
@@ -88,7 +88,7 @@ $(function() {
     };
 
     (function check_cookie() {
-        get_cookie("no_pop_academy") !== "" ?
+        get_cookie("no_pop_utom") !== "" ?
             (upper_banner.hide(),
                 $('body').removeClass('upper_banner_on')) :
             (upper_banner.addClass('on'),
@@ -96,7 +96,7 @@ $(function() {
     })();
 
     upper_banner.find('button').on('click', function() {
-        if ($(this).hasClass('today')) set_cookie("no_pop_academy", "y", "1"); // 1일동안 보지 않기
+        if ($(this).hasClass('today')) set_cookie("no_pop_utom", "y", "1"); // 1일동안 보지 않기
         close_banner();
     });
 

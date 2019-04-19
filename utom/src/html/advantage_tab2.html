@@ -1,0 +1,181 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap adv_custom">
+            @@include('../inc/sub_header.html',{
+            "type" : "type3",
+            "title" : "3가지 특장점",
+            "subtitle" : "유투엠 프로그램",
+            "context" : {
+            "depth1_current" : "유투엠 프로그램",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "3가지 특장점",
+            "depth2_sublist" : ["3가지 특장점","4가지 말하기 학습전략","프로그램 안내","교재구성"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["학생중심 참여수업","지능형 개별맞춤학습","완전학습 시스템"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            유투엠은 <strong>온오프 블렌디드 러닝에 기반</strong>하여<br>
+                            학생 개개인의 학습과정을 개별맞춤으로 진행합니다.
+                        </p>
+                        <p class="txt">
+                            학생들이 다양한 말하기 학습을 통해 수업에 능동적으로 참여하여 학습효과를 극대화하고, 최첨단 온라인 디지털을 교실수업에 통합하여<br>
+                            학생들마다 각자 수준에 맞는 학습과정과 진도, 문제풀이를 맞춤식으로 설계하여 지도하고 있습니다.<br>
+                            예습과 수업과 복습이 유기적으로 통합된 수업을 구현하여 학습내용을 완전하게 이해하는 수학교육 시스템을 구현하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+                        <div class="sub_tit_wrap">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">학습과정을 맞춤식으로 - 공통과정과 개별과정
+                            </h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="txt_wrap">
+                                <p class="tit">
+                                    유투엠은 학생 개인의 학습 진도, 학습속도, 성취도,
+                                    학습역량, 진로에 따라 학습과정을 <strong>1:1컨설팅을 통해 설계하여
+                                        학생에게 최적합한 학습과정을 배정</strong>합니다.
+                                </p>
+                                <p class="txt">
+                                    반별 공통학습과정과 학생 개인별 맞춤식으로 배정된 개별학습과정으로 이원화하여 학습과정을 배정합니다.
+                                    개별학습과정은 학력진단평가와 인증평가를 통해 엄격하게 성취도와 학습역량을 진단한 후 본인의 학습계획과
+                                    학습역량에 맞는 학습과정을 설계해줌으로써 학습효과와 만족도를 높이고 있습니다.<br>
+                                    개별학습과정의 진도는 학생의 학습상황 에 따라 속도 조절이 가능하기 때문에 본인의 학습목표나 학습역량을
+                                    고려하여 자기주도적으로 학습을 조절하면서 진행할 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="custom_wrap">
+                                <div class="setting">
+                                    <div class="sub_col_tit">
+                                        <p>맞춤식 설정</p>
+                                    </div>
+                                    <img src="../img/img/img_adv_puzzle.png" alt="">
+                                </div>
+                                <div class="table_wrap">
+                                    <img src="../img/img/img_timetable_adv.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+                        <div class="sub_tit_wrap">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">온오프 통합교육에 기반한 지능형 개별맞춤학습
+                            </h3>
+                        </div>
+                        <div class="sub_col_tit">
+                            <p>완전학습을 위한 개인별 지능형 맞춤학습</p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="perfect_wrap">
+                                <img src="../img/img/img_sdl_clinic.png" alt="">
+                                <div class="step">
+                                    <ol>
+                                        <li>
+                                            <strong>1일전<br> 오답 문항</strong>
+                                            <span class="sub_txt">만점학습</span>
+                                        </li>
+                                        <li>
+                                            <strong>2교시<br> 틀린 문항</strong>
+                                            <span class="sub_txt">Lesson Clinic</span>
+                                        </li>
+                                        <li>
+                                            <strong>3교시<br> 틀린 문항</strong>
+                                            <span class="sub_txt">SDL Clinic</span>
+                                        </li>
+                                        <li>
+                                            <strong>오답, 유사<br> 문제은행</strong>
+                                            <span class="sub_txt">추가학습</span>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                        <div class="sub_col_tit">
+                            <p>지능형 맞춤식 문제풀이 시스템</p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="intelli">
+                                <div class="hidden">
+                                    <span>진행과정</span>
+                                    <ol>
+                                        <li>1단계 : 문제풀이 풀이과정 서술</li>
+                                        <li>2단계 : 1차 정답입력 및 자동 채점</li>
+                                        <li>3단계 : 틀린문제 다시 풀고 2차 정답 입력</li>
+                                        <li>4단계 : 힌트보고 3차 문제풀이</li>
+                                        <li>5단계 : 틀린문제 해결동영상 및 확인학습</li>
+                                        <li>6단계 : 틀린문제 Max-file 오답 정리</li>
+                                        <li>7단계 : 클리닉(오답 유사문항수) 1차 1배수, 2차 2배수</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="txt_wrap">
+                                <p class="txt">
+                                    유투엠에서는 개별학습과정뿐만 아니라 공통과정을 학습하는데서도 학생의 학습 이해도를 개인별로 분석하여 개인의 취약한 부분을 맞춤식으로 보완하는 지능형
+                                    개별맞춤학습 시스템을 구현하고 있습니다. 계통학습인 수학에서는 제대로 이해하지 못한 부분과 틀린 문제유형을 집중적으로 보완하여 완전하게 알고 넘어가게
+                                    하는 것이 매우 중요합니다. 유투엠에서는 특히 <strong>틀린 문제를 기반으로 취약한 문제유형을 분석 후 이를 확실하게 알고 넘어가도록 반복하여
+                                        문제를 풀 수
+                                        있는 클리닉 시스템을 교실 수업에 통합</strong>하였습니다.
+                                </p>
+                                <p class="txt">
+                                    이러한 지능형 개별맞춤식 시스템은 교실수업에 컴퓨터와 디지털 기반의 온라인 학습관리 시스템을 통합한
+                                    온-오프 블 렌디드 러닝 프로그램이 갖추어져 있기 때문에 가능합니다. 아는 문제를 반복해서 푸는 집단지도방식의 약점을 보완하여, 유투엠에서는 학생
+                                    개인별로 잘 모르고 있는 부분이나 취약한 문제유형을 <strong>지능형 온라인 분석시스템을 통해 진단하여 이를 맞춤식으로 보완</strong>하는
+                                    개별맞춤학습으로 학습효과를
+                                    극대화합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

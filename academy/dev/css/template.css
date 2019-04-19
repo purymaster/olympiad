@@ -1631,7 +1631,7 @@ footer {background:#505354; color:#fff;}
 .book_info .book_list.combine li img {width:auto;}
 .book_info .pdf_viewer {margin-top:45px}
 
-@media (max-width:1024px) {
+@media (max-width:1280px) {
     .book_info .book_list:after {display:none;}
     .book_info .book_list .txt {font-size:16px; line-height:1.4em; padding-top:15px;}
     .book_info .book_list .txt:after {display:none;}

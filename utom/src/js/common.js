@@ -13,6 +13,23 @@ $(function () {
         if (navigator.userAgent.match(mobile_validator[word]) !== null) is_mobile_user = true;
     }
 
+    /******************** 모달 팝업창 제어 ********************/
+
+    var modal_src;
+
+    $('.open_modal').on('click', function() {
+        modal_src = $(this).data('modal');
+        $('.modal_wrap').addClass('on');
+        $('.modal').hide();
+        $('#' + modal_src).fadeIn();
+    });
+
+    $('.modal .close').on('click', function() {
+        modal_src = '';
+        $('.modal_wrap').removeClass('on');
+        $('.modal').fadeOut();
+    });
+
     /******************** 셀렉트박스 제어 ********************/
 
     var select_form = $('.select_form');
@@ -35,7 +52,7 @@ $(function () {
         window.outerWidth > 1024 ? is_mobile = false : is_mobile = true;
         $('.data_table').each(function () {
             table_width = $(this).data('width');
-            window.outerWidth > 1024 ? $(this).find('table').css('width', '') : $(this).find('table').css('width', table_width);
+            window.outerWidth > 1024 ? $(this).find('table').css('min-width', '') : $(this).find('table').css('min-width', table_width);
         })
     });
 
