@@ -992,13 +992,8 @@ footer {background:#505354; color:#fff;}
 .sub_header h2 {padding:0.15em 0; font-family:"Nanum Square"; font-size:38px; font-weight:700; line-height:1.2em;}
 .sub_content {min-height:740px; padding-bottom:100px;}
  
-@media (min-width:1921px) {
-    .upper_banner_on .sub_header {margin-top:315px;}
-}
-
 @media (max-width:1024px) {
     .sub_header {height:150px; margin-top:65px; padding-top:40px;}
-    .upper_banner_on .sub_header {margin-top:calc(65px + 20.5078125%);}
     .sub_header .sub_txt {font-size:18px;}
     .sub_header h2 {font-size:30px;}
     .sub_header h2:after {right:-40px; bottom:10px; width:33px; height:39px; background-position:-5px -123px; background-size:500px 500px;}

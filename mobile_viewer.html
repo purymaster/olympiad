@@ -16,9 +16,12 @@
 
             //파라미터 설정
             var param = 'url',
-                url_data = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
+                url_data = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href)
+                ;
 
-            url_data == null ? alert('url 파라미터 값을 받아오지 못하였습니다. 파라미터 값을 확인해주시길 바랍니다.') : $('#canvas').attr('src', url_data[1] || 0);
+            url_data == null ?
+                alert('url 파라미터 값을 받아오지 못하였습니다. 파라미터 값을 확인해주시길 바랍니다.') :
+                $('.canvas_wrap').html("<iframe src='" + url_data[1] + "' id='canvas' scrolling-x='no'></iframe>");
 
             //슬라이더
             $("#slider").slider({
@@ -49,8 +52,8 @@
             <p class="warning">
                 모바일 테스트용 뷰어입니다.<br>
                 뷰어에서는 <strong>플리킹<br>
-                (터치스크린을 손가락으로 끄는 동작)<br>
-                이 적용되지 않습니다.</strong><br>
+                    (터치스크린을 손가락으로 끄는 동작)<br>
+                    이 적용되지 않습니다.</strong><br>
                 또, 스크롤바의 자동생성으로 인해<br>
                 실제 디바이스 화면과 다를게 보일 수 있으니<br>
                 정식 화면 검수는 반드시<br>
@@ -75,7 +78,6 @@
 
         <div class="view">
             <div class="canvas_wrap mobile">
-                <iframe src="null" frameborder="0" id="canvas" scrolling-x="no"></iframe>
             </div>
         </div>
     </div>
