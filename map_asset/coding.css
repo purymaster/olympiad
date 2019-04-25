@@ -84,11 +84,11 @@ table.list tr th:first-child,table.list tr td:first-child {border-left:0;}
 table.list tr:first-child td {border-top:1px solid #999;}
 table.list th {background:#ccc; font-weight:700;}
 table.list th.num {width:40px;}
-table.list th.id {width:110px;}
+table.list th.id {width:150px;}
 table.list th.dev {width:50px;}
 table.list th.stat,
 table.list th.date {width:50px;}
-table.list th.memo {width:30%;}
+table.list th.memo {width:20%;}
 table.list th.link {width:80px;}
 table.list td {color:#666;}
 table.list td.center {text-align:center;}

@@ -1,0 +1,122 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap recognition">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "뇌과학 기반의 메타인지 학습법",
+            "subtitle" : "유투엠 학습법",
+            "context" : {
+            "depth1_current" : "유투엠 학습법",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "뇌과학 기반의 메타인지 학습법",
+            "depth2_sublist" : ["플립러닝 기반 학생중심 참여수업","하브루타 기반 말하는 수학","뇌과학 기반의 메타인지 학습법"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["학습내용을 장기기억화 하는 말하는 수학","메타인지를 키우는 말하는 수학"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            <strong>올림피아드교육 유투엠 학습법</strong>에<br>
+                            대해 알 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap about_meta">
+                    <div class="grid_container">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <img src="../img/img/img_talking_math_diagram.png" alt="">
+                            <div class="hidden">
+                                <span>학습효과를 극대화하는 메타인지 학습법</span>
+                                <p>
+                                    최상위 0.1% 학생들이 갖고 있는 핵심적인 능력<strong>메타인지!</strong>
+                                </p>
+                                <dl>
+                                    <dt>말로 설명할 수 있는 경우의 학습 순서</dt>
+                                    <dd>
+                                        <ol>
+                                            <li>아는 것</li>
+                                            <li>각인효과(재구조화)</li>
+                                        </ol>
+                                        <ol>
+                                            <li>모르는 것</li>
+                                            <li>피드백 학습</li>
+                                            <li>재인지</li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap brain">
+                    <div class="grid_container">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="column upgrade">
+                                <div class="txt_wrap">
+                                    <p class="tit">
+                                        학습능력을 키우고 성적을 향상시키는 데서
+                                        가장 중요한 결정적 요인이 <strong>메타인지</strong> 능력입니다.
+                                    </p>
+                                    <p class="txt">
+                                        말하는 공부가 학습효과를 높이는 또 다른 비밀은 바로 메타인지에 있습니다. 말하는 공부는 메타인지를 키우는 가장 확실한 공부법입니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column talking">
+                                <div class="txt_wrap">
+                                    <p class="tit">
+                                        말로 설명하는 과정에서 학습자는 <strong>자신이 아는 것과 모르는 것을 스스로 구별하고 성찰</strong>해냅니다.
+                                    </p>
+                                    <p class="txt">
+                                        어떤 것을 말로 설명해보면 자신의 인지상태 를 정확하게 파악할 수 있습니다. 말로 확실하게 설명할 수 있는 지식만이 진짜 지식이고, 설명할 수
+                                        없는 지식은 제대로 아는 것이 아닙니다. 말하는 공부는 자신의 인지상태를 깨닫게 하여 잘 모르는 것을 잡아내어 다시 확실하게 알고 넘어가게
+                                        만드는 뇌과학적 학습전략입니다.
+                                        유투엠은 말하는 공부를 통해 메타인지를 키우고 학습효과를 극대화하는 과학적인 수학교육
+                                        프로그램입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

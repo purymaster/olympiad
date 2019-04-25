@@ -1,0 +1,151 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap spiral">
+            @@include('../inc/sub_header.html',{
+            "type" : "type3",
+            "title" : "교재구성",
+            "subtitle" : "유투엠 프로그램",
+            "context" : {
+            "depth1_current" : "유투엠 프로그램",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "교재구성",
+            "depth2_sublist" : ["3가지 특장점","4가지 말하기 학습전략","프로그램 안내","교재구성"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["나선형 학습","교재 특징","교재 구성"]
+                        }
+                        })
+                        <p class="main_tit">
+                            유투엠 교재는 <strong>나선형 학습원리</strong>에 맞춰<br>
+                            과학적으로 설계되어 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <div class="sub_tit_wrap">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">나선형 학습 원리에 의해<br>
+                                과학적으로 설계된 전문교재</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="about_book">
+                                <div class="diagram">
+                                    <div class="img_wrap">
+                                        <div class="hidden">
+                                            <dl>
+                                                <dt>개념 단계</dt>
+                                                <dd>개념</dd>
+                                                <dd>기본유형</dd>
+                                                <dd>기본 다지기</dd>
+                                                <dd>응용력 기르기(중등)</dd>
+                                                <dt>기본 단계</dt>
+                                                <dd>복합 유형</dd>
+                                                <dd>뛰어오르기</dd>
+                                                <dt>심화 단계</dt>
+                                                <dd>잘 틀리는 유형&amp;서술형(초등)</dd>
+                                                <dd>수학적 의사소통(중등)</dd>
+                                                <dd>단원 마무리</dd>
+                                                <dt>완전학습 단계</dt>
+                                                <dd>단원종합 TEST(초등)</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <span class="tit">‘올림피아드 수학’ 교재 구성</span>
+                                </div>
+                                <div class="txt_wrap">
+                                    <p class="txt">
+                                        올림피아드 수학교육연구소의 전원 연구원들이 심혈을 기울여 집필하고 다년간 교육 현장에서 사용하면서 검증된 최고의 권위있는 교재입니다. <br>
+                                        브루너의 나선형 학습 원리를 활용하여, 학년과 수준이 높아질수록 기본개념과 원리를 심화, 확장하도록 구성하였습니다. <br>
+                                        특히 같은 학년 동일 교재 내에서도
+                                        <strong>한 단원 안의 학습 진행 과정을 나선형 학습 원리에 의해 과학적으로 설계</strong>하였습니다. <br>
+                                        학생들이 기본개념과 원리로부터 출발하여 고난도의 심화문제까지 단계적으로 학습할 수 있도록 설계하여, 해당 단원에 대한 폭넓은 지식과 완전한
+                                        이해가
+                                        가능하도록 구성하였습니다. <br>
+                                        또한 학습자의 실력과 이해 수준, 학습 속도 등의 <strong>개인별 특성에 맞춰 개별맞춤식으로 학습 과정을 편성할 수 있도록 학년별 7단계의
+                                            세분화된 교재를 사용</strong>합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap spiral_learning">
+                    <div class="grid_container">
+                        <div class="sub_tit_wrap">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">나선형 학습이란?</h3>
+                            </p>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="cont_wrap">
+                                <div class="cont img">
+                                    <div class="diagram">
+                                        <div class="hidden">
+                                            <span>나선형 구조</span>
+                                            <ol>
+                                                <li>지식의 구조</li>
+                                                <li>교과 내용 수준</li>
+                                                <li>학습 경험 수준</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <span class="tit">브루너의 나선형 학습 모형</span>
+                                </div>
+                                <div class="cont info">
+                                    <p class="tit">
+                                        브루너(J.S.Bruner)는 지식의 전이와 발전이 효과적으로 이뤄지기 위해서는 학습자의 인지발달 단계에 맞춰,
+                                        <strong>학습과정이 점진적으로 심화, 확대되도록 상승적인 나선형 구조로 구성되어야 한다고 주장</strong>했습니다.
+                                    </p>
+                                    <p class="txt">
+                                        교육과정의 "계속성의 원리"를 활용하여 반복적인 학습을 할 수 있도록 하되, 같은 것을 평면적으로 단순하게 반복하는 것이 아니라 학습자의 발달
+                                        단계나 수준에 맞춰 학습경헙의 폭과 깊이가 더욱 넓어지고 깊어질 수 있도록 학습과정을 나선형으로 조직화해야 한다는 것입니다.<br>
+                                        브루너는 지식의 구조를 '학문의 근본을 이루는 기본개념 원리'라고 말하며, 이러한 <strong>기본개념과 원리를 점차적으로 확장하여
+                                            지적인 발전이 이뤄질 수 있도록 학습과정이 구성되어야 완전 학습이 성취</strong>될 수 있다고 보았습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

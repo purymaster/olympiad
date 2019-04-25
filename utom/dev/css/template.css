@@ -261,9 +261,8 @@ textarea {line-height:1.5em;}
 .txt_list li {position:relative; padding-left:0.75em; font-size:14px; line-height:1.5em; color:#333;}
 .txt_list li:before {content:""; position:absolute; left:0;}
 .txt_list.type1 li:before {top:0.6em; width:4px; height:4px; background:#333;} /* type1 : 네모 */
-.txt_list.type2 li:before {}
-.txt_list.type3 li:before {}
-.txt_list.type4 li:before {}
+.txt_list.type2 li:before {content:"-"; padding-right:0.2em;}
+
 
 @media (max-width:599px) {
     .txt_list li {font-size:12px;}
@@ -1166,14 +1165,14 @@ footer {background:#505354; color:#fff;}
 
 /* 빵가루 */
 .breadcrumb {position:absolute; bottom:0; left:50%; width:100%; max-width:1200px; background:rgba(51,51,51,0.85); -webkit-transform:translateX(-50%); transform:translateX(-50%); -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
-.breadcrumb > ul:after {display:block; clear:both; content:"";}
-.breadcrumb > ul > li {float:left; border-right:1px solid rgba(255,255,255,0.2);}
-.breadcrumb > ul > li.home a {display:block; position:relative; text-indent:-9999px; width:50px; height:50px;}
-.breadcrumb > ul > li.home a:before {position:absolute; top:50%; left:50%; width:16px; height:16px; margin-top:-8px; margin-left:-8px; background:red; content:"";}
-.breadcrumb > ul > li .select_form {min-width:180px; max-width:320px; background:none;}
-.breadcrumb > ul > li .select_form button {padding-left:20px; border:0; background:none; font-size:16px; line-height:50px; color:#cdcdcd;}
-.breadcrumb > ul > li .select_form button span {font-family:"Nanum Square";}
-.breadcrumb > ul > li .select_form button:after {border-color:#cdcdcd;}
+.breadcrumb > ol:after {display:block; clear:both; content:"";}
+.breadcrumb > ol > li {float:left; border-right:1px solid rgba(255,255,255,0.2);}
+.breadcrumb > ol > li.home a {display:block; position:relative; text-indent:-9999px; width:50px; height:50px;}
+.breadcrumb > ol > li.home a:before {position:absolute; top:50%; left:50%; width:16px; height:16px; margin-top:-8px; margin-left:-8px; background:red; content:"";}
+.breadcrumb > ol > li .select_form {min-width:180px; max-width:320px; background:none;}
+.breadcrumb > ol > li .select_form button {padding-left:20px; border:0; background:none; font-size:16px; line-height:50px; color:#cdcdcd;}
+.breadcrumb > ol > li .select_form button span {font-family:"Nanum Square";}
+.breadcrumb > ol > li .select_form button:after {border-color:#cdcdcd;}
 .breadcrumb .select_form button + ul {width:calc(100% + 2px); margin-left:-1px; padding:5px 20px; background:rgba(255,255,255,0.95); -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .breadcrumb .select_form button + ul a {font-family:"Nanum Square";}
 
@@ -1625,34 +1624,310 @@ footer {background:#505354; color:#fff;}
     .campus_find .fold_list ul li .data .tel {font-size:12px;}
 }
 
-/* 플립러닝 기반 학생중심 참여수업 - 플립러닝 교수학습법 */
-.flip_tab1 .msg_box {margin-top:105px;}
+/* 플립러닝 기반 학생중심 참여수업 - 플립러닝 교수학습법, 학습효과가 뛰어난 학생중심 참여수업 */
+.flip_learning .flip .cont_wrap {overflow:hidden; margin-top:50px; padding-bottom:70px;}
+.flip_learning .flip img {float:right; max-width:35.42%;}
+.flip_learning .flip .txt_wrap {float:right; width:64.58%; padding-right:40px;}
+.flip_learning .flip .txt_wrap .tit {margin-top:35px;}
+.flip_learning .flip .txt_wrap .tit:first-child {margin:0;}
+.flip_learning .active {background:#f2f2f2;}
+.flip_learning .active .before_after {overflow:hidden; position:relative; margin-top:45px;}
+.flip_learning .active .before_after:before {position:absolute; top:50%; left:50%; width:107px; height:280px; background:url(../img/bg/bg_tobe_arrow.png); -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); content:"";}
+.flip_learning .active .before_after .cont {width:440px;}
+.flip_learning .active .before_after .before {float:left;}
+.flip_learning .active .before_after .after {float:right;}
+.flip_learning .active .before_after .cont_list {overflow:hidden; margin:0 -10px; margin-top:45px;}
+.flip_learning .active .before_after .cont_list > li {float:left; width:50%; padding:0 10px;}
+.flip_learning .active .before_after .cont_list .img_wrap {position:relative; line-height:0; text-align:center;}
+.flip_learning .active .before_after .cont_list .tit {position:absolute; left:10px; bottom:-18px; padding:0 15px; border-radius:18px; background:#008398; font-family:"Nanum Square"; font-size:14px; font-weight:900; line-height:36px; color:#fff;}
+.flip_learning .active .before_after .cont_list .txt_list {margin-top:30px;}
+.flip_learning .active .before_after .cont_list .txt_list li {font-size:15px; line-height:1.6em; padding:0.2em 0; padding-left:10px;}
+.flip_learning .active .before_after .cont_list .txt_list li:before {top:14px;}
+.flip_learning .about_flip .info_txt {margin-top:20px;}
+.flip_learning .about_flip .info_txt .qec_text .qec_text_list {position:relative; border-bottom:1px solid #ccc;}
+.flip_learning .about_flip .info_txt .qec_text .qec_text_list:before {position:absolute; bottom:-1px; left:50%; width:40px; height:1px; margin-left:-20px; background:#fff; content:"";}
+.flip_learning .about_flip .info_txt .qec_text .qec_text_list:after {display:block; clear:both; content:"";}
+.flip_learning .about_flip .info_txt .qec_text .qec_text_list li {float:left; width:calc(50% - 20px); margin-right:40px;}
+.flip_learning .about_flip .info_txt .qec_text .qec_text_list li:last-child {margin:0;}
+.flip_learning .about_flip .qec_mod {padding:20px 0 30px; border-top:3px solid #333;}
+.flip_learning .about_flip .qec_mod .qec_tit {margin-bottom:25px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#222;}
+.flip_learning .about_flip .qec_mod strong {font-family:inherit; color:#008398;}
+.flip_learning .about_flip .qec_mod .qec_p {font-size:15px; line-height:2em; color:#222;}
 
-@media (max-width:1024px) {
-    .flip_tab1 .grid5 {float:none !important; width:100%;}
-    .flip_tab1 .msg_box {margin-top:30px;}
+@media (max-width:1600px) {
+    .flip_learning .about_flip br {display:none;}
 }
 
-/* 플립러닝 기반 학생중심 참여수업 - 학습효과가 뛰어난 학생중심 참여수업 */
-.flip_tab2 .msg_box {margin-top:105px;}
-
-@media (max-width:1024px) {
-    .flip_tab2 .grid5 {float:none !important; width:100%;}
-    .flip_tab2 .msg_box {margin-top:30px;}
+@media (max-width:1280px) {
+    .flip_learning .active .before_after .cont {float:none; margin:0 auto;}
+    .flip_learning .active .before_after .after {margin-top:200px;}
+    .flip_learning .active .before_after:before {-webkit-transform:translate(-50%,-50%) rotate(90deg);transform:translate(-50%,-50%) rotate(90deg);}
 }
 
-/* 하브루타 기반 말하는 수학 - 생각하는 힘을 키우는 말하는 수학 */
-.hav_tab1 .visual_wrap {height:200px; background:red;}
-.hav_tab1 .visual_wrap p {font-size:30px; line-height:1.4em; color:#fff;}
-
 @media (max-width:1024px) {
-    .hav_tab1 .visual_wrap {height:150px;}
-    .hav_tab1 .visual_wrap p {font-size:24px;}
+    .flip_learning .flip .cont_wrap {margin-top:30px; padding-bottom:30px;}
+    .flip_learning .flip img {margin:0 0 15px 30px;}
+    .flip_learning .flip .txt_wrap {float:none; width:100%; padding:0;}
+    .flip_learning .flip .txt_wrap .tit {margin-top:15px;}
+    .flip_learning .active .before_after {margin-top:15px;}
+    .flip_learning .active .before_after:before {-webkit-transform:translate(-50%,-50%) rotate(90deg) scale(0.5);transform:translate(-50%,-50%) rotate(90deg) scale(0.5);}
+    .flip_learning .active .before_after .after {margin-top:100px;}
+    .flip_learning .active .before_after .cont_list {margin-top:30px;}
+    .flip_learning .active .before_after .cont_list .txt_list li {font-size:14px;}
+    .flip_learning .active .before_after .cont_list .txt_list li:before {top:12px;}
+    .flip_learning .about_flip .info_txt .qec_text .qec_text_list {border:0;}
+    .flip_learning .about_flip .info_txt .qec_text .qec_text_list:before {display:none;}
+    .flip_learning .about_flip .info_txt .qec_text .qec_text_list li {float:none; width:100%; margin:0; margin-bottom:30px; border-bottom:1px solid #ccc;}
+    .flip_learning .about_flip .info_txt .qec_text .qec_text_list li:last-child {margin-bottom:0;}
+    .flip_learning .about_flip .info_txt .img {height:479px; margin-top:30px; padding:0;}
+    .flip_learning .about_flip .qec_mod {min-height:0; padding:15px 0;}
+    .flip_learning .about_flip .qec_mod .qec_tit {font-size:24px; line-height:1.4em;}
+    .flip_learning .about_flip .qec_mod .qec_p {font-size:14px; line-height:1.8em;}
 }
 
 @media (max-width:599px) {
-    .hav_tab1 .visual_wrap {height:100px;}
-    .hav_tab1 .visual_wrap p {font-size:16px;}
+    .flip_learning .flip .cont_wrap {margin-top:15px;}
+    .flip_learning .flip img {display:block; float:none; margin:0 auto; width:100%; max-width:425px;}
+    .flip_learning .flip .txt_wrap {margin-top:15px;}
+    .flip_learning .active .before_after .cont {width:100%;}
+    .flip_learning .active .before_after .cont_list .tit {bottom:-1em; left:50%; font-size:12px; font-weight:700; line-height:2em; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
+    .flip_learning .active .before_after .cont_list .txt_list {margin-top:20px;}
+    .flip_learning .active .before_after .cont_list .txt_list li {font-size:12px; line-height:1.4em;}
+    .flip_learning .active .before_after .cont_list .txt_list li:before {top:9px;}
+    .flip_learning .about_flip .info_txt {text-align:center;}
+    .flip_learning .about_flip .info_txt .img {height:0; padding-top:80%;}
+    .flip_learning .about_flip .qec_mod .qec_tit {font-size:18px;}
+    .flip_learning .about_flip .qec_mod .qec_tit br {display:none;}
+}
+
+/* 플립러닝 기반 학생중심 참여수업 - 왜 플립러닝인가? */
+.flip_import .injection .cont_wrap {overflow:hidden; margin-bottom:10px;}
+.flip_import .injection img {float:right; width:580px; max-width:48.33%;}
+.flip_import .injection .txt_wrap {float:right; width:51.67%; padding-right:40px;}
+.flip_import .introduction {margin-bottom:-100px; background:url(../img/bg/bg_why_01.png); background-size:cover; background-position:center bottom;}
+.flip_import .introduction .txt_wrap {padding-bottom:130px;}
+
+@media (max-width:1024px) {
+    .flip_import .injection .cont_wrap {margin:0;}
+    .flip_import .injection img {margin:0 0 15px 30px;}
+    .flip_import .injection .txt_wrap {float:none; width:100%; padding:0;}
+    .flip_import .introduction {margin-bottom:-50px;}
+    .flip_import .introduction .txt_wrap {padding:0;} 
+} 
+
+@media (max-width:599px) {
+    .flip_import .injection img {display:block; float:none; width:100%; max-width:580px; margin:0 auto;}
+    .flip_import .injection .txt_wrap {margin-top:15px;}
+    .flip_import .introduction {margin-bottom:-30px; text-align:center;}
+}
+
+/* 하브루타 기반 말하는 수학 - 생각하는 힘을 키우는 말하는 수학 */
+.think_ability .think .txt_wrap {margin-top:50px; margin-bottom:80px;}
+.think_ability .think .txt_wrap:after {display:block; clear:both; content:"";}
+.think_ability .think .txt_wrap .cont_tit {float:left; position:relative; width:22.5%; padding-top:25px; border-top:3px solid #333;}
+.think_ability .think .txt_wrap .cont_tit:before {position:absolute; right:0; bottom:26px; z-index:-1; width:105px; height:103px; background:red; -webkit-transform:translateY(100%); transform:translateY(100%); content:"";}
+.think_ability .think .txt_wrap .cont_txt {float:left; width:77.5%; margin-top:-8px; padding-left:40px;}
+.think_ability .think .txt_wrap .cont_txt .txt:first-child {margin:0;}
+.think_ability .think .key_visual {display:table; width:100%; height:200px; margin-bottom:-50px; background:url(../img/bg/bg_speaking_math_tab1_02.png) no-repeat; background-position:center; background-size:cover; text-align:center;}
+.think_ability .think .key_visual p {display:table-cell; padding:0 30px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#fff; vertical-align:middle;}
+.think_ability .ivy_league .info {text-align:center;}
+.think_ability .before_after_guide {margin-bottom:-100px; background:#f2f2f2;}
+.think_ability .before_after {overflow:hidden; position:relative; margin-bottom:20px;}
+.think_ability .before_after:before {position:absolute; top:50%; left:50%; width:107px; height:280px; background:url(../img/bg/bg_tobe_arrow.png); -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); content:"";}
+.think_ability .before_after .cont {width:425px;}
+.think_ability .before_after .before {float:left;}
+.think_ability .before_after .after {float:right;}
+.think_ability .before_after .cont_list {overflow:hidden; margin-top:45px;}
+.think_ability .before_after .cont_list .img_wrap {line-height:0;}
+.think_ability .before_after .cont_list .img_wrap img {width:425px;}
+.think_ability .before_after .cont_list .txt {margin-top:12px; text-align:center;}
+
+
+@media (max-width:1280px){
+    .think_ability .before_after .cont {float:none; margin:0 auto;}
+    .think_ability .before_after .after {margin-top:200px;}
+    .think_ability .before_after:before {-webkit-transform:translate(-50%,-50%) rotate(90deg);transform:translate(-50%,-50%) rotate(90deg);}
+}
+
+@media (max-width:1024px) {
+    .think_ability .think .txt_wrap {margin:30px 0;}
+    .think_ability .think .txt_wrap .cont_tit {padding-top:15px;}
+    .think_ability .think .txt_wrap .cont_tit:before {display:none;}
+    .think_ability .think .txt_wrap .cont_txt {padding-left:30px;}
+    .think_ability .think .key_visual {height:150px; margin-bottom:-30px;}
+    .think_ability .think .key_visual p {font-size:24px;}
+    .think_ability .before_after_guide {margin-bottom:-50px;}
+    .think_ability .before_after {margin:0;}
+    .think_ability .before_after:before {-webkit-transform:translate(-50%,-50%) rotate(90deg) scale(0.5);transform:translate(-50%,-50%) rotate(90deg) scale(0.5);}
+    .think_ability .before_after .after {margin-top:100px;}
+    .think_ability .before_after .cont_list {margin-top:30px;}
+    .think_ability .before_after .cont_list .txt {font-size:14px; line-height:1.6em;}
+}
+
+@media (max-width:599px) { 
+    .think_ability .think .txt_wrap {text-align:center;}
+    .think_ability .think .txt_wrap .cont_tit {float:none; width:100%; padding:0; border:0;}
+    .think_ability .think .txt_wrap .cont_txt {float:none; width:100%; margin-top:15px; padding:0;}
+    .think_ability .think .key_visual {height:120px;}
+    .think_ability .think .key_visual p {padding:0 15px; font-size:18px;}
+    .think_ability .think .key_visual p br {display:none;}
+    .think_ability .before_after_guide {margin-bottom:-30px;}
+    .think_ability .before_after .cont {width:100%;}
+    .think_ability .before_after .cont_list .img_wrap img {display:block; margin:0 auto;}
+    .think_ability .before_after .cont_list .txt {font-size:12px;}
+}
+
+/* 하브루타 기반 말하는 수학 - 왜 하브루타인가? */
+.about_havruta .info {text-align:center;}
+.about_havruta .reason .txt_box {display:table; width:100%; min-height:270px; margin:30px 0; padding:30px; background-image:url(../img/bg/bg_why_is_hebruhta_01.png); background-repeat:no-repeat; background-position:center center; background-size:cover; text-align:center;}
+.about_havruta .reason .txt_box p {display:table-cell; font-family:"Nanum Square"; font-size:20px; line-height:1.8em; color:#fff; vertical-align:middle;}
+.about_havruta .reason .txt_wrap {overflow:hidden;}
+.about_havruta .reason .txt_wrap .cont_tit {float:left; width:calc(25% - 40px);}
+.about_havruta .reason .txt_wrap .cont_txt {float:right; width:75%;}
+.about_havruta .reason .txt_wrap .cont_txt .txt {margin:0;}
+.about_havruta .harkness {background-color:#f2f2f2;}
+.about_havruta .your_think {margin-bottom:-100px; padding:140px 0; background-image:url(../img/bg/bg_why_is_hebruhta_02.png); background-position:center; background-size:cover; text-align:center;}
+.about_havruta .cont_box {max-width:580px; margin:0 auto; padding:40px 30px; background-color:#fff;}
+.about_havruta .your_think .subpage_tit .translation {font-size:0.75em; font-weight:normal; font-family:inherit; line-height:1.0em;}
+
+@media (max-width:1024px) { 
+    .about_havruta .reason .txt_box {min-height:200px;}
+    .about_havruta .reason .txt_box p {font-size:18px; line-height:1.6em;}
+    .about_havruta .reason .txt_box p br {display:none;}
+    .about_havruta .reason .txt_wrap .cont_tit,.about_havruta .reason .txt_wrap .cont_txt {float:none; width:100%;}    
+    .about_havruta .reason .txt_wrap .cont_txt .txt {margin-top:20px;}
+    .about_havruta .your_think {padding:100px 0; margin-bottom:-50px;}
+}
+@media (max-width:599px) { 
+    .about_havruta .reason .txt_box {width:calc(100% + 30px); min-height:150px; margin-left:-15px; padding:30px 15px;}
+    .about_havruta .reason .txt_box p {font-size:16px;}
+    .about_havruta .reason .txt_wrap {text-align:center;}
+    .about_havruta .reason .txt_wrap .cont_txt .txt {margin-top:15px;}
+    .about_havruta .your_think {width:calc(100% + 30px); margin-left:-15px; margin-bottom:-30px; padding:0;}
+}
+
+/* 뇌과학 기반의 메타인지 학습법 - 학습내용을 장기기억화하는 말하는 수학 */
+.meta_learning .learning_pyramid .pyramid {position:relative; width:100%; height:0; padding-top:40.66%; background-image:url(../img/bg/bg_pyramid_01.png); background-repeat:no-repeat; background-position:center right 30%; background-size:contain;}
+.meta_learning .learning_pyramid .pyramid:before {position:absolute; top:7%; left:0; z-index:-1; font-family:"Nanum Square"; font-size:108px; font-weight:900; line-height:1.3em; color:#f2f2f2; white-space:pre; -webkit-transition:all 0.5s; transition:all 0.5s; content:"학습\A 피라미드";}
+.meta_learning .learning_pyramid .txt_wrap {margin-bottom:20px; text-align:center;}
+.meta_learning .learning_pyramid .txt_wrap .source {display:inline-block; margin-top:10px; border-bottom:2px solid #ddd; font-family:"Nanum Square"; font-size:13px; line-height:1.5em; color:#222;}
+.meta_learning .learning_pyramid .txt_wrap .source strong:after {margin:0 0.2em; content:":";}
+.meta_learning .brain {margin-bottom:-100px; background:#f2f2f2;}
+.meta_learning .brain .column {display:table; overflow:hidden; vertical-align:middle;}
+.meta_learning .brain .column .txt_wrap {display:table-cell; background-repeat:no-repeat; vertical-align:middle;}
+.meta_learning .brain .program {min-height:442px; margin-bottom:30px;}
+.meta_learning .brain .program .txt_wrap {padding:0 7% 0 calc(41.58% + 40px); background-image:url(../img/bg/bg_meta_tab1_01.png); background-position:left center; background-size:41.58%;}
+.meta_learning .brain .result {min-height:371px;}
+.meta_learning .brain .result .txt_wrap {padding:0 calc(34.83% + 40px) 0 8%; background-image:url(../img/bg/bg_meta_tab1_02.png); background-position:right center; background-size:34.83%;}
+
+@media (max-width:1366px) {
+    .meta_learning .learning_pyramid .pyramid:before {font-size:80px;}
+}
+
+@media (max-width:1024px) {
+    .meta_learning .learning_pyramid .pyramid {padding-top:49.8%;}
+    .meta_learning .brain {margin-bottom:-50px;}
+    .meta_learning .brain .column {min-height:185px;}
+    .meta_learning .brain .column .txt_wrap {background-size:209px 185px;}
+    .meta_learning .brain .program .txt_wrap {padding:0; padding-left:240px;}
+    .meta_learning .brain .result .txt_wrap {padding:0; padding-right:240px;}
+    .meta_learning .learning_pyramid .pyramid:before {display:none;}
+}
+
+@media (max-width:599px) {
+    .meta_learning .learning_pyramid .pyramid {padding-top:66.4%;}
+    .meta_learning .brain {margin-bottom:-30px;}
+    .meta_learning .brain .column .txt_wrap {margin-top:30px; text-align:center; padding:0; padding-top:200px; background-position:top center;}
+}
+
+/* 뇌과학 기반의 메타인지 학습법 - 메타인지를 키우는 말하는 수학 */
+.recognition .about_meta {margin-bottom:-50px;}
+.recognition .about_meta img {display:block; margin:0 auto;}
+.recognition .brain {margin-bottom:-100px; background:#f2f2f2;}
+.recognition .brain .column {display:table; overflow:hidden; vertical-align:middle;}
+.recognition .brain .column .txt_wrap {display:table-cell; background-repeat:no-repeat; vertical-align:middle;}
+.recognition .brain .upgrade {min-height:442px; margin-bottom:30px;}
+.recognition .brain .upgrade .txt_wrap {padding:0 calc(41.58% + 40px) 0 8%; background-image:url(../img/bg/bg_meta_tab2_01.png); background-position:right center; background-size:41.58%;}
+.recognition .brain .talking {min-height:371px;}
+.recognition .brain .talking .txt_wrap {padding:0 7% 0 calc(34.83% + 40px); background-image:url(../img/bg/bg_meta_tab2_02.png); background-position:left center; background-size:34.83%;}
+
+@media (max-width:1024px) {
+    .recognition .about_meta {margin-bottom:-30px;}
+    .recognition .about_meta img {max-width:430px;}
+    .recognition .brain {margin-bottom:-50px;}
+    .recognition .brain .column {min-height:185px;}
+    .recognition .brain .column .txt_wrap {background-size:209px 185px;}
+    .recognition .brain .upgrade .txt_wrap {padding:0; padding-right:240px;}
+    .recognition .brain .talking .txt_wrap {padding:0; padding-left:240px;}
+    .recognition .learning_pyramid .pyramid:before {display:none;}
+}
+
+@media (max-width:599px) {
+    .recognition .brain {margin-bottom:-30px;}
+    .recognition .brain .column .txt_wrap {margin-top:30px; text-align:center; padding:0; padding-top:200px; background-position:top center;}
+}
+
+/* 3가지 특장점 - 학생중심 참여수업 */
+.attend_study .attend .diagram {margin-bottom:25px; line-height:0; text-align:center;}
+.attend_study .attend .cont_wrap {overflow:hidden; margin-bottom:20px;}
+.attend_study .attend .cont_wrap img {float:left; width:35%;}
+.attend_study .attend .cont_wrap .txt_wrap {float:left; width:65%; padding-left:40px;}
+.attend_study .before_after_guide {background:#f2f2f2;}
+.attend_study .before_after {overflow:hidden; position:relative;}
+.attend_study .before_after:before {position:absolute; top:50%; left:50%; width:107px; height:280px; background:url(../img/bg/bg_tobe_arrow.png); -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); content:"";}
+.attend_study .before_after .cont {width:440px;}
+.attend_study .before_after .before {float:left;}
+.attend_study .before_after .after {float:right;}
+.attend_study .before_after .cont_list {overflow:hidden; margin:0 -10px; margin-top:45px;}
+.attend_study .before_after .cont_list > li {float:left; width:50%; padding:0 10px;}
+.attend_study .before_after .cont_list .img_wrap {position:relative; line-height:0; text-align:center;}
+.attend_study .before_after .cont_list .tit {position:absolute; left:10px; bottom:-18px; padding:0 15px; border-radius:18px; background:#008398; font-family:"Nanum Square"; font-size:14px; font-weight:900; line-height:36px; color:#fff;}
+.attend_study .before_after .cont_list .txt_list {margin-top:30px;}
+.attend_study .before_after .cont_list .txt_list li {font-size:15px; line-height:1.6em; padding:0.2em 0; padding-left:10px;}
+.attend_study .before_after .cont_list .txt_list li:before {top:14px;}
+.attend_study .before_after .sub_txt {margin:15px 0; padding-top:12px; border-top:2px solid #008398;}
+.attend_study .before_after .sub_txt p {font-size:15px; line-height:1.6em; font-family:"Nanum Square"; color:#008398;}
+.attend_study .talking_math img {display:block; margin:0 auto; margin-top:65px;}
+.attend_study .talking_math .txt_wrap {overflow:hidden; margin-top:-20px;}
+.attend_study .talking_math .txt_wrap .cont_tit {float:left; width:38.75%; padding-right:40px;}
+.attend_study .talking_math .txt_wrap .cont_txt {float:left; width:61.25%;}
+.attend_study .talking_math .txt_wrap .cont_txt .txt:first-child {margin-top:0;}
+
+@media (max-width:1280px){
+    .attend_study .before_after .cont {float:none; margin:0 auto;}
+    .attend_study .before_after .after {margin-top:200px;}
+    .attend_study .before_after:before {margin-top:-50px; -webkit-transform:translate(-50%,-50%) rotate(90deg); transform:translate(-50%,-50%) rotate(90deg);}
+}
+
+@media (max-width:1024px) {
+    .attend_study .attend .diagram {margin-bottom:30px;}
+    .attend_study .attend .diagram img {width:100%; max-width:440px;}
+    .attend_study .attend .cont_wrap {margin:0;}
+    .attend_study .attend .cont_wrap img {margin-right:30px; margin-bottom:15px;}
+    .attend_study .attend .cont_wrap .txt_wrap {float:none; width:100%; padding:0;}
+    .attend_study .before_after:before {margin-top:-40px; -webkit-transform:translate(-50%,-50%) rotate(90deg) scale(0.5); transform:translate(-50%,-50%) rotate(90deg) scale(0.5);}
+    .attend_study .before_after .after {margin-top:100px;}
+    .attend_study .before_after .cont_list {margin-top:30px;}
+    .attend_study .before_after .cont_list .txt_list li {font-size:14px;}
+    .attend_study .before_after .cont_list .txt_list li:before {top:12px;}
+    .attend_study .before_after .sub_txt p {font-size:14px;}
+    .attend_study .before_after .sub_txt br {display:none;}
+    .attend_study .talking_math img {width:100%; max-width:430px; margin-top:30px;}
+    .attend_study .talking_math .txt_wrap .cont_tit {padding-right:30px;}
+}
+
+@media (max-width:599px) { 
+    .attend_study .attend .diagram {margin-bottom:0;}
+    .attend_study .attend .cont_wrap img {display:block; float:none; width:100%; max-width:425px; margin:0 auto; margin-bottom:30px;}
+    .attend_study .before_after .cont {width:100%;}
+    .attend_study .before_after .cont_list .tit {bottom:-1em; left:50%; font-size:12px; font-weight:700; line-height:2em; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
+    .attend_study .before_after .cont_list .txt_list {margin-top:20px;}
+    .attend_study .before_after .cont_list .txt_list li {font-size:12px; line-height:1.4em;}
+    .attend_study .before_after .cont_list .txt_list li:before {top:9px;}
+    .attend_study .before_after .sub_txt p {font-size:12px;}
+    .attend_study .talking_math .txt_wrap .cont_tit {float:none; width:100%; padding:0;}
+    .attend_study .talking_math .txt_wrap .cont_txt {float:none; width:100%;}
+    .attend_study .talking_math .txt_wrap .cont_txt .txt:first-child {margin-top:15px;}
 }
 
 /* 3가지 특장점 - 지능형 개별맞춤학습 */
@@ -1698,7 +1973,83 @@ footer {background:#505354; color:#fff;}
     .adv_custom .intelli {padding-top:56.17%;}
 }
 
-/* 유투엠 프로그램 > 4가지 말하기 학습전략 > 질문식 수업 */
+/* 3가지 특장점 - 완전학습 시스템 */
+.adv_perfect .combine .txt_wrap {margin:60px 0 20px;}
+.adv_perfect .bloom {background:#f2f2f2;}
+.adv_perfect .bloom .diagram {height:0; margin-top:50px; padding-top:49.33%; background:url(../img/bg/bg_combine.png) no-repeat; background-position:center; background-size:contain;}
+.adv_perfect .bloom .cont_wrap {overflow:hidden; margin:0 -20px; margin-top:65px;}
+.adv_perfect .bloom .cont_wrap .cont {float:left; width:50%; padding:0 20px;}
+.adv_perfect .bloom .cont_wrap .cont .sub_col_tit p:before,.adv_perfect .bloom .cont_wrap .cont .sub_col_tit p:after {display:none;}
+.adv_perfect .bloom .sub_txt {font-size:15px; line-height:2em; text-align:center;}
+.adv_perfect .bloom .step {overflow:hidden; margin:0 -10px; margin-top:25px;}
+.adv_perfect .bloom .step > li {float:left; width:33.33%; padding:0 10px;}
+.adv_perfect .bloom .step .list_tit {padding:15px 0; font-family:"Nanum Square"; font-size:18px; line-height:1.6em; color:#fff; text-align:center;}
+.adv_perfect .bloom .step > li:nth-child(1) .list_tit {background:#258c9c;}
+.adv_perfect .bloom .step > li:nth-child(2) .list_tit {background:#8ab052;}
+.adv_perfect .bloom .step > li:nth-child(3) .list_tit {background:#faa627;}
+.adv_perfect .bloom .step .list_tit strong {font-family:inherit;}
+.adv_perfect .bloom .step .img_wrap {height:150px; margin-top:20px; background-size:cover; background-position:top center;}
+.adv_perfect .bloom .step > li:nth-child(1) .img_wrap {background-image:url(../img/bg/bg_bloomstep_01.jpg);}
+.adv_perfect .bloom .step > li:nth-child(2) .img_wrap {background-image:url(../img/bg/bg_bloomstep_02.jpg);}
+.adv_perfect .bloom .step > li:nth-child(3) .img_wrap {background-image:url(../img/bg/bg_bloomstep_03.jpg);}
+.adv_perfect .bloom .step_tit {overflow:hidden; margin:0 -10px; margin-top:20px;}
+.adv_perfect .bloom .step_tit > li {float:left; width:33.33%; padding:0 10px;}
+.adv_perfect .bloom .step_tit > li:last-child {width:66.66%;}
+.adv_perfect .bloom .step_tit .txt_list {overflow:hidden; min-height:130px; padding:15px 30px; background:#fff;}
+.adv_perfect .bloom .step_tit .txt_list li {float:left; font-size:15px; line-height:1.75em;}
+.adv_perfect .bloom .step_tit > li:last-child .txt_list li {width:50%;}
+.adv_perfect .bloom .txt_wrap .tit {margin-top:25px;}
+.adv_perfect .bloom .txt_wrap .txt:first-child {margin-top:0;}
+.adv_perfect .flip {padding-bottom:0;}
+.adv_perfect .flip .flip_wrap {overflow:hidden; position:relative; margin-top:40px;}
+.adv_perfect .flip .flip_wrap:before {position:absolute; top:50%; left:50%; width:107px; height:280px; background:url(../img/bg/bg_tobe_arrow.png); -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); content:"";}
+.adv_perfect .flip .flip_wrap li {float:left; width:50%;}
+.adv_perfect .flip .flip_wrap li .img_wrap {height:0; padding-top:58.67%;  background-repeat:no-repeat; background-size:contain;}
+.adv_perfect .flip .flip_wrap li:nth-child(1) .img_wrap {background-image:url(../img/bg/bg_flip_before.png); background-position:left;}
+.adv_perfect .flip .flip_wrap li:nth-child(2) .img_wrap {background-image:url(../img/bg/bg_flip_after.png); background-position:right;}
+.adv_perfect .flip .flip_wrap .list_tit {display:block; margin-top:25px; font-family:"Nanum Square"; font-size:15px; font-weight:700; line-height:1.6em; text-align:center;}
+.adv_perfect .theory {border:3px solid #1fb6c1; padding:70px 30px 60px;}
+
+@media (max-width:1366px) {
+    .adv_perfect .bloom .step .list_tit {font-size:16px;}
+    .adv_perfect .bloom .step_tit .txt_list {padding:15px 10px;}
+}
+
+@media (max-width:1024px) {
+    .adv_perfect .combine .txt_wrap {margin:0; margin-top:30px;}
+    .adv_perfect .bloom .diagram {margin-top:30px;}
+    .adv_perfect .bloom .sub_txt {font-size:14px;}
+    .adv_perfect .bloom .cont_wrap {margin:0; margin-top:30px;}
+    .adv_perfect .bloom .cont_wrap .cont {float:none; width:100%; padding:0;}
+    .adv_perfect .bloom .cont_wrap .txt_wrap {margin-top:30px;}
+    .adv_perfect .bloom .step_tit .txt_list li {float:none; font-size:14px; line-height:1.5em;}
+    .adv_perfect .flip .flip_wrap li {float:none; width:100%;}
+    .adv_perfect .flip .flip_wrap li .img_wrap {width:508px; height:352px; margin:0 auto; padding:0;}
+    .adv_perfect .flip .flip_wrap li:last-child {margin-top:100px;}
+    .adv_perfect .flip .flip_wrap .list_tit {margin-top:15px; font-size:14px;}
+    .adv_perfect .flip .flip_wrap:before {-webkit-transform:translate(-50%,-50%) rotate(90deg) scale(0.5);transform:translate(-50%,-50%) rotate(90deg) scale(0.5);}
+    .adv_perfect .theory {padding:30px;}
+}
+
+@media (max-width:599px) {
+    .adv_perfect .bloom .diagram {margin-top:15px; padding-top:81.66%;}
+    .adv_perfect .combine .txt_wrap {margin-top:15px;}
+    .adv_perfect .bloom .sub_txt {font-size:12px;}
+    .adv_perfect .bloom .step {margin:0 -5px; margin-top:15px;}
+    .adv_perfect .bloom .step > li {padding:0 5px;}
+    .adv_perfect .bloom .step .list_tit {padding:5px 0; font-size:14px;}
+    .adv_perfect .bloom .step .img_wrap {height:100px; margin-top:10px;}
+    .adv_perfect .bloom .step_tit {margin:0 -5px; margin-top:10px;}
+    .adv_perfect .bloom .step_tit > li {padding:0 5px;}
+    .adv_perfect .bloom .step_tit .txt_list {min-height:110px; padding:10px 5px;}
+    .adv_perfect .bloom .step_tit .txt_list li {padding:0; text-align:center; font-size:12px; width:100% !important;}
+    .adv_perfect .bloom .step_tit .txt_list li:before {display:none;}
+    .adv_perfect .flip .flip_wrap li .img_wrap {width:100%; height:0; padding-top:58.67%; background-position:center !important;}
+    .adv_perfect .flip .flip_wrap .list_tit {font-size:12px;}
+    .adv_perfect .theory {padding:30px 15px;}
+}
+
+/* 4가지 말하기 학습전략 */
 .strategy .info_txt {margin-top:20px;}
 .strategy .info_txt .qec_text .qec_text_list {position:relative; border-bottom:1px solid #ccc;}
 .strategy .info_txt .qec_text .qec_text_list:before {position:absolute; bottom:-1px; left:50%; width:40px; height:1px; margin-left:-20px; background:#fff; content:"";}
@@ -1706,9 +2057,6 @@ footer {background:#505354; color:#fff;}
 .strategy .info_txt .qec_text .qec_text_list li {float:left; width:calc(50% - 20px); margin-right:40px;}
 .strategy .info_txt .qec_text .qec_text_list li:last-child {margin:0;}
 .strategy .qec_mod {padding:20px 0 30px; border-top:3px solid #333;}
-.strategy .qec_mod .qec_tit {margin-bottom:25px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#222;}
-.strategy .qec_mod strong {font-family:inherit; color:#008398;}
-.strategy .qec_mod .qec_p {font-size:15px; line-height:2em; color:#222;}
 .strategy .info_txt .img {width:100%; height:0; margin-top:70px; padding-top:80%; background-repeat:no-repeat; background-position:center; background-size:contain;}
 .strategy .info_txt .qec_img {background-image:url(../img/bg/bg_question_expression_class_01.png);}
 .strategy .info_txt .tp_img {background-image:url(../img/bg/bg_teaching_peers_01.png);}
@@ -1740,6 +2088,7 @@ footer {background:#505354; color:#fff;}
 }
 
 @media (max-width:599px) {
+    .strategy .info_txt {text-align:center;}
     .strategy .info_txt .img {height:0; padding-top:80%;}
     .strategy .qec_mod .qec_tit {font-size:18px;}
     .strategy .qec_mod .qec_tit br {display:none;}
@@ -1801,6 +2150,85 @@ footer {background:#505354; color:#fff;}
     .time_table .table_wrap {overflow-x:auto; margin-bottom:30px; padding:0;}
     .time_table .table_wrap:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
     .time_table .notice {font-size:12px;}
+}
+
+/* 프로그램 안내 - 학습 프로세스 */
+.process .process_cont .process_imgbx {padding:0 80px;}
+.process .process_cont .process_imgbx .process_img {position:relative; height:0; margin:0 auto; padding-top:59.42%; background-image:url(../img/bg/bg_program_process_01.png); font-size:14px; background-repeat:no-repeat; background-position:top center; background-size:contain;}
+.process .process_cont .process_imgbx .process_img ul li {position:absolute;}
+.process .process_cont .process_imgbx .process_img ul li:nth-child(1) {left:-2%; top:65.37%; width:23.12%;}
+.process .process_cont .process_imgbx .process_img ul li:nth-child(2) {left:50%; top:103.24%; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
+.process .process_cont .process_imgbx .process_img ul li:nth-child(3) {left:74%; top:52.91%; width:25.96%;}
+.process .process_cont .process_imgbx .process_img ul li p {position:relative; padding-left:25px; font-family:"Nanum Square"; font-size:16px; line-height:31px; color:#222;}
+.process .process_cont .process_imgbx .process_img ul li p:before {position:absolute; top:15px; left:0; width:14px; height:15px; -webkit-transform:translateY(-50%); transform:translateY(-50%); content:"";}
+.process .process_cont .process_imgbx .process_img ul li:nth-child(1) p:before {background-color:#176ea6;}
+.process .process_cont .process_imgbx .process_img ul li:nth-child(2) p:before {background-color:#8ab052;}
+.process .process_cont .process_imgbx .process_img ul li:nth-child(3) p:before {background-color:#008ead;}
+
+@media (max-width:1024px) {
+    .process .process_cont .process_imgbx {padding:0;}
+    .process .process_cont .process_imgbx .process_img {padding-bottom:8.14em; font-size:12px;}
+    .process .process_cont .process_imgbx .process_img ul {position:absolute; bottom:0; width:100%;}
+    .process .process_cont .process_imgbx .process_img ul li {position:static; font-size:0; line-height:0; text-align:center; -webkit-transform:none !important; transform:none !important; width:100% !important;}
+    .process .process_cont .process_imgbx .process_img ul li p {display:inline-block; font-size:14px; line-height:2em;}
+    .process .process_cont .process_imgbx .process_img ul li p:before {top:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+    .process .process_cont .process_imgbx .process_img ul li p br {display:none;}
+}
+
+@media (max-width:599px) {
+    .process .process_cont .process_imgbx .process_img ul li p {padding-left:1.5em; font-size:12px; white-space:nowrap;}
+}
+
+/* 프로그램 안내 - 평가관리 */
+.manage .book {background-color:#f2f2f2;}
+.manage .book:last-child {margin-bottom:-100px;}
+.manage .program {margin-top:50px;}
+.manage .program ol {font-size:0; text-align:center;}
+.manage .program ol li {display:inline-block; width:295px; max-width:33.33%; padding:0 40px; vertical-align:top;}
+.manage .program ol li .tit_wrap {position:relative; padding:20px; border:3px dotted #ddd; border-radius:50%;}
+.manage .program ol li .tit_wrap:before,.manage .program ol li .tit_wrap:after {position:absolute; top:50%; left:calc(100% + 32px); width:0; height:0; border-top:12px solid transparent; border-bottom:12px solid transparent; border-left:22px solid #0c95ab; content:""; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.manage .program ol li .tit_wrap:after {margin-left:-2px; border-left-color:#fff; -webkit-transform:translateY(-50%) scale(0.5); transform:translateY(-50%) scale(0.5);}
+.manage .program ol li:first-child .tit_wrap:before {border-left-color:#2eadc1;}
+.manage .program ol li:last-child .tit_wrap:before,.manage .program ol li:last-child .tit_wrap:after {display:none;}
+.manage .program ol li .tit_wrap .tit {position:relative; width:100%; height:0; padding-top:100%; border-radius:50%; background:#008ead;}
+.manage .program ol li:first-child .tit_wrap .tit {background:#1fb6c1;}
+.manage .program ol li:last-child .tit_wrap .tit {background:#00687f;}
+.manage .program ol li .tit_wrap span {position:absolute; top:50%; left:0; width:100%; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.7em; color:#fff; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.manage .book_list {font-size:0; line-height:0;}
+.manage .book_list:after {display:table; clear:both; content:"";}
+.manage .book_list .book_tit {display:inline-block; position:relative; margin-bottom:30px; font-size:24px; font-weight:700; line-height:1.3em; color:#222;}
+.manage .book_list ul {overflow:hidden; margin:0 -20px; margin-top:30px;}
+.manage .book_list ul li {float:left; width:25%; margin-top:15px; padding:0 20px;}
+.manage .book_list ul li.double {width:50%;}
+.manage .book_list ul li .book_img {display:inline-block; line-height:0;}
+.manage .book_list ul li.double .book_img {margin-right:40px; width:calc(50% - 20px);}
+.manage .book_list ul li.double .book_img:last-of-type {margin:0;}
+.manage .book_list ul li p {padding:10px 0; font-family:"Nanum Square"; font-size:15px; line-height:30px; color:#222; text-align:center;}
+
+@media (max-width:1024px) {
+    .manage .book:last-child {margin-bottom:-50px;}
+    .manage .program {margin-top:30px;}
+    .manage .program ol {margin:0 -15px;}
+    .manage .program ol li {width:200px; padding:0 15px;}
+    .manage .program ol li .tit_wrap {padding:15px;}
+    .manage .program ol li .tit_wrap span {font-size:16px; line-height:1.6em;}
+    .manage .program ol li .tit_wrap:before, .manage .program ol li .tit_wrap:after {left:calc(100% + 8px);}
+    .manage .book_list .book_tit {font-size:20px;}
+    .manage .book_list ul {margin:0 -15px;}
+    .manage .book_list ul li {padding:0 15px;}
+    .manage .book_list ul li p {padding:0; font-size:14px;}
+    .manage .book_list ul li.double .book_img {margin-right:30px; width:calc(50% - 15px);}
+}
+
+@media (max-width:599px) {
+    .manage .book:last-child {margin-bottom:-30px;}
+    .manage .program ol li {margin-bottom:30px; padding:0; width:100%; max-width:100%;}
+    .manage .program ol li .tit_wrap {max-width:180px; margin:0 auto;}
+    .manage .program ol li .tit_wrap:before, .manage .program ol li .tit_wrap:after {display:none;}
+    .manage .book_list ul {margin:0 -8px;}
+    .manage .book_list ul li {width:50%; padding:0 8px;}
+    .manage .book_list ul li.double {width:100%;}
+    .manage .book_list ul li.double .book_img {margin-right:16px; width:calc(50% - 8px);}
 }
 
 /* 프로그램 안내 - 내신대비(Q팡) */
@@ -1902,6 +2330,41 @@ footer {background:#505354; color:#fff;}
     .about_qpang .qpang .detail dd .txt_wrap .sub_tit {font-size:16px;}
     .about_qpang .other_subject ul {margin:-15px 0;}
     .about_qpang .other_subject ul li {float:none; width:100%; padding:15px 0;}
+}
+
+/* 교재구성 - 나선형 학습 */
+.spiral .about_book {padding-top:70px; font-size:0; line-height:0; text-align:center;}
+.spiral .about_book .diagram .img_wrap {width:100%; height:0; padding-top:55.83%; background-image:url(../img/bg/bg_organization_tab1_01.png); background-repeat:no-repeat; background-position:center; background-size:contain;}
+.spiral .about_book .diagram .tit {display:inline-block; border-bottom:2px solid #ddd; font-size:13px; line-height:1.5em; color:#222;}
+.spiral .about_book .txt_wrap {margin-top:15px;}
+.spiral .spiral_learning {margin-bottom:-100px; background-color:#f2f2f2;}
+.spiral .cont_wrap {overflow:hidden; margin-top:40px;}
+.spiral .cont_wrap .cont {float:right;}
+.spiral .cont_wrap .info {width:61.25%; margin-right:40px; padding:25px 0; border-top:3px solid #222; border-bottom:1px solid #ddd;}
+.spiral .cont_wrap .info .tit_text {margin-bottom:30px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.6em; color:#222;}
+.spiral .cont_wrap .img {width:calc(38.75% - 40px); padding:40px 30px 15px 30px; background-color:#fff; font-size:0; line-height:0; text-align:center;}
+.spiral .cont_wrap .img .diagram {height:0; padding-top:88.46%; background-image:url(../img/bg/bg_organization_tab1_02.png); background-repeat:no-repeat; background-position:center; background-size:contain;}
+.spiral .cont_wrap .img .tit {display:inline-block; margin-top:30px; border-bottom:2px solid #ddd; font-size:13px; line-height:1.5em; color:#222;}
+
+@media (max-width:1366px) {
+    .spiral .about_book .txt_wrap br {display:none;}
+}
+
+@media (max-width:1024px) {
+    .spiral .spiral_learning {margin-bottom:-50px;}
+    .spiral .about_book {padding-top:30px;}
+    .spiral .cont_wrap {margin:0;}
+    .spiral .cont_wrap .cont {float:none; width:100% !important;}
+    .spiral .cont_wrap .img {padding:30px 0;}
+    .spiral .cont_wrap .img .diagram {height:322px; padding:0; background-size:364px 322px;}
+    .spiral .cont_wrap .info {border:0;}
+}
+@media (max-width:599px) {
+    .spiral .spiral_learning {margin-bottom:-30px;}
+    .spiral .about_book .diagram .img_wrap {padding-top:75.28%;}
+    .spiral .cont_wrap .img {padding:15px;}
+    .spiral .cont_wrap .img .diagram {height:0; padding-top:88.46%; background-size:contain;}
+    .spiral .about_book .diagram .tit,.spiral .cont_wrap .img .tit {font-size:12px;}
 }
 
 /* 교재구성 - 교재특징 */

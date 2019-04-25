@@ -1,0 +1,270 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap manage">
+            @@include('../inc/sub_header.html',{
+            "type" : "type3",
+            "title" : "프로그램 안내",
+            "subtitle" : "유투엠 프로그램",
+            "context" : {
+            "depth1_current" : "유투엠 프로그램",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "프로그램 안내",
+            "depth2_sublist" : ["3가지 특장점","4가지 말하기 학습전략","프로그램 안내","교재구성"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["클럽구성","표준시간표","학습 프로세스","평가관리","내신대비(Q팡)"]
+                        }
+                        })
+                        <p class="main_tit">
+                            공통과정과 개별과정 학습이 끝나면 반드시 평가를 진행합니다.<br>
+                            <strong>빠른 진도보다 중요한 것은 정확한 진단</strong>입니다. 
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+                        <div class="sub_tit_wrap">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">공통 과정</h3>
+                        </div>
+                        <div class="sub_cont_wrap">
+                            <div class="program">
+                                <ol>
+                                    <li>
+                                        <div class="tit_wrap">
+                                            <div class="tit">
+                                                <span>
+                                                    단원종합 TEST <br>
+                                                    (주간평가)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="txt">
+                                            한 단원의 완성도를 <br>
+                                            평가합니다.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="tit_wrap">
+                                            <div class="tit">
+                                                <span>
+                                                    월말평가 <br>
+                                                    (월간평가)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="txt">
+                                            2 ~ 3 단원의 완성도를 평가하고 <br>
+                                            Clinic과 추가학습을 진행합니다.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="tit_wrap">
+                                            <div class="tit">
+                                                <span>
+                                                    학력진단평가 P/T <br>
+                                                    (분기평가)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="txt">
+                                            분기별로 공통과정에 대한 <br>
+                                            평가를 진행합니다.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //스태틱 페이지 컨텐츠 영역 -->
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap book">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+                        <div class="book_list">
+                            <div class="sub_col_tit">
+                                <p>U-TES (U2M Total Evaluation System) : 과정 I</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_01.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 I 표지">
+                                    </div>
+                                    <p>표지</p>
+                                </li>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_02.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 I 학습정보">
+                                    </div>
+                                    <p>학습정보</p>
+                                </li>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_03.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 I 성취도 종합분석">
+                                    </div>
+                                    <p>성취도 종합분석</p>
+                                </li>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_04.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 I 난이도별 종합분석">
+                                    </div>
+                                    <p>난이도별 종합분석</p>
+                                </li>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_05.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 I 성취도 상세분석">
+                                    </div>
+                                    <p>성취도 상세분석</p>
+                                </li>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_06.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 I 주간평가 상세분석">
+                                    </div>
+                                    <p>주간평가 상세분석</p>
+                                </li>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_07.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 I 월말평가 상세분석">
+                                    </div>
+                                    <p>월말평가 상세분석</p>
+                                </li>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_08.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 I 월말평가 분석">
+                                    </div>
+                                    <p>월말평가 분석</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+                        <div class="sub_tit_wrap">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">개별 과정</h3>
+                            </p>
+                        </div>
+                        <div class="sub_cont_wrap">
+                            <div class="program">
+                                <ol>
+                                    <li>
+                                        <div class="tit_wrap">
+                                            <div class="tit">
+                                                <span>
+                                                    단원종합 TEST <br>
+                                                    (주간평가)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="txt">
+                                            한 단원의 완성도를 <br>
+                                            평가합니다.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="tit_wrap">
+                                            <div class="tit">
+                                                <span>
+                                                    학력진단평가 P/T <br>
+                                                    (분기평가)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="txt">
+                                            개별과정의 진도를 마무리하고 해당 학기에 인증평가를 진행합니다.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //스태틱 페이지 컨텐츠 영역 -->
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap book">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+                        <div class="book_list">
+                            <div class="sub_col_tit">
+                                <p>U-TES (U2M Total Evaluation System) : 과정 II</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_09.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 II 성취도 종합분석 화면">
+                                    </div>
+                                    <p>성취도 종합분석</p>
+                                </li>
+                                <li>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_10.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 II 난이도별 종합분석 화면">
+                                    </div>
+                                    <p>난이도별 종합분석</p>
+                                </li>
+                                <li class="double">
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_11.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 II 단원 상세분석 화면">
+                                    </div>
+                                    <div class="book_img">
+                                        <img src="../img/img/img_program_infor_12.jpg"
+                                            alt="U-TES (U2M Total Evaluation System) : 과정 II 단원 상세분석 화면">
+                                    </div>
+                                    <p>단원 상세분석</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>
