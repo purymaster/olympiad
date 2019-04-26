@@ -1,0 +1,123 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap analysis">
+            @@include('../inc/sub_header.html',{
+            "type" : "type6",
+            "title" : "입학 안내",
+            "subtitle" : "예약&상담",
+            "context" : {
+            "depth1_current" : "예약&상담",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "입학 안내",
+            "depth2_sublist" : ["입학 안내","상담신청","설명회신청"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["입학절차","레벨테스트","분석사례"]
+                        }
+                        })
+                        <p class="main_tit">
+                            학력진단 평가 결과 분석을 통해 <strong>유투엠만의</strong><br>
+                            차별화된 학습 컨설팅<strong>을 진행합니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="result_table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:135px;">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="category" scope="col">
+                                                <div class="label">
+                                                    <span>
+                                                        비교항목
+                                                    </span>
+                                                </div>
+                                            </th>
+                                            <th class="student case1" scope="col">
+                                                <div class="info">
+                                                    <div class="person">
+                                                        중1
+                                                        <strong>A학생</strong>
+                                                    </div>
+                                                    <div class="data">
+                                                        점수 : 70<br>
+                                                        등급 : B2
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th class="student case2" scope="col">
+                                                <div class="info">
+                                                    <div class="person">
+                                                        중1
+                                                        <strong>B학생</strong>
+                                                    </div>
+                                                    <div class="data">
+                                                        점수 : 70<br>
+                                                        등급 : B2
+                                                    </div>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="label">
+                                                    <span>결과지</span>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <img src="" alt="">
+                                                <p class="cmt">문제 풀이를 잘 정리함</p>
+                                            </td>
+                                            <td>
+                                                <img src="" alt="">
+                                                <p class="cmt">문제 풀이를 잘 정리함</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>
