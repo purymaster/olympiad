@@ -126,5 +126,5 @@ em.ico.modify {background:#ff1493;}
 
 @media (max-width:599px) {
     table.list th.stat {width:40px;}
-    table.list th, table.list td {font-size:10px;}
+    table.list th, table.list td {font-size:11px;}
 }

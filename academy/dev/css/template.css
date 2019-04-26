@@ -829,7 +829,7 @@ footer {background:#505354; color:#fff;}
     .footer_upper .select_form button {line-height:50px;}
     .footer_upper .select_form button.on + ul {bottom:50px;}
     .footer_lower {padding-top:0;}
-    .footer_lower .sns {top:40px;}
+    .footer_lower .sns {top:0;}
     .footer_lower .logo {display:block; float:none; height:38px; margin:0 auto 15px;}
     .footer_lower .lower_wrap {float:none; text-align:center;}
     .footer_lower .lower_wrap address {font-size:12px; line-height:1.7em;}
@@ -1643,9 +1643,6 @@ footer {background:#505354; color:#fff;}
     .book_info .book_list li,.book_info .book_list.combine li {width:50% !important; margin-bottom:15px;}
     .book_info .book_list li img {width:100% !important;}
 }
-
-/* 초등수학 - 교재구성 */
-.book_info.junior {}
 
 /* 중등수학 - 교재구성 */
 .book_info.middle .point_list ul {margin:0 -3px; font-size:0; text-align:center;}

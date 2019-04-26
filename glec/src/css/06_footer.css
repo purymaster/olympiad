@@ -43,7 +43,7 @@ footer {background:#505354; color:#fff;}
     .footer_upper .select_form button {line-height:50px;}
     .footer_upper .select_form button.on + ul {bottom:50px;}
     .footer_lower {padding-top:0;}
-    .footer_lower .sns {top:40px;}
+    .footer_lower .sns {top:0;}
     .footer_lower .logo {display:block; float:none; height:35px; margin:0 auto 15px;}
     .footer_lower .lower_wrap {float:none; text-align:center;}
     .footer_lower .lower_wrap address {font-size:12px; line-height:1.7em;}

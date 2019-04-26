@@ -455,9 +455,6 @@
     .book_info .book_list li img {width:100% !important;}
 }
 
-/* 초등수학 - 교재구성 */
-.book_info.junior {}
-
 /* 중등수학 - 교재구성 */
 .book_info.middle .point_list ul {margin:0 -3px; font-size:0; text-align:center;}
 .book_info.middle .point_list ul li {display:inline-block; width:25%; padding:0 3px;}
