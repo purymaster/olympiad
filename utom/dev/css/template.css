@@ -259,10 +259,10 @@ textarea {line-height:1.5em;}
 /* 텍스트 목록 */
 .txt_list {text-align:left !important;}
 .txt_list li {position:relative; padding-left:0.75em; font-size:14px; line-height:1.5em; color:#333;}
-.txt_list li:before {content:""; position:absolute; left:0;}
+.txt_list li:before {position:absolute; left:0; content:"";}
 .txt_list.type1 li:before {top:0.6em; width:4px; height:4px; background:#333;} /* type1 : 네모 */
-.txt_list.type2 li:before {content:"-"; padding-right:0.2em;}
-
+.txt_list.type2 li {text-indent:-0.5em;}
+.txt_list.type2 li:before {position:static; padding-right:0.2em; content:"-";}
 
 @media (max-width:599px) {
     .txt_list li {font-size:12px;}
@@ -1728,7 +1728,8 @@ footer {background:#505354; color:#fff;}
 .think_ability .think .txt_wrap .cont_tit:before {position:absolute; right:0; bottom:26px; z-index:-1; width:105px; height:103px; background:red; -webkit-transform:translateY(100%); transform:translateY(100%); content:"";}
 .think_ability .think .txt_wrap .cont_txt {float:left; width:77.5%; margin-top:-8px; padding-left:40px;}
 .think_ability .think .txt_wrap .cont_txt .txt:first-child {margin:0;}
-.think_ability .think .key_visual {display:table; width:100%; height:200px; margin-bottom:-50px; background:url(../img/bg/bg_speaking_math_tab1_02.png) no-repeat; background-position:center; background-size:cover; text-align:center;}
+.think_ability .think .key_visual {display:table; position:relative; width:100%; height:200px; margin-bottom:-50px; background:url(../img/bg/bg_speaking_math_tab1_02.png) no-repeat; background-position:center; background-size:cover; text-align:center;}
+.think_ability .think .key_visual:before {position:absolute; top:-83px; left:calc(50% + 527px); z-index:-1; width:336px; height:229px; background:url(../img/bg/bg_speaking_math_tab1_03.png); -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
 .think_ability .think .key_visual p {display:table-cell; padding:0 30px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#fff; vertical-align:middle;}
 .think_ability .ivy_league .info {text-align:center;}
 .think_ability .before_after_guide {margin-bottom:-100px; background:#f2f2f2;}
@@ -1755,6 +1756,7 @@ footer {background:#505354; color:#fff;}
     .think_ability .think .txt_wrap .cont_tit:before {display:none;}
     .think_ability .think .txt_wrap .cont_txt {padding-left:30px;}
     .think_ability .think .key_visual {height:150px; margin-bottom:-30px;}
+    .think_ability .think .key_visual:before {display:none;}
     .think_ability .think .key_visual p {font-size:24px;}
     .think_ability .before_after_guide {margin-bottom:-50px;}
     .think_ability .before_after {margin:0;}
@@ -2445,7 +2447,6 @@ footer {background:#505354; color:#fff;}
     .book_feature .study .study_list li .txt {font-size:14px;}
 }
 
-
 /* 교재구성 - 교재구성 */
 .book_info .sub_lower_wrap .tab_menu {margin-top:20px;}
 .book_info .sub_cont_wrap {margin-bottom:70px;}
@@ -2487,6 +2488,103 @@ footer {background:#505354; color:#fff;}
     .book_info .book_list .txt {font-size:12px;}
     .book_info .book_list .irre li {width:100% !important; max-width:100% !important;}
     .book_info .book_list .irre img {width:auto !important;}
+}
+
+/* 입학안내 - 입학절차 */
+.join_step .step {margin-top:55px;}
+.join_step .step ol {font-size:0; text-align:center;}
+.join_step .step ol li {display:inline-block; position:relative; width:25%; max-width:280px; vertical-align:top;}
+.join_step .step ol li:before,.join_step .step ol li:after {position:absolute; top:97px; left:-10px; width:0; height:0; margin-top:-12px; border-top:12px solid transparent; border-bottom:12px solid transparent; border-left:20px solid #ccc; content:"";}
+.join_step .step ol li:after {margin-left:-2px; border-left-color:#fff; -webkit-transform:scale(0.5); transform:scale(0.5);}
+.join_step .step ol li:first-child:before,.join_step .step ol li:first-child:after {display:none;}
+.join_step .step ol li .img_wrap {position:absolute; top:0; left:50%; width:194px; height:194px; padding:10px; border:3px dotted #ddd; border-radius:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
+.join_step .step ol li .img_wrap .inner {position:relative; height:100%; border-radius:50%; background:#f2f2f2;}
+.join_step .step ol li .img_wrap .inner:after {position:absolute; top:50%; left:50%; width:90px; height:90px; background:red; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); content:"";}
+.join_step .step ol li .txt_wrap {margin-top:194px; padding-top:25px;}
+.join_step .step ol li .txt_wrap strong {display:block; font-family:"Nanum Square"; font-size:18px; line-height:1.8em;}
+.join_step .step ol li .txt_wrap p {margin-top:15px; font-family:"Nanum Square"; font-size:15px; line-height:2em;}
+.join_step .btn_wrap {margin-top:40px; text-align:center;}
+.join_step .btn_wrap a {padding:0 25px; background:#008398; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:50px; color:#fff;}
+.join_step .key_visual {display:table; width:100%; height:250px; margin-top:70px; margin-bottom:-150px; background:url(../img/bg/bg_amission_procedure_05.jpg); background-position:center; background-size:cover; text-align:center;}
+.join_step .key_visual p {display:table-cell; padding:0 30px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#fff; vertical-align:middle;}
+
+@media (max-width:1280px) {
+    .join_step .step ol li .img_wrap {width:170px; height:170px;}
+    .join_step .step ol li .txt_wrap {margin-top:170px;}
+    .join_step .step ol li:before,.join_step .step ol li:after {top:85px;}
+}
+
+@media (max-width:1024px) {
+    .join_step .step {margin-top:30px;}
+    .join_step .step ol {max-width:400px; margin:0 auto; margin-bottom:-30px;}
+    .join_step .step ol li {width:50%; max-width:200px; padding:0 15px; margin-bottom:30px;}
+    .join_step .step ol li .img_wrap {width:150px; height:150px;}
+    .join_step .step ol li:before,.join_step .step ol li:after {top:75px;}
+    .join_step .step ol li .txt_wrap {margin-top:150px; padding-top:15px;}
+    .join_step .step ol li .txt_wrap strong {font-size:16px;}
+    .join_step .step ol li .txt_wrap p {font-size:14px; line-height:1.8em;}
+    .join_step .btn_wrap {margin-top:30px;}
+    .join_step .btn_wrap a {padding:0 15px; font-size:14px; line-height:40px;}
+    .join_step .key_visual {margin-top:30px; margin-bottom:-80px; height:200px;}
+    .join_step .key_visual p {font-size:24px;}
+}
+
+@media (max-width:599px) {
+    .join_step .step ol {max-width:100%;}
+    .join_step .step ol li {float:none; width:100%; max-width:100%;}
+    .join_step .step ol li:before,.join_step .step ol li:after {display:none;}
+    .join_step .btn_wrap a {line-height:2em;}
+    .join_step .key_visual {margin-top:30px; margin-bottom:-60px; height:auto; min-height:150px;}
+    .join_step .key_visual p {font-size:18px; padding:15px;}
+    .join_step .key_visual p br {display:none;}
+}
+
+/* 입학안내 - 레벨테스트 */
+.level_test .level_test_box {position:relative; margin-top:60px;}
+.level_test .level_test_box:after {display:block; clear:both; content:"";}
+.level_test .level_test_box .img_wrap {float:left;}
+.level_test .level_test_box .img_wrap ul li {position:absolute; line-height:0; -webkit-box-shadow:0 10px 10px 0 rgba(0,0,0,0.1); box-shadow:0 10px 10px 0 rgba(0,0,0,0.1); width:22.92%;}
+.level_test .level_test_box .img_wrap ul li:nth-child(1) {top:20px; left:0;}
+.level_test .level_test_box .img_wrap ul li:nth-child(2) {top:104px; left:18%;}
+.level_test .level_test_box .img_wrap ul li:nth-child(3) {top:566px; left:0;}
+.level_test .level_test_box .img_wrap ul li:nth-child(4) {top:650px; left:18%;}
+.level_test .level_test_box .img_wrap ul li:nth-child(even) {z-index:-1;}
+.level_test .level_test_box .level_table {float:right; width:53.33%;}
+.level_test .level_test_box .level_table table {border:0; border-spacing:10px 5px; border-collapse:separate;}
+.level_test .level_test_box .level_table table th {padding:25px 15px; border:1px solid #d49a42; text-align:left;}
+.level_test .level_test_box .level_table table th .num {float:left; width:26px; line-height:26px; margin-top:2px; border-radius:50%; background-color:#faa627; font-family:"Lato"; font-size:16px; font-weight:700; color:#fff; text-align:center;}
+.level_test .level_test_box .level_table table th .label {float:left; padding-left:10px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:30px; color:#222;}
+.level_test .level_test_box .level_table table td {padding:12px 20px; border:0; background-color:#fbf1e1; font-size:15px; line-height:30px; color:#222; text-align:left;}
+.level_test .level_test_box .level_table .txt_list li {font-size:15px; line-height:2em;}
+
+@media screen and (max-width:1024px) {
+    .level_test .level_test_box {margin:0;}
+    .level_test .level_test_box .level_table table col:first-child {width:180px;}
+    .level_test .level_test_box .img_wrap {overflow:hidden; float:none; margin-bottom:20px;}
+	.level_test .level_test_box .img_wrap ul {margin:0 -5px;}
+	.level_test .level_test_box .img_wrap ul li {float:left; position:static; width:25%; padding:0 5px; -webkit-box-shadow:none; box-shadow:none;}
+    .level_test .level_test_box .level_table {float:none; width:100%;}
+    .level_test .level_test_box .level_table table th {padding:15px;}
+	.level_test .level_test_box .level_table table th .num {margin:0; width:24px; line-height:24px; font-size:16px;}
+	.level_test .level_test_box .level_table table th .label {float:left; padding-left:10px; font-size:16px; line-height:24px;}
+	.level_test .level_test_box .level_table table td {font-size:14px;}
+    .level_test .level_test_box .level_table .txt_list li {font-size:14px;}
+}
+@media screen and (max-width:599px) {
+    .level_test .level_test_box .img_wrap ul li {width:50%;}
+    .level_test .level_test_box .level_table table,
+	.level_test .level_test_box .level_table table thead,
+	.level_test .level_test_box .level_table table tbody,
+	.level_test .level_test_box .level_table table tr,
+	.level_test .level_test_box .level_table table th,
+    .level_test .level_test_box .level_table table td {display:block; float:left; clear:both; width:100%; border:none; text-align:center;}
+    .level_test .level_test_box .level_table table th {font-size:0;}
+    .level_test .level_test_box .level_table table th span {display:inline-block; float:none !important; vertical-align:top;}
+    .level_test .level_test_box .level_table table th span br {display:none;}
+    .level_test .level_test_box .level_table table td {font-size:12px; padding:0; background:none;}
+    .level_test .level_test_box .level_table li {line-height:1.8em !important; font-size:12px !important;}
+    .level_test .level_test_box .level_table .txt_list li {padding:0; text-align:center;}
+    .level_test .level_test_box .level_table .txt_list li:before {content:"";}
 }
 
 /* 검색결과 */
