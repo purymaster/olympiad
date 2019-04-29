@@ -143,6 +143,10 @@ button span {position:relative; font-family:inherit;}
     .grid_container {padding:0 15px;}
 }
 
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.wrap {overflow-y:hidden;}
+}
+
 /* 하위브라우저 접근차단 */
 .ie9 {position:fixed; top:0; left:0; z-index:9999; width:100%; height:100%; padding-top:15%; background:#fff; text-align:center;}
 .ie9 p {margin-top:30px; font-size:16px; line-height:1.5;}
@@ -2626,10 +2630,10 @@ footer {background:#505354; color:#fff;}
 @media screen and (max-width:1024px) {
     .analysis .result_table {width:calc(100% + 10px); margin-left:-5px;}
     .analysis .result_table table {border-spacing:5px;}
-    .analysis .result_table table col:first-child {width:80px !important;}
+    .analysis .result_table table col:first-child {width:90px !important;}
     .analysis .result_table table tr th {border:1px solid #ddd;}
     .analysis .result_table table tr th .label {position:static; border:0;}
-    .analysis .result_table table tr th .label span {font-size:14px; font-weight:700;}
+    .analysis .result_table table tr th .label span {position:static; font-size:14px; font-weight:700; -webkit-transform:none; transform:none;}
     .analysis .result_table table tr .student {top:0; height:auto; background:none;}
     .analysis .result_table table tr .case1 {background:#faa627;}
     .analysis .result_table table tr .case2 {background:#8ab052;}
@@ -2639,7 +2643,7 @@ footer {background:#505354; color:#fff;}
     .analysis .result_table table tr .student .info:before {display:none;}
     .analysis .result_table table thead tr th .label {width:auto; height:auto;}
     .analysis .result_table table tr td p {font-size:14px; line-height:1.6em;}
-    .analysis .result_table table tr th .label {background:none;}
+    .analysis .result_table table tr th .label {background:none; width:100%;}
     .analysis .result_table table .difficult th {height:auto;}
     .analysis .result_table table tfoot th {height:auto; border-color:#333; background:#333;}
     .analysis .result_table table tfoot td:first-of-type {background-size:72px 66px;}
