@@ -1463,9 +1463,9 @@
 /* 입학안내 - 분석사례 */
 .analysis .result_table table {border:0; border-spacing:0 5px; border-collapse:separate;}
 .analysis .result_table table th,.analysis .result_table table td {border:0;}
-.analysis .result_table table tr th:first-child {position:relative;}
+.analysis .result_table table tr th:first-child {position:relative; height:1px;}
 .analysis .result_table table tr th .label {position:relative; width:calc(100% - 20px); height:100%; border:1px solid #333;}
-.analysis .result_table table thead tr th .label {height:70px; border-color:#ddd;}
+.analysis .result_table table thead tr th .label {position:absolute; left:0; bottom:0; height:70px; border-color:#ddd;}
 .analysis .result_table table tr th .label span {position:absolute; top:50%; left:50%; font-family:"Nanum Square"; font-size:18px; font-weight:400; line-height:1.5em; transform:translate(-50%,-50%);}
 .analysis .result_table table tr .student {position:relative; top:5px; height:350px; background-repeat:no-repeat; background-position:center bottom; background-size:contain;}
 .analysis .result_table table tr .case1 {background-image:url(../img/bg/bg_analysis_case1.png);}
