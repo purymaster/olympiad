@@ -70,7 +70,7 @@ section .news_wrap .menu_tit {position:relative; margin:150px 0 50px; font-famil
 section .news_wrap .menu_tit:after {position:absolute; bottom:0; left:50%; width:28px; height:1px; margin-left:-14px; background:#333; content:"";}
 article .news {margin:0 -25px; padding-bottom:80px; text-align:left;}
 article .news ul {overflow:hidden; font-size:0;}
-article .news ul li {float:left; width:33.33%; padding:0 25px;}
+article .news ul li {float:left; width:33.33%; margin-bottom:15px; padding:0 25px;}
 article .news ul li a {display:block;}
 article .news ul li a .txt_wrap {padding:10px 0;}
 article .news ul li a .txt_wrap .cate {display:inline-block; font-size:14px; font-weight:700; line-height:30px;}
@@ -126,7 +126,7 @@ section .news_wrap .menu_tit {margin-top:50px;}
     article .news {margin:0 -15px; padding-bottom:50px;}
     article .news ul li {width:50%; padding:0 15px;}
     article .news ul li a img {width:100%;}
-    article .news ul li a .txt_wrap {padding:15px 0 30px;}
+    article .news ul li a .txt_wrap {padding:15px 0;}
     article .news ul li a .txt_wrap .cate {margin-bottom:5px; font-size:12px; line-height:1.5em;}
     article .news ul li a .txt_wrap .tit {font-size:18px;}
     .indicator,.wrap .slide_scroll {display:none !important;}
