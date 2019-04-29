@@ -2665,6 +2665,7 @@ footer {background:#505354; color:#fff;}
     .analysis .result_table table tfoot th {color:#333;}
     .analysis .result_table table tbody td,.analysis .result_table table tfoot td {padding-top:75px;}
     .analysis .result_table table tr td p {font-size:12px;}
+    .analysis .result_table table tfoot td:first-of-type {background-position:center top 60px;}
 }
 
 /* 검색결과 */
