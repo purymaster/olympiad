@@ -1463,10 +1463,10 @@
 /* 입학안내 - 분석사례 */
 .analysis .result_table table {border:0; border-spacing:5px; border-collapse:separate;}
 .analysis .result_table table th,.analysis .result_table table td {border:0;}
-.analysis .result_table table tr th:first-child {position:relative; height:1px;}
-.analysis .result_table table tr th .label {position:absolute; width:100%; height:100%; border:1px solid #333; left:0; bottom:0;}
-.analysis .result_table table thead tr th .label {height:70px; border-color:#ddd;}
-.analysis .result_table table tr th .label span {position:absolute; top:50%; left:50%; font-family:"Nanum Square"; font-size:18px; font-weight:400; line-height:1.5em; transform:translate(-50%,-50%);}
+.analysis .result_table table tr th:first-child {border:1px solid #333;}
+.analysis .result_table table tr th .label {font-family:"Nanum Square"; font-size:18px; font-weight:400;}
+.analysis .result_table table thead .category {position:relative; border:0 !important;}
+.analysis .result_table table thead .category .label {position:absolute; bottom:0; left:0; width:100%; border:1px solid #ddd; line-height:70px;}
 .analysis .result_table table tr .student {position:relative; top:5px; height:350px; background-repeat:no-repeat; background-position:center bottom; background-size:contain;}
 .analysis .result_table table tr .case1 {background-image:url(../img/bg/bg_analysis_case1.png);}
 .analysis .result_table table tr .case2 {background-image:url(../img/bg/bg_analysis_case2.png);}
@@ -1488,8 +1488,7 @@
 .analysis .result_table table tr td p {font-size:15px; line-height:1.6em;}
 .analysis .result_table table .difficult th {height:165px;}
 .analysis .result_table table .difficult td {vertical-align:middle;}
-.analysis .result_table table tfoot th {height:165px; color:#fff;}
-.analysis .result_table table tfoot th .label {background:#333;}
+.analysis .result_table table tfoot th {height:165px; background:#333; color:#fff;}
 .analysis .result_table table tfoot td {vertical-align:middle;}
 .analysis .result_table table tfoot td:first-of-type {background:#faa627 url(../img/bg/bg_pass_stamp.png) no-repeat 8% center;}
 .analysis .result_table table tfoot td:last-of-type {background:#8ab052;}
@@ -1502,8 +1501,9 @@
     .analysis .result_table table {border-spacing:5px;}
     .analysis .result_table table col:first-child {width:90px !important;}
     .analysis .result_table table tr th {border:1px solid #ddd;}
-    .analysis .result_table table tr th .label {position:static; border:0;}
-    .analysis .result_table table tr th .label span {font-size:14px; font-weight:700;}
+    .analysis .result_table table tr th .label {font-size:16px;}
+    .analysis .result_table table thead .category {border:1px solid #333 !important;}
+    .analysis .result_table table thead .category .label {position:static; line-height:1.8; border:0;}
     .analysis .result_table table tr .student {top:0; height:auto; background:none;}
     .analysis .result_table table tr .case1 {background:#faa627;}
     .analysis .result_table table tr .case2 {background:#8ab052;}
@@ -1526,6 +1526,7 @@
     .analysis .result_table table tr {position:relative;} 
     .analysis .result_table table tbody th,.analysis .result_table table tfoot th {height:auto;}
     .analysis .result_table table tr th:first-child {position:absolute; padding:0; left:50%; transform:translateX(-50%); width:100%; height:auto; padding-top:15px; border:0; background:#fff; line-height:30px;}
+    .analysis .result_table table thead .category {border-color:#fff !important;}
     .analysis .result_table table tr th .label {width:100%;}
     .analysis .result_table table tr th .label span {position:static; transform:none;}
     .analysis .result_table table tr .student .person {font-size:16px;}
