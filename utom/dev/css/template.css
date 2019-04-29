@@ -2611,7 +2611,7 @@ footer {background:#505354; color:#fff;}
 .analysis .result_table table tr .case1 .data {color:#804d00;}
 .analysis .result_table table tr .case2 .data {color:#345700;}
 .analysis .result_table table tr th {padding:15px;}
-.analysis .result_table table tbody th {height:1px; padding:0;}
+.analysis .result_table table tbody th,.analysis .result_table table tfoot th {height:1px; padding:0;}
 .analysis .result_table table tr td {padding:30px 15px; vertical-align:top;}
 .analysis .result_table table tr td:first-of-type {background:#fbf1e1;}
 .analysis .result_table table tr td:last-of-type {background:#e9f2dc;}
@@ -2642,7 +2642,7 @@ footer {background:#505354; color:#fff;}
     .analysis .result_table table tr .student .data {font-size:14px;}
     .analysis .result_table table tr .student .info {position:static; width:auto; height:auto; padding:0; background:none; -webkit-transform:none; transform:none;}
     .analysis .result_table table tr .student .info:before {display:none;}
-    .analysis .result_table table thead tr th .label {width:auto; height:auto;}
+    .analysis .result_table table thead tr th .label {position:static; width:auto; height:auto;}
     .analysis .result_table table tr td p {font-size:14px; line-height:1.6em;}
     .analysis .result_table table tr th .label {background:none; width:100%;}
     .analysis .result_table table .difficult th {height:auto;}
@@ -2655,8 +2655,8 @@ footer {background:#505354; color:#fff;}
     .analysis .result_table table {border-spacing:5px 0;}
     .analysis .result_table table col:first-child {width:0px !important;}
     .analysis .result_table table tr {position:relative;} 
-    .analysis .result_table table tbody th {height:auto;}
-    .analysis .result_table table tr th:first-child {position:absolute; padding:0; left:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%); width:100%; padding-top:15px; border:0; background:#fff; line-height:30px;}
+    .analysis .result_table table tbody th,.analysis .result_table table tfoot th {height:auto;}
+    .analysis .result_table table tr th:first-child {position:absolute; padding:0; left:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%); width:100%; height:auto; padding-top:15px; border:0; background:#fff; line-height:30px;}
     .analysis .result_table table tr th .label {width:100%;}
     .analysis .result_table table tr th .label span {position:static; -webkit-transform:none; transform:none;}
     .analysis .result_table table tr .student .person {font-size:16px;}
