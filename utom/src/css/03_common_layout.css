@@ -56,21 +56,28 @@
 /* 사이드 메뉴 */
 .side_menu {position:absolute; top:0; right:0; z-index:10; background:#fff; color:#646f72; text-align:center; transform:translateY(-50%); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .side_menu ul {border:1px solid #ddd;}
-.side_menu ul li {position:relative; width:90px; height:75px;}
-.side_menu ul li:after {content:""; position:absolute; left:50%; bottom:-12px; width:40px; height:1px; margin-left:-20px; background:#ddd;}
+.side_menu ul li {position:relative; width:90px; height:85px;}
+.side_menu ul li:after {content:""; position:absolute; left:50%; bottom:-6px; width:40px; height:1px; margin-left:-20px; background:#ddd;}
 .side_menu ul li:last-child:after {display:none;}
 .side_menu ul li a {display:block; position:relative; padding-top:64px; font-family:"Nanum Square"; font-size:12px; font-weight:700; color:inherit;}
 .side_menu ul li a:hover {color:#028499;}
-.side_menu ul li a:after {position:absolute; top:20px; left:50%; width:40px; height:40px; background:red; transform:translateX(-50%); content:"";}
-.side_menu ul li:nth-child(1) a:after {} /* 홈으로 */
-.side_menu ul li:nth-child(2) a:after {} /* 상담신청 */
-.side_menu ul li:nth-child(3) a:after {} /* 설명회신청 */
-.side_menu ul li:nth-child(4) a:after {} /* 입학고사 */
-.side_menu ul li:nth-child(5) a:after {} /* 캠퍼스안내 */
+.side_menu ul li a:after {position:absolute; top:20px; left:50%; width:40px; height:40px; background-image:url(../img/sprite/sprite.png); background-size:500px; transform:translateX(-50%); content:"";}
+.side_menu ul li:nth-child(1) a:after {width:39px; height:39px; background-position:-5px -122px;} /* 홈으로 */
+.side_menu ul li:nth-child(1) a:hover:after {background-position:-49px -122px;}
+.side_menu ul li:nth-child(2) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담신청 */
+.side_menu ul li:nth-child(2) a:hover:after {background-position:-95px -74px;}
+.side_menu ul li:nth-child(3) a:after {width:38px; height:38px; background-position:-138px -74px;} /* 설명회신청 */
+.side_menu ul li:nth-child(3) a:hover:after {background-position:-181px -74px;}
+.side_menu ul li:nth-child(4) a:after {width:34px; height:34px; background-position:-224px -74px;} /* 입학고사 */
+.side_menu ul li:nth-child(4) a:hover:after {background-position:-263px -74px;}
+.side_menu ul li:nth-child(5) a:after {width:39px; height:39px; background-position:-302px -74px;} /* 캠퍼스안내 */
+.side_menu ul li:nth-child(5) a:hover:after {background-position:-346px -74px;}
+.side_menu ul li:nth-child(6) a:after {background-position:-390px -74px;} /* 재원생 학습 */
+.side_menu ul li:nth-child(6) a:hover:after {background-position:-430px -74px;}
 .side_menu ul .counsel {height:auto; padding:16px 0;}
 .side_menu ul .counsel span {display:block; line-height:16px;}
 .side_menu ul .counsel .tit {position:relative; margin-bottom:60px; color:#646f72; font-family:"Nanum Square"; font-size:12px; line-height:20px;}
-.side_menu ul .counsel .tit:after {position:absolute; top:30px; left:50%; width:40px; height:40px; background:red; transform:translateX(-50%); content:"";}
+.side_menu ul .counsel .tit:after {position:absolute; top:30px; left:50%; width:42px; height:43px; background-image:url(../img/sprite/sprite.png); background-size:500px; background-position:-5px -74px; transform:translateX(-50%); content:"";}
 .side_menu ul .counsel .phone {font-family:"Lato"; font-size:14px; font-weight:700; color:#333;}
 .side_menu ul .counsel .date {font-size:10px; letter-spacing:-0.05em;}
 .side_menu .move_top button {position:relative; width:100%; height:28px; background:#333; text-indent:-9999px;}
@@ -191,13 +198,13 @@ label {cursor:pointer;}
 .board_list table td.tit a strong {color:#00687f;}
 .board_list table td.tit a:hover {color:#008398;}
 .board_list table td.tit .new {display:inline-block; width:30px; font-size:12px; color:#e7833f; text-transform:uppercase;}
-.board_list table td.tit .file {display:inline-block; position:relative; top:2px; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-177px -123px; background-size:500px 500px; text-indent:-9999px; background:red;}
+.board_list table td.tit .file {display:inline-block; position:relative; top:2px; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-5px -475px; background-size:500px; text-indent:-9999px;}
 .board_list table td.name {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .board_list table td.date,.board_list table td.view {font-family:"Lato"; font-size:12px; color:#646f72;}
 .board_list table .notice th,.board_list table .notice td {padding:8px 5px;}
 .board_list table .notice td.tit a {font-size:14px; font-weight:700;}
 .board_list table .notice .notice_icon {display:inline-block; position:relative; width:82px; padding-left:40px; border:1px solid #00aeba; border-radius:16px; font-size:14px; font-weight:700; line-height:30px; color:#00aeba; text-align:left; -webkit-border-radius:16px; -moz-border-radius:16px; -ms-border-radius:16px; -o-border-radius:16px;}
-.board_list table .notice .notice_icon:before {position:absolute; top:5px; left:14px; width:22px; height:20px; background-image:url(../img/sprite/sprite.png); background-position:-203px -123px; background-size:500px 500px; content:""; background:red;}
+.board_list table .notice .notice_icon:before {position:absolute; top:5px; left:14px; width:22px; height:20px; background-image:url(../img/sprite/sprite.png); background-position:-31px -475px; background-size:500px; content:"";}
 
 @media (max-width:1024px) {
     .board_list {overflow:hidden;}
@@ -347,21 +354,18 @@ label {cursor:pointer;}
 .board_view .info .tit strong {color:#00687f;}
 .board_view .info .txt_info {margin-top:15px; font-size:0;}
 .board_view .info .txt_info > div,.board_view .info .txt_info dt,.board_view .info .txt_info dd {display:inline-block; position:relative; line-height:1.5em; vertical-align:middle;}
-.board_view .info .txt_info dt {width:17px; height:20px; margin-right:5px; background-image:url(../img/sprite/sprite.png); background-size:500px 500px; text-indent:-9999px; background:red;}
-.board_view .info .txt_info .date dt:before {}
-.board_view .info .txt_info .view dt:before {}
-.board_view .info .txt_info .author dt:before {}
+.board_view .info .txt_info dt {width:17px; height:17px; margin-right:5px; background-image:url(../img/sprite/sprite.png); background-size:500px; text-indent:-9999px;}
+.board_view .info .txt_info .date dt {background-position:-58px -475px;}
+.board_view .info .txt_info .view dt {width:20px; height:14px; margin-top:1px; background-position:-80px -475px;}
+.board_view .info .txt_info .author dt {background-position:-105px -475px;}
 .board_view .info .txt_info dd {overflow:hidden; max-width:200px; margin-right:16px; font-size:16px; color:#666; text-overflow:ellipsis; white-space:nowrap;}
-.board_view .info .txt_info .date dt {background-position:-230px -122px;}
-.board_view .info .txt_info .view dt {width:20px; background-position:-252px -120px;}
-.board_view .info .txt_info .author dt {background-position:-277px -122px;}
 .board_view .content_wrap {border-top:1px solid #333; border-bottom:1px solid #333;}
 .board_view .content {padding:50px 30px; font-size:14px; line-height:2em; color:#666;}
 .board_view .content img,.board_view .content iframe {display:block; max-width:100%; margin:0 auto; margin-bottom:1em;}
 .board_view .upload_file {border-top:1px solid #cdcdcd;}
 .board_view .upload_file ul {overflow:hidden; padding:15px 20px;}
 .board_view .upload_file ul li {overflow:hidden; float:left; position:relative; max-width:500px; margin-right:20px; padding-left:28px; text-overflow:ellipsis; white-space:nowrap;}
-.board_view .upload_file ul li:before {position:absolute; top:3px; left:0; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-177px -123px; background-size:500px 500px; content:""; background:red;}
+.board_view .upload_file ul li:before {position:absolute; top:3px; left:0; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-5px -475px; background-size:500px 500px; content:"";}
 .board_view .upload_file ul li a {color:#999;}
 .board_view .upload_file ul li a:hover {color:#00aeba; text-decoration:underline;}
 .board_view .reply_wrap {margin-top:105px;}
@@ -377,7 +381,7 @@ label {cursor:pointer;}
 .board_view .reply_wrap .txt_wrap .author {overflow:hidden; font-weight:700; color:#333; text-overflow:ellipsis; white-space:nowrap;}
 .board_view .reply_wrap .txt_wrap p {position:relative;}
 .board_view .reply_wrap .txt_wrap .secret {display:inline-block; padding-right:20px;}
-.board_view .reply_wrap .txt_wrap .secret:after {position:absolute; top:50%; right:0; width:11px; height:16px; margin-top:-8px; background:red; content:"";}
+.board_view .reply_wrap .txt_wrap .secret:after {position:absolute; top:50%; right:0; width:11px; height:16px; margin-top:-8px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-164px -475px; content:"";}
 .board_view .reply_wrap .txt_wrap .date {margin-top:7px; color:#666;}
 .board_view .reply_wrap .ctr {position:absolute; right:0; bottom:10px; font-size:0;}
 .board_view .reply_wrap .ctr li {display:inline-block; margin-left:5px;}
@@ -394,11 +398,11 @@ label {cursor:pointer;}
 .board_view .reply_wrap .input_wrap .txt_ctr {overflow:hidden; border:1px solid #ddd; border-top:0;}
 .board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
 .board_view .reply_wrap .input_wrap .txt_ctr label {float:left; position:relative; margin-left:20px; padding-left:20px; font-weight:700; line-height:50px; color:#a29f9a;}
-.board_view .reply_wrap .input_wrap .txt_ctr label:before {position:absolute; top:50%; left:0; width:14px; height:21px; background:red; -webkit-transform:translateY(-50%); transform:translateY(-50%); content:"";}
+.board_view .reply_wrap .input_wrap .txt_ctr label:before {position:absolute; top:50%; left:0; width:14px; height:21px; background:url(../img/sprite/sprite.png); background-size:500px; background-position-x:-126px; background-position-y:-475px; transform:translateY(-50%); content:"";}
 .board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"]:checked + label {color:#42adaa;}
-.board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"]:checked + label:before {background:blue;}
+.board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"]:checked + label:before {background-position-x:-145px;}
 .board_view .reply_wrap .input_wrap .txt_ctr button {float:right; width:100px; background:#008398; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:50px; color:#fff;}
-.board_view .list_link {margin:10px 0 50px; text-align:right;}
+.board_view .list_link {margin:60px 0 50px; text-align:right;}
 .board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-size:16px; line-height:46px; color:#666; text-align:left; transition:all 0.5s;}
 .board_view .list_link a:hover {background:#00aeba; color:#fff;}
 .board_view .list_link a span {position:absolute; right:15px; width:20px; height:2px; background:#00aeba; transition:all 0.5s;}
@@ -417,7 +421,7 @@ label {cursor:pointer;}
 .board_view .paging_wrap dd a:hover {color:#00aeba;}
 .board_view .paging_wrap dd a,.board_view .paging_wrap dd i {vertical-align:middle;}
 .board_view .paging_wrap dd a strong {color:#00687f;}
-.board_view .paging_wrap dd .file {display:inline-block; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-177px -123px; background-size:500px 500px; text-indent:-9999px; background:red;}
+.board_view .paging_wrap dd .file {display:inline-block; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-5px -475px; background-size:500px 500px; text-indent:-9999px;}
 .board_view .paging_wrap dd .new {display:inline-block; position:relative; width:1px; text-indent:-9999px;}
 .board_view .paging_wrap dd .new:after {position:absolute; top:0; left:0; width:30px; font-size:12px; color:#e7833f; text-indent:0; content:"new"; text-transform:uppercase;}
 

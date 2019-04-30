@@ -134,7 +134,7 @@
 .banner_wrap .small .slide li .txt_wrap {bottom:20px;}
 .banner_wrap .small .slide li .txt_wrap .tit {max-height:1.3em; font-size:18px;}
 .banner_wrap .small .slide li .txt_wrap .txt {font-size:12px; margin-top:5px;}
-.banner_wrap .small .ctr li button {position:absolute; top:50%; z-index:1; width:30px; height:50px; background:rgba(0,0,0,0.7); text-indent:-9999px; transform:translateY(-50%); transition:all 0.5s;}
+.banner_wrap .small .ctr li button {position:absolute; top:50%; z-index:1; width:30px; height:50px; background:rgba(0,0,0,0.3); text-indent:-9999px; transform:translateY(-50%); transition:all 0.5s;}
 .banner_wrap .small .ctr li button:hover {background:#00687f;}
 .banner_wrap .small .ctr li button:before {content:""; position:absolute; width:20px; height:20px; border:2px solid #fff; left:5px; top:15px; transform:rotate(45deg);}
 .banner_wrap .small .ctr li .prev {left:0;}
@@ -155,6 +155,10 @@
     .banner_wrap .slide li .txt_wrap .txt {margin:0; font-size:12px;}
     .banner_wrap .left .large,.banner_wrap .right .large {margin:0;}
     .banner_wrap .small .small_cont {padding:0 !important;}
+    .banner_wrap .small .ctr li button {width:20px; height:35px;}
+    .banner_wrap .small .ctr li button:before {width:10px; height:10px; top:12px;}
+    .banner_wrap .small .ctr li .prev:before {margin-left:2px;}
+    .banner_wrap .small .ctr li .next:before {margin-left:-2px;}
     .banner_wrap .pager {bottom:10px;}
     .banner_wrap .pager {left:0; width:100%; text-align:center; transform:none;}
     .banner_wrap .pager li {display:inline-block; float:none; width:15px; height:15px;}

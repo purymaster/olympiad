@@ -19,8 +19,8 @@ footer {background:#505354; color:#fff;}
 .footer_lower .sns {overflow:hidden; position:absolute; top:30px; right:0; margin:0 -5px;}
 .footer_lower .sns li {float:left; margin:0 5px;}
 .footer_lower .sns li a {display:block; position:relative; width:40px; height:40px; background:#2f3435; text-indent:-9999px;}
-.footer_lower .sns li a:after {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); content:"";}
-.footer_lower .sns li:nth-child(1) a:after {width:24px; height:22px; background:red;}
+.footer_lower .sns li a:after {position:absolute; top:50%; left:50%; background-image:url(../img/sprite/sprite.png); background-size:500px; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); content:"";}
+.footer_lower .sns li:nth-child(1) a:after {width:24px; height:22px; background-position:-471px -5px;}
 .footer_lower .logo {float:left; height:80px; margin-top:7px; margin-right:100px;}
 .footer_lower .lower_wrap {float:left; font-size:14px; line-height:1.8em;}
 .footer_lower .lower_wrap address a {color:inherit;}

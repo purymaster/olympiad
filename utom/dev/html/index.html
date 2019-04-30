@@ -156,6 +156,16 @@
 										</ul>
 									</div>
 								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
 								<button class="close mobile" type="button">메뉴 닫기</button>
 							</div>
 						</nav>
@@ -342,11 +352,13 @@
 							<script>
 								$(function () {
                                     var slide_idx = 1,
-                                        slide_class_str = '.banner_slide_0';
+                                        slide_class_str = '.banner_slide_0',
+                                        small_slide_idx = $('.small .banner_slide').length,
+                                        small_slide_nav;
 
-                                    $('.banner_slide').each(function () {
+                                    $('.large .banner_slide').each(function () {
                                         new Swiper(slide_class_str + slide_idx + '.swiper-container', {
-                                            simulateTouch: false,
+                                            allowTouchMove: false,
                                             autoplay: {
                                                 delay: 5000,
                                             },
@@ -366,6 +378,33 @@
                                         })
                                         slide_idx++;
                                     });
+
+                                    $('.small .banner_slide').each(function (idx) {
+                                        small_slide_nav = Math.floor((small_slide_idx - (idx + 1)) / 2);
+                                        new Swiper(slide_class_str + slide_idx + '.swiper-container', {
+                                            allowTouchMove: false,
+                                            autoplay: {
+                                                delay: 5000,
+                                            },
+                                            // effect: 'fade',
+                                            loop: true,
+                                            navigation: {
+                                                nextEl: $('.small:eq(' + small_slide_nav + ') .ctr .next'),
+                                                prevEl: $('.small:eq(' + small_slide_nav + ') .ctr .prev'),
+                                            },
+                                            pagination: {
+                                                el: '.pagination',
+                                                type: 'bullets',
+                                                clickable: true,
+                                                bulletClass: 'bullet',
+                                                bulletActiveClass: 'on',
+                                                renderBullet: function (idx) {
+                                                    return '<li class="bullet">' + (idx + 1) + '</li>';
+                                                }
+                                            }
+                                        });
+                                        slide_idx++;
+                                    });
                                 });
                             </script>
 							<!-- [D] //화면 확인용 스크립트 -->
@@ -374,16 +413,23 @@
 							<div class="large">
 								<div class="wrapper banner_slide banner_slide_01 swiper-container">
 									<ul class="slide swiper-wrapper">
-										<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
+										<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_01.png);">
 											<a href="#">
 												<div class="txt_wrap">
-													<p class="tit" style="color:red" ;>
+													<p class="tit" style="color:#fff">
 														2019 올림피아드교육<br>
                                                         영재,과고,전국자사,외고,국제고 입시분석 설명회
                                                     </p>
-														<p class="txt" style="color:blue" ;>
+														<p class="txt" style="color:#fff">
 															실제 합격생의 데이터와 사례들을 토대로 영재학교 입시의 최적화된 솔루션을 제시합니다.
 														</p>
+														<!-- <p class="tit" style="color:red" ;>
+                                                        2019 올림피아드교육<br>
+                                                        영재,과고,전국자사,외고,국제고 입시분석 설명회
+                                                    </p>
+                                                    <p class="txt" style="color:blue" ;>
+                                                        실제 합격생의 데이터와 사례들을 토대로 영재학교 입시의 최적화된 솔루션을 제시합니다.
+                                                    </p> -->
 												</div>
 											</a>
 										</li>
@@ -444,17 +490,53 @@
 								<div class="small_cont left">
 									<div class="wrapper banner_slide banner_slide_05 swiper-container">
 										<ul class="slide swiper-wrapper">
-											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
-												<a href="#"></a>
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_05.png);">
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<!-- <li style="width:100%;">
                                                 <p style="position:absolute; top:50%; left:0; width:100%; text-align:center;">데이터가 존재하지 않습니다.</p>
@@ -474,17 +556,53 @@
 								<div class="small_cont right">
 									<div class="wrapper banner_slide banner_slide_06 swiper-container">
 										<ul class="slide swiper-wrapper">
-											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
-												<a href="#"></a>
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_06.png);">
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<!-- <li style="width:100%;">
                                                 <p style="position:absolute; top:50%; left:0; width:100%; text-align:center;">데이터가 존재하지 않습니다.</p>
@@ -500,6 +618,15 @@
 								</div>
 								<!-- //6번 슬라이드, 우측 슬라이드 -->
 
+								<!-- 1배 사이즈 슬라이드 제어 -->
+								<div class="ctr">
+									<ul>
+										<li><button class="prev">이전</button></li>
+										<li><button class="next">다음</button></li>
+									</ul>
+								</div>
+								<!-- //1배 사이즈 슬라이드 제어 -->
+
 							</div>
 							<!-- //1배 사이즈 슬라이드 -->
 
@@ -513,17 +640,53 @@
 								<div class="small_cont left">
 									<div class="wrapper banner_slide banner_slide_03 swiper-container">
 										<ul class="slide swiper-wrapper">
-											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
-												<a href="#"></a>
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_03.png);">
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<!-- <li style="width:100%;">
                                                 <p style="position:absolute; top:50%; left:0; width:100%; text-align:center;">데이터가 존재하지 않습니다.</p>
@@ -543,17 +706,53 @@
 								<div class="small_cont right">
 									<div class="wrapper banner_slide banner_slide_04 swiper-container">
 										<ul class="slide swiper-wrapper">
-											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
-												<a href="#"></a>
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_04.png);">
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
-												<a href="#"></a>
+												<a href="#">
+													<div class="txt_wrap">
+														<p class="tit">
+															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+														</p>
+														<p class="txt">
+															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+														</p>
+													</div>
+												</a>
 											</li>
 											<!-- <li style="width:100%;">
                                                 <p style="position:absolute; top:50%; left:0; width:100%; text-align:center;">데이터가 존재하지 않습니다.</p>
@@ -569,6 +768,15 @@
 								</div>
 								<!-- //4번 슬라이드, 우측 슬라이드 -->
 
+								<!-- 1배 사이즈 슬라이드 제어 -->
+								<div class="ctr">
+									<ul>
+										<li><button class="prev">이전</button></li>
+										<li><button class="next">다음</button></li>
+									</ul>
+								</div>
+								<!-- //1배 사이즈 슬라이드 제어 -->
+
 							</div>
 							<!-- //1배 사이즈 슬라이드 -->
 
@@ -576,15 +784,21 @@
 							<div class="large">
 								<div class="wrapper banner_slide banner_slide_02 swiper-container">
 									<ul class="slide swiper-wrapper">
-										<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
+										<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_02.png);">
 											<a href="#">
 												<div class="txt_wrap">
-													<p class="tit" style="color:red" ;>
+													<p class="tit" style="color:#fff">
 														초 중 고등부 봄학기 개강
 													</p>
-													<p class="txt" style="color:blue" ;>
+													<p class="txt" style="color:#fff">
 														새 학년, 꼭 일어났으며 하는 일!
 													</p>
+													<!-- <p class="tit" style="color:red" ;>
+                                                        초 중 고등부 봄학기 개강
+                                                    </p>
+                                                    <p class="txt" style="color:blue" ;>
+                                                        새 학년, 꼭 일어났으며 하는 일!
+                                                    </p> -->
 												</div>
 											</a>
 										</li>
@@ -911,14 +1125,13 @@
 		<div class="side_menu">
 			<ul>
 				<li class="mobile"><a href="#">홈으로</a></li>
-				<!-- [D] 로그인 한 회원에게 표시될 내용 -->
-				<li class="pc"><a href="#" target="_blank">학습하기</a></li>
-				<li class="pc"><a href="#" target="_blank">학습하기2</a></li>
-				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
 				<li><a href="#">상담신청</a></li>
 				<li><a href="#">설명회신청</a></li>
 				<li><a href="#">입학고사</a></li>
 				<li><a href="#">캠퍼스 안내</a></li>
+				<!-- [D] 로그인 한 회원에게 표시될 내용 -->
+				<li class="pc"><a href="#" target="_blank">재원생 학습</a></li>
+				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
 				<li class="counsel pc">
 					<span class="tit">상담문의</span>
 					<!-- <span class="phone">1899-0949</span> -->
