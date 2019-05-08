@@ -23,6 +23,14 @@
                 <div class="sub_upper_wrap bg">
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["대입컨설팅","합격수기","대입실적"]
+                        }
+                        })
+                        
                         <p class="main_tit">
                             <strong>대입실적</strong>
                         </p>

@@ -28,7 +28,7 @@
 .ie9 a {display:inline-block; height:2.5em; margin-top:30px; padding:0 1em; border-radius:1.25em; background:#00aeba; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#fff;}
 
 /* 최상단 배너 */
-.upper_banner {background-color:#e6eff1; line-height:0; transform:scaleY(0); transform-origin:top; transition:transform 0.2s;}
+.upper_banner {background-color:#e6eff1; transform:scaleY(0); transform-origin:top; transition:transform 0.2s;}
 .upper_banner.on {transform:scaleY(1);}
 .upper_banner .banner_wrapper {position:relative; max-width:1920px; margin:0 auto; line-height:0;}
 /* .upper_banner .banner_wrapper:after {position:absolute; top:0; right:0; bottom:0; left:0; z-index:0; background:rgba(255,255,255,0.3); content:"";} */
@@ -42,18 +42,17 @@
 .upper_banner .ctr_wrap button:before {top:0; transform:rotate(-45deg);}
 .upper_banner .ctr_wrap button:after {bottom:0; transform:rotate(45deg);}
 
-@media screen and (max-width:1024px) {
-    .upper_banner .ctr_wrap {right:0; bottom:0; left:auto; min-width:0; margin:0; transform:none;}
-    .upper_banner .ctr_wrap button {width:16px; margin-left:15px; padding-right:12px; font-size:12px; line-height:14px;}
+@media (max-width:1024px) {
+    .upper_banner .ctr_wrap {right:0; bottom:0; left:auto; min-width:0; width:30px; margin:0; transform:none;}
+    .upper_banner .ctr_wrap button {width:20px; height:20px; margin:0; padding:0; font-size:12px;}
     .upper_banner .ctr_wrap button:last-child {display:none;}
     .upper_banner .ctr_wrap button span {font-size:0;}
-    .upper_banner .ctr_wrap button:before,.upper_banner .ctr_wrap button:after {width:22px;}
+    .upper_banner .ctr_wrap button:before,.upper_banner .ctr_wrap button:after {width:26px;}
 }
 
-@media screen and (max-width:599px) {
+@media (max-width:599px) {
     .upper_banner .ctr_wrap {transform:scale(0.75); transform-origin:right bottom;}
 }
-
 
 /* 사이드 메뉴 */
 .side_menu {position:absolute; top:0; right:0; z-index:10; background:#fff; color:#646f72; text-align:center; transform:translateY(-50%); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
