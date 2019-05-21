@@ -18,6 +18,7 @@ section .slide .btn_wrap a:hover span:before,section .slide .btn_wrap a:hover sp
 section .slide_cate {position:relative; margin-bottom:30px; font-size:18px; font-weight:700; line-height:1.1em;}
 section .slide_cate:after {position:absolute; bottom:-10px; left:0; width:14px; height:1px; background:#fff; content:"";}
 article .grand_tit {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:300; line-height:1.4em; letter-spacing:-0.02em;}
+article .grand_tit span {font-family:inherit;}
 article .grand_tit i {position:absolute; bottom:10px; right:-66px; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-size:1000px 1000px;}
 /* article .grand_tit i {display:inline-block; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-size:1000px 1000px; margin-left:-10px; margin-top:-20px; vertical-align:top;} */
 section .section:nth-child(1) article .grand_tit i {background-position:-10px -246px;}

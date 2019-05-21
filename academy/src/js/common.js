@@ -24,7 +24,7 @@ $(function () {
         $('#' + modal_src).fadeIn();
     });
 
-    $('.modal .close').on('click', function () {
+    $('.modal').find('button[data-move="close"]').on('click', function () {
         modal_src = '';
         $('.modal_wrap').removeClass('on');
         $('.modal').fadeOut();
@@ -163,6 +163,7 @@ $(function () {
         view_list.removeClass('on');
         $('.tab_view:eq(' + view_data + ')').show();
         $(this).parents('li').addClass('on');
+        $('.tab_view').find('input[type="radio"]').prop('checked', false);
     });
 
     /******************** 스크롤 애니메이션 정의 ********************/
@@ -221,5 +222,18 @@ $(function () {
             top: $(this).height() / 2 + $(window).scrollTop(),
             ease: Elastic.easeOut.config(.25, .25)
         })
+    });
+
+    /******************** Datepicker ********************/
+
+    $('.datepicker').datepicker({
+        dateFormat: 'yy-mm-dd',
+        showMonthAfterYear: true,
+        monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+        buttonText: "선택",
+        yearSuffix: "년"
     });
 });

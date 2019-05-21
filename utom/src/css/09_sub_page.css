@@ -663,8 +663,8 @@
 
 /* 하브루타 기반 말하는 수학 - 왜 하브루타인가? */
 .about_havruta .info {text-align:center;}
-.about_havruta .reason .txt_box {display:table; width:100%; min-height:270px; margin:30px 0; padding:30px; background-image:url(../img/bg/bg_why_is_hebruhta_01.png); background-repeat:no-repeat; background-position:center center; background-size:cover; text-align:center;}
-.about_havruta .reason .txt_box p {display:table-cell; font-family:"Nanum Square"; font-size:20px; line-height:1.8em; color:#fff; vertical-align:middle;}
+.about_havruta .reason .txt_box {display:table; width:100%; min-height:150px; margin:30px 0; padding:30px; border-top:3px solid #333; border-bottom:1px solid #ddd; text-align:center;}
+.about_havruta .reason .txt_box p {display:table-cell; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.8em; vertical-align:middle;}
 .about_havruta .reason .txt_wrap {overflow:hidden;}
 .about_havruta .reason .txt_wrap .cont_tit {float:left; width:calc(25% - 40px);}
 .about_havruta .reason .txt_wrap .cont_txt {float:right; width:75%;}
@@ -675,7 +675,6 @@
 .about_havruta .your_think .subpage_tit .translation {display:block; font-size:0.75em; font-weight:normal; font-family:inherit; line-height:1.0em;}
 
 @media (max-width:1024px) { 
-    .about_havruta .reason .txt_box {min-height:200px;}
     .about_havruta .reason .txt_box p {font-size:18px; line-height:1.6em;}
     .about_havruta .reason .txt_box p br {display:none;}
     .about_havruta .reason .txt_wrap .cont_tit,.about_havruta .reason .txt_wrap .cont_txt {float:none; width:100%;}    
@@ -683,7 +682,7 @@
     .about_havruta .your_think {padding:100px 0; margin-bottom:-50px;}
 }
 @media (max-width:599px) { 
-    .about_havruta .reason .txt_box {width:calc(100% + 30px); min-height:150px; margin-left:-15px; padding:30px 15px;}
+    .about_havruta .reason .txt_box {padding:30px 15px;}
     .about_havruta .reason .txt_box p {font-size:16px;}
     .about_havruta .reason .txt_wrap {text-align:center;}
     .about_havruta .reason .txt_wrap .cont_txt .txt {margin-top:15px;}
@@ -1527,6 +1526,10 @@
 .analysis .result_table table tfoot td p {font-size:18px; font-weight:700; line-height:1.8em;}
 .analysis .result_table table tfoot td:first-of-type p {color:#704300;}
 .analysis .result_table table tfoot td:last-of-type p {color:#345700;}
+.analysis .key_visual {display:table; width:100%; height:320px; margin-bottom:-100px; padding:0; background:url(../img/bg/bg_analysys_keyvisual.png); background-size:cover; background-position:center;}
+.analysis .key_visual .txt_wrap {display:table-cell; color:#fff; text-align:center; vertical-align:middle;}
+.analysis .key_visual .txt_wrap .tit {font-family:"Nanum Square"; font-size:40px; font-weight:900; line-height:1.4em;}
+.analysis .key_visual .txt_wrap .sub_txt {margin-top:28px; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.4em;}
 
 @media screen and (max-width:1024px) {
     .analysis .result_table {width:calc(100% + 10px); margin-left:-5px;}
@@ -1549,6 +1552,10 @@
     .analysis .result_table table .difficult th {height:auto;}
     .analysis .result_table table tfoot th {height:auto; border-color:#333; background:#333;}
     .analysis .result_table table tfoot td:first-of-type {background-size:72px 66px;}
+    .analysis .key_visual {height:300px; margin-bottom:-50px;}
+    .analysis .key_visual .txt_wrap .tit {font-size:30px;}
+    .analysis .key_visual .txt_wrap .sub_txt {font-size:18px;}
+    .analysis .key_visual .txt_wrap .sub_txt br {display:none;}
 }
 
 @media screen and (max-width:599px) {
@@ -1568,6 +1575,9 @@
     .analysis .result_table table tbody td,.analysis .result_table table tfoot td {padding-top:75px;}
     .analysis .result_table table tr td p {font-size:12px;}
     .analysis .result_table table tfoot td:first-of-type {background-position:center top 60px;}
+    .analysis .key_visual {height:250px; margin-bottom:-30px;}
+    .analysis .key_visual .txt_wrap .tit {font-size:20px;}
+    .analysis .key_visual .txt_wrap .sub_txt {font-size:14px;}
 }
 
 /* 검색결과 */

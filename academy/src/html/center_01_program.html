@@ -4,14 +4,14 @@
     @@include('../inc/ie9.html')
     <div class="wrap">
         @@include('../inc/header.html')
-        <div class="sub_wrap campus_program_01">
+        <div class="sub_wrap campus_01_program campus_system">
             @@include('../inc/sub_header.html',{
             "type" : "type3",
             "title" : "광진 영재센터",
             "subtitle" : "영재센터",
             "context" : {
             "depth1_current" : "영재센터",
-            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약&상담"],
             "depth2_current" : "광진 영재센터",
             "depth2_sublist" : ["영재센터 소개","광진 영재센터","대치 영재센터","중계 영재센터","평촌 영재센터","상위 1%정보"],
             "depth3_current" : false
@@ -27,7 +27,7 @@
                         @@include('../inc/tab.html',{
                         "context" : {
                         "has_tab" : true,
-                        "tab_list" : ["프로그램","수업 시스템","교재 안내","공지사항","위치안내"]
+                        "tab_list" : ["프로그램","교재 안내","공지사항","위치안내"]
                         }
                         })
 
@@ -46,6 +46,207 @@
                     </div>
                 </div>
                 <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">학년별 수업체계</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <!-- 데이터 테이블 -->
+                            <div class="data_table" data-width="900">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:14%;">
+                                        <col style="width:21%;">
+                                        <col>
+                                        <col style="width:14%;">
+                                        <col style="width:21%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">학년</th>
+                                            <th scope="col">수업요일</th>
+                                            <th scope="col">과목 및 시수</th>
+                                            <th scope="col">총 시수</th>
+                                            <th scope="col">비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                6AP
+                                            </th>
+                                            <td>
+                                                월수금(3일)
+                                            </td>
+                                            <td>
+                                                수학(12T) + 과학(3T)
+                                            </td>
+                                            <td>
+                                                15T
+                                            </td>
+                                            <td rowspan="4">
+                                                수학/과학<br>
+                                                선택 수강가능<br>
+                                                물올/화올/KMO 특강<br>
+                                                별도진행
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                1AP
+                                            </th>
+                                            <td>
+                                                월수금일(4일)
+                                            </td>
+                                            <td>
+                                                수학 3일 + 과학 1일<br>
+                                                수학(15T) + 과학(6T)
+                                            </td>
+                                            <td>
+                                                21T
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                2AP
+                                            </th>
+                                            <td>
+                                                월화목금일(5일)
+                                            </td>
+                                            <td>
+                                                수학 3일 + 과학 2일<br>
+                                                수학(15T) + 과학(10T)
+                                            </td>
+                                            <td>
+                                                25T
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                3AP
+                                            </th>
+                                            <td>
+                                                월화수목금일(6일)
+                                            </td>
+                                            <td>
+                                                수학 3일 + 과학 3일<br>
+                                                수학(15T) + 과학(15T)
+                                            </td>
+                                            <td>
+                                                30T
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //데이터 테이블 -->
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">수업진행과정</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="study_step">
+                                <div class="cont math">
+                                    <div class="tit_wrap">
+                                        <p class="tit">
+                                            <strong>수학</strong>
+                                            (각 과목별 공통과정)
+                                        </p>
+                                    </div>
+                                    <ol class="step3">
+                                        <li>
+                                            <div class="txt_wrap">
+                                                <strong>자기주도학습(디딤영상, 교재)</strong>
+                                                <p class="txt">
+                                                    개념학습 / 대표유형 / 탐구하기 등의 내용을<br>
+                                                    스스로 학습하기
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt_wrap">
+                                                <strong>교사+학생</strong>
+                                                <p class="txt">
+                                                    교사와 학생 간의 질의응답, 학생들 간의 또래문답 등의<br>
+                                                    형식으로 1단계에서 학습한 내용을 확인하고 심화학습하기
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt_wrap">
+                                                <strong>교사+학생</strong>
+                                                <p class="txt">
+                                                    응용력 / 사고력기르기 / 수학적 의사소통 등의<br>
+                                                    내용을 바탕으로 토론발표 수업하기
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="cont science">
+                                    <div class="tit_wrap">
+                                        <p class="tit">
+                                            <strong>과학</strong>
+                                            (물리, 화학, 생명과학, 지구과학 동일)
+                                        </p>
+                                    </div>
+                                    <ol class="step4">
+                                        <li>
+                                            <div class="txt_wrap">
+                                                <p class="txt">
+                                                    사전 개념 학습(플립러닝)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt_wrap">
+                                                <p class="txt">
+                                                    대표 유형을 통한 또래 문답 및 교사와의<br>
+                                                    문답식, 토론식 확인학습
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt_wrap">
+                                                <p class="txt">
+                                                    창의성, 사고력 향상을 위한<br>
+                                                    토론 및 발표수업
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt_wrap">
+                                                <p class="txt">
+                                                    과제 수행을 통한 확인학습<br>
+                                                    (가정학습)
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
 
                 <!-- 서브 페이지 내용 -->
                 <div class="sub_lower_wrap">
@@ -90,7 +291,7 @@
                                         <div class="list_wrap">
                                             <span class="num">1</span>
                                             <img src="../img/img/img_center01_talk_01.png" alt="">
-                                            <div class="tit">문답식 수업</div>
+                                            <div class="tit">질문식 수업</div>
                                         </div>
                                     </li>
                                     <li>

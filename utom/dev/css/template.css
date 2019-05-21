@@ -837,10 +837,31 @@ footer {background:#505354; color:#fff;}
 7. 모달
 =========================================================*/
 
+/* 공통 */
 .modal_wrap {visibility:hidden; position:fixed; top:0; right:0; bottom:0; left:0; z-index:100; background:rgba(51,51,51,0.6); -webkit-transition:all 0.5s; transition:all 0.5s; opacity:0;}
 .modal_wrap.on {visibility:visible; opacity:1;}
-.modal {position:absolute; top:50%; left:50%; width:calc(100% - 60px); max-width:360px; max-height:calc(100vh - 60px); background:#fff; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);}
-.modal.confirm {padding:30px; border:1px solid #ddd; text-align:center;}
+.modal {overflow-x:hidden; overflow-y:auto; position:absolute; top:50%; left:50%; width:calc(100% - 60px); max-height:calc(100vh - 60px); padding:15px 40px 35px; background:#fff; -webkit-transform:translate(-50%, -50%) scale(0); transform:translate(-50%, -50%) scale(0); -webkit-transition:-webkit-transform 0.5s; transition:-webkit-transform 0.5s; transition:transform 0.5s; transition:transform 0.5s, -webkit-transform 0.5s; -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
+.modal_wrap.on .modal {-webkit-transform:translate(-50%, -50%) scale(1);transform:translate(-50%, -50%) scale(1);}
+.modal .tit {display:block; margin-bottom:10px; font-family:"Nanum Square"; font-size:22px; font-weight:700; line-height:1.5em;}
+.modal .close {position:absolute; top:0; right:0; width:40px; height:40px; background:#333; text-indent:-9999px; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.modal .close:hover {background:#00687f;}
+.modal .close:before,.modal .close:after {position:absolute; top:50%; left:50%; width:20px; height:4px; margin-top:-2px; margin-left:-10px; border-radius:2px; background:#fff; content:"";}
+.modal .close:before {-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
+.modal .close:after {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+
+@media (max-width:1024px) {
+    .modal {padding:15px 30px;}
+    .modal .tit {font-size:18px;}
+    .modal .close {width:30px; height:30px;}
+}
+
+@media (max-width:599px) {
+    .modal {width:calc(100% - 30px); max-height:calc(100vh - 30px); padding:15px;}
+    .modal .tit {font-size:16px;}
+}
+
+/* 컨펌 */
+.modal.confirm {max-width:360px; padding:30px; text-align:center;}
 .modal.confirm .msg {font-size:16px; font-weight:700; line-height:1.75em; color:#333;}
 .modal.confirm .sub_txt {font-size:14px; line-height:1.7em; color:#333;}
 .modal.confirm input[type="password"] {margin-top:15px;}
@@ -851,11 +872,30 @@ footer {background:#505354; color:#fff;}
 .modal.confirm .btn_wrap .submit {background:#00687f;}
 
 @media (max-width:599px) {
-    .modal {max-width:calc(100% - 30px); max-height:calc(100vh - 30px);}
     .modal.confirm {padding:15px;}
     .modal.confirm .msg {font-size:14px;}
     .modal.confirm .sub_txt {font-size:12px;}
     .modal.confirm .btn_wrap button,.modal.confirm .btn_wrap a {min-width:70px; font-size:14px; line-height:2em;}
+}
+
+/* 지도 */
+.modal.map {max-width:850px;}
+.modal.map iframe {display:block; width:100%; height:380px; border:1px solid #ddd;}
+.modal.map .info {overflow:hidden; margin:20px -15px 0;}
+.modal.map .info div {float:left; width:50%; padding:0 15px; font-size:0;}
+.modal.map .info dt,.modal.map .info dd {display:inline; font-size:14px; line-height:20px;}
+.modal.map .info dt {position:relative; padding-left:10px; font-weight:700;}
+.modal.map .info dt:before {position:absolute; top:50%; left:0; width:6px; height:6px; margin-top:-3px; background:#333; content:"";}
+.modal.map .info dt:after {padding:0 0.2em; content:":";}
+
+@media (max-width:1024px) {
+    .modal.map .info {margin-top:15px;}
+}
+
+@media (max-width:599px) {
+    .modal.map iframe {height:200px;}
+    .modal.map .info div {float:none; width:100%;}
+    .modal.map .info dt, .modal.map .info dd {font-size:12px; line-height:1.5em;}
 }
 
 /*=========================================================
@@ -1823,8 +1863,8 @@ footer {background:#505354; color:#fff;}
 
 /* 하브루타 기반 말하는 수학 - 왜 하브루타인가? */
 .about_havruta .info {text-align:center;}
-.about_havruta .reason .txt_box {display:table; width:100%; min-height:270px; margin:30px 0; padding:30px; background-image:url(../img/bg/bg_why_is_hebruhta_01.png); background-repeat:no-repeat; background-position:center center; background-size:cover; text-align:center;}
-.about_havruta .reason .txt_box p {display:table-cell; font-family:"Nanum Square"; font-size:20px; line-height:1.8em; color:#fff; vertical-align:middle;}
+.about_havruta .reason .txt_box {display:table; width:100%; min-height:150px; margin:30px 0; padding:30px; border-top:3px solid #333; border-bottom:1px solid #ddd; text-align:center;}
+.about_havruta .reason .txt_box p {display:table-cell; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.8em; vertical-align:middle;}
 .about_havruta .reason .txt_wrap {overflow:hidden;}
 .about_havruta .reason .txt_wrap .cont_tit {float:left; width:calc(25% - 40px);}
 .about_havruta .reason .txt_wrap .cont_txt {float:right; width:75%;}
@@ -1835,7 +1875,6 @@ footer {background:#505354; color:#fff;}
 .about_havruta .your_think .subpage_tit .translation {display:block; font-size:0.75em; font-weight:normal; font-family:inherit; line-height:1.0em;}
 
 @media (max-width:1024px) { 
-    .about_havruta .reason .txt_box {min-height:200px;}
     .about_havruta .reason .txt_box p {font-size:18px; line-height:1.6em;}
     .about_havruta .reason .txt_box p br {display:none;}
     .about_havruta .reason .txt_wrap .cont_tit,.about_havruta .reason .txt_wrap .cont_txt {float:none; width:100%;}    
@@ -1843,7 +1882,7 @@ footer {background:#505354; color:#fff;}
     .about_havruta .your_think {padding:100px 0; margin-bottom:-50px;}
 }
 @media (max-width:599px) { 
-    .about_havruta .reason .txt_box {width:calc(100% + 30px); min-height:150px; margin-left:-15px; padding:30px 15px;}
+    .about_havruta .reason .txt_box {padding:30px 15px;}
     .about_havruta .reason .txt_box p {font-size:16px;}
     .about_havruta .reason .txt_wrap {text-align:center;}
     .about_havruta .reason .txt_wrap .cont_txt .txt {margin-top:15px;}
@@ -2687,6 +2726,10 @@ footer {background:#505354; color:#fff;}
 .analysis .result_table table tfoot td p {font-size:18px; font-weight:700; line-height:1.8em;}
 .analysis .result_table table tfoot td:first-of-type p {color:#704300;}
 .analysis .result_table table tfoot td:last-of-type p {color:#345700;}
+.analysis .key_visual {display:table; width:100%; height:320px; margin-bottom:-100px; padding:0; background:url(../img/bg/bg_analysys_keyvisual.png); background-size:cover; background-position:center;}
+.analysis .key_visual .txt_wrap {display:table-cell; color:#fff; text-align:center; vertical-align:middle;}
+.analysis .key_visual .txt_wrap .tit {font-family:"Nanum Square"; font-size:40px; font-weight:900; line-height:1.4em;}
+.analysis .key_visual .txt_wrap .sub_txt {margin-top:28px; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.4em;}
 
 @media screen and (max-width:1024px) {
     .analysis .result_table {width:calc(100% + 10px); margin-left:-5px;}
@@ -2709,6 +2752,10 @@ footer {background:#505354; color:#fff;}
     .analysis .result_table table .difficult th {height:auto;}
     .analysis .result_table table tfoot th {height:auto; border-color:#333; background:#333;}
     .analysis .result_table table tfoot td:first-of-type {background-size:72px 66px;}
+    .analysis .key_visual {height:300px; margin-bottom:-50px;}
+    .analysis .key_visual .txt_wrap .tit {font-size:30px;}
+    .analysis .key_visual .txt_wrap .sub_txt {font-size:18px;}
+    .analysis .key_visual .txt_wrap .sub_txt br {display:none;}
 }
 
 @media screen and (max-width:599px) {
@@ -2728,6 +2775,9 @@ footer {background:#505354; color:#fff;}
     .analysis .result_table table tbody td,.analysis .result_table table tfoot td {padding-top:75px;}
     .analysis .result_table table tr td p {font-size:12px;}
     .analysis .result_table table tfoot td:first-of-type {background-position:center top 60px;}
+    .analysis .key_visual {height:250px; margin-bottom:-30px;}
+    .analysis .key_visual .txt_wrap .tit {font-size:20px;}
+    .analysis .key_visual .txt_wrap .sub_txt {font-size:14px;}
 }
 
 /* 검색결과 */

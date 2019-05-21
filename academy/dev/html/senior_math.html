@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>올림피아드학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="수학이 즐거운 올림피아드">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">GLEC</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+
+										<div class="menu_btn">
+
+											<!-- [D] 로그인 전 -->
+											<a class="btn login" href="#">로그인</a>
+											<!-- //[D] 로그인 전 -->
+
+											<!-- [D] 로그인 후 -->
+											<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+											<!-- [D] 직원일 경우 관리자 + 로그아웃 -->
+											<!-- <a class="btn study" href="#">재원생 학습</a> -->
+											<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+											<!-- <a class="btn logout" href="#">로그아웃</a> -->
+											<!-- //[D] 로그인 후 -->
+
+										</div>
+
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">올림피아드 소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">학원소개</a></li>
+													<!-- <li><a href="#">히스토리</a></li> -->
+													<li><a href="#">기업수상</a></li>
+													<li><a href="#">명예의전당</a></li>
+													<li><a href="#">전국캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">초/중등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">초등수학</a></li>
+													<li><a href="#">중등수학</a></li>
+													<li><a href="#">초/중 캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">영재센터</a>
+												<ul class="menu_2depth">
+													<li><a href="#">영재센터 소개</a></li>
+													<li><a href="#">광진 영재센터</a></li>
+													<li><a href="#">대치 영재센터</a></li>
+													<li><a href="#">중계 영재센터</a></li>
+													<li><a href="#">평촌 영재센터</a></li>
+													<li><a href="#">상위 1%정보</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">고등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">고등부 특징</a></li>
+													<li><a href="#">학습프로그램</a></li>
+													<li><a href="#">대입정보센터</a></li>
+													<li><a href="#">고등캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">예약&amp;상담</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학안내</a></li>
+													<li><a href="#">상담신청</a></li>
+													<li><a href="#">설명회신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap senior_math">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type4.png)" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">고등부</p>
+					<h2 data-animation="fadeInUp" data-delay="3">학습프로그램</h2>
+				</div>
+				<div class="breadcrumb">
+					<ol>
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>고등부</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">올림피아드 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">초/중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">고등부</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+									<li>
+										<a href="#none">예약&상담</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>학습프로그램</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">고등부 특징</a>
+									</li>
+
+									<li>
+										<a href="#none">학습프로그램</a>
+									</li>
+
+									<li>
+										<a href="#none">대입정보센터</a>
+									</li>
+
+									<li>
+										<a href="#none">고등캠퍼스</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ol>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+
+
+						<!-- 서브 페이지 상단 탭메뉴 -->
+						<div class="tab_menu">
+							<ul>
+								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+								<li><a href="#">수학</a></li>
+
+								<li><a href="#">영어</a></li>
+
+								<li><a href="#">국어/과학</a></li>
+
+							</ul>
+						</div>
+						<!-- //서브 페이지 상단 탭메뉴 -->
+
+
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap math">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">레벨구성</h3>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="data_table" data-width="1024">
+								<table>
+									<colgroup>
+										<col width="140px">
+										<col width="270px">
+										<col>
+										<col width="270px">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">SS</th>
+											<th scope="col">SP</th>
+											<th scope="col">SA</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">
+												기준
+											</th>
+											<td>
+												내신 상위 5% 이내<br>
+                                                (배치고사성적 80점이상)
+                                            </td>
+											<td>
+												내신 상위 20% 이내<br>(배치고사성적 60점이상)
+                                            </td>
+											<td>
+												내신 상위 50% 이내<br>(배치고사성적 60점 미만)
+                                            </td>
+										</tr>
+										<tr>
+											<th scope="row">
+												진학목표
+											</th>
+											<td>
+												서울 상위 7개 대학<br>(서,연,고,서,성,한,이)
+                                            </td>
+											<td>
+												서울 중상위 대학<br>(중,경,외,시,건,동,홍,숙)
+                                            </td>
+											<td>
+												서울권 대학 진학 목표
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap bg_gray">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<!-- white 클래스 추가시 텍스트 흰색 변경 -->
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">학년별 수업안내</h3>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="class_guide">
+								<ul>
+									<li>
+										<div class="tit_img">
+											<img src="../img/img/img_senior_math_tit_01.png" alt="">
+										</div>
+										<div class="data_table" data-width="1024">
+											<table>
+												<colgroup>
+													<col width="67px">
+													<col width="75px">
+													<col width="125px">
+													<col width="135px">
+													<col width="125px">
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col" rowspan="2" colspan="2">계열</th>
+														<th scope="col" colspan="3">수업구성</th>
+														<th scope="col" rowspan="2">주당 표준 시수</th>
+														<th scope="col" rowspan="2">비고</th>
+													</tr>
+													<tr>
+														<th scope="col">12월~2월</th>
+														<th scope="col">1학기(3월~)</th>
+														<th scope="col">2학기</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row" rowspan="2">SS</th>
+														<td>정규</td>
+														<td>수학 상, 하<br>수학 l , 수학 ll</td>
+														<td>수학 상</td>
+														<td>수학 하</td>
+														<td rowspan="6">
+															<ul class="table_list">
+																<li>
+																	<strong>[12월~2월]</strong><br>
+                                                                    정규수업: 주3일<br>
+                                                                    SS12T / SP9T / SA7T
+                                                                </li>
+																<li>
+																	<strong>[3월 이후]</strong><br>
+                                                                    정규수업: 주2일(6~8T)<br>
+                                                                    선택특강수업: 주1일(3T)
+                                                                </li>
+															</ul>
+														</td>
+														<td rowspan="6">
+															과제 미이행자와 <br>테스트 탈락자는 <br>나머지 학습 후 귀가
+                                                        </td>
+													</tr>
+													<tr>
+														<td>특강</td>
+														<td>미적분</td>
+														<td>미적분</td>
+														<td>확률과 통계</td>
+													</tr>
+													<tr>
+														<th scope="row" rowspan="2">SP</th>
+														<td>정규</td>
+														<td>수학 상, 하<br>수학 l</td>
+														<td>수학 상</td>
+														<td>수학 하</td>
+													</tr>
+													<tr>
+														<td>특강</td>
+														<td>수학 ll</td>
+														<td>수학 l</td>
+														<td>수학 ll</td>
+													</tr>
+													<tr>
+														<th scope="row" rowspan="2">SA</th>
+														<td>정규</td>
+														<td>수학 상, 하</td>
+														<td>수학 상</td>
+														<td>수학 하</td>
+													</tr>
+													<tr>
+														<td>특강</td>
+														<td>수학 l</td>
+														<td>-</td>
+														<td>-</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</li>
+									<li>
+										<div class="tit_img">
+											<img src="../img/img/img_senior_math_tit_02.png" alt="">
+										</div>
+										<div class="data_table" data-width="1024">
+											<table>
+												<colgroup>
+													<col width="67px">
+													<col width="75px">
+													<col width="125px">
+													<col width="135px">
+													<col width="125px">
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col" rowspan="2" colspan="2">계열</th>
+														<th scope="col" colspan="3">수업구성</th>
+														<th scope="col" rowspan="2">주당 표준 시수</th>
+														<th scope="col" rowspan="2">비고</th>
+													</tr>
+													<tr>
+														<th scope="col">12월~2월</th>
+														<th scope="col">1학기(3월~)</th>
+														<th scope="col">2학기</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row" rowspan="2">SS</th>
+														<td>정규</td>
+														<td>수학 l, ll 기하</td>
+														<td>수학 l</td>
+														<td>수학 ll</td>
+														<td rowspan="6">
+															<ul class="table_list">
+																<li>
+																	<strong>[1월~2월]</strong><br>정규수업: 주3일(12T)
+                                                                </li>
+																<li>
+																	<strong>[3월 이후]</strong><br>정규수업: 주2일(6~8T)<br>
+                                                                    선택특강수업: 주1일(3T)
+                                                                </li>
+															</ul>
+														</td>
+														<td rowspan="6">
+															학기중 <br>
+                                                            공통과목: 수학I,II<br>
+                                                            선택과목: 기하,확률과통계,
+                                                            미적분
+                                                        </td>
+													</tr>
+													<tr>
+														<td>특강</td>
+														<td>미적분(심화)</td>
+														<td colspan="2">선택과목별 내신 특강</td>
+													</tr>
+													<tr>
+														<th scope="row" rowspan="2">SP</th>
+														<td>정규</td>
+														<td>수학 l, ll</td>
+														<td>수학 l</td>
+														<td>수학 ll</td>
+													</tr>
+													<tr>
+														<td>특강</td>
+														<td>확률과 통계</td>
+														<td colspan="2">선택과목별 내신 특강</td>
+													</tr>
+													<tr>
+														<th scope="row" rowspan="2">SA</th>
+														<td>정규</td>
+														<td>수학 l, ll</td>
+														<td>수학 l</td>
+														<td>수학 ll</td>
+													</tr>
+													<tr>
+														<td>특강</td>
+														<td>확률과 통계</td>
+														<td colspan="2">선택과목별 내신 특강</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</li>
+									<li>
+										<div class="tit_img">
+											<img src="../img/img/img_senior_math_tit_03.png" alt="">
+										</div>
+										<div class="data_table" data-width="1024">
+											<table>
+												<colgroup>
+													<col width="155px">
+													<col width="150px">
+													<col width="150px">
+													<col width="150px">
+													<col width="150px">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col" rowspan="2">수업</th>
+														<th scope="col" colspan="4">일정</th>
+														<th scope="col" rowspan="2">주당 표준 시수</th>
+													</tr>
+													<tr>
+														<th scope="col">1월~2월</th>
+														<th scope="col">3월~6월</th>
+														<th scope="col">7월~8월</th>
+														<th scope="col">9월~11월</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">
+															정규수업
+														</th>
+														<td>
+															수능 필수<br>개념 정리 및<br>문제 유형 분석
+                                                        </td>
+														<td>
+															수능 기출 분석<br>
+                                                            심화개념+문제풀이
+                                                        </td>
+														<td>
+															고난도 문항 풀이
+														</td>
+														<td>
+															약점보완<br>신유형/최고난도<br>문항 풀이<br>실전 모의고사
+                                                        </td>
+														<td rowspan="2">
+															정규수업: 주2일(8T)<br>특강: 주1일(3T)
+                                                        </td>
+													</tr>
+													<tr>
+														<th scope="row">
+															특강수업
+														</th>
+														<td>
+															과목별 집중<br>선택 특강
+                                                        </td>
+														<td>
+															선택과목별<br>내신 특강
+                                                        </td>
+														<td>
+															실전 모의고사 특강
+														</td>
+														<td>-</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<p class="text">*캠퍼스별 개설과목과 시간표는 공지사항에 업데이트 됩니다. </p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">학습 및 내신 관리</h3>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="entrance_management">
+								<ul class="em_list">
+									<li>
+										<div class="em_box">
+											<p class="bgc_text">문제풀이 노트작성</p>
+											<div class="list">
+												<ul class="txt_list type1">
+													<li>정리해서 푸는 습관</li>
+													<li>서술형 연습</li>
+													<li>맞춤형 개별 첨삭</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="em_box">
+											<p class="bgc_text">학습 관리</p>
+											<div class="list">
+												<ul class="txt_list type1">
+													<li>철저한 출결 관리</li>
+													<li>개별 학습 스케줄 관리</li>
+													<li>매학기 성적 분석을 통한 과목별 약점 보완</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="em_box">
+											<p class="bgc_text">내신 관리</p>
+											<div class="list">
+												<ul class="txt_list type1">
+													<li>최다 빈출문제와 심화기출문제로 구성된 교재</li>
+													<li>출판사별 교과서 완벽 분석</li>
+													<li>학교 개별 자료에 대한 질의 응답 및 해설강의 제공</li>
+													<li>매주 모의시험을 통한 실전능력 향상</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+			</div>
+			<footer>
+				<div class="grid_container">
+					<div class="footer_upper">
+						<ul class="bottom_menu">
+							<!-- <li><a href="#">올림피아드 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
+							<li><a href="#">사이트맵</a></li>
+							<li><a href="#">이용약관</a></li>
+							<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+							<li><a href="#">이메일무단수집거부</a></li>
+						</ul>
+						<div class="select_form">
+							<button type="button">
+								<span lang="en">family site</span>
+							</button>
+							<ul>
+								<li><a href="#none">올림피아드 교육</a></li>
+								<li><a href="#none">GLEC</a></li>
+								<li><a href="#none">유투엠</a></li>
+								<li><a href="#none">하베르만</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_lower">
+						<ul class="sns">
+							<li class="blog"><a href="#">블로그</a></li>
+						</ul>
+						<img class="logo" src="../img/img/img_footer_logo.png" alt="수학이 즐거운 올림피아드">
+						<div class="lower_wrap">
+							<address>
+								<span class="hidden">회사정보</span>
+								<ul class="corp">
+									<li><span class="hidden">주소 : </span>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
+									<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+									<li>대표 : 양환주</li>
+									<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+								</ul>
+								<ul>
+									<li>사업자등록번호 : 206-81-24574</li>
+									<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+								</ul>
+								<ul>
+									<li>개인정보책임자 : 양환승</li>
+								</ul>
+								<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+							</address>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- 사이드 메뉴 -->
+			<div class="side_menu">
+				<ul>
+					<li class="mobile"><a href="#">홈으로</a></li>
+					<li><a href="#">상담신청</a></li>
+					<li><a href="#">설명회신청</a></li>
+					<li><a href="#">입학고사</a></li>
+					<li><a href="#">캠퍼스 안내</a></li>
+					<!-- [D] 로그인 한 회원에게 표시될 내용 -->
+					<li class="pc"><a href="#" target="_blank">재원생 학습</a></li>
+					<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
+					<li class="counsel pc">
+						<span class="tit">상담문의</span>
+						<!-- <span class="phone">1899-0949</span> -->
+						<span class="date">평일 10:00~19:00</span>
+					</li>
+				</ul>
+				<div class="move_top pc">
+					<button type="button">페이지 맨 위로 이동</button>
+				</div>
+			</div>
+			<!-- //사이드 메뉴 -->
+		</div>
+
+</body>
+
+</html>

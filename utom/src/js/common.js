@@ -17,14 +17,14 @@ $(function () {
 
     var modal_src;
 
-    $('.open_modal').on('click', function() {
+    $('.open_modal').on('click', function () {
         modal_src = $(this).data('modal');
         $('.modal_wrap').addClass('on');
         $('.modal').hide();
         $('#' + modal_src).fadeIn();
     });
 
-    $('.modal .close').on('click', function() {
+    $('.modal').find('button[data-move="close"]').on('click', function () {
         modal_src = '';
         $('.modal_wrap').removeClass('on');
         $('.modal').fadeOut();

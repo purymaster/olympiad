@@ -1,0 +1,430 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap senior_math">
+            @@include('../inc/sub_header.html',{
+            "type" : "type4",
+            "title" : "학습프로그램",
+            "subtitle" : "고등부",
+            "context" : {
+            "depth1_current" : "고등부",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약&상담"],
+            "depth2_current" : "학습프로그램",
+            "depth2_sublist" : ["고등부 특징","학습프로그램","대입정보센터","고등캠퍼스"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["수학","영어","국어/과학"]
+                        }
+                        })
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap math">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">레벨구성</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="data_table" data-width="1024">
+                                <table>
+                                    <colgroup>
+                                        <col width="140px">
+                                        <col width="270px">
+                                        <col>
+                                        <col width="270px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">SS</th>
+                                            <th scope="col">SP</th>
+                                            <th scope="col">SA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                기준
+                                            </th>
+                                            <td>
+                                                내신 상위 5% 이내<br>
+                                                (배치고사성적 80점이상)
+                                            </td>
+                                            <td>
+                                                내신 상위 20% 이내<br>(배치고사성적 60점이상)
+                                            </td>
+                                            <td>
+                                                내신 상위 50% 이내<br>(배치고사성적 60점 미만)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                진학목표
+                                            </th>
+                                            <td>
+                                                서울 상위 7개 대학<br>(서,연,고,서,성,한,이)
+                                            </td>
+                                            <td>
+                                                서울 중상위 대학<br>(중,경,외,시,건,동,홍,숙)
+                                            </td>
+                                            <td>
+                                                서울권 대학 진학 목표
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap bg_gray">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">학년별 수업안내</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="class_guide">
+                                <ul>
+                                    <li>
+                                        <div class="tit_img">
+                                            <img src="../img/img/img_senior_math_tit_01.png" alt="">
+                                        </div>
+                                        <div class="data_table" data-width="1024">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="67px">
+                                                    <col width="75px">
+                                                    <col width="125px">
+                                                    <col width="135px">
+                                                    <col width="125px">
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" rowspan="2" colspan="2">계열</th>
+                                                        <th scope="col" colspan="3">수업구성</th>
+                                                        <th scope="col" rowspan="2">주당 표준 시수</th>
+                                                        <th scope="col" rowspan="2">비고</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">12월~2월</th>
+                                                        <th scope="col">1학기(3월~)</th>
+                                                        <th scope="col">2학기</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" rowspan="2">SS</th>
+                                                        <td>정규</td>
+                                                        <td>수학 상, 하<br>수학 l , 수학 ll</td>
+                                                        <td>수학 상</td>
+                                                        <td>수학 하</td>
+                                                        <td rowspan="6">
+                                                            <ul class="table_list">
+                                                                <li>
+                                                                    <strong>[12월~2월]</strong><br>
+                                                                    정규수업: 주3일<br>
+                                                                    SS12T / SP9T / SA7T
+                                                                </li>
+                                                                <li>
+                                                                    <strong>[3월 이후]</strong><br>
+                                                                    정규수업: 주2일(6~8T)<br>
+                                                                    선택특강수업: 주1일(3T)
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td rowspan="6">
+                                                            과제 미이행자와 <br>테스트 탈락자는 <br>나머지 학습 후 귀가
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>특강</td>
+                                                        <td>미적분</td>
+                                                        <td>미적분</td>
+                                                        <td>확률과 통계</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="2">SP</th>
+                                                        <td>정규</td>
+                                                        <td>수학 상, 하<br>수학 l</td>
+                                                        <td>수학 상</td>
+                                                        <td>수학 하</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>특강</td>
+                                                        <td>수학 ll</td>
+                                                        <td>수학 l</td>
+                                                        <td>수학 ll</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="2">SA</th>
+                                                        <td>정규</td>
+                                                        <td>수학 상, 하</td>
+                                                        <td>수학 상</td>
+                                                        <td>수학 하</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>특강</td>
+                                                        <td>수학 l</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit_img">
+                                            <img src="../img/img/img_senior_math_tit_02.png" alt="">
+                                        </div>
+                                        <div class="data_table" data-width="1024">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="67px">
+                                                    <col width="75px">
+                                                    <col width="125px">
+                                                    <col width="135px">
+                                                    <col width="125px">
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" rowspan="2" colspan="2">계열</th>
+                                                        <th scope="col" colspan="3">수업구성</th>
+                                                        <th scope="col" rowspan="2">주당 표준 시수</th>
+                                                        <th scope="col" rowspan="2">비고</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">12월~2월</th>
+                                                        <th scope="col">1학기(3월~)</th>
+                                                        <th scope="col">2학기</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" rowspan="2">SS</th>
+                                                        <td>정규</td>
+                                                        <td>수학 l, ll 기하</td>
+                                                        <td>수학 l</td>
+                                                        <td>수학 ll</td>
+                                                        <td rowspan="6">
+                                                            <ul class="table_list">
+                                                                <li>
+                                                                    <strong>[1월~2월]</strong><br>정규수업: 주3일(12T)
+                                                                </li>
+                                                                <li>
+                                                                    <strong>[3월 이후]</strong><br>정규수업: 주2일(6~8T)<br>
+                                                                    선택특강수업: 주1일(3T)
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td rowspan="6">
+                                                            학기중 <br>
+                                                            공통과목: 수학I,II<br>
+                                                            선택과목: 기하,확률과통계,
+                                                            미적분
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>특강</td>
+                                                        <td>미적분(심화)</td>
+                                                        <td colspan="2">선택과목별 내신 특강</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="2">SP</th>
+                                                        <td>정규</td>
+                                                        <td>수학 l, ll</td>
+                                                        <td>수학 l</td>
+                                                        <td>수학 ll</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>특강</td>
+                                                        <td>확률과 통계</td>
+                                                        <td colspan="2">선택과목별 내신 특강</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" rowspan="2">SA</th>
+                                                        <td>정규</td>
+                                                        <td>수학 l, ll</td>
+                                                        <td>수학 l</td>
+                                                        <td>수학 ll</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>특강</td>
+                                                        <td>확률과 통계</td>
+                                                        <td colspan="2">선택과목별 내신 특강</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit_img">
+                                            <img src="../img/img/img_senior_math_tit_03.png" alt="">
+                                        </div>
+                                        <div class="data_table" data-width="1024">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="155px">
+                                                    <col width="150px">
+                                                    <col width="150px">
+                                                    <col width="150px">
+                                                    <col width="150px">
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" rowspan="2">수업</th>
+                                                        <th scope="col" colspan="4">일정</th>
+                                                        <th scope="col" rowspan="2">주당 표준 시수</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">1월~2월</th>
+                                                        <th scope="col">3월~6월</th>
+                                                        <th scope="col">7월~8월</th>
+                                                        <th scope="col">9월~11월</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            정규수업
+                                                        </th>
+                                                        <td>
+                                                            수능 필수<br>개념 정리 및<br>문제 유형 분석
+                                                        </td>
+                                                        <td>
+                                                            수능 기출 분석<br>
+                                                            심화개념+문제풀이
+                                                        </td>
+                                                        <td>
+                                                            고난도 문항 풀이
+                                                        </td>
+                                                        <td>
+                                                            약점보완<br>신유형/최고난도<br>문항 풀이<br>실전 모의고사
+                                                        </td>
+                                                        <td rowspan="2">
+                                                            정규수업: 주2일(8T)<br>특강: 주1일(3T)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            특강수업
+                                                        </th>
+                                                        <td>
+                                                            과목별 집중<br>선택 특강
+                                                        </td>
+                                                        <td>
+                                                            선택과목별<br>내신 특강
+                                                        </td>
+                                                        <td>
+                                                            실전 모의고사 특강
+                                                        </td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p class="text">*캠퍼스별 개설과목과 시간표는 공지사항에 업데이트 됩니다. </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">학습 및 내신 관리</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="entrance_management">
+                                <ul class="em_list">
+                                    <li>
+                                        <div class="em_box">
+                                            <p class="bgc_text">문제풀이 노트작성</p>
+                                            <div class="list">
+                                                <ul class="txt_list type1">
+                                                    <li>정리해서 푸는 습관</li>
+                                                    <li>서술형 연습</li>
+                                                    <li>맞춤형 개별 첨삭</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="em_box">
+                                            <p class="bgc_text">학습 관리</p>
+                                            <div class="list">
+                                                <ul class="txt_list type1">
+                                                    <li>철저한 출결 관리</li>
+                                                    <li>개별 학습 스케줄 관리</li>
+                                                    <li>매학기 성적 분석을 통한 과목별 약점 보완</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="em_box">
+                                            <p class="bgc_text">내신 관리</p>
+                                            <div class="list">
+                                                <ul class="txt_list type1">
+                                                    <li>최다 빈출문제와 심화기출문제로 구성된 교재</li>
+                                                    <li>출판사별 교과서 완벽 분석</li>
+                                                    <li>학교 개별 자료에 대한 질의 응답 및 해설강의 제공</li>
+                                                    <li>매주 모의시험을 통한 실전능력 향상</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+            </div>
+            @@include('../inc/footer.html')
+            @@include('../inc/side_menu.html')
+        </div>
+
+</body>
+
+</html>

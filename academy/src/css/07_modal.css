@@ -3,10 +3,31 @@
 7. 모달
 =========================================================*/
 
+/* 공통 */
 .modal_wrap {visibility:hidden; position:fixed; top:0; right:0; bottom:0; left:0; z-index:100; background:rgba(51,51,51,0.6); transition:all 0.5s; opacity:0;}
 .modal_wrap.on {visibility:visible; opacity:1;}
-.modal {position:absolute; top:50%; left:50%; width:calc(100% - 60px); max-width:360px; max-height:calc(100vh - 60px); background:#fff; transform:translate(-50%, -50%);}
-.modal.confirm {padding:30px; border:1px solid #ddd; text-align:center;}
+.modal {overflow-x:hidden; overflow-y:auto; position:absolute; top:50%; left:50%; width:calc(100% - 60px); max-height:calc(100vh - 60px); padding:15px 40px 35px; background:#fff; transform:translate(-50%, -50%) scale(0); transition:transform 0.5s; box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
+.modal_wrap.on .modal {transform:translate(-50%, -50%) scale(1);}
+.modal .tit {display:block; margin-bottom:10px; font-family:"Nanum Square"; font-size:22px; font-weight:700; line-height:1.5em;}
+.modal .close {position:absolute; top:0; right:0; width:40px; height:40px; background:#333; text-indent:-9999px; transition:all 0.5s;}
+.modal .close:hover {background:#00687f;}
+.modal .close:before,.modal .close:after {position:absolute; top:50%; left:50%; width:20px; height:4px; margin-top:-2px; margin-left:-10px; border-radius:2px; background:#fff; content:"";}
+.modal .close:before {transform:rotate(-45deg);}
+.modal .close:after {transform:rotate(45deg);}
+
+@media (max-width:1024px) {
+    .modal {padding:15px 30px;}
+    .modal .tit {font-size:18px;}
+    .modal .close {width:30px; height:30px;}
+}
+
+@media (max-width:599px) {
+    .modal {width:calc(100% - 30px); max-height:calc(100vh - 30px); padding:15px;}
+    .modal .tit {font-size:16px;}
+}
+
+/* 컨펌 */
+.modal.confirm {max-width:360px; padding:30px; text-align:center;}
 .modal.confirm .msg {font-size:16px; font-weight:700; line-height:1.75em; color:#333;}
 .modal.confirm .sub_txt {font-size:14px; line-height:1.7em; color:#333;}
 .modal.confirm input[type="password"] {margin-top:15px;}
@@ -17,9 +38,70 @@
 .modal.confirm .btn_wrap .submit {background:#00687f;}
 
 @media (max-width:599px) {
-    .modal {max-width:calc(100% - 30px); max-height:calc(100vh - 30px);}
     .modal.confirm {padding:15px;}
     .modal.confirm .msg {font-size:14px;}
     .modal.confirm .sub_txt {font-size:12px;}
     .modal.confirm .btn_wrap button,.modal.confirm .btn_wrap a {min-width:70px; font-size:14px; line-height:2em;}
 }
+
+/* 지도 */
+.modal.map {max-width:850px;}
+.modal.map iframe {display:block; width:100%; height:380px; border:1px solid #ddd;}
+.modal.map .info {overflow:hidden; margin:20px -15px 0;}
+.modal.map .info div {float:left; width:50%; padding:0 15px; font-size:0;}
+.modal.map .info dt,.modal.map .info dd {display:inline; font-size:14px; line-height:20px;}
+.modal.map .info dt {position:relative; padding-left:10px; font-weight:700;}
+.modal.map .info dt:before {position:absolute; top:50%; left:0; width:6px; height:6px; margin-top:-3px; background:#333; content:"";}
+.modal.map .info dt:after {padding:0 0.2em; content:":";}
+
+@media (max-width:1024px) {
+    .modal.map .info {margin-top:15px;}
+}
+
+@media (max-width:599px) {
+    .modal.map iframe {height:200px;}
+    .modal.map .info div {float:none; width:100%;}
+    .modal.map .info dt, .modal.map .info dd {font-size:12px; line-height:1.5em;}
+}
+
+/* 검색(공통) */
+.modal.search {max-width:760px;}
+.modal.search .search_box {font-size:0;}
+.modal.search .search_box input[type="text"] {width:calc(100% - 95px);}
+.modal.search .search_box button {width:90px; margin-left:5px; background:#aaa; font-family:"Nanum Square"; font-size:14px; line-height:40px; color:#fff; vertical-align:top; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.modal.search .search_box button:hover {background:#00687f;}
+.modal.search .info {padding:25px 10px; border-bottom:1px solid #333;}
+.modal.search .info p {margin:0; line-height:30px;}
+.modal.search .info .txt {font-family:"Nanum Square"; font-size:16px;}
+.modal.search .info .txt strong {font-family:inherit; color:#00687f;}
+.modal.search .info .ex {font-size:12px;}
+.modal.search .info .warning:before {content:"*";}
+.modal.search .result_wrap {margin-bottom:40px;}
+.modal.search .tab_menu {position:relative; margin-top:20px;}
+.modal.search .tab_menu:after {position:absolute; bottom:-1px; left:0; width:100%; height:3px; background:#333; content:"";}
+.modal.search .tab_menu ul {border-bottom:3px solid #333;}
+.modal.search .tab_menu ul li button {background:#fff; font-weight:700;}
+.modal.search .tab_menu ul li button:after {display:none;}
+.modal.search .tab_menu ul li.on button {border-color:#333; background:#333; color:#fff;}
+.modal.search .address_list th {background:#f5f5f5; font-family:"Nanum Square"; font-size:18px; font-weight:400;}
+.modal.search .address_list td {padding:0 5px;}
+.modal.search .address_list td label {display:block; padding:15px 0; line-height:20px; transition:all 0.5s;}
+.modal.search .address_list tr:hover label,.modal.search .address_list tr.on label {font-weight:700; color:#008398;}
+.modal.search .pagenation {margin-top:20px;}
+.modal.search .pagenation .pager > a {width:30px; height:30px;}
+.modal.search .pagenation .pager > a:before,.modal.search .pagenation .pager > a:after {top:10px; width:6px; height:6px;}
+.modal.search .pagenation .pager .prev:before {left:12px;}
+.modal.search .pagenation .pager .next:before {left:10px;}
+.modal.search .pagenation ul {margin:0 12px;}
+.modal.search .pagenation ul li span,.modal.search .pagenation ul li a {width:30px; font-size:12px; line-height:30px;}
+
+/* 주소 */
+.modal.address .result_address {padding:10px 0; border-top:3px solid #333; border-bottom:1px solid #333;}
+.modal.address .result_address li {margin:5px 0;}
+.modal.address .result_address strong,.modal.address .result_address p {display:inline-block; font-size:14px; line-height:1.5em;}
+.modal.address .detail {margin-top:20px;}
+.modal.address .detail input[type="text"] {width:calc(100% - 115px);}
+.modal.address .detail button {width:110px; background:#00687f;}
+
+/* 학교 */
+.modal.school .result_wrap {margin-top:20px;}

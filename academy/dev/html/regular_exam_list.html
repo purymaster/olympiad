@@ -8,6 +8,7 @@
 	<title>올림피아드학원</title>
 
 	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
 	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
 	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
 	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
@@ -83,7 +84,7 @@
 										<div class="menu_btn">
 
 											<!-- [D] 로그인 전 -->
-											<a class="btn login" href="#">재원생 로그인</a>
+											<a class="btn login" href="#">로그인</a>
 											<!-- //[D] 로그인 전 -->
 
 											<!-- [D] 로그인 후 -->
@@ -106,7 +107,7 @@
 												<a href="#">올림피아드 소개</a>
 												<ul class="menu_2depth">
 													<li><a href="#">학원소개</a></li>
-													<li><a href="#">히스토리</a></li>
+													<!-- <li><a href="#">히스토리</a></li> -->
 													<li><a href="#">기업수상</a></li>
 													<li><a href="#">명예의전당</a></li>
 													<li><a href="#">전국캠퍼스</a></li>
@@ -149,7 +150,7 @@
 												</ul>
 											</li>
 											<li>
-												<a href="#">예약상담</a>
+												<a href="#">예약&amp;상담</a>
 												<ul class="menu_2depth">
 													<li><a href="#">입학안내</a></li>
 													<li><a href="#">상담신청</a></li>
@@ -176,11 +177,11 @@
 				</div>
 			</div>
 		</header>
-		<div class="sub_wrap campus_map">
-			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type4.png)" data-animation="">
+		<div class="sub_wrap exam_list">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type6.png)" data-animation="">
 				<div class="grid_container">
-					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">고등부</p>
-					<h2 data-animation="fadeInUp" data-delay="3">고등캠퍼스</h2>
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">예약&상담</p>
+					<h2 data-animation="fadeInUp" data-delay="3">입학안내</h2>
 				</div>
 				<div class="breadcrumb">
 					<ol>
@@ -189,7 +190,7 @@
 						<li>
 							<div class="select_form">
 								<button type="button">
-									<span>고등부</span>
+									<span>예약&상담</span>
 								</button>
 								<ul>
 
@@ -214,7 +215,7 @@
 									</li>
 
 									<li>
-										<a href="#none">예약상담</a>
+										<a href="#none">예약&상담</a>
 									</li>
 
 								</ul>
@@ -225,24 +226,20 @@
 						<li>
 							<div class="select_form">
 								<button type="button">
-									<span>고등캠퍼스</span>
+									<span>입학안내</span>
 								</button>
 								<ul>
 
 									<li>
-										<a href="#none">고등부 특징</a>
+										<a href="#none">입학안내</a>
 									</li>
 
 									<li>
-										<a href="#none">학습프로그램</a>
+										<a href="#none">상담신청</a>
 									</li>
 
 									<li>
-										<a href="#none">대입정보센터</a>
-									</li>
-
-									<li>
-										<a href="#none">고등캠퍼스</a>
+										<a href="#none">설명회신청</a>
 									</li>
 
 								</ul>
@@ -266,9 +263,11 @@
 							<ul>
 								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
 
-								<li><a href="#">공지사항</a></li>
+								<li><a href="#">정기 입학고사</a></li>
 
-								<li><a href="#">위치안내</a></li>
+								<li><a href="#">수시 입학고사</a></li>
+
+								<li><a href="#">신청 확인</a></li>
 
 							</ul>
 						</div>
@@ -276,8 +275,74 @@
 
 
 						<p class="main_tit">
-							<strong>위치안내</strong>
+							<strong>입학고사 신청</strong>
 						</p>
+						<p class="txt">
+							정기 입학고사 응시가 어려우시면 희망하시는 날짜로 <strong>수시 입학고사</strong>에서 신청해 주세요.
+						</p>
+
+						<div class="list_search">
+							<table>
+								<colgroup>
+									<col style="width:45px">
+									<col style="width:150px">
+									<col style="width:70px">
+									<col style="width:210px">
+									<col style="width:45px">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">
+											<label for="input_01">지역</label>
+										</th>
+										<td>
+											<div class="select_form">
+												<button type="button" id="input_01">
+													<span>지역</span>
+												</button>
+												<ul>
+													<li>
+														<a href="#none">서울특별시</a>
+													</li>
+													<li>
+														<a href="#none">제주특별자치도</a>
+													</li>
+												</ul>
+											</div>
+										</td>
+										<th scope="row">
+											<label for="input_02">캠퍼스명</label>
+										</th>
+										<td>
+											<div class="select_form">
+												<button type="button" id="input_02">
+													<span>브랜드명</span>
+												</button>
+												<ul>
+													<li>
+														<a href="#none">올림피아드학원</a>
+													</li>
+													<li>
+														<a href="#none">올림피아드학원</a>
+													</li>
+												</ul>
+											</div>
+										</td>
+										<th scope="row">
+											<label for="input_03">검색</label>
+										</th>
+										<td>
+											<div class="search_box">
+												<input type="text" id="input_03">
+												<button type="button"><span>검색</span></button>
+												<button type="button"><span>초기화</span></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 				<!-- //서브 페이지 상단 -->
@@ -285,107 +350,82 @@
 				<!-- 서브 페이지 내용 -->
 				<div class="sub_lower_wrap">
 					<div class="grid_container inner">
-						<div class="map_wrap">
-							<iframe src="" frameborder="0"></iframe>
-						</div>
 
 						<!-- 스태틱 페이지 컨텐츠 영역 -->
 						<div class="sub_cont_wrap">
-							<div class="campus_data">
-								<span class="tit">
-                                    올림피아드 학원 고등캠퍼스
-                                    <span class="address">주소가 누락되어있습니다.</span>
-								</span>
-								<div class="board_list">
-									<table>
-										<colgroup>
-											<col style="width:12%;">
-											<col>
-										</colgroup>
-										<tbody>
-											<tr>
-												<th scope="row">
-													주소
-												</th>
-												<td>
-													주소가 누락되어있습니다.
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">
-													연락처
-												</th>
-												<td>
-													<a href="tel:031-381-7007">연락처도 누락</a>
-												</td>
-											</tr>
-											<!-- <tr>
-                                                <th scope="row">
-                                                    교통편
-                                                </th>
-                                                <td>
-                                                    <dl class="traffic">
-                                                        <dt>
-                                                            <span class="hidden">각 교통수단 별 찾아오시는 방법</span>
-                                                        </dt>
-                                                        <dd>
-                                                            <div class="route">
-                                                                <strong class="transit">지하철</strong>
-                                                                <ol>
-                                                                    <li>2호선, 구의역 하차</li>
-                                                                    <li>4번 출구</li>
-                                                                    <li>자양사거리</li>
-                                                                    <li>잠실대교 방향</li>
-                                                                    <li>혜민간호학원 건물 6층</li>
-                                                                </ol>
-                                                            </div>
-                                                        </dd>
-                                                        <dd>
-                                                            <div class="route bus">
-                                                                <strong class="transit">버스</strong>
-                                                                <ol>
-                                                                    <li>2222번, 3220번 버스 : </li>
-                                                                    <li>건대역</li>
-                                                                    <li>건국대학교 앞</li>
-                                                                    <li>자양초등학교</li>
-                                                                    <li>자양사거리(하차)</li>
-                                                                    <li>잠실대교방면 50m</li>
-                                                                </ol>
-                                                                <ol>
-                                                                    <li>1112번 버스 : </li>
-                                                                    <li>석촌호수</li>
-                                                                    <li>잠실역</li>
-                                                                    <li>구의역(하차)</li>
-                                                                    <li>잠실대교방면 100m</li>
-                                                                </ol>
-                                                                <ol>
-                                                                    <li>1650번 버스 : </li>
-                                                                    <li>강변역(테크노마트)</li>
-                                                                    <li>구의역(하차)</li>
-                                                                    <li>잠실대교 방면 100m</li>
-                                                                </ol>
-                                                            </div>
-                                                        </dd>
-                                                        <dd>
-                                                            <div class="route">
-                                                                <strong class="transit">자동차</strong>
-                                                                <ol>
-                                                                    <li>건대역에서 구의역 방면으로 직진</li>
-                                                                    <li>자양사거리</li>
-                                                                    <li>구의역 방면 건널목 지나 우회전</li>
-                                                                    <li>잠실대교 방향</li>
-                                                                    <li>50m 직진</li>
-                                                                    <li>혜민간호학원 건물 6층</li>
-                                                                </ol>
-                                                            </div>
-                                                        </dd>
-                                                    </dl>
-                                                </td>
-                                            </tr> -->
-										</tbody>
-									</table>
-								</div>
+
+							<!-- 정기 입학고사 리스트 -->
+							<div class="board_list">
+								<table>
+									<caption>정기 입학고사 리스트</caption>
+									<colgroup>
+										<col style="width:10%;">
+										<col style="width:12%;">
+										<col>
+										<col style="width:10%;">
+										<col style="width:10%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">지역</th>
+											<th scope="col">캠퍼스명</th>
+											<th scope="col">제목</th>
+											<th scope="col">대상</th>
+											<th scope="col">신청</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="legion">서울</td>
+											<td class="campus">동대문캠퍼스</td>
+											<td class="tit">
+												<a href="#">
+													2019 입시고사 레벨테스트
+												</a>
+											</td>
+											<td class="target">고1</td>
+											<td>
+												<a href="#" class="btn on">신청접수</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="legion">서울</td>
+											<td class="campus">동대문캠퍼스</td>
+											<td class="tit">
+												<a href="#">
+													2019 입시고사 레벨테스트
+												</a>
+											</td>
+											<td class="target">고1</td>
+											<td>
+												<a href="#" class="btn deadline">마감임박</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="legion">서울</td>
+											<td class="campus">동대문캠퍼스</td>
+											<td class="tit">
+												<a href="#">
+													2019 입시고사 레벨테스트
+												</a>
+											</td>
+											<td class="target">고1</td>
+											<td>
+												<span class="btn off">마감</span>
+											</td>
+										</tr>
+										<!-- <tr>
+                                            <td colspan="5">현재 진행중인 정기 입학고사가 없습니다.</td>
+                                        </tr> -->
+									</tbody>
+								</table>
 							</div>
+							<!-- //정기 입학고사 리스트 -->
+
+							<div class="btn_wrap">
+								<a href="#">수시 입학고사 신청</a>
+							</div>
+
 						</div>
 						<!-- //스태틱 페이지 컨텐츠 영역 -->
 
@@ -399,8 +439,8 @@
 			<div class="grid_container">
 				<div class="footer_upper">
 					<ul class="bottom_menu">
-						<li><a href="#">올림피아드 소개</a></li>
-						<li><a href="#">찾아오시는길</a></li>
+						<!-- <li><a href="#">올림피아드 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
 						<li><a href="#">사이트맵</a></li>
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
@@ -427,7 +467,7 @@
 						<address>
 							<span class="hidden">회사정보</span>
 							<ul class="corp">
-								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
 								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
 								<li>대표 : 양환주</li>
 								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
@@ -435,6 +475,9 @@
 							<ul>
 								<li>사업자등록번호 : 206-81-24574</li>
 								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
 							</ul>
 							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
 						</address>
@@ -455,7 +498,7 @@
 				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
 				<li class="counsel pc">
 					<span class="tit">상담문의</span>
-					<span class="phone">1899-0949</span>
+					<!-- <span class="phone">1899-0949</span> -->
 					<span class="date">평일 10:00~19:00</span>
 				</li>
 			</ul>

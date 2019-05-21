@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>올림피아드학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="수학이 즐거운 올림피아드">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">GLEC</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+
+										<div class="menu_btn">
+
+											<!-- [D] 로그인 전 -->
+											<a class="btn login" href="#">로그인</a>
+											<!-- //[D] 로그인 전 -->
+
+											<!-- [D] 로그인 후 -->
+											<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+											<!-- [D] 직원일 경우 관리자 + 로그아웃 -->
+											<!-- <a class="btn study" href="#">재원생 학습</a> -->
+											<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+											<!-- <a class="btn logout" href="#">로그아웃</a> -->
+											<!-- //[D] 로그인 후 -->
+
+										</div>
+
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">올림피아드 소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">학원소개</a></li>
+													<!-- <li><a href="#">히스토리</a></li> -->
+													<li><a href="#">기업수상</a></li>
+													<li><a href="#">명예의전당</a></li>
+													<li><a href="#">전국캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">초/중등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">초등수학</a></li>
+													<li><a href="#">중등수학</a></li>
+													<li><a href="#">초/중 캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">영재센터</a>
+												<ul class="menu_2depth">
+													<li><a href="#">영재센터 소개</a></li>
+													<li><a href="#">광진 영재센터</a></li>
+													<li><a href="#">대치 영재센터</a></li>
+													<li><a href="#">중계 영재센터</a></li>
+													<li><a href="#">평촌 영재센터</a></li>
+													<li><a href="#">상위 1%정보</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">고등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">고등부 특징</a></li>
+													<li><a href="#">학습프로그램</a></li>
+													<li><a href="#">대입정보센터</a></li>
+													<li><a href="#">고등캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">예약&amp;상담</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학안내</a></li>
+													<li><a href="#">상담신청</a></li>
+													<li><a href="#">설명회신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap campus_03_program">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type3.png)" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">영재센터</p>
+					<h2 data-animation="fadeInUp" data-delay="3">중계 영재센터</h2>
+				</div>
+				<div class="breadcrumb">
+					<ol>
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>영재센터</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">올림피아드 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">초/중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">고등부</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+									<li>
+										<a href="#none">예약&상담</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>중계 영재센터</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">영재센터 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">광진 영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">대치 영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">중계 영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">평촌 영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">상위 1%정보</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ol>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+
+
+						<!-- 서브 페이지 상단 탭메뉴 -->
+						<div class="tab_menu">
+							<ul>
+								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+								<li><a href="#">프로그램</a></li>
+
+								<li><a href="#">공지사항</a></li>
+
+								<li><a href="#">위치안내</a></li>
+
+							</ul>
+						</div>
+						<!-- //서브 페이지 상단 탭메뉴 -->
+
+
+						<p class="main_tit">
+							영재학교, 과학고 입시와 올림피아드 경시를 위한 <br>
+							<strong>시기별, 단겨별 최적화된 프로그램을 제공합니다.</strong>
+						</p>
+
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">수학&amp;과학 연합 시스템</h3>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<ul class="txt_list type1">
+								<li>초등학교 5학년부터 중학교 3학년까지 수학, 과학 연합으로 학생 관리</li>
+								<li>중등, 고등과정 및 경시과정에 대한 완벽한 이론 이해 및 문제 해결능력 함양</li>
+								<li>초등 5학년부터 과학이론수업과 실험수업을 병행하여 어렸을 때부터 과학도로서의 자세를 함양</li>
+								<li>중등, 고등학교 과정부터 올림피아드, 영재학교(자기소개서, 2차 지필, 3차 캠프), 과학고대비까지 완벽 대비</li>
+							</ul>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">5단계로 진행되는단계별 학습</h3>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<!-- 데이터 테이블 -->
+							<div class="data_table">
+								<table>
+									<colgroup>
+										<col style="width:11.5%">
+										<col style="width:15.5%">
+										<col style="width:36.5%">
+										<col style="width:36.5%">
+
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">대상학년</th>
+											<th scope="col">수학</th>
+											<th scope="col">과학</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1단계</th>
+											<td>학년심화</td>
+											<td>중등교과정 및 고등교과정</td>
+											<td>중등과학 기본 및 심화(물리, 화학)</td>
+										</tr>
+										<tr>
+											<th scope="row">2단계</th>
+											<td>올림1심화</td>
+											<td>고등교과정 및 KMO 기초 이론</td>
+											<td>고등과학 1과정(물리, 화학)<br>중등과학 심화(생명과학, 지구과학)</td>
+										</tr>
+										<tr>
+											<th scope="row">3단계</th>
+											<td>올림2응용</td>
+											<td>KMO 심화 이론</td>
+											<td>고등과학 1, 2과정(물화생지)<br>및 물리, 화학 올림피아드 대비</td>
+										</tr>
+										<tr>
+											<th scope="row">4단계</th>
+											<td>올림2응용</td>
+											<td>영재학교 대비 Final</td>
+											<td>영재학교 대비 Final</td>
+										</tr>
+										<tr>
+											<th scope="row">5단계</th>
+											<td>C/T</td>
+											<td>과학고 대비 Final</td>
+											<td>과학고 대비 Final</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //데이터 테이블 -->
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap color_ro">
+					<div class="grid_container inner">
+						<div class="cont_ro ro_1st">
+							<h3 class="cont_ro_tit">1단계</h3>
+							<div class="two_col ">
+								<ul class="tit_borderbx_list">
+									<li>
+										<div class="tit_txt color_tur0">수학</div>
+										<div class="contbx">
+											<ul>
+												<li>
+													<ul class="txt_list type1">
+														<li>중등과정 : 기초 → 응용 → 심화 3단계 학습</li>
+														<li>고등과정 : 기본 학습 진행</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit_txt color_tur0">과학</div>
+										<div class="contbx">
+											<ul>
+												<li>
+													<ul class="txt_list type1">
+														<li>세페이드 물리, 화학 1F(중등기초), 2F(중등심화)</li>
+														<li>2단계에 걸친 중등 테마 완성</li>
+														<li>대단원 이후 단원 대표 실험 실시 <br>(실험 도구를 갖춘 과학실험실에서 진행)</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="three_col roundbx_col">
+								<ul class="tit_roundbx_list">
+									<li>
+										<dl>
+											<dt>개념강의</dt>
+											<dd><span class="txt_h">유투엠 시스템을 이용한 <br>개념 강의 시청 및 학습 노트 작성</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>문제풀이</dt>
+											<dd><span class="txt_h">개념 다지기, 유형 익히기 <br>단원 문제 풀이</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>토론 및 발표수업</dt>
+											<dd><span class="txt_h">창의 융합형 서술문제(창의력&토론마당) <br>조별 토론 및 개별 발표</span></dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cont_ro ro_2nd">
+							<h3 class="cont_ro_tit deco_tit">2단계</h3>
+							<div class="two_col">
+								<ul class="tit_borderbx_list">
+									<li>
+										<div class="tit_txt color_tur0">수학</div>
+										<div class="contbx">
+											<ul>
+												<li>
+													<ul class="txt_list type1">
+														<li>고등 응용 심화 학습 진행</li>
+														<li>경시 기초이론 실시 <br>(3-1 종료 후 조합, 3-2 종료 후 기하 시작)</li>
+														<li>고등수학(상) 종료 후 정수, 대수 시작</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit_txt color_tur0">과학</div>
+										<div class="contbx">
+											<ul>
+												<li>
+													<ul class="txt_list type1">
+														<li>세페이드 물리, 화학 3F(고등1과정)</li>
+														<li>세페이드 생명, 지구과학 2F(중등심화)</li>
+														<li>대단원 이후 단원 대표 실험 실시 <br>(실험 도구를 갖춘 과학실험실에서 진행)</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="two_col roundbx_col">
+								<ul class="tit_roundbx_list">
+									<li>
+										<dl>
+											<dt>월말평가 실시</dt>
+											<dd><span class="txt_h">매월 수학, 과학 월말평가를 실시하여 <br>학생들의 성취도를 파악(성적표 발송)</span>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>올림피아드 대비</dt>
+											<dd><span class="txt_h">수학, 과학 올림피아드 기초 과정 시작</span></dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cont_ro ro_3rd">
+							<h3 class="cont_ro_tit deco_tit">3단계(올림피아드 대비)</h3>
+							<div class="two_col">
+								<ul class="tit_borderbx_list">
+									<li>
+										<div class="tit_txt color_tur0">수학</div>
+										<div class="contbx">
+											<ul>
+												<li>
+													<ul class="txt_list type1">
+														<li>경시 심화 이론 및 실전 대비</li>
+														<li>정수, 대수, 기하, 조합 과목별 실전문제 풀이</li>
+														<li>미적분 수업 진행</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit_txt color_tur0">과학</div>
+										<div class="contbx">
+											<ul>
+												<li>
+													<ul class="txt_list type1">
+														<li>세페이드 물리, 화학, 생명과학, <br>지구과학 3F(고등1심화), 4F(고등2과정)</li>
+														<li>물리 화학 올림피아드 대비 수업 병행</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="four_col roundbx_col">
+								<ul class="tit_roundbx_list">
+									<li>
+										<dl>
+											<dt>월말평가 실시</dt>
+											<dd><span class="txt_h">매월 수학, 과학 월말평가를 <br>실시하여 학생들의 <br>성취도를 파악(성적표
+                                                    발송)</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>올림피아드 대비</dt>
+											<dd><span class="txt_h">수학, 과학 올림피아드 <br>Final 수업 실시</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>KMO 모의고사</dt>
+											<dd><span class="txt_h">최근 외국 기출문제를 번역하여 <br>최신 올림피아드 트랜드 반영 <br>실제 시간과 동일하게
+                                                    실시</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>올림피아드 대비</dt>
+											<dd><span class="txt_h">물리 : 기출문제 분석 및 <br>유사 문항으로 모의고사 진행 <br>화학 : 여름방학 기간
+                                                    월~금 매일 <br>모의고사 및 해제 수업 진행</span></dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cont_ro ro_4th">
+							<h3 class="cont_ro_tit deco_tit">4단계(올림피아드 대비)</h3>
+							<div class="two_col">
+								<ul class="tit_borderbx_list">
+									<li>
+										<div class="tit_txt color_tur0">수학</div>
+										<div class="contbx">
+											<ul>
+												<li>
+													<ul class="txt_list type1">
+														<li>국내 및 해외 문제 분석 및 번역</li>
+														<li>자체 개발한 정수, 대수, 기하, 조합 창의 교재 사용</li>
+														<li>중등교과 초급, 중급, 고급 난이도별 수업 진행</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit_txt color_tur0">과학</div>
+										<div class="contbx">
+											<ul>
+												<li>
+													<ul class="txt_list type1">
+														<li>물화생지 테마별 개념 설명 및 문제 풀이</li>
+														<li>중등 심화부터 고등 심화까지 총정리행</li>
+														<li>실생활 관련 창의 융합형 문제 개발 및 풀이</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="four_col roundbx_col">
+								<ul class="tit_roundbx_list">
+									<li>
+										<dl>
+											<dt>영재학교 모의고사</dt>
+											<dd><span class="txt_h">매주 수학, 과학 자체 모의고사를 <br>실시하여 학생들의 현 위치 파악 및 <br>부족한
+                                                    부분을 분석하여 보완 실시. <br>올림피아드 영재센터 <br>연합 모의고사 3회 실시</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>영재학교 기출문제</dt>
+											<dd><span class="txt_h">겨울방학 수학 과학 영재학교 <br>기출문제 풀이 특강 수업 진행</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>자기소개서 대비</dt>
+											<dd><span class="txt_h">개별 상담을 통하여 <br>지원학교 선정. <br>수학, 과학 선생님 2인 1조
+                                                    <br>자기소개서 개별 첨삭 지도</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>물리, 화학 대회 모의고사</dt>
+											<dd><span class="txt_h">수학, 과학 심층 면접 대비 <br>과학 실험 및 실험설계 대비 <br>토론 및 개별 과제,
+                                                    조별 과제 대비 <br>(실제 영재학교에서 했던 수업 진행)</span></dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cont_ro ro_5th">
+							<h3 class="cont_ro_tit deco_tit">5단계(과학고 대비)</h3>
+							<div class="four_col roundbx_col">
+								<ul class="tit_roundbx_list">
+									<li>
+										<dl>
+											<dt>수학, 과학 연합 수업</dt>
+											<dd><span class="txt_h">소집 면접 대비 <br>수업 진행</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>자기소개서 대비</dt>
+											<dd><span class="txt_h">개별 상담을 통하여 <br>지원 과학고 선정. <br>수학, 과학 선생님 2인 1조
+                                                    <br>자기소개서 개별 첨삭 지도.</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>출석면담 대비</dt>
+											<dd><span class="txt_h">학생별 맞춤 질문지 개발 <br>(수학, 과학, 인성). <br>수학, 과학 선생님 2인 1조
+                                                    <br>개별 면접 진행.</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>소집면접 대지</dt>
+											<dd><span class="txt_h">최신 트랜드에 맞춘 <br>소집면접 문항 개발. <br>실제 시간과 동일한 구성으로
+                                                    <br>면접 진행.</span></dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">학습 관리 프로그램</h3>
+						</div>
+						<div class="deco_list_bx">
+							<ol class="deco_tit_list">
+								<li><span class="num_txt">1</span>
+									<dl>
+										<dt class="tit_txt color_tur0"><span>담임관리</span></dt>
+										<dd><span class="desc_txt">수학, 과학 반별 담임 선생님 배치(성적 및 생활관리 지도)</span></dd>
+									</dl>
+								</li>
+								<li><span class="num_txt">2</span>
+									<dl>
+										<dt class="tit_txt color_tur0"><span>동기부여 세미나</span></dt>
+										<dd><span class="desc_txt">영재센터 졸업생(대학입학자)들과의 만남을 통해 자신의 진로를 결정하고 학습에 대한 동기부여를 할
+                                                수 있는 시간 제시</span></dd>
+									</dl>
+								</li>
+								<li>
+									<dl><span class="num_txt">3</span>
+										<dt class="tit_txt color_blue0"><span>자기주도 학습</span></dt>
+										<dd><span class="desc_txt">마지막 수업은 당일 배운 내용 및 숙제, 오답체크 등을 통해 학습능률을 올리도록
+                                                유도</span></dd>
+									</dl>
+								</li>
+								<li><span class="num_txt">4</span>
+									<dl>
+										<dt class="tit_txt color_blue0"><span>월말평가 및 반배치고사</span></dt>
+										<dd><span class="desc_txt">매달 월말평가 및 3개월 단위로 반배치고사를 실시하여 과목별 성취도 체크(성적표
+                                                발송)</span></dd>
+									</dl>
+								</li>
+								<li><span class="num_txt">5</span>
+									<dl>
+										<dt class="tit_txt color_green0"><span>방학 프로그램</span></dt>
+										<dd><span class="desc_txt">오전 자기주도학습 및 반별 맞춤 특강 진행</span></dd>
+									</dl>
+								</li>
+							</ol>
+
+
+						</div>
+
+
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<!-- <li><a href="#">올림피아드 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+					</ul>
+					<div class="select_form">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="수학이 즐거운 올림피아드">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<li><a href="#">상담신청</a></li>
+				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<!-- [D] 로그인 한 회원에게 표시될 내용 -->
+				<li class="pc"><a href="#" target="_blank">재원생 학습</a></li>
+				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
+				<li class="counsel pc">
+					<span class="tit">상담문의</span>
+					<!-- <span class="phone">1899-0949</span> -->
+					<span class="date">평일 10:00~19:00</span>
+				</li>
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
+	</div>
+
+</body>
+
+</html>

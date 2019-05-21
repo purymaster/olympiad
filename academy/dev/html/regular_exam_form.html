@@ -84,7 +84,7 @@
 										<div class="menu_btn">
 
 											<!-- [D] 로그인 전 -->
-											<a class="btn login" href="#">재원생 로그인</a>
+											<a class="btn login" href="#">로그인</a>
 											<!-- //[D] 로그인 전 -->
 
 											<!-- [D] 로그인 후 -->
@@ -107,7 +107,7 @@
 												<a href="#">올림피아드 소개</a>
 												<ul class="menu_2depth">
 													<li><a href="#">학원소개</a></li>
-													<li><a href="#">히스토리</a></li>
+													<!-- <li><a href="#">히스토리</a></li> -->
 													<li><a href="#">기업수상</a></li>
 													<li><a href="#">명예의전당</a></li>
 													<li><a href="#">전국캠퍼스</a></li>
@@ -150,7 +150,7 @@
 												</ul>
 											</li>
 											<li>
-												<a href="#">예약상담</a>
+												<a href="#">예약&amp;상담</a>
 												<ul class="menu_2depth">
 													<li><a href="#">입학안내</a></li>
 													<li><a href="#">상담신청</a></li>
@@ -180,8 +180,8 @@
 		<div class="sub_wrap exam_form">
 			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type6.png)" data-animation="">
 				<div class="grid_container">
-					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">입학안내</p>
-					<h2 data-animation="fadeInUp" data-delay="3">예약&상담</h2>
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">예약&상담</p>
+					<h2 data-animation="fadeInUp" data-delay="3">입학안내</h2>
 				</div>
 				<div class="breadcrumb">
 					<ol>
@@ -349,7 +349,7 @@
 												<td>
 													<div class="search_box">
 														<input type="text" readonly="">
-														<button type="button" id="input_02"><span>검색</span></button>
+														<button type="button" id="input_02" class="open_modal" data-modal="school"><span>검색</span></button>
 													</div>
 												</td>
 											</tr>
@@ -392,7 +392,7 @@
 												<td colspan="3">
 													<div class="search_box">
 														<input type="text" readonly="">
-														<button type="button" id="input_05"><span>검색</span></button>
+														<button type="button" id="input_05" class="open_modal" data-modal="address"><span>검색</span></button>
 													</div>
 												</td>
 											</tr>
@@ -414,150 +414,6 @@
 									</table>
 									<!-- //입력폼 테이블 -->
 								</div>
-								<div class="form_list">
-									<p class="form_tit">연계설명회 신청 유/무</p>
-									<div class="radio_form">
-										<ul>
-											<li>
-												<input type="radio" id="radio_01" name="radio_n01" checked="">
-												<label for="radio_01">연계설명회 신청하겠습니다.</label>
-											</li>
-											<li>
-												<input type="radio" id="radio_02" name="radio_n01">
-												<label for="radio_02">연계설명회 신청하지 않겠습니다.</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="form_list select">
-									<p class="form_tit">연계설명회 선택</p>
-									<div class="radio_form">
-										<ul class="list">
-											<li>
-												<input type="radio" id="radio_03" name="radio_n02" checked="" data-type="con">
-												<label for="radio_03">2019 대입 입시 설명회 - 고등학교 3학년</label>
-												<span class="date">9999.99.99</span>
-												<div class="campus_info on">
-													<ul class="campus_list">
-														<li>광진</li>
-														<li>성동</li>
-														<li>동대문</li>
-														<li>중랑</li>
-														<li>대치영재센터</li>
-														<li>천호</li>
-														<li>잠실</li>
-														<li>수유</li>
-													</ul>
-													<div class="campus_link">
-														<div class="radio_form">
-															<ul>
-																<li>
-																	<input type="radio" id="radio_a01" name="radio_a01">
-																	<label for="radio_a01">광진캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_a02" name="radio_a01">
-																	<label for="radio_a02">성동캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_a03" name="radio_a01">
-																	<label for="radio_a03">동대문캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_a04" name="radio_a01">
-																	<label for="radio_a04">중랑캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_a05" name="radio_a01">
-																	<label for="radio_a05">대치영재센터 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_a06" name="radio_a01">
-																	<label for="radio_a06">천호캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_a07" name="radio_a01">
-																	<label for="radio_a07">잠실캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_a08" name="radio_a01">
-																	<label for="radio_a08">수유캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li>
-												<input type="radio" id="radio_04" name="radio_n02" data-type="con">
-												<label for="radio_04">2019 대입 입시 설명회 - 고등학교 3학년</label>
-												<span class="date">9999.99.99</span>
-												<div class="campus_info">
-													<ul class="campus_list">
-														<li>광진</li>
-														<li>성동</li>
-														<li>동대문</li>
-														<li>중랑</li>
-														<li>대치영재센터</li>
-													</ul>
-													<div class="campus_link">
-														<div class="radio_form">
-															<ul>
-																<li>
-																	<input type="radio" id="radio_b01" name="radio_b01">
-																	<label for="radio_b01">광진캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_b02" name="radio_b01">
-																	<label for="radio_b02">성동캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_b03" name="radio_b01">
-																	<label for="radio_b03">동대문캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_b04" name="radio_b01">
-																	<label for="radio_b04">중랑캠퍼스 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-																<li>
-																	<input type="radio" id="radio_b05" name="radio_b01">
-																	<label for="radio_b05">대치영재센터 - 99시99분</label>
-																	<button type="button" class="open_modal" data-modal="map_00">연락처 및 주소 확인</button>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-								<!-- [D] 설명회 리스트 제어 -->
-								<script>
-									$(function () {
-                                        var select_list = $('.form_list.select .list');
-
-                                        select_list.find('input[data-type="con"]').on('change', function () {
-                                            select_list.find('.campus_info').removeClass('on').find('input[type="radio"]').prop('checked', false);
-                                            $(this).siblings('.campus_info').addClass('on');
-                                        });
-                                    });
-                                </script>
-								<!-- //[D] 설명회 리스트 제어 -->
-
 								<div class="form_list root">
 									<p class="form_tit">알게된 경로</p>
 									<div class="radio_form">
@@ -606,7 +462,7 @@
                                             etc_input = $('.form_list.root').find('input[data-value="etc_input"]');
 
                                         radio.on('click', function () {
-                                            $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true)
+                                            $(this).data('value') === "etc" ? etc_input.prop("readonly", false).show() : etc_input.val("").prop("readonly", true).hide();
                                         });
                                     });
                                 </script>
@@ -1085,6 +941,282 @@
 								</div>
 								<!-- //지도 -->
 
+								<!-- 주소 -->
+								<div class="modal search address" id="address">
+									<span class="tit">주소검색</span>
+									<div class="search_box">
+										<input type="text" title="주소 검색어 입력">
+										<button type="button"><span>검색</span></button>
+									</div>
+
+									<!-- [D] 검색 전 안내문구 출력, 검색 후 삭제 -->
+									<!-- <div class="info">
+                <p class="txt">
+                    찾으시려는 <strong>도로명주소+건물번호/건물명</strong> 혹은 <strong>지번주소+번지수/건물명</strong>을
+                    입력해주세요.
+                </p>
+                <p class="ex">
+                    예) 도로명 : 불정로 432번길 / 지번 : 정자동 178-1, 대치동 현대아파트
+                </p>
+                <p class="warning">
+                    단, 도로명 혹은 동(읍/면/리)만 검색하시는 경우, 정확한 검색결과가 나오지 않을 수 있습니다.
+                </p>
+            </div> -->
+									<!-- //[D] 검색 전 안내문구 출력, 검색 후 삭제 -->
+
+									<!-- [D] 검색 후, 검색 결과 출력 -->
+									<div class="tab_menu">
+										<ul>
+											<li><button type="button">도로명주소(0건)</button></li>
+											<li><button type="button">지번주소(0건)</button></li>
+										</ul>
+									</div>
+
+									<!-- 검색 결과 -->
+									<div class="result_wrap">
+
+										<!-- 도로명 주소 -->
+										<div class="tab_view" style="display:none;">
+											<table class="address_list">
+												<colgroup>
+													<col>
+													<col style="width:100px;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">도로명주소</th>
+														<th scope="col">우편번호</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="addr">
+															<input type="radio" name="address_a" id="address_a01" class="hidden">
+															<label for="address_a01">
+																서울특별시 강남구 언주로 130길 18(논현동)
+															</label>
+														</td>
+														<td class="zip">
+															<label for="address_a01">
+																99999
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td class="addr">
+															<input type="radio" name="address_a" id="address_a02" class="hidden">
+															<label for="address_a02">
+																긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+															</label>
+														</td>
+														<td class="zip">
+															<label for="address_a02">
+																99999
+															</label>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- //도로명 주소 -->
+
+										<!-- 지번 주소 -->
+										<div class="tab_view" style="display:none;">
+											<table class="address_list">
+												<colgroup>
+													<col>
+													<col style="width:100px;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">지번주소</th>
+														<th scope="col">우편번호</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="addr">
+															<input type="radio" name="address_b" id="address_b01" class="hidden">
+															<label for="address_b01">
+																서울특별시 강남구 논현동
+															</label>
+														</td>
+														<td class="zip">
+															<label for="address_b01">
+																99999
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td class="addr">
+															<input type="radio" name="address_b" id="address_b02" class="hidden">
+															<label for="address_b02">
+																긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+															</label>
+														</td>
+														<td class="zip">
+															<label for="address_a02">
+																99999
+															</label>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- //지번 주소 -->
+
+										<!-- 페이징 -->
+										<div class="pagenation">
+											<div class="pager">
+												<a class="prev" href="#none">이전 페이지</a>
+												<ul>
+													<li>
+														<span>1</span>
+													</li>
+													<li>
+														<a href="#none">2</a>
+													</li>
+													<li>
+														<a href="#none">3</a>
+													</li>
+													<li>
+														<a href="#none">4</a>
+													</li>
+													<li>
+														<a href="#none">999</a>
+													</li>
+												</ul>
+												<a class="next" href="#none">다음 페이지</a>
+											</div>
+										</div>
+										<!-- //페이징 -->
+
+									</div>
+									<!-- //검색 결과 -->
+
+									<!-- //[D] 검색 후, 검색 결과 출력 -->
+
+									<!-- [D] 검색 결과에서 선택한 주소를 출력 -->
+									<div class="result_address">
+										<ul class="txt_list type1">
+											<li>
+												<strong>도로명주소</strong>
+												<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+											</li>
+											<li>
+												<strong>지번주소</strong>
+												<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+											</li>
+										</ul>
+									</div>
+									<!-- //[D] 검색 결과에서 선택한 주소를 출력 -->
+
+									<div class="search_box detail">
+										<input type="text" title="상세주소 입력" placeholder="상세주소를 입력해주세요.">
+										<button type="button"><span>주소 입력</span></button>
+									</div>
+
+									<button type="button" class="close" data-move="close">팝업닫기</button>
+								</div>
+								<!-- //주소 -->
+
+								<!-- 학교 -->
+								<div class="modal search school" id="school">
+									<span class="tit">학교검색</span>
+									<div class="search_box">
+										<input type="text" title="학교 검색어 입력">
+										<button type="button"><span>검색</span></button>
+									</div>
+
+									<!-- [D] 검색 후, 검색 결과 출력 -->
+									<div class="result_wrap">
+
+										<table class="address_list">
+											<colgroup>
+												<col style="width:80px;">
+												<col style="width:150px;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">지역</th>
+													<th scope="col">학교명</th>
+													<th scope="col">주소</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<input type="radio" name="school" id="school_01" class="hidden">
+														<label for="school_01">
+															서울
+														</label>
+													</td>
+													<td>
+														<label for="school_01">
+															리라초등학교
+														</label>
+													</td>
+													<td class="addr">
+														<label for="school_01">
+															서울특별시 강남구 언주로 130길 18(논현동)
+														</label>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="radio" name="school" id="school_02" class="hidden">
+														<label for="school_02">
+															서울
+														</label>
+													</td>
+													<td>
+														<label for="school_02">
+															경화여자EnglishBusiness고등학교
+														</label>
+													</td>
+													<td class="addr">
+														<label for="school_02">
+															서울특별시 강남구 언주로 130길 18(논현동)
+														</label>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<!-- 페이징 -->
+										<div class="pagenation">
+											<div class="pager">
+												<a class="prev" href="#none">이전 페이지</a>
+												<ul>
+													<li>
+														<span>1</span>
+													</li>
+													<li>
+														<a href="#none">2</a>
+													</li>
+													<li>
+														<a href="#none">3</a>
+													</li>
+													<li>
+														<a href="#none">4</a>
+													</li>
+													<li>
+														<a href="#none">999</a>
+													</li>
+												</ul>
+												<a class="next" href="#none">다음 페이지</a>
+											</div>
+										</div>
+										<!-- //페이징 -->
+
+									</div>
+									<!-- //[D] 검색 후, 검색 결과 출력 -->
+
+									<button type="button" class="close" data-move="close">팝업닫기</button>
+								</div>
+								<!-- //학교 -->
+
 							</div>
 							<!-- //모달 팝업창 -->
 
@@ -1101,8 +1233,8 @@
 			<div class="grid_container">
 				<div class="footer_upper">
 					<ul class="bottom_menu">
-						<li><a href="#">올림피아드 소개</a></li>
-						<li><a href="#">찾아오시는길</a></li>
+						<!-- <li><a href="#">올림피아드 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
 						<li><a href="#">사이트맵</a></li>
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
@@ -1129,7 +1261,7 @@
 						<address>
 							<span class="hidden">회사정보</span>
 							<ul class="corp">
-								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
 								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
 								<li>대표 : 양환주</li>
 								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
@@ -1137,6 +1269,9 @@
 							<ul>
 								<li>사업자등록번호 : 206-81-24574</li>
 								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
 							</ul>
 							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
 						</address>
@@ -1157,7 +1292,7 @@
 				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
 				<li class="counsel pc">
 					<span class="tit">상담문의</span>
-					<span class="phone">1899-0949</span>
+					<!-- <span class="phone">1899-0949</span> -->
 					<span class="date">평일 10:00~19:00</span>
 				</li>
 			</ul>

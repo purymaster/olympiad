@@ -8,6 +8,7 @@
 	<title>올림피아드학원</title>
 
 	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
 	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
 	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
 	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
@@ -83,7 +84,7 @@
 										<div class="menu_btn">
 
 											<!-- [D] 로그인 전 -->
-											<a class="btn login" href="#">재원생 로그인</a>
+											<a class="btn login" href="#">로그인</a>
 											<!-- //[D] 로그인 전 -->
 
 											<!-- [D] 로그인 후 -->
@@ -106,7 +107,7 @@
 												<a href="#">올림피아드 소개</a>
 												<ul class="menu_2depth">
 													<li><a href="#">학원소개</a></li>
-													<li><a href="#">히스토리</a></li>
+													<!-- <li><a href="#">히스토리</a></li> -->
 													<li><a href="#">기업수상</a></li>
 													<li><a href="#">명예의전당</a></li>
 													<li><a href="#">전국캠퍼스</a></li>
@@ -149,7 +150,7 @@
 												</ul>
 											</li>
 											<li>
-												<a href="#">예약상담</a>
+												<a href="#">예약&amp;상담</a>
 												<ul class="menu_2depth">
 													<li><a href="#">입학안내</a></li>
 													<li><a href="#">상담신청</a></li>
@@ -180,7 +181,7 @@
 			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type1.png)" data-animation="">
 				<div class="grid_container">
 					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">올림피아드 소개</p>
-					<h2 data-animation="fadeInUp" data-delay="3">전국 캠퍼스</h2>
+					<h2 data-animation="fadeInUp" data-delay="3">캠퍼스 안내</h2>
 				</div>
 				<div class="breadcrumb">
 					<ol>
@@ -214,7 +215,7 @@
 									</li>
 
 									<li>
-										<a href="#none">예약상담</a>
+										<a href="#none">예약&상담</a>
 									</li>
 
 								</ul>
@@ -225,16 +226,12 @@
 						<li>
 							<div class="select_form">
 								<button type="button">
-									<span>전국 캠퍼스</span>
+									<span>캠퍼스 안내</span>
 								</button>
 								<ul>
 
 									<li>
 										<a href="#none">학원소개</a>
-									</li>
-
-									<li>
-										<a href="#none">히스토리</a>
 									</li>
 
 									<li>
@@ -246,7 +243,7 @@
 									</li>
 
 									<li>
-										<a href="#none">전국 캠퍼스</a>
+										<a href="#none">캠퍼스 안내</a>
 									</li>
 
 								</ul>
@@ -266,148 +263,57 @@
 						<p class="main_tit">
 							<strong>올림피아드 캠퍼스 안내</strong>
 						</p>
-
-						<!-- [D] 지역 버튼 클릭시 화면 동작 스크립트 -->
-						<script>
-							$(function () {
-                                $('.campus_find button').on('click', function () {
-                                    $(this).parents('li').hasClass('on') ?
-                                        $('.campus_find li').removeClass('on') :
-                                        ($('.campus_find li').removeClass('on'),
-                                            $(this).parents('li').addClass('on'));
-                                });
-                            });
-                        </script>
-						<!-- //[D] 지역 버튼 클릭시 화면 동작 스크립트 -->
+						<p class="txt">
+							찾으시는 지역의 캠퍼스를 확인하실 수 있습니다.
+						</p>
 
 						<div class="campus">
 
-							<!-- 지역 표시 영역 -->
-							<div class="campus_map_wrap">
-								<div class="campus_map">
-									<div class="area">
-										<ul>
-											<!-- [D] li에 on 클래스 부여시 지역 표시 -->
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>서울</span></button>
-												<img src="../img/img/img_maparea_01.png" alt="서울특별시 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>부산</span></button>
-												<img src="../img/img/img_maparea_02.png" alt="부산광역시 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>대구</span></button>
-												<img src="../img/img/img_maparea_03.png" alt="대구광역시 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>인천</span></button>
-												<img src="../img/img/img_maparea_04.png" alt="인천광역시 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>광주</span></button>
-												<img src="../img/img/img_maparea_05.png" alt="광주광역시 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>대전</span></button>
-												<img src="../img/img/img_maparea_06.png" alt="대전광역시 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>울산</span></button>
-												<img src="../img/img/img_maparea_07.png" alt="울산광역시 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>세종</span></button>
-												<img src="../img/img/img_maparea_08.png" alt="세종특별자치시 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>경기도</span></button>
-												<img src="../img/img/img_maparea_09.png" alt="경기도 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>강원도</span></button>
-												<img src="../img/img/img_maparea_10.png" alt="강원도 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>충청북도</span></button>
-												<img src="../img/img/img_maparea_11.png" alt="충청북도 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>충청남도</span></button>
-												<img src="../img/img/img_maparea_12.png" alt="충청남도 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>전라북도</span></button>
-												<img src="../img/img/img_maparea_13.png" alt="전라북도 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>전라남도</span></button>
-												<img src="../img/img/img_maparea_14.png" alt="전라남도 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>경상북도</span></button>
-												<img src="../img/img/img_maparea_15.png" alt="경상북도 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>경상남도</span></button>
-												<img src="../img/img/img_maparea_16.png" alt="경상남도 지역">
-											</li>
-											<li>
-												<button data-animation="fadeInUp" data-delay="0" type="button"><span>제주도</span></button>
-												<img src="../img/img/img_maparea_17.png" alt="제주특별자치도 지역">
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- //지역 표시 영역 -->
-
 							<!-- 지역 검색 영역 -->
 							<div class="campus_option_wrap">
-								<p class="tit">찾으시는 지역의 캠퍼스를<br> 확인하실 수 있습니다.</p>
-									<div class="campus_option">
-										<div class="option_wrap">
-											<div class="select_form">
-												<button type="button">
-													<span>시/도 선택</span>
-												</button>
-												<ul>
-													<li><a href="#none">서울특별시</a></li>
-													<li><a href="#none">부산광역시</a></li>
-													<li><a href="#none">대구광역시</a></li>
-													<li><a href="#none">인천광역시</a></li>
-													<li><a href="#none">광주광역시</a></li>
-													<li><a href="#none">대전광역시</a></li>
-													<li><a href="#none">울산광역시</a></li>
-													<li><a href="#none">세종특별자치시</a></li>
-													<li><a href="#none">경기도</a></li>
-													<li><a href="#none">강원도</a></li>
-													<li><a href="#none">충청북도</a></li>
-													<li><a href="#none">충청남도</a></li>
-													<li><a href="#none">전라북도</a></li>
-													<li><a href="#none">전라남도</a></li>
-													<li><a href="#none">경상북도</a></li>
-													<li><a href="#none">경상남도</a></li>
-													<li><a href="#none">제주특별자치도</a></li>
-												</ul>
-											</div>
-											<div class="select_form">
-												<button type="button">
-													<span>시/군/구 선택</span>
-												</button>
-												<ul>
-													<li><a href="#none">A구</a></li>
-													<li><a href="#none">B구</a></li>
-													<li><a href="#none">C구</a></li>
-												</ul>
-											</div>
+								<div class="campus_option">
+									<div class="option_wrap">
+										<div class="select_form">
+											<button type="button">
+												<span>시/도 선택</span>
+											</button>
+											<ul>
+												<li><a href="#none">서울특별시</a></li>
+												<li><a href="#none">부산광역시</a></li>
+												<li><a href="#none">대구광역시</a></li>
+												<li><a href="#none">인천광역시</a></li>
+												<li><a href="#none">광주광역시</a></li>
+												<li><a href="#none">대전광역시</a></li>
+												<li><a href="#none">울산광역시</a></li>
+												<li><a href="#none">세종특별자치시</a></li>
+												<li><a href="#none">경기도</a></li>
+												<li><a href="#none">강원도</a></li>
+												<li><a href="#none">충청북도</a></li>
+												<li><a href="#none">충청남도</a></li>
+												<li><a href="#none">전라북도</a></li>
+												<li><a href="#none">전라남도</a></li>
+												<li><a href="#none">경상북도</a></li>
+												<li><a href="#none">경상남도</a></li>
+												<li><a href="#none">제주특별자치도</a></li>
+											</ul>
 										</div>
-										<div class="search_wrap">
-											<input type="text" title="검색어 입력" placeholder="검색어를 입력해주세요.">
-											<button type="submit">검색</button>
+										<div class="select_form">
+											<button type="button">
+												<span>시/군/구 선택</span>
+											</button>
+											<ul>
+												<li><a href="#none">A구</a></li>
+												<li><a href="#none">B구</a></li>
+												<li><a href="#none">C구</a></li>
+											</ul>
 										</div>
-
 									</div>
+									<div class="search_wrap">
+										<input type="text" title="검색어 입력" placeholder="검색어를 입력해주세요.">
+										<button type="submit">검색</button>
+									</div>
+
+								</div>
 							</div>
 							<!-- //지역 검색 영역 -->
 
@@ -433,23 +339,19 @@
 										</li>
 										<li>
 											<input type="checkbox" name="campus_cate" id="cate_1">
-											<label for="cate_1">울림피아드 학원</label>
+											<label for="cate_1">올림피아드학원</label>
 										</li>
 										<li>
 											<input type="checkbox" name="campus_cate" id="cate_2">
-											<label for="cate_2">유투엠</label>
+											<label for="cate_2">GLEC어학원</label>
 										</li>
 										<li>
 											<input type="checkbox" name="campus_cate" id="cate_3">
-											<label for="cate_3">GLEC</label>
+											<label for="cate_3">영재센터</label>
 										</li>
 										<li>
 											<input type="checkbox" name="campus_cate" id="cate_4">
-											<label for="cate_4">하베르만</label>
-										</li>
-										<li>
-											<input type="checkbox" name="campus_cate" id="cate_5">
-											<label for="cate_5">본사</label>
+											<label for="cate_4">고등부</label>
 										</li>
 									</ul>
 								</div>
@@ -485,8 +387,7 @@
 												<div class="map_view">
 
 													<!-- 네이버 지도 API 삽입 영역 -->
-													<!-- <iframe src="" frameborder="0"></iframe> -->
-													<img src="https://picsum.photos/980/360/?random" alt="지도">
+													<iframe src="" frameborder="0"></iframe>
 													<!-- //네이버 지도 API 삽입 영역 -->
 
 												</div>
@@ -502,8 +403,7 @@
 												<div class="map_view">
 
 													<!-- 네이버 지도 API 삽입 영역 -->
-													<!-- <iframe src="" frameborder="0"></iframe> -->
-													<img src="https://picsum.photos/980/360/?random" alt="지도">
+													<iframe src="" frameborder="0"></iframe>
 													<!-- //네이버 지도 API 삽입 영역 -->
 
 												</div>
@@ -530,8 +430,8 @@
 			<div class="grid_container">
 				<div class="footer_upper">
 					<ul class="bottom_menu">
-						<li><a href="#">올림피아드 소개</a></li>
-						<li><a href="#">찾아오시는길</a></li>
+						<!-- <li><a href="#">올림피아드 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
 						<li><a href="#">사이트맵</a></li>
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
@@ -558,7 +458,7 @@
 						<address>
 							<span class="hidden">회사정보</span>
 							<ul class="corp">
-								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
 								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
 								<li>대표 : 양환주</li>
 								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
@@ -566,6 +466,9 @@
 							<ul>
 								<li>사업자등록번호 : 206-81-24574</li>
 								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
 							</ul>
 							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
 						</address>
@@ -586,7 +489,7 @@
 				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
 				<li class="counsel pc">
 					<span class="tit">상담문의</span>
-					<span class="phone">1899-0949</span>
+					<!-- <span class="phone">1899-0949</span> -->
 					<span class="date">평일 10:00~19:00</span>
 				</li>
 			</ul>

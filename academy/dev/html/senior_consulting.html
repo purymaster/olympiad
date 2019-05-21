@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>올림피아드학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="수학이 즐거운 올림피아드">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">GLEC</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+
+										<div class="menu_btn">
+
+											<!-- [D] 로그인 전 -->
+											<a class="btn login" href="#">로그인</a>
+											<!-- //[D] 로그인 전 -->
+
+											<!-- [D] 로그인 후 -->
+											<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+											<!-- [D] 직원일 경우 관리자 + 로그아웃 -->
+											<!-- <a class="btn study" href="#">재원생 학습</a> -->
+											<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+											<!-- <a class="btn logout" href="#">로그아웃</a> -->
+											<!-- //[D] 로그인 후 -->
+
+										</div>
+
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">올림피아드 소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">학원소개</a></li>
+													<!-- <li><a href="#">히스토리</a></li> -->
+													<li><a href="#">기업수상</a></li>
+													<li><a href="#">명예의전당</a></li>
+													<li><a href="#">전국캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">초/중등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">초등수학</a></li>
+													<li><a href="#">중등수학</a></li>
+													<li><a href="#">초/중 캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">영재센터</a>
+												<ul class="menu_2depth">
+													<li><a href="#">영재센터 소개</a></li>
+													<li><a href="#">광진 영재센터</a></li>
+													<li><a href="#">대치 영재센터</a></li>
+													<li><a href="#">중계 영재센터</a></li>
+													<li><a href="#">평촌 영재센터</a></li>
+													<li><a href="#">상위 1%정보</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">고등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">고등부 특징</a></li>
+													<li><a href="#">학습프로그램</a></li>
+													<li><a href="#">대입정보센터</a></li>
+													<li><a href="#">고등캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">예약&amp;상담</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학안내</a></li>
+													<li><a href="#">상담신청</a></li>
+													<li><a href="#">설명회신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap hce_info">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type4.png)" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">고등부</p>
+					<h2 data-animation="fadeInUp" data-delay="3">대입정보센터</h2>
+				</div>
+				<div class="breadcrumb">
+					<ol>
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>고등부</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">올림피아드 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">초/중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">영재센터</a>
+									</li>
+
+									<li>
+										<a href="#none">고등부</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+									<li>
+										<a href="#none">예약&상담</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>대입정보센터</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">고등부 특징</a>
+									</li>
+
+									<li>
+										<a href="#none">학습프로그램</a>
+									</li>
+
+									<li>
+										<a href="#none">대입정보센터</a>
+									</li>
+
+									<li>
+										<a href="#none">고등캠퍼스</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ol>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+
+
+						<!-- 서브 페이지 상단 탭메뉴 -->
+						<div class="tab_menu">
+							<ul>
+								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+								<li><a href="#">대입컨설팅</a></li>
+
+								<li><a href="#">합격수기</a></li>
+
+								<li><a href="#">대입실적</a></li>
+
+							</ul>
+						</div>
+						<!-- //서브 페이지 상단 탭메뉴 -->
+
+
+						<p class="main_tit">
+							<strong>합격수기</strong>
+						</p>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">학년별 목표지향</h3>
+							<p data-animation="fadeInUp" data-delay="2" class="txt_info"><strong>고등부 재원생 무료 1:1
+                                    컨설팅</strong> <br>1, 2학년 여름/겨울방학, 3학년 수시(8월)/정시(12월) 정기 컨설팅</p>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="three_col">
+								<ul class="tit_borderbx_list">
+									<li>
+										<div class="tit_txt color_tur1">고1</div>
+										<ul>
+											<li>진로 및 대입 로드맵</li>
+											<li>학생부 관리</li>
+											<li>내신 및 모의고사 대비</li>
+										</ul>
+									</li>
+									<li>
+										<div class="tit_txt color_tur2">고2</div>
+										<ul>
+											<li>1학년 평가 및 재설정</li>
+											<li>진로 관련 학생부 관리</li>
+											<li>입시 전략 수립</li>
+										</ul>
+									</li>
+									<li>
+										<div class="tit_txt color_tur3">고3</div>
+										<ul>
+											<li>전략적 선택과 판단</li>
+											<li>장점 강화, 취약점 보완</li>
+											<li>수시/정시 컨설팅</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap hce_info_wrap">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap white">
+							<!-- white 클래스 추가시 텍스트 흰색 변경 -->
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">컨설팅 종류 및 내용</h3>
+							<div class="three_col other_space">
+								<ul class="tit_dgraybx_list">
+									<li>
+										<h4 class="decoration_title"><span class="text">진로 컨설팅</span></h4>
+										<ul class="dgray_bx">
+											<li class="bullet_list"><span class="bullet_h">▪︎</span> <span
+                                                    class="txt_h">학생 성향 파악과 심층 상담을 통해 목표설정</span></li>
+											<li class="bullet_list"><span class="bullet_h">▪︎</span> <span
+                                                    class="txt_h">선정된 직업군과 학과에 필요한 학습 활동과 비교과 활동 제시</span></li>
+										</ul>
+									</li>
+									<li>
+										<h4 class="decoration_title"><span class="text">학교생활 기록부</span></h4>
+										<ul class="dgray_bx">
+											<li class="bullet_list"><span class="bullet_h">▪︎</span> <span
+                                                    class="txt_h">컨설팅 진행 시점 기준 개인 생활기록부 장단점 분석을 통해 적절한 방향 제시</span></li>
+											<li class="bullet_list"><span class="bullet_h">▪︎</span> <span
+                                                    class="txt_h">학생부 성적과 기재된 내용을 바탕으로 목표대학, 학과에 대한 전략 제시</span></li>
+										</ul>
+									</li>
+									<li>
+										<h4 class="decoration_title"><span class="text">전국연합학력평가</span></h4>
+										<ul class="dgray_bx">
+											<li class="bullet_list"><span class="bullet_h">▪︎</span> <span
+                                                    class="txt_h">학력평가 결과를 과목별로 세부영역까지 분석</span></li>
+											<li class="bullet_list"><span class="bullet_h">▪︎</span> <span
+                                                    class="txt_h">학습계획 및 학습영역 배분을 통해 수시 및 정시전략 수립</span></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<!-- 스태틱 페이지 컨텐츠 영역 -->
+					<div class="grid_container inner">
+						<div class="sub_cont_wrap">
+							<div class="tb_border_bx">
+								<ul class="process_list">
+									<li>
+										<div class="oval_bx color_tur1">신청</div>
+										<ul>
+											<li class="bullet_list">
+												<span class="bullet_h">▪︎</span>
+												<span class="txt_h">
+                                                    연 2회(여름/겨울방학) 각 캠퍼스 담당선생님을 통해 신청서를 제출한 학생에 한해 진행
+                                                </span>
+											</li>
+											<li class="bullet_list">
+												<span class="bullet_h">▪︎</span>
+												<span class="txt_h">
+                                                    1:1 대면컨설팅/서면컨설팅 가운데
+                                                    택1(부모님 동반 가능)
+                                                </span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<div class="oval_bx color_tur1">컨설팅</div>
+										<ul>
+											<li class="bullet_list">
+												<span class="bullet_h">▪︎</span>
+												<span class="txt_h">
+                                                    사전 제출한 컨설팅 서류(신청서 및
+                                                    성적표)의 주요 질의 내용에 따라 개별적으로 진행
+                                                </span>
+											</li>
+											<li class="bullet_list">
+												<span class="bullet_h">▪︎</span>
+												<span class="txt_h">
+                                                    진로·진학/ 학생부/ 전국학력평가 3분야로 진행(60분 기준)
+                                                </span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<div class="oval_bx color_tur2"><span>사후관리</span></div>
+										<ul>
+											<li class="bullet_list">
+												<span class="bullet_h">▪︎</span>
+												<span class="txt_h">
+                                                    컨설팅 내용 담당 과목선생님과 공유/ 과목학습과 병행 관리
+                                                </span>
+											</li>
+											<li class="bullet_list">
+												<span class="bullet_h">▪︎</span>
+												<span class="txt_h">
+                                                    컨설팅 결과물 요청시 출력
+                                                    제공
+                                                </span>
+											</li>
+											<li class="bullet_list">
+												<span class="bullet_h">▪︎</span>
+												<span class="txt_h">
+                                                    대입관련 요청정보 제공
+                                                </span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<div class="oval_bx color_tur3">컨설팅 예약</div>
+										<div class="contbx">
+											<div class="colorbx">
+												<dl class="info1">
+													<dt>사전제출 서류</dt>
+													<dd>
+														<ul>
+															<li><span class="tit_h">공통</span> : 신청서</li>
+															<li><span class="tit_h">고1, 고2</span> : 성적표</li>
+															<li><span class="tit_h">고3</span> : 학생부 사본, 학력평가 성적표</li>
+														</ul>
+													</dd>
+												</dl>
+												<dl class="info2">
+													<dt>문의</dt>
+													<dd>
+														<ul>
+															<li><span class="tit_h">전화번호</span> : 02-2294-7700</li>
+															<li><span class="tit_h">이메일</span> : <a href="mailto:consulting@olympiad.ac" title="이메일 보내">consulting@olympiad.ac</a></li>
+														</ul>
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //스태틱 페이지 컨텐츠 영역 -->
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<!-- <li><a href="#">올림피아드 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+					</ul>
+					<div class="select_form">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="수학이 즐거운 올림피아드">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<li><a href="#">상담신청</a></li>
+				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<!-- [D] 로그인 한 회원에게 표시될 내용 -->
+				<li class="pc"><a href="#" target="_blank">재원생 학습</a></li>
+				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
+				<li class="counsel pc">
+					<span class="tit">상담문의</span>
+					<!-- <span class="phone">1899-0949</span> -->
+					<span class="date">평일 10:00~19:00</span>
+				</li>
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap hs_features">
+            @@include('../inc/sub_header.html',{
+            "type" : "type4",
+            "title" : "대입정보센터",
+            "subtitle" : "고등부",
+            "context" : {
+            "depth1_current" : "고등부",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약&상담"],
+            "depth2_current" : "고등부 특징",
+            "depth2_sublist" : ["고등부 특징","학습프로그램","대입정보센터","고등캠퍼스"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["대입컨설팅","합격수기","대입실적"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            초·중등을 연계한
+                            <strong>올림피아드만의 학습프로그램</strong>
+                        </p>
+                        <p class="txt">변화하는 입시정책과 지역 학교별 특성을 분석하여 개인맞춤형 학습 전략을 제시합니다.</p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="features_step">
+                                <ol class="step_list">
+                                    <li>
+                                        <div class="tit">
+                                            <span>학습관리</span>
+                                        </div>
+                                        <div class="list_text">
+                                            <ul class="txt_list type1">
+                                                <li>전략 담임 맞춤 관리</li>
+                                                <li>과목별 학습계획 수립</li>
+                                                <li>성적 분석 및 대책</li>
+                                                <li>성적 추이에 따른 정기 상담</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit">
+                                            <span>진로진학</span>
+                                        </div>
+                                        <div class="list_text">
+                                            <ul class="txt_list type1">
+                                                <li>대입 전문 무료 컨설팅</li>
+                                                <li>수준별 반 배치</li>
+                                                <li>개인 맞춤형 학습전략</li>
+                                                <li>실전 모의 강화</li>
+                                                <li>수시·정시 원서 컨설팅</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit">
+                                            <span>학교생활</span>
+                                        </div>
+                                        <div class="list_text">
+                                            <ul class="txt_list type1">
+                                                <li>지역 고교 맞춤형 대비</li>
+                                                <li>학부모 간담회 개최</li>
+                                                <li>학생부 및 종합 컨설팅</li>
+                                                <li>학생별 비교과 관리</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit">
+                                            <span>연간 학습 계획</span>
+                                        </div>
+                                        <div class="list_text">
+                                            <ul class="txt_list type1">
+                                                <li>학교 일정에 따른 학습계획</li>
+                                                <li>과목별 취약 보완</li>
+                                                <li>개인별 학습플랜 수립</li>
+                                                <li>약점 체크 시뮬레이션</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp"
+                                style="animation-delay: 200ms;">대입로드맵</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="roadmap">
+                                <ul class="hidden">
+                                    <li>
+                                        <span class="grade deep_green">중3(12월)</span>
+                                        <p class="text">진로<br>적성검사</p>
+                                    </li>
+                                    <li>
+                                        <span class="grade blue">중1(02월)</span>
+                                        <p class="text">학부모<br>간담회</p>
+                                    </li>
+                                    <li>
+                                        <span class="grade blue">고1 (07월)</span>
+                                        <p class="text">학생부<br>컨설팅</p>
+                                    </li>
+                                    <li>
+                                        <span class="grade blue">고1 (12월)</span>
+                                        <p class="text">1학년<br>종합컨설팅</p>
+                                    </li>
+                                    <li>
+                                        <span class="grade green">고2 (07월)</span>
+                                        <p class="text">2학년 학생부<br>모의고사 컨설팅</p>
+                                    </li>
+                                    <li>
+                                        <span class="grade green">고2 (12월)</span>
+                                        <p class="text">2학년<br>종합컨설팅</p>
+                                    </li>
+                                    <li>
+                                        <span class="grade yellow">고3 (06월)</span>
+                                        <p class="text">6월학평진단<br>컨설팅</p>
+                                    </li>
+                                    <li>
+                                        <span class="grade yellow">고3 (09월)</span>
+                                        <p class="text">수시컨설팅<br>수시원서작성</p>
+                                    </li>
+                                    <li>
+                                        <span class="grade yellow">고3 (11월)</span>
+                                        <p class="text">정시컨설팅<br>정시원서 작성</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp"
+                                style="animation-delay: 200ms;">캠퍼스별 주요 학교</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="campus">
+                                <div class="hidden">
+                                    <p>동대문구 Dongdaemun-gu</p>
+                                    <ul>
+                                        <li>동대부고</li>
+                                        <li>휘경여고</li>
+                                        <li>해성여고</li>
+                                        <li>혜원여고</li>
+                                        <li>경희여고</li>
+                                        <li>휘봉고</li>
+                                        <li>청량고</li>
+                                        <li>경희고</li>
+                                        <li>대광고</li>
+                                        <li>대원외고</li>
+                                    </ul>
+                                    <p>중랑구 Jungnang-gu</p>
+                                    <ul>
+                                        <li>원묵고</li>
+                                        <li>혜원여고</li>
+                                        <li>숭곡고</li>
+                                        <li>숭곡여고</li>
+                                        <li>태릉고</li>
+                                        <li>신현고</li>
+                                        <li>면목고</li>
+                                        <li>대원외고</li>
+                                        <li>대광고</li>
+                                    </ul>
+                                    <p>성동구 Seongdong-gu</p>
+                                    <ul>
+                                        <li>무학여고</li>
+                                        <li>오산고</li>
+                                        <li>성수고</li>
+                                        <li>창충고</li>
+                                        <li>도선고</li>
+                                        <li>금호고</li>
+                                        <li>한대부고</li>
+                                        <li>대광고</li>
+                                        <li>대원외고</li>
+                                        <li>경희고</li>
+                                    </ul>
+                                    <p>광진구 Gwangjin-gu</p>
+                                    <ul>
+                                        <li>건대부고</li>
+                                        <li>광남고</li>
+                                        <li>동대부여고</li>
+                                        <li>광양고</li>
+                                        <li>자양고</li>
+                                        <li>경일고</li>
+                                        <li>대원고</li>
+                                        <li>성수고</li>
+                                        <li>보인고</li>
+                                        <li>대광고</li>
+                                        <li>대원외고</li>
+                                        <li>한대부고</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

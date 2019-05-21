@@ -8,6 +8,7 @@
 	<title>올림피아드학원</title>
 
 	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
 	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
 	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
 	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
@@ -83,7 +84,7 @@
 										<div class="menu_btn">
 
 											<!-- [D] 로그인 전 -->
-											<a class="btn login" href="#">재원생 로그인</a>
+											<a class="btn login" href="#">로그인</a>
 											<!-- //[D] 로그인 전 -->
 
 											<!-- [D] 로그인 후 -->
@@ -106,7 +107,7 @@
 												<a href="#">올림피아드 소개</a>
 												<ul class="menu_2depth">
 													<li><a href="#">학원소개</a></li>
-													<li><a href="#">히스토리</a></li>
+													<!-- <li><a href="#">히스토리</a></li> -->
 													<li><a href="#">기업수상</a></li>
 													<li><a href="#">명예의전당</a></li>
 													<li><a href="#">전국캠퍼스</a></li>
@@ -149,7 +150,7 @@
 												</ul>
 											</li>
 											<li>
-												<a href="#">예약상담</a>
+												<a href="#">예약&amp;상담</a>
 												<ul class="menu_2depth">
 													<li><a href="#">입학안내</a></li>
 													<li><a href="#">상담신청</a></li>
@@ -214,7 +215,7 @@
 									</li>
 
 									<li>
-										<a href="#none">예약상담</a>
+										<a href="#none">예약&상담</a>
 									</li>
 
 								</ul>
@@ -294,42 +295,42 @@
 						<p class="txt">
 							세분화된 교재를 통해 학생에게 꼭 맞는 맞춤학습을 구현합니다.
 						</p>
-						<div class="point_list">
-							<ul>
-								<li>
-									<div class="list_box">
-										<div class="txt_wrap">
-											엄선된<br>
+						<!-- <div class="point_list">
+                            <ul>
+                                <li>
+                                    <div class="list_box">
+                                        <div class="txt_wrap">
+                                            엄선된<br>
                                             신경향 문제
                                         </div>
-										</div>
-								</li>
-								<li>
-									<div class="list_box">
-										<div class="txt_wrap">
-											서술형<br>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_box">
+                                        <div class="txt_wrap">
+                                            서술형<br>
                                             문제 대비
                                         </div>
-										</div>
-								</li>
-								<li>
-									<div class="list_box">
-										<div class="txt_wrap">
-											막강 내신대비<br>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_box">
+                                        <div class="txt_wrap">
+                                            막강 내신대비<br>
                                             Q팡
                                         </div>
-										</div>
-								</li>
-								<li>
-									<div class="list_box">
-										<div class="txt_wrap">
-											중간&middot;기말고사 대비<br>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_box">
+                                        <div class="txt_wrap">
+                                            중간&middot;기말고사 대비<br>
                                             수준별 적중, 학수고대
                                         </div>
-										</div>
-								</li>
-							</ul>
-						</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> -->
 					</div>
 				</div>
 				<!-- //서브 페이지 상단 -->
@@ -408,13 +409,23 @@
 					<div class="sub_cont_wrap">
 						<div class="grid_container inner">
 							<div class="sub_tit_wrap">
-								<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">개별 교재 구성</h3>
+								<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">교재 구성 살펴보기</h3>
 							</div>
 							<div class="tab_menu">
 								<ul>
 									<li class="on">
 										<button type="button">
+											<span>워크북</span>
+										</button>
+									</li>
+									<li>
+										<button type="button">
 											<span>비너스</span>
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<span>에르메스</span>
 										</button>
 									</li>
 									<li>
@@ -424,7 +435,17 @@
 									</li>
 									<li>
 										<button type="button">
+											<span>데메테르</span>
+										</button>
+									</li>
+									<li>
+										<button type="button">
 											<span>미네르바</span>
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<span>주노</span>
 										</button>
 									</li>
 									<li>
@@ -449,153 +470,49 @@
 					<div class="sub_cont_wrap">
 						<div class="grid_container inner">
 							<div class="sub_tit_wrap">
-								<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">내신 대비 프로그램</h3>
-								<p data-animation="fadeInUp" data-delay="2" class="txt_info">
-									지루할 수 있는 내신 대비를 맞춤교재와 게임 미션 달성을 통해 주차별로 체계적으로 대비
-								</p>
+								<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">서술형 교재</h3>
 							</div>
-							<div class="point_list">
-								<ul>
-									<li>
-										<div class="list_box">
-											<div class="txt_wrap">
-												중간&middot;기말고사 대비<br>
-                                                수준별 적중, 학수고대
-                                            </div>
-											</div>
-									</li>
-									<li>
-										<div class="list_box">
-											<div class="txt_wrap">
-												막강 내신대비<br>
-                                                Q팡
-                                            </div>
-											</div>
-									</li>
-									<li>
-										<div class="list_box">
-											<div class="txt_wrap">
-												시험대비<br>
-                                                주차별 관리 시스템
-                                            </div>
-											</div>
-									</li>
-								</ul>
+							<div class="book_wrap">
+								<div class="book_list">
+									<div class="book">
+										<ul class="img_wrap book6">
+											<li>
+												<img src="../img/img/img_middlebook_write_01.jpg" alt="서술형 집중대비서 Hermes 표지 이미지">
+											</li>
+											<li>
+												<img src="../img/img/img_middlebook_write_02.jpg" alt="서술형 집중대비서 Apollon 표지 이미지">
+											</li>
+											<li>
+												<img src="../img/img/img_middlebook_write_03.jpg" alt="서술형 집중대비서 Demeter 표지 이미지">
+											</li>
+											<li>
+												<img src="../img/img/img_middlebook_write_04.jpg" alt="서술형 집중대비서 Minerva 표지 이미지">
+											</li>
+											<li>
+												<img src="../img/img/img_middlebook_write_05.jpg" alt="서술형 집중대비서 Juno 표지 이미지">
+											</li>
+											<li>
+												<img src="../img/img/img_middlebook_write_06.jpg" alt="서술형 집중대비서 Poseidon 표지 이미지">
+											</li>
+										</ul>
+										<span class="txt">
+                                            <strong>서술형 집중대비서
+                                            </strong>(Hermes / Apollon / Demeter / Minerva / Juno / Poseidon)
+                                        </span>
+									</div>
+								</div>
 							</div>
-							<div class="program_info">
-								<h4 class="program_tit">Q팡 주차별 진행 프로그램</h4>
-								<dl>
-									<div class="subject">
-										<dt>
-											1주차<br>
-                                            단원별 학습
-                                        </dt>
-										<dd>
-											<ul class="program">
-												<li>
-													<span class="tit">
-                                                        mission 1
-                                                        <strong>현상범을 잡아라</strong>
-                                                    </span>
-													<p class="sub_txt">
-														만점 대비 총정리집 &lt;학수고대&gt;
-													</p>
-													<ul class="txt_list type1">
-														<li>초등/중등/고등 만점 대비</li>
-														<li>총 정리집 &lt;학수고대&gt; 활용</li>
-													</ul>
-												</li>
-												<li>
-													<span class="tit">
-                                                        mission 2
-                                                        <strong>화재를 진압하라</strong>
-                                                    </span>
-													<p class="sub_txt">
-														개인별 오답 클리닉 &lt;오답완성&gt;
-													</p>
-													<ul class="txt_list type1">
-														<li>개인별 맞춤 오답풀이</li>
-														<li>최근 1~12개월까지의 오답 추출 가능</li>
-													</ul>
-												</li>
-											</ul>
-										</dd>
-									</div>
-									<div class="student">
-										<dt>
-											2주차<br>
-                                            개인별 학습
-                                        </dt>
-										<dd>
-											<ul class="program">
-												<li>
-													<span class="tit">
-                                                        mission 3
-                                                        <strong>밤하늘을 밝혀라</strong>
-                                                    </span>
-													<p class="sub_txt">
-														단원별 최다 빈출 &lt;모의고사&gt;
-													</p>
-													<ul class="txt_list type1">
-														<li>시험범위 모의고사 문항풀이</li>
-														<li>단원별 최다 빈출 모의고사지 제공 (중등만 제공)</li>
-													</ul>
-												</li>
-												<li>
-													<span class="tit">
-                                                        mission 4
-                                                        <strong>땅을 복구하라</strong>
-                                                    </span>
-													<p class="sub_txt">
-														개인별 오답 유형 &lt;유형완성&gt;
-													</p>
-													<ul class="txt_list type1">
-														<li>학생 맞춤 &lt;유형완성&gt; 문항 풀이</li>
-														<li>정답 시 다음 유형 도전, 오답 시 같은 유형 반복 도전 가능</li>
-													</ul>
-												</li>
-											</ul>
-										</dd>
-									</div>
-									<div class="school">
-										<dt>
-											3주차<br>
-                                            학교별 학습
-                                        </dt>
-										<dd>
-											<ul class="program">
-												<li>
-													<span class="tit">
-                                                        mission 5
-                                                        <strong>빙고를 완성하라</strong>
-                                                    </span>
-													<p class="sub_txt">
-														학교별 출제 유형 &lt;기출 유형 문제&gt;, 학교별 교과서 최종 마무리
-													</p>
-													<ul class="txt_list type1">
-														<li>기출 유형 문제를 통한 학교 맞춤 출제 유형 학습</li>
-														<li>학생 맞춤 추가 문항 제공</li>
-														<li>셀프 학습 가능</li>
-													</ul>
-												</li>
-											</ul>
-										</dd>
-									</div>
-									<div class="last">
-										<dt>
-											4주차
-										</dt>
-										<dd>
-											<ul class="program">
-												<li>
-													<span class="tit">
-                                                        시험 직전 보충
-                                                    </span>
-												</li>
-											</ul>
-										</dd>
-									</div>
-								</dl>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="sub_cont_wrap">
+						<div class="grid_container inner">
+							<div class="sub_tit_wrap">
+								<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">내신 대비 교재</h3>
 							</div>
 							<div class="program_info">
 								<h4 class="program_tit">내신 관리 컨텐츠</h4>
@@ -633,7 +550,7 @@
 									<li>
 										<img src="../img/img/img_middle_manage_04.png" alt="">
 										<div class="txt_wrap">
-											<strong>일요첨삭</strong>
+											<strong>시험대비자료</strong>
 											<ul class="txt_list type1">
 												<li>
 													단원별/유형별, 고난이도, 기출유형, 모의고사, 서술형 시험대비 자료 보유
@@ -654,8 +571,8 @@
 			<div class="grid_container">
 				<div class="footer_upper">
 					<ul class="bottom_menu">
-						<li><a href="#">올림피아드 소개</a></li>
-						<li><a href="#">찾아오시는길</a></li>
+						<!-- <li><a href="#">올림피아드 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
 						<li><a href="#">사이트맵</a></li>
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
@@ -682,7 +599,7 @@
 						<address>
 							<span class="hidden">회사정보</span>
 							<ul class="corp">
-								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
 								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
 								<li>대표 : 양환주</li>
 								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
@@ -690,6 +607,9 @@
 							<ul>
 								<li>사업자등록번호 : 206-81-24574</li>
 								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
 							</ul>
 							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
 						</address>
@@ -710,7 +630,7 @@
 				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
 				<li class="counsel pc">
 					<span class="tit">상담문의</span>
-					<span class="phone">1899-0949</span>
+					<!-- <span class="phone">1899-0949</span> -->
 					<span class="date">평일 10:00~19:00</span>
 				</li>
 			</ul>
