@@ -1680,3 +1680,77 @@
     .sitemap_list .menu_3depth > li > a {display:inline-block; font-size:12px; line-height:1.6em;}
     .sitemap_list .menu_3depth > li > a:before {top:7px;}
 }
+
+/* 홈페이지 이용의견 */
+.opinion .txt {font-size:16px; line-height:1.75em; text-align:center;}
+.opinion .necessary {display:inline-block; position:relative; width:1px; font-size:0; vertical-align:top;}
+.opinion .necessary:before {position:absolute; top:0; left:0; font-size:18px; line-height:12px; color:red; text-indent:0; content:"*";}
+.opinion .cmt {margin-top:30px; font-size:12px; text-align:right;}
+.opinion .cmt .necessary:before {top:3px; left:-8px;}
+.opinion .survey_wrap {padding:20px 0; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.opinion .survey_column .tit {font-family:"Nanum Square"; font-size:18px; font-weight:400; line-height:40px;}
+.opinion .survey_column .tit.select {display:inline-block; min-width:360px; margin-bottom:40px;}
+.opinion .survey_column .tit strong {font-family:inherit; color:#333;}
+.opinion .survey_column .tit .necessary:before {top:8px; left:-3px;}
+.opinion .survey_table {margin:10px 0 30px;}
+.opinion .survey_table table {border-right:1px solid #ddd; border-left:1px solid #ddd;}
+.opinion .survey_table table th {font-family:"Nanum Square"; font-size:16px; font-weight:700;}
+.opinion .survey_table table .header {width:25%;}
+.opinion .survey_table table .common {position:relative; padding:0; background:url(../img/bg/bg_table_seperate.gif); background-size:100% 100%;}
+.opinion .survey_table table .common span {position:absolute; font-family:"Nanum Square"; font-size:14px; font-weight:400; line-height:20px;}
+.opinion .survey_table table .common .col {top:15px; right:20px;}
+.opinion .survey_table table .common .row {bottom:15px; left:20px;}
+.opinion .survey_table table th label {font-family:inherit;}
+.opinion .survey_table table th,.opinion .survey_table table td {padding:17px 20px; border-bottom:1px solid #ddd;}
+.opinion .survey_table table thead th {background:#ccc;}
+.opinion .survey_table table tbody th {background:#e9e9e9; text-align:left;}
+.opinion .survey_table table tr th:first-child {border-right:1px solid #ddd;}
+.opinion .survey_table table input[type="radio"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
+.opinion .survey_table table input[type="radio"] + label {display:inline-block; position:relative; padding-left:23px; font-size:16px; line-height:26px; color:#333; cursor:pointer;}
+.opinion .survey_table table input[type="radio"] + label:before {display:inline-block; position:absolute; top:13px; left:2px; box-sizing:border-box; width:16px; height:16px; margin-top:-8px; border:1px solid #dedede; border-radius:50%; background:#fff; content:"";}
+.opinion .survey_table table input[type="radio"]:checked + label:after {display:inline-block; position:absolute; top:13px; left:7px; width:6px; height:6px; margin-top:-3px; border-radius:50%; background:#00687f; content:"";}
+.opinion .survey_column textarea {display:block; width:100%; height:210px; margin-top:10px; padding:12px;}
+.opinion .survey_column .cnt {margin-bottom:30px; font-size:14px; line-height:2.4em; text-align:right;}
+.opinion .survey_column .select_form {width:250px;}
+.opinion .ps {margin-top:30px; text-align:center;}
+.opinion .ps p {display:inline-block; font-size:14px; line-height:1.5em;}
+.opinion .ps p:before {margin-right:0.2em; content:"※";}
+.opinion .btn_wrap {margin-top:30px; text-align:center;}
+.opinion .btn_wrap button {min-width:180px; margin:0 2px; padding:0 15px; background:#00687f; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; transition:all 0.5s;}
+
+@media (max-width:1024px) {
+    .opinion .txt {font-size:14px; line-height:1.6em;}
+    .opinion .survey_table table .header {width:150px;}
+    .opinion .survey_table table th,.opinion .survey_table table th {padding:10px 15px; font-size:14px;}
+    .opinion .survey_table table input[type="radio"] + label {font-size:14px;}
+    .opinion .survey_table table .common .col {top:3px; right:15px;}
+    .opinion .survey_table table .common .row {bottom:3px; left:15px;}
+    .opinion .survey_wrap {padding:30px 0;}
+    .opinion .survey_column .tit {font-size:16px; line-height:30px;}
+    .opinion .survey_table {margin:15px 0;}
+    .opinion .survey_column .cnt {margin-bottom:15px; font-size:12px; line-height:1.5em;}
+    .opinion .survey_column .tit.select {display:block; min-width:0; margin:15px 0;}
+    .opinion .btn_wrap button {font-size:16px; line-height:40px;}
+}
+
+@media (max-width:599px) {
+    .opinion .txt br {display:none;}
+    .opinion .survey_column .tit {font-size:14px;}
+    .opinion .survey_wrap {padding:15px 0;}
+    .opinion .survey_table table,
+    .opinion .survey_table table thead,
+    .opinion .survey_table table tbody,
+    .opinion .survey_table table tr,
+    .opinion .survey_table table th,
+    .opinion .survey_table table td {display:block; float:left; clear:both; width:100%; border:none; text-align:left;}
+    .opinion .survey_table table thead {display:none;}
+    .opinion .survey_table table th {margin:15px 0 5px; padding:0 15px; line-height:2em;}
+    .opinion .survey_table table tr {margin-bottom:15px;}
+    .opinion .survey_table table tr th:first-child {margin-top:0; border:0;}
+    .opinion .survey_table table td {padding:0;}
+    .opinion .survey_table table input[type="radio"] + label {font-size:12px;}
+    .opinion .survey_column .select_form {width:100%;}
+    .opinion .ps {margin-top:15px;}
+    .opinion .ps p {font-size:12px;}
+    .opinion .btn_wrap button {width:100%; font-size:14px;}
+}

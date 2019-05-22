@@ -7,7 +7,10 @@ header {position:fixed; top:0; z-index:10; width:100%; height:80px; -webkit-tran
 header.on {background:rgba(0,0,0,0.65);}
 .header_wrap {position:relative; padding-top:30px;}
 .header_wrap h1 img {height:36px;}
-header.on .header_wrap {padding-top:20px; -webkit-transition:padding 0.2s; -moz-transition:padding 0.2s; -ms-transition:padding 0.2s; -o-transition:padding 0.2s; transition:padding 0.2s;}
+header.on .header_wrap {padding-top:20px; transition:padding 0.2s;}
+.header_wrap .login.pc {position:absolute; top:45px; right:60px; padding-right:20px; border-right:1px solid rgba(255,255,255,0.5); font-size:16px; font-weight:700; line-height:20px; color:#fff; transition:all 0.5s;}
+header.on .header_wrap .login.pc {top:30px;}
+.header_wrap .login:hover {color:#00aeba;}
 .header_wrap .menu {position:absolute; top:36px; right:0; width:40px; height:40px; border:1px solid rgba(255,255,255,0.5); text-indent:-9999px; -webkit-transition:top 0.2s; -moz-transition:top 0.2s; -ms-transition:top 0.2s; -o-transition:top 0.2s; transition:all 0.2s;}
 .header_wrap .menu:hover {border-color:#00aeba;}
 header.on .header_wrap .menu {top:20px;}
@@ -17,9 +20,19 @@ header.on .header_wrap .menu {top:20px;}
 .header_wrap .menu span:nth-child(3) {top:25px;}
 .header_wrap .menu:hover span {background:#00aeba;}
 
+@media (max-width:1024px) {
+    .header_wrap h1 img {height:24px;}
+    .header_wrap .menu {top:30px; width:30px; height:30px;}
+    .header_wrap .menu span {width:20px; margin-left:-10px;}
+    .header_wrap .menu span:nth-child(1) {top:7px;}
+    .header_wrap .menu span:nth-child(2) {top:13px;}
+    .header_wrap .menu span:nth-child(3) {top:19px;}
+    .header_wrap .login.mobile {display:inline-block !important; font-size:14px; font-family:"Nanum Square"; padding:0 10px; line-height:20px; border:1px solid #00aeba; font-weight:700; color:#00aeba; transition:all 0.5s;}
+    .header_wrap .login.mobile:hover {color:#fff; background:#00aeba;}
+}
+
 @media (max-width:599px) {
     .header_wrap {padding-top:20px;}
-    .header_wrap h1 img {height:30px;}
     .header_wrap .menu {top:20px;}
 }
 
@@ -28,7 +41,7 @@ nav {visibility:hidden; position:fixed; top:0; left:0; width:100%; height:100%; 
 nav.on {visibility:visible; opacity:1;}
 nav .nav_wrap {background:#fff url(../img/bg/bg_nav.png) no-repeat 80% bottom; transform:translateY(-100%); transition:all 0.5s; opacity:0; z-index:-1;}
 nav.on .nav_wrap {transform:translateY(0); opacity:1; z-index:1;}
-.navigation {position:relative;}
+.navigation {position:relative; padding:20px 0; line-height:0;}
 nav .menu_1depth {padding:15px 0 100px;}
 nav .menu_1depth > li {overflow:hidden; padding:25px 0;}
 nav .menu_1depth > li .tit {float:left; position:relative; width:185px; font-family:"Nanum Square"; font-size:30px; line-height:50px; color:#333;}
@@ -50,17 +63,18 @@ nav .close:hover:before,nav .close:hover:after {background:#00aeba;}
     nav .menu_1depth {padding:15px 0;}
     nav .menu_1depth > li {margin-top:15px; padding:0;}
     nav .menu_1depth > li:first-child {margin:0;}
-    nav .menu_1depth > li .tit {float:none; width:auto; font-size:24px;}
-    nav .menu_1depth > li .tit:after {bottom:-5px;}
+    nav .menu_1depth > li .tit {display:block; float:none; width:auto; font-size:22px; line-height:45px;}
+    nav .menu_1depth > li .tit:after {bottom:10px;}
     nav .menu_2depth {float:none;}
     nav .menu_2depth {margin:0 -10px;}
     nav .menu_2depth li {margin:0 10px;}
     nav .menu_2depth li a {line-height:1.8em; font-size:14px;}
+    nav .close {top:20px; width:30px; height:30px;}
 }
 
 @media (max-width:599px) {
     nav .nav_wrap {height:100%; background-size:250px;}
     nav .menu_1depth > li {margin-top:0;}
-    nav .menu_1depth > li .tit {font-size:18px;}
+    nav .menu_1depth > li .tit {font-size:16px;}
     nav .menu_2depth li a {font-size:12px;}
 }

@@ -10,7 +10,7 @@ footer {background:#505354; color:#fff;}
 .footer_upper .bottom_menu li a {display:inline-block; font-size:16px; font-weight:700; line-height:60px; color:rgba(255,255,255,0.7);}
 .footer_upper .bottom_menu li a:hover,.footer_upper .bottom_menu li a strong {font-weight:700; color:#00aeba;}
 .footer_upper .select_form {position:absolute; top:0; right:0; min-width:150px; background:none; font-size:16px;}
-.footer_upper .select_form button {padding-right:30px; border:none; background:none; line-height:60px; color:rgba(255,255,255,0.7); text-transform:uppercase;}
+.footer_upper .select_form button {padding-right:30px; border:none; background:none; line-height:60px; color:rgba(255,255,255,0.7); text-transform:uppercase; font-family:"Nanum Square";}
 .footer_upper .select_form button:after {right:3px; border-color:#999;}
 .footer_upper .select_form button.on + ul {bottom:60px; border:0; background:#505354;}
 .footer_upper .select_form ul li a {font-size:14px; color:rgba(255,255,255,0.7);}
@@ -32,14 +32,13 @@ footer {background:#505354; color:#fff;}
 
 @media (max-width:1280px) {
     .footer_upper .bottom_menu {margin:0 -15px;}
-    .footer_upper .bottom_menu li {margin:0 15px;}
+    .footer_upper .bottom_menu li {margin:0 10px;}
     .footer_upper .bottom_menu li a {font-size:14px;}
 }
 
 @media (max-width:1024px) {
     .footer_upper {border:0;}
     .footer_upper .bottom_menu {display:inline-block; max-width:calc(100% - 130px); margin:0 -10px; padding:10px 0;}
-    .footer_upper .bottom_menu li {margin:0 10px;}
     .footer_upper .bottom_menu li a {font-size:14px; line-height:30px;}
     .footer_upper .select_form button {line-height:50px;}
     .footer_upper .select_form button.on + ul {bottom:50px;}
