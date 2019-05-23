@@ -32,6 +32,10 @@ $(function () {
 
     /******************** 셀렉트박스 제어 ********************/
 
+    function changeSelectBox(object) {
+        return;
+    }
+
     var select_form = $('.select_form');
 
     select_form.on('click', 'button[type="button"]', function () {
@@ -40,7 +44,11 @@ $(function () {
             (select_form.find('button').removeClass('on'), $(this).addClass('on'));
     }).on('click', 'a', function () {
         $(this).closest('ul').siblings('button').removeClass('on').find('span').html($(this).text());
+        $(this).closest('.select_form').find('input[type=hidden]').val($(this).attr('value'));
+        changeSelectBox($(this).closest('.select_form').find('input[type=hidden]'));
+        return false;
     });
+
     $(document).on('mouseup touchend', function (e) {
         if (!select_form.is(e.target) && select_form.has(e.target).length === 0)
             select_form.find('button').removeClass('on');
@@ -141,7 +149,11 @@ $(function () {
                     $('.header_wrap .menu').blur(),
                     $('.group_nav').find('input').val === '',
                     nav_2depth.hide()) :
-                nav_2depth.show();
+                (nav_2depth.show(),
+                    screen.removeClass('fixed'),
+                    screen_fix = false,
+                    $('.modal').find('button[data-move="close"]').trigger('click')
+                );
     });
 
     /******************** 서브 페이지 내용 탭메뉴 정의 ********************/

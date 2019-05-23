@@ -1232,6 +1232,7 @@
 }
 
 /* 중계영재센터 - 프로그램 */
+.campus_03_program .union li {font-size:16px; line-height:1.7em;}
 .campus_03_program .sub_lower_wrap.color_ro {background-color:#e6eff1;}
 .campus_03_program .cont_ro {position:relative; padding-top:35px; padding-bottom:44px; border-top:3px dotted #ccc;}
 .campus_03_program .cont_ro:after {position:absolute; top:-8px; left:50%; width:0; height:0; margin-left:-8px; border-top:14px solid #1c9eb3; border-right:8px solid transparent; border-left:8px solid transparent; content:"";}
@@ -1275,6 +1276,7 @@
 }
 
 @media (max-width:1024px) {
+    .campus_03_program .union li {font-size:14px; line-height:1.6em;}
     .campus_03_program .cont_ro h3.cont_ro_tit {font-size:24px;}
     .campus_03_program .four_col > ul > li {width:50%;}
 }
@@ -1398,10 +1400,41 @@
 .hs_features .features_step .step_list > li:nth-child(4) .tit span {background-color:#ebc33f;}
 .hs_features .features_step .txt_list li {margin-bottom:10px; font-family:"Nanum Gothic"; font-size:16px; font-weight:700;}
 .hs_features .features_step .txt_list li:last-child {margin-bottom:0;}
-.hs_features .roadmap {width:100%; height:0; padding-top:32%; background-image:url(../img/bg/bg_hs_features_roadmap.png); background-repeat:no-repeat; background-position:center; background-size:contain;}
+.hs_features .roadmap {text-align:center;}
+.hs_features .roadmap .roadmap_list {overflow:hidden; position:relative; margin:-30px;}
+.hs_features .roadmap .roadmap_list:before {position:absolute; top:82px; left:0; width:100%; border-top:3px dotted #ddd; content:"";}
+.hs_features .roadmap .roadmap_list:after {position:absolute; right:0; bottom:106px; z-index:-1; width:100%; border-top:3px dotted #ddd; content:"";}
+.hs_features .roadmap .roadmap_list li {float:left; width:20%; padding:30px;}
+.hs_features .roadmap .roadmap_list li:nth-child(1) {margin-left:10%;}
+.hs_features .roadmap .roadmap_list li:nth-child(4) {margin-right:10%;}
+.hs_features .roadmap .roadmap_list li .grade {display:block; position:relative; z-index:1; padding-bottom:25px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.6em;}
+.hs_features .roadmap .roadmap_list li .grade.deep_green {color:#258c9c;}
+.hs_features .roadmap .roadmap_list li .grade.blue {color:#166ea6;}
+.hs_features .roadmap .roadmap_list li .grade.green {color:#8ab052;}
+.hs_features .roadmap .roadmap_list li .grade.yellow {color:#e0b833;}
+.hs_features .roadmap .roadmap_list li .grade:after {position:absolute; bottom:-8px; left:50%; width:16px; height:16px; border-radius:50%; transform:translateX(-50%); content:"";}
+.hs_features .roadmap .roadmap_list li .grade.deep_green:after {background-color:#258c9c;}
+.hs_features .roadmap .roadmap_list li .grade.blue:after {background-color:#166ea6;}
+.hs_features .roadmap .roadmap_list li .grade.green:after {background-color:#8ab052;}
+.hs_features .roadmap .roadmap_list li .grade.yellow:after {background-color:#e0b833;}
+.hs_features .roadmap .roadmap_list li .text {position:relative; padding-top:25px; font-size:16px; line-height:26px; color:#333;}
+.hs_features .roadmap .roadmap_list li .text:before {position:absolute; top:-20px; left:50%; z-index:0; width:40px; height:40px; border:3px dotted #ddd; border-radius:50%; background-color:#fff; transform:translateX(-50%); content:"";}
 .hs_features .campus {width:100%; height:0; padding-top:100%; background-image:url(../img/bg/bg_hs_features.png); background-repeat:no-repeat; background-position:center; background-size:contain;}
+.hs_features .campus .campus_wrap,.hs_features .campus .cate {overflow:hidden; position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:0; clip:rect(0 0 0 0);}
 
 @media (max-width:1024px){
+    .hs_features .roadmap {max-width:350px; margin:0 auto;}
+    .hs_features .roadmap .roadmap_list {margin:-20px;}
+    .hs_features .roadmap .roadmap_list li {padding:20px;}
+    .hs_features .roadmap .roadmap_list:before {display:none;}
+    .hs_features .roadmap .roadmap_list:after {display:none;}
+    .hs_features .roadmap .roadmap_list li:nth-child(1) {width:100%; margin-left:0;}
+    .hs_features .roadmap .roadmap_list li:nth-child(4) {margin-right:0;}
+    .hs_features .roadmap .roadmap_list li:nth-child(n+2):nth-child(-n+4) {width:33.333%;}
+    .hs_features .roadmap .roadmap_list li:nth-child(n+5):nth-child(-n+6) {width:50%;}
+    .hs_features .roadmap .roadmap_list li:nth-child(n+7):nth-child(-n+9) {width:33.33333%;}
+    .hs_features .roadmap .roadmap_list li .grade {font-size:16px;}
+    .hs_features .roadmap .roadmap_list li .text {font-size:14px; line-height:22px;}
     .hs_features .features_step .step_list {margin:-20px -20px;}
     .hs_features .features_step .step_list > li {width:50%; padding:20px 20px;}
     .hs_features .features_step .step_list > li .tit {margin:0 auto 20px;}
@@ -1411,6 +1444,25 @@
     .hs_features .features_step .step_list > li .tit span {font-size:16px;}
     .hs_features .features_step .txt_list li {font-size:14px;}
     .hs_features .features_step .step_list > li:nth-child(2):after {display:none;}
+    .hs_features .campus {height:auto; padding:0; background:none; font-size:0;}
+    .hs_features .campus .campus_wrap,.hs_features .campus .cate {overflow:visible; position:static; width:auto; height:auto; margin:0; clip:auto;}
+    .hs_features .campus .cate {text-align:center;}
+    .hs_features .campus .cate li {display:inline-block; margin:0 2px;; width:90px; font-size:14px; font-weight:700; font-family:"Nanum Square"; line-height:1.75em; background:#e6eff1;}
+    .hs_features .campus .private {background:#f1f0e6 !important;}
+    .hs_features .campus .campus_wrap {display:inline-block; width:23%; margin:1%; text-align:center; vertical-align:top; margin-top:30px;}
+    .hs_features .campus .campus_wrap .tit {display:block; font-size:18px; font-family:"Nanum Square"; font-weight:700; color:#008398; margin-bottom:15px;}
+    .hs_features .campus .campus_wrap li {font-size:14px; line-height:2em; margin-bottom:1px; background:#e6eff1;}
+}
+
+@media (max-width:599px){
+    .hs_features .roadmap .roadmap_list {margin:-15px;}
+    .hs_features .roadmap .roadmap_list li {padding:15px;}
+    .hs_features .roadmap .roadmap_list li .grade {font-size:14px;}
+    .hs_features .roadmap .roadmap_list li .text {font-size:12px; line-height:20px;}
+    .hs_features .campus .cate li {font-size:12px;}
+    .hs_features .campus .campus_wrap .tit {margin:15px 0; font-size:16px;}
+    .hs_features .campus .campus_wrap {width:100%; margin:0;}
+    .hs_features .campus .campus_wrap li {max-width:100px; margin:0 auto 1px; font-size:12px;}
 }
 
 @media (max-width:460px){
@@ -1428,7 +1480,7 @@
 .senior_math .bg_gray {background-color:#f5f5f5;}
 .senior_math .class_guide ul li {margin-bottom:60px;}
 .senior_math .class_guide ul li:last-child {margin-bottom:0;}
-.senior_math .class_guide .data_table table thead th {background-color:#e5e5e5;}
+.senior_math .class_guide .data_table table th {background-color:#e5e5e5 !important;}
 .senior_math .class_guide .data_table table th,.data_table table td {padding:12px;}
 .senior_math .class_guide .tit_img {margin-bottom:20px; line-height:0; text-align:center;}
 .senior_math .table_list li {margin-bottom:10px;}
@@ -1561,7 +1613,7 @@
 .senior_kor_sci .class_guide .class_guide_bx > li:nth-child(n+2) .class_guide_list .step ul li p {padding:10px 5px;}
 .senior_kor_sci .class_guide .class_guide_bx > li:nth-child(n+2) .class_guide_list .step ul li:nth-child(2) p {padding:23px 5px;}
 .senior_kor_sci .data_table table th,.data_table table td {padding:15px;}
-.senior_kor_sci .data_table table thead th {background:#e5e5e5;}
+.senior_kor_sci .data_table table th {background:#e5e5e5 !important;}
 .senior_kor_sci .science_bg_gray {margin-bottom:-100px; padding-bottom:100px; background-color:#f5f5f5;}
 .senior_kor_sci .science .science_list > li {margin-bottom:30px;}
 .senior_kor_sci .science .science_list > li:last-child {margin-bottom:0;}
@@ -1626,7 +1678,7 @@
 .hce_info .sub_tit_wrap h3 {padding-bottom:40px;}
 .hce_info .bullet_list {position:relative; padding-left:12px;}
 .hce_info .bullet_list span.bullet_h {position:absolute; top:0; left:0;}
-.hce_info .bullet_list span {display:block; font-size:14px; line-height:1.4em;}
+.hce_info .bullet_list span {display:block; font-size:14px; line-height:1.7em;}
 .hce_info .sub_tit_wrap .txt_info strong,.hce_info .sub_tit_wrap .txt_info {font-family:"Nanum Square";}
 .hce_info ul.process_list {position:relative;}
 .hce_info ul.process_list > li .oval_bx {position:relative; width:23%; max-width:220px; font-family:"Nanum Square";}
@@ -1673,70 +1725,60 @@
 }
 
 /* 예약&상담 - 입학안내 */
-.admission_info .circle_cont {margin-bottom:50px; padding-top:50px;}
-.admission_info .circle_cont:after {display:table; clear:both; content:"";}
-.admission_info .circle_cont ul {overflow:hidden;}
-.admission_info .table_box {position:relative; padding-top:20px;}
-.admission_info .circle_cont ul li {float:left; position:relative; width:20%; padding-top:20px; text-align:center;}
-.admission_info .circle_cont ul li:before {position:absolute; top:97px; left:-10px; width:0; height:0; margin-top:-12px; border-top:7px solid transparent; border-bottom:7px solid transparent; border-left:14px solid #0c95ab; content:"";}
-.admission_info .circle_cont ul li::after {position:absolute; top:97px; left:-10px; width:0; height:0; margin-top:-12px; margin-left:-1px; border-top:7px solid transparent; border-bottom:7px solid transparent; border-left:13px solid #ccc; border-left-color:#fff; -webkit-transform:scale(0.5); transform:scale(0.5); content:"";}
-.admission_info .circle_cont ul li:nth-child(1):before {display:none;}
-.admission_info .circle_cont ul li:nth-child(1):after {display:none;}
-
-.admission_info .circle_cont ul li .step {display:block; position:absolute; top:10px; left:50%; background-color:#fff; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:24px; transform:translateX(-50%);}
-.admission_info .circle_cont ul li:nth-child(1) .step {color:#3db4c7;}
-.admission_info .circle_cont ul li:nth-child(2) .step {color:#3db4c7;}
-.admission_info .circle_cont ul li:nth-child(3) .step {color:#1c9eb3;}
-.admission_info .circle_cont ul li:nth-child(4) .step {color:#008398;}
-.admission_info .circle_cont ul li:nth-child(5) .step {color:#008398;}
-.admission_info .circle_cont ul li .text_box {width:150px; height:150px; margin:0 auto; padding:13px 0; border:2px dotted #ddd; border-radius:50%;} 
-.admission_info .circle_cont ul li .txt {width:120px; height:120px; margin:0 auto; padding:40px 0; border-radius:50%; font-size:14px; line-height:22px; color:#fff;}
-.admission_info .circle_cont ul li:nth-child(1) .txt {background-color:#3db4c7;}
-.admission_info .circle_cont ul li:nth-child(2) .txt {background-color:#3db4c7;}
-.admission_info .circle_cont ul li:nth-child(3) .txt {padding:50px 0; background-color:#1c9eb3;}
-.admission_info .circle_cont ul li:nth-child(4) .txt {padding:50px 0; background-color:#1c9eb3;}
-.admission_info .circle_cont ul li:nth-child(5) .txt {background-color:#008398;}
-.admission_info .table_box {position:relative; padding-top:20px;}
-.admission_info .table_cont {overflow-x:auto; position:relative; padding:50px 0; border-top:3px solid #333; border-bottom:1px solid #333;} 
-
-.admission_info .table_cont table {width:100%; min-width:700px; margin-left:-1px; border-bottom:1px solid #cdcdcd; border-bottom:0; background:#fff; table-layout:fixed; border-collapse:collapse;}
-.admission_info .table_cont table th,.table_cont table td {padding:0 0 80px 0; border-top:0; font-size:16px; line-height:1.5em; color:#333; text-align:center; vertical-align:middle; -webkit-transition:all 0.5s; transition:all 0.5s;}
-.admission_info .table_cont table tr:last-child th,table td {padding:0;}
-.admission_info .table_cont.row table th {border-right:0 !important; font-family:"Nanum Square"; font-size:20px; font-weight:700; vertical-align:top;}
-.admission_info .table_cont table td {padding:0 30px; border-left:1px solid #cdcdcd; vertical-align:top;}
-.admission_info .table_cont table th.left,.table_cont table td.left {text-align:left;}
-.admission_info .reservation {width:220px; margin:0 auto; padding-top:50px;}
-.admission_info .reservation a {display:block; width:100%; height:50px; padding:3px 0; background-color:#008398; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:45px; color:#fff; text-align:center;}
+.admission_guide .circle_cont {margin-bottom:50px; padding-top:50px;}
+.admission_guide .circle_cont ol:after {display:block; clear:both; content:"";}
+.admission_guide .table_box {position:relative; padding-top:20px;}
+.admission_guide .circle_cont ol li {float:left; position:relative; width:20%; padding-top:20px; text-align:center;}
+.admission_guide .circle_cont ol li:before {position:absolute; top:97px; left:-6px; width:0; height:0; margin-top:-12px; border-top:7px solid transparent; border-bottom:7px solid transparent; border-left:14px solid #0c95ab; content:"";}
+.admission_guide .circle_cont ol li::after {position:absolute; top:97px; left:-6px; width:0; height:0; margin-top:-12px; margin-left:-1px; border-top:7px solid transparent; border-bottom:7px solid transparent; border-left:13px solid #ccc; border-left-color:#fff; -webkit-transform:scale(0.5); transform:scale(0.5); content:"";}
+.admission_guide .circle_cont ol li:nth-child(1):before {display:none;}
+.admission_guide .circle_cont ol li:nth-child(1):after {display:none;}
+.admission_guide .circle_cont ol li .step {display:block; position:absolute; top:10px; left:50%; background-color:#fff; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:24px; transform:translateX(-50%);}
+.admission_guide .circle_cont ol li:nth-child(1) .step {color:#3db4c7;}
+.admission_guide .circle_cont ol li:nth-child(2) .step {color:#3db4c7;}
+.admission_guide .circle_cont ol li:nth-child(3) .step {color:#1c9eb3;}
+.admission_guide .circle_cont ol li:nth-child(4) .step {color:#008398;}
+.admission_guide .circle_cont ol li:nth-child(5) .step {color:#008398;}
+.admission_guide .circle_cont ol li .text_box {width:150px; height:150px; margin:0 auto; padding:13px 0; border:2px dotted #ddd; border-radius:50%;} 
+.admission_guide .circle_cont ol li .txt {width:120px; height:120px; margin:0 auto; padding:40px 0; border-radius:50%; font-size:14px; line-height:22px; color:#fff;}
+.admission_guide .circle_cont ol li:nth-child(1) .txt {background-color:#3db4c7;}
+.admission_guide .circle_cont ol li:nth-child(2) .txt {background-color:#3db4c7;}
+.admission_guide .circle_cont ol li:nth-child(3) .txt {padding:50px 0; background-color:#1c9eb3;}
+.admission_guide .circle_cont ol li:nth-child(4) .txt {padding:50px 0; background-color:#1c9eb3;}
+.admission_guide .circle_cont ol li:nth-child(5) .txt {background-color:#008398;}
+.admission_guide .step_info {position:relative; padding:35px 0; border-top:3px solid #333; border-bottom:1px solid #333;}
+.admission_guide .step_info:after {position:absolute; top:35px; left:180px; width:1px; height:calc(100% - 70px); background:#ccc; content:"";}
+.admission_guide .step_info li {overflow:hidden; margin-top:70px;}
+.admission_guide .step_info li:first-child {margin:0;}
+.admission_guide .step_info li .tit {float:left; width:180px; padding-right:30px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em;}
+.admission_guide .step_info li .txt {float:left; width:calc(100% - 180px); padding-left:30px; font-size:16px; line-height:1.75em;}
+.admission_guide .reservation {width:180px; margin:0 auto; margin-top:50px;}
+.admission_guide .reservation a {display:block; min-width:180px; margin:0 2px; padding:0 15px; background:#00687f; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; text-align:center; transition:all 0.5s;}
 
 @media (max-width:1024px){
-    .admission_info .circle_cont ul {margin:-20px 0;}
-    .admission_info .circle_cont ul li {width:33.333%; padding:20px 0;}
-    .admission_info .circle_cont ul li:nth-child(4):before {display:none;}
-    .admission_info .circle_cont ul li:nth-child(4):after {display:none;}
-    .admission_info .table_cont {padding:30px;}
-    .admission_info .table_cont table th,table td {padding:0 0 50px 0;}
-    .admission_info .table_cont.row table th {font-size:18px;}
-    .admission_info .table_cont table th,table td {font-size:14px;}
-    .admission_info .reservation a {font-size:16px;}
-}
-
-@media (max-width:600px){
-    .admission_info .table_box:before {display:inline-block; position:absolute; top:0; left:0; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
+    .admission_guide .circle_cont ol {max-width:600px; margin:-20px auto;}
+    .admission_guide .circle_cont ol li {width:33.333%; padding:20px 0;}
+    .admission_guide .circle_cont ol li:nth-child(n+4) {transform:translateX(50%);}
+    .admission_guide .step_info:after {left:25%;}
+    .admission_guide .step_info li {margin-top:30px;}
+    .admission_guide .step_info li .tit {width:25%; padding-right:15px; font-size:16px;}
+    .admission_guide .step_info li .txt {width:75%; padding-left:15px; font-size:14px; line-height:1.6em;}
+    .admission_guide .reservation {margin-top:30px;}
+    .admission_guide .reservation a {font-size:16px; line-height:40px;}
 }
 
 @media (max-width:599px){
-    .admission_info .circle_cont ul li {width:50%;}
-    .admission_info .circle_cont ul li:nth-child(3):before {display:none;}
-    .admission_info .circle_cont ul li:nth-child(3):after {display:none;}
-    .admission_info .circle_cont ul li:nth-child(4):before {display:block;}
-    .admission_info .circle_cont ul li:nth-child(4):after {display:block;}
-    .admission_info .circle_cont ul li:nth-child(5):before {display:none;}
-    .admission_info .circle_cont ul li:nth-child(5):after {display:none;}
-    .admission_info .table_cont {padding:20px;} 
-    .admission_info .table_cont table th,table td {padding:0 0 30px 0;}
-    .admission_info .table_cont.row table th {font-size:16px;}
-    .admission_info .table_cont table th,table td {font-size:12px;}
-    .admission_info .reservation a {font-size:14px;}
+    .admission_guide .circle_cont {margin-bottom:20px;}
+    .admission_guide .circle_cont ol li {width:100%; transform:translateX(0) scale(0.8) !important; margin-top:-50px;}
+    .admission_guide .circle_cont ol li:before,
+    .admission_guide .circle_cont ol li:after {display:none;}
+    .admission_guide .step_info {padding:15px 0;}
+    .admission_guide .step_info:after {display:none;}
+    .admission_guide .step_info li {text-align:center;}
+    .admission_guide .step_info li .tit {display:block; float:none; width:100%; font-size:14px; margin-bottom:5px;}
+    .admission_guide .step_info li .txt {float:none; width:100%; font-size:12px;}
+    .admission_guide .reservation {width:100%;}
+    .admission_guide .reservation a {font-size:14px;}
 }
 
 /* 예약&상담 리스트 공통 */

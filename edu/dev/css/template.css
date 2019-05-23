@@ -527,6 +527,8 @@ header.on .header_wrap {padding-top:20px; -webkit-transition:padding 0.2s; trans
 .header_wrap .login.pc {position:absolute; top:45px; right:60px; padding-right:20px; border-right:1px solid rgba(255,255,255,0.5); font-size:16px; font-weight:700; line-height:20px; color:#fff; -webkit-transition:all 0.5s; transition:all 0.5s;}
 header.on .header_wrap .login.pc {top:30px;}
 .header_wrap .login:hover {color:#00aeba;}
+.header_wrap .member {color:#fff !important;}
+.header_wrap .member .name {color:#00aeba;}
 .header_wrap .menu {position:absolute; top:36px; right:0; width:40px; height:40px; border:1px solid rgba(255,255,255,0.5); text-indent:-9999px; -webkit-transition:top 0.2s; -webkit-transition:all 0.2s; transition:all 0.2s;}
 .header_wrap .menu:hover {border-color:#00aeba;}
 header.on .header_wrap .menu {top:20px;}
@@ -545,6 +547,9 @@ header.on .header_wrap .menu {top:20px;}
     .header_wrap .menu span:nth-child(3) {top:19px;}
     .header_wrap .login.mobile {display:inline-block !important; font-size:14px; font-family:"Nanum Square"; padding:0 10px; line-height:20px; border:1px solid #00aeba; font-weight:700; color:#00aeba; -webkit-transition:all 0.5s; transition:all 0.5s;}
     .header_wrap .login.mobile:hover {color:#fff; background:#00aeba;}
+    .header_wrap .login.mobile.member {padding:0; border:0; color:#333 !important;}
+    .header_wrap .login.mobile.member:hover {color:inherit; background:none;}
+    .header_wrap .login.mobile a {font-family:inherit;}
 }
 
 @media (max-width:599px) {

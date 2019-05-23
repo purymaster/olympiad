@@ -8,7 +8,7 @@
             <li class="home"><a href="#">홈</a></li>
             @@if(context.depth1_current) {
             <li>
-                <div class="select_form">
+                <div class="select_form"><input type="hidden" name="">
                     <button type="button">
                         <span>@@context.depth1_current</span>
                     </button>
@@ -24,7 +24,7 @@
             }
             @@if(context.depth2_current) {
             <li>
-                <div class="select_form">
+                <div class="select_form"><input type="hidden" name="">
                     <button type="button">
                         <span>@@context.depth2_current</span>
                     </button>
@@ -40,7 +40,7 @@
             }
             @@if(context.depth3_current) {
             <li>
-                <div class="select_form">
+                <div class="select_form"><input type="hidden" name="">
                     <button type="button">
                         <span>@@context.depth3_current</span>
                     </button>

@@ -23,8 +23,17 @@
                 <div class="sub_upper_wrap bg">
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["학교별 입시","수학&middot;과학 경시","영재센터 실적"]
+                        }
+                        })
+
                         <p class="main_tit">
-                            <strong>학교별 입시</strong>
+                            각종 수학&middot;과학 경시대회의 일정 및<br>
+                            주관 응시자격, 시험 내용 등을 <strong>한눈에 보실 수 있습니다.</strong>
                         </p>
                     </div>
                 </div>

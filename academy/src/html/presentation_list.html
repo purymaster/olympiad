@@ -24,6 +24,13 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container inner">
 
+                            @@include('../inc/tab.html',{
+                                "context" : {
+                                "has_tab" : true,
+                                "tab_list" : ["설명회 신청","신청 확인"]
+                                }
+                                })
+
                         <p class="main_tit">
                             <strong>설명회 신청</strong>
                         </p>
@@ -47,7 +54,7 @@
                                             <label for="input_01">지역</label>
                                         </th>
                                         <td>
-                                            <div class="select_form">
+                                            <div class="select_form"><input type="hidden" name="">
                                                 <button type="button" id="input_01">
                                                     <span>지역</span>
                                                 </button>
@@ -65,7 +72,7 @@
                                             <label for="input_02">캠퍼스명</label>
                                         </th>
                                         <td>
-                                            <div class="select_form">
+                                            <div class="select_form"><input type="hidden" name="">
                                                 <button type="button" id="input_02">
                                                     <span>브랜드명</span>
                                                 </button>
