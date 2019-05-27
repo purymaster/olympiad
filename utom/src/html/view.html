@@ -11,9 +11,9 @@
             "subtitle" : "나는야 게시물",
             "context" : {
             "depth1_current" : "올림피아드 소개",
-            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약상담"],
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약&상담"],
             "depth2_current" : "학원소개",
-            "depth2_sublist" : ["학원소개","히스토리","기업수상","명예의 전당","전국 캠퍼스"],
+            "depth2_sublist" : ["학원소개","기업수상","명예의 전당","캠퍼스 안내"],
             "depth3_current" : false
             }
             })
@@ -377,47 +377,17 @@
                                 <div class="modal_wrap">
 
                                     <!-- 댓글 수정 -->
-                                    <div class="modal confirm" id="modify">
-                                        <div>
-                                            <p class="msg">수정하시겠습니까?</p>
-                                            <p class="sub_txt">게시물 작성시 입력한 비밀번호를 입력해주세요.</p>
-                                        </div>
-                                        <div>
-                                            <input type="password" title="게시물 비밀번호">
-                                            <!-- [D] 비밀번호 불일치시 출력 -->
-                                            <!-- <p class="warning">비밀번호가 일치하지 않습니다.</p> -->
-                                        </div>
-                                        <div class="btn_wrap">
-                                            <button type="button" class="cancel" data-move="close">
-                                                <span>취소</span>
-                                            </button>
-                                            <button type="button" class="submit">
-                                                <span>확인</span>
-                                            </button>
-                                        </div>
-                                    </div>
+                                    @@include('../inc/modal/modal_confirm.html',{
+                                    "msg" : "수정하시겠습니까?",
+                                    "id" : "modify"
+                                    })
                                     <!-- //댓글 수정 -->
 
                                     <!-- 댓글 삭제 -->
-                                    <div class="modal confirm" id="delete">
-                                        <div>
-                                            <p class="msg">삭제하시겠습니까?</p>
-                                            <p class="sub_txt">게시물 작성시 입력한 비밀번호를 입력해주세요.</p>
-                                        </div>
-                                        <div>
-                                            <input type="password" title="게시물 비밀번호">
-                                            <!-- [D] 비밀번호 불일치시 출력 -->
-                                            <!-- <p class="warning">비밀번호가 일치하지 않습니다.</p> -->
-                                        </div>
-                                        <div class="btn_wrap">
-                                            <button type="button" class="cancel" data-move="close">
-                                                <span>취소</span>
-                                            </button>
-                                            <button type="button" class="submit">
-                                                <span>확인</span>
-                                            </button>
-                                        </div>
-                                    </div>
+                                    @@include('../inc/modal/modal_confirm.html',{
+                                    "msg" : "삭제하시겠습니까?",
+                                    "id" : "delete"
+                                    })
                                     <!-- //댓글 삭제 -->
 
                                 </div>

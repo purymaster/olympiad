@@ -232,37 +232,48 @@ label {cursor:pointer;}
 }
 
 /* 입력폼 테이블 */
-.input_form {margin:-5px 0; border:0;}
-.input_form th,.input_form td {padding:5px 10px; border:0; text-align:left;}
-.input_form th {padding-left:20px;}
-.input_form td {padding-right:20px;}
-.input_form tr th {border-left:1px solid #ddd;}
-.input_form tr th:first-child {border:0;}
-.input_form th label {font-family:"Nanum Square"; font-size:16px; font-weight:700;}
-.input_form input[type="text"],.input_form input[type="email"],.input_form .select_form {width:100%;}
-.input_form .select_form button {min-width:0; line-height:38px;}
-.input_form .tel {max-width:400px; font-size:0;}
-.input_form .tel input[type="text"],.input_form .tel .select_form {width:calc(33.33% - 10px);}
-.input_form .tel .dash {display:inline-block; width:15px; font-size:14px; line-height:40px; text-align:center; vertical-align:top;}
-.input_form .search_box {font-size:0;}
-.input_form .search_box input[type="text"] {width:calc(100% - 95px);}
-.input_form .search_box button {width:90px; margin-left:5px; background:#aaa; font-family:"Nanum Square"; font-size:14px; line-height:40px; color:#fff; vertical-align:top; transition:all 0.5s;}
-.input_form .search_box button:hover {background:#00687f;}
-.input_form .calendar {position:relative; background:#efefef;}
-.input_form .calendar:before {position:absolute; top:50%; right:18px; z-index:0; width:18px; height:17px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-180px -475px; content:"";}
-.input_form .calendar input[type="text"] {position:relative; z-index:1; background:none !important;}
+.input_form .necessary {display:inline-block; position:relative; width:1px; font-size:0; vertical-align:top;}
+.input_form .necessary:before {position:absolute; top:10px; left:-2px; font-size:18px; line-height:12px; color:red; text-indent:0; content:"*";}
+.input_form .cmt {margin-top:-30px; margin-bottom:15px; font-size:12px; text-align:right;}
+.input_form .cmt .necessary:before {top:3px; left:-10px;}
+.input_form dl {margin:0 -10px;}
+.input_form dl:after {display:block; clear:both; content:"";}
+.input_form dl .option {float:left; width:50%; padding:5px 10px;}
+.input_form dl .option:after {display:block; clear:both; content:"";}
+.input_form dl .option dt {float:left; width:100px;}
+.input_form dl .option dt label {display:inline-block; position:relative; font-size:16px; font-family:"Nanum Square"; font-weight:700; line-height:40px; display:table-cell; vertical-align:middle;}
+.input_form dl .option dd {float:left; width:calc(100% - 100px);}
+.input_form dl .option input[type="text"],.input_form dl .option input[type="email"],.input_form dl .option .select_form {width:100%;}
+.input_form dl .option .tel {max-width:400px; font-size:0;}
+.input_form dl .option .tel input[type="text"],.input_form dl .tel .select_form {width:calc(33.33% - 10px);}
+.input_form dl .option .select_form button {min-width:0;}
+.input_form dl .option .tel .dash {display:inline-block; width:15px; font-size:14px; line-height:40px; text-align:center; vertical-align:top;}
+.input_form dl .option .search_box {font-size:0;}
+.input_form dl .option .search_box input[type="text"] {width:calc(100% - 95px);}
+.input_form dl .option .search_box button {width:90px; margin-left:5px; background:#aaa; font-family:"Nanum Square"; font-size:14px; line-height:40px; color:#fff; vertical-align:top; transition:all 0.5s;}
+.input_form dl .option .search_box button:hover {background:#00687f;}
+.input_form dl .option .calendar {position:relative; background:#efefef;}
+.input_form dl .option .calendar:before {position:absolute; top:50%; right:18px; z-index:0; width:18px; height:17px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-180px -475px; content:"";}
+.input_form dl .option .calendar input[type="text"] {position:relative; z-index:1; background:none !important;}
+.input_form.address dl .option, .input_form.textarea dl .option,.input_form.radio dl .option {float:none; width:100%;}
+.input_form.textarea dl .option textarea {width:100%; height:130px; padding:12px;}
+.input_form.textarea dl .option .txt_cnt {text-align:right; font-size:12px;}
+.input_form.textarea dl .option .txt_cnt span {font-family:"Lato";}
+.input_form.textarea dl .option .txt_cnt strong {font-weight:700; color:#00687f;}
+.input_form.radio dl .radio_form ul > li {margin:0;}
+.input_form.radio dl .radio_form input[type="radio"] + label {font-size:14px; line-height:30px;}
+.input_form.radio dl .radio_form input[type="radio"] + label:before {top:15px;}
+.input_form.radio dl .radio_form input[type="radio"]:checked + label:after {top:15px;}
+.input_form.radio dl input[data-value="etc_input"] {min-width:300px;}
 
 @media (max-width:1024px) {
-    .input_form,
-	.input_form thead,
-	.input_form tbody,
-	.input_form tr,
-	.input_form th,
-    .input_form td {display:block; float:left; clear:both; width:100%; border:none; text-align:left;}
-    .input_form th {margin-top:10px;}
-    .input_form th,.input_form td {padding:5px 0; border:0 !important;}
-    .input_form th label {font-size:14px;}
-    .input_form th label br {display:none;}
+    .input_form dl {margin:0;}
+    .input_form dl .option {float:none; width:100%; margin:15px 0; padding:0;}
+    .input_form.radio dl input[data-value="etc_input"] {min-width:0;}
+}
+
+@media (max-width:599px) {
+    .input_form dl .option dt,.input_form dl .option dd {float:none; width:100%;}
 }
 
 /* Datepicker */

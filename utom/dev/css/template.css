@@ -331,11 +331,12 @@ label {cursor:pointer;}
 /* 데이터 테이블 */
 .data_table {overflow:hidden;}
 .data_table table {width:calc(100% + 1px); margin-left:-1px; border-top:3px solid #333;}
-.data_table table th,.data_table table td {border-left:1px solid #cdcdcd;}
+.data_table table th,.data_table table td {padding:17px 30px; border-left:1px solid #cdcdcd;}
 .data_table table thead th {border-bottom:1px solid #333; background:#f5f5f5; font-size:16px;}
 .data_table table tr th:first-child {border-right:2px solid #cdcdcd;}
-.data_table table td.left {text-align:left;}
+.data_table table th.left,.data_table table td.left {text-align:left;}
 .data_table.no_left_th table thead th {border-right:0;}
+.data_table.row table th {border-right:0 !important; background:#f5f5f5; font-size:16px;}
 
 @-webkit-keyframes scroll_txt {
     0% {-webkit-transform:translateX(0px);transform:translateX(0px);}
@@ -890,7 +891,7 @@ footer {background:#505354; color:#fff;}
 .footer_upper .bottom_menu li {float:left; margin:0 30px;}
 .footer_upper .bottom_menu li a {display:inline-block; font-size:16px; font-weight:700; line-height:60px; color:rgba(255,255,255,0.7);}
 .footer_upper .bottom_menu li a:hover,.footer_upper .bottom_menu li a strong {font-weight:700; color:#248d8e;}
-.footer_upper .select_form {position:absolute; top:0; right:0; background:none; font-size:16px;}
+.footer_upper .select_form {position:absolute; top:0; right:0; min-width:150px; background:none; font-size:16px;}
 .footer_upper .select_form button {padding-right:30px; border:none; background:none; line-height:60px; color:rgba(255,255,255,0.7); text-transform:uppercase;}
 .footer_upper .select_form button:after {right:3px; border-color:#999;}
 .footer_upper .select_form button.on + ul {bottom:60px; border:0; background:#505354;}
@@ -912,15 +913,16 @@ footer {background:#505354; color:#fff;}
 .footer_lower .lower_wrap address .copyright {font-size:12px;}
 
 @media (max-width:1280px) {
-    .footer_upper .bottom_menu {margin:0 -20px;}
+    .footer_upper .bottom_menu {margin:0 -10px;}
     .footer_upper .bottom_menu li {margin:0 10px;}
+    .footer_upper .bottom_menu li a {font-size:14px;}
 }
 
 @media (max-width:1024px) {
     .footer_upper {border:0;}
     .footer_upper .bottom_menu {display:inline-block; max-width:calc(100% - 130px); margin:0 -10px; padding:10px 0;}
     .footer_upper .bottom_menu li {margin:0 10px;}
-    .footer_upper .bottom_menu li a {font-size:14px; line-height:30px;}
+    .footer_upper .bottom_menu li a {line-height:30px;}
     .footer_upper .select_form button {line-height:50px;}
     .footer_upper .select_form button.on + ul {bottom:50px;}
     .footer_lower {padding-top:0;}
@@ -1041,6 +1043,16 @@ footer {background:#505354; color:#fff;}
 .modal.search .pagenation ul {margin:0 12px;}
 .modal.search .pagenation ul li span,.modal.search .pagenation ul li a {width:30px; font-size:12px; line-height:30px;}
 
+@media (max-width:1024px) {
+    .modal.search .tab_menu {margin-top:15px;}
+    .modal.search .tab_menu ul li button {font-size:14px; line-height:2em;}
+    .modal.search .result_wrap {margin-bottom:15px;}
+    .modal.search .address_list th {padding:5px; font-size:14px; font-weight:700;}
+    .modal.search .address_list td {font-size:12px;}
+    .modal.search .address_list td label {padding:5px 0;}
+    .modal.search .pagenation {margin-top:15px;}
+}
+
 /* 주소 */
 .modal.address .result_address {padding:10px 0; border-top:3px solid #333; border-bottom:1px solid #333;}
 .modal.address .result_address li {margin:5px 0;}
@@ -1048,6 +1060,12 @@ footer {background:#505354; color:#fff;}
 .modal.address .detail {margin-top:20px;}
 .modal.address .detail input[type="text"] {width:calc(100% - 115px);}
 .modal.address .detail button {width:110px; background:#00687f;}
+
+@media (max-width:1024px) {
+    .modal.address .result_address {padding:0;}
+    .modal.address .result_address strong, .modal.address .result_address p {font-size:12px;}
+    .modal.address .detail {margin-top:15px;}
+}
 
 /* 학교 */
 .modal.school .result_wrap {margin-top:20px;}
@@ -2757,8 +2775,8 @@ footer {background:#505354; color:#fff;}
 .join_step .step ol li .txt_wrap {margin-top:194px; padding-top:25px;}
 .join_step .step ol li .txt_wrap strong {display:block; font-family:"Nanum Square"; font-size:18px; line-height:1.8em; white-space:nowrap;}
 .join_step .step ol li .txt_wrap p {margin-top:15px; font-family:"Nanum Square"; font-size:15px; line-height:2em;}
-.join_step .btn_wrap {margin-top:40px; text-align:center;}
-.join_step .btn_wrap a {padding:0 25px; background:#008398; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:50px; color:#fff;}
+.join_step .btn_wrap {margin-top:50px; text-align:center;}
+.join_step .btn_wrap a {min-width:180px; margin:0 2px; padding:0 15px; background:#00687f; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .join_step .key_visual {display:table; width:100%; height:250px; margin-top:70px; margin-bottom:-150px; background:url(../img/bg/bg_amission_procedure_05.jpg); background-position:center; background-size:cover; text-align:center;}
 .join_step .key_visual p {display:table-cell; padding:0 30px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; color:#fff; vertical-align:middle;}
 
@@ -2783,7 +2801,7 @@ footer {background:#505354; color:#fff;}
     .join_step .step ol li .txt_wrap strong {font-size:16px;}
     .join_step .step ol li .txt_wrap p {font-size:14px; line-height:1.8em;}
     .join_step .btn_wrap {margin-top:30px;}
-    .join_step .btn_wrap a {padding:0 15px; font-size:14px; line-height:40px;}
+    .join_step .btn_wrap a {font-size:16px; line-height:40px;}
     .join_step .key_visual {margin-top:30px; margin-bottom:-80px; height:200px;}
     .join_step .key_visual p {font-size:24px;}
 }
@@ -2792,7 +2810,7 @@ footer {background:#505354; color:#fff;}
     .join_step .step ol {max-width:100%;}
     .join_step .step ol li {float:none; width:100%; max-width:100%;}
     .join_step .step ol li:before,.join_step .step ol li:after {display:none;}
-    .join_step .btn_wrap a {line-height:2em;}
+    .join_step .btn_wrap a {margin:5px 0; width:100%; font-size:14px;}
     .join_step .key_visual {margin-top:30px; margin-bottom:-60px; height:auto; min-height:150px;}
     .join_step .key_visual p {font-size:18px; padding:15px;}
     .join_step .key_visual p br {display:none;}

@@ -1480,39 +1480,70 @@
 .senior_math .bg_gray {background-color:#f5f5f5;}
 .senior_math .class_guide ul li {margin-bottom:60px;}
 .senior_math .class_guide ul li:last-child {margin-bottom:0;}
-.senior_math .class_guide .data_table table th {background-color:#e5e5e5 !important;}
+.senior_math .class_guide .data_table table thead th {background-color:#e5e5e5;}
 .senior_math .class_guide .data_table table th,.data_table table td {padding:12px;}
-.senior_math .class_guide .tit_img {margin-bottom:20px; line-height:0; text-align:center;}
+.senior_math .class_guide .grade_tit {overflow:hidden; margin-bottom:30px; font-size:0; text-align:center;}
+.senior_math .class_guide .grade_tit .grade {display:inline-block; margin-right:40px; text-align:right; vertical-align:top;}
+.senior_math .class_guide .grade_tit .grade span {display:block; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:70px; color:#333;}
+.senior_math .class_guide .grade_tit .step {display:inline-block;}
+.senior_math .class_guide .grade_tit .step {position:relative; z-index:1;}
+.senior_math .class_guide .grade_tit .step:before {position:absolute; top:50%; right:50%; z-index:-1; width:50%; border-top:3px dotted #ddd; transform:translate(50%,-50%); content:"";}
+.senior_math .class_guide .grade_tit .step .step_list {overflow:hidden; margin:0 -40px;}
+.senior_math .class_guide .grade_tit .step .step_list li {display:table; float:left; position:relative; height:70px; margin-bottom:0; padding:0 40px; text-align:center;}
+.senior_math .class_guide .grade_tit .step .step_list li:before,.senior_math .class_guide .grade_tit .step .step_list li:after {position:absolute; top:50%; left:0; content:""; width:20px; height:4px; background:#2c9fb1; margin-left:-10px; margin-top:-2px;}
+.senior_math .class_guide .grade_tit .step .step_list li:after {transform:rotate(90deg);}
+.senior_math .class_guide .grade_tit .step .step_list li:first-child:before,.senior_math .class_guide .grade_tit .step .step_list li:first-child:after {display:none;}
+.senior_math .class_guide .grade_tit .step .step_list li p {display:table-cell; width:220px; border-radius:50px; background-color:#3cb3c6; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:26px; color:#fff; vertical-align:middle;}
+.senior_math .class_guide .grade_tit .step .step_list li:nth-child(1) p {background-color:#3cb3c6;}
+.senior_math .class_guide .grade_tit .step .step_list li:nth-child(2) p {background-color:#018499;}
 .senior_math .table_list li {margin-bottom:10px;}
 .senior_math .table_list li:last-child {margin-bottom:0;}
 .senior_math .class_guide .text {padding-top:40px; font-size:14px; font-weight:700; line-height:1.5em; color:#018499;}
+.senior_math .class_guide .text:before {content:"*"; margin-right:0.2em;}
 .senior_math .entrance_management {padding:20px 0; border-top:3px solid #333; border-bottom:1px solid #033;}
 .senior_math .entrance_management .em_list {overflow:hidden; margin:0 -20px;}
 .senior_math .entrance_management .em_list > li {float:left; position:relative; width:33.3333%; min-height:250px; padding:0 20px;}
 .senior_math .entrance_management .em_list > li:before {position:absolute; top:0; left:0; width:1px; height:100%; background-color:#cdcdcd; content:"";}
 .senior_math .entrance_management .em_list > li:nth-child(1):before {display:none;}
-.senior_math .entrance_management .em_list li p {width:200px; height:50px; margin:0 auto 15px; padding:8px 0; border-radius:50px; font-size:16px; line-height:36px; color:#fff; text-align:center;} 
+.senior_math .entrance_management .em_list li p {width:200px; margin:0 auto 15px; border-radius:50px; font-size:16px; font-weight:700; line-height:50px; color:#fff; text-align:center;}
 .senior_math .entrance_management .em_list li:nth-child(1) p {background-color:#26a5b9;}
 .senior_math .entrance_management .em_list li:nth-child(2) p {background-color:#166fa6;}
 .senior_math .entrance_management .em_list li:nth-child(3) p {background-color:#8ab053;}
 .senior_math .em_box .list {font-size:0; line-height:0; text-align:center !important;}
-.senior_math .em_box .list > .txt_list {display:inline-block;}
 .senior_math .em_box .list > .txt_list li {margin-bottom:5px; text-align:left;}
 .senior_math .em_box .list > .txt_list li:last-child {margin-bottom:0;}
 
 @media (max-width:1024px){
     .senior_math .class_guide ul li {margin-bottom:30px;}
+    .senior_math .em_box {text-align:center;}
+    .senior_math .em_box .txt_list {display:inline-block;}
+    .senior_math .em_box .list > .txt_list li {margin:0; padding:0; text-align:center;}
+    .senior_math .em_box .list > .txt_list li:before {display:none;}
     .senior_math .entrance_management .em_list {margin:0;}
     .senior_math .entrance_management .em_list > li {float:none; width:100%; min-height:0; margin-bottom:30px; padding:0;}
     .senior_math .entrance_management .em_list > li:last-child {margin-block-end:0;}
     .senior_math .entrance_management .em_list > li:before {display:none;} 
     .senior_math .class_guide .text {padding-top:20px;}   
-    .senior_math .entrance_management .em_list li p {width:100%;}
+    .senior_math .entrance_management .em_list li p {width:100%; max-width:200px; line-height:40px;}
+    .senior_math .class_guide .grade_tit .grade {float:none; width:100%; text-align:center;}
+    .senior_math .class_guide .grade_tit .step {float:none; width:100%; max-width:400px; margin:0 auto; text-align:center;}
+    .senior_math .class_guide .grade_tit .grade span {font-size:20px; line-height:1.5em; margin-bottom:15px;}
+    .senior_math .class_guide .grade_tit .step .step_list {margin:0 -30px;}
+    .senior_math .class_guide .grade_tit .step .step_list li {width:50%; height:60px; padding:0 30px;}
+    .senior_math .class_guide .grade_tit .step .step_list li p {width:100%; font-size:16px; line-height:20px;}
 }
 
 @media (max-width:599px){
     .senior_math .class_guide .text {font-size:12px;}
-    .senior_math .entrance_management .em_list li p {font-size:14px;}
+    .senior_math .entrance_management .em_list li p {max-width:150px; font-size:14px; line-height:30px;}
+    .senior_math .class_guide .grade_tit .step {max-width:150px;}
+    .senior_math .class_guide .grade_tit .step:before {width:3px; height:50%; border-top:0; border-left:3px dotted #ddd;}
+    .senior_math .class_guide .grade_tit .grade span {font-size:16px;}
+    .senior_math .class_guide .grade_tit .step .step_list {margin:0;}
+    .senior_math .class_guide .grade_tit .step .step_list li {float:none; width:100%; height:50px; margin-bottom:50px; padding:0;}
+    .senior_math .class_guide .grade_tit .step .step_list li:last-child {margin-bottom:0;}
+    .senior_math .class_guide .grade_tit .step .step_list li p {width:100%; font-size:14px;}
+    .senior_math .class_guide .grade_tit .step .step_list li:before, .senior_math .class_guide .grade_tit .step .step_list li:after {left:50%; top:-50%;}
 }
 
 /* 고등부 - 학습프로그램 영어 */
@@ -1841,13 +1872,7 @@
 .exam_form .form_list .txt button:hover {color:#00687f;}
 .exam_form .form_list .txt button:after {position:absolute; top:9px; right:2px; width:8px; height:8px; border:1px solid #aaa; border-bottom:0; border-left:0; transform:rotate(45deg); content:""; transition:all 0.5s;}
 .exam_form .form_list .txt button:hover:after {border-color:#00687f;}
-.exam_form .form_list .input_form {width:calc(100% + 40px); margin-left:-20px;}
 .exam_form .form_list .input_list {clear:both; margin-top:5px; padding:10px 0;}
-.exam_form .form_list .root .radio_form input[type="text"] {display:none; position:relative; top:-7px; margin-left:10px;}
-.exam_form .form_list textarea {width:100%; height:130px; padding:12px;}
-.exam_form .form_list .txt_cnt {text-align:right; font-size:12px;}
-.exam_form .form_list .txt_cnt span {font-family:"Lato";}
-.exam_form .form_list .txt_cnt strong {font-weight:700; color:#00687f;}
 .exam_form .form_list.select .radio_form .list {padding:0;}
 .exam_form .form_list.select .radio_form .list > li {float:none;}
 .exam_form .form_list.select .radio_form .list > li > label {margin-right:30px;}
@@ -1887,7 +1912,6 @@
     .exam_form .form_list .txt {font-size:14px; line-height:20px;}
     .exam_form .form_list .txt button {font-size:12px; line-height:20px; margin-left:15px;}
     .exam_form .form_list .txt button:after {top:5px;}
-    .exam_form .form_list .input_form {width:100%; margin:0;}
     .exam_form .form_list .form_tit.small label {font-size:14px;}
     .exam_form .form_list.select .date {padding:0 10px;}
     .exam_form .form_list.select .date:before {display:none;}
@@ -1914,6 +1938,10 @@
     .exam_form .form_list.select .campus_link li button {margin-left:23px;}
     .exam_form .term_agree .check_form input[type='checkbox'] + label {font-size:12px;}
     .exam_form .btn_wrap a,.exam_form .btn_wrap button {width:100%; margin:5px 0; font-size:14px;}
+}
+
+@media (max-width:320px) {
+    .exam_form .term_agree .check_form input[type='checkbox'] + label {font-size:10px;}
 }
 
 /* 완료 페이지 공통 */

@@ -95,6 +95,16 @@
 .modal.search .pagenation ul {margin:0 12px;}
 .modal.search .pagenation ul li span,.modal.search .pagenation ul li a {width:30px; font-size:12px; line-height:30px;}
 
+@media (max-width:1024px) {
+    .modal.search .tab_menu {margin-top:15px;}
+    .modal.search .tab_menu ul li button {font-size:14px; line-height:2em;}
+    .modal.search .result_wrap {margin-bottom:15px;}
+    .modal.search .address_list th {padding:5px; font-size:14px; font-weight:700;}
+    .modal.search .address_list td {font-size:12px;}
+    .modal.search .address_list td label {padding:5px 0;}
+    .modal.search .pagenation {margin-top:15px;}
+}
+
 /* 주소 */
 .modal.address .result_address {padding:10px 0; border-top:3px solid #333; border-bottom:1px solid #333;}
 .modal.address .result_address li {margin:5px 0;}
@@ -102,6 +112,12 @@
 .modal.address .detail {margin-top:20px;}
 .modal.address .detail input[type="text"] {width:calc(100% - 115px);}
 .modal.address .detail button {width:110px; background:#00687f;}
+
+@media (max-width:1024px) {
+    .modal.address .result_address {padding:0;}
+    .modal.address .result_address strong, .modal.address .result_address p {font-size:12px;}
+    .modal.address .detail {margin-top:15px;}
+}
 
 /* 학교 */
 .modal.school .result_wrap {margin-top:20px;}
