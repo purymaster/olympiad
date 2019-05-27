@@ -194,9 +194,9 @@ button span {position:relative; font:inherit;}
 .side_menu ul li a:after {position:absolute; top:20px; left:50%; width:40px; height:40px; background-image:url(../img/sprite/sprite.png); background-size:500px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
 .side_menu ul li:nth-child(1) a:after {width:39px; height:39px; background-position:-5px -122px;} /* 홈으로 */
 .side_menu ul li:nth-child(1) a:hover:after {background-position:-49px -122px;}
-.side_menu ul li:nth-child(2) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담신청 */
+.side_menu ul li:nth-child(2) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담 신청 */
 .side_menu ul li:nth-child(2) a:hover:after {background-position:-95px -74px;}
-.side_menu ul li:nth-child(3) a:after {width:38px; height:38px; background-position:-138px -74px;} /* 설명회신청 */
+.side_menu ul li:nth-child(3) a:after {width:38px; height:38px; background-position:-138px -74px;} /* 설명회 신청 */
 .side_menu ul li:nth-child(3) a:hover:after {background-position:-181px -74px;}
 .side_menu ul li:nth-child(4) a:after {width:34px; height:34px; background-position:-224px -74px;} /* 입학고사 */
 .side_menu ul li:nth-child(4) a:hover:after {background-position:-263px -74px;}
@@ -408,6 +408,7 @@ label {cursor:pointer;}
 }
 
 @media (max-width:599px) {
+    .input_form dl .option dt label {font-size:14px;}
     .input_form dl .option dt,.input_form dl .option dd {float:none; width:100%;}
 }
 
@@ -3303,6 +3304,7 @@ footer {background:#505354; color:#fff;}
 .exam_form .exam_info .misc dt,.exam_form .exam_info .misc dd {float:left;}
 .exam_form .exam_info .misc dt:after {content:":"; padding:0 0.2em;}
 .exam_form .form_list {clear:both; padding:20px; border-bottom:1px solid #ddd;}
+.exam_form .form_list:first-child {border-top:1px solid #ddd;}
 .exam_form .form_list .form_tit {position:relative; margin-bottom:20px; padding-left:15px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em;}
 .exam_form .form_list .form_tit:before {position:absolute; top:50%; left:0; width:8px; height:8px; margin-top:-4px; background:#333; content:"";}
 .exam_form .form_list .form_tit.small {margin-bottom:5px; padding:0;}
@@ -3350,7 +3352,7 @@ footer {background:#505354; color:#fff;}
     .exam_form .exam_info .misc dt, .exam_form .exam_info .misc dd {display:inline-block; float:none;}
     .exam_form .form_list {padding:15px 0;}
     .exam_form .form_list:after {display:block; clear:both; content:"";}
-    .exam_form .form_list .form_tit {margin-bottom:15px; font-size:16px;}
+    .exam_form .form_list .form_tit {margin-bottom:15px; font-size:18px;}
     .exam_form .form_list .txt {font-size:14px; line-height:20px;}
     .exam_form .form_list .txt button {font-size:12px; line-height:20px; margin-left:15px;}
     .exam_form .form_list .txt button:after {top:5px;}
@@ -3372,6 +3374,7 @@ footer {background:#505354; color:#fff;}
     .exam_form .exam_info .tit {font-size:18px;}
     .exam_form .exam_info .misc{margin-left:-5px;}
     .exam_form .exam_info .misc div {padding:0 5px; font-size:12px;}
+    .exam_form .form_list .form_tit {font-size:16px;}
     .exam_form .form_list .txt {font-size:12px; line-height:1.5em;}
     .exam_form .form_list.select .date {display:block; padding:0; padding-left:23px;}
     .exam_form .form_list.select .radio_form .list > li > label {display:block; float:none; margin:0;}

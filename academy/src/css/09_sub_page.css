@@ -1861,6 +1861,7 @@
 .exam_form .exam_info .misc dt,.exam_form .exam_info .misc dd {float:left;}
 .exam_form .exam_info .misc dt:after {content:":"; padding:0 0.2em;}
 .exam_form .form_list {clear:both; padding:20px; border-bottom:1px solid #ddd;}
+.exam_form .form_list:first-child {border-top:1px solid #ddd;}
 .exam_form .form_list .form_tit {position:relative; margin-bottom:20px; padding-left:15px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em;}
 .exam_form .form_list .form_tit:before {position:absolute; top:50%; left:0; width:8px; height:8px; margin-top:-4px; background:#333; content:"";}
 .exam_form .form_list .form_tit.small {margin-bottom:5px; padding:0;}
@@ -1908,7 +1909,7 @@
     .exam_form .exam_info .misc dt, .exam_form .exam_info .misc dd {display:inline-block; float:none;}
     .exam_form .form_list {padding:15px 0;}
     .exam_form .form_list:after {display:block; clear:both; content:"";}
-    .exam_form .form_list .form_tit {margin-bottom:15px; font-size:16px;}
+    .exam_form .form_list .form_tit {margin-bottom:15px; font-size:18px;}
     .exam_form .form_list .txt {font-size:14px; line-height:20px;}
     .exam_form .form_list .txt button {font-size:12px; line-height:20px; margin-left:15px;}
     .exam_form .form_list .txt button:after {top:5px;}
@@ -1930,6 +1931,7 @@
     .exam_form .exam_info .tit {font-size:18px;}
     .exam_form .exam_info .misc{margin-left:-5px;}
     .exam_form .exam_info .misc div {padding:0 5px; font-size:12px;}
+    .exam_form .form_list .form_tit {font-size:16px;}
     .exam_form .form_list .txt {font-size:12px; line-height:1.5em;}
     .exam_form .form_list.select .date {display:block; padding:0; padding-left:23px;}
     .exam_form .form_list.select .radio_form .list > li > label {display:block; float:none; margin:0;}

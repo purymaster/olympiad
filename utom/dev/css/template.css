@@ -88,6 +88,8 @@ html.fixed,html.fixed body {overflow:hidden;}
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,button {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; font-family:'Nanum Gothic',"Apple SD Gothic Neo","Droid Sans",sans-serif; -webkit-box-sizing:border-box; box-sizing:border-box;}
 
 input[type="text"],input[type="email"],input[type="number"],input[type="submit"],input[type="reset"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-box-sizing:border-box;box-sizing:border-box; margin:0; padding:0; border:none; border-radius:0; background:none; font-family:"Nanum Gothic","Apple SD Gothic Neo","Droid Sans",sans-serif; font-size:100%; letter-spacing:-0.025em; resize:none; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none;}
+input:-moz-read-only {background:#efefef !important; cursor:not-allowed;}
+input:read-only {background:#efefef !important; cursor:not-allowed;}
 :focus {outline:none;}
 body {position:relative; background:#fff; font-size:14px; line-height:1.8; color:#333; word-wrap:break-word; word-break:keep-all; -webkit-text-size-adjust:none; -moz-text-size-adjust:none;}
 blockquote,q {quotes:none;}
@@ -105,7 +107,7 @@ a:hover,button:hover {cursor:pointer;}
 button {background:transparent;}
 em,address,i {font-style:normal;}
 .sprite {display:inline-block;}
-button span {position:relative; font-family:inherit;}
+button span {position:relative; font:inherit;}
 
 /* PC, 모바일 제어 */
 .pc {display:block !important;}
@@ -190,9 +192,9 @@ button span {position:relative; font-family:inherit;}
 .side_menu ul li a:after {position:absolute; top:20px; left:50%; width:40px; height:40px; background-image:url(../img/sprite/sprite.png); background-size:500px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
 .side_menu ul li:nth-child(1) a:after {width:39px; height:39px; background-position:-5px -122px;} /* 홈으로 */
 .side_menu ul li:nth-child(1) a:hover:after {background-position:-49px -122px;}
-.side_menu ul li:nth-child(2) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담신청 */
+.side_menu ul li:nth-child(2) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담 신청 */
 .side_menu ul li:nth-child(2) a:hover:after {background-position:-95px -74px;}
-.side_menu ul li:nth-child(3) a:after {width:38px; height:38px; background-position:-138px -74px;} /* 설명회신청 */
+.side_menu ul li:nth-child(3) a:after {width:38px; height:38px; background-position:-138px -74px;} /* 설명회 신청 */
 .side_menu ul li:nth-child(3) a:hover:after {background-position:-181px -74px;}
 .side_menu ul li:nth-child(4) a:after {width:34px; height:34px; background-position:-224px -74px;} /* 입학고사 */
 .side_menu ul li:nth-child(4) a:hover:after {background-position:-263px -74px;}
@@ -364,37 +366,49 @@ label {cursor:pointer;}
 }
 
 /* 입력폼 테이블 */
-.input_form {margin:-5px 0; border:0;}
-.input_form th,.input_form td {padding:5px 10px; border:0; text-align:left;}
-.input_form th {padding-left:20px;}
-.input_form td {padding-right:20px;}
-.input_form tr th {border-left:1px solid #ddd;}
-.input_form tr th:first-child {border:0;}
-.input_form th label {font-family:"Nanum Square"; font-size:16px; font-weight:700;}
-.input_form input[type="text"],.input_form input[type="email"],.input_form .select_form {width:100%;}
-.input_form .select_form button {min-width:0; line-height:38px;}
-.input_form .tel {max-width:400px; font-size:0;}
-.input_form .tel input[type="text"],.input_form .tel .select_form {width:calc(33.33% - 10px);}
-.input_form .tel .dash {display:inline-block; width:15px; font-size:14px; line-height:40px; text-align:center; vertical-align:top;}
-.input_form .search_box {font-size:0;}
-.input_form .search_box input[type="text"] {width:calc(100% - 95px);}
-.input_form .search_box button {width:90px; margin-left:5px; background:#aaa; font-family:"Nanum Square"; font-size:14px; line-height:40px; color:#fff; vertical-align:top; -webkit-transition:all 0.5s; transition:all 0.5s;}
-.input_form .search_box button:hover {background:#00687f;}
-.input_form .calendar {position:relative; background:#efefef;}
-.input_form .calendar:before {position:absolute; top:50%; right:18px; z-index:0; width:18px; height:17px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-180px -475px; content:"";}
-.input_form .calendar input[type="text"] {position:relative; z-index:1; background:none !important;}
+.input_form .necessary {display:inline-block; position:relative; width:1px; font-size:0; vertical-align:top;}
+.input_form .necessary:before {position:absolute; top:10px; left:-2px; font-size:18px; line-height:12px; color:red; text-indent:0; content:"*";}
+.input_form .cmt {margin-top:-30px; margin-bottom:15px; font-size:12px; text-align:right;}
+.input_form .cmt .necessary:before {top:3px; left:-10px;}
+.input_form dl {margin:0 -10px;}
+.input_form dl:after {display:block; clear:both; content:"";}
+.input_form dl .option {float:left; width:50%; padding:5px 10px;}
+.input_form dl .option:after {display:block; clear:both; content:"";}
+.input_form dl .option dt {float:left; width:100px;}
+.input_form dl .option dt label {display:inline-block; position:relative; font-size:16px; font-family:"Nanum Square"; font-weight:700; line-height:40px; display:table-cell; vertical-align:middle;}
+.input_form dl .option dd {float:left; width:calc(100% - 100px);}
+.input_form dl .option input[type="text"],.input_form dl .option input[type="email"],.input_form dl .option .select_form {width:100%;}
+.input_form dl .option .tel {max-width:400px; font-size:0;}
+.input_form dl .option .tel input[type="text"],.input_form dl .tel .select_form {width:calc(33.33% - 10px);}
+.input_form dl .option .select_form button {min-width:0;}
+.input_form dl .option .tel .dash {display:inline-block; width:15px; font-size:14px; line-height:40px; text-align:center; vertical-align:top;}
+.input_form dl .option .search_box {font-size:0;}
+.input_form dl .option .search_box input[type="text"] {width:calc(100% - 95px);}
+.input_form dl .option .search_box button {width:90px; margin-left:5px; background:#aaa; font-family:"Nanum Square"; font-size:14px; line-height:40px; color:#fff; vertical-align:top; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.input_form dl .option .search_box button:hover {background:#00687f;}
+.input_form dl .option .calendar {position:relative; background:#efefef;}
+.input_form dl .option .calendar:before {position:absolute; top:50%; right:18px; z-index:0; width:18px; height:17px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-180px -475px; content:"";}
+.input_form dl .option .calendar input[type="text"] {position:relative; z-index:1; background:none !important;}
+.input_form.address dl .option, .input_form.textarea dl .option,.input_form.radio dl .option {float:none; width:100%;}
+.input_form.textarea dl .option textarea {width:100%; height:130px; padding:12px;}
+.input_form.textarea dl .option .txt_cnt {text-align:right; font-size:12px;}
+.input_form.textarea dl .option .txt_cnt span {font-family:"Lato";}
+.input_form.textarea dl .option .txt_cnt strong {font-weight:700; color:#00687f;}
+.input_form.radio dl .radio_form ul > li {margin:0;}
+.input_form.radio dl .radio_form input[type="radio"] + label {font-size:14px; line-height:30px;}
+.input_form.radio dl .radio_form input[type="radio"] + label:before {top:15px;}
+.input_form.radio dl .radio_form input[type="radio"]:checked + label:after {top:15px;}
+.input_form.radio dl input[data-value="etc_input"] {min-width:300px;}
 
 @media (max-width:1024px) {
-    .input_form,
-	.input_form thead,
-	.input_form tbody,
-	.input_form tr,
-	.input_form th,
-    .input_form td {display:block; float:left; clear:both; width:100%; border:none; text-align:left;}
-    .input_form th {margin-top:10px;}
-    .input_form th,.input_form td {padding:5px 0; border:0 !important;}
-    .input_form th label {font-size:14px;}
-    .input_form th label br {display:none;}
+    .input_form dl {margin:0;}
+    .input_form dl .option {float:none; width:100%; margin:15px 0; padding:0;}
+    .input_form.radio dl input[data-value="etc_input"] {min-width:0;}
+}
+
+@media (max-width:599px) {
+    .input_form dl .option dt label {font-size:14px;}
+    .input_form dl .option dt,.input_form dl .option dd {float:none; width:100%;}
 }
 
 /* Datepicker */
@@ -3002,6 +3016,7 @@ footer {background:#505354; color:#fff;}
 .exam_form .exam_info .misc dt,.exam_form .exam_info .misc dd {float:left;}
 .exam_form .exam_info .misc dt:after {content:":"; padding:0 0.2em;}
 .exam_form .form_list {clear:both; padding:20px; border-bottom:1px solid #ddd;}
+.exam_form .form_list:first-child {border-top:1px solid #ddd;}
 .exam_form .form_list .form_tit {position:relative; margin-bottom:20px; padding-left:15px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em;}
 .exam_form .form_list .form_tit:before {position:absolute; top:50%; left:0; width:8px; height:8px; margin-top:-4px; background:#333; content:"";}
 .exam_form .form_list .form_tit.small {margin-bottom:5px; padding:0;}
@@ -3013,7 +3028,6 @@ footer {background:#505354; color:#fff;}
 .exam_form .form_list .txt button:hover {color:#00687f;}
 .exam_form .form_list .txt button:after {position:absolute; top:9px; right:2px; width:8px; height:8px; border:1px solid #aaa; border-bottom:0; border-left:0; -webkit-transform:rotate(45deg); transform:rotate(45deg); content:""; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .exam_form .form_list .txt button:hover:after {border-color:#00687f;}
-.exam_form .form_list .input_form {width:calc(100% + 40px); margin-left:-20px;}
 .exam_form .form_list .input_list {clear:both; margin-top:5px; padding:10px 0;}
 .exam_form .form_list .root .radio_form input[type="text"] {display:none; position:relative; top:-7px; margin-left:10px;}
 .exam_form .form_list textarea {width:100%; height:130px; padding:12px;}
@@ -3055,7 +3069,7 @@ footer {background:#505354; color:#fff;}
     .exam_form .exam_info .misc dt, .exam_form .exam_info .misc dd {display:inline-block; float:none;}
     .exam_form .form_list {padding:15px 0;}
     .exam_form .form_list:after {display:block; clear:both; content:"";}
-    .exam_form .form_list .form_tit {margin-bottom:15px; font-size:16px;}
+    .exam_form .form_list .form_tit {margin-bottom:15px; font-size:18px;}
     .exam_form .form_list .txt {font-size:14px; line-height:20px;}
     .exam_form .form_list .txt button {font-size:12px; line-height:20px; margin-left:15px;}
     .exam_form .form_list .txt button:after {top:5px;}
@@ -3078,6 +3092,7 @@ footer {background:#505354; color:#fff;}
     .exam_form .exam_info .tit {font-size:18px;}
     .exam_form .exam_info .misc{margin-left:-5px;}
     .exam_form .exam_info .misc div {padding:0 5px; font-size:12px;}
+    .exam_form .form_list .form_tit {font-size:16px;}
     .exam_form .form_list .txt {font-size:12px; line-height:1.5em;}
     .exam_form .form_list.select .date {display:block; padding:0; padding-left:23px;}
     .exam_form .form_list.select .radio_form .list > li > label {display:block; float:none; margin:0;}
@@ -3086,6 +3101,10 @@ footer {background:#505354; color:#fff;}
     .exam_form .form_list.select .campus_link li button {margin-left:23px;}
     .exam_form .term_agree .check_form input[type='checkbox'] + label {font-size:12px;}
     .exam_form .btn_wrap a,.exam_form .btn_wrap button {width:100%; margin:5px 0; font-size:14px;}
+}
+
+@media (max-width:320px) {
+    .exam_form .term_agree .check_form input[type='checkbox'] + label {font-size:10px;}
 }
 
 /* 완료 페이지 공통 */

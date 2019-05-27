@@ -150,8 +150,8 @@
 												<a href="#">예약&amp;상담</a>
 												<ul class="menu_2depth">
 													<li><a href="#">입학안내</a></li>
-													<li><a href="#">상담신청</a></li>
-													<li><a href="#">설명회신청</a></li>
+													<li><a href="#">상담 신청</a></li>
+													<li><a href="#">설명회 신청</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -606,39 +606,46 @@
 							<p class="guide_tit">입력폼</p>
 
 							<!-- 입력폼 테이블 -->
-							<table class="input_form">
-								<colgroup>
-									<col style="width:100px;">
-									<col>
-									<col style="width:100px;">
-									<col>
-								</colgroup>
-								<tbody>
-									<!-- [D] label 네이밍과 id값은 예시 -->
-									<tr>
-										<th scope="row">
-											<label for="input_01">날짜</label>
-										</th>
-										<td>
+							<div class="input_form input" style="margin-top:30px;">
+								<div class="cmt">
+									<span class="necessary"></span>필수입력사항
+								</div>
+								<dl>
+									<div class="option">
+										<dt>
+											<label for="input_01">
+												날짜
+												<span class="necessary">
+                                                    필수입력사항
+                                                </span>
+											</label>
+										</dt>
+										<dd>
 											<div class="calendar">
 												<input type="text" class="datepicker" id="input_01" readonly>
 											</div>
-										</td>
-										<th scope="row">
-											<label for="input_02">검색폼</label>
-										</th>
-										<td>
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_02">
+												검색폼
+											</label>
+										</dt>
+										<dd>
 											<div class="search_box">
 												<input type="text" readonly>
 												<button type="button" id="input_02"><span>검색</span></button>
 											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">
-											<label for="input_03">연락처</label>
-										</th>
-										<td>
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_03">
+												연락처
+											</label>
+										</dt>
+										<dd>
 											<div class="tel">
 												<div class="select_form"><input type="hidden" name="">
 													<button type="button" id="input_03">
@@ -658,11 +665,15 @@
 												<span class="dash">-</span>
 												<input type="text" maxlength="4" title="전화번호 끝자리">
 											</div>
-										</td>
-										<th scope="row">
-											<label for="input_04">선택</label>
-										</th>
-										<td>
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_04">
+												선택
+											</label>
+										</dt>
+										<dd>
 											<div class="select_form"><input type="hidden" name="">
 												<button type="button" id="input_04">
 													<span>선택할 값</span>
@@ -676,55 +687,64 @@
 													</li>
 												</ul>
 											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">
-											<label for="input_05">입력</label>
-										</th>
-										<td colspan="3">
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_05">
+												문자열입력
+											</label>
+										</dt>
+										<dd>
 											<input type="text" id="input_05">
-										</td>
-									</tr>
-								</tbody>
-							</table>
+										</dd>
+									</div>
+								</dl>
+							</div>
 							<!-- //입력폼 테이블 -->
 
 							<pre class="brush:html;">
                                 <!-- 입력폼 테이블 -->
-                                <table class="input_form">
-                                    <colgroup>
-                                        <col style="width:100px;">
-                                        <col>
-                                        <col style="width:100px;">
-                                        <col>
-                                    </colgroup>
-                                    <tbody>
-                                        <!-- [D] label 네이밍과 id값은 예시 -->
-                                        <tr>
-                                            <th scope="row">
-                                                <label for="input_01">날짜</label>
-                                            </th>
-                                            <td>
+                                <div class="input_form input">
+                                    <div class="cmt">
+                                        <span class="necessary"></span>필수입력사항
+                                    </div>
+                                    <dl>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_01">
+                                                    날짜
+                                                    <span class="necessary">
+                                                        필수입력사항
+                                                    </span>
+                                                </label>
+                                            </dt>
+                                            <dd>
                                                 <div class="calendar">
                                                     <input type="text" class="datepicker" id="input_01" readonly>
                                                 </div>
-                                            </td>
-                                            <th scope="row">
-                                                <label for="input_02">검색폼</label>
-                                            </th>
-                                            <td>
+                                            </dd>
+                                        </div>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_02">
+                                                    검색폼
+                                                </label>
+                                            </dt>
+                                            <dd>
                                                 <div class="search_box">
                                                     <input type="text" readonly>
                                                     <button type="button" id="input_02"><span>검색</span></button>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <label for="input_03">연락처</label>
-                                            </th>
-                                            <td>
+                                            </dd>
+                                        </div>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_03">
+                                                    연락처
+                                                </label>
+                                            </dt>
+                                            <dd>
                                                 <div class="tel">
                                                     <div class="select_form"><input type="hidden" name="">
                                                         <button type="button" id="input_03">
@@ -744,11 +764,15 @@
                                                     <span class="dash">-</span>
                                                     <input type="text" maxlength="4" title="전화번호 끝자리">
                                                 </div>
-                                            </td>
-                                            <th scope="row">
-                                                <label for="input_04">선택</label>
-                                            </th>
-                                            <td>
+                                            </dd>
+                                        </div>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_04">
+                                                    선택
+                                                </label>
+                                            </dt>
+                                            <dd>
                                                 <div class="select_form"><input type="hidden" name="">
                                                     <button type="button" id="input_04">
                                                         <span>선택할 값</span>
@@ -762,19 +786,257 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <label for="input_05">입력</label>
-                                            </th>
-                                            <td colspan="3">
+                                            </dd>
+                                        </div>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_05">
+                                                    문자열입력
+                                                </label>
+                                            </dt>
+                                            <dd>
                                                 <input type="text" id="input_05">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
                                 <!-- //입력폼 테이블 -->
+                            </pre>
+
+							<p class="guide_tit">입력폼 - 주소</p>
+
+							<!-- 주소 -->
+							<div class="input_form address">
+								<dl>
+									<div class="option">
+										<dt>
+											<label for="input_06">
+												주소
+											</label>
+										</dt>
+										<dd>
+											<div class="search_box">
+												<input type="text" readonly>
+												<button type="button" id="input_06"><span>검색</span></button>
+											</div>
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_07">
+												상세주소
+											</label>
+										</dt>
+										<dd>
+											<input type="text" id="input_07">
+										</dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //주소 -->
+
+							<pre class="brush:html;">
+                                    <!-- 주소 -->
+                                    <div class="input_form address">
+                                        <dl>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_06">
+                                                        주소
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="search_box">
+                                                        <input type="text" readonly>
+                                                        <button type="button" id="input_06"><span>검색</span></button>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_07">
+                                                        상세주소
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <input type="text" id="input_07">
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <!-- //주소 -->
+                            </pre>
+
+							<p class="guide_tit">입력폼 - 텍스트에리어</p>
+
+							<!-- 텍스트에리어 -->
+							<div class="input_form textarea">
+								<dl>
+									<div class="option">
+										<dt>
+											<label for="input_08">상담내용</label>
+										</dt>
+										<dd>
+											<textarea name="" id="input_08" cols="30" rows="10" placeholder="1,000자 이내로 작성"></textarea>
+											<div class="txt_cnt">
+												<span><strong>1,000</strong> / 1,000</span>
+											</div>
+										</dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //텍스트에리어 -->
+
+							<pre class="brush:html;">
+                                <!-- 텍스트에리어 -->
+                                <div class="input_form textarea">
+                                    <dl>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_05">상담내용</label>
+                                            </dt>
+                                            <dd>
+                                                <textarea name="" id="input_05" cols="30" rows="10"
+                                                    placeholder="1,000자 이내로 작성"></textarea>
+                                                <div class="txt_cnt">
+                                                    <span><strong>1,000</strong> / 1,000</span>
+                                                </div>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <!-- //텍스트에리어 -->
+                            </pre>
+
+							<p class="guide_tit">입력폼 - 라디오버튼</p>
+
+							<!-- 라디오버튼 -->
+							<div class="input_form radio">
+								<dl>
+									<div class="option">
+										<dt>
+											<label for="radio_05">알게된 경로</label>
+										</dt>
+										<dd>
+											<div class="radio_form">
+												<ul>
+													<li>
+														<input type="radio" id="radio_05" name="radio_n03">
+														<label for="radio_05">신문전단</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_06" name="radio_n03">
+														<label for="radio_06">인터넷</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_07" name="radio_n03">
+														<label for="radio_07">학원버스</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_08" name="radio_n03">
+														<label for="radio_08">부모님 권유</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_09" name="radio_n03">
+														<label for="radio_09">교직원 소개</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_10" name="radio_n03">
+														<label for="radio_10">TV</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_11" name="radio_n03">
+														<label for="radio_11">친구소개</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_12" name="radio_n03" data-value="etc">
+														<label for="radio_12">기타</label>
+														<input type="text" data-value="etc_input" readonly="" placeholder="자세히 적어주세요.">
+													</li>
+												</ul>
+											</div>
+										</dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //라디오버튼 -->
+
+							<!-- [D] 기타 입력폼 활성화 -->
+							<script>
+								$(function () {
+                                    var radio = $('.input_form.radio').find('input[type="radio"]'),
+                                        etc_input = $('.input_form.radio').find('input[data-value="etc_input"]');
+                                    radio.on('click', function () {
+                                        $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true);
+                                    });
+                                });
+                            </script>
+							<!-- //[D] 기타 입력폼 활성화 -->
+
+							<pre class="brush:html;">
+                                <!-- 라디오버튼 -->
+                                <div class="input_form radio">
+                                    <dl>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="radio_05">알게된 경로</label>
+                                            </dt>
+                                            <dd>
+                                                <div class="radio_form">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="radio" id="radio_05" name="radio_n03">
+                                                            <label for="radio_05">신문전단</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_06" name="radio_n03">
+                                                            <label for="radio_06">인터넷</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_07" name="radio_n03">
+                                                            <label for="radio_07">학원버스</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_08" name="radio_n03">
+                                                            <label for="radio_08">부모님 권유</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_09" name="radio_n03">
+                                                            <label for="radio_09">교직원 소개</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_10" name="radio_n03">
+                                                            <label for="radio_10">TV</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_11" name="radio_n03">
+                                                            <label for="radio_11">친구소개</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_12" name="radio_n03" data-value="etc">
+                                                            <label for="radio_12">기타</label>
+                                                            <input type="text" data-value="etc_input" readonly=""
+                                                                placeholder="자세히 적어주세요.">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <!-- //라디오버튼 -->
+
+                                <!-- [D] 기타 입력폼 활성화 -->
+                                <script>
+                                    $(function () {
+                                        var radio = $('.input_form.radio').find('input[type="radio"]'),
+                                            etc_input = $('.input_form.radio').find('input[data-value="etc_input"]');
+                                        radio.on('click', function () {
+                                            $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true);
+                                        });
+                                    });
+                                </script>
+                                <!-- //[D] 기타 입력폼 활성화 -->
                             </pre>
 
 							<p class="guide_tit">팝업</p>
@@ -1514,8 +1776,8 @@
 		<div class="side_menu">
 			<ul>
 				<li class="mobile"><a href="#">홈으로</a></li>
-				<li><a href="#">상담신청</a></li>
-				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">상담 신청</a></li>
+				<li><a href="#">설명회 신청</a></li>
 				<li><a href="#">입학고사</a></li>
 				<li><a href="#">캠퍼스 안내</a></li>
 				<!-- [D] 로그인 한 회원에게 표시될 내용 -->

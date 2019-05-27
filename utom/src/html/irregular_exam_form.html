@@ -13,7 +13,7 @@
             "depth1_current" : "예약&상담",
             "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약&상담"],
             "depth2_current" : "입학안내",
-            "depth2_sublist" : ["입학안내","상담신청","설명회신청"],
+            "depth2_sublist" : ["입학안내","상담 신청","설명회 신청"],
             "depth3_current" : false
             }
             })
@@ -53,22 +53,23 @@
                             <!-- 입학고사 입력폼 -->
                             <div class="form">
                                 <div class="form_list">
-                                    <p class="form_tit">필수 입력사항</p>
+                                    <p class="form_tit">입력사항</p>
                                     <!-- 입력폼 테이블 -->
-                                    <table class="input_form">
-                                        <colgroup>
-                                            <col style="width:100px;">
-                                            <col>
-                                            <col style="width:100px;">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <!-- [D] label 네이밍과 id값은 예시 -->
-                                            <tr>
-                                                <th scope="row">
-                                                    <label for="input_01">지역</label>
-                                                </th>
-                                                <td>
+                                    <div class="input_form input">
+                                        <div class="cmt">
+                                            <span class="necessary"></span>필수입력사항
+                                        </div>
+                                        <dl>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_01">
+                                                        지역
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
                                                     <div class="select_form"><input type="hidden" name="">
                                                         <button type="button" id="input_01">
                                                             <span>지역</span>
@@ -82,11 +83,18 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                </td>
-                                                <th scope="row">
-                                                    <label for="input_02">캠퍼스명</label>
-                                                </th>
-                                                <td>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_02">
+                                                        캠퍼스명
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
                                                     <div class="select_form"><input type="hidden" name="">
                                                         <button type="button" id="input_02">
                                                             <span>캠퍼스명</span>
@@ -100,48 +108,73 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    <label for="input_03">자녀이름</label>
-                                                </th>
-                                                <td>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_03">
+                                                        학생명
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
                                                     <input type="text" id="input_03">
-                                                </td>
-                                                <th scope="row">
-                                                    <label for="input_04">자녀학년</label>
-                                                </th>
-                                                <td>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_04">
+                                                        학년
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
                                                     <div class="select_form"><input type="hidden" name="">
                                                         <button type="button" id="input_04">
-                                                            <span>초1</span>
+                                                            <span>학년</span>
                                                         </button>
                                                         <ul>
                                                             <li>
-                                                                <a href="#none">초1</a>
+                                                                <a href="#none">초6</a>
                                                             </li>
                                                             <li>
                                                                 <a href="#none">고3</a>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    <label for="input_05">자녀학교</label>
-                                                </th>
-                                                <td>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_05">
+                                                        학교명
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
                                                     <div class="search_box">
                                                         <input type="text" readonly="">
-                                                        <button type="button" id="input_05" class="open_modal" data-modal="school"><span>검색</span></button>
+                                                        <button type="button" id="input_05" class="open_modal"
+                                                            data-modal="school"><span>검색</span></button>
                                                     </div>
-                                                </td>
-                                                <th scope="row">
-                                                    <label for="input_06">학부모<br>연락처</label>
-                                                </th>
-                                                <td>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_06">
+                                                        연락처
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
                                                     <div class="tel">
                                                         <div class="select_form"><input type="hidden" name="">
                                                             <button type="button" id="input_06">
@@ -161,24 +194,36 @@
                                                         <span class="dash">-</span>
                                                         <input type="text" maxlength="4" title="전화번호 끝자리">
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    <label for="input_07">희망날짜</label>
-                                                </th>
-                                                <td>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_10">
+                                                        희망날짜
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
                                                     <div class="calendar">
-                                                        <input type="text" class="datepicker" id="input_07" readonly="">
+                                                        <input type="text" class="datepicker" id="input_10" readonly="">
                                                     </div>
-                                                </td>
-                                                <th scope="row">
-                                                    <label for="input_08">희망시간</label>
-                                                </th>
-                                                <td>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_11">
+                                                        희망시간
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
                                                     <div class="select_form"><input type="hidden" name="">
-                                                        <button type="button" id="input_08">
-                                                            <span>14:00</span>
+                                                        <button type="button" id="input_11">
+                                                            <span>희망시간</span>
                                                         </button>
                                                         <ul>
                                                             <li>
@@ -189,11 +234,115 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_07">
+                                                        이메일
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <input type="email" id="input_07">
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
                                     <!-- //입력폼 테이블 -->
+                                    <!-- 주소 -->
+                                    <div class="input_form address">
+                                        <dl>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_08">
+                                                        주소
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="search_box">
+                                                        <input type="text" readonly>
+                                                        <button type="button" id="input_08" class="open_modal"
+                                                            data-modal="address"><span>검색</span></button>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_09">
+                                                        상세주소
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <input type="text" id="input_09">
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <!-- //주소 -->
+                                    <!-- 라디오버튼 -->
+                                    <div class="input_form radio">
+                                        <dl>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="radio_05">알게된 경로</label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="radio_form">
+                                                        <ul>
+                                                            <li>
+                                                                <input type="radio" id="radio_05" name="radio_n03">
+                                                                <label for="radio_05">신문전단</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_06" name="radio_n03">
+                                                                <label for="radio_06">인터넷</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_07" name="radio_n03">
+                                                                <label for="radio_07">학원버스</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_08" name="radio_n03">
+                                                                <label for="radio_08">부모님 권유</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_09" name="radio_n03">
+                                                                <label for="radio_09">교직원 소개</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_10" name="radio_n03">
+                                                                <label for="radio_10">TV</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_11" name="radio_n03">
+                                                                <label for="radio_11">친구소개</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_12" name="radio_n03"
+                                                                    data-value="etc">
+                                                                <label for="radio_12">기타</label>
+                                                                <input type="text" data-value="etc_input" readonly=""
+                                                                    placeholder="자세히 적어주세요.">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <!-- //라디오버튼 -->
+
+                                    <!-- [D] 기타 입력폼 활성화 -->
+                                    <script>
+                                        $(function () {
+                                            var radio = $('.input_form.radio').find('input[type="radio"]'),
+                                                etc_input = $('.input_form.radio').find('input[data-value="etc_input"]');
+                                            radio.on('click', function () {
+                                                $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true);
+                                            });
+                                        });
+                                    </script>
+                                    <!-- //[D] 기타 입력폼 활성화 -->
                                 </div>
                             </div>
                             <!-- //입학고사 입력폼 -->

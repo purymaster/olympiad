@@ -65,9 +65,9 @@
 .side_menu ul li a:after {position:absolute; top:20px; left:50%; width:40px; height:40px; background-image:url(../img/sprite/sprite.png); background-size:500px; transform:translateX(-50%); content:"";}
 .side_menu ul li:nth-child(1) a:after {width:39px; height:39px; background-position:-5px -122px;} /* 홈으로 */
 .side_menu ul li:nth-child(1) a:hover:after {background-position:-49px -122px;}
-.side_menu ul li:nth-child(2) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담신청 */
+.side_menu ul li:nth-child(2) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담 신청 */
 .side_menu ul li:nth-child(2) a:hover:after {background-position:-95px -74px;}
-.side_menu ul li:nth-child(3) a:after {width:38px; height:38px; background-position:-138px -74px;} /* 설명회신청 */
+.side_menu ul li:nth-child(3) a:after {width:38px; height:38px; background-position:-138px -74px;} /* 설명회 신청 */
 .side_menu ul li:nth-child(3) a:hover:after {background-position:-181px -74px;}
 .side_menu ul li:nth-child(4) a:after {width:34px; height:34px; background-position:-224px -74px;} /* 입학고사 */
 .side_menu ul li:nth-child(4) a:hover:after {background-position:-263px -74px;}
@@ -273,6 +273,7 @@ label {cursor:pointer;}
 }
 
 @media (max-width:599px) {
+    .input_form dl .option dt label {font-size:14px;}
     .input_form dl .option dt,.input_form dl .option dd {float:none; width:100%;}
 }
 
