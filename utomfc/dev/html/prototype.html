@@ -8,6 +8,7 @@
 	<title>유투엠</title>
 
 	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
 	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
 	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
 	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
@@ -65,7 +66,7 @@
 										<div class="menu_btn">
 
 											<!-- [D] 로그인 전 -->
-											<a class="btn login" href="#">재원생 로그인</a>
+											<a class="btn login" href="#">로그인</a>
 											<!-- //[D] 로그인 전 -->
 
 											<!-- [D] 로그인 후 -->
@@ -134,6 +135,16 @@
 										</ul>
 									</div>
 								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
 								<button class="close mobile" type="button">메뉴 닫기</button>
 							</div>
 						</nav>
@@ -152,7 +163,7 @@
 						<li class="home"><a href="#">홈</a></li>
 
 						<li>
-							<div class="select_form">
+							<div class="select_form"><input type="hidden">
 								<button type="button">
 									<span>올림피아드 소개</span>
 								</button>
@@ -188,7 +199,7 @@
 
 
 						<li>
-							<div class="select_form">
+							<div class="select_form"><input type="hidden">
 								<button type="button">
 									<span>학원소개</span>
 								</button>
@@ -275,6 +286,16 @@
 				<div class="sub_lower_wrap">
 					<div class="grid_container">
 
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">주제별 제목</h3>
+							<p class="txt_info">주제에 대한 <strong>설명 문구</strong>
+							</p>
+						</div>
+
+						<div class="sub_col_tit">
+							<p>서브 항목 타이틀</p>
+						</div>
+
 						<div class="msg_box">
 							<p>
 								메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지메세지
@@ -289,39 +310,6 @@
 							<p class="txt">
 								내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 							</p>
-
-							<!-- 화면 분할 -->
-							<div class="grid_wrap" style="margin-top:10px;">
-								<div class="grid grid4">
-									1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.
-								</div>
-								<div class="grid grid4">
-									1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.1:1비율입니다.
-								</div>
-							</div>
-							<!-- //화면 분할 -->
-
-							<!-- 화면 분할 -->
-							<div class="grid_wrap" style="margin-top:10px;">
-								<div class="grid grid3">
-									3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.
-								</div>
-								<div class="grid grid5">
-									3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.3:5비율입니다.
-								</div>
-							</div>
-							<!-- //화면 분할 -->
-
-							<!-- 화면 분할 -->
-							<div class="grid_wrap" style="margin-top:10px;">
-								<div class="grid grid5">
-									5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.
-								</div>
-								<div class="grid grid3">
-									5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.5:3비율입니다.
-								</div>
-							</div>
-							<!-- //화면 분할 -->
 
 						</div>
 						<!-- //스태틱 페이지 컨텐츠 영역 -->
@@ -356,13 +344,16 @@
 			<div class="grid_container">
 				<div class="footer_upper">
 					<ul class="bottom_menu">
-						<li><a href="#">U2M 소개</a></li>
-						<li><a href="#">찾아오시는길</a></li>
+						<!-- <li><a href="#">U2M 소개</a></li> -->
+						<!-- <li><a href="#">찾아오시는 길</a></li> -->
+						<li><a href="#">사이트맵</a></li>
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
 						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
 					</ul>
-					<div class="select_form">
+					<div class="select_form"><input type="hidden">
 						<button type="button">
 							<span lang="en">family site</span>
 						</button>
@@ -392,12 +383,16 @@
 								<li>사업자등록번호 : 206-81-24574</li>
 								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
 							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
+							</ul>
 							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
 						</address>
 					</div>
 				</div>
 			</div>
 		</footer>
+
 	</div>
 
 </body>

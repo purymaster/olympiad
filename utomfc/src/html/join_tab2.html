@@ -1,0 +1,194 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap level_test">
+            @@include('../inc/sub_header.html',{
+            "type" : "type6",
+            "title" : "입학안내",
+            "subtitle" : "예약&상담",
+            "context" : {
+            "depth1_current" : "예약&상담",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "입학안내",
+            "depth2_sublist" : ["입학안내","상담 신청","설명회 신청"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["입학절차","레벨테스트","분석사례"]
+                        }
+                        })
+                        <p class="main_tit">
+                            수많은 데이터를 기반으로 학생의 학습상태와 취약 영역을<br> 분석해서 <strong>수준에 맞는 클럽과 반을 배정</strong>합니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="level_test_box">
+                                <div class="img_wrap">
+                                    <ul>
+                                        <li>
+                                            <img src="../img/img/img_leveltest_01.png"
+                                                alt="Fitting-class Report, 학년진단평가 결과, 학력인증평가 결과, 등급, 멘토링 내용 기재">
+                                        </li>
+                                        <li>
+                                            <img src="../img/img/img_leveltest_02.png" alt="학습분석지, 문항별 성취도 기재">
+                                        </li>
+                                        <li>
+                                            <img src="../img/img/img_leveltest_03.png" alt="학습분석지, 단원별 성취도 기재">
+                                        </li>
+                                        <li>
+                                            <img src="../img/img/img_leveltest_04.png"
+                                                alt="학습분석지, 단원별, 영역별, 난이도별 성취도 분석 내용 기재, 난이도 등급 기재">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="level_table">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:200px;">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="num">1</span>
+                                                    <span class="label">학년진단평가</span>
+                                                </th>
+                                                <td>자기학년 학습에 대한 성취도 측정</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="num">2</span>
+                                                    <span class="label">학력인증평가</span>
+                                                </th>
+                                                <td>개인별 올림학습에 대한 성취도 측정</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="num">3</span>
+                                                    <span class="label">수능 9등급제와 <br>
+                                                        동일비율</span>
+                                                </th>
+                                                <td>
+                                                    <ul>
+                                                        <li><strong>A1</strong> : 상위 4%</li>
+                                                        <li><strong>A2</strong> : 상위 11%</li>
+                                                        <li><strong>A3</strong> : 상위 23%</li>
+                                                        <li><strong>B1</strong> : 상위 40%</li>
+                                                        <li><strong>B2</strong> : 상위 60%</li>
+                                                        <li><strong>B3</strong> : 상위 77%</li>
+                                                        <li><strong>C1</strong> : 상위 89%</li>
+                                                        <li><strong>C2</strong> : 상위 96%</li>
+                                                        <li><strong>C3</strong> : 상위 100%</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="num">4</span>
+                                                    <span class="label">Total Mentoring</span>
+                                                </th>
+                                                <td>과정별(학년, 올림) 학습멘토링 제공</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="num">5</span>
+                                                    <span class="label">문항별 성취도 <br>
+                                                        분석</span>
+                                                </th>
+                                                <td>
+                                                    <ul class="txt_list type2">
+                                                        <li>문항별 행동 영역과 학생의 정답 확인 및 전국 정답률 비교</li>
+                                                        <li>오답 문항에 따라 부족한 영역 파악</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="num">6</span>
+                                                    <span class="label">단원별 성취도 <br>
+                                                        분석</span>
+                                                </th>
+                                                <td>
+                                                    <ul class="txt_list type2">
+                                                        <li>단계별 출제문항수와 학생의 정답률 확인</li>
+                                                        <li>정답률이 낮은 단원에 대한 개인별 추가학습 진행</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="num">7</span>
+                                                    <span class="label">영역별 성취도 <br>
+                                                        분석</span>
+                                                </th>
+                                                <td>
+                                                    <ul class="txt_list type2">
+                                                        <li>수학교과 4개 영역(계산, 문제해결, 이해추론)의 출제</li>
+                                                        <li>문항수와 학생의 정답률 확인</li>
+                                                        <li>분기마다 각 영역별 성취도의 변화추이 확인 및 관리</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="num">8</span>
+                                                    <span class="label">난이도별 성취도 <br>
+                                                        분석</span>
+                                                </th>
+                                                <td>3 ~ 4단계의 난이도별 출제문항 수와 학생의 정답률</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="num">9</span>
+                                                    <span class="label">난이도 등급</span>
+                                                </th>
+                                                <td>
+                                                    <ul>
+                                                        <li><strong>A</strong> : 경시 및 영재교육원 기출 최상위 문제</li>
+                                                        <li><strong>B</strong> : 복합유형의 고난이도 심화문제</li>
+                                                        <li><strong>C</strong> : 사고력을 요하는 응용문제</li>
+                                                        <li><strong>D</strong> : 교과위주의 필수유형 문제</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        
+    </div>
+
+</body>
+
+</html>

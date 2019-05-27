@@ -1,0 +1,207 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap time_table">
+            @@include('../inc/sub_header.html',{
+            "type" : "type3",
+            "title" : "프로그램 안내",
+            "subtitle" : "유투엠 프로그램",
+            "context" : {
+            "depth1_current" : "유투엠 프로그램",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "프로그램 안내",
+            "depth2_sublist" : ["3가지 특장점","4가지 말하기 학습전략","프로그램 안내","교재구성"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["클럽구성","표준시간표","학습 프로세스","평가관리","내신대비(Q팡)"]
+                        }
+                        })
+                        <p class="main_tit">
+                            유투엠 <strong>초등, 중등 표준시간표</strong>입니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <div class="junior">
+                            <div class="sub_tit_wrap">
+                                <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">초등 표준시간표</h3>
+                            </div>
+
+                            <!-- 스태틱 페이지 컨텐츠 영역 -->
+                            <div class="sub_cont_wrap">
+                                <div class="table_wrap">
+                                    <img src="../img/img/img_timetable_01.png" alt="">
+                                    <div class="hidden">
+                                        <table>
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">1주</th>
+                                                    <th scope="col">월/화</th>
+                                                    <th scope="col">수/목</th>
+                                                    <th scope="col">금/토</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">예습</th>
+                                                    <td>디딤영상 개념노트</td>
+                                                    <td rowspan="3">개별과정</td>
+                                                    <td>복합유형</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">수업</th>
+                                                    <td>대표유형</td>
+                                                    <td>뛰어오르기</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">복습</th>
+                                                    <td>기본 다지기</td>
+                                                    <td>잘 틀리는 유형</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="table_wrap">
+                                    <img src="../img/img/img_timetable_02.png" alt="">
+                                    <div class="hidden">
+                                        <table>
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">2주</th>
+                                                    <th scope="col">월/화</th>
+                                                    <th scope="col">수/목</th>
+                                                    <th scope="col">금/토</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">예습</th>
+                                                    <td>단원 마무리</td>
+                                                    <td rowspan="3">개별과정</td>
+                                                    <td>단원종합테스트</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">수업</th>
+                                                    <td rowspan="2">창의사고 Part1</td>
+                                                    <td rowspan="2">창의사고 Part2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">복습</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //스태틱 페이지 컨텐츠 영역 -->
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <div class="middle">
+                            <div class="sub_tit_wrap">
+                                <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">중등 표준시간표</h3>
+                            </div>
+
+                            <!-- 스태틱 페이지 컨텐츠 영역 -->
+                            <div class="sub_cont_wrap">
+                                <div class="table_wrap">
+                                    <img src="../img/img/img_timetable_03.png" alt="">
+                                    <div class="hidden">
+                                        <table>
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">1주</th>
+                                                    <th scope="col">월/화</th>
+                                                    <th scope="col">수/목</th>
+                                                    <th scope="col">금/토</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">예습</th>
+                                                    <td>디딤영상 개념노트</td>
+                                                    <td>응용력 기르기</td>
+                                                    <td>복합유형</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">수업</th>
+                                                    <td>대표유형 + 유제</td>
+                                                    <td rowspan="3">개별과정</td>
+                                                    <td>뛰어오르기</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" rowspan="2">복습</th>
+                                                    <td>기본 다지기</td>
+                                                    <td>단원 마무리</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>개별과정</td>
+                                                    <td>개별과정</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <p class="notice">각 캠퍼스 사정에 따라 조금씩 다를 수 있습니다. 자세한 시간표는 캠퍼스로 문의해 주세요.</p>
+                            </div>
+                            <!-- //스태틱 페이지 컨텐츠 영역 -->
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        
+    </div>
+
+</body>
+
+</html>

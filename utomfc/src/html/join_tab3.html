@@ -1,0 +1,240 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap analysis">
+            @@include('../inc/sub_header.html',{
+            "type" : "type6",
+            "title" : "입학안내",
+            "subtitle" : "예약&상담",
+            "context" : {
+            "depth1_current" : "예약&상담",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "입학안내",
+            "depth2_sublist" : ["입학안내","상담 신청","설명회 신청"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["입학절차","레벨테스트","분석사례"]
+                        }
+                        })
+                        <p class="main_tit">
+                            학력진단 평가 결과 분석을 통해 <strong>유투엠만의<br>
+                                차별화된 학습 컨설팅</strong>을 진행합니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="result_table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:135px;">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="category" scope="col">
+                                                <div class="label">
+                                                    비교항목
+                                                </div>
+                                            </th>
+                                            <th class="student case1" scope="col">
+                                                <div class="info">
+                                                    <div class="person">
+                                                        중1
+                                                        <strong>A학생</strong>
+                                                    </div>
+                                                    <div class="data">
+                                                        점수 : 70<br>
+                                                        등급 : B2
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th class="student case2" scope="col">
+                                                <div class="info">
+                                                    <div class="person">
+                                                        중1
+                                                        <strong>B학생</strong>
+                                                    </div>
+                                                    <div class="data">
+                                                        점수 : 70<br>
+                                                        등급 : B2
+                                                    </div>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="label">
+                                                    결과지
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <img src="../img/img/img_analysis_01.png" alt="">
+                                                <p class="cmt">
+                                                    문제 풀이를 잘 정리함
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <img src="../img/img/img_analysis_02.png" alt="">
+                                                <p class="cmt">
+                                                    계산과정을 생략하거나<br>
+                                                    연결되지 않음
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="label">
+                                                    문항별
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <img src="../img/img/img_analysis_03.png" alt="">
+                                                <p class="cmt">
+                                                    심화문제에 취약함
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <img src="../img/img/img_analysis_04.png" alt="">
+                                                <p class="cmt">
+                                                    선행과 심화학습이 진해된 것으로 보임<br>
+                                                    계산이나 이해의 난이도가 낮은 C, D 문항에서 약점
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="label">
+                                                    단원별
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <img src="../img/img/img_analysis_05.png" alt="">
+                                                <p class="cmt">
+                                                    활용문제 위주의 3단원에서 많은 오답<br>
+                                                    문제 해석과 복합 유형에 대한 학습 필요
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <img src="../img/img/img_analysis_06.png" alt="">
+                                                <p class="cmt">
+                                                    1, 2단원의 기본 문제와 계산에서 많은 오답<br>
+                                                    실수를 줄이기 위해 오답노트를 작성하고<br>
+                                                    풀이과정을 끝까지 정리하는 서술형문제 학습 필요
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="label">
+                                                    영역별
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <img src="../img/img/img_analysis_07.png" alt="">
+                                                <p class="cmt">
+                                                    문제해결과 이해영역의 정답률이 낮음
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <img src="../img/img/img_analysis_08.png" alt="">
+                                                <p class="cmt">
+                                                    계산 영역이 특히 취약함
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="difficult">
+                                            <th scope="row">
+                                                <div class="label">
+                                                    난이도별
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <p class="cmt">
+                                                    난이도가 높은 A, B 문항에서 다수의 오답
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="cmt">
+                                                    낮이도가 낮은 D문항의 오답이 높은 편
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="label">
+                                                    진단결과
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <p class="cmt">
+                                                    학년 과정에 대한 심화학습 진행<br>
+                                                    수학적 의사소통 + 복합유형 학습 필요
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="cmt">
+                                                    올림과정+서술형 진행<br>
+                                                    실수를 줄이기 위해 오답노트를 작성
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap key_visual">
+                    <div class="grid_container txt_wrap">
+                        <p class="tit">
+                            평가 점수와 등급이 같다고 실력이 동일한 것은 아닙니다.
+                        </p>
+                        <p class="sub_txt">
+                            각 수학 학습 영역(계산, 이해, 추론, 내/외적 문제해결)별 학생의 실력을 전국 학생들의 정답률과
+                            비교하고<br>
+                            오답 문항 확인을 통해 취약 영역 파악. 학생이 취약한 학습 단원을 정확하게 확인하고 추가학습으로 보충합니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        
+    </div>
+
+</body>
+
+</html>

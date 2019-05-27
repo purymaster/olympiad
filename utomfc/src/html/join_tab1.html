@@ -1,0 +1,136 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap join_step">
+            @@include('../inc/sub_header.html',{
+            "type" : "type6",
+            "title" : "입학안내",
+            "subtitle" : "예약&상담",
+            "context" : {
+            "depth1_current" : "예약&상담",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "입학안내",
+            "depth2_sublist" : ["입학안내","상담 신청","설명회 신청"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["입학절차","레벨테스트","분석사례"]
+                        }
+                        })
+                        <p class="main_tit">
+                            입학고사를 예약하시면<br>
+                            <strong>레벨테스트를 통해 정확한 학습상태를 평가</strong>합니다.
+                        </p>
+                        <p class="txt">
+                            평가 분석을 통해 수강 가능한 클럽과 입학 상담을 진행합니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <div class="sub_tit_wrap">
+                            <!-- white 클래스 추가시 텍스트 흰색 변경 -->
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">입학절차</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <div class="step">
+                                <ol>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <strong>예약 및 사전 상담</strong>
+                                            <p>
+                                                학생의 공부성향과 학습정도<br>
+                                                진로 진학에 대한<br>
+                                                사전 상담 진행
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <strong>레벨테스트</strong>
+                                            <p>
+                                                학년 공통과정과<br>
+                                                개별 올림과정에 대한 평가<br>
+                                                (60~90분 소요)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <strong>상담</strong>
+                                            <p>
+                                                PTR 분석을 통해<br>
+                                                학습상태 및 취약영역 상담<br>
+                                                수강 가능 클럽 및 입학안내
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <strong>입학</strong>
+                                            <p>
+                                                오리엔테이션 및 학습 배정<br>
+                                                1:1 개별 맞춤 학습
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div class="btn_wrap">
+                                    <a href="#">신청하기</a>
+                                    <a href="#">신청내역 확인</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+
+                    <div class="key_visual">
+                        <p>
+                            유투엠은 학습자의 특성과 수학에 대한 인지적 발달 단계를<br> 정확히 분석하여 차별화된 1:1 개별맞춤 솔루션을 제공하는<br> 프리미엄 교육컨설팅 서비스를 구현합니다.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        
+    </div>
+
+</body>
+
+</html>

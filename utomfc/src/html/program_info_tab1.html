@@ -1,0 +1,126 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap club_info">
+            @@include('../inc/sub_header.html',{
+            "type" : "type3",
+            "title" : "프로그램 안내",
+            "subtitle" : "유투엠 프로그램",
+            "context" : {
+            "depth1_current" : "유투엠 프로그램",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "프로그램 안내",
+            "depth2_sublist" : ["3가지 특장점","4가지 말하기 학습전략","프로그램 안내","교재구성"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["클럽구성","표준시간표","학습 프로세스","평가관리","내신대비(Q팡)"]
+                        }
+                        })
+                        <p class="main_tit">
+                            유투엠 레벨은 <strong>S, A, P 클럽으로 구성</strong>되어 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">클럽구성</h3>
+                        </div>
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+                            <dl class="table_info">
+                                <div class="s_club">
+                                    <dt>s club</dt>
+                                    <dd>supreme</dd>
+                                </div>
+                                <div class="a_club">
+                                    <dt>a club</dt>
+                                    <dd>achievement</dd>
+                                </div>
+                                <div class="p_club">
+                                    <dt>p club</dt>
+                                    <dd>progress</dd>
+                                </div>
+                            </dl>
+                            <div class="data_table" data-width="600">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:18%;">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col style="width:13%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="hidden">구분</th>
+                                            <th scope="col">초등</th>
+                                            <th scope="col">중등</th>
+                                            <th scope="col" class="hidden">성적제한</th>
+                                            <th scope="col" class="hidden">목표진학고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="s_club">
+                                            <th scope="row" rowspan="2">s club</th>
+                                            <td class="grade">영재 A반<br>(sa club)</td>
+                                            <td class="grade">자사대비 A반<br>(sa club)</td>
+                                            <td rowspan="2" class="rank">전교 5% 이내</td>
+                                            <td rowspan="2" class="purpose">영재고,<br>과고,<br>전국 자사고</td>
+                                        </tr>
+                                        <tr class="s_club">
+                                            <td class="grade">영재 B반<br>(sb club)</td>
+                                            <td class="grade">자사대비 B반<br>(sb club)</td>
+                                        </tr>
+                                        <tr class="a_club">
+                                            <th>a club</th>
+                                            <td class="grade">심화반<br>(a club)</td>
+                                            <td class="grade">특목 대비반<br>(a club)</td>
+                                            <td class="rank">전교 10% 이내</td>
+                                            <td class="purpose">외고, 국제고,<br>자사고</td>
+                                        </tr>
+                                        <tr class="p_club">
+                                            <th>p club</th>
+                                            <td class="grade">우수반<br>(p club)</td>
+                                            <td class="grade">자율고반<br>(p club)</td>
+                                            <td class="rank">전교 30% 이내</td>
+                                            <td class="purpose">자율형 공립고,<br>자율형 사립고</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        
+    </div>
+
+</body>
+
+</html>

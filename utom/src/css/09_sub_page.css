@@ -30,7 +30,7 @@
 @media (max-width:599px) {
     .sub_header {height:120px; padding-top:30px;}
     .sub_header .sub_txt {font-size:16px;}
-    .sub_header h2 {font-size:24px;}
+    .sub_header h2 {font-size:22px;}
     .sub_header h2:after {display:none;}
     .sub_header .sub_tit {font-size:14px;}
     .sub_content {padding-bottom:30px;}
@@ -452,7 +452,7 @@
 .campus_find .area li:nth-child(17) img {top:436px;left:0;}
 .campus_find .campus_option_wrap {padding-left:40px; text-align:left;}
 .campus_find .campus_option_wrap .tit {position:relative; margin:80px 0 25px; font-family:"Nanum Square"; font-size:32px; line-height:1.3em; color:#333;}
-.campus_find .campus_option_wrap .tit:before {position:absolute; top:-30px; left:0; width:18px; height:20px; background:red; content:"";}
+.campus_find .campus_option_wrap .tit:before {position:absolute; top:-30px; left:0; width:18px; height:20px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-477px -475px; content:"";}
 .campus_find .campus_option {width:314px; font-size:0;}
 .campus_find .campus_option .option_wrap .select_form {display:inline-block; width:calc(50% - 2px); margin-right:4px;}
 .campus_find .campus_option .option_wrap .select_form:last-child {margin:0;}
@@ -474,7 +474,7 @@
 .campus_find .fold_list ul li .data {overflow:hidden; padding:16px 0;}
 .campus_find .fold_list ul li .data span {float:left;}
 .campus_find .fold_list ul li .data .name {position:relative; width:30%; padding-left:30px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:28px; color:#333;}
-.campus_find .fold_list ul li .data .name:before {position:absolute; top:13px; left:0; width:22px; height:18px; margin-top:-9px; background:red; content:"";}
+.campus_find .fold_list ul li .data .name:before {position:absolute; top:13px; left:0; width:22px; height:18px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-93px -122px; content:"";}
 .campus_find .fold_list ul li .data .address {width:46%; margin:0 2%; padding:4px 0; font-size:14px; line-height:20px;}
 .campus_find .fold_list ul li .data .tel {width:20%; padding:4px 0; font-size:14px; line-height:20px;;}
 .campus_find .fold_list ul li .map {display:none; margin-bottom:20px; font-size:0;}

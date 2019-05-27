@@ -1,0 +1,91 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap directions">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "찾아오시는 길",
+            "subtitle" : "유투엠 소개",
+            "context" : {
+            "depth1_current" : "유투엠 소개",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "대표이사 인사말",
+            "depth2_sublist" : ["대표이사 인사말","유투엠 스토리","찾아오시는 길"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container">
+
+                        <p class="main_tit">
+                            <strong>찾아오시는 길</strong>
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+
+                            <div class="directions_map">
+                                <!-- [D]지도 API 삽입 영역 -->
+                                <!-- <iframe src="" frameborder="0"></iframe> -->
+                                <!-- //[D]지도 API 삽입 영역 -->
+                            </div>
+
+                            <div class="edu_directions">
+                                <div class="directions_cont">
+                                    <dl class="directions_list">
+                                        <div class="directions_text">
+                                            <dt>주소</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>서울특별시 중랑구 용마산로115길 108 이안빌딩3층 ㈜올림피아드교육</li>
+                                                </ul>
+                                            </dd>
+                                        </div>
+                                        <div class="directions_text tel">
+                                            <dt class="cont_tit_lh">전화번호 안내</dt>
+                                            <dd>
+                                                <span class="infor_tit">유투엠 :</span>
+                                                <span class="color_text">
+                                                    <a href="tel:1899-0949">1899-0949</a>
+                                                </span>
+                                            </dd>
+                                            <dd>
+                                                <span class="infor_tit">강남세곡캠퍼스 :</span>
+                                                <span class="color_text">
+                                                    <a href="tel:1899-0996">1899-0996</a>
+                                                </span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+
+    </div>
+
+</body>
+
+</html>

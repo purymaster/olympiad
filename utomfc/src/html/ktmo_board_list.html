@@ -1,0 +1,207 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type4",
+            "title" : "KTMO 수상자",
+            "subtitle" : "유투엠 체험관",
+            "context" : {
+            "depth1_current" : "유투엠 체험관",
+            "depth1_sublist" : ["유투엠 소개","유투엠 학습법","유투엠 프로그램","유투엠 체험관","커뮤니티","예약&상담"],
+            "depth2_current" : "말하는 수학 맛보기",
+            "depth2_sublist" : ["말하는 수학 맛보기","체험 수기","언론보도"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["발표수업 영상","학생 학부모 인터뷰","KTMO 수상자"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            <strong>KTMO 수상자</strong>
+                        </p>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+
+                            <!-- 검색 메뉴 -->
+                            <div class="board_util">
+                                <div class="search_form">
+                                    <div class="select_form"><input type="hidden" name="">
+                                        <button type="button">
+                                            <span>전체</span>
+                                        </button>
+                                        <!-- [D] 선택항목에 따라 텍스트도 변경 -->
+                                        <ul>
+                                            <li>
+                                                <a href="#none">전체</a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">제목</a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">작성자</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search_wrap">
+                                        <input type="text" title="검색어 입력" placeholder="검색어를 입력하세요." name="search_input">
+                                        <button type="submit">검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //검색 메뉴 -->
+
+                            <!-- 게시판 리스트 -->
+                            <div class="board_list">
+                                <table>
+                                    <caption>공지사항 리스트</caption>
+                                    <colgroup>
+                                        <col style="width:11%;">
+                                        <col>
+                                        <col style="width:12%;">
+                                        <col style="width:9%;">
+                                        <col style="width:9%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">NO</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">작성자</th>
+                                            <th scope="col">등록일</th>
+                                            <th scope="col">조회수</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="notice">
+                                            <th class="num" scope="row">
+                                                <span class="notice_icon">공지</span>
+                                            </th>
+                                            <td class="tit">
+                                                <a href="#">
+                                                    <strong>[말머리]</strong>
+                                                    긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                </a>
+                                            </td>
+                                            <td class="name">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</td>
+                                            <td class="date">99.99.99</td>
+                                            <td class="view">999,999</td>
+                                        </tr>
+                                        <tr class="notice">
+                                            <th class="num" scope="row">
+                                                <span class="notice_icon">공지</span>
+                                            </th>
+                                            <td class="tit">
+                                                <a href="#">
+                                                    <strong>[말머리]</strong>
+                                                    하베르만 강남 논현 센터 신규 오픈 하였습니다.
+                                                </a>
+                                                <i class="file">첨부파일</i>
+                                                <i class="new">new</i>
+                                            </td>
+                                            <td class="name">관리자</td>
+                                            <td class="date">99.99.99</td>
+                                            <td class="view">999,999</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="num" scope="row">999,999</th>
+                                            <td class="tit">
+                                                <a href="#">
+                                                    <strong>[말머리]</strong>
+                                                    하베르만 공개 수업에 참여하세요!
+                                                    <i class="file">첨부파일</i>
+                                                    <i class="new">new</i>
+                                                </a>
+                                            </td>
+                                            <td class="name">관리자</td>
+                                            <td class="date">99.99.99</td>
+                                            <td class="view">999,999</td>
+                                        </tr>
+                                        <!-- <tr>
+                                                        <td colspan="5">작성된 게시글이 없습니다.</td>
+                                                    </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //게시판 리스트 -->
+
+                            <!-- 페이징 -->
+                            <div class="pagenation">
+                                <div class="pager">
+                                    <a class="first" href="#none">첫 페이지</a>
+                                    <a class="prev" href="#none">이전 페이지</a>
+                                    <ul>
+                                        <li>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <a href="#none">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">6</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">7</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">8</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">9</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">999</a>
+                                        </li>
+                                    </ul>
+                                    <a class="next" href="#none">다음 페이지</a>
+                                    <a class="last" href="#none">끝 페이지</a>
+                                </div>
+                            </div>
+                            <!-- //페이징 -->
+
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        
+    </div>
+
+</body>
+
+</html>

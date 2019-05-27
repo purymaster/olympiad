@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>유투엠</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header data-animation="">
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="말하는 수학의 교육혁명 유투엠">
+								<!-- [D] 학원명 빈 칸 없이 최대 9글자 한계 -->
+								<span>강남세곡캠퍼스</span>
+								<!-- [D] //학원명 빈 칸 없이 최대 9글자 한계 -->
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">GLEC</a></li>
+											<li><a href="#" target="_blank">올림피아드 수학</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+										<div class="menu_btn">
+
+											<!-- [D] 로그인 전 -->
+											<a class="btn login" href="#">로그인</a>
+											<!-- //[D] 로그인 전 -->
+
+											<!-- [D] 로그인 후 -->
+											<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+											<!-- [D] 직원일 경우 관리자 + 로그아웃 -->
+											<!-- <a class="btn study" href="#">재원생 학습</a> -->
+											<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+											<!-- <a class="btn logout" href="#">로그아웃</a> -->
+											<!-- //[D] 로그인 후 -->
+
+										</div>
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">유투엠 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="">유투엠 소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">원장 인사말</a></li>
+													<li><a href="#">유투엠 스토리</a></li>
+													<li><a href="#">오시는길</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">유투엠 학습법</a>
+												<ul class="menu_2depth">
+													<li><a href="#">플립러닝 기반<br> 학생중심 참여수업</a></li>
+													<li><a href="#">하브루타 기반<br> 말하는 수학</a></li>
+													<li><a href="#">뇌과학 기반의<br> 메타인지 학습법</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">유투엠 프로그램</a>
+												<ul class="menu_2depth">
+													<li><a href="#">3가지 특장점</a></li>
+													<li><a href="#">4가지 말하기 학습전략</a></li>
+													<li><a href="#">프로그램 안내</a></li>
+													<li><a href="#">교재구성</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">유투엠 체험관</a>
+												<ul class="menu_2depth">
+													<li><a href="#">말하는 수학 맛보기</a></li>
+													<li><a href="#">체험 수기</a></li>
+													<li><a href="#">언론보도</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">교육정보</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">예약&amp;상담</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학안내</a></li>
+													<li><a href="#">상담신청</a></li>
+													<li><a href="#">설명회신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap attend_study">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type3.png)" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">유투엠 프로그램</p>
+					<h2 data-animation="fadeInUp" data-delay="3">3가지 특장점</h2>
+				</div>
+				<div class="breadcrumb">
+					<ol>
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form"><input type="hidden">
+								<button type="button">
+									<span>유투엠 프로그램</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">유투엠 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">유투엠 학습법</a>
+									</li>
+
+									<li>
+										<a href="#none">유투엠 프로그램</a>
+									</li>
+
+									<li>
+										<a href="#none">유투엠 체험관</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+									<li>
+										<a href="#none">예약&상담</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form"><input type="hidden">
+								<button type="button">
+									<span>3가지 특장점</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">3가지 특장점</a>
+									</li>
+
+									<li>
+										<a href="#none">4가지 말하기 학습전략</a>
+									</li>
+
+									<li>
+										<a href="#none">프로그램 안내</a>
+									</li>
+
+									<li>
+										<a href="#none">교재구성</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ol>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container">
+
+
+						<!-- 서브 페이지 상단 탭메뉴 -->
+						<div class="tab_menu">
+							<ul>
+								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+								<li><a href="#">학생중심 참여수업</a></li>
+
+								<li><a href="#">지능형 개별맞춤학습</a></li>
+
+								<li><a href="#">완전학습 시스템</a></li>
+
+							</ul>
+						</div>
+						<!-- //서브 페이지 상단 탭메뉴 -->
+
+
+						<p class="main_tit">
+							유투엠은 <strong>플립러닝 기반의 학생중심 참여수업</strong>으로<br>
+                            수포자를 양산하는 주입식 수학교육을 뒤집었습니다.
+                        </p>
+							<p class="txt">
+								학생들이 다양한 말하기 학습을 통해 수업에 능동적으로 참여하여 학습효과를 극대화하고, 최첨단 온라인 디지털을 교실수업에 통합하여<br>
+                            학생들마다 각자 수준에 맞는 학습과정과 진도, 문제풀이를 맞춤식으로 설계하여 지도하고 있습니다.<br>
+                            예습과 수업과 복습이 유기적으로 통합된 수업을 구현하여 학습내용을 완전하게 이해하는 수학교육 시스템을 구현하고 있습니다.
+                        </p>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap attend">
+					<div class="grid_container">
+
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">플립러닝에 기반한 학생중심 참여수업</h3>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="diagram">
+								<img src="../img/img/img_attend_diagram.png" alt="">
+								<div class="hidden">
+									<span>유투엠 프로그램 3가지 특장점</span>
+									<ul>
+										<li>학생중심 참여수업 - 수학 교육을 뒤집다!</li>
+										<li>지능형 개별맞춤학습 - 온오프 블랜디드 러닝!</li>
+										<li>완전학습 시스템 - 학습효과 극대화!</li>
+									</ul>
+								</div>
+							</div>
+							<div class="cont_wrap">
+								<img src="../img/img/img_attend_subimg.jpg" alt="">
+								<div class="txt_wrap">
+									<p class="tit">
+										유투엠은 학습효과를 높이기 위해서 학생이 학습과정에 <strong>능동적으로 참여하는 학생중심 참여수업을
+                                            구현</strong>하였습니다.
+									</p>
+									<p class="txt">
+										주입식 교육은 수학에 대한 흥미를 떨어뜨려 수포자를 양산하는 최악의 교수학습법입니다. 유투엠은 대한민국 최초로 플립러닝
+										교수학습법을 도입하여 주입식 수학교육을 거꾸로 뒤집었습니다. 듣는 공부를 ‘말하는 공부’로, 입력하는 공부를 ‘출력하는 공부’로,
+										혼자하는 공부를 ‘함께 하는 공부’로, 바꾸었습니다. 기본 지식을 예습한 후 교실 수업에서는 질문과 토론, 발표와 설명과 같은
+										<strong>능동적인 학생중심 참여수업을 통해 학생들이 계속 생각하게 하고 생각을 표현</strong>하게 합니다.
+									</p>
+									<p class="txt">
+										학생이 수업에 몰입하여 계속 생각을 하게하고 능동적으로 공부를 하게 하는 것이 학습효과를 높이는 비결입니다. 또한 기본 개념을
+										디딤영상을 통해 예습한 후 교실수업에서는 응용, 심화된 문제 풀이에 집중함으로써 깊이있는 심화학습을 완성합니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap before_after_guide">
+					<div class="grid_container">
+						<div class="before_after">
+							<div class="cont before">
+								<div class="sub_col_tit">
+									<p>기존의 주입식 교육</p>
+								</div>
+								<ul class="cont_list">
+									<li>
+										<div class="img_wrap">
+											<img src="../img/img/img_attend_before_01.jpg" alt="">
+											<span class="tit">교실에서</span>
+										</div>
+										<ul class="txt_list type1">
+											<li>교사 중심의 일방적 주입식 강의</li>
+											<li>수동적으로 듣는 수학 공부</li>
+											<li>질문과 토론이 없는 주입식 학습</li>
+										</ul>
+									</li>
+									<li>
+										<div class="img_wrap">
+											<img src="../img/img/img_attend_before_02.jpg" alt="">
+											<span class="tit">가정에서</span>
+										</div>
+										<ul class="txt_list type1">
+											<li>응용, 심화 문제 숙제로 부과</li>
+											<li>해결하지 못한 문제 누적되는 불완전 학습구조</li>
+											<li>흥미도 저하</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="cont after">
+								<div class="sub_col_tit">
+									<p>유투엠의 학생중심 참여수업</p>
+								</div>
+								<ul class="cont_list">
+									<li>
+										<div class="img_wrap">
+											<img src="../img/img/img_attend_after_01.jpg" alt="">
+											<span class="tit">사전학습</span>
+										</div>
+										<ul class="txt_list type1">
+											<li>기본 개념 디딤영상 예습 및 확인문제 풀이</li>
+											<li>코넬식 개념노트 정리로 학습내용
+												구조화 및 장기기억화</li>
+										</ul>
+									</li>
+									<li>
+										<div class="img_wrap">
+											<img src="../img/img/img_attend_after_02.jpg" alt="">
+											<span class="tit">교실수업</span>
+										</div>
+										<ul class="txt_list type1">
+											<li>‘말하는 수학’에 기반한 학생중심의
+												능동적 참여수업</li>
+											<li>응용, 심화 문제풀이로 심화학습
+												완성
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="sub_txt">
+									<p>
+										주입식 수학교육을 혁신하여 학생중심 참여수업을 구현한<br>
+                                        유투엠의 플립러닝 수업모델
+                                    </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap talking_math">
+					<div class="grid_container">
+
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">학습효과를 극대화하는 ‘말하는 수학’</h3>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<img src="../img/img/img_talking_math_diagram.png" alt="">
+							<div class="hidden">
+								<span>학습효과를 극대화하는 메타인지 학습법</span>
+								<p>
+									최상위 0.1% 학생들이 갖고 있는 핵심적인 능력<strong>메타인지!</strong>
+								</p>
+								<dl>
+									<dt>말로 설명할 수 있는 경우의 학습 순서</dt>
+									<dd>
+										<ol>
+											<li>아는 것</li>
+											<li>각인효과(재구조화)</li>
+										</ol>
+										<ol>
+											<li>모르는 것</li>
+											<li>피드백 학습</li>
+											<li>재인지</li>
+										</ol>
+									</dd>
+								</dl>
+								<dl>
+									<dt>메타인지란?</dt>
+									<dd>자신이 아는지 모르는지 성찰하는 능력, 자신의 생각에 대해 생각하는 능력입니다.</dd>
+								</dl>
+							</div>
+							<div class="txt_wrap">
+								<div class="cont_tit">
+									<p class="tit">
+										유투엠의 ‘말하는 수학’은 <strong>학습자의 메타인지를 키우고 학습효과를
+                                            장기기억화 하는 뇌과학적 수학
+                                            교육 프로그램</strong>입니다.
+									</p>
+								</div>
+								<div class="cont_txt">
+									<p class="txt">
+										유투엠은 학생이 능동적으로 참여하는 말하기 학습을 통해 학습자의 두뇌를 끊임없이 활성화시켜 학습효과를 극대화 합니다. 학습한
+										내용을
+										장기기억화하여 학습효과를 극대화하려면 배운 지식을 말로 설명해보아야 한다는 것이 최신 뇌과학의 결론입니다. <strong>듣는
+                                            공부는 하루 뒤에
+                                            5%만을 기억하지만 남에게 말로 설명하는 공부는 90%를 기억</strong>한다는 인지심리학의 연구 결과가 바로 말하는
+										공부의
+										학습효과를 입증하고
+										있습니다. 유투엠은 질문식 수업, 또래 가르치기, 토론과 발표, 거꾸로 설명하기와 같은 4가지 말하기 학습전략을 통해 수학적
+										개념과
+										문제해결과정을 완전하게 이해 하게 합니다.
+									</p>
+									<p class="txt">
+										말로 설명할 수 있는 지식만이 진짜 제대로 아는 지식입니다. 배운 지식을 말로 설명하는 과정에서 학습한 내용이 구조화 되고
+										장기기억화
+										됩니다. 또한 말하는 공부는 학습자의 메타인지능력을 발달시킵니다. 유투엠의 아이들은 말로 설명하는 과정에서 자신이 아는 것과
+										모르는 것을
+										스스로 구별하고 성찰해낸 후 잘 모르는 것을 다시 확실하게 알고 넘어갑니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<!-- <li><a href="#">U2M 소개</a></li> -->
+						<!-- <li><a href="#">찾아오시는 길</a></li> -->
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
+					</ul>
+					<div class="select_form"><input type="hidden">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="말하는 수학의 교육혁명 유투엠">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
