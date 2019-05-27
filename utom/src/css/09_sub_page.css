@@ -56,9 +56,10 @@
 /* 서브 페이지 상단 */
 .sub_upper_wrap {padding:100px 0 50px; color:#333; text-align:center;}
 .sub_upper_wrap.bg {background:#e6eff1;}
-.sub_upper_wrap .main_tit {position:relative; margin:0 auto; font-family:"Nanum Square"; font-size:40px; line-height:1.35em; color:inherit;}
+.sub_upper_wrap .main_tit {position:relative; margin:0 auto; font-family:"Nanum Square"; font-size:40px; line-height:1.4em; color:inherit;}
 .sub_upper_wrap .main_tit:before {position:absolute; top:-30px; left:50%; width:18px; height:20px; margin-left:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-477px -475px; content:"";}
 .sub_upper_wrap .main_tit strong {font-family:"Nanum Square"; font-weight:900;}
+.sub_upper_wrap .strong_txt {margin-top:30px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em;}
 .sub_upper_wrap .txt {margin:10px auto 0; font-family:"Nanum Square"; font-size:18px; font-weight:300; line-height:1.6em; color:inherit;}
 .sub_upper_wrap .txt strong {color:#008378;}
 
@@ -68,13 +69,14 @@
 
 @media (max-width:1024px) {
     .sub_upper_wrap {padding:30px 0;}
-    .sub_upper_wrap .main_tit {width:90%; margin-top:30px; font-size:26px;}
-    .sub_upper_wrap .main_tit br {display:none;}
+    .sub_upper_wrap .main_tit {width:90%; margin-top:30px; font-size:30px;}
+    .sub_upper_wrap .strong_txt {font-size:18px; margin:15px 0;}
     .sub_upper_wrap .txt {width:90%; margin-top:15px; font-size:16px;}
 }
 
 @media (max-width:599px) {
-    .sub_upper_wrap .main_tit {margin-top:30px; font-size:20px;}
+    .sub_upper_wrap .main_tit {font-size:20px;}
+    .sub_upper_wrap .strong_txt {font-size:16px;}
     .sub_upper_wrap .txt {font-size:14px;}
 }
 
@@ -166,6 +168,10 @@
     .sub_lower_wrap .tab_menu button,.sub_lower_wrap .tab_menu a {font-size:12px; line-height:28px;}
 }
 
+@media (max-width:320px) {
+    .sub_lower_wrap .tab_menu button,.sub_lower_wrap .tab_menu a {font-size:11px;}
+}
+
 /* 서브 페이지 쌍따옴표 메세지 박스 */
 .msg_box {position:relative; margin:32px 0; padding:50px; border:3px solid #1fb6c1; background:#ebfeff; text-align:center;}
 .msg_box:before,.msg_box:after {position:absolute; width:110px; height:61px; background:url(../img/sprite/sprite.png); background-position-y:-330px; content:"";}
@@ -193,7 +199,6 @@
 .no_sub_header .sub_content {margin-top:130px;}
 .upper_banner_on .no_sub_header .sub_content {margin-top:calc(130px + 10.9375%);}
 .no_sub_header .sub_upper_wrap {padding-top:95px;}
-.no_sub_header .sub_upper_wrap .main_tit {font-weight:900;}
 .no_sub_header .sub_upper_wrap .main_tit:before {top:-35px;}
 
 @media (max-width:1024px) {
@@ -1989,7 +1994,7 @@
 }
 
 /* 홈페이지 이용의견 */
-.opinion .txt {font-size:16px; line-height:1.75em; text-align:center;}
+.opinion .txt {font-size:16px !important; line-height:1.75em !important; text-align:center;}
 .opinion .necessary {display:inline-block; position:relative; width:1px; font-size:0; vertical-align:top;}
 .opinion .necessary:before {position:absolute; top:0; left:0; font-size:18px; line-height:12px; color:red; text-indent:0; content:"*";}
 .opinion .cmt {margin-top:30px; font-size:12px; text-align:right;}
@@ -2026,7 +2031,7 @@
 .opinion .btn_wrap button {min-width:180px; margin:0 2px; padding:0 15px; background:#00687f; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; transition:all 0.5s;}
 
 @media (max-width:1024px) {
-    .opinion .txt {font-size:14px; line-height:1.6em;}
+    .opinion .txt {font-size:14px !important; line-height:1.6em !important;}
     .opinion .survey_table table .header {width:150px;}
     .opinion .survey_table table th,.opinion .survey_table table th {padding:10px 15px; font-size:14px;}
     .opinion .survey_table table input[type="radio"] + label {font-size:14px;}

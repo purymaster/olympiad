@@ -30,7 +30,7 @@ header.animated:after {transform:scaleX(1);}
 .navigation a:hover {color:#00687f !important;}
 .navigation .menu_1depth {float:right; margin:4px -35px 0;}
 .navigation .menu_1depth:after {display:block; clear:both; content:"";}
-.navigation .menu_1depth > li {float:left; position:relative; margin: 0 35px; transition:margin 0.5s;}
+.navigation .menu_1depth > li {float:left; position:relative; margin: 0 45px; transition:margin 0.5s;}
 .navigation .menu_1depth > li:after {visibility:hidden; position:absolute; top:45px; left:50%; width:8px; height:8px; margin-left:-4px; background:#00687f; transition:all 0.5s; opacity:0; content:"";}
 .navigation .menu_1depth > li:hover:after {visibility:visible; opacity:1;}
 .navigation .menu_1depth > li > a {display:block; font-size:16px; font-weight:700; line-height:60px; color:#333;}
