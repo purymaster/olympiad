@@ -1,0 +1,249 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type4",
+            "title" : "학기 및 레벨구성",
+            "subtitle" : "중등부",
+            "context" : {
+            "depth1_current" : "중등부",
+            "depth1_sublist" : ["GLEC 어학원","입학안내","초등부","중등부","대입센터","드림투어","커뮤니티"],
+            "depth2_current" : "학기 및 레벨구성",
+            "depth2_sublist" : ["프로그램 특징","학기 및 레벨구성","GLEC 플립러닝","GLEC 개별학습"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 학기구성 -->
+                <div class="sub_upper_wrap static_ro">
+                    <div class="grid_container inner">
+                        <h3 class="main_tit mb35"><strong>학기구성</strong></h3>
+                        <div class="radius_ls_line ty_three">
+                            <ul>
+                                <li>
+                                    <div class="radius_ls_line_item">
+                                        <dl>
+                                            <dt>
+                                                <span class="month">12월 ~ 2월</span>
+                                                <span class="title">겨울학기</span>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radius_ls_line_item">
+                                        <dl>
+                                            <dt>
+                                                <span class="month">3월 ~ 6월</span>
+                                                <span class="title">봄학기</span>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radius_ls_line_item">
+                                        <dl>
+                                            <dt>
+                                                <span class="month">7월 ~ 11월</span>
+                                                <span class="title">여름학기</span>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- .학기구성 -->
+
+                <!-- 레벨구성 -->
+                <div class="sub_upper_wrap static_ro">
+                    <div class="grid_container inner">
+                        <h3 class="main_tit mb30"><strong>레벨구성</strong></h3>
+                        <table class="bs_table mb15">
+                            <caption>레벨구성</caption>
+                            <colgroup>
+                                <col style="width:25%;">
+                                <col style="width:25%;">
+                                <col style="width:25%;">
+                                <col style="width:25%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2">중 1, 2학년</th>
+                                    <th scope="col" colspan="2">중 3학년</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">CPA / CPI</th>
+                                    <td>탭스 대비</td>
+                                    <td>CQA / CQI / CQB</td>
+                                    <td>텝스 실전 / 토플 대비 / 특목고 준비</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">NA / NI</th>
+                                    <td>고등 기본</td>
+                                    <td>EA / EI</td>
+                                    <td>수능 준비</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">SA / SI / SB</th>
+                                    <td>중등 완성</td>
+                                    <td>WA / WI</td>
+                                    <td>고등 입문</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text_align_r">* <strong>B</strong> : Basic Level / <strong>I</strong> : Intermediate /
+                            <strong>A</strong> : Advanced Level</p>
+                    </div>
+                </div>
+                <!-- .레벨구성 -->
+
+                <!-- 중등부 표준시간표 -->
+                <div class="sub_upper_wrap static_ro">
+                    <div class="grid_container inner">
+                        <h3 class="main_tit mb30"><strong>중등부 표준시간표</strong></h3>
+                        <div class="tbl_textbx ty_two">
+                            <ul>
+                                <li>
+                                    <table class="bs_table ty_two">
+                                        <caption>중등부 표준시간표</caption>
+                                        <colgroup>
+                                            <col style="width:16%;">
+                                            <col style="width:28%;">
+                                            <col style="width:28%;">
+                                            <col style="width:28%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">교시</th>
+                                                <th scope="col">월/화</th>
+                                                <th scope="col">수/목</th>
+                                                <th scope="col">금(특화 수업)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1교시</th>
+                                                <td>LC</td>
+                                                <td>FG</td>
+                                                <td>RS</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2교시</th>
+                                                <td>FG</td>
+                                                <td>SW</td>
+                                                <td>FR</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3교시</th>
+                                                <td>RC</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4교시</th>
+                                                <td colspan="3">개별 보충 or 재시험</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <div class="text_bx">
+                                        <ul class="ab_bullet">
+                                            <li>월수금(주3일), 화목(주2일) 中 선택</li>
+                                            <li><strong>LC/SW : </strong>온/오프 연계한 통합수업</li>
+                                            <li><strong>FG : </strong>거꾸로 학습에 기반한 학생중심의 토론식 문법수업</li>
+                                            <li><strong>FR : </strong>거꾸로 학습에 기반한 다양한 활동의 리딩 수업</li>
+                                            <li><strong>RS : </strong>리딩-리스닝-스피킹이 하나로 통합된 개인별 맞춤 수업</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- .중등부 표준시간표 -->
+
+                <!-- 중등부 특반 표준시간표 -->
+                <div class="sub_upper_wrap static_ro">
+                    <div class="grid_container inner">
+                        <h3 class="main_tit mb30"><strong>중3 특반 표준시간표</strong></h3>
+                        <div class="tbl_textbx ty_two mb15">
+                            <ul>
+                                <li>
+                                    <table class="bs_table ty_two">
+                                        <caption>중3 특반 표준시간표</caption>
+                                        <colgroup>
+                                            <col style="width:25%;">
+                                            <col style="width:25%;">
+                                            <col style="width:25%;">
+                                            <col style="width:25%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">교시</th>
+                                                <th scope="col">월</th>
+                                                <th scope="col">수</th>
+                                                <th scope="col">금</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1교시</th>
+                                                <td>LC</td>
+                                                <td>TEPS</td>
+                                                <td>SW</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2교시</th>
+                                                <td>FG</td>
+                                                <td>FG</td>
+                                                <td>수능 RC</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3교시</th>
+                                                <td>수능 RC</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4교시</th>
+                                                <td colspan="3">개별 보충 or 재시험</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <div class="text_bx">
+                                        <ul class="ab_bullet">
+                                            <li>월수금(주3일), 화목(주2일) 中 선택</li>
+                                            <li><strong>수능RC : </strong>고난이도 수능유형 및 실전 수업</li>
+                                            <li><strong>FG : </strong>고등 심화 플립러닝 문법 구문 학습</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="text_align_r">* 캠퍼스별로 다르기 때문에 자세한 시간표는 캠퍼스로 문의해 주시기 바랍니다.</p>
+
+                    </div>
+                </div>
+                <!-- .중등부 표준시간표 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

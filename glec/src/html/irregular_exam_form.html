@@ -1,0 +1,838 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap exam_form">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "입학절차",
+            "subtitle" : "입학안내",
+            "context" : {
+            "depth1_current" : "입학안내",
+            "depth1_sublist" : ["GLEC 어학원","입학안내","초등부","중등부","대입센터","드림투어","커뮤니티"],
+            "depth2_current" : "입학절차",
+            "depth2_sublist" : ["입학절차","TOSLA"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["정기 입학고사","수시 입학고사","신청 확인"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            <strong>수시 입학고사 신청</strong>
+                        </p>
+                        <p class="txt">
+                            희망 일시를 알려주시면 캠퍼스 담당자가 확인 후 연락 드립니다.<br>
+                            일시는 사정상 조정될 수 있으니 충분한 시간을 두고 신청해 주세요.
+                        </p>
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+
+                            <!-- 입학고사 입력폼 -->
+                            <div class="form">
+                                <div class="form_list">
+                                    <p class="form_tit">입력사항</p>
+                                    <!-- 입력폼 테이블 -->
+                                    <div class="input_form input">
+                                        <div class="cmt">
+                                            <span class="necessary"></span>필수입력사항
+                                        </div>
+                                        <dl>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_01">
+                                                        지역
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="select_form"><input type="hidden" name="">
+                                                        <button type="button" id="input_01">
+                                                            <span>지역</span>
+                                                        </button>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#none">서울특별시</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#none">제주특별자치도</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_02">
+                                                        캠퍼스명
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="select_form"><input type="hidden" name="">
+                                                        <button type="button" id="input_02">
+                                                            <span>캠퍼스명</span>
+                                                        </button>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#none">대치캠퍼스</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#none">동대문캠퍼스</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_03">
+                                                        학생명
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <input type="text" id="input_03">
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_04">
+                                                        학년
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="select_form"><input type="hidden" name="">
+                                                        <button type="button" id="input_04">
+                                                            <span>학년</span>
+                                                        </button>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#none">초6</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#none">고3</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_05">
+                                                        학교명
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="search_box">
+                                                        <input type="text" readonly="">
+                                                        <button type="button" id="input_05" class="open_modal"
+                                                            data-modal="school"><span>검색</span></button>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_06">
+                                                        연락처
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="tel">
+                                                        <div class="select_form"><input type="hidden" name="">
+                                                            <button type="button" id="input_06">
+                                                                <span>010</span>
+                                                            </button>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#none">010</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#none">016</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <span class="dash">-</span>
+                                                        <input type="text" maxlength="4" title="전화번호 중간자리">
+                                                        <span class="dash">-</span>
+                                                        <input type="text" maxlength="4" title="전화번호 끝자리">
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_10">
+                                                        희망날짜
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="calendar">
+                                                        <input type="text" class="datepicker" id="input_10" readonly="">
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_11">
+                                                        희망시간
+                                                        <span class="necessary">
+                                                            필수입력사항
+                                                        </span>
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="select_form"><input type="hidden" name="">
+                                                        <button type="button" id="input_11">
+                                                            <span>희망시간</span>
+                                                        </button>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#none">14:00</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#none">19:00</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_07">
+                                                        이메일
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <input type="email" id="input_07">
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <!-- //입력폼 테이블 -->
+                                    <!-- 주소 -->
+                                    <div class="input_form address">
+                                        <dl>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_08">
+                                                        주소
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="search_box">
+                                                        <input type="text" readonly>
+                                                        <button type="button" id="input_08" class="open_modal"
+                                                            data-modal="address"><span>검색</span></button>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_09">
+                                                        상세주소
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <input type="text" id="input_09">
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <!-- //주소 -->
+                                    <!-- 라디오버튼 -->
+                                    <div class="input_form radio">
+                                        <dl>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="radio_05">알게된 경로</label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="radio_form">
+                                                        <ul>
+                                                            <li>
+                                                                <input type="radio" id="radio_05" name="radio_n03">
+                                                                <label for="radio_05">신문전단</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_06" name="radio_n03">
+                                                                <label for="radio_06">인터넷</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_07" name="radio_n03">
+                                                                <label for="radio_07">학원버스</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_08" name="radio_n03">
+                                                                <label for="radio_08">부모님 권유</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_09" name="radio_n03">
+                                                                <label for="radio_09">교직원 소개</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_10" name="radio_n03">
+                                                                <label for="radio_10">TV</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_11" name="radio_n03">
+                                                                <label for="radio_11">친구소개</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="radio_12" name="radio_n03"
+                                                                    data-value="etc">
+                                                                <label for="radio_12">기타</label>
+                                                                <input type="text" data-value="etc_input" readonly=""
+                                                                    placeholder="자세히 적어주세요.">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <!-- //라디오버튼 -->
+
+                                    <!-- [D] 기타 입력폼 활성화 -->
+                                    <script>
+                                        $(function () {
+                                            var radio = $('.input_form.radio').find('input[type="radio"]'),
+                                                etc_input = $('.input_form.radio').find('input[data-value="etc_input"]');
+
+                                            radio.on('click', function () {
+                                                $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true);
+                                            });
+                                        });
+                                    </script>
+                                    <!-- //[D] 기타 입력폼 활성화 -->
+                                </div>
+                            </div>
+                            <!-- //입학고사 입력폼 -->
+
+                            <p class="warning">
+                                수시 입학고사는 평일 14:00 ~19:00 시행됩니다. 확정 일시는 희망일을 기준으로 캠퍼스별로 안내 드립니다.
+                            </p>
+
+                            <!-- 약관 -->
+                            <div class="term_viewer">
+                                <div class="term_wrap privacy">
+                                    <dl>
+
+                                        <dt>
+                                            <p class="term_tit">1. 개인정보의 수집목적 및 이용</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                ㈜올림피아드교육은 회원님들의 개인정보를 매우 중요하게 생각하며 개인정보의 보호와 관련하여 『개인정보보호법』 및 『정보통신망
+                                                이용촉진 및
+                                                정보보호 등에 관한 법률』 등 관련법 상의 개인정보 보호규정 및 방송통신위원회가 제정한 『개인정보보호지침』을 준수하고 있습니다.
+                                            </p>
+                                            <p class="term_txt">
+                                                ㈜ 올림피아드교육은 회원님 개인의 정보를 수집하는 목적은 올림피아드교육 사이트를 통하여 회원님들께 최적의 맞춤화된 서비스를 제공해
+                                                드리기
+                                                위해서입니다. ㈜올림피아드교육에게 제공되는 각종의 교육컨텐츠를 서비스해 드리고 있으며 이러한 서비스 이용간 회원님께서 제공해주신
+                                                개인정보를
+                                                바탕으로 회원님께 보다 더 유용한 정보를 원활하게 제공하는 것이 가능하게 됩니다.
+                                            </p>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">2. 수집하는 개인정보 항목 및 수집방법</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                ㈜올림피아드교육은 최초 회원가입을 하실 때 서비스 제공을 위해 가장 필수적인 개인정보를 받고 있습니다. 이 이외에 특정 서비스를
+                                                제공하기
+                                                위하여 추가적인 정보제공을 요청하고 있습니다. 이때에도 기입하신 정보는 해당서비스 제공이나 회원님께 사전에 밝힌 목적 이외의 다른
+                                                어떠한
+                                                목적으로도 사용되지 않음을 알려드립니다.
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p class="term_tit">가. 수집하는 개인정보 항목</p>
+                                                    <ul class="txt_list type2">
+                                                        <li>
+                                                            성명, 성별, 사진, 아이디, 비밀번호, 주소, 연락처(집, 휴대폰), E-mail, E-mail 수신
+                                                            여부, SMS
+                                                            수신여부, 학교정보
+                                                            및 학년, 학업성취도, 타학원수강여부, 접속 로그, 쿠키, 결제기록, 법정대리인 정보(성명, 회원과의 관계,
+                                                            연락가능전화)
+                                                        </li>
+                                                        <li>
+                                                            영상정보처리기기(CCTV)를 통한 강의실 내부 및 학원 복도 영상 녹화 및 녹음
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p class="term_tit">나. 수집방법</p>
+                                                    <ul class="txt_list type2">
+                                                        <li>
+                                                            서면 (오프라인 입학동의서 또는 개인정보 수집 및 이용동의서 접수)
+                                                        </li>
+                                                        <li>
+                                                            캠퍼스 고객지원팀를 통한 전화 및 온라인 상담
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">3. 개인정보의 보유 및 폐기</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                ㈜올림피아드교육의 회원으로서 ㈜올림피아드교육이 제공하는 서비스를 받는 동안 회원님의 개인정보는 ㈜올림피아드교육에서 계속 보유하며
+                                                서비스 제공을 위해 이용하게 됩니다.<br>
+                                                ㈜올림피아드교육은 아래와 같은 관련법령의 규정에 의하여 일정기간 회원님의 개인정보를 일정기간 보유합니다.
+                                            </p>
+                                            <ul class="sub">
+                                                <li>
+                                                    가) 계약 또는 청약철회에 관한 기록 : 5년
+                                                </li>
+                                                <li>
+                                                    나) 대금결제 및 재화 등의 공급에 관한 기록 : 5년
+                                                </li>
+                                                <li>
+                                                    다) 소비자 불만 및 분쟁처리에 관한 기록 : 3년
+                                                </li>
+                                            </ul>
+                                            <p class="term_txt">
+                                                회원님께 사전에 알려드린 개인정보를 제공받은 목적이 달성된 경우에 수집된 개인의 정보는 재생할 수 없는 방법에 의하여
+                                                하드디스크에서 완전히
+                                                삭제되며 어떠한 용도로도 열람 또는 이용할 수 없도록 처리됩니다.
+                                            </p>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">4. 개인정보의 제공 및 공유</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                원칙적으로 ㈜올림피아드교육은 회원님의 개인정보를 타인 또는 타기업·기관에 공개하지 않습니다. 다만 회원님이 공개에 동의한 경우
+                                                또는
+                                                ㈜올림피아드교육의 서비스 이용약관을 위배하는 사람이나 ㈜올림피아드교육의 서비스를 이용하여 타인에게 법적인 피해를 주거나 미풍양속을
+                                                해치는
+                                                행위를 한 사람 등에게 법적인 조치를 취하기 위하여 개인정보를 공개해야 한다고 판단되는 충분한 근거가 있는 경우는 예외로 합니다.
+                                                이 경우에도
+                                                개인에게는 제공하지 않으며 규정된 절차에 따라서 수사기관에만 제공할 수 있습니다.
+                                                ㈜올림피아드교육은 양질의 서비스 제공을 위해 회원님의 개인정보를 수탁 회사에게 제공할 수 있습니다.
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p class="term_tit">가. 전산관리 위탁</p>
+
+                                                    <!-- 데이터 테이블(모바일 폭 고정) -->
+                                                    <div class="data_table no_left_th" data-width="600">
+                                                        <!-- data-width : 고정할 너비(px) -->
+                                                        <table>
+                                                            <colgroup>
+                                                                <col style="width:33%">
+                                                                <col>
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">수탁회사</th>
+                                                                    <th scope="col">취급위탁을 하는 업무의 내용</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        드림원시스㈜)
+                                                                    </td>
+                                                                    <td>
+                                                                        전산시스템(웹, DB 등)의 개발, 관리업무, 시스템 보안관리 업무
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- //데이터 테이블(모바일 폭 고정) -->
+
+                                                </li>
+                                                <li>
+                                                    <p class="term_tit">나. 위탁제공</p>
+
+                                                    <!-- 데이터 테이블(모바일 폭 고정) -->
+                                                    <div class="data_table no_left_th" data-width="1000">
+                                                        <!-- data-width : 고정할 너비(px) -->
+                                                        <table>
+                                                            <colgroup>
+                                                                <col>
+                                                                <col>
+                                                                <col>
+                                                                <col>
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">수탁회사</th>
+                                                                    <th scope="col">제공목적</th>
+                                                                    <th scope="col">개인정보 제공 항목</th>
+                                                                    <th scope="col">보유 및 이용기간</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        ㈜에듀랩
+                                                                    </td>
+                                                                    <td>
+                                                                        GLEC Library 이용
+                                                                    </td>
+                                                                    <td>
+                                                                        아이디,비밀번호,성명,성별
+                                                                    </td>
+                                                                    <td>
+                                                                        재원시까지
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        ㈜컴퍼스미디어
+                                                                    </td>
+                                                                    <td>
+                                                                        Kids pop, Dream Pop 이용
+                                                                    </td>
+                                                                    <td>
+                                                                        아이디,성명,반,캠퍼스
+                                                                    </td>
+                                                                    <td>
+                                                                        재원시까지
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        ㈜해브잉글리쉬
+                                                                    </td>
+                                                                    <td>
+                                                                        Dream Pop(중등) 이용
+                                                                    </td>
+                                                                    <td>
+                                                                        아이디,비밀번호,성명,학년,캠퍼스,학생 휴대전화,집전화,이메일,주소
+                                                                    </td>
+                                                                    <td>
+                                                                        재원시까지
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- //데이터 테이블(모바일 폭 고정) -->
+
+                                                </li>
+                                            </ul>
+                                            <p class="term_txt notice">
+                                                ※ 오프라인 입학동의서 또는 개인정보 수집 및 이용동의서 작성시 수탁회사 제공을 포함하고 있습니다.
+                                            </p>
+                                        </dd>
+
+
+                                        <dt>
+                                            <p class="term_tit">5. 개인정보보호를 위한 기술적/제도적 관리</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                회원님께 제공되는 계정의 비밀번호는 오직 본인만이 알 수 있으며, 개인정보의 확인 및 변경도 비밀번호를 알고 있는 본인에 의해서만
+                                                가능합니다.
+                                                따라서 회원님의 비밀번호는 누구에게도 알려주면 안됩니다. 또한 온라인 서비스을 마치신 후에는 로그아웃(log-out)하시고
+                                                웹브라우저를 종료하는
+                                                것이 바람직합니다. 특히 다른 사람과 컴퓨터를 공유하여 사용하거나 공공장소에서 이용한 경우 개인정보가 다른 사람에게 알려지는 것을
+                                                막기 위해서
+                                                이와 같은 절차를 반드시 수행하시기 바랍니다.<br>
+                                                또한, ㈜올림피아드교육은 회원님들의 개인정보를 보호하기 위하여 다음과 같은 개인정보 보호대책을 시행하고 있습니다.
+                                            </p>
+                                            <ul class="inner">
+                                                <li>
+                                                    <strong>가) 수집하는 개인정보 항목</strong>
+                                                    <p class="term_txt">
+                                                        회원님의 비밀번호는 암호화되어 저장 및 관리되고 있습니다. 비밀번호는 오직 회원 본인만 알 수 있으며 개인정보를
+                                                        확인 및 변경할
+                                                        경우에는 비밀번호를 알고 있는 본인에 의해서만 가능합니다. 따라서 회원님의 비밀번호가 타인에게 알려지지 않도록
+                                                        각별히 주의하시기
+                                                        바랍니다.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <strong>나) 해킹 및 컴퓨터 바이러스 등에 대비</strong>
+                                                    <p class="term_txt">
+                                                        ㈜올림피아드교육은 해킹이나 컴퓨터 바이러스에 의하여 회원님들의 개인정보가 유출되거나 훼손되는 것을 막기 위하여
+                                                        필요한
+                                                        보안조치를 이용하고 있으며, 더욱 향상된 보안조치를 확보할 수 있도록 가능한 모든 기술적 방법을 구비하기 위하여
+                                                        노력하고
+                                                        있습니다.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <strong>다) 개인정보 취급자의 제한 및 교육</strong>
+                                                    <p class="term_txt">
+                                                        ㈜올림피아드교육은 개인정보를 취급하는 직원을 최소한으로 제한하고 있으며, 관련 직원들에 대한 교육을 수시로 실시하여
+                                                        본방침의
+                                                        이행 및 준수여부를 확인하고 있습니다.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">6. 회원 및 법정대리인의 권리와 그 행사방법</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                회원님 및 법정대리인은 언제든지 등록되어 있는 본인의 개인정보를 조회하거나 수정할 수 있으며 회원 탈퇴 절차를 통하여 개인정보
+                                                이용에 대한 동의
+                                                등을 철회할 수 있습니다.<br>
+                                                회원님은 언제든지 등록되어 있는 회원님의 개인정보를 열람할 수 있으며, 아이디(ID) 삭제를 요청하실 수 있습니다. 회원님 개인
+                                                정보의 열람은
+                                                이용자정보관리에서 하실 수 있으며, 아이디 삭제는 각 캠퍼스 상담직원에게 요청하시면 됩니다.
+                                            </p>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">7. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                ㈜올림피아드교육은 회원의 정보를 수시로 저장하고 찾아내는 ‘쿠키(cookie)'등을 운용합니다. 쿠키란 웹사이트를 운영하는데
+                                                이용되는 서버가
+                                                이용자의 브라우저에 보내는 아주 작은 텍스트 파일로서 회원의 컴퓨터 하드디스크에 저장됩니다. ㈜올림피아드교육은 다음과 같은 목적을
+                                                위해 쿠키를
+                                                사용합니다.
+                                            </p>
+                                            <ul class="inner">
+                                                <li>
+                                                    <strong>가) 쿠키 등 사용 목적</strong>
+                                                    <ul class="inner_list">
+                                                        <li>
+                                                            ① 회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야 파악 및 자취 추적, 각종
+                                                            이벤트 참여
+                                                            정보 및 방문 회수 파악 등을 통한 타켓 마케팅 및 개인 맞춤 서비스 제공
+                                                        </li>
+                                                        <li>
+                                                            ② 회원과 비회원은 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 웹브라우저에서 옵션을 설정함으로써
+                                                            모든 쿠키를
+                                                            허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <strong>나) 쿠키 설정 거부 방법</strong>
+                                                    <ul class="inner_list">
+                                                        <li>
+                                                            ① 쿠키 설정을 거부하는 방법으로는 회원이 사용하시는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용허간
+                                                            쿠키를 저장할
+                                                            때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다.
+                                                        </li>
+                                                        <li>
+                                                            ② 설정방법 예시<br>
+                                                            - 예시(인터넷 익스플로어의 경우. 단, 익스플로어의 버전에 따라 설정은 다소 변경될 수 있습니다.)<br>
+                                                            웹브라우저 상단의 도구 &gt; 인터넷 옵션 &gt; 개인정보
+                                                        </li>
+                                                        <li>
+                                                            ③ 단, 쿠키 설치를 거부하였을 경우 서비스 제공에 제한사항이 발생할 수 있습니다.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">8. 개인정보관리책임자</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                (주)올림피아드교육은 회원의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보관리책임자를 지정하고
+                                                있습니다.
+                                            </p>
+                                            <ul class="inner">
+                                                <li>
+                                                    <strong>가) 개인정보관리책임자</strong>
+                                                    <ul class="inner_list txt_list type2">
+                                                        <li>
+                                                            성명 : 양환승 본부장
+                                                        </li>
+                                                        <li>
+                                                            연락처 : <a href="tel:1899-0996">1899-0996</a>
+                                                        </li>
+                                                        <li>
+                                                            이메일 : <a
+                                                                href="mailto:hsyang@olympiad.ac">hsyang@olympiad.ac</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <strong>나) 개인정보보호관리자</strong>
+                                                    <ul class="inner_list txt_list type2">
+                                                        <li>
+                                                            성명 : 김경출 차장
+                                                        </li>
+                                                        <li>
+                                                            연락처 : <a href="tel:1899-0996">1899-0996</a>
+                                                            (<a href="tel:070-4938-0050">070-4938-0050</a>)
+                                                        </li>
+                                                        <li>
+                                                            이메일 : <a
+                                                                href="mailto:gckim@olympiad.ac">gckim@olympiad.ac</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">9. 개인정보에 대한 민원처리 및 분쟁해결</p>
+                                        </dt>
+                                        <dd>
+                                            <ul class="inner">
+                                                <li>
+                                                    <strong>가) 민원처리부서</strong>
+                                                    <ul class="inner_list txt_list type2">
+                                                        <li>
+                                                            (주)올림피아드교육 경영지원본부 (연락처 : <a
+                                                                href="tel:1899-0996">1899-0996</a>)
+                                                        </li>
+                                                        <li>
+                                                            근무시간 : 평일 10:00~19:00 (토요일 및 일요일, 공휴일은 휴무 / 점심시간
+                                                            13:00~14:00)
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <strong>나) 분쟁조정기관</strong>
+                                                    <ul class="inner_list txt_list type2">
+                                                        <li>
+                                                            개인정보분쟁조정위원회 (<a href="https://www.kopico.go.kr/"
+                                                                target="_blank" title="새창열림">www.kopico.go.kr</a> /
+                                                            1336)
+                                                        </li>
+                                                        <li>
+                                                            정보보호마크인증위원회 (<a href="http://eprivacy.or.kr/"
+                                                                target="_blank" title="새창열림">www.eprivacy.or.kr</a> /
+                                                            02-580-0533~4)
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">10. 개인정보보호정책 개정</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                본 개인정보 취급 방침이 변경될 경우 회사는 변경 내용을 그 시행일 7일 전부터 홈페이지(<a
+                                                    href="http://www.olympiad.ac" target="_blank"
+                                                    title="새창열림">www.olympiad.ac</a>) '공지사항‘을 통하여
+                                                공지할 예정입니다.
+                                            </p>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">11. 시행</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                본 개인정보보호정책은 2012년 2월 10일부터 시행한다.
+                                            </p>
+                                        </dd>
+
+                                        <dt>
+                                            <p class="term_tit">12. 부칙</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="term_txt">
+                                                2010년 08월 06일 개정<br>
+                                                2012년 2월 10일 개정<br>
+                                                2016년 4월 27일 부분개정
+                                            </p>
+                                        </dd>
+
+                                    </dl>
+                                </div>
+                                <div class="term_agree">
+                                    <div class="check_form">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="term_agree" name="term_agree">
+                                                <label for="term_agree">위 내용을 확인하였으며, 개인정보취급방침에 동의합니다.</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //약관 -->
+
+                            <div class="btn_wrap">
+                                <a href="#" class="cancel">취소</a>
+                                <button type="submit" class="submit">수시 입학고사 신청</button>
+                            </div>
+
+                            <!-- 모달 팝업창 -->
+                            <div class="modal_wrap">
+
+                                <!-- 학교 -->
+                                @@include('../inc/modal/modal_school.html')
+                                <!-- //학교 -->
+
+                                <!-- 주소 -->
+                                @@include('../inc/modal/modal_address.html')
+                                <!-- //주소 -->
+
+                            </div>
+                            <!-- //모달 팝업창 -->
+
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

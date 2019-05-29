@@ -1,0 +1,50 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap confirm_page">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "상담 신청",
+            "subtitle" : "예약&상담",
+            "context" : {
+            "depth1_current" : "예약&상담",
+            "depth1_sublist" : ["예약&상담"],
+            "depth2_current" : "상담 신청",
+            "depth2_sublist" : ["상담 신청","설명회 신청"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        <p class="main_tit">
+                            <strong>상담 신청이 접수되었습니다.</strong>
+                        </p>
+                        <p class="txt">
+                            문의하신 내용은 담당 직원이 확인하고 2~3일 안으로 연락드리겠습니다.
+                        </p>
+
+                        <div class="btn_wrap">
+                            <a href="#">메인으로</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

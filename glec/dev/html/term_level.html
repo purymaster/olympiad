@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GLEC어학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="영어로 행복한 GLEC 어학원">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">올림피아드 수학</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+										<div class="menu_btn">
+
+											<!-- [D] 로그인 전 -->
+											<a class="btn login" href="#">로그인</a>
+											<!-- //[D] 로그인 전 -->
+
+											<!-- [D] 로그인 후 -->
+											<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+											<!-- [D] 직원일 경우 T-ROOM + 관리자 + 로그아웃 -->
+											<!-- <a class="btn study" href="#">T-ROOM</a> -->
+											<!-- <a class="btn troom" href="#">재원생 학습</a> -->
+											<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+											<!-- <a class="btn logout" href="#">로그아웃</a> -->
+											<!-- //[D] 로그인 후 -->
+
+										</div>
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">GLEC 어학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="">GLEC 어학원</a>
+												<ul class="menu_2depth">
+													<li><a href="#">인사말</a></li>
+													<li><a href="#">캠퍼스 안내</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">입학안내</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학절차</a></li>
+													<li><a href="#">TOSLA</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">초등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">학기 및 레벨구성</a></li>
+													<li><a href="#">영어도서관</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">중등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">학기 및 레벨구성</a></li>
+													<li><a href="#">GLEC 플립러닝</a></li>
+													<li><a href="#">GLEC 개별학습</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">대입센터</a>
+											</li>
+											<li>
+												<a href="#">드림투어</a>
+												<ul class="menu_2depth">
+													<li><a href="#">드림투어 소개</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">합격실적</a></li>
+													<li><a href="#">홍보관</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">설명회후기</a></li>
+													<li><a href="#">Best Student</a></li>
+													<li><a href="#">Best of My PT</a></li>
+												</ul>
+											</li>
+											<!-- <li class="pc">
+                                        <a href="#">학습하기</a>
+                                        <ul class="menu_2depth">
+                                            <li><a href="#">GLEC Library</a></li>
+                                            <li><a href="#">GR &amp; Daily Test</a></li>
+                                            <li><a href="#">Dream Pop 초등</a></li>
+                                            <li><a href="#">Dream Pop 중등</a></li>
+                                            <li><a href="#">Voca 개별학습</a></li>
+                                            <li><a href="#">Dream Map</a></li>
+                                        </ul>
+                                    </li> -->
+										</ul>
+									</div>
+								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type4.jpg)" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">중등부</p>
+					<h2 data-animation="fadeInUp" data-delay="3">학기 및 레벨구성</h2>
+				</div>
+				<div class="breadcrumb">
+					<ol>
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>중등부</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">GLEC 어학원</a>
+									</li>
+
+									<li>
+										<a href="#none">입학안내</a>
+									</li>
+
+									<li>
+										<a href="#none">초등부</a>
+									</li>
+
+									<li>
+										<a href="#none">중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">대입센터</a>
+									</li>
+
+									<li>
+										<a href="#none">드림투어</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>학기 및 레벨구성</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">프로그램 특징</a>
+									</li>
+
+									<li>
+										<a href="#none">학기 및 레벨구성</a>
+									</li>
+
+									<li>
+										<a href="#none">GLEC 플립러닝</a>
+									</li>
+
+									<li>
+										<a href="#none">GLEC 개별학습</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ol>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 학기구성 -->
+				<div class="sub_upper_wrap static_ro">
+					<div class="grid_container inner">
+						<h3 class="main_tit mb35"><strong>학기구성</strong></h3>
+						<div class="radius_ls_line ty_three">
+							<ul>
+								<li>
+									<div class="radius_ls_line_item">
+										<dl>
+											<dt>
+												<span class="month">12월 ~ 2월</span>
+												<span class="title">겨울학기</span>
+											</dt>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="radius_ls_line_item">
+										<dl>
+											<dt>
+												<span class="month">3월 ~ 6월</span>
+												<span class="title">봄학기</span>
+											</dt>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="radius_ls_line_item">
+										<dl>
+											<dt>
+												<span class="month">7월 ~ 11월</span>
+												<span class="title">여름학기</span>
+											</dt>
+										</dl>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- .학기구성 -->
+
+				<!-- 레벨구성 -->
+				<div class="sub_upper_wrap static_ro">
+					<div class="grid_container inner">
+						<h3 class="main_tit mb30"><strong>레벨구성</strong></h3>
+						<table class="bs_table mb15">
+							<caption>레벨구성</caption>
+							<colgroup>
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col style="width:25%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="2">중 1, 2학년</th>
+									<th scope="col" colspan="2">중 3학년</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">CPA / CPI</th>
+									<td>탭스 대비</td>
+									<td>CQA / CQI / CQB</td>
+									<td>텝스 실전 / 토플 대비 / 특목고 준비</td>
+								</tr>
+								<tr>
+									<th scope="row">NA / NI</th>
+									<td>고등 기본</td>
+									<td>EA / EI</td>
+									<td>수능 준비</td>
+								</tr>
+								<tr>
+									<th scope="row">SA / SI / SB</th>
+									<td>중등 완성</td>
+									<td>WA / WI</td>
+									<td>고등 입문</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="text_align_r">* <strong>B</strong> : Basic Level / <strong>I</strong> : Intermediate /
+							<strong>A</strong> : Advanced Level</p>
+					</div>
+				</div>
+				<!-- .레벨구성 -->
+
+				<!-- 중등부 표준시간표 -->
+				<div class="sub_upper_wrap static_ro">
+					<div class="grid_container inner">
+						<h3 class="main_tit mb30"><strong>중등부 표준시간표</strong></h3>
+						<div class="tbl_textbx ty_two">
+							<ul>
+								<li>
+									<table class="bs_table ty_two">
+										<caption>중등부 표준시간표</caption>
+										<colgroup>
+											<col style="width:16%;">
+											<col style="width:28%;">
+											<col style="width:28%;">
+											<col style="width:28%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">교시</th>
+												<th scope="col">월/화</th>
+												<th scope="col">수/목</th>
+												<th scope="col">금(특화 수업)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">1교시</th>
+												<td>LC</td>
+												<td>FG</td>
+												<td>RS</td>
+											</tr>
+											<tr>
+												<th scope="row">2교시</th>
+												<td>FG</td>
+												<td>SW</td>
+												<td>FR</td>
+											</tr>
+											<tr>
+												<th scope="row">3교시</th>
+												<td>RC</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<th scope="row">4교시</th>
+												<td colspan="3">개별 보충 or 재시험</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li>
+									<div class="text_bx">
+										<ul class="ab_bullet">
+											<li>월수금(주3일), 화목(주2일) 中 선택</li>
+											<li><strong>LC/SW : </strong>온/오프 연계한 통합수업</li>
+											<li><strong>FG : </strong>거꾸로 학습에 기반한 학생중심의 토론식 문법수업</li>
+											<li><strong>FR : </strong>거꾸로 학습에 기반한 다양한 활동의 리딩 수업</li>
+											<li><strong>RS : </strong>리딩-리스닝-스피킹이 하나로 통합된 개인별 맞춤 수업</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- .중등부 표준시간표 -->
+
+				<!-- 중등부 특반 표준시간표 -->
+				<div class="sub_upper_wrap static_ro">
+					<div class="grid_container inner">
+						<h3 class="main_tit mb30"><strong>중3 특반 표준시간표</strong></h3>
+						<div class="tbl_textbx ty_two mb15">
+							<ul>
+								<li>
+									<table class="bs_table ty_two">
+										<caption>중3 특반 표준시간표</caption>
+										<colgroup>
+											<col style="width:25%;">
+											<col style="width:25%;">
+											<col style="width:25%;">
+											<col style="width:25%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">교시</th>
+												<th scope="col">월</th>
+												<th scope="col">수</th>
+												<th scope="col">금</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">1교시</th>
+												<td>LC</td>
+												<td>TEPS</td>
+												<td>SW</td>
+											</tr>
+											<tr>
+												<th scope="row">2교시</th>
+												<td>FG</td>
+												<td>FG</td>
+												<td>수능 RC</td>
+											</tr>
+											<tr>
+												<th scope="row">3교시</th>
+												<td>수능 RC</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<th scope="row">4교시</th>
+												<td colspan="3">개별 보충 or 재시험</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li>
+									<div class="text_bx">
+										<ul class="ab_bullet">
+											<li>월수금(주3일), 화목(주2일) 中 선택</li>
+											<li><strong>수능RC : </strong>고난이도 수능유형 및 실전 수업</li>
+											<li><strong>FG : </strong>고등 심화 플립러닝 문법 구문 학습</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<p class="text_align_r">* 캠퍼스별로 다르기 때문에 자세한 시간표는 캠퍼스로 문의해 주시기 바랍니다.</p>
+
+					</div>
+				</div>
+				<!-- .중등부 표준시간표 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<!-- <li><a href="#">GLEC 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
+					</ul>
+					<div class="select_form">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="영어로 행복한 GLEC 어학원">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<li class="pc"><a href="#">학습하기</a></li>
+				<li><a href="#">상담신청</a></li>
+				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<li class="counsel pc">
+					<span class="tit">상담문의</span>
+					<!-- <span class="phone">1899-0949</span> -->
+					<span class="date">평일 10:00~19:00</span>
+				</li>
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
+	</div>
+
+</body>
+
+</html>

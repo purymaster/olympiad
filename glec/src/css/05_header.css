@@ -25,7 +25,7 @@ header.animated:after {transform:scaleX(1);}
 .group_nav .search_wrap input[type="text"] {height:30px; padding-right:32px; padding-left:8px; border:0; background:#f5f5f5; line-height:30px;}
 .group_nav .search_wrap button {top:7px; right:8px;}
 .group_nav .menu_btn {display:inline-block;}
-.group_nav .btn {display:inline-block; margin:3px 0 0 20px; padding:0 10px; background:#f78920; font-size:12px; line-height:26px; color:#fff; text-align:center; vertical-align:top;}
+.group_nav .btn {display:inline-block; margin:3px 0 0 20px; padding:0 10px; background:#f9be00; font-size:12px; line-height:26px; color:#fff; text-align:center; vertical-align:top;}
 .navigation {border-top:1px solid #eee;}
 .navigation a:hover {color:#f78920 !important;}
 .navigation .menu_1depth {float:right; margin:4px -35px 0;}
@@ -101,6 +101,11 @@ header.animated:after {transform:scaleX(1);}
     .navigation .menu_1depth > li:hover:after {display:none;}
     .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#fffaf3; text-align:left; transform:none; transition:none !important; opacity:1;}
     .navigation .menu_2depth li a {font-size:12px; padding:0.3em 0; line-height:1.4em;}
+    .nav_wrap .call_num {position:absolute; left:0; bottom:0; padding:15px;}
+    .nav_wrap .call_num dl {width:100%; font-size:0;}
+    .nav_wrap .call_num dt,.nav_wrap .call_num dd {display:inline-block; font-family:"Nanum Square"; font-weight:700; line-height:20px; vertical-align:middle;}
+    .nav_wrap .call_num dt {font-size:14px;}
+    .nav_wrap .call_num dd {margin-left:10px; font-size:18px; color:#f78920;}
 }
 
 @media (max-width:599px) {

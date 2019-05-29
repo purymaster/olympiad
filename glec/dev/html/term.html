@@ -5,9 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>GLEC 어학원</title>
+	<title>GLEC어학원</title>
 
 	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
 	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
 	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
 	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
@@ -82,7 +83,7 @@
 										<div class="menu_btn">
 
 											<!-- [D] 로그인 전 -->
-											<a class="btn login" href="#">재원생 로그인</a>
+											<a class="btn login" href="#">로그인</a>
 											<!-- //[D] 로그인 전 -->
 
 											<!-- [D] 로그인 후 -->
@@ -105,8 +106,7 @@
 												<a href="">GLEC 어학원</a>
 												<ul class="menu_2depth">
 													<li><a href="#">인사말</a></li>
-													<li><a href="#">교육방향</a></li>
-													<li><a href="#">캠퍼스안내</a></li>
+													<li><a href="#">캠퍼스 안내</a></li>
 												</ul>
 											</li>
 											<li>
@@ -121,7 +121,6 @@
 												<ul class="menu_2depth">
 													<li><a href="#">프로그램 특징</a></li>
 													<li><a href="#">학기 및 레벨구성</a></li>
-													<li><a href="#">표준시간표</a></li>
 													<li><a href="#">영어도서관</a></li>
 												</ul>
 											</li>
@@ -130,7 +129,6 @@
 												<ul class="menu_2depth">
 													<li><a href="#">프로그램 특징</a></li>
 													<li><a href="#">학기 및 레벨구성</a></li>
-													<li><a href="#">표준시간표</a></li>
 													<li><a href="#">GLEC 플립러닝</a></li>
 													<li><a href="#">GLEC 개별학습</a></li>
 												</ul>
@@ -142,8 +140,6 @@
 												<a href="#">드림투어</a>
 												<ul class="menu_2depth">
 													<li><a href="#">드림투어 소개</a></li>
-													<li><a href="#">특징</a></li>
-													<li><a href="#">상담안내</a></li>
 													<li><a href="#">현장스케치</a></li>
 												</ul>
 											</li>
@@ -173,6 +169,16 @@
 										</ul>
 									</div>
 								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
 								<button class="close mobile" type="button">메뉴 닫기</button>
 							</div>
 						</nav>
@@ -189,7 +195,7 @@
 					<div class="grid_container inner">
 
 						<p class="main_tit">
-							이용약관
+							<strong>이용약관</strong>
 						</p>
 
 						<!-- 이용약관 -->
@@ -732,12 +738,14 @@
 			<div class="grid_container">
 				<div class="footer_upper">
 					<ul class="bottom_menu">
-						<li><a href="#">GLEC 소개</a></li>
-						<li><a href="#">찾아오시는길</a></li>
+						<!-- <li><a href="#">GLEC 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
 						<li><a href="#">사이트맵</a></li>
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
 						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
 					</ul>
 					<div class="select_form">
 						<button type="button">
@@ -769,6 +777,9 @@
 								<li>사업자등록번호 : 206-81-24574</li>
 								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
 							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
+							</ul>
 							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
 						</address>
 					</div>
@@ -786,7 +797,7 @@
 				<li><a href="#">캠퍼스 안내</a></li>
 				<li class="counsel pc">
 					<span class="tit">상담문의</span>
-					<span class="phone">1899-0949</span>
+					<!-- <span class="phone">1899-0949</span> -->
 					<span class="date">평일 10:00~19:00</span>
 				</li>
 			</ul>

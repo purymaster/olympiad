@@ -32,15 +32,23 @@ $(function () {
 
     /******************** 셀렉트박스 제어 ********************/
 
+    function changeSelectBox(object) {
+        return;
+    }
+
     var select_form = $('.select_form');
 
-    select_form.on('click', 'button', function () {
+    select_form.on('click', 'button[type="button"]', function () {
         ($(this).hasClass('on')) ?
             select_form.find('button').removeClass('on') :
             (select_form.find('button').removeClass('on'), $(this).addClass('on'));
     }).on('click', 'a', function () {
-        $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
+        $(this).closest('ul').siblings('button').removeClass('on').find('span').html($(this).text());
+        $(this).closest('.select_form').find('input[type=hidden]').val($(this).attr('value'));
+        changeSelectBox($(this).closest('.select_form').find('input[type=hidden]'));
+        return false;
     });
+
     $(document).on('mouseup touchend', function (e) {
         if (!select_form.is(e.target) && select_form.has(e.target).length === 0)
             select_form.find('button').removeClass('on');
@@ -52,7 +60,7 @@ $(function () {
         window.outerWidth > 1024 ? is_mobile = false : is_mobile = true;
         $('.data_table').each(function () {
             table_width = $(this).data('width');
-            window.outerWidth > 1024 ? $(this).find('table').css('width', '') : $(this).find('table').css('width', table_width);
+            window.outerWidth > 1024 ? $(this).find('table').css('min-width', '') : $(this).find('table').css('min-width', table_width);
         })
     });
 
@@ -88,7 +96,7 @@ $(function () {
     };
 
     (function check_cookie() {
-        get_cookie("no_pop_glec") !== "" ?
+        get_cookie("no_pop_academy") !== "" ?
             (upper_banner.hide(),
                 $('body').removeClass('upper_banner_on')) :
             (upper_banner.addClass('on'),
@@ -96,7 +104,7 @@ $(function () {
     })();
 
     upper_banner.find('button').on('click', function () {
-        if ($(this).hasClass('today')) set_cookie("no_pop_glec", "y", "1"); // 1일동안 보지 않기
+        if ($(this).hasClass('today')) set_cookie("no_pop_academy", "y", "1"); // 1일동안 보지 않기
         close_banner();
     });
 
@@ -141,7 +149,11 @@ $(function () {
                     $('.header_wrap .menu').blur(),
                     $('.group_nav').find('input').val === '',
                     nav_2depth.hide()) :
-                nav_2depth.show();
+                (nav_2depth.show(),
+                    screen.removeClass('fixed'),
+                    screen_fix = false,
+                    $('.modal').find('button[data-move="close"]').trigger('click')
+                );
     });
 
     /******************** 서브 페이지 내용 탭메뉴 정의 ********************/
@@ -163,6 +175,7 @@ $(function () {
         view_list.removeClass('on');
         $('.tab_view:eq(' + view_data + ')').show();
         $(this).parents('li').addClass('on');
+        $('.tab_view').find('input[type="radio"]').prop('checked', false);
     });
 
     /******************** 스크롤 애니메이션 정의 ********************/
@@ -221,5 +234,18 @@ $(function () {
             top: $(this).height() / 2 + $(window).scrollTop(),
             ease: Elastic.easeOut.config(.25, .25)
         })
+    });
+
+    /******************** Datepicker ********************/
+
+    $('.datepicker').datepicker({
+        dateFormat: 'yy-mm-dd',
+        showMonthAfterYear: true,
+        monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+        buttonText: "선택",
+        yearSuffix: "년"
     });
 });

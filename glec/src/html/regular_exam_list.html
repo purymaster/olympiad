@@ -1,0 +1,201 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap exam_list">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "입학절차",
+            "subtitle" : "입학안내",
+            "context" : {
+            "depth1_current" : "입학안내",
+            "depth1_sublist" : ["GLEC 어학원","입학안내","초등부","중등부","대입센터","드림투어","커뮤니티"],
+            "depth2_current" : "입학절차",
+            "depth2_sublist" : ["입학절차","TOSLA"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["정기 입학고사","수시 입학고사","신청 확인"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            <strong>입학고사 신청</strong>
+                        </p>
+                        <p class="txt">
+                            정기 입학고사 응시가 어려우시면 희망하시는 날짜로 <strong>수시 입학고사</strong>에서 신청해 주세요.
+                        </p>
+
+                        <div class="list_search">
+                            <table>
+                                <colgroup>
+                                    <col style="width:45px">
+                                    <col style="width:150px">
+                                    <col style="width:70px">
+                                    <col style="width:210px">
+                                    <col style="width:45px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="input_01">지역</label>
+                                        </th>
+                                        <td>
+                                            <div class="select_form"><input type="hidden" name="">
+                                                <button type="button" id="input_01">
+                                                    <span>지역</span>
+                                                </button>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">서울특별시</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">제주특별자치도</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="input_02">캠퍼스명</label>
+                                        </th>
+                                        <td>
+                                            <div class="select_form"><input type="hidden" name="">
+                                                <button type="button" id="input_02">
+                                                    <span>브랜드명</span>
+                                                </button>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#none">올림피아드학원</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none">올림피아드학원</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <th scope="row">
+                                            <label for="input_03">검색</label>
+                                        </th>
+                                        <td>
+                                            <div class="search_box">
+                                                <input type="text" id="input_03">
+                                                <button type="button"><span>검색</span></button>
+                                                <button type="button"><span>초기화</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+
+                            <!-- 정기 입학고사 리스트 -->
+                            <div class="board_list">
+                                <table>
+                                    <caption>정기 입학고사 리스트</caption>
+                                    <colgroup>
+                                        <col style="width:10%;">
+                                        <col style="width:12%;">
+                                        <col>
+                                        <col style="width:10%;">
+                                        <col style="width:10%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">지역</th>
+                                            <th scope="col">캠퍼스명</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">대상</th>
+                                            <th scope="col">신청</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="legion">서울</td>
+                                            <td class="campus">동대문캠퍼스</td>
+                                            <td class="tit">
+                                                <a href="#">
+                                                    2019 입시고사 레벨테스트
+                                                </a>
+                                            </td>
+                                            <td class="target">고1</td>
+                                            <td>
+                                                <a href="#" class="btn on">신청접수</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="legion">서울</td>
+                                            <td class="campus">동대문캠퍼스</td>
+                                            <td class="tit">
+                                                <a href="#">
+                                                    2019 입시고사 레벨테스트
+                                                </a>
+                                            </td>
+                                            <td class="target">고1</td>
+                                            <td>
+                                                <a href="#" class="btn deadline">마감임박</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="legion">서울</td>
+                                            <td class="campus">동대문캠퍼스</td>
+                                            <td class="tit">
+                                                <a href="#">
+                                                    2019 입시고사 레벨테스트
+                                                </a>
+                                            </td>
+                                            <td class="target">고1</td>
+                                            <td>
+                                                <span class="btn off">마감</span>
+                                            </td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <td colspan="5">현재 진행중인 정기 입학고사가 없습니다.</td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //정기 입학고사 리스트 -->
+
+                            <div class="btn_wrap">
+                                <a href="#">수시 입학고사 신청</a>
+                            </div>
+
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

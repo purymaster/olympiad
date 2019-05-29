@@ -1,0 +1,203 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap program_features middle">
+            @@include('../inc/sub_header.html',{
+            "type" : "type4",
+            "title" : "프로그램 특징",
+            "subtitle" : "중등부",
+            "context" : {
+            "depth1_current" : "중등부",
+            "depth1_sublist" : ["GLEC 어학원","입학안내","초등부","중등부","대입센터","드림투어","커뮤니티"],
+            "depth2_current" : "프로그램 특징",
+            "depth2_sublist" : ["프로그램 특징","학기 및 레벨구성","GLEC 플립러닝","GLEC 개별학습"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap subject_learning">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        <h3 class="main_tit">
+                            <strong>관리프로그램</strong>
+                        </h3>
+                        <p class="txt">GLEC어학원은 세부학습관리를 통해 자기주도적인 학습을 유도하며,<br />학생 개개인의 학습데이터를 분석하여 최적화된 코칭이 이뤄질 수 있도록
+                            지도하고 있습니다.</p>
+                        <ul class="tp_two">
+                            <li>
+                                <p><span class="title">데일리 테스트</span>RC/LC교재와 100% 연계된 <br />핵심어휘 및 숙어 테스트</p>
+                            </li>
+                            <li>
+                                <p><span class="title">문법 미니테스트</span>매 챕터마다 개념확장을 위한 <br />문법 Mini 테스트</p>
+                            </li>
+                            <li>
+                                <p><span class="title">미들테스트</span>매 학기 중간에 실시하는 <br />수능형 어법문제 테스트</p>
+                            </li>
+                            <li>
+                                <p><span class="title">레벨테스트</span>다음분기 레벨배정을 위한 <br />듣기, 독해, 문법, 어휘, 구문 총 <br />5가지
+                                    영역테스트</p>
+                            </li>
+                            <li>
+                                <p><span class="title">텝스정기응시(연 2~3회)</span>GLEC어학원 자체 <br />전산시스템으로 점수 관리</p>
+                            </li>
+                            <li>
+                                <p><span class="title">개별보충 및 디텐션 시스템</span>정규수업 등원일에 실시 <br />(데일리테스트 재시험 및 수업보강)</p>
+                            </li>
+                            <li>
+                                <p><span class="title">방학기획 프로그램</span>다양한 영역의 기획특강 / <br />개별학습관리를 위한 집중학습</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 내신대비 프로그램 -->
+                <div class="sub_upper_wrap static_ro">
+                    <div class="grid_container inner">
+                        <h3 class="main_tit mb40"><strong>내신대비 프로그램</strong></h3>
+                        <div class="radius_ls_line ty_two">
+                            <ul>
+                                <li>
+                                    <div class="radius_ls_line_item">
+                                        <dl>
+                                            <dt>
+                                                <span class="title"><span class="tblbx"><span class="item">교과서별 내용정리
+                                                            <br />및 본문암기</span></span></span>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radius_ls_line_item">
+                                        <dl>
+                                            <dt>
+                                                <span class="title"><span class="tblbx"><span class="item">학교별
+                                                            <br />기출문제풀이</span></span></span>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radius_ls_line_item">
+                                        <dl>
+                                            <dt>
+                                                <span class="title"><span class="tblbx"><span class="item">핵심문법,
+                                                            심화문법</span></span></span>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radius_ls_line_item">
+                                        <dl>
+                                            <dt>
+                                                <span class="title"><span class="tblbx"><span class="item">출판사별
+                                                            <br />예상문제 풀이</span></span></span>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="br_box">
+                            <h4 class="pg_sb_title mb10">내신대비 표준시간표</h4>
+                            <table class="bs_table mb15">
+                                <caption>내신대비 시간표</caption>
+                                <colgroup>
+                                    <col style="width:20%;">
+                                    <col style="width:40%;">
+                                    <col style="width:40%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">교시</th>
+                                        <th scope="col">정규수헝</th>
+                                        <th scope="col">일요 특별수업</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1교시</th>
+                                        <td>본문설명 & 암기, 이해테스트</td>
+                                        <td rowspan="3">실전풀이 & 오답정리<br />학교별/교과서별 진도보충<br />학교 프린트 보충</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2교시</th>
+                                        <td>문법설명 & 확인, 이해테스트</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3교시</th>
+                                        <td>개별보충 or Detention</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="text_align_r mb45">* 학교 지필고사 실시기간에만 내신대비 진행</p>
+                            <div class="bs_tip_bx">
+                                <h4 class="title"><span class="text">TIP !</span></h4>
+                                <p class="md_text">효율적인 시간관리로 최고의 내신성적을 거둘 수 있도록<br /><strong>주중과 주말 자율학습실</strong>을
+                                    운영합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .내신대비 프로그램 -->
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg dream_pop">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+                        <h3 class="main_tit">
+                            <strong>Dream-Pop 온라인 프로그램</strong>
+                        </h3>
+                        <div class="dream_text ty_two">
+                            <img src="../img/img/img_program_features_01.png">
+                            <ul class="dream_pop_list">
+                                <li>
+                                    <div class="border_text">
+                                        <span class="num">1</span>
+                                        <p>LC / SW 100% 교재 연계학습</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border_text">
+                                        <span class="num">2</span>
+                                        <p>학습효과 극대화를 위한 프로그램 구성</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border_text">
+                                        <span class="num">3</span>
+                                        <p>학생과 교사입장에서 1:1 피드백 가능</p>
+                                    </div>
+                                    <ul class="txt_list type1 ty_two">
+                                        <li>단어 & 표현 학습</li>
+                                        <li>단어 배열 학습</li>
+                                        <li>받아쓰기 학습</li>
+                                        <li>문장 구성 학습</li>
+                                        <li>말하기 학습</li>
+                                        <li>영작 학습</li>
+                                        <li> LC, TEPS, 교육청 듣기 대비 모의고사 풀이 학습</li>
+                                        <li>에세이 쓰기 학습</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

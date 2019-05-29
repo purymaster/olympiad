@@ -1,0 +1,196 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap campus_find">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "캠퍼스 안내",
+            "subtitle" : "GLEC 어학원",
+            "context" : {
+            "depth1_current" : "GLEC 어학원",
+            "depth1_sublist" : ["GLEC 어학원","입학안내","초등부","중등부","대입센터","드림투어","커뮤니티"],
+            "depth2_current" : "캠퍼스 안내",
+            "depth2_sublist" : ["인사말","캠퍼스 안내"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content campus_find">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap campus_search_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+                        <p class="main_tit">
+                            <strong>캠퍼스 안내</strong>
+                        </p>
+                        <p class="txt">
+                            찾으시는 지역의 캠퍼스를 확인하실 수 있습니다.
+                        </p>
+                        <div class="campus">
+
+                            <!-- 지역 검색 영역 -->
+                            <div class="campus_option_wrap">
+                                <div class="campus_option">
+                                    <div class="option_wrap">
+                                        <div class="select_form"><input type="hidden" name="">
+                                            <button type="button">
+                                                <span>시/도 선택</span>
+                                            </button>
+                                            <ul>
+                                                <li><a href="#none">서울특별시</a></li>
+                                                <li><a href="#none">부산광역시</a></li>
+                                                <li><a href="#none">대구광역시</a></li>
+                                                <li><a href="#none">인천광역시</a></li>
+                                                <li><a href="#none">광주광역시</a></li>
+                                                <li><a href="#none">대전광역시</a></li>
+                                                <li><a href="#none">울산광역시</a></li>
+                                                <li><a href="#none">세종특별자치시</a></li>
+                                                <li><a href="#none">경기도</a></li>
+                                                <li><a href="#none">강원도</a></li>
+                                                <li><a href="#none">충청북도</a></li>
+                                                <li><a href="#none">충청남도</a></li>
+                                                <li><a href="#none">전라북도</a></li>
+                                                <li><a href="#none">전라남도</a></li>
+                                                <li><a href="#none">경상북도</a></li>
+                                                <li><a href="#none">경상남도</a></li>
+                                                <li><a href="#none">제주특별자치도</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="select_form"><input type="hidden" name="">
+                                            <button type="button">
+                                                <span>시/군/구 선택</span>
+                                            </button>
+                                            <ul>
+                                                <li><a href="#none">A구</a></li>
+                                                <li><a href="#none">B구</a></li>
+                                                <li><a href="#none">C구</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="search_wrap">
+                                        <input type="text" title="검색어 입력" placeholder="검색어를 입력해주세요.">
+                                        <button type="submit">검색</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- //지역 검색 영역 -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap campus_data_wrap">
+                            <div class="grid_container inner">
+
+                                <!-- 검색결과 옵션 영역 -->
+                                <div class="cate_select">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="campus_cate" id="cate_all">
+                                            <label for="cate_all">전체</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="campus_cate" id="cate_1">
+                                            <label for="cate_1">올림피아드학원</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="campus_cate" id="cate_2">
+                                            <label for="cate_2">GLEC어학원</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="campus_cate" id="cate_3">
+                                            <label for="cate_3">영재센터</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="campus_cate" id="cate_4">
+                                            <label for="cate_4">고등부</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //검색결과 옵션 영역 -->
+
+                                <!-- 아코디언 메뉴 스크립트 -->
+                                <script>
+                                    $(function () {
+                                        var list = $('.fold_list .data_wrap'),
+                                            name = $('.fold_list .data');
+                                        name.on('click', function () {
+                                            $(this).parents('.data_wrap').hasClass('on') ?
+                                                list.removeClass('on').find('.map').stop().slideUp() :
+                                                (list.removeClass('on').find('.map').stop().slideUp(),
+                                                    $(this).parents('.data_wrap').addClass('on').find('.map').stop().slideDown())
+                                        });
+                                    });
+                                </script>
+                                <!-- //아코디언 메뉴 스크립트 -->
+
+                                <!-- 검색결과 표시 영역 -->
+                                <div class="fold_list">
+                                    <ul>
+                                        <li class="data_wrap">
+                                            <div class="data">
+                                                <span class="name">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                                <span
+                                                    class="address">긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소긴주소</span>
+                                                <span class="tel"><a href="tel:9999-9999-9999">9999-9999-9999</a></span>
+                                            </div>
+                                            <div class="map">
+                                                <div class="map_view">
+
+                                                    <!-- 네이버 지도 API 삽입 영역 -->
+                                                    <iframe src="" frameborder="0"></iframe>
+                                                    <!-- //네이버 지도 API 삽입 영역 -->
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="data_wrap">
+                                            <div class="data">
+                                                <span class="name">[유투엠] 원주단구 캠퍼스</span>
+                                                <span class="address">강원도 원주시 서원대로 406 (단구동) 리더스 빌딩 401호</span>
+                                                <span class="tel"><a href="tel:033-813-0123">033-813-0123</a></span>
+                                            </div>
+                                            <div class="map">
+                                                <div class="map_view">
+
+                                                    <!-- 네이버 지도 API 삽입 영역 -->
+                                                    <iframe src="" frameborder="0"></iframe>
+                                                    <!-- //네이버 지도 API 삽입 영역 -->
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- <li style="line-height:40px; text-align:center;">
+                                            검색 결과가 존재하지 않습니다.
+                                        </li> -->
+                                    </ul>
+                                </div>
+                                <!-- //검색결과 표시 영역 -->
+
+                            </div>
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GLEC어학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="영어로 행복한 GLEC 어학원">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">올림피아드 수학</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+										<div class="menu_btn">
+
+											<!-- [D] 로그인 전 -->
+											<a class="btn login" href="#">로그인</a>
+											<!-- //[D] 로그인 전 -->
+
+											<!-- [D] 로그인 후 -->
+											<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+											<!-- [D] 직원일 경우 T-ROOM + 관리자 + 로그아웃 -->
+											<!-- <a class="btn study" href="#">T-ROOM</a> -->
+											<!-- <a class="btn troom" href="#">재원생 학습</a> -->
+											<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+											<!-- <a class="btn logout" href="#">로그아웃</a> -->
+											<!-- //[D] 로그인 후 -->
+
+										</div>
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">GLEC 어학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="">GLEC 어학원</a>
+												<ul class="menu_2depth">
+													<li><a href="#">인사말</a></li>
+													<li><a href="#">캠퍼스 안내</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">입학안내</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학절차</a></li>
+													<li><a href="#">TOSLA</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">초등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">학기 및 레벨구성</a></li>
+													<li><a href="#">영어도서관</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">중등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">학기 및 레벨구성</a></li>
+													<li><a href="#">GLEC 플립러닝</a></li>
+													<li><a href="#">GLEC 개별학습</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">대입센터</a>
+											</li>
+											<li>
+												<a href="#">드림투어</a>
+												<ul class="menu_2depth">
+													<li><a href="#">드림투어 소개</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">합격실적</a></li>
+													<li><a href="#">홍보관</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">설명회후기</a></li>
+													<li><a href="#">Best Student</a></li>
+													<li><a href="#">Best of My PT</a></li>
+												</ul>
+											</li>
+											<!-- <li class="pc">
+                                        <a href="#">학습하기</a>
+                                        <ul class="menu_2depth">
+                                            <li><a href="#">GLEC Library</a></li>
+                                            <li><a href="#">GR &amp; Daily Test</a></li>
+                                            <li><a href="#">Dream Pop 초등</a></li>
+                                            <li><a href="#">Dream Pop 중등</a></li>
+                                            <li><a href="#">Voca 개별학습</a></li>
+                                            <li><a href="#">Dream Map</a></li>
+                                        </ul>
+                                    </li> -->
+										</ul>
+									</div>
+								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type2.jpg)" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">입학안내</p>
+					<h2 data-animation="fadeInUp" data-delay="3">TOSLA</h2>
+				</div>
+				<div class="breadcrumb">
+					<ol>
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>입학안내</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">GLEC 어학원</a>
+									</li>
+
+									<li>
+										<a href="#none">입학안내</a>
+									</li>
+
+									<li>
+										<a href="#none">초등부</a>
+									</li>
+
+									<li>
+										<a href="#none">중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">대입센터</a>
+									</li>
+
+									<li>
+										<a href="#none">드림투어</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>TOSLA</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">입학절차</a>
+									</li>
+
+									<li>
+										<a href="#none">TOSLA</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ol>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+
+						<p class="main_tit">
+							TOSLA는 학생들의 <strong>숨겨진 문제점과 원인을 파악</strong>하고 <br class="fast">
+                            상담을 통해 학습방향을 제시합니다.
+                        </p>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- TOSLA란 -->
+				<div class="sub_lower_wrap static_ro">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp mb15">
+								TOSLA 학습능력 종합진단검사란?</h3>
+							<p data-animation="fadeInUp" data-delay="4" class="txt_info animated fadeInUp color_gray">
+								Test of Self — Directed Learning Ability</p>
+						</div>
+						<div class="r_bg_graybx mb35">
+							<div class="text_bx">
+								<div class="head_bx">
+									<div class="bs_imgbx mb15"><img src="../img/img/tosla_text.png" alt="tosla" /></div>
+									<h4 class="decoration_title"><span class="text">학습능력 종합진단검사</span></h4>
+								</div>
+								<div class="cont_bx">
+									<p class="md_text">TOSLA(Test Of Self-Directed Learning Ability)는 <br />올림피아드교육과
+                                        숭실대학교 CK교수학습계발연구소의 <br />산학협력으로 2년간의 공동연구 끝에 개발한 <br />학습능력종합검사입니다.</p>
+								</div>
+							</div>
+						</div>
+						<p class="md_text mb10">저마다 다른 재능과 학습능력을 가진 아이들에게 학습 성취도를 획기적으로 높여주고 즐겁게 학습할 수 있는 맞춤형 솔루션을 제공하기
+							위해서는 학생 개개인의 현재 상태를 정확히 파악하고 분석해야 할 필요가 있습니다.</p>
+						<p class="md_text mb60">토슬라 검사는 하나의 검사만으로 일관성 있고 영역 간 유기적인 연관성을 확인할 수 있도록 구성되었습니다.<br />또한, 학습에
+                            영향을 주는 핵심 요인인 학습자 특성, 자기조절능력, 교과별 흥미도, 적성과 진로 적합성 등을 정확하게 분석합니다.</p>
+							<div class="bor_dia_bx">
+								<div class="bs_imgbx mb35"><img src="../img/img/tosla_info_img.jpg" alt="TOSLA=신뢰성 전문성 통합성 서비스" /></div>
+								<ul class="color_ls_bullet">
+									<li>
+										<dl>
+											<dt>통합성</dt>
+											<dd>학습, 인성, 진로 영역을 하나의 진단 검사로 통합함으로써 시간적, 경제적 불편함 제거</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>신뢰성</dt>
+											<dd>대학연구소에서 많은 수의 표집을 사용하여 표준화 과정을 거쳐 신뢰도와 기준타당도 확보</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>전문성</dt>
+											<dd>일회성 행사에 그치지 않도록 누적 검사와 사전 · 사후 비교를 통해 전문적 분석자료 도출 가능</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>서비스</dt>
+											<dd>온라인 진단 및 결과해석지, 통계자료 제공, 진단검사 이후 맞춤형 학습 컨설팅 제공</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+					</div>
+				</div>
+				<!-- .TOSLA란 -->
+
+				<!-- 필요성 -->
+				<div class="sub_lower_wrap static_ro">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp">TOSLA 필요성
+							</h3>
+						</div>
+						<h4 class="ro_sub_tit align_c mb35"><strong class="color">“아이들은 저마다의 이해의 속도와 영역을 가지고
+                                있습니다.”</strong><br class="not" />학생들의 숨겨진 문제점과 원인을 파악하고 상담을 통해 학습방형을 제시합니다.</h4>
+							<div class="bs_imgbx mb50"><img src="../img/img/tosla_info_img_ex.jpg" alt="항상 노력하는듯 보이지만 성적이 도무지 오르지 않는 학생의 문제,공부하고자 하는 의지가 다른 유혹에 쉽게 꺽이는 학생,학습의욕이 전혀 없고 무기력한 학생이 마음을 국데 닫는 원인은 무엇일까요?" />
+							</div>
+							<div class="bor_icon_bx">
+								<ul>
+									<li>
+										<div class="bor_icon_item">
+											<span class="icon mb20"><img src="../img/img/tosla_icon1.jpg" alt="" /></span>
+											<span class="md_text">영역별 특성파악 및 <br />발전 가능성 도모</span>
+										</div>
+									</li>
+									<li>
+										<div class="bor_icon_item">
+											<span class="icon mb20"><img src="../img/img/tosla_icon2.jpg" alt="" /></span>
+											<span class="md_text">전문적 진단 및 <br />해결방법 제시</span>
+										</div>
+									</li>
+									<li>
+										<div class="bor_icon_item">
+											<span class="icon mb20"><img src="../img/img/tosla_icon3.jpg" alt="" /></span>
+											<span class="md_text">학생 이해 <br />기초자료 제공</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+					</div>
+				</div>
+				<!-- .필요성 -->
+
+				<!-- 결과분석 -->
+				<div class="sub_lower_wrap static_ro">
+					<div class="grid_container inner">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit animated fadeInUp">TOSLA
+								결과분석</h3>
+							<p data-animation="fadeInUp" data-delay="4" class="txt_info animated fadeInUp">초, 중, 고등학생의
+								학습능력에 대한 종합적인 진단을 위해 학습자특성, 자기조절능력, 진로성숙도 <br /><strong>세 가지 측면의 총 10개 영역, 33개 요인에 대한
+                                    과학적인 분석</strong>이 이루어집니다.</p>
+						</div>
+						<div class="info_img_lsbx right mb50">
+							<div class="bs_imgbx"><img src="../img/img/result_img1.jpg" alt="a~g내점수 및 평균점수 그래프" /></div>
+							<div class="contbx">
+								<div class="textbx"><span class="text">평균범위와 평균점수를 통해 자신의 위치를 파악할 수 있습니다.</span></div>
+							</div>
+						</div>
+						<div class="info_img_lsbx left mb80">
+							<div class="bs_imgbx"><img src="../img/img/result_img2.jpg" alt="매우부족~매우우수에 관련된 그래프" />
+							</div>
+							<div class="contbx">
+								<div class="textbx"><span class="text">학생들의 진단검사 결과는 평균치를 기준으로 표준편자(SD)에 따라
+                                        구분됩니다.</span></div>
+							</div>
+						</div>
+						<ul class="st_bs_bullet">
+							<li class="color_gray"><span class="bullet">*</span><span class="text">로그인 후 검사가
+                                    가능합니다.</span></li>
+							<li class="color_gray"><span class="bullet">*</span><span class="text">검사진행에 대한 자세한 내용은 캠퍼스로
+                                    문의하시기 바랍니다.</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- .결과분석 -->
+
+				<!-- 하단 박스 -->
+				<div class="f_bg_textbx static_ro">
+					<div class="grid_container">
+						<div class="c_bx">
+							<p class="ro_sub_tit">본 검사를 통해 학생은 스스로에 대한 체계적이고 구체적인 분석과 이해를 <br />할 수 있을 것이며 이를 기반으로 학습에서는
+                                물론 삶 전체의 행로에서 지속적으로 <br /><strong class="color">자신의 발전을 주도해 가는 진정한 자기주도학습자로 성장</strong>해
+								나갈 것입니다.</p>
+							<span class="icon"></span>
+						</div>
+					</div>
+				</div>
+				<!-- .하단 박스 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<!-- <li><a href="#">GLEC 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
+					</ul>
+					<div class="select_form">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="영어로 행복한 GLEC 어학원">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<li class="pc"><a href="#">학습하기</a></li>
+				<li><a href="#">상담신청</a></li>
+				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<li class="counsel pc">
+					<span class="tit">상담문의</span>
+					<!-- <span class="phone">1899-0949</span> -->
+					<span class="date">평일 10:00~19:00</span>
+				</li>
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
+	</div>
+
+</body>
+
+</html>

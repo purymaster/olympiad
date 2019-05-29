@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GLEC어학원</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="영어로 행복한 GLEC 어학원">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<ul>
+											<li><a href="#" target="_blank">올림피아드 교육</a></li>
+											<li><a href="#" target="_blank">유투엠</a></li>
+											<li><a href="#" target="_blank">올림피아드 수학</a></li>
+											<li><a href="#" target="_blank">하베르만</a></li>
+										</ul>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+										<div class="menu_btn">
+
+											<!-- [D] 로그인 전 -->
+											<a class="btn login" href="#">로그인</a>
+											<!-- //[D] 로그인 전 -->
+
+											<!-- [D] 로그인 후 -->
+											<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+											<!-- [D] 직원일 경우 T-ROOM + 관리자 + 로그아웃 -->
+											<!-- <a class="btn study" href="#">T-ROOM</a> -->
+											<!-- <a class="btn troom" href="#">재원생 학습</a> -->
+											<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+											<!-- <a class="btn logout" href="#">로그아웃</a> -->
+											<!-- //[D] 로그인 후 -->
+
+										</div>
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">GLEC 어학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="">GLEC 어학원</a>
+												<ul class="menu_2depth">
+													<li><a href="#">인사말</a></li>
+													<li><a href="#">캠퍼스 안내</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">입학안내</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학절차</a></li>
+													<li><a href="#">TOSLA</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">초등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">학기 및 레벨구성</a></li>
+													<li><a href="#">영어도서관</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">중등부</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">학기 및 레벨구성</a></li>
+													<li><a href="#">GLEC 플립러닝</a></li>
+													<li><a href="#">GLEC 개별학습</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">대입센터</a>
+											</li>
+											<li>
+												<a href="#">드림투어</a>
+												<ul class="menu_2depth">
+													<li><a href="#">드림투어 소개</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">합격실적</a></li>
+													<li><a href="#">홍보관</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">설명회후기</a></li>
+													<li><a href="#">Best Student</a></li>
+													<li><a href="#">Best of My PT</a></li>
+												</ul>
+											</li>
+											<!-- <li class="pc">
+                                        <a href="#">학습하기</a>
+                                        <ul class="menu_2depth">
+                                            <li><a href="#">GLEC Library</a></li>
+                                            <li><a href="#">GR &amp; Daily Test</a></li>
+                                            <li><a href="#">Dream Pop 초등</a></li>
+                                            <li><a href="#">Dream Pop 중등</a></li>
+                                            <li><a href="#">Voca 개별학습</a></li>
+                                            <li><a href="#">Dream Map</a></li>
+                                        </ul>
+                                    </li> -->
+										</ul>
+									</div>
+								</div>
+								<div>
+									<div class="call_num mobile">
+										<a href="tel:1588-8282">
+											<dl>
+												<dt>상담문의</dt>
+												<dd>1588-8282</dd>
+											</dl>
+										</a>
+									</div>
+								</div>
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap program_features middle">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type4.jpg)" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">중등부</p>
+					<h2 data-animation="fadeInUp" data-delay="3">프로그램 특징</h2>
+				</div>
+				<div class="breadcrumb">
+					<ol>
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>중등부</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">GLEC 어학원</a>
+									</li>
+
+									<li>
+										<a href="#none">입학안내</a>
+									</li>
+
+									<li>
+										<a href="#none">초등부</a>
+									</li>
+
+									<li>
+										<a href="#none">중등부</a>
+									</li>
+
+									<li>
+										<a href="#none">대입센터</a>
+									</li>
+
+									<li>
+										<a href="#none">드림투어</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form">
+								<button type="button">
+									<span>프로그램 특징</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">프로그램 특징</a>
+									</li>
+
+									<li>
+										<a href="#none">학기 및 레벨구성</a>
+									</li>
+
+									<li>
+										<a href="#none">GLEC 플립러닝</a>
+									</li>
+
+									<li>
+										<a href="#none">GLEC 개별학습</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ol>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap subject_learning">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+
+						<h3 class="main_tit">
+							<strong>관리프로그램</strong>
+						</h3>
+						<p class="txt">GLEC어학원은 세부학습관리를 통해 자기주도적인 학습을 유도하며,<br />학생 개개인의 학습데이터를 분석하여 최적화된 코칭이 이뤄질 수 있도록
+                            지도하고 있습니다.</p>
+							<ul class="tp_two">
+								<li>
+									<p><span class="title">데일리 테스트</span>RC/LC교재와 100% 연계된 <br />핵심어휘 및 숙어 테스트</p>
+								</li>
+								<li>
+									<p><span class="title">문법 미니테스트</span>매 챕터마다 개념확장을 위한 <br />문법 Mini 테스트</p>
+								</li>
+								<li>
+									<p><span class="title">미들테스트</span>매 학기 중간에 실시하는 <br />수능형 어법문제 테스트</p>
+								</li>
+								<li>
+									<p><span class="title">레벨테스트</span>다음분기 레벨배정을 위한 <br />듣기, 독해, 문법, 어휘, 구문 총 <br />5가지
+                                    영역테스트</p>
+								</li>
+								<li>
+									<p><span class="title">텝스정기응시(연 2~3회)</span>GLEC어학원 자체 <br />전산시스템으로 점수 관리</p>
+								</li>
+								<li>
+									<p><span class="title">개별보충 및 디텐션 시스템</span>정규수업 등원일에 실시 <br />(데일리테스트 재시험 및 수업보강)</p>
+								</li>
+								<li>
+									<p><span class="title">방학기획 프로그램</span>다양한 영역의 기획특강 / <br />개별학습관리를 위한 집중학습</p>
+								</li>
+							</ul>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 내신대비 프로그램 -->
+				<div class="sub_upper_wrap static_ro">
+					<div class="grid_container inner">
+						<h3 class="main_tit mb40"><strong>내신대비 프로그램</strong></h3>
+						<div class="radius_ls_line ty_two">
+							<ul>
+								<li>
+									<div class="radius_ls_line_item">
+										<dl>
+											<dt>
+												<span class="title"><span class="tblbx"><span class="item">교과서별 내용정리
+                                                            <br />및 본문암기</span></span></span>
+											</dt>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="radius_ls_line_item">
+										<dl>
+											<dt>
+												<span class="title"><span class="tblbx"><span class="item">학교별
+                                                            <br />기출문제풀이</span></span></span>
+											</dt>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="radius_ls_line_item">
+										<dl>
+											<dt>
+												<span class="title"><span class="tblbx"><span class="item">핵심문법,
+                                                            심화문법</span></span></span>
+											</dt>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="radius_ls_line_item">
+										<dl>
+											<dt>
+												<span class="title"><span class="tblbx"><span class="item">출판사별
+                                                            <br />예상문제 풀이</span></span></span>
+											</dt>
+										</dl>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="br_box">
+							<h4 class="pg_sb_title mb10">내신대비 표준시간표</h4>
+							<table class="bs_table mb15">
+								<caption>내신대비 시간표</caption>
+								<colgroup>
+									<col style="width:20%;">
+									<col style="width:40%;">
+									<col style="width:40%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">교시</th>
+										<th scope="col">정규수헝</th>
+										<th scope="col">일요 특별수업</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1교시</th>
+										<td>본문설명 & 암기, 이해테스트</td>
+										<td rowspan="3">실전풀이 & 오답정리<br />학교별/교과서별 진도보충<br />학교 프린트 보충</td>
+									</tr>
+									<tr>
+										<th scope="row">2교시</th>
+										<td>문법설명 & 확인, 이해테스트</td>
+									</tr>
+									<tr>
+										<th scope="row">3교시</th>
+										<td>개별보충 or Detention</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="text_align_r mb45">* 학교 지필고사 실시기간에만 내신대비 진행</p>
+							<div class="bs_tip_bx">
+								<h4 class="title"><span class="text">TIP !</span></h4>
+								<p class="md_text">효율적인 시간관리로 최고의 내신성적을 거둘 수 있도록<br /><strong>주중과 주말 자율학습실</strong>을
+									운영합니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- .내신대비 프로그램 -->
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg dream_pop">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container inner">
+						<h3 class="main_tit">
+							<strong>Dream-Pop 온라인 프로그램</strong>
+						</h3>
+						<div class="dream_text ty_two">
+							<img src="../img/img/img_program_features_01.png">
+							<ul class="dream_pop_list">
+								<li>
+									<div class="border_text">
+										<span class="num">1</span>
+										<p>LC / SW 100% 교재 연계학습</p>
+									</div>
+								</li>
+								<li>
+									<div class="border_text">
+										<span class="num">2</span>
+										<p>학습효과 극대화를 위한 프로그램 구성</p>
+									</div>
+								</li>
+								<li>
+									<div class="border_text">
+										<span class="num">3</span>
+										<p>학생과 교사입장에서 1:1 피드백 가능</p>
+									</div>
+									<ul class="txt_list type1 ty_two">
+										<li>단어 & 표현 학습</li>
+										<li>단어 배열 학습</li>
+										<li>받아쓰기 학습</li>
+										<li>문장 구성 학습</li>
+										<li>말하기 학습</li>
+										<li>영작 학습</li>
+										<li> LC, TEPS, 교육청 듣기 대비 모의고사 풀이 학습</li>
+										<li>에세이 쓰기 학습</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<!-- <li><a href="#">GLEC 소개</a></li>
+                <li><a href="#">찾아오시는길</a></li> -->
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
+					</ul>
+					<div class="select_form">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드 교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="영어로 행복한 GLEC 어학원">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 망우동 563-16 이안빌딩 3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+							</ul>
+							<ul>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+							<ul>
+								<li>개인정보책임자 : 양환승</li>
+							</ul>
+							<p class="copyright">Copyright(c) 2018 OLYMPIAD All Rights reserved.</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<li class="pc"><a href="#">학습하기</a></li>
+				<li><a href="#">상담신청</a></li>
+				<li><a href="#">설명회신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<li class="counsel pc">
+					<span class="tit">상담문의</span>
+					<!-- <span class="phone">1899-0949</span> -->
+					<span class="date">평일 10:00~19:00</span>
+				</li>
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
+	</div>
+
+</body>
+
+</html>

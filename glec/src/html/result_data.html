@@ -1,0 +1,170 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap confirm_page">
+            @@include('../inc/sub_header.html',{
+            "type" : "type2",
+            "title" : "입학절차",
+            "subtitle" : "입학안내",
+            "context" : {
+            "depth1_current" : "입학안내",
+            "depth1_sublist" : ["GLEC 어학원","입학안내","초등부","중등부","대입센터","드림투어","커뮤니티"],
+            "depth2_current" : "입학절차",
+            "depth2_sublist" : ["입학절차","TOSLA"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        @@include('../inc/tab.html',{
+                        "context" : {
+                        "has_tab" : true,
+                        "tab_list" : ["정기 입학고사","수시 입학고사","신청 확인"]
+                        }
+                        })
+
+                        <p class="main_tit">
+                            <strong>신청하신 입학고사
+                                <!-- 설명회--> 내역입니다.</strong>
+                        </p>
+
+                        <div class="result">
+                            <p class="result_tit">입학고사
+                                <!-- 설명회--> 신청내역</p>
+                            <div class="info">
+                                <p class="exam_tit">2019 정기 입학 고사 - 고등학교 3학년</p>
+                                <div class="table_wrap">
+                                    <!-- 데이터 테이블(세로형) -->
+                                    <div class="data_table row">
+                                        <table>
+                                            <colgroup>
+                                                <col class="head">
+                                                <col>
+                                                <col class="head">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        대상
+                                                    </th>
+                                                    <td class="left">
+                                                        고등학교 3학년
+                                                    </td>
+                                                    <th scope="row">
+                                                        장소
+                                                    </th>
+                                                    <td class="left">
+                                                        동대문캠퍼스
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        일자
+                                                    </th>
+                                                    <td class="left">
+                                                        9999-99-99
+                                                    </td>
+                                                    <th scope="row">
+                                                        시간
+                                                    </th>
+                                                    <td class="left">
+                                                        오후 99시 99분
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        기타
+                                                    </th>
+                                                    <td colspan="3" class="left">
+                                                        기타내용은 삽입시 노출
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //데이터 테이블(세로형) -->
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p class="exam_tit">2019 정기 입학 고사 - 고등학교 3학년</p>
+                                <div class="table_wrap">
+                                    <!-- 데이터 테이블(세로형) -->
+                                    <div class="data_table row">
+                                        <table>
+                                            <colgroup>
+                                                <col class="head">
+                                                <col>
+                                                <col class="head">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        대상
+                                                    </th>
+                                                    <td class="left">
+                                                        고등학교 3학년
+                                                    </td>
+                                                    <th scope="row">
+                                                        장소
+                                                    </th>
+                                                    <td class="left">
+                                                        동대문캠퍼스
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        일자
+                                                    </th>
+                                                    <td class="left">
+                                                        9999-99-99
+                                                    </td>
+                                                    <th scope="row">
+                                                        시간
+                                                    </th>
+                                                    <td class="left">
+                                                        오후 99시 99분
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        기타
+                                                    </th>
+                                                    <td colspan="3" class="left">
+                                                        기타내용은 삽입시 노출
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //데이터 테이블(세로형) -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn_wrap">
+                            <a href="#">메인으로</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

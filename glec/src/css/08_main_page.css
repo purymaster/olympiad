@@ -162,12 +162,12 @@
 .main_edu_list ul li:hover:before {border:72px solid #fffaf3;}
 .main_edu_list ul li:last-child {margin:0;}
 .main_edu_list ul li a {display:block; position:relative; padding-top:144px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:2.5em; color:#646f72; text-align:center; transition:all 0.5s;}
-.main_edu_list ul li a:after {content:""; position:absolute; width:100px; height:100px; background:red; left:50%; top:20px; margin-left:-50px;}
-.main_edu_list ul li:nth-child(1) a:after {} /* 초등 프로그램 */
-.main_edu_list ul li:nth-child(2) a:after {} /* 중등 프로그램 */
-.main_edu_list ul li:nth-child(3) a:after {} /* 대입센터 */
-.main_edu_list ul li:nth-child(4) a:after {} /* 드림투어 */
-.main_edu_list ul li:nth-child(5) a:after {} /* 캠퍼스안내 */
+.main_edu_list ul li a:after {position:absolute; top:20px; left:50%; height:104px; background-image:url(../img/sprite/sprite.png); background-position-y:-10px; transform:translateX(-50%); content:"";}
+.main_edu_list ul li:nth-child(1) a:after {width:78px; background-position-x:-10px;} /* 초등 프로그램 */
+.main_edu_list ul li:nth-child(2) a:after {width:104px; margin-left:6px; background-position-x:-98px;} /* 중등 프로그램 */
+.main_edu_list ul li:nth-child(3) a:after {width:108px; background-position-x:-212px;} /* 대입센터 */
+.main_edu_list ul li:nth-child(4) a:after {width:86px; margin-left:14px; background-position-x:-330px;} /* 드림투어 */
+.main_edu_list ul li:nth-child(5) a:after {width:104px; background-position-x:-426px;} /* 캠퍼스안내 */
 .main_edu_list ul li:hover a {color:#f78920;}
 
 @media (max-width:1024px) {
@@ -176,7 +176,12 @@
     .main_edu_list ul li {width:20%; margin:0;}
     .main_edu_list ul li:before {display:none;}
     .main_edu_list ul li a {padding-top:50px; font-size:16px; line-height:2em;}
-    .main_edu_list ul li a:after {top:0; width:50px; height:50px; margin-left:-25px;}
+    .main_edu_list ul li a:after {top:0; left:50%; height:52px; background-size:500px; background-position-y:-5px;}
+    .main_edu_list ul li:nth-child(1) a:after {width:39px; background-position-x:-5px;} /* 초등 프로그램 */
+    .main_edu_list ul li:nth-child(2) a:after {width:52px; margin-left:3px; background-position-x:-49px;} /* 중등 프로그램 */
+    .main_edu_list ul li:nth-child(3) a:after {width:54px; background-position-x:-106px;} /* 대입센터 */
+    .main_edu_list ul li:nth-child(4) a:after {width:43px; margin-left:7px; background-position-x:-165px;} /* 드림투어 */
+    .main_edu_list ul li:nth-child(5) a:after {width:52px; background-position-x:-213px;} /* 캠퍼스안내 */
 }
 
 @media (max-width:599px) {
@@ -255,7 +260,10 @@
 .main_edu_info .sub_menu {margin-top:15px; padding-left:40px;}
 .main_edu_info .sub_menu ul {overflow:hidden; margin:0 -5px;}
 .main_edu_info .sub_menu ul li {float:left; position:relative; width:33.33%; padding:0 5px;}
-.main_edu_info .sub_menu ul li:before {position:absolute; bottom:25px; left:25px; width:45px; height:45px; background:red; content:"";}
+.main_edu_info .sub_menu ul li:before {position:absolute; bottom:25px; left:30px; width:45px; height:45px; background-image:url(../img/sprite/sprite.png); background-size:500px; content:""; -webkit-transform:scale(1.2); transform:scale(1.2);}
+.main_edu_info .sub_menu ul li:nth-child(1):before {width:38px; height:38px; background-position:-52px -74px;}
+.main_edu_info .sub_menu ul li:nth-child(2):before {width:38px; height:38px; background-position:-138px -74px;}
+.main_edu_info .sub_menu ul li:nth-child(3):before {width:34px; height:34px; background-position:-224px -74px;}
 .main_edu_info .sub_menu ul li:after {visibility:hidden; position:absolute; top:0; left:5px; z-index:0; width:calc(100% - 10px); height:100%; border:3px solid #f78920; transition:all 0.5s; opacity:0; content:"";}
 .main_edu_info .sub_menu ul li:hover:after {visibility:visible; opacity:1;}
 .main_edu_info .sub_menu ul li a {display:block; position:relative; z-index:1; height:175px; padding:20px; border:1px solid #ddd; transition:all 0.5s;}
