@@ -15,12 +15,11 @@
 .sub_header .sub_txt {font-family:"Nanum Square"; font-size:24px; font-weight:300; line-height:1.45em;}
 .sub_header .sub_txt strong {display:inline-block; border-top:1px solid #fff; border-bottom:1px solid #fff; font-family:inherit; font-weight:inherit;;}
 .sub_header h2 {font-family:"Nanum Square"; font-size:50px; font-weight:400; line-height:1.4em;}
-.sub_content {padding:70px 0;}
 
 @media (min-width:1921px) {
     .upper_banner_on .sub_header {margin-top:315px;}
 }
- 
+
 @media (max-width:1024px) {
     .upper_banner_on .sub_header {margin-top:calc(50px + 10.9375%);}
     .sub_header .sub_header_wrap {margin-top:50px; height:240px;}
@@ -63,3 +62,60 @@
     .sub_wrap .tab_menu ul li.on,.sub_wrap .tab_menu ul li a:hover {font-size:12px;}
 }
 
+/* 컨텐츠 공통 영역 */
+.sub_content .content {padding:60px 0; background-position:center; background-size:cover;}
+.sub_content .content.white {color:#fff;}
+.sub_content .content + .content:not(.hasbg) {margin-top:-60px;}
+.sub_content .content.hasbg + .content:not(.hasbg) {margin-top:0;}
+.sub_content .content:last-child {margin-bottom:50px;}
+.sub_content .content:last-child.hasbg {margin-bottom:0;}
+.sub_content small {display:block; font-size:24px; font-family:"Nanum Square"; line-height:1.5em; text-align:center;}
+.sub_content .subpage_tit {margin-top:-8px; font-family:"Nanum Square"; font-size:40px; font-weight:700; line-height:1.4em; text-align:center;}
+.sub_content small + .subpage_tit {margin:0;}
+.sub_content .subpage_tit span {font-family:inherit;}
+.sub_content .subpage_tit.small {font-size:30px; line-height:1.5em;}
+.sub_content .subpage_tit.small .line {display:inline-block; border-bottom:1px solid #333;}
+.sub_content .subpage_tit .underline {display:inline-block; position:relative;}
+.sub_content .subpage_tit .underline:before {position:absolute; bottom:0.2em; left:0; z-index:-1; width:100%; height:0.7em; background:#00aeba; opacity:0.4; content:"";}
+.sub_content .subpage_tit .emphasis,.sub_content .subpage_tit .emphasis span {display:inline-block; font-family:inherit;}
+.sub_content .subpage_tit .emphasis {font-size:0;}
+.sub_content .subpage_tit .emphasis span {position:relative; font-size:50px;}
+.sub_content .subpage_tit .emphasis span:before {position:absolute; top:-20px; left:50%; width:8px; height:8px; border-radius:50%; background:#333; transform:translateX(-50%); content:"";}
+.sub_content .white .subpage_tit .emphasis span:before {background:#fff;}
+.sub_content .subpage_txt {margin-top:20px; font-size:18px; line-height:1.6em; text-align:center;}
+
+@media (max-width:1024px) {
+    .sub_content .content {padding:30px 0;}
+    .sub_content .content + .content:not(.hasbg) {margin-top:-30px;}
+    .sub_content .content:last-child {margin-bottom:0;}
+    .sub_content small {font-size:16px;}
+    .sub_content .subpage_tit,.sub_content .subpage_tit .emphasis span  {margin:0; font-size:30px;}
+    .sub_content .subpage_tit .emphasis span:before {top:-5px; width:4px; height:4px;}
+    .sub_content .subpage_tit.small {font-size:24px;}
+    .sub_content .subpage_txt {margin-top:15px; font-size:16px; line-height:1.6em;}
+}
+
+@media (max-width:599px) {
+    .sub_content small {font-size:14px;}
+    .sub_content .subpage_tit,.sub_content .subpage_tit .emphasis span {font-size:20px;}
+    .sub_content .subpage_tit.small {font-size:18px;}
+    .sub_content .subpage_txt {font-size:14px;}
+}
+
+/* 컨텐츠 탭 */
+.sub_content .subtab_menu {display:table; width:500px; margin:30px auto 0; table-layout:fixed;}
+.sub_content .subtab_menu ul {display:table-row;}
+.sub_content .subtab_menu ul li {display:table-cell; vertical-align:middle;}
+.sub_content .subtab_menu ul li a {display:block; border:1px solid #ddd; border-right:0; background:#f8f8f8; font-family:"Nanum Square"; font-size:17px; line-height:50px; text-align:center; transition:all 0.5s;}
+.sub_content .subtab_menu ul li:last-child a {border-right:1px solid #ddd;}
+.sub_content .subtab_menu ul li a:hover,.sub_content .subtab_menu ul li.on a {border-color:#00aeba; background:#00aeba; color:#fff;}
+
+@media (max-width:1024px) {
+    .sub_content .subtab_menu {width:300px;}
+    .sub_content .subtab_menu ul li a {font-size:16px; line-height:40px;}
+}
+
+@media (max-width:599px) {
+    .sub_content .subtab_menu {width:250px;}
+    .sub_content .subtab_menu ul li a {font-size:14px; line-height:30px;}
+}

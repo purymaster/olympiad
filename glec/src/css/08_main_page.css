@@ -154,7 +154,7 @@
     .banner_wrap .slide li .txt_wrap {bottom:30px; padding:0 15px;}
 }
 
-/* 올림피아드 교육 안내 */
+/* 올림피아드교육 안내 */
 .main_edu_list {margin-top:70px;}
 .main_edu_list ul {overflow:hidden; background:url(../img/bg/bg_main_edu_list.png) no-repeat center top;}
 .main_edu_list ul li {float:left; position:relative; width:144px; margin-right:calc(25% - 180px);}

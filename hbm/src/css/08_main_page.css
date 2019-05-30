@@ -57,7 +57,7 @@
     .main_slide .slide .txt_wrap .txt br {display:none;}
     .main_slide_pager {bottom:30px;}
     .main_slide_pager .pager {line-height:0; text-align:center;}
-    .main_slide_pager .pager li {display:inline-block; float:none; width:20px; height:20px; margin:0 5px; border-width:2px; border-radius:50%; text-indent:-9999px;}
+    .main_slide_pager .pager li {display:inline-block; float:none; width:15px; height:15px; margin:0 5px; border-width:2px; border-radius:50%; text-indent:-9999px;}
 }
 
 @media (max-width:599px) {
@@ -69,7 +69,7 @@
 }
 
 /* 이벤트 슬라이드 */
-.event_cover {overflow:hidden; width:100%; margin-bottom:120px;}
+.event_cover {overflow:hidden; width:100%; margin-bottom:50px;}
 .event_slide .slide li {width:480px; height:330px; background-size:cover; background-position:center;}
 .event_slide .slide li a {display:block; position:relative; height:100%;}
 .event_slide .slide li a:after {visibility:hidden; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); transition:all 0.3s; opacity:0; content:"";}
@@ -91,9 +91,9 @@
 .event_cover .pager .bullet.on {border-color:#00aeba; background:#00aeba;}
 
 @media (max-width:1024px) {
-    .event_cover {position:relative; left:-30px; width:calc(100% + 60px); margin-bottom:30px;}
+    .event_cover {position:relative; left:-30px; width:calc(100% + 60px); margin-bottom:0;}
     .event_cover .pager {bottom:30px;}
-    .event_cover .pager .bullet {width:20px; height:20px;}
+    .event_cover .pager .bullet {width:15px; height:15px;}
     .event_slide .ctr button {width:45px; height:45px; margin-top:-22px; border:1px solid #ddd;}
     .event_slide .ctr button:hover {border-color:#00aeba;}
     .event_slide .ctr button:before {width:25px;}
@@ -107,19 +107,20 @@
     .event_slide .slide li a {position:absolute; top:0; right:0; bottom:0; left:0;}
     .event_cover .pager {bottom:15px;}
     .event_cover .pager .bullet {border-color:#fff; background:none;}
-    .event_slide .ctr button {background:none;}
+    .event_slide .ctr button {width:30px; height:30px; margin-top:-15px; background:none;}
+    .event_slide .ctr button:before {width:20px;}
     .event_slide .ctr button:before,.event_slide .ctr button:after {background:#fff;}
+    .event_slide .ctr .prev:before, .event_slide .ctr .prev:after {left:4px;}
+    .event_slide .ctr .next:before, .event_slide .ctr .next:after {right:4px;}
     .event_slide .ctr .prev {left:15px;}
     .event_slide .ctr .next {right:15px;}
 }
 
 /* 하베르만 소개 */
-.hbm_info .info_box {margin-bottom:65px; padding-top:65px; background:url(../img/bg/bg_main_hbminfo.jpg) no-repeat; background-position:center; background-size:cover;}
+.hbm_info .info_box {margin-bottom:65px; padding-top:30px; padding-bottom:30px; background:url(../img/bg/bg_main_hbminfo.jpg) no-repeat; background-position:center; background-size:cover;}
 .hbm_info .txt_wrap {width:500px; height:410px; padding:50px 45px; background:rgba(255,255,255,0.8);}
-.hbm_info .txt_wrap img {margin-bottom:45px;}
-.hbm_info .txt_wrap p {margin-bottom:1.6em; font-size:15px; line-height:1.6em;}
-.hbm_info .txt_wrap p:last-child {margin:0;}
-
+.hbm_info .txt_wrap .tit {margin-top:55px; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.4em;}
+.hbm_info .txt_wrap .txt {margin-top:20px; font-size:15px; line-height:1.6em;}
 
 @media (max-width:1280px) {
     .hbm_grade ul li strong {font-size:24px;}
@@ -128,17 +129,17 @@
 @media (max-width:1024px) {
     .hbm_info .info_box {margin-bottom:30px; padding:30px;}
     .hbm_info .txt_wrap {width:50%; height:auto; padding:30px;}
-    .hbm_info .txt_wrap img {height:49px; margin-bottom:15px;}
-    .hbm_info .txt_wrap p {font-size:12px;}
-    
+    .hbm_info .txt_wrap img {height:58px;}
+    .hbm_info .txt_wrap .tit {margin-top:15px; font-size:18px;}
+    .hbm_info .txt_wrap .tit br {display:none;}
+    .hbm_info .txt_wrap .txt {margin-top:15px; font-size:14px;}
 }
 
 @media (max-width:599px) {
-    .hbm_info {padding:0 15px;}
     .hbm_info .info_box {padding:0;}
-    .hbm_info .txt_wrap {width:100%; padding:15px; background:rgba(255,255,255,0.5);}
-    .hbm_info .txt_wrap p {font-size:12px;}
-    
+    .hbm_info .txt_wrap {width:100%; padding:15px; background:rgba(255,255,255,0.75);}
+    .hbm_info .txt_wrap .tit {font-size:16px;}
+    .hbm_info .txt_wrap .txt {margin-top:0; font-size:12px;}
 }
 
 /* 우리는 하베르만 */
@@ -185,15 +186,17 @@
     .hbm_grade ul li strong {padding-bottom:15px; font-size:18px;}
     .hbm_grade ul li .sub_txt {padding-top:15px; font-size:12px;}
     .hbm_grade ul li a {font-size:14px; line-height:3em;}
+    .hbm_grade ul li a:before, .hbm_grade ul li a:after {right:15px;}
+    .hbm_grade ul li a:hover:before, .hbm_grade ul li a:hover:after {right:10px;}
 }
 
 @media (max-width:599px) {
     .hbm_story .story_wrap ul {margin:-15px 0;}
     .hbm_story .story_wrap ul li {width:100%; margin:15px 0;}
-    .hbm_grade ul {margin-bottom:30px;}
-    .hbm_grade ul li {width:100% !important; height:auto; margin-top:15px; padding:15px; padding-bottom:60px; background-position-y:40%;}
+    .hbm_grade ul {margin-bottom:0;}
+    .hbm_grade ul li {float:none; width:100% !important; height:auto; padding:15px; padding-bottom:60px; background-position-y:40%;}
     .hbm_grade ul li strong br {display:none;}
-    .hbm_grade ul li a {padding:0 15px;}   
+    .hbm_grade ul li a {padding:0 15px; font-size:12px;}
 }
 
 /* 공지사항 & 센터소식 */
@@ -221,21 +224,26 @@
 .hbm_news .news .news_view a:hover .tit,.hbm_news .news .news_view a:hover .txt {color:#00aeba;}
 .hbm_news .news .news_view .date {display:inline-block; margin-top:25px; padding:0 12px; border:1px solid #ccc; border-radius:13px; font-size:14px; line-height:1.75em; color:#999;}
 
-.hbm_news .bottom_menu {margin-top:65px;}
+.hbm_news .bottom_menu {margin-top:65px; margin-bottom:100px;}
 .hbm_news .bottom_menu ul {overflow:hidden;}
-.hbm_news .bottom_menu ul li {float:left; width:50%; height:220px; background-size:cover; background-position:center;}
-.hbm_news .bottom_menu ul li:nth-child(1) {background-image:url(../img/bg/bg_main_recruit.jpg);} /* 교사채용 */
-.hbm_news .bottom_menu ul li:nth-child(2) {background-image:url(../img/bg/bg_main_join.jpg);} /* 가맹안내 */
+.hbm_news .bottom_menu ul li {float:left; width:calc(33.33% - 1px); height:230px; border-right:1px solid #fff; background-position:center; background-size:cover;}
+.hbm_news .bottom_menu ul li:nth-child(1) {background-image:url(../img/bg/bg_main_recruit.jpg);} /* 입학고사 */
+.hbm_news .bottom_menu ul li:nth-child(2) {background-image:url(../img/bg/bg_main_join.jpg);} /* 설명회 */
+.hbm_news .bottom_menu ul li:nth-child(3) {background-image:url(../img/bg/bg_main_counsel.jpg);} /* 상담 */
 .hbm_news .bottom_menu ul li a {display:block; position:relative; height:100%;}
-.hbm_news .bottom_menu .txt_wrap {position:absolute; bottom:0; left:0; width:100%; padding-left:20px; background:rgba(0,0,0,0.4); color:#fff; transition:all 0.5s;}
 .hbm_news .bottom_menu ul li a:hover .txt_wrap {background-color:#00aeba;}
-.hbm_news .bottom_menu .txt_wrap strong {display:inline-block; margin-right:25px; font-family:"Nanum Square"; font-size:24px; line-height:55px;}
-.hbm_news .bottom_menu .txt_wrap p {display:inline-block; font-size:16px; line-height:55px;}
+.hbm_news .bottom_menu .txt_wrap {position:absolute; bottom:0; left:0; width:100%; padding:10px 20px; background:rgba(0,0,0,0.4); color:#fff; transition:all 0.5s;}
+.hbm_news .bottom_menu .txt_wrap:before,.hbm_news .bottom_menu .txt_wrap:after {position:absolute; top:50%; right:15px; height:1px; background:#fff; transition:all 0.5s; content:"";}
+.hbm_news .bottom_menu .txt_wrap:before {width:40px;}
+.hbm_news .bottom_menu .txt_wrap:after {width:10px; transform:rotate(45deg); transform-origin:right center;}
+.hbm_news .bottom_menu a:hover .txt_wrap:before,.hbm_news .bottom_menu a:hover .txt_wrap:after {right:10px;}
+.hbm_news .bottom_menu .txt_wrap strong {display:block; margin-right:25px; font-family:"Nanum Square"; font-size:20px; line-height:30px;}
+.hbm_news .bottom_menu .txt_wrap p {font-size:14px; line-height:20px;}
 
 @media (max-width:1280px) {
     .hbm_news .bottom_menu .txt_wrap {padding-left:15px;}
     .hbm_news .bottom_menu .txt_wrap strong {margin-right:15px; font-size:18px;}
-    .hbm_news .bottom_menu .txt_wrap p {font-size:14px;}
+    .hbm_news .bottom_menu .txt_wrap p {font-size:12px;}
 }
 
 @media (max-width:1024px) {
@@ -246,17 +254,24 @@
     .hbm_news .news .news_view .tit {margin-top:0; margin-bottom:10px; padding-bottom:10px; font-size:16px; line-height:1.5em;}
     .hbm_news .news .news_view .txt {font-size:14px;}
     .hbm_news .news .news_view .date {margin-top:15px; font-size:12px;}
-    .hbm_news .bottom_menu {position:relative; width:calc(100% + 60px); left:-30px; margin-top:30px;}
-    .hbm_news .bottom_menu ul li {height:72px;}
-    .hbm_news .bottom_menu .txt_wrap {padding:10px 30px;}
-    .hbm_news .bottom_menu .txt_wrap strong {display:block; line-height:1.5em;}
+    .hbm_news .bottom_menu {position:relative; width:calc(100% + 60px); margin:0; margin-top:30px; margin-left:-30px;}
+    .hbm_news .bottom_menu ul li {float:none; width:100%; border:0; height:150px;}
+    .hbm_news .bottom_menu .txt_wrap {padding:5px 30px;}
+    .hbm_news .bottom_menu .txt_wrap strong {display:block; font-size:16px; line-height:1.5em;}
     .hbm_news .bottom_menu .txt_wrap p {font-size:12px; line-height:30px; line-height:1.5em;}
+    .hbm_news .bottom_menu .txt_wrap:before, .hbm_news .bottom_menu .txt_wrap:after {right:30px;}
+    .hbm_news .bottom_menu a:hover .txt_wrap:before,.hbm_news .bottom_menu a:hover .txt_wrap:after {right:25px;}
+
 }
 
 @media (max-width:599px) {
     .hbm_news .cont .more {top:15px;}
     .hbm_news .news {margin-top:30px !important;}
+    .hbm_news .bottom_menu {width:calc(100% + 30px); margin-left:-15px;}
     .hbm_news .bottom_menu ul li {width:100%;}
+    .hbm_news .bottom_menu .txt_wrap {padding:5px 15px;}
+    .hbm_news .bottom_menu .txt_wrap:before, .hbm_news .bottom_menu .txt_wrap:after {right:15px;}
+    .hbm_news .bottom_menu a:hover .txt_wrap:before,.hbm_news .bottom_menu a:hover .txt_wrap:after {right:10px;}
 }
 
 /* 학원 운영시간 및 상담안내 */

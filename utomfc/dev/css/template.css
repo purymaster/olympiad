@@ -140,7 +140,6 @@ button span {position:relative; font:inherit;}
 .grid_container {position:relative; max-width:1400px; margin:0 auto; padding:0 100px;}
 
 @media (max-width:1024px) {
-    .wrap {padding-bottom:75px;}
     .grid_container {padding:0 30px;}
 }
 
@@ -187,12 +186,12 @@ button span {position:relative; font:inherit;}
 /* 사이드 메뉴 */
 .side_menu {position:absolute; top:0; right:0; z-index:10; background:#fff; color:#646f72; text-align:center; -webkit-transform:translateY(-50%); transform:translateY(-50%); -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .side_menu ul {border:1px solid #ddd;}
-.side_menu ul li {position:relative; width:90px; height:85px;}
-.side_menu ul li:after {content:""; position:absolute; left:50%; bottom:-6px; width:40px; height:1px; margin-left:-20px; background:#ddd;}
+.side_menu ul li {position:relative; width:90px; height:90px;}
+.side_menu ul li:after {content:""; position:absolute; left:50%; bottom:0px; width:40px; height:1px; margin-left:-20px; background:#ddd;}
 .side_menu ul li:last-child:after {display:none;}
-.side_menu ul li a {display:block; position:relative; padding-top:64px; font-family:"Nanum Square"; font-size:12px; font-weight:700; color:inherit;}
+.side_menu ul li a {display:block; position:relative; padding-top:60px; font-family:"Nanum Square"; font-size:12px; font-weight:700; color:inherit;}
 .side_menu ul li a:hover {color:#028499;}
-.side_menu ul li a:after {position:absolute; top:20px; left:50%; width:40px; height:40px; background-image:url(../img/sprite/sprite.png); background-size:500px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.side_menu ul li a:after {position:absolute; top:16px; left:50%; width:40px; height:40px; background-image:url(../img/sprite/sprite.png); background-size:500px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
 .side_menu ul li:nth-child(1) a:after {width:39px; height:39px; background-position:-5px -122px;} /* 홈으로 */
 .side_menu ul li:nth-child(1) a:hover:after {background-position:-49px -122px;}
 .side_menu ul li:nth-child(2) a:after {width:38px; height:38px; background-position:-52px -74px;} /* 상담 신청 */
@@ -817,7 +816,9 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
 .group_nav .search_wrap input[type="text"] {height:30px; padding-right:32px; padding-left:8px; border:0; background:#f5f5f5; line-height:30px;}
 .group_nav .search_wrap button {top:7px; right:8px;}
 .group_nav .menu_btn {display:inline-block;}
-.group_nav .btn {display:inline-block; margin:3px 0 0 20px; padding:0 10px; background:#00687f; font-size:12px; line-height:26px; color:#fff; text-align:center; vertical-align:top;}
+.group_nav .menu_btn .member {display:inline-block; margin-left:10px; font-size:14px; line-height:30px;}
+.group_nav .menu_btn .member strong {display:inline-block; overflow:hidden; max-width:100px; color:#008398; text-overflow:ellipsis; white-space:nowrap; vertical-align:top;}
+.group_nav .btn {display:inline-block; margin:3px 0 0 10px; padding:0 10px; background:#00687f; font-size:12px; line-height:26px; color:#fff; text-align:center; vertical-align:top;}
 .navigation {border-top:1px solid #eee;}
 .navigation a:hover {color:#00687f !important;}
 .navigation .menu_1depth {float:right; margin:4px -35px 0; -webkit-transition:margin 0.5s; transition:margin 0.5s;}
@@ -872,6 +873,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
     .group_nav ul {display:none;}
     .group_nav .search_wrap {width:100%;}
     .group_nav .menu_btn {margin:0 -5px; margin-top:15px;}
+    .group_nav .menu_btn .member {line-height:24px; margin-left:5px;}
     .group_nav .btn {margin:0 5px; line-height:25px;}
     .group_nav .study,.group_nav .admin {display:none;}
     .navigation {overflow:auto; position:static; height:calc(100vh - 150px); margin-top:15px;}
@@ -1123,7 +1125,7 @@ footer {background:#505354; color:#fff;}
 .main_slide .txt_wrap .left {padding-right:30px; border-right:1px solid rgba(255,255,255,0.4); line-height:0;}
 .main_slide .txt_wrap span {display:block; font-weight:700; line-height:1.5em; text-align:center; -webkit-animation-play-state:paused; animation-play-state:paused;}
 .main_slide .txt_wrap .sub {font-family:"Nanum Square"; font-size:14px;}
-.main_slide .txt_wrap .num {font-family:"Nanum Myeongjo"; font-size:24px; font-style:italic; -webkit-animation-delay:0.2s !important; animation-delay:0.2s !important;}
+.main_slide .txt_wrap .num {padding-right:0.2em; font-family:"Nanum Myeongjo"; font-size:24px; font-style:italic; -webkit-animation-delay:0.2s !important; animation-delay:0.2s !important;}
 .main_slide .txt_wrap .tit {font-family:"Nanum Square"; font-size:20px; -webkit-animation-delay:0.4s !important; animation-delay:0.4s !important;}
 .main_slide .txt_wrap .right {max-width:calc(100% - 230px); padding-left:25px;}
 .main_slide .txt_wrap .right p {overflow:hidden; height:8.5em; font-size:13px; line-height:1.7em; color:rgba(255,255,255,0.9); -webkit-animation-delay:0.6s !important; animation-delay:0.6s !important; -webkit-animation-play-state:paused; animation-play-state:paused;}

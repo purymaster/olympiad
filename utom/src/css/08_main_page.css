@@ -169,7 +169,7 @@
     .banner_wrap .slide li .txt_wrap {bottom:30px; padding:0 15px;}
 }
 
-/* 올림피아드 교육 안내 */
+/* 올림피아드교육 안내 */
 .main_edu_list {margin-top:60px;}
 .main_edu_list ul {overflow:hidden; border:1px solid #ddd;}
 .main_edu_list ul li {float:left; position:relative; width:20%;}
@@ -284,6 +284,7 @@
     .main_edu_info .list ul {margin-top:15px;}
     .main_edu_info .list ul li span {color:rgba(100,111,114,0.6);}
     .main_edu_info .sub_menu {margin-top:30px; padding-left:0;}
+    .main_edu_info .sub_menu ul li {margin-top:-1px;}
     .main_edu_info .sub_menu ul li:before {bottom:15px; left:20px;}
     .main_edu_info .sub_menu ul li a {height:auto; padding:15px; background-size:contain;}
     .main_edu_info .sub_menu ul li a:before,.main_edu_info .sub_menu ul li a:after {right:15px; bottom:21px; width:16px;}
