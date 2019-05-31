@@ -1,0 +1,88 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "1",
+            "title" : "서브 페이지 타이틀",
+            "subtitle" : "서브 페이지 텍스트 <strong>강조</strong>",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 3,
+            "tab_list" : ["탭메뉴1","탭메뉴2","탭메뉴3"]
+            }
+            })
+
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 영역 -->
+                <div class="content elite">
+                    <div class="grid_container">
+                        <div class="sub_tit_wrap">
+                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">
+                                하브루타로 키우는 영재 사고력<br>
+                                <span class="underline">하베르만 영재수학</span>
+                            </h3>
+                        </div>
+
+                        <!-- 여기서부터 작업 -->
+                        <img src="" alt="">
+                        <div class="txt_wrap">
+                            <p class="tit"></p>
+                            <p class="txt"></p>
+                        </div>
+                        <div class="txt_wrap">
+                            <p class="tit"></p>
+                            <p class="txt"></p>
+                        </div>
+                        <!-- //여기서부터 작업 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 컨텐츠 영역 -->
+
+                <!-- 서브 페이지 컨텐츠 영역 -->
+                <div class="content hasbg philosophy">
+                    <div class="sub_tit_wrap">
+                        <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">
+                            교육철학
+                        </h3>
+                    </div>
+                    <!-- 여기서부터 작업 -->
+                    <div class="key_visual" style="background:red;">
+                        <div class="grid_container">
+                            <p class="txt">1234</p>
+                            <p class="txt">1234<strong>1234</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="grid_container">
+                        <img src="" alt="">
+                    </div>
+
+                    <!-- //여기서부터 작업 -->
+                </div>
+                <!-- //서브 페이지 컨텐츠 영역 -->
+
+                <!-- 서브 페이지 컨텐츠 영역 -->
+                <div class="content hasbg key_point" style="background:blue;">
+                    <div class="grid_container">
+                        <!-- 여기서부터 작업 -->
+                        1234
+                        <!-- //여기서부터 작업 -->
+                    </div>
+                </div>
+                <!-- //서브 페이지 컨텐츠 영역 -->
+
+            </div>
+
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap opinion">
+            @@include('../inc/sub_header.html',{
+            "type" : "1",
+            "title" : "홈페이지 이용의견",
+            "subtitle" : "",
+            "context" : {
+            "has_tab" : false
+            }
+            })
+
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 영역 -->
+                <div class="content">
+                    <div class="sub_lower_wrap">
+                        <div class="grid_container">
+
+                            <!-- 스태틱 페이지 컨텐츠 영역 -->
+                            <div class="sub_cont_wrap">
+                                <p class="subpage_txt">
+                                    올림피아드교육 홈페이지를 방문해주셔서 감사합니다.<br>
+                                    고객님의 의견은 웹사이트 개선에 도움이 됩니다.
+                                </p>
+
+                                <div class="cmt">
+                                    <span class="necessary">
+                                        필수입력사항
+                                    </span>
+                                    필수입력사항
+                                </div>
+
+                                <div class="survey_wrap">
+
+                                    <div class="survey_column">
+                                        <p class="tit">
+                                            <strong>1. 다음 각 항목별 만족도는 어떻습니까?</strong>
+                                            <span class="necessary">
+                                                필수입력사항
+                                            </span>
+                                        </p>
+                                        <div class="survey_table">
+                                            <table>
+                                                <colgroup>
+                                                    <col class="header">
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="common">
+                                                            <div class="separate">
+                                                                <span class="col">
+                                                                    5점 척도
+                                                                </span>
+                                                                <span class="row">
+                                                                    평가내용
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">매우 불만족</th>
+                                                        <th scope="col">불만족</th>
+                                                        <th scope="col">보통</th>
+                                                        <th scope="col">만족</th>
+                                                        <th scope="col">매우 만족</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="survey_a5">
+                                                                전반적인 만족도
+                                                            </label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="radio" name="survey_a" id="survey_a1">
+                                                            <label for="survey_a1">1</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_a" id="survey_a2">
+                                                            <label for="survey_a2">2</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_a" id="survey_a3">
+                                                            <label for="survey_a3">3</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_a" id="survey_a4">
+                                                            <label for="survey_a4">4</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_a" id="survey_a5">
+                                                            <label for="survey_a5">5</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="survey_b5">
+                                                                정보의 충실도
+                                                            </label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="radio" name="survey_b" id="survey_b1">
+                                                            <label for="survey_b1">1</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_b" id="survey_b2">
+                                                            <label for="survey_b2">2</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_b" id="survey_b3">
+                                                            <label for="survey_b3">3</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_b" id="survey_b4">
+                                                            <label for="survey_b4">4</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_b" id="survey_b5">
+                                                            <label for="survey_b5">5</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="survey_c5">
+                                                                디자인 우수성
+                                                            </label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="radio" name="survey_c" id="survey_c1">
+                                                            <label for="survey_c1">1</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_c" id="survey_c2">
+                                                            <label for="survey_c2">2</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_c" id="survey_c3">
+                                                            <label for="survey_c3">3</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_c" id="survey_c4">
+                                                            <label for="survey_c4">4</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_c" id="survey_c5">
+                                                            <label for="survey_c5">5</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <label for="survey_d5">
+                                                                이용편의성
+                                                            </label>
+                                                        </th>
+                                                        <td>
+                                                            <input type="radio" name="survey_d" id="survey_d1">
+                                                            <label for="survey_d1">1</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_d" id="survey_d2">
+                                                            <label for="survey_d2">2</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_d" id="survey_d3">
+                                                            <label for="survey_d3">3</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_d" id="survey_d4">
+                                                            <label for="survey_d4">4</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="survey_d" id="survey_d5">
+                                                            <label for="survey_d5">5</label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="survey_column">
+                                        <p class="tit">
+                                            <strong>2. 자유의견</strong>
+                                            (500자 내외)
+                                        </p>
+                                        <textarea name="" id="" cols="30" rows="10"
+                                            placeholder="이 페이지에 대한 의견이나 제안 사항을 자유롭게 남겨주세요."></textarea>
+                                        <div class="cnt">
+                                            (0/500자)
+                                        </div>
+                                    </div>
+
+                                    <div class="survey_column">
+                                        <p class="tit select">
+                                            <strong>3. 웹사이트를 방문하신 목적은 무엇인가요?</strong>
+                                            <span class="necessary">
+                                                필수입력사항
+                                            </span>
+                                        </p>
+                                        <div class="select_form"><input type="hidden" name="">
+                                            <button type="button">
+                                                <span>방문목적</span>
+                                            </button>
+                                            <ul>
+                                                <li>
+                                                    <a href="#none">정보검색</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none">학원등록</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="survey_column">
+                                        <p class="tit select">
+                                            <strong>4. 웹사이트에서 원하시는 내용을 찾으셨나요?</strong>
+                                            <span class="necessary">
+                                                필수입력사항
+                                            </span>
+                                        </p>
+                                        <div class="select_form"><input type="hidden" name="">
+                                            <button type="button">
+                                                <span>예</span>
+                                            </button>
+                                            <ul>
+                                                <li>
+                                                    <a href="#none">예</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none">아니오</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="ps">
+                                    <p>소중한 의견은 사이트개선에 참고하겠습니다.</p>
+                                </div>
+
+                                <div class="btn_wrap">
+                                    <button type="submit">의견 제출</button>
+                                </div>
+                            </div>
+                            <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 컨텐츠 영역 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap confirm_page input_mini_form">
+            @@include('../inc/sub_header.html',{
+            "type" : "1",
+            "title" : "신청내역 조회",
+            "subtitle" : "",
+            "context" : {
+            "has_tab" : false
+            }
+            })
+
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 영역 -->
+                <div class="content">
+                    <div class="sub_lower_wrap">
+                        <!-- bg 클래스 추가시 배경색 추가 -->
+                        <div class="grid_container">
+
+                            <p class="subpage_txt">
+                                아래의 내역을 입력하시면 신청하신 설명회를 확인 하실 수 있습니다.
+                            </p>
+
+                            <div class="form_wrap find">
+                                <table>
+                                    <colgroup>
+                                        <col class="head">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="input_01">신청내역</label>
+                                            </th>
+                                            <td>
+                                                <div class="select_form"><input type="hidden" name="">
+                                                    <button type="button" id="input_01">
+                                                        <span>입학고사</span>
+                                                    </button>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#none">입학고사</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">설명회</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="input_02">학생명</label>
+                                            </th>
+                                            <td>
+                                                <input type="text" id="input_02">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="input_03">휴대폰</label>
+                                            </th>
+                                            <td>
+                                                <div class="tel">
+                                                    <div class="select_form"><input type="hidden" name="">
+                                                        <button type="button" id="input_03">
+                                                            <span>010</span>
+                                                        </button>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#none">010</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#none">016</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <span class="dash">-</span>
+                                                    <input type="text" maxlength="4" title="전화번호 중간자리">
+                                                    <span class="dash">-</span>
+                                                    <input type="text" maxlength="4" title="전화번호 끝자리">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="btn_wrap">
+                                <a href="#" class="grey">취소</a>
+                                <button type="submit">확인</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 컨텐츠 영역 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+
+    </div>
+
+</body>
+
+</html>

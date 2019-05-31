@@ -1,0 +1,53 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap confirm_page">
+            @@include('../inc/sub_header.html',{
+            "type" : "1",
+            "title" : "홈페이지 이용의견",
+            "subtitle" : "",
+            "context" : {
+            "has_tab" : false
+            }
+            })
+
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 영역 -->
+                <div class="content">
+                    <div class="sub_lower_wrap">
+
+                        <div class="grid_container">
+
+                            <div class="sub_tit_wrap">
+                                <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">
+                                    이용의견 접수가 완료되었습니다.
+                                </h3>
+                                <p class="subpage_txt">
+                                    올림피아드는 여러분의 작은 목소리에도 귀기울이는 학원이 되겠습니다.<br>
+                                    고객님의 소중한 의견이 보다 나은 서비스로 이어질 수 있도록<br>
+                                    언제나 최선을 다하겠습니다.
+                                </p>
+                            </div>
+
+                            <div class="btn_wrap">
+                                <a href="#">메인으로</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 컨텐츠 영역 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+
+    </div>
+
+</body>
+
+</html>

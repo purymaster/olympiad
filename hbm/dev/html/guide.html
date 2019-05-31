@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>하베르만</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header>
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img class="pc" src="../img/img/img_logo.png" alt="">
+								<img class="alter" src="../img/img/img_logo_alter.png" alt="하브루타로 키우는 영재사고력 하베르만">
+							</a>
+						</h1>
+						<button class="open_menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+
+								<!-- 로그인 -->
+								<div class="menu club">
+									<h2 class="hidden">회원전용 메뉴</h2>
+									<div class="group_nav">
+
+										<!-- [D] 로그인 전 -->
+										<a class="btn login" href="#">로그인</a>
+										<!-- //[D] 로그인 전 -->
+
+										<!-- [D] 로그인 후 -->
+										<!-- <span class="member"><strong>회원회원회원회원회원회원회원회원회원회원회원회원회원회원</strong>님</span> -->
+										<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+										<!-- [D] 직원일 경우 관리자 + 로그아웃 -->
+										<!-- <a class="btn study" href="#">재원생 학습</a> -->
+										<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+										<!-- <a class="btn logout" href="#">로그아웃</a> -->
+										<!-- //[D] 로그인 후 -->
+
+									</div>
+								</div>
+								<!-- //로그인 -->
+
+								<!-- GNB -->
+								<div class="menu nav">
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">하베르만은?</a></li>
+													<li><a href="#">하베르만 학습법</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 프로그램</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">프로그램 구성</a></li>
+													<li><a href="#">학습 로드맵</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">입학안내</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학절차</a></li>
+													<li><a href="#">검사안내</a></li>
+													<li><a href="#">입학고사 신청</a></li>
+													<li><a href="#">설명회 신청</a></li>
+													<li><a href="#">상담 신청</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 체험관</a>
+												<ul class="menu_2depth">
+													<li><a href="#">하베르만 수업보기</a></li>
+													<li><a href="#">우리는 하베르만</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 소식</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">하베르만, 알려주세요</a></li>
+													<li><a href="#">센터소식</a></li>
+													<li><a href="#">센터안내</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //GNB -->
+
+								<div class="call_num mobile">
+									<a href="tel:1588-8282">
+										<dl>
+											<dt>상담문의</dt>
+											<dd>1588-8282</dd>
+										</dl>
+									</a>
+								</div>
+
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+
+						<!-- 검색창 -->
+						<div class="search">
+							<h2 class="hidden">정보검색</h2>
+							<div class="search_keyword">
+								<button type="button" class="search">검색창 여닫기</button>
+								<div class="search_box">
+									<div class="search_wrap">
+										<input type="text" title="검색어 입력">
+										<button type="submit">
+											<span>검색</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //검색창 -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_subheader_0type1.jpg)" data-animation="">
+				<div class="grid_container sub_header_wrap">
+					<div class="tit_wrap">
+						<p class="sub_txt" data-animation="fadeInUp" data-delay="0">서브 페이지 텍스트</p>
+						<h2 data-animation="fadeInUp" data-delay="3">서브 페이지 타이틀</h2>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container">
+
+						<p class="main_tit">
+							페이지에 내용에 대한 문구<br>
+							<strong>강조된 텍스트</strong>
+						</p>
+						<p class="txt">
+							내용 설명 문단. Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry.
+						</p>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap">
+					<div class="grid_container">
+						<div class="sub_tit_wrap">
+							<p data-animation="fadeInUp" data-delay="0" class="sub_txt">제목 서브 텍스트</p>
+							<h3 data-animation="fadeInUp" data-delay="2" class="subpage_tit">주제별 제목</h3>
+							<p data-animation="fadeInUp" data-delay="4" class="txt_info">주제에 대한 <strong>설명 문구</strong>
+							</p>
+						</div>
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+
+						<!-- Syntax Highlighter -->
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shCoreEclipse.min.css">
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushXml.min.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushCss.min.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js"></script>
+						<script>
+							SyntaxHighlighter.defaults['toolbar'] = false;
+                            SyntaxHighlighter.defaults['tab-size'] = 4;
+                            SyntaxHighlighter.all();
+                        </script>
+						<!-- //Syntax Highlighter -->
+
+						<style>
+							p.guide_tit {
+                                margin: 15px 0;
+                                padding-left: 1em;
+                                background: #00687f;
+                                font-size: 16px;
+                                line-height: 2em;
+                                color: #fff;
+                            }
+
+                            .syntaxhighlighter {
+                                border: 1px solid #ccc;
+                                padding: 1em;
+                            }
+
+                            .syntaxhighlighter div {
+                                font-size: 12px !important;
+                                line-height: 1.4em !important;
+                            }
+
+                            .syntaxhighlighter code {
+                                font-family: 'Lato' !important;
+                            }
+
+                            .syntaxhighlighter .gutter {
+                                width: 35px !important;
+                            }
+
+                            .syntaxhighlighter .line.alt1 {
+                                background: #efefef !important;
+                            }
+
+                            .open_modal {
+                                border: 1px solid #00687f;
+                                padding: 5px;
+                                font-size: 12px;
+                            }
+                        </style>
+
+						<div class="sub_cont_wrap">
+
+							<p class="guide_tit">텍스트 목록</p>
+
+							<!-- 텍스트 목록 -->
+							<ul class="txt_list type1">
+								<li>리스트1</li>
+							</ul>
+
+							<pre class="brush:html;">
+                                <!-- type1 : 네모 -->
+                                <ul class="txt_list type1">
+                                    <li>리스트1</li>
+                                </ul>
+                            </pre>
+							<!-- //텍스트 목록 -->
+
+							<p class="guide_tit">데이터 테이블</p>
+
+							<!-- 데이터 테이블 -->
+							<div class="data_table">
+								<table>
+									<colgroup>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">항목</th>
+											<th scope="col">항목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">
+												내용
+											</th>
+											<td>
+												내용
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<pre class="brush:html;">
+                                <!-- 데이터 테이블 -->
+                                <div class="data_table">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">항목</th>
+                                                <th scope="col">항목</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    내용
+                                                </th>
+                                                <td>
+                                                    내용
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //데이터 테이블 -->
+                            </pre>
+							<!-- //데이터 테이블 -->
+
+							<!-- 데이터 테이블(좌측 th 없음) -->
+							<div class="data_table no_left_th" style="margin-top:10px;">
+								<table>
+									<colgroup>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">항목</th>
+											<th scope="col">항목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												내용
+											</td>
+											<td>
+												내용
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<pre class="brush:html;">
+                                <!-- 데이터 테이블(좌측 th 없음) -->
+                                <div class="data_table no_left_th">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">항목</th>
+                                                <th scope="col">항목</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    내용
+                                                </td>
+                                                <td>
+                                                    내용
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //데이터 테이블(좌측 th 없음) -->
+                            </pre>
+							<!-- //데이터 테이블(좌측 th 없음) -->
+
+							<!-- 데이터 테이블(모바일 폭 고정) -->
+							<div class="data_table no_left_th" data-width="1900" style="margin-top:10px;">
+								<table>
+									<colgroup>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">항목</th>
+											<th scope="col">항목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												내용
+											</td>
+											<td>
+												내용
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<pre class="brush:html;">
+                                <!-- 데이터 테이블(모바일 폭 고정) -->
+                                <div class="data_table no_left_th" data-width="1900">
+                                    <!-- data-width : 고정할 너비(px) -->
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">항목</th>
+                                                <th scope="col">항목</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    내용
+                                                </td>
+                                                <td>
+                                                    내용
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //데이터 테이블(모바일 폭 고정) -->
+                            </pre>
+							<!-- //데이터 테이블(모바일 폭 고정) -->
+
+							<!-- 데이터 테이블(세로형) -->
+							<div class="data_table row" style="margin-top:10px;">
+								<table>
+									<colgroup>
+										<col>
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">
+												항목
+											</th>
+											<td>
+												내용
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="left">
+												항목
+											</th>
+											<td class="left">
+												내용
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<pre class="brush:html;">
+                                <!-- 데이터 테이블(세로형) -->
+                                <div class="data_table row">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    항목
+                                                </th>
+                                                <td>
+                                                    내용
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="left">
+                                                    항목
+                                                </th>
+                                                <td class="left">
+                                                    내용
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //데이터 테이블(세로형) -->
+                            </pre>
+							<!-- //데이터 테이블(세로형) -->
+
+							<p class="guide_tit">입력폼</p>
+
+							<!-- 입력폼 테이블 -->
+							<div class="input_form input" style="margin-top:30px;">
+								<div class="cmt">
+									<span class="necessary"></span>필수입력사항
+								</div>
+								<dl>
+									<div class="option">
+										<dt>
+											<label for="input_01">
+												날짜
+												<span class="necessary">
+                                                    필수입력사항
+                                                </span>
+											</label>
+										</dt>
+										<dd>
+											<div class="calendar">
+												<input type="text" class="datepicker" id="input_01" readonly>
+											</div>
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_02">
+												검색폼
+											</label>
+										</dt>
+										<dd>
+											<div class="search_box">
+												<input type="text" readonly>
+												<button type="button" id="input_02"><span>검색</span></button>
+											</div>
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_03">
+												연락처
+											</label>
+										</dt>
+										<dd>
+											<div class="tel">
+												<div class="select_form"><input type="hidden" name="">
+													<button type="button" id="input_03">
+														<span>010</span>
+													</button>
+													<ul>
+														<li>
+															<a href="#none">010</a>
+														</li>
+														<li>
+															<a href="#none">016</a>
+														</li>
+													</ul>
+												</div>
+												<span class="dash">-</span>
+												<input type="text" maxlength="4" title="전화번호 중간자리">
+												<span class="dash">-</span>
+												<input type="text" maxlength="4" title="전화번호 끝자리">
+											</div>
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_04">
+												선택
+											</label>
+										</dt>
+										<dd>
+											<div class="select_form"><input type="hidden" name="">
+												<button type="button" id="input_04">
+													<span>선택할 값</span>
+												</button>
+												<ul>
+													<li>
+														<a href="#none">1</a>
+													</li>
+													<li>
+														<a href="#none">2</a>
+													</li>
+												</ul>
+											</div>
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_05">
+												문자열입력
+											</label>
+										</dt>
+										<dd>
+											<input type="text" id="input_05">
+										</dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //입력폼 테이블 -->
+
+							<pre class="brush:html;">
+                                <!-- 입력폼 테이블 -->
+                                <div class="input_form input">
+                                    <div class="cmt">
+                                        <span class="necessary"></span>필수입력사항
+                                    </div>
+                                    <dl>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_01">
+                                                    날짜
+                                                    <span class="necessary">
+                                                        필수입력사항
+                                                    </span>
+                                                </label>
+                                            </dt>
+                                            <dd>
+                                                <div class="calendar">
+                                                    <input type="text" class="datepicker" id="input_01" readonly>
+                                                </div>
+                                            </dd>
+                                        </div>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_02">
+                                                    검색폼
+                                                </label>
+                                            </dt>
+                                            <dd>
+                                                <div class="search_box">
+                                                    <input type="text" readonly>
+                                                    <button type="button" id="input_02"><span>검색</span></button>
+                                                </div>
+                                            </dd>
+                                        </div>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_03">
+                                                    연락처
+                                                </label>
+                                            </dt>
+                                            <dd>
+                                                <div class="tel">
+                                                    <div class="select_form"><input type="hidden" name="">
+                                                        <button type="button" id="input_03">
+                                                            <span>010</span>
+                                                        </button>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#none">010</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#none">016</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <span class="dash">-</span>
+                                                    <input type="text" maxlength="4" title="전화번호 중간자리">
+                                                    <span class="dash">-</span>
+                                                    <input type="text" maxlength="4" title="전화번호 끝자리">
+                                                </div>
+                                            </dd>
+                                        </div>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_04">
+                                                    선택
+                                                </label>
+                                            </dt>
+                                            <dd>
+                                                <div class="select_form"><input type="hidden" name="">
+                                                    <button type="button" id="input_04">
+                                                        <span>선택할 값</span>
+                                                    </button>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#none">1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">2</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </dd>
+                                        </div>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_05">
+                                                    문자열입력
+                                                </label>
+                                            </dt>
+                                            <dd>
+                                                <input type="text" id="input_05">
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <!-- //입력폼 테이블 -->
+                            </pre>
+
+							<p class="guide_tit">입력폼 - 주소</p>
+
+							<!-- 주소 -->
+							<div class="input_form address">
+								<dl>
+									<div class="option">
+										<dt>
+											<label for="input_06">
+												주소
+											</label>
+										</dt>
+										<dd>
+											<div class="search_box">
+												<input type="text" readonly>
+												<button type="button" id="input_06"><span>검색</span></button>
+											</div>
+										</dd>
+									</div>
+									<div class="option">
+										<dt>
+											<label for="input_07">
+												상세주소
+											</label>
+										</dt>
+										<dd>
+											<input type="text" id="input_07">
+										</dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //주소 -->
+
+							<pre class="brush:html;">
+                                    <!-- 주소 -->
+                                    <div class="input_form address">
+                                        <dl>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_06">
+                                                        주소
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="search_box">
+                                                        <input type="text" readonly>
+                                                        <button type="button" id="input_06"><span>검색</span></button>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div class="option">
+                                                <dt>
+                                                    <label for="input_07">
+                                                        상세주소
+                                                    </label>
+                                                </dt>
+                                                <dd>
+                                                    <input type="text" id="input_07">
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <!-- //주소 -->
+                            </pre>
+
+							<p class="guide_tit">입력폼 - 텍스트에리어</p>
+
+							<!-- 텍스트에리어 -->
+							<div class="input_form textarea">
+								<dl>
+									<div class="option">
+										<dt>
+											<label for="input_08">상담내용</label>
+										</dt>
+										<dd>
+											<textarea name="" id="input_08" cols="30" rows="10" placeholder="1,000자 이내로 작성"></textarea>
+											<div class="txt_cnt">
+												<span><strong>1,000</strong> / 1,000</span>
+											</div>
+										</dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //텍스트에리어 -->
+
+							<pre class="brush:html;">
+                                <!-- 텍스트에리어 -->
+                                <div class="input_form textarea">
+                                    <dl>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="input_05">상담내용</label>
+                                            </dt>
+                                            <dd>
+                                                <textarea name="" id="input_05" cols="30" rows="10"
+                                                    placeholder="1,000자 이내로 작성"></textarea>
+                                                <div class="txt_cnt">
+                                                    <span><strong>1,000</strong> / 1,000</span>
+                                                </div>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <!-- //텍스트에리어 -->
+                            </pre>
+
+							<p class="guide_tit">입력폼 - 라디오버튼</p>
+
+							<!-- 라디오버튼 -->
+							<div class="input_form radio">
+								<dl>
+									<div class="option">
+										<dt>
+											<label for="radio_05">알게된 경로</label>
+										</dt>
+										<dd>
+											<div class="radio_form">
+												<ul>
+													<li>
+														<input type="radio" id="radio_05" name="radio_n03">
+														<label for="radio_05">신문전단</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_06" name="radio_n03">
+														<label for="radio_06">인터넷</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_07" name="radio_n03">
+														<label for="radio_07">학원버스</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_08" name="radio_n03">
+														<label for="radio_08">부모님 권유</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_09" name="radio_n03">
+														<label for="radio_09">교직원 소개</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_10" name="radio_n03">
+														<label for="radio_10">TV</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_11" name="radio_n03">
+														<label for="radio_11">친구소개</label>
+													</li>
+													<li>
+														<input type="radio" id="radio_12" name="radio_n03" data-value="etc">
+														<label for="radio_12">기타</label>
+														<input type="text" data-value="etc_input" readonly="" placeholder="자세히 적어주세요.">
+													</li>
+												</ul>
+											</div>
+										</dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //라디오버튼 -->
+
+							<!-- [D] 기타 입력폼 활성화 -->
+							<script>
+								$(function () {
+                                    var radio = $('.input_form.radio').find('input[type="radio"]'),
+                                        etc_input = $('.input_form.radio').find('input[data-value="etc_input"]');
+
+                                    radio.on('click', function () {
+                                        $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true);
+                                    });
+                                });
+                            </script>
+							<!-- //[D] 기타 입력폼 활성화 -->
+
+							<pre class="brush:html;">
+                                <!-- 라디오버튼 -->
+                                <div class="input_form radio">
+                                    <dl>
+                                        <div class="option">
+                                            <dt>
+                                                <label for="radio_05">알게된 경로</label>
+                                            </dt>
+                                            <dd>
+                                                <div class="radio_form">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="radio" id="radio_05" name="radio_n03">
+                                                            <label for="radio_05">신문전단</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_06" name="radio_n03">
+                                                            <label for="radio_06">인터넷</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_07" name="radio_n03">
+                                                            <label for="radio_07">학원버스</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_08" name="radio_n03">
+                                                            <label for="radio_08">부모님 권유</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_09" name="radio_n03">
+                                                            <label for="radio_09">교직원 소개</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_10" name="radio_n03">
+                                                            <label for="radio_10">TV</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_11" name="radio_n03">
+                                                            <label for="radio_11">친구소개</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="radio_12" name="radio_n03" data-value="etc">
+                                                            <label for="radio_12">기타</label>
+                                                            <input type="text" data-value="etc_input" readonly=""
+                                                                placeholder="자세히 적어주세요.">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <!-- //라디오버튼 -->
+
+                                <!-- [D] 기타 입력폼 활성화 -->
+                                <script>
+                                    $(function () {
+                                        var radio = $('.input_form.radio').find('input[type="radio"]'),
+                                            etc_input = $('.input_form.radio').find('input[data-value="etc_input"]');
+
+                                        radio.on('click', function () {
+                                            $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true);
+                                        });
+                                    });
+                                </script>
+                                <!-- //[D] 기타 입력폼 활성화 -->
+                            </pre>
+
+							<p class="guide_tit">팝업</p>
+
+							<!-- 팝업(컨펌) -->
+							<button type="button" class="open_modal" data-modal="modify">컨펌</button>
+							<button type="button" class="open_modal" data-modal="map_00">지도</button>
+							<button type="button" class="open_modal" data-modal="address">주소검색</button>
+							<button type="button" class="open_modal" data-modal="school">학교검색</button>
+
+							<!-- 모달 팝업창 -->
+							<div class="modal_wrap">
+
+								<!-- 댓글 수정 -->
+								<div class="modal confirm" id="modify">
+									<div>
+										<p class="msg">수정하시겠습니까?</p>
+										<p class="sub_txt">게시물 작성시 입력한 비밀번호를 입력해주세요.</p>
+									</div>
+									<div>
+										<input type="password" title="게시물 비밀번호">
+										<!-- [D] 비밀번호 불일치시 출력 -->
+										<!-- <p class="warning">비밀번호가 일치하지 않습니다.</p> -->
+									</div>
+									<div class="btn_wrap">
+										<button type="button" class="cancel" data-move="close">
+											<span>취소</span>
+										</button>
+										<button type="button" class="submit">
+											<span>확인</span>
+										</button>
+									</div>
+								</div>
+								<!-- //댓글 수정 -->
+
+								<!-- 지도 -->
+								<div class="modal map" id="map_00">
+									<span class="tit">동대문캠퍼스</span>
+									<iframe src="" frameborder="0"></iframe>
+									<dl class="info">
+										<div>
+											<dt>주소</dt>
+											<dd>서울특별시 강남구 도산대로</dd>
+										</div>
+										<div>
+											<dt>전화번호</dt>
+											<dd>
+												<a href="tel:123-1234-1234">123-1234-1234</a>
+											</dd>
+										</div>
+									</dl>
+									<button type="button" class="close" data-move="close">팝업닫기</button>
+								</div>
+								<!-- //지도 -->
+
+								<!-- 주소 -->
+								<div class="modal search address" id="address">
+									<span class="tit">주소검색</span>
+									<div class="search_box">
+										<input type="text" title="주소 검색어 입력">
+										<button type="button"><span>검색</span></button>
+									</div>
+
+									<!-- [D] 검색 전 안내문구 출력, 검색 후 삭제 -->
+									<!-- <div class="info">
+        <p class="txt">
+        찾으시려는 <strong>도로명주소+건물번호/건물명</strong> 혹은 <strong>지번주소+번지수/건물명</strong>을
+        입력해주세요.
+        </p>
+        <p class="ex">
+        예) 도로명 : 불정로 432번길 / 지번 : 정자동 178-1, 대치동 현대아파트
+        </p>
+        <p class="warning">
+        단, 도로명 혹은 동(읍/면/리)만 검색하시는 경우, 정확한 검색결과가 나오지 않을 수 있습니다.
+        </p>
+        </div> -->
+									<!-- //[D] 검색 전 안내문구 출력, 검색 후 삭제 -->
+
+									<!-- [D] 검색 후, 검색 결과 출력 -->
+									<div class="tab_menu">
+										<ul>
+											<li><button type="button">도로명주소(0건)</button></li>
+											<li><button type="button">지번주소(0건)</button></li>
+										</ul>
+									</div>
+
+									<!-- 검색 결과 -->
+									<div class="result_wrap">
+
+										<!-- 도로명 주소 -->
+										<div class="tab_view" style="display:none;">
+											<table class="address_list">
+												<colgroup>
+													<col>
+													<col style="width:18%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">도로명주소</th>
+														<th scope="col">우편번호</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="addr">
+															<input type="radio" name="address_a" id="address_a01" class="hidden">
+															<label for="address_a01">
+																서울특별시 강남구 언주로 130길 18(논현동)
+															</label>
+														</td>
+														<td class="zip">
+															<label for="address_a01">
+																99999
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td class="addr">
+															<input type="radio" name="address_a" id="address_a02" class="hidden">
+															<label for="address_a02">
+																긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+															</label>
+														</td>
+														<td class="zip">
+															<label for="address_a02">
+																99999
+															</label>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- //도로명 주소 -->
+
+										<!-- 지번 주소 -->
+										<div class="tab_view" style="display:none;">
+											<table class="address_list">
+												<colgroup>
+													<col>
+													<col style="width:100px;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">지번주소</th>
+														<th scope="col">우편번호</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="addr">
+															<input type="radio" name="address_b" id="address_b01" class="hidden">
+															<label for="address_b01">
+																서울특별시 강남구 논현동
+															</label>
+														</td>
+														<td class="zip">
+															<label for="address_b01">
+																99999
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td class="addr">
+															<input type="radio" name="address_b" id="address_b02" class="hidden">
+															<label for="address_b02">
+																긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+															</label>
+														</td>
+														<td class="zip">
+															<label for="address_a02">
+																99999
+															</label>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- //지번 주소 -->
+
+										<!-- 페이징 -->
+										<div class="pagenation">
+											<div class="pager">
+												<a class="prev" href="#none">이전 페이지</a>
+												<ul>
+													<li>
+														<span>1</span>
+													</li>
+													<li>
+														<a href="#none">2</a>
+													</li>
+													<li>
+														<a href="#none">3</a>
+													</li>
+													<li>
+														<a href="#none">4</a>
+													</li>
+													<li>
+														<a href="#none">999</a>
+													</li>
+												</ul>
+												<a class="next" href="#none">다음 페이지</a>
+											</div>
+										</div>
+										<!-- //페이징 -->
+
+									</div>
+									<!-- //검색 결과 -->
+
+									<!-- //[D] 검색 후, 검색 결과 출력 -->
+
+									<!-- [D] 검색 결과에서 선택한 주소를 출력 -->
+									<div class="result_address">
+										<ul class="txt_list type1">
+											<li>
+												<strong>도로명주소</strong>
+												<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+											</li>
+											<li>
+												<strong>지번주소</strong>
+												<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+											</li>
+										</ul>
+									</div>
+									<!-- //[D] 검색 결과에서 선택한 주소를 출력 -->
+
+									<div class="search_box detail">
+										<input type="text" title="상세주소 입력" placeholder="상세주소를 입력해주세요.">
+										<button type="button"><span>주소 입력</span></button>
+									</div>
+
+									<button type="button" class="close" data-move="close">팝업닫기</button>
+								</div>
+								<!-- //주소 -->
+
+								<!-- 학교 -->
+								<div class="modal search school" id="school">
+									<span class="tit">학교검색</span>
+									<div class="search_box">
+										<input type="text" title="학교 검색어 입력">
+										<button type="button"><span>검색</span></button>
+									</div>
+
+									<!-- [D] 검색 후, 검색 결과 출력 -->
+									<div class="result_wrap">
+
+										<table class="address_list">
+											<colgroup>
+												<col style="width:15%;">
+												<col style="width:20%;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">지역</th>
+													<th scope="col">학교명</th>
+													<th scope="col">주소</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<input type="radio" name="school" id="school_01" class="hidden">
+														<label for="school_01">
+															서울
+														</label>
+													</td>
+													<td>
+														<label for="school_01">
+															리라초등학교
+														</label>
+													</td>
+													<td class="addr">
+														<label for="school_01">
+															서울특별시 강남구 언주로 130길 18(논현동)
+														</label>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="radio" name="school" id="school_02" class="hidden">
+														<label for="school_02">
+															서울
+														</label>
+													</td>
+													<td>
+														<label for="school_02">
+															경화여자EnglishBusiness고등학교
+														</label>
+													</td>
+													<td class="addr">
+														<label for="school_02">
+															서울특별시 강남구 언주로 130길 18(논현동)
+														</label>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<!-- 페이징 -->
+										<div class="pagenation">
+											<div class="pager">
+												<a class="prev" href="#none">이전 페이지</a>
+												<ul>
+													<li>
+														<span>1</span>
+													</li>
+													<li>
+														<a href="#none">2</a>
+													</li>
+													<li>
+														<a href="#none">3</a>
+													</li>
+													<li>
+														<a href="#none">4</a>
+													</li>
+													<li>
+														<a href="#none">999</a>
+													</li>
+												</ul>
+												<a class="next" href="#none">다음 페이지</a>
+											</div>
+										</div>
+										<!-- //페이징 -->
+
+									</div>
+									<!-- //[D] 검색 후, 검색 결과 출력 -->
+
+									<button type="button" class="close" data-move="close">팝업닫기</button>
+								</div>
+								<!-- //학교 -->
+
+								<!-- [D] 검색결과 선택한 목록 하이라이트 -->
+								<script>
+									$(function () {
+                                        var addr_list = $('.modal.search .address_list');
+                                        addr_list.find('label').on('click', function () {
+                                            addr_list.find('tr').removeClass('on');
+                                            $(this).parents('tr').addClass('on');
+                                        });
+                                    });
+                                </script>
+								<!-- //[D] 검색결과 선택한 목록 하이라이트 -->
+
+							</div>
+							<!-- //모달 팝업창 -->
+
+							<pre class="brush:html;">
+                                <!-- 모달 팝업창 -->
+                                <div class="modal_wrap">
+
+                                    <!-- 댓글 수정 -->
+                                    <div class="modal confirm" id="modify">
+                                        <div>
+                                            <p class="msg">수정하시겠습니까?</p>
+                                            <p class="sub_txt">게시물 작성시 입력한 비밀번호를 입력해주세요.</p>
+                                        </div>
+                                        <div>
+                                            <input type="password" title="게시물 비밀번호">
+                                            <!-- [D] 비밀번호 불일치시 출력 -->
+                                            <!-- <p class="warning">비밀번호가 일치하지 않습니다.</p> -->
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <button type="button" class="cancel close">
+                                                <span>취소</span>
+                                            </button>
+                                            <button type="button" class="submit">
+                                                <span>확인</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- //댓글 수정 -->
+
+                                    <!-- 지도 -->
+                                    <div class="modal map" id="map_00">
+                                        <span class="tit">동대문캠퍼스</span>
+                                        <iframe src="" frameborder="0"></iframe>
+                                        <dl class="info">
+                                            <div>
+                                                <dt>주소</dt>
+                                                <dd>서울특별시 강남구 도산대로</dd>
+                                            </div>
+                                            <div>
+                                                <dt>전화번호</dt>
+                                                <dd>
+                                                    <a href="tel:123-1234-1234">123-1234-1234</a>
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                        <button type="button" class="close" data-move="close">팝업닫기</button>
+                                    </div>
+                                    <!-- //지도 -->
+
+                                    <!-- 주소 -->
+                                    <div class="modal search address" id="address">
+                                        <span class="tit">주소검색</span>
+                                        <div class="search_box">
+                                            <input type="text" title="주소 검색어 입력">
+                                            <button type="button"><span>검색</span></button>
+                                        </div>
+    
+                                        <!-- [D] 검색 전 안내문구 출력, 검색 후 삭제 -->
+                                        <!-- <div class="info">
+                                            <p class="txt">
+                                                찾으시려는 <strong>도로명주소+건물번호/건물명</strong> 혹은 <strong>지번주소+번지수/건물명</strong>을
+                                                입력해주세요.
+                                            </p>
+                                            <p class="ex">
+                                                예) 도로명 : 불정로 432번길 / 지번 : 정자동 178-1, 대치동 현대아파트
+                                            </p>
+                                            <p class="warning">
+                                                단, 도로명 혹은 동(읍/면/리)만 검색하시는 경우, 정확한 검색결과가 나오지 않을 수 있습니다.
+                                            </p>
+                                        </div> -->
+                                        <!-- //[D] 검색 전 안내문구 출력, 검색 후 삭제 -->
+    
+                                        <!-- [D] 검색 후, 검색 결과 출력 -->
+                                        <div class="tab_menu">
+                                            <ul>
+                                                <li><button type="button">도로명주소(0건)</button></li>
+                                                <li><button type="button">지번주소(0건)</button></li>
+                                            </ul>
+                                        </div>
+    
+                                        <!-- 검색 결과 -->
+                                        <div class="result_wrap">
+    
+                                            <!-- 도로명 주소 -->
+                                            <div class="tab_view" style="display:none;">
+                                                <table class="address_list">
+                                                    <colgroup>
+                                                        <col>
+                                                        <col style="width:18%;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">도로명주소</th>
+                                                            <th scope="col">우편번호</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="addr">
+                                                                <input type="radio" name="address_a" id="address_a01"
+                                                                    class="hidden">
+                                                                <label for="address_a01">
+                                                                    서울특별시 강남구 언주로 130길 18(논현동)
+                                                                </label>
+                                                            </td>
+                                                            <td class="zip">
+                                                                <label for="address_a01">
+                                                                    99999
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="addr">
+                                                                <input type="radio" name="address_a" id="address_a02"
+                                                                    class="hidden">
+                                                                <label for="address_a02">
+                                                                    긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                                </label>
+                                                            </td>
+                                                            <td class="zip">
+                                                                <label for="address_a02">
+                                                                    99999
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- //도로명 주소 -->
+    
+                                            <!-- 지번 주소 -->
+                                            <div class="tab_view" style="display:none;">
+                                                <table class="address_list">
+                                                    <colgroup>
+                                                        <col>
+                                                        <col style="width:100px;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">지번주소</th>
+                                                            <th scope="col">우편번호</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="addr">
+                                                                <input type="radio" name="address_b" id="address_b01"
+                                                                    class="hidden">
+                                                                <label for="address_b01">
+                                                                    서울특별시 강남구 논현동
+                                                                </label>
+                                                            </td>
+                                                            <td class="zip">
+                                                                <label for="address_b01">
+                                                                    99999
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="addr">
+                                                                <input type="radio" name="address_b" id="address_b02"
+                                                                    class="hidden">
+                                                                <label for="address_b02">
+                                                                    긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                                </label>
+                                                            </td>
+                                                            <td class="zip">
+                                                                <label for="address_a02">
+                                                                    99999
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- //지번 주소 -->
+    
+                                            <!-- 페이징 -->
+                                            <div class="pagenation">
+                                                <div class="pager">
+                                                    <a class="prev" href="#none">이전 페이지</a>
+                                                    <ul>
+                                                        <li>
+                                                            <span>1</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">4</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">999</a>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="next" href="#none">다음 페이지</a>
+                                                </div>
+                                            </div>
+                                            <!-- //페이징 -->
+    
+                                        </div>
+                                        <!-- //검색 결과 -->
+    
+                                        <!-- //[D] 검색 후, 검색 결과 출력 -->
+    
+                                        <!-- [D] 검색 결과에서 선택한 주소를 출력 -->
+                                        <div class="result_address">
+                                            <ul class="txt_list type1">
+                                                <li>
+                                                    <strong>도로명주소</strong>
+                                                    <p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+                                                </li>
+                                                <li>
+                                                    <strong>지번주소</strong>
+                                                    <p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //[D] 검색 결과에서 선택한 주소를 출력 -->
+    
+                                        <div class="search_box detail">
+                                            <input type="text" title="상세주소 입력" placeholder="상세주소를 입력해주세요.">
+                                            <button type="button"><span>주소 입력</span></button>
+                                        </div>
+    
+                                        <button type="button" class="close" data-move="close">팝업닫기</button>
+                                    </div>
+                                    <!-- //주소 -->
+    
+                                    <!-- 학교 -->
+                                    <div class="modal search school" id="school">
+                                        <span class="tit">학교검색</span>
+                                        <div class="search_box">
+                                            <input type="text" title="학교 검색어 입력">
+                                            <button type="button"><span>검색</span></button>
+                                        </div>
+    
+                                        <!-- [D] 검색 후, 검색 결과 출력 -->
+                                        <div class="result_wrap">
+    
+                                            <table class="address_list">
+                                                <colgroup>
+                                                    <col style="width:15%;">
+												    <col style="width:20%;">
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">지역</th>
+                                                        <th scope="col">학교명</th>
+                                                        <th scope="col">주소</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="school" id="school_01" class="hidden">
+                                                            <label for="school_01">
+                                                                서울
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <label for="school_01">
+                                                                리라초등학교
+                                                            </label>
+                                                        </td>
+                                                        <td class="addr">
+                                                            <label for="school_01">
+                                                                서울특별시 강남구 언주로 130길 18(논현동)
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="school" id="school_02" class="hidden">
+                                                            <label for="school_02">
+                                                                서울
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <label for="school_02">
+                                                                경화여자EnglishBusiness고등학교
+                                                            </label>
+                                                        </td>
+                                                        <td class="addr">
+                                                            <label for="school_02">
+                                                                서울특별시 강남구 언주로 130길 18(논현동)
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+    
+                                            <!-- 페이징 -->
+                                            <div class="pagenation">
+                                                <div class="pager">
+                                                    <a class="prev" href="#none">이전 페이지</a>
+                                                    <ul>
+                                                        <li>
+                                                            <span>1</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">4</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">999</a>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="next" href="#none">다음 페이지</a>
+                                                </div>
+                                            </div>
+                                            <!-- //페이징 -->
+    
+                                        </div>
+                                        <!-- //[D] 검색 후, 검색 결과 출력 -->
+    
+                                        <button type="button" class="close" data-move="close">팝업닫기</button>
+                                    </div>
+                                    <!-- //학교 -->
+    
+                                </div>
+                                <!-- //모달 팝업창 -->
+                            </pre>
+							<!-- //팝업(컨펌) -->
+
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="footer_upper">
+				<div class="grid_container">
+					<ul class="bottom_menu">
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
+					</ul>
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_lower">
+				<div class="grid_container">
+					<div class="lower_wrap">
+						<div class="select_form">
+							<button type="button">
+								<span>브랜드 사이트</span>
+							</button>
+							<!-- [D] 선택항목에 따라 텍스트도 변경 -->
+							<ul>
+								<li>
+									<a href="#none">사이트A</a>
+								</li>
+								<li>
+									<a href="#none">사이트B</a>
+								</li>
+								<li>
+									<a href="#none">사이트C</a>
+								</li>
+							</ul>
+						</div>
+						<address>
+							<ul>
+								<li>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
+								<li>대표 : 양환주</li>
+								<li>Tel : <a href="tel:1899-0949">1899-0949</a></li>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+						</address>
+						<p class="copyright">
+							copyright ⓒ 2018 <span>olympiad</span>. all rights reserved
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

@@ -560,8 +560,8 @@ header.on .header_wrap .menu {top:20px;}
 /* 네비게이션 */
 nav {visibility:hidden; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); -webkit-transition:all 0.5s; transition:all 0.5s; opacity:0; -webkit-backface-visibility:hidden; backface-visibility:hidden;}
 nav.on {visibility:visible; opacity:1;}
-nav .nav_wrap {background:#fff url(../img/bg/bg_nav.png) no-repeat 80% bottom; -webkit-transform:translateY(-100%); transform:translateY(-100%); -webkit-transition:all 0.5s; transition:all 0.5s; opacity:0; z-index:-1;}
-nav.on .nav_wrap {-webkit-transform:translateY(0);transform:translateY(0); opacity:1; z-index:1;}
+nav .nav_wrap {background:#fff url(../img/bg/bg_nav.png) no-repeat 80% bottom; -webkit-transform:translateY(-100%); transform:translateY(-100%); opacity:0; z-index:-1;}
+nav.on .nav_wrap {-webkit-transform:translateY(0);transform:translateY(0); -webkit-transition:-webkit-transform 0.5s; transition:-webkit-transform 0.5s; transition:transform 0.5s; transition:transform 0.5s, -webkit-transform 0.5s; opacity:1; z-index:1;}
 .navigation {position:relative; padding:20px 0; line-height:0;}
 nav .menu_1depth {padding:15px 0 100px;}
 nav .menu_1depth > li {overflow:hidden; padding:25px 0;}
@@ -891,9 +891,9 @@ section .news_wrap .menu_tit {margin-top:50px;}
 
 @media (max-width:599px) {
     .link_tab,.link_tab ul,.link_tab ul li {display:block; width:100%;}
-	.link_tab {padding:0 15px;border:0;}
-	.link_tab ul {border-top:1px solid #cdcdcd;}
-	.link_tab ul li {border:1px solid #cdcdcd; border-top:0;}
+	.link_tab {padding:0 15px; border:0;}
+	.link_tab ul {overflow:hidden; border-top:1px solid #cdcdcd; border-right:1px solid #cdcdcd;}
+	.link_tab ul li {float:left; width:33.33%; border:1px solid #cdcdcd; border-top:0; border-right:0;}
 	.link_tab ul li a {line-height:35px;}
     .link_tab ul li a:after {height:3px;}
 }
@@ -929,9 +929,6 @@ section .news_wrap .menu_tit {margin-top:50px;}
 @media (max-width:599px) {
     .sub_visual .sub_txt {font-size:18px;}
 	.sub_visual .sub_tit {font-size:24px;}
-	.subtab_menu ul {display:block; padding:0 15px; border:0;}
-	.subtab_menu ul li {display:block; border-bottom:0;border-left:1px solid #008398;}
-	.subtab_menu ul li:last-child {border-bottom:1px solid #008398;}
     .subtab_menu ul li a {min-width:0; font-size:12px;}
 }
 

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>올림피아드</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link rel="stylesheet" href="map_asset/coding.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="map_asset/map.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <!-- GLEC -->
+        <div class="map_wrap" id="glec">
+            <p class="tit">GLEC</p>
+            <div class="info">
+                <dl class="process">
+                    <dt>작업공정률</dt>
+                    <dd></dd>
+                </dl>
+                <ul class="status">
+                    <li><em class="ico standby">s</em>대기</li>
+                    <li><em class="ico work">w</em>착수</li>
+                    <li><em class="ico modify">m</em>수정</li>
+                    <li><em class="ico end">e</em>완료</li>
+                </ul>
+            </div>
+            <div class="table_wrap">
+                <table class="list d4" data-name="glec">
+                    <caption>코딩 리스트</caption>
+                    <thead>
+                        <tr>
+                            <th class="num">No</th>
+                            <th class="depth">1depth</th>
+                            <th class="depth">2depth</th>
+                            <th class="depth">3depth</th>
+                            <th class="depth">4depth</th>
+                            <th class="id">ID</th>
+                            <th class="dev">Dev</th>
+                            <th class="stat">Status</th>
+                            <th class="date">Date</th>
+                            <th class="memo">Memo</th>
+                            <th class="link">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>메인</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">index</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">03/05</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>GLEC어학원</td>
+                            <td>인사말</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">greetings</td>
+                            <td class="center">김향태</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>캠퍼스안내</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">campus_find</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>입학안내</td>
+                            <td>입학절차</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">admission_procedure</td>
+                            <td class="center">김향태</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>정기 입학고사</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">regular_exam_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>신청</td>
+                            <td></td>
+                            <td class="center">regular_exam_form</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>신청완료</td>
+                            <td></td>
+                            <td class="center">exam_confirm</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>수시 입학고사</td>
+                            <td>신청</td>
+                            <td></td>
+                            <td class="center">irregular_exam_form</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>신청완료</td>
+                            <td></td>
+                            <td class="center">exam_confirm</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>TOSLA</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">tosla</td>
+                            <td class="center">김향태</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>초등부</td>
+                            <td>프로그램 특징</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">program_feature</td>
+                            <td class="center">천송경</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/07</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>학기 및 레벨구성</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">level</td>
+                            <td class="center">김향태</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>영어도서관</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">library</td>
+                            <td class="center">김향태</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>중등부</td>
+                            <td>프로그램 특징</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">characteristic</td>
+                            <td class="center">김향태</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>학기 및 레벨구성</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">term_level</td>
+                            <td class="center">김향태</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>GLEC 플립러닝</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">flip_learning</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/08</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>GLEC 개별학습</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">voca</td>
+                            <td class="center">김향태</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>드림투어</td>
+                            <td>안내</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">dream_tour_info</td>
+                            <td class="center">김향태</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>현장스케치</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">sketch_board_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>view</td>
+                            <td></td>
+                            <td class="center">sketch_board_view</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>커뮤니티</td>
+                            <td>공지사항</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">notice_board_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>view</td>
+                            <td></td>
+                            <td class="center">notice_board_view</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>합격실적</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">perform_board_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>view</td>
+                            <td></td>
+                            <td class="center">perform_board_view</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>홍보관</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">ad_board_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>view</td>
+                            <td></td>
+                            <td class="center">ad_board_view</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>교육정보</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">eduinfo_board_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>view</td>
+                            <td></td>
+                            <td class="center">eduinfo_board_view</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>설명화후기</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">review_board_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>view</td>
+                            <td></td>
+                            <td class="center">review_board_view</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>Best Student</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">student_board_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>view</td>
+                            <td></td>
+                            <td class="center">student_board_view</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>Best of My PT</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">mypt_board_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>view</td>
+                            <td></td>
+                            <td class="center">mypt_board_view</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>상담&amp;설명회</td>
+                            <td>상담신청</td>
+                            <td>신청</td>
+                            <td></td>
+                            <td class="center">consulting_form</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>신청완료</td>
+                            <td></td>
+                            <td class="center">consulting_confirm</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>설명회</td>
+                            <td>list</td>
+                            <td></td>
+                            <td class="center">presentation_list</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>신청</td>
+                            <td></td>
+                            <td class="center">presentation_form</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td></td>
+                            <td>신청완료</td>
+                            <td></td>
+                            <td class="center">presentation_confirm</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>로그인</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">login</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/24</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td>재원생 학습</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">mypage</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/28</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="center"></td>
+                            <td>사이트맵</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">sitemap</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td>검색결과</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">search_result</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td>이용약관</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">term</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td>개인정보처리방침</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">privacy</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td>이메일무단수집거부</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">email</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">04/30</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td>홈페이지이용의견</td>
+                            <td>접수</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">opinion_form</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="center"></td>
+                            <td></td>
+                            <td>접수완료</td>
+                            <td></td>
+                            <td></td>
+                            <td class="center">opinion_confirm</td>
+                            <td class="center">구창근</td>
+                            <td class="center"><em class="ico end">e</em></td>
+                            <td class="center">05/17</td>
+                            <td></td>
+                            <td class="center"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- //GLEC -->
+
+    </div>
+</body>
+
+</html>

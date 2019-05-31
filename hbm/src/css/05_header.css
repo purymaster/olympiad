@@ -119,7 +119,7 @@ header:hover .navigation .menu_2depth {visibility:visible; transition:all 1s; op
 
     .search_keyword {top:13px; z-index:0; width:100%; text-align:right;}
     .search_keyword .search {margin:0;}
-    .search_keyword .search_box {top:37px; right:-30px; padding:15px;}
+    .search_keyword .search_box {top:37px; right:-30px; padding:15px; box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
     .search_keyword .search_wrap input[type="text"] {height:36px; padding-right:52px; padding-left:14px; font-size:14px; line-height:36px;}
     .search_keyword .search_wrap button {top:6px; right:15px;}
 

@@ -1,0 +1,110 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap mypage">
+            @@include('../inc/sub_header.html',{
+            "type" : "1",
+            "title" : "서브 페이지 타이틀",
+            "subtitle" : "서브 페이지 텍스트 <strong>강조</strong>",
+            "context" : {
+            "has_tab" : false
+            }
+            })
+
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 영역 -->
+                <div class="content">
+                    <div class="sub_lower_wrap">
+                        <div class="grid_container">
+
+                            <div class="sub_tit_wrap">
+                                <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">
+                                    재원생 학습
+                                </h3>
+                                <p class="subpage_txt">
+                                    원하는 학습을 선택해주세요.
+                                </p>
+                            </div>
+
+
+                            <div class="my_menu">
+                                <div class="cont menu my_info">
+                                    <a href="#">
+                                        <span class="menu_tit">
+                                            마이페이지
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="cont sub_menu">
+                                    <ul class="my_study">
+                                        <li class="menu">
+                                            <a href="#">
+                                                <div class="menu_name">
+                                                    <span class="tit">드림원</span>
+                                                </div>
+                                            </a>
+                                            <div class="alert">
+                                                <span>교습비 미납</span>
+                                            </div>
+                                        </li>
+                                        <li class="menu">
+                                            <a href="#">
+                                                <div class="menu_name">
+                                                    <span class="tit">영재 / 고등</span>
+                                                </div>
+                                            </a>
+                                            <div class="alert">
+                                                <span>교습비 미납</span>
+                                            </div>
+                                        </li>
+                                        <li class="menu">
+                                            <a href="#">
+                                                <div class="menu_name">
+                                                    <span class="tit">사회 / 과학 내신특강</span>
+                                                    <small>내신만점 프로젝트</small>
+                                                </div>
+                                            </a>
+                                            <div class="alert">
+                                                <span>교습비 미납</span>
+                                            </div>
+                                        </li>
+                                        <li class="menu">
+                                            <a href="#">
+                                                <div class="menu_name">
+                                                    <span class="tit">TOSLA</span>
+                                                    <small>학습능력종합진단검사</small>
+                                                </div>
+                                            </a>
+                                            <div class="alert">
+                                                <span>교습비 미납</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="menu support">
+                                        <a href="#">
+                                            <span class="menu_tit">
+                                                원격지원
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 컨텐츠 영역 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+
+    </div>
+
+</body>
+
+</html>

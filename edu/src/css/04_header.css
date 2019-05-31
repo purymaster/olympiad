@@ -44,8 +44,8 @@ header.on .header_wrap .menu {top:20px;}
 /* 네비게이션 */
 nav {visibility:hidden; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s; opacity:0; backface-visibility:hidden;}
 nav.on {visibility:visible; opacity:1;}
-nav .nav_wrap {background:#fff url(../img/bg/bg_nav.png) no-repeat 80% bottom; transform:translateY(-100%); transition:all 0.5s; opacity:0; z-index:-1;}
-nav.on .nav_wrap {transform:translateY(0); opacity:1; z-index:1;}
+nav .nav_wrap {background:#fff url(../img/bg/bg_nav.png) no-repeat 80% bottom; transform:translateY(-100%); opacity:0; z-index:-1;}
+nav.on .nav_wrap {transform:translateY(0); transition:transform 0.5s; opacity:1; z-index:1;}
 .navigation {position:relative; padding:20px 0; line-height:0;}
 nav .menu_1depth {padding:15px 0 100px;}
 nav .menu_1depth > li {overflow:hidden; padding:25px 0;}

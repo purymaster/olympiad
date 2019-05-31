@@ -1,0 +1,49 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap confirm_page">
+            @@include('../inc/sub_header.html',{
+            "type" : "1",
+            "title" : "상담 신청",
+            "subtitle" : "",
+            "context" : {
+            "has_tab" : false
+            }
+            })
+
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 영역 -->
+                <div class="content">
+                    <div class="sub_lower_wrap">
+                        <div class="grid_container">
+
+                            <div class="sub_tit_wrap">
+                                <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">
+                                    상담 신청이 접수되었습니다.
+                                </h3>
+                                <p class="subpage_txt">
+                                    문의하신 내용은 담당 직원이 확인하고 2~3일 안으로 연락드리겠습니다.
+                                </p>
+                            </div>
+
+                            <div class="btn_wrap">
+                                <a href="#">메인으로</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 서브 페이지 컨텐츠 영역 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

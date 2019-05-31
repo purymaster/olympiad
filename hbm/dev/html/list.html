@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>하베르만</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header>
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img class="pc" src="../img/img/img_logo.png" alt="">
+								<img class="alter" src="../img/img/img_logo_alter.png" alt="하브루타로 키우는 영재사고력 하베르만">
+							</a>
+						</h1>
+						<button class="open_menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+
+								<!-- 로그인 -->
+								<div class="menu club">
+									<h2 class="hidden">회원전용 메뉴</h2>
+									<div class="group_nav">
+
+										<!-- [D] 로그인 전 -->
+										<a class="btn login" href="#">로그인</a>
+										<!-- //[D] 로그인 전 -->
+
+										<!-- [D] 로그인 후 -->
+										<!-- <span class="member"><strong>회원회원회원회원회원회원회원회원회원회원회원회원회원회원</strong>님</span> -->
+										<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+										<!-- [D] 직원일 경우 관리자 + 로그아웃 -->
+										<!-- <a class="btn study" href="#">재원생 학습</a> -->
+										<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+										<!-- <a class="btn logout" href="#">로그아웃</a> -->
+										<!-- //[D] 로그인 후 -->
+
+									</div>
+								</div>
+								<!-- //로그인 -->
+
+								<!-- GNB -->
+								<div class="menu nav">
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">하베르만은?</a></li>
+													<li><a href="#">하베르만 학습법</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 프로그램</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">프로그램 구성</a></li>
+													<li><a href="#">학습 로드맵</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">입학안내</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학절차</a></li>
+													<li><a href="#">검사안내</a></li>
+													<li><a href="#">입학고사 신청</a></li>
+													<li><a href="#">설명회 신청</a></li>
+													<li><a href="#">상담 신청</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 체험관</a>
+												<ul class="menu_2depth">
+													<li><a href="#">하베르만 수업보기</a></li>
+													<li><a href="#">우리는 하베르만</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 소식</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">하베르만, 알려주세요</a></li>
+													<li><a href="#">센터소식</a></li>
+													<li><a href="#">센터안내</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //GNB -->
+
+								<div class="call_num mobile">
+									<a href="tel:1588-8282">
+										<dl>
+											<dt>상담문의</dt>
+											<dd>1588-8282</dd>
+										</dl>
+									</a>
+								</div>
+
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+
+						<!-- 검색창 -->
+						<div class="search">
+							<h2 class="hidden">정보검색</h2>
+							<div class="search_keyword">
+								<button type="button" class="search">검색창 여닫기</button>
+								<div class="search_box">
+									<div class="search_wrap">
+										<input type="text" title="검색어 입력">
+										<button type="submit">
+											<span>검색</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //검색창 -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_subheader_01.jpg)" data-animation="">
+				<div class="grid_container sub_header_wrap">
+					<div class="tit_wrap">
+						<p class="sub_txt" data-animation="fadeInUp" data-delay="0">서브 페이지 텍스트 <strong>강조</strong></p>
+						<h2 data-animation="fadeInUp" data-delay="3">서브 페이지 타이틀</h2>
+					</div>
+
+
+					<!-- 서브 페이지 상단 탭메뉴 -->
+					<div class="tab_menu">
+						<ul class="type3">
+							<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+							<li><a href="#">탭메뉴1</a></li>
+
+							<li><a href="#">탭메뉴2</a></li>
+
+							<li><a href="#">탭메뉴3</a></li>
+
+						</ul>
+					</div>
+					<!-- //서브 페이지 상단 탭메뉴 -->
+
+				</div>
+			</div>
+
+			<div class="sub_content">
+
+				<!-- 서브 페이지 컨텐츠 영역 -->
+				<div class="content">
+					<div class="sub_lower_wrap">
+						<div class="grid_container">
+
+							<!-- 스태틱 페이지 컨텐츠 영역 -->
+							<div class="sub_cont_wrap">
+
+								<!-- 게시판(썸네일형) 리스트 -->
+								<div class="news_thumb_list">
+									<ul>
+										<li data-animation="fadeInUp" data-delay="0">
+											<!-- default -->
+											<div class="img_view" style="background-image:url(../img/default/default_list_thumb.png)">
+											</div>
+											<div class="txt_view">
+												<p class="tit">
+													<strong>[말머리]</strong>
+													긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+												</p>
+												<p class="txt">
+													긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+												</p>
+												<div class="util" lang="en">
+													<span class="date">9999.99.99</span>
+													<a href="#">more view</a>
+												</div>
+											</div>
+										</li>
+										<li data-animation="fadeInUp" data-delay="0">
+											<div class="img_view" style="background-image:url(https://via.placeholder.com/640x480)">
+											</div>
+											<div class="txt_view">
+												<p class="tit">
+													<strong>[말머리]</strong>
+													2018 대한민국 교육기업대상 초중등 수학 부문 10년 연속 수상</p>
+												<p class="txt">2018년 주관 ‘대한민국 교육기업’에서 초·중등 수학 부문.
+													올림피아드학원이 10년 연속 ‘대상’을 수상하였습니다.</p>
+												<div class="util" lang="en">
+													<span class="date">9999.99.99</span>
+													<a href="#">more view</a>
+												</div>
+											</div>
+										</li>
+										<li data-animation="fadeInUp" data-delay="0">
+											<div class="img_view" style="background-image:url(https://picsum.photos/640/480/?random)">
+											</div>
+											<div class="txt_view">
+												<p class="tit">
+													<strong>[말머리]</strong>
+													2018 대한민국 교육기업대상 초중등 수학 부문 10년 연속 수상</p>
+												<p class="txt">2018년 주관 ‘대한민국 교육기업’에서 초·중등 수학 부문.
+													올림피아드학원이 10년 연속 ‘대상’을 수상하였습니다.</p>
+												<div class="util" lang="en">
+													<span class="date">9999.99.99</span>
+													<a href="#">more view</a>
+												</div>
+											</div>
+										</li>
+										<!-- <li style="width:100%; margin:0; border:0; text-align:center;">작성된 게시글이 없습니다.</li> -->
+									</ul>
+								</div>
+								<!-- //게시판(썸네일형) 리스트 -->
+
+								<!-- 갤러리 리스트 -->
+								<div class="gallery">
+									<ul>
+										<li data-animation="">
+											<a href="#">
+												<!-- default -->
+												<div class="img_view" style="background-image:url(../img/default/default_list_thumb.png)">
+												</div>
+												<div class="txt_view">
+													<p>
+														<strong>[말머리]</strong>
+														2018 KMO 1차 수상
+													</p>
+													<span class="date" lang="en">9999.99.99</span>
+												</div>
+											</a>
+										</li>
+										<li data-animation="">
+											<a href="#">
+												<div class="img_view" style="background-image:url(https://via.placeholder.com/640x480)">
+												</div>
+												<div class="txt_view">
+													<p>
+														<strong>[말머리]</strong>
+														긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+													</p>
+													<span class="date" lang="en">9999.99.99</span>
+												</div>
+											</a>
+										</li>
+										<li data-animation="">
+											<a href="#">
+												<div class="img_view" style="background-image:url(https://picsum.photos/640/480/?random)">
+												</div>
+												<div class="txt_view">
+													<p>
+														<strong>[말머리]</strong>
+														긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+													</p>
+													<span class="date" lang="en">9999.99.99</span>
+												</div>
+											</a>
+										</li>
+										<li data-animation="">
+											<a href="#">
+												<div class="img_view" style="background-image:url(https://picsum.photos/640/480/?random)">
+												</div>
+												<div class="txt_view">
+													<p>
+														<strong>[말머리]</strong>
+														긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+													</p>
+													<span class="date" lang="en">9999.99.99</span>
+												</div>
+											</a>
+										</li>
+										<!-- <li style="width:100%; margin:0; border:0; text-align:center;">작성된 게시글이 없습니다.</li> -->
+									</ul>
+								</div>
+								<!-- //갤러리 리스트 -->
+
+								<!-- 주요 뉴스&게시물 -->
+								<div class="news_thumb_list major">
+									<ul>
+										<li data-animation="fadeInUp" data-delay="0">
+											<!-- default -->
+											<div class="img_view" style="background-image:url(../img/default/default_list_thumb.png)">
+											</div>
+											<div class="txt_view">
+												<p class="tit">
+													<strong>[말머리]</strong>
+													긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+												</p>
+												<p class="txt">
+													긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+												</p>
+												<div class="util" lang="en">
+													<span class="date">9999.99.99</span>
+													<a href="#">more view</a>
+												</div>
+											</div>
+										</li>
+										<!-- <li style="width:100%; margin:0; border:0; text-align:center;">작성된 게시글이 없습니다.</li> -->
+									</ul>
+								</div>
+								<!-- //주요 뉴스&게시물 -->
+
+								<!-- 검색 메뉴 -->
+								<div class="board_util">
+									<div class="search_form">
+										<div class="select_form"><input type="hidden" name="">
+											<button type="button">
+												<span>전체</span>
+											</button>
+											<!-- [D] 선택항목에 따라 텍스트도 변경 -->
+											<ul>
+												<li>
+													<a href="#none">전체</a>
+												</li>
+												<li>
+													<a href="#none">제목</a>
+												</li>
+												<li>
+													<a href="#none">작성자</a>
+												</li>
+											</ul>
+										</div>
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력" placeholder="검색어를 입력하세요." name="search_input">
+											<button type="submit">검색</button>
+										</div>
+									</div>
+								</div>
+								<!-- //검색 메뉴 -->
+
+								<!-- 게시판 리스트 -->
+								<div class="board_list">
+									<table>
+										<caption>공지사항 리스트</caption>
+										<colgroup>
+											<col style="width:11%;">
+											<col>
+											<col style="width:12%;">
+											<col style="width:9%;">
+											<col style="width:9%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">NO</th>
+												<th scope="col">제목</th>
+												<th scope="col">작성자</th>
+												<th scope="col">등록일</th>
+												<th scope="col">조회수</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="notice">
+												<th class="num" scope="row">
+													<span class="notice_icon">공지</span>
+												</th>
+												<td class="tit">
+													<a href="#">
+														<strong>[말머리]</strong>
+														긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+													</a>
+												</td>
+												<td class="name">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</td>
+												<td class="date">99.99.99</td>
+												<td class="view">999,999</td>
+											</tr>
+											<tr class="notice">
+												<th class="num" scope="row">
+													<span class="notice_icon">공지</span>
+												</th>
+												<td class="tit">
+													<a href="#">
+														<strong>[말머리]</strong>
+														하베르만 강남 논현 센터 신규 오픈 하였습니다.
+													</a>
+													<i class="file">첨부파일</i>
+													<i class="new">new</i>
+												</td>
+												<td class="name">관리자</td>
+												<td class="date">99.99.99</td>
+												<td class="view">999,999</td>
+											</tr>
+											<tr>
+												<th class="num" scope="row">999,999</th>
+												<td class="tit">
+													<a href="#">
+														<strong>[말머리]</strong>
+														하베르만 공개 수업에 참여하세요!
+														<i class="file">첨부파일</i>
+														<i class="new">new</i>
+													</a>
+												</td>
+												<td class="name">관리자</td>
+												<td class="date">99.99.99</td>
+												<td class="view">999,999</td>
+											</tr>
+											<!-- <tr>
+                                                <td colspan="5">작성된 게시글이 없습니다.</td>
+                                            </tr> -->
+										</tbody>
+									</table>
+								</div>
+								<!-- //게시판 리스트 -->
+
+								<!-- 페이징 -->
+								<div class="pagenation">
+									<div class="pager">
+										<a class="first" href="#none">첫 페이지</a>
+										<a class="prev" href="#none">이전 페이지</a>
+										<ul>
+											<li>
+												<span>1</span>
+											</li>
+											<li>
+												<a href="#none">2</a>
+											</li>
+											<li>
+												<a href="#none">3</a>
+											</li>
+											<li>
+												<a href="#none">4</a>
+											</li>
+											<li>
+												<a href="#none">5</a>
+											</li>
+											<li>
+												<a href="#none">6</a>
+											</li>
+											<li>
+												<a href="#none">7</a>
+											</li>
+											<li>
+												<a href="#none">8</a>
+											</li>
+											<li>
+												<a href="#none">9</a>
+											</li>
+											<li>
+												<a href="#none">999</a>
+											</li>
+										</ul>
+										<a class="next" href="#none">다음 페이지</a>
+										<a class="last" href="#none">끝 페이지</a>
+									</div>
+								</div>
+								<!-- //페이징 -->
+
+							</div>
+							<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 컨텐츠 영역 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="footer_upper">
+				<div class="grid_container">
+					<ul class="bottom_menu">
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
+					</ul>
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_lower">
+				<div class="grid_container">
+					<div class="lower_wrap">
+						<div class="select_form">
+							<button type="button">
+								<span>브랜드 사이트</span>
+							</button>
+							<!-- [D] 선택항목에 따라 텍스트도 변경 -->
+							<ul>
+								<li>
+									<a href="#none">사이트A</a>
+								</li>
+								<li>
+									<a href="#none">사이트B</a>
+								</li>
+								<li>
+									<a href="#none">사이트C</a>
+								</li>
+							</ul>
+						</div>
+						<address>
+							<ul>
+								<li>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
+								<li>대표 : 양환주</li>
+								<li>Tel : <a href="tel:1899-0949">1899-0949</a></li>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+						</address>
+						<p class="copyright">
+							copyright ⓒ 2018 <span>olympiad</span>. all rights reserved
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

@@ -78,9 +78,9 @@
 
 @media (max-width:599px) {
     .link_tab,.link_tab ul,.link_tab ul li {display:block; width:100%;}
-	.link_tab {padding:0 15px;border:0;}
-	.link_tab ul {border-top:1px solid #cdcdcd;}
-	.link_tab ul li {border:1px solid #cdcdcd; border-top:0;}
+	.link_tab {padding:0 15px; border:0;}
+	.link_tab ul {overflow:hidden; border-top:1px solid #cdcdcd; border-right:1px solid #cdcdcd;}
+	.link_tab ul li {float:left; width:33.33%; border:1px solid #cdcdcd; border-top:0; border-right:0;}
 	.link_tab ul li a {line-height:35px;}
     .link_tab ul li a:after {height:3px;}
 }
@@ -116,9 +116,6 @@
 @media (max-width:599px) {
     .sub_visual .sub_txt {font-size:18px;}
 	.sub_visual .sub_tit {font-size:24px;}
-	.subtab_menu ul {display:block; padding:0 15px; border:0;}
-	.subtab_menu ul li {display:block; border-bottom:0;border-left:1px solid #008398;}
-	.subtab_menu ul li:last-child {border-bottom:1px solid #008398;}
     .subtab_menu ul li a {min-width:0; font-size:12px;}
 }
 
