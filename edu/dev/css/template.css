@@ -398,6 +398,36 @@ label {cursor:pointer;}
     .news_list ul li {width:100%; margin:15px 0;}
 }
 
+/* 게시판(FAQ형) 리스트 */
+.faq_list dl {border-top:1px solid #333;}
+.faq_list dt,.faq_list dd {position:relative; border-bottom:1px solid #ddd;}
+.faq_list dt {padding:20px 60px 20px 75px; cursor:pointer;}
+.faq_list dt:before,.faq_list dt:after {position:absolute; top:40px; right:20px; width:20px; height:2px; margin-top:-1px; background:#999; -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
+.faq_list dt:after {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
+.faq_list .on dt:after {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+.faq_list dt span,.faq_list dd span {width:40px; border-radius:50%; font-family:"Lato"; font-size:18px; font-weight:700; line-height:40px; text-align:center; text-transform:uppercase;}
+.faq_list dt span {position:absolute; top:20px; left:20px; background:#00aeba; color:#fff;}
+.faq_list dt p {margin:5px 0; font-family:"Nanum Square"; font-size:20px; line-height:30px;}
+.faq_list dd {display:none; padding:30px; background:#eff6f7;}
+.faq_list .on dd {visibility:visible; height:auto; opacity:1;}
+.faq_list dd span {display:inline-block; margin-bottom:25px; background:#fff; color:#00aeba;}
+.faq_list dd p {font-size:14px; line-height:1.7em;}
+
+@media (max-width:1024px) {
+    .faq_list dt {padding:15px 45px 15px 60px;}
+    .faq_list dt:before, .faq_list dt:after {right:15px; width:15px; top:30px;}
+    .faq_list dt span,.faq_list dd span {width:30px; font-size:16px; line-height:30px;}
+    .faq_list dt span {top:15px; left:15px;}
+    .faq_list dt p {font-size:16px; line-height:24px; margin:3px 0;}
+    .faq_list dd {padding:15px;}
+    .faq_list dd span {margin-bottom:15px;}
+}
+
+@media (max-width:599px) {
+    .faq_list dt p {font-size:14px;}
+    .faq_list dd p{font-size:12px; line-height:1.6em;}
+}
+
 /* 게시판(일반) 뷰 */
 .board_view .info {padding:22px 30px; border-top:3px solid #333;}
 .board_view .info .tit {font-size:24px; font-weight:700; line-height:1.5em; color:#333;}
@@ -521,22 +551,22 @@ label {cursor:pointer;}
 
 header {position:fixed; top:0; z-index:10; width:100%; height:100px; -webkit-transition:all 1s; transition:all 1s; backface-visibility:hidden; -webkit-backface-visibility:hidden;}
 header.on {background:rgba(0,0,0,0.65);}
-.header_wrap {position:relative; padding-top:30px;}
+.header_wrap {position:relative; padding-top:40px;}
 .header_wrap h1 img {height:36px;}
 .header_wrap .menu_btn.pc {position:absolute; top:5px; right:-10px; font-size:0;}
-.header_wrap .menu_btn.pc a,.header_wrap .menu_btn.pc .member {display:inline-block; font-size:12px; line-height:20px; color:#fff;}
+.header_wrap .menu_btn.pc a,.header_wrap .menu_btn.pc .member {display:inline-block; font-size:12px; line-height:30px; color:#fff;}
 .header_wrap .menu_btn.pc a {position:relative; padding:0 10px; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .header_wrap .menu_btn.pc a:hover {color:#00aeba;}
 .header_wrap .menu_btn.pc a:after {position:absolute; top:50%; right:0; width:1px; height:10px; margin-top:-5px; background:#fff; opacity:0.5; content:"";}
 .header_wrap .menu_btn.pc a:last-child:after {display:none;}
-.header_wrap .menu_btn.pc .member {margin-right:30px;}
+.header_wrap .menu_btn.pc .member {margin-right:5px;}
 .header_wrap .menu_btn.pc strong {display:inline-block; overflow:hidden; max-width:100px; color:#00aeba; text-overflow:ellipsis; vertical-align:top; white-space:nowrap;}
-.header_wrap .search_wrap.pc {position:absolute; top:30px; right:50px; border-color:rgba(255,255,255,0.5);}
-.header_wrap .search_wrap.pc input[type="text"] {width:100px; min-width:0; background:none; color:#fff;}
+.header_wrap .search_wrap.pc {position:absolute; top:40px; right:50px; border-color:rgba(255,255,255,0.5);}
+.header_wrap .search_wrap.pc input[type="text"] {width:150px; min-width:0; background:none; color:#fff;}
 .header_wrap .search_wrap.pc button {background:none;}
 .header_wrap .search_wrap.pc button:before {top:26px; left:24px; width:7px; background:#fff;}
 .header_wrap .search_wrap.pc button:after {border-color:#fff; background:none;}
-.header_wrap .menu {position:absolute; top:30px; right:0; width:40px; height:40px; border:1px solid rgba(255,255,255,0.5); text-indent:-9999px; -webkit-transition:top 0.2s; -webkit-transition:all 0.2s; transition:all 0.2s;}
+.header_wrap .menu {position:absolute; top:40px; right:0; width:40px; height:40px; border:1px solid rgba(255,255,255,0.5); text-indent:-9999px; -webkit-transition:top 0.2s; -webkit-transition:all 0.2s; transition:all 0.2s;}
 .header_wrap .menu:hover {border-color:#00aeba;}
 .header_wrap .menu span {position:absolute; left:50%; width:22px; height:2px; margin-left:-11px; background:#fff; -webkit-transition:all 0.2s; transition:all 0.2s;}
 .header_wrap .menu span:nth-child(1) {top:11px;}
@@ -549,8 +579,8 @@ header.on {background:rgba(0,0,0,0.65);}
     .header_wrap {padding-top:15px;}
     .header_wrap h1 img {height:24px;}
     .header_wrap .menu_btn.mobile a,.header_wrap .menu_btn.mobile .member {display:inline-block; line-height:20px; font-size:12px;}
-    .header_wrap .menu_btn.mobile {margin-top:5px;}
-    .header_wrap .menu_btn.mobile .member {margin-right:20px;}
+    .header_wrap .menu_btn.mobile {margin-bottom:5px;}
+    .header_wrap .menu_btn.mobile .member {margin-right:5px;}
     .header_wrap .menu_btn.mobile .member strong {display:inline-block; max-width:100px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:top; color:#00aeba;}
     .header_wrap .menu_btn.mobile a {padding:0 5px; background: #00aeba; color:#fff;}
     .header_wrap .search_wrap.mobile {width:150px;}
@@ -747,6 +777,7 @@ article .news ul li {float:left; width:33.33%; margin-bottom:15px; padding:0 25p
 article .news ul li a {display:block;}
 article .news ul li a .txt_wrap {padding:10px 0;}
 article .news ul li a .txt_wrap .cate {display:inline-block; font-size:14px; font-weight:700; line-height:30px;}
+article .news ul li a .img_wrap {height:0; padding-top:75%; background-position:center; background-size:cover;}
 article .news ul li a .txt_wrap .notice {color:#00aeba;}
 article .news ul li a .txt_wrap .blog {color:#3b9f47;}
 article .news ul li a .txt_wrap .result {color:#ff8c3f;}

@@ -75,6 +75,7 @@ article .news ul li {float:left; width:33.33%; margin-bottom:15px; padding:0 25p
 article .news ul li a {display:block;}
 article .news ul li a .txt_wrap {padding:10px 0;}
 article .news ul li a .txt_wrap .cate {display:inline-block; font-size:14px; font-weight:700; line-height:30px;}
+article .news ul li a .img_wrap {height:0; padding-top:75%; background-position:center; background-size:cover;}
 article .news ul li a .txt_wrap .notice {color:#00aeba;}
 article .news ul li a .txt_wrap .blog {color:#3b9f47;}
 article .news ul li a .txt_wrap .result {color:#ff8c3f;}
