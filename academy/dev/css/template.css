@@ -869,6 +869,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
 .navigation .menu_2depth {visibility:hidden; position:absolute; top:60px; left:50%; min-width:150px; text-align:center; -webkit-transform:translateX(-50%); transform:translateX(-50%); opacity:0;}
 .header:hover .navigation .menu_2depth {visibility:visible; -webkit-transition:all 1s; transition:all 1s; opacity:1;}
 .navigation .menu_2depth li a {display:block; padding:0.3em 0; font-size:14px; line-height:1.4em; color:#666;}
+.navigation .menu_3depth {display:none;}
 
 @media (max-width:1600px) {
     .group_nav ul {margin-right:10px;}
@@ -927,8 +928,10 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
     .navigation .menu_1depth > li {float:none; margin:0;}
     .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-size:16px; line-height:2em;}
     .navigation .menu_1depth > li:hover:after {display:none;}
-    .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; -webkit-transform:none; transform:none; -webkit-transition:none !important; transition:none !important; opacity:1;}
-    .navigation .menu_2depth li a {font-size:12px;}
+    .navigation .menu_2depth {display:block; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; -webkit-transform:none; transform:none; -webkit-transition:none !important; transition:none !important; opacity:1;}
+    .navigation .menu_2depth li a {font-size:13px;}
+    .navigation .menu_3depth {display:block; visibility:visible; position:static; width:auto; padding:5px 15px; background:#fff; text-align:left; -webkit-transform:none; transform:none; -webkit-transition:none !important; transition:none !important; opacity:1;}
+    .navigation .menu_3depth li a {font-size:12px;}
     .nav_wrap .call_num {position:absolute; left:0; bottom:0; padding:15px;}
     .nav_wrap .call_num dl {width:100%; font-size:0;}
     .nav_wrap .call_num dt,.nav_wrap .call_num dd {display:inline-block; font-family:"Nanum Square"; font-weight:700; line-height:20px; vertical-align:middle;}

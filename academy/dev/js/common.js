@@ -62,7 +62,7 @@ $(function() {
             table_width = $(this).data('width');
             window.outerWidth > 1024 ? $(this).find('table').css('min-width', '') : $(this).find('table').css('min-width', table_width);
         })
-    });
+    }).resize();
 
     /******************** 상단 배너 하루 열지 않기 ********************/
 
@@ -111,12 +111,14 @@ $(function() {
     /******************** 네비게이션 제어 ********************/
 
     var nav = $('nav'),
-        nav_2depth = $('.header_wrap .menu_2depth'); //모바일 2뎁스 메뉴
+        nav_2depth = $('.header_wrap .menu_2depth'), //모바일 2뎁스 메뉴
+        nav_3depth = $('.header_wrap .menu_3depth'); //모바일 3뎁스 메뉴
 
     //네비게이션 제어
     $('.header_wrap').on('click', 'button[type="button"]', function() {
         $('.group_nav').find('input').val('');
         nav_2depth.hide();
+        nav_3depth.hide();
         $(this).hasClass('menu') ?
             (screen.addClass('fixed'),
                 nav.addClass('on'),
@@ -135,9 +137,21 @@ $(function() {
     $('.header_wrap .menu_1depth > li > a').on('click', function() {
         if (is_mobile) {
             $(this).next('.menu_2depth').css('display') === 'block' ?
-                nav_2depth.stop().slideUp() :
                 (nav_2depth.stop().slideUp(),
+                    nav_3depth.stop().slideUp()) :
+                (nav_2depth.stop().slideUp(),
+                    nav_3depth.stop().slideUp(),
                     $(this).next('.menu_2depth').stop().slideDown());
+            return false;
+        }
+    });
+
+    $('.header_wrap .menu_2depth > li > a').on('click', function() {
+        if (is_mobile) {
+            $(this).next('.menu_3depth').css('display') === 'block' ?
+                nav_3depth.stop().slideUp() :
+                (nav_3depth.stop().slideUp(),
+                    $(this).next('.menu_3depth').stop().slideDown());
             return false;
         };
     });
@@ -148,7 +162,8 @@ $(function() {
             (nav.removeClass('on'),
                 $('.header_wrap .menu').blur(),
                 $('.group_nav').find('input').val === '',
-                nav_2depth.hide()) :
+                nav_2depth.hide(),
+                nav_3depth.hide()) :
             (nav_2depth.show(),
                 screen.removeClass('fixed'),
                 screen_fix = false,
