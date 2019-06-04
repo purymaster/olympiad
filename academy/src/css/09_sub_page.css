@@ -1016,7 +1016,7 @@
 .roadmap .edu_list > li .tit {width:100%; padding:0 35px; border:3px solid #ddd; border-radius:25px; background:#fff; font-size:16px; font-weight:700; line-height:44px; color:#333;}
 .roadmap .edu_list .txt_list {margin-top:10px; padding-left:35px;}
 .roadmap .edu_list .txt_list li {line-height:1.7em;}
-.roadmap .table img {max-width:980px;}
+/* .roadmap .table img {max-width:980px;} */
 .roadmap .muth {background:#f5f5f5;}
 .roadmap .course_list {margin-top:-35px; padding:0 50px;}
 .roadmap .course_list > li {overflow:hidden; margin-top:35px;}
