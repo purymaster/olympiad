@@ -60,6 +60,7 @@ $(function() {
         window.outerWidth > 1024 ? is_mobile = false : is_mobile = true;
         $('.data_table').each(function() {
             table_width = $(this).data('width');
+            if (table_width !== undefined) $(this).addClass('scroll');
             window.outerWidth > 1024 ? $(this).find('table').css('min-width', '') : $(this).find('table').css('min-width', table_width);
         })
     }).resize();
