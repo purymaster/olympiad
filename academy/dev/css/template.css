@@ -354,17 +354,18 @@ label {cursor:pointer;}
 }
 
 @media (max-width:1024px) {
-    .data_table {overflow:auto;}
+    /* .data_table {overflow:auto;} */
     .data_table.scroll:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
     .data_table table {width:100%; margin:0;}
-    .data_table table th,.data_table table td {padding:12px 15px;}
-    .data_table.row table th {font-size:14px;}
+    .data_table table th,.data_table table td {padding:12px 5px;}
+    .data_table.row table th {padding:12px 15px; font-size:14px;}
     .data_table table tr th:first-child,.data_table table tr td:first-child {border-left:0;}
 }
 
 @media (max-width:599px) {
     .data_table table thead th {font-size:14px;}    
-    .data_table table th,.data_table table td {padding:8px 15px;}
+    .data_table table th,.data_table table td {padding:8px 5px; font-size:12px;}
+    .data_table.row table th {padding:8px 15px;}
 }
 
 /* 입력폼 테이블 */
@@ -2208,7 +2209,7 @@ footer {background:#505354; color:#fff;}
 .middle_credit .other_subject ul li {float:left; width:50%; padding:0 5px;}
 
 .middle_credit .plan .tit {margin-bottom:15px; font-size:20px; line-height:1.5em; text-align:center;}
-.middle_credit .plan td {padding:20px 30px;}
+/* .middle_credit .plan td {padding:20px 30px;} */
 .middle_credit .plan td .txt_list li {line-height:1.7em;}
 .middle_credit .plan td .txt_list strong {font-weight:400; color:#008398;}
 .middle_credit .plan td dl {color:#333;}
@@ -2491,9 +2492,21 @@ footer {background:#505354; color:#fff;}
     .roadmap .course_list {padding:0;}
 }
 
+@-webkit-keyframes zoom_txt {
+    0% {-webkit-transform:scale(1);transform:scale(1);}
+	50% {-webkit-transform:scale(1.05);transform:scale(1.05);}
+    100% {-webkit-transform:scale(1);transform:scale(1);}
+}
+
+@keyframes zoom_txt {
+    0% {-webkit-transform:scale(1);transform:scale(1);}
+	50% {-webkit-transform:scale(1.05);transform:scale(1.05);}
+    100% {-webkit-transform:scale(1);transform:scale(1);}
+}
+
 @media (max-width:1200px) {
     .roadmap .table {overflow-x:auto;}
-    .roadmap .table:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
+    .roadmap .table:before {display:inline-block; font-size:12px; color:#00687f; text-align:center; -webkit-animation:scroll_txt 1s linear infinite; animation:zoom_txt 1s linear infinite; content:"모바일에서는 확대해서 확인하세요."; -webkit-transform-origin:left center; transform-origin:left center;}
 }
 
 @media (max-width:1024px) {
@@ -2933,7 +2946,7 @@ footer {background:#505354; color:#fff;}
 .senior_math .class_guide ul li {margin-bottom:60px;}
 .senior_math .class_guide ul li:last-child {margin-bottom:0;}
 .senior_math .class_guide .data_table table thead th {background-color:#e5e5e5;}
-.senior_math .class_guide .data_table table th,.data_table table td {padding:12px;}
+.senior_math .class_guide .data_table table th,.senior_math .class_guide .data_table table th {padding:12px;}
 .senior_math .class_guide .grade_tit {overflow:hidden; margin-bottom:30px; font-size:0; text-align:center;}
 .senior_math .class_guide .grade_tit .grade {display:inline-block; margin-right:40px; text-align:right; vertical-align:top;}
 .senior_math .class_guide .grade_tit .grade span {display:block; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:70px; color:#333;}
@@ -2983,6 +2996,7 @@ footer {background:#505354; color:#fff;}
     .senior_math .class_guide .grade_tit .step .step_list {margin:0 -30px;}
     .senior_math .class_guide .grade_tit .step .step_list li {width:50%; height:60px; padding:0 30px;}
     .senior_math .class_guide .grade_tit .step .step_list li p {width:100%; font-size:16px; line-height:20px;}
+    .senior_math .class_guide .data_table table th, .senior_math .class_guide .data_table table td {padding:12px 5px;}
 }
 
 @media (max-width:599px){
@@ -2996,6 +3010,7 @@ footer {background:#505354; color:#fff;}
     .senior_math .class_guide .grade_tit .step .step_list li:last-child {margin-bottom:0;}
     .senior_math .class_guide .grade_tit .step .step_list li p {width:100%; font-size:14px;}
     .senior_math .class_guide .grade_tit .step .step_list li:before, .senior_math .class_guide .grade_tit .step .step_list li:after {left:50%; top:-50%;}
+    .senior_math .class_guide .data_table table th, .senior_math .class_guide .data_table table td {padding:12px 3px;}
 }
 
 /* 고등부 - 학습프로그램 영어 */
@@ -3095,7 +3110,7 @@ footer {background:#505354; color:#fff;}
 .senior_kor_sci .class_guide .class_guide_bx > li:nth-child(n+2) .class_guide_list .step {width:calc(100% - 150px);}
 .senior_kor_sci .class_guide .class_guide_bx > li:nth-child(n+2) .class_guide_list .step ul li p {padding:10px 5px;}
 .senior_kor_sci .class_guide .class_guide_bx > li:nth-child(n+2) .class_guide_list .step ul li:nth-child(2) p {padding:23px 5px;}
-.senior_kor_sci .data_table table th,.data_table table td {padding:15px;}
+/* .senior_kor_sci .data_table table th,.senior_kor_sci .data_table table td {padding:15px;} */
 .senior_kor_sci .data_table table th {background:#e5e5e5 !important;}
 .senior_kor_sci .science_bg_gray {margin-bottom:-100px; padding-bottom:100px; background-color:#f5f5f5;}
 .senior_kor_sci .science .science_list > li {margin-bottom:30px;}
