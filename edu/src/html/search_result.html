@@ -1,0 +1,107 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap search">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "검색결과",
+            "sub_txt" : "Search",
+            "context" : {
+            "has_tab" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 시작 -->
+                <div class="grid_container">
+
+                    <!-- 검색창 -->
+                    <div class="search_wrap">
+                        <input type="text" title="검색어 입력" placeholder="검색어를 입력하세요.">
+                        <button type="submit"><span>검색</span></button>
+                    </div>
+                    <!-- //검색창 -->
+
+                    <!-- 검색결과 안내 -->
+                    <div class="search_info">
+                        <p>
+                            <span class="keyword">긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어</span>의 검색 결과입니다.
+                        </p>
+                    </div>
+                    <!-- //검색결과 안내 -->
+
+                    <!-- 게시물 검색 결과 -->
+                    <div class="result_wrap">
+                        <h4>게시물 검색결과</h4>
+                        <div class="board_list">
+                            <table>
+                                <caption>공지사항 리스트</caption>
+                                <colgroup>
+                                    <col style="width:120px;">
+                                    <col>
+                                    <col style="width:140px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">카테고리</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="cate">공지사항</td>
+                                        <td class="tit">
+                                            <a href="#">
+                                                <strong>[말머리]</strong>
+                                                <span class="keyword">올림피아드</span> 교육 공지사항입니다.
+                                            </a>
+                                        </td>
+                                        <td class="date">9999.99.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cate">언론기사</td>
+                                        <td class="tit">
+                                            <a href="#">
+                                                <strong>[말머리]</strong>
+                                                <span class="keyword">올림피아드</span> 교육 공지사항입니다.
+                                            </a>
+                                        </td>
+                                        <td class="date">9999.99.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cate">공지사항</td>
+                                        <td class="tit">
+                                            <a href="#">
+                                                <strong>[말머리]</strong>
+                                                <span class="keyword">올림피아드</span> 교육 공지사항입니다.
+                                                긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                            </a>
+                                        </td>
+                                        <td class="date">9999.99.99</td>
+                                    </tr>
+                                    <!-- <tr>
+                                                <td colspan="3">검색된 게시글이 없습니다.</td>
+                                            </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="#" class="more">
+                            총 <span>999,999</span>건 더보기
+                        </a>
+                    </div>
+                    <!-- //게시물 검색 결과 -->
+
+                </div>
+                <!-- 서브 페이지 컨텐츠 끝 -->
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

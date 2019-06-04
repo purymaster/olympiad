@@ -286,7 +286,7 @@
 .campus_find .campus_option_wrap .tit:before {position:absolute; top:-30px; left:0; width:18px; height:20px; background:url(../img/sprite/sprite.png); background-position:-454px -475px; background-size:500px; content:"";}
 .campus_find .campus_option {font-size:0;}
 .campus_find .campus_option .option_wrap {display:inline-block; width:50%;}
-.campus_find .campus_option .option_wrap .select_form {display:inline-block; width:calc(50% - 2px); margin-right:4px;}
+.campus_find .campus_option .option_wrap .select_form {display:inline-block; width:100%; margin-right:4px;}
 .campus_find .campus_option .option_wrap .select_form:last-child {margin:0;}
 .campus_find .campus_option .search_wrap {display:inline-block; width:50%; padding-left:4px;}
 .campus_find .cate_select {padding-top:30px;}

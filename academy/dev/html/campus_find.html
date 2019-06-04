@@ -337,16 +337,6 @@
 												<li><a href="#none">제주특별자치도</a></li>
 											</ul>
 										</div>
-										<div class="select_form"><input type="hidden" name="">
-											<button type="button">
-												<span>시/군/구 선택</span>
-											</button>
-											<ul>
-												<li><a href="#none">A구</a></li>
-												<li><a href="#none">B구</a></li>
-												<li><a href="#none">C구</a></li>
-											</ul>
-										</div>
 									</div>
 									<div class="search_wrap">
 										<input type="text" title="검색어 입력" placeholder="검색어를 입력해주세요.">
@@ -402,6 +392,10 @@
 									$(function () {
                                         var list = $('.fold_list .data_wrap'),
                                             name = $('.fold_list .data');
+
+                                        // 첫 리스트 보이기
+                                        list.eq(0).addClass('on');
+                                        list.eq(0).find('.map').show();
 
                                         name.on('click', function () {
                                             $(this).parents('.data_wrap').hasClass('on') ?

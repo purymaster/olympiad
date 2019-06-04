@@ -1591,6 +1591,59 @@ section .news_wrap .menu_tit {margin-top:50px;}
     .sitemap_list .menu_3depth > li > a:before {top:7px;}
 }
 
+/* 검색결과 */
+.search .keyword {color:#00687f; font-family:inherit;}
+.search .search_wrap {display:block; position:relative; width:520px; margin:0 auto 30px; padding-right:120px; border:3px solid #00687f; border-right:0;}
+.search .search_wrap input[type="text"] {width:100%; min-width:0; height:42px; padding:0 18px; border:0; font-size:16px; line-height:42px;}
+.search .search_wrap button {position:absolute; top:0; right:0; width:120px; height:42px; background:#00687f; font-family:"Nanum Square"; font-size:18px; line-height:42px; color:#fff; text-indent:0;}
+.search .search_wrap button:before,.search .search_wrap button:after {display:none;}
+.search .search_wrap button span {font-family:"Nanum Square"; font-size:18px; font-weight:700; color:#fff;}
+.search .search_info {margin:30px 0;}
+.search .search_info p {font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.4em; text-align:center;}
+.search .search_info span {font-family:inherit;}
+.search .search_info span:before,.search .search_info span:after {content:"'";}
+.search .sub_tit_wrap {text-align:left;}
+.search .sub_tit_wrap:after {left:0; margin-left:0;}
+.search .sub_tit_wrap .keyword:before,.search .sub_tit_wrap .keyword:after {content:"'";}
+.search .result_wrap {position:relative; margin-bottom:60px;}
+.search .result_wrap:last-child {margin-bottom:0;}
+.search .result_wrap h4 {margin-top:-4px; margin-bottom:15px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:28px;}
+.search .result_wrap .board_list {border-top:2px solid #333;}
+.search .result_wrap .board_list table strong {color:#333;}
+.search .result_wrap .board_list table thead {display:none;}
+.search .result_wrap .board_list table tbody tr td {padding:17px 30px; background:none; text-align:left; -webkit-transition:none; transition:none;}
+.search .result_wrap .board_list table tbody tr td.tit {padding:17px 0;}
+.search .result_wrap .board_list table tbody tr td.tit a {font-family:"Nanum Square";}
+.search .result_wrap .board_list table tbody tr td.date {color:rgba(100,111,114,0.6); text-align:right;}
+.search .result_wrap .gallery strong {color:#333;}
+.search .result_wrap .more {position:absolute; top:0; right:0; padding-right:15px; font-size:12px; line-height:28px; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.search .result_wrap .more:hover {color:#00687f;}
+.search .result_wrap .more:after {position:absolute; top:10px; right:0; width:8px; height:8px; border:1px solid #333; border-bottom:0; border-left:0; -webkit-transform:rotate(45deg); transform:rotate(45deg); -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
+.search .result_wrap .more:hover:after {right:-3px; border-color:#00687f;}
+
+@media (max-width:1024px) {
+    .search .search_info p {font-size:24px;}
+    .search .search_wrap {padding-right:100px;}
+    .search .search_wrap input[type="text"] {height:34px; padding:0 15px; border:0; font-size:16px; line-height:34px; font-size:14px;}
+    .search .search_wrap button {line-height:34px; width:100px; height:34px;}
+    .search .search_wrap button span {font-size:16px;}
+    .search .result_wrap {margin-bottom:30px;}
+    .search .result_wrap h4 {font-size:18px;}
+    .search .result_wrap .board_list {border:0;}
+    .search .result_wrap .board_list table tbody tr td {padding:0;}
+    .search .result_wrap .board_list table tbody tr td.cate {display:inline-block; width:auto; padding:3px 10px; background:#00687f; font-family:"Nanum Square"; font-size:14px; color:#fff;}
+    .search .result_wrap .board_list table tbody tr td.tit {padding:15px 0;}
+    .search .result_wrap .board_list table tbody tr td.date {color:#333; text-align:left;}
+}
+
+@media (max-width:599px) {
+    .search .search_info p {font-size:18px;}
+    .search .search_wrap {width:100%; min-width:0; padding-right:80px;}
+    .search .search_wrap button {width:80px;}
+    .search .search_wrap button span {font-size:14px;}
+    .search .result_wrap .board_list table tbody tr td.cate {font-size:12px;}
+}
+
 /* 개인정보처리방침, 이용약관, 이메일무단수집거부 */
 .term_wrap {margin-top:5px; text-align:left;}
 .term_wrap .term_tit {margin-top:40px; margin-bottom:10px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.6em;}

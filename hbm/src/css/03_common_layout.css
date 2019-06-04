@@ -423,6 +423,37 @@ label {cursor:pointer;}
     .news_thumb_list.major .txt_view .util {position:static; width:100%;}
 }
 
+/* 게시판(FAQ형) 리스트 */
+.faq_list {margin-top:30px;}
+.faq_list dl {border-top:1px solid #333;}
+.faq_list dt,.faq_list dd {position:relative; border-bottom:1px solid #ddd;}
+.faq_list dt {padding:20px 60px 20px 75px; cursor:pointer;}
+.faq_list dt:before,.faq_list dt:after {position:absolute; top:40px; right:20px; width:20px; height:2px; margin-top:-1px; background:#999; transition:all 0.5s; content:"";}
+.faq_list dt:after {transform:rotate(90deg);}
+.faq_list .on dt:after {transform:rotate(0deg);}
+.faq_list dt span,.faq_list dd span {width:40px; border-radius:50%; font-family:"Lato"; font-size:18px; font-weight:700; line-height:40px; text-align:center; text-transform:uppercase;}
+.faq_list dt span {position:absolute; top:20px; left:20px; background:#00aeba; color:#fff;}
+.faq_list dt p {margin:5px 0; font-family:"Nanum Square"; font-size:20px; line-height:30px;}
+.faq_list dd {display:none; padding:30px; background:#eff6f7;}
+.faq_list .on dd {visibility:visible; height:auto; opacity:1;}
+.faq_list dd span {display:inline-block; margin-bottom:25px; background:#fff; color:#00aeba;}
+.faq_list dd p {font-size:14px; line-height:1.7em;}
+
+@media (max-width:1024px) {
+    .faq_list dt {padding:15px 45px 15px 60px;}
+    .faq_list dt:before, .faq_list dt:after {right:15px; width:15px; top:30px;}
+    .faq_list dt span,.faq_list dd span {width:30px; font-size:16px; line-height:30px;}
+    .faq_list dt span {top:15px; left:15px;}
+    .faq_list dt p {font-size:16px; line-height:24px; margin:3px 0;}
+    .faq_list dd {padding:15px;}
+    .faq_list dd span {margin-bottom:15px;}
+}
+
+@media (max-width:599px) {
+    .faq_list dt p {font-size:14px;}
+    .faq_list dd p{font-size:12px; line-height:1.6em;}
+}
+
 /* 게시판(일반) 뷰 */
 .board_view .info {padding:22px 30px; border-top:3px solid #333;}
 .board_view .info .tit {font-size:24px; font-weight:700; line-height:1.5em; color:#333;}
