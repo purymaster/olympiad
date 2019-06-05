@@ -308,7 +308,7 @@
     .exam_form .warning {font-size:12px;}
     .exam_form .term_viewer {margin-top:30px;}
     .exam_form .btn_wrap {margin-top:30px;}
-    .exam_form .btn_wrap a,.exam_form .btn_wrap button {font-size:16px; line-height:40px;}
+    .exam_form .btn_wrap a,.exam_form .btn_wrap button {min-width:150px; font-size:16px; line-height:40px;}
 }
 
 @media (max-width:599px) {
@@ -338,7 +338,7 @@
 .confirm_page .result .exam_tit {padding:25px 30px; background:#f5f5f5; font-family:"Nanum Square"; font-size:24px; line-height:1.5em;}
 .confirm_page .result .table_wrap {padding:30px 0; background:#fff;}
 .confirm_page .result .table_wrap .data_table:before {display:none;}
-.confirm_page .result .table_wrap .data_table .head {width:100px;}
+.confirm_page .result .table_wrap .data_table .head {width:120px;}
 .confirm_page .btn_wrap {margin-top:100px;}
 .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {min-width:180px; margin:0 2px; padding:0 15px; background:#00aeba; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; transition:all 0.5s;}
 .confirm_page .btn_wrap a.grey,.confirm_page .btn_wrap button.grey {background:#555;}
@@ -350,7 +350,7 @@
     .confirm_page .sub_upper_wrap {margin-bottom:-50px;}
     .confirm_page .btn_wrap {margin-top:50px;}
     .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {font-size:16px; line-height:40px;}
-    .confirm_page .result .table_wrap .data_table .head {width:65px;}
+    .confirm_page .result .table_wrap .data_table .head {width:80px;}
 }
 
 @media (max-width:599px) {

@@ -207,7 +207,8 @@
                                                 </dt>
                                                 <dd>
                                                     <div class="calendar">
-                                                        <input type="text" class="datepicker" id="input_10" readonly="">
+                                                        <input type="text" class="datepicker"
+                                                            id="input_10" readonly="">
                                                     </div>
                                                 </dd>
                                             </div>
@@ -337,6 +338,7 @@
                                         $(function () {
                                             var radio = $('.input_form.radio').find('input[type="radio"]'),
                                                 etc_input = $('.input_form.radio').find('input[data-value="etc_input"]');
+
                                             radio.on('click', function () {
                                                 $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true);
                                             });
@@ -461,7 +463,7 @@
                                                     <p class="term_tit">가. 전산관리 위탁</p>
 
                                                     <!-- 데이터 테이블(모바일 폭 고정) -->
-                                                    <div class="data_table no_left_th" data-width="600">
+                                                    <div class="data_table no_left_th">
                                                         <!-- data-width : 고정할 너비(px) -->
                                                         <table>
                                                             <colgroup>
@@ -493,7 +495,7 @@
                                                     <p class="term_tit">나. 위탁제공</p>
 
                                                     <!-- 데이터 테이블(모바일 폭 고정) -->
-                                                    <div class="data_table no_left_th" data-width="1000">
+                                                    <div class="data_table no_left_th">
                                                         <!-- data-width : 고정할 너비(px) -->
                                                         <table>
                                                             <colgroup>
@@ -802,6 +804,7 @@
 
                             <div class="btn_wrap">
                                 <a href="#" class="cancel">취소</a>
+                                <a href="#" class="cancel">정기 입학고사 신청</a>
                                 <button type="submit" class="submit">수시 입학고사 신청</button>
                             </div>
 
@@ -811,6 +814,10 @@
                                 <!-- 학교 -->
                                 @@include('../inc/modal/modal_school.html')
                                 <!-- //학교 -->
+
+                                <!-- 주소 -->
+                                @@include('../inc/modal/modal_address.html')
+                                <!-- //주소 -->
 
                             </div>
                             <!-- //모달 팝업창 -->

@@ -244,10 +244,11 @@ label {cursor:pointer;}
 .input_form dl .option dt {float:left; width:100px;}
 .input_form dl .option dt label {display:inline-block; position:relative; font-size:16px; font-family:"Nanum Square"; font-weight:700; line-height:40px; display:table-cell; vertical-align:middle;}
 .input_form dl .option dd {float:left; width:calc(100% - 100px);}
+.input_form dl .option dd span {display:inline-block; font-size:14px; line-height:40px;}
 .input_form dl .option input[type="text"],.input_form dl .option input[type="email"],.input_form dl .option .select_form {width:100%;}
 .input_form dl .option .tel {max-width:400px; font-size:0;}
-.input_form dl .option .tel input[type="text"],.input_form dl .tel .select_form {width:calc(33.33% - 10px);}
-.input_form dl .option .select_form button {min-width:0;}
+.input_form dl .option .tel input[type="text"],.input_form dl .tel .select_form {width:calc(33.33% - 10px); vertical-align:top;}
+.input_form dl .option .select_form button {min-width:0; height:40px;}
 .input_form dl .option .tel .dash {display:inline-block; width:15px; font-size:14px; line-height:40px; text-align:center; vertical-align:top;}
 .input_form dl .option .search_box {font-size:0;}
 .input_form dl .option .search_box input[type="text"] {width:calc(100% - 95px);}

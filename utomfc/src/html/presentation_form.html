@@ -51,6 +51,22 @@
 
                             <!-- 입학고사 입력폼 -->
                             <div class="form">
+                                <div class="exam_info">
+                                    <small class="sub_txt">9999년 99월 99일 - 고등학교 3학년 대상</small>
+                                    <p class="tit">2019 고등부 입시설명회</p>
+                                </div>
+                                <div class="form_list">
+                                    <p class="form_tit">응시 캠퍼스</p>
+                                    <span class="txt">
+                                        동대문캠퍼스 - 9999년 99월 99일 99시 99분
+                                        <button type="button" class="open_modal" data-modal="map_00">연락처 및 주소
+                                            확인</button>
+                                    </span>
+                                </div>
+                                <div class="form_list">
+                                    <p class="form_tit">입학고사 대상 학년</p>
+                                    <span class="txt">고등학교 3학년</span>
+                                </div>
                                 <div class="form_list">
                                     <p class="form_tit">입력사항</p>
                                     <!-- 입력폼 테이블 -->
@@ -235,6 +251,7 @@
                                         $(function () {
                                             var radio = $('.input_form.radio').find('input[type="radio"]'),
                                                 etc_input = $('.input_form.radio').find('input[data-value="etc_input"]');
+
                                             radio.on('click', function () {
                                                 $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true);
                                             });
@@ -355,7 +372,7 @@
                                                     <p class="term_tit">가. 전산관리 위탁</p>
 
                                                     <!-- 데이터 테이블(모바일 폭 고정) -->
-                                                    <div class="data_table no_left_th" data-width="600">
+                                                    <div class="data_table no_left_th">
                                                         <!-- data-width : 고정할 너비(px) -->
                                                         <table>
                                                             <colgroup>
@@ -387,7 +404,7 @@
                                                     <p class="term_tit">나. 위탁제공</p>
 
                                                     <!-- 데이터 테이블(모바일 폭 고정) -->
-                                                    <div class="data_table no_left_th" data-width="1000">
+                                                    <div class="data_table no_left_th">
                                                         <!-- data-width : 고정할 너비(px) -->
                                                         <table>
                                                             <colgroup>

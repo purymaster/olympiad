@@ -291,7 +291,7 @@
 								<div class="form_list">
 									<p class="form_tit">응시 캠퍼스</p>
 									<span class="txt">
-                                        동대문캠퍼스 - 99시 99분
+                                        동대문캠퍼스 - 9999년 99월 99일 99시 99분
                                         <button type="button" class="open_modal" data-modal="map_00">연락처 및 주소
                                             확인</button>
                                     </span>
@@ -312,50 +312,20 @@
 												<dt>
 													<label for="input_01">
 														지역
-														<span class="necessary">
-                                                            필수입력사항
-                                                        </span>
 													</label>
 												</dt>
 												<dd>
-													<div class="select_form"><input type="hidden" name="">
-														<button type="button" id="input_01">
-															<span>지역</span>
-														</button>
-														<ul>
-															<li>
-																<a href="#none">서울특별시</a>
-															</li>
-															<li>
-																<a href="#none">제주특별자치도</a>
-															</li>
-														</ul>
-													</div>
+													<span>서울특별시</span>
 												</dd>
 											</div>
 											<div class="option">
 												<dt>
 													<label for="input_02">
 														캠퍼스명
-														<span class="necessary">
-                                                            필수입력사항
-                                                        </span>
 													</label>
 												</dt>
 												<dd>
-													<div class="select_form"><input type="hidden" name="">
-														<button type="button" id="input_02">
-															<span>캠퍼스명</span>
-														</button>
-														<ul>
-															<li>
-																<a href="#none">대치캠퍼스</a>
-															</li>
-															<li>
-																<a href="#none">동대문캠퍼스</a>
-															</li>
-														</ul>
-													</div>
+													<span>동대문캠퍼스</span>
 												</dd>
 											</div>
 											<div class="option">
@@ -541,6 +511,7 @@
 										$(function () {
                                             var radio = $('.input_form.radio').find('input[type="radio"]'),
                                                 etc_input = $('.input_form.radio').find('input[data-value="etc_input"]');
+
                                             radio.on('click', function () {
                                                 $(this).data('value') === "etc" ? etc_input.prop("readonly", false) : etc_input.val("").prop("readonly", true);
                                             });
@@ -661,7 +632,7 @@
 													<p class="term_tit">가. 전산관리 위탁</p>
 
 													<!-- 데이터 테이블(모바일 폭 고정) -->
-													<div class="data_table no_left_th" data-width="600">
+													<div class="data_table no_left_th">
 														<!-- data-width : 고정할 너비(px) -->
 														<table>
 															<colgroup>
@@ -693,7 +664,7 @@
 													<p class="term_tit">나. 위탁제공</p>
 
 													<!-- 데이터 테이블(모바일 폭 고정) -->
-													<div class="data_table no_left_th" data-width="1000">
+													<div class="data_table no_left_th">
 														<!-- data-width : 고정할 너비(px) -->
 														<table>
 															<colgroup>
@@ -995,7 +966,8 @@
 
 							<div class="btn_wrap">
 								<a href="#" class="cancel">취소</a>
-								<button type="submit" class="submit">정기 입학고사 예약</button>
+								<a href="#" class="cancel">수시 입학고사 신청</a>
+								<button type="submit" class="submit">정기 입학고사 신청</button>
 							</div>
 
 							<!-- 모달 팝업창 -->
