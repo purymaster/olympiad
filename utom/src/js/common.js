@@ -248,4 +248,17 @@ $(function () {
         buttonText: "선택",
         yearSuffix: "년"
     });
+
+    /******************** FAQ 제어 ********************/
+
+    var faq_list = $('.faq_list .faq');
+
+    faq_list.find('dt').on('click', function () {
+        $(this).parents('.faq').hasClass('on') ?
+            faq_list.removeClass('on').find('dd').stop().slideUp() :
+            (
+                faq_list.removeClass('on').find('dd').stop().slideUp(),
+                $(this).parents('.faq').addClass('on').find('dd').stop().slideDown()
+            );
+    });
 });

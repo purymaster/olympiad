@@ -1381,7 +1381,7 @@ br.not {display:block !important;}
     .search .result_wrap .board_list {border:0;}
     .search .result_wrap .board_list table tbody tr td {padding:0;}
     .search .result_wrap .board_list table tbody tr td.cate {display:inline-block; width:auto; padding:3px 10px; background:#f78920; font-family:"Nanum Square"; font-size:16px; color:#fff;}
-    .search .result_wrap .board_list table tbody tr td.tit {padding:15px 0;}
+    .search .result_wrap .board_list table tbody tr td.tit {padding:0; padding-bottom:15px;}
     .search .result_wrap .board_list table tbody tr td.date {color:#333; text-align:left;}
 }
 

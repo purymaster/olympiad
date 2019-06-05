@@ -118,7 +118,7 @@ textarea {line-height:1.5em;}
 /* 검색 */
 .search_wrap {display:inline-block; position:relative; min-width:220px; font-size:0;}
 .search_wrap input[type="text"] {width:100%; padding-right:40px;}
-.search_wrap button {position:absolute; right:13px; top:9px; width:16px; height:16px; text-indent:-9999px;}
+.search_wrap button {position:absolute; right:13px; top:12px; width:16px; height:16px; text-indent:-9999px;}
 .search_wrap button:before,.search_wrap button:after {content:""; position:absolute;}
 .search_wrap button:before {bottom:2px; right:1px; width:6px; height:2px; background:#333; transform:rotate(45deg);}
 .search_wrap button:after {top:0; left:0; width:13px; height:13px; border:2px solid #333; border-radius:50%;}
