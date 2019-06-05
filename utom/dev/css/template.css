@@ -353,16 +353,18 @@ label {cursor:pointer;}
 }
 
 @media (max-width:1024px) {
-    .data_table {overflow:auto;}
-    .data_table:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
+    /* .data_table {overflow:auto;} */
+    .data_table.scroll:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
     .data_table table {width:100%; margin:0;}
-    .data_table table th,.data_table table td {padding:12px 15px;}
+    .data_table table th,.data_table table td {padding:12px 5px;}
+    .data_table.row table th {padding:12px 15px; font-size:14px;}
     .data_table table tr th:first-child,.data_table table tr td:first-child {border-left:0;}
 }
 
 @media (max-width:599px) {
     .data_table table thead th {font-size:14px;}    
-    .data_table table th,.data_table table td {padding:8px 15px;}
+    .data_table table th,.data_table table td {padding:8px 5px; font-size:12px;}
+    .data_table.row table th {padding:8px 15px;}
 }
 
 /* 입력폼 테이블 */
@@ -377,10 +379,11 @@ label {cursor:pointer;}
 .input_form dl .option dt {float:left; width:100px;}
 .input_form dl .option dt label {display:inline-block; position:relative; font-size:16px; font-family:"Nanum Square"; font-weight:700; line-height:40px; display:table-cell; vertical-align:middle;}
 .input_form dl .option dd {float:left; width:calc(100% - 100px);}
+.input_form dl .option dd span {display:inline-block; font-size:14px; line-height:40px;}
 .input_form dl .option input[type="text"],.input_form dl .option input[type="email"],.input_form dl .option .select_form {width:100%;}
 .input_form dl .option .tel {max-width:400px; font-size:0;}
-.input_form dl .option .tel input[type="text"],.input_form dl .tel .select_form {width:calc(33.33% - 10px);}
-.input_form dl .option .select_form button {min-width:0;}
+.input_form dl .option .tel input[type="text"],.input_form dl .tel .select_form {width:calc(33.33% - 10px); vertical-align:top;}
+.input_form dl .option .select_form button {min-width:0; height:40px;}
 .input_form dl .option .tel .dash {display:inline-block; width:15px; font-size:14px; line-height:40px; text-align:center; vertical-align:top;}
 .input_form dl .option .search_box {font-size:0;}
 .input_form dl .option .search_box input[type="text"] {width:calc(100% - 95px);}
@@ -662,7 +665,7 @@ label {cursor:pointer;}
 .board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"]:checked + label:before {background-position-x:-145px;}
 .board_view .reply_wrap .input_wrap .txt_ctr button {float:right; width:100px; background:#008398; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:50px; color:#fff;}
 .board_view .list_link {margin:60px 0 50px; text-align:right;}
-.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-size:16px; line-height:46px; color:#666; text-align:left; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-family:"Nanum Square"; font-size:16px; line-height:46px; color:#666; text-align:left; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .board_view .list_link a:hover {background:#00aeba; color:#fff;}
 .board_view .list_link a span {position:absolute; right:15px; width:20px; height:2px; background:#00aeba; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .board_view .list_link a span:nth-child(1) {top:16px;}

@@ -1,0 +1,142 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap search">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "검색결과",
+            "sub_txt" : "Search",
+            "context" : {
+            "has_tab" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 시작 -->
+                <div class="grid_container">
+
+                    <!-- 검색창 -->
+                    <div class="search_wrap">
+                        <input type="text" title="검색어 입력" placeholder="검색어를 입력하세요.">
+                        <button type="submit"><span>검색</span></button>
+                    </div>
+                    <!-- //검색창 -->
+
+                    <!-- 검색결과 안내 -->
+                    <div class="search_info">
+                        <p>
+                            <span class="keyword">긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어긴검색어</span>의 검색 결과입니다.
+                        </p>
+                    </div>
+                    <!-- //검색결과 안내 -->
+
+                    <!-- 게시물 검색 결과 -->
+                    <div class="result_wrap">
+                        <h4>공지사항</h4>
+                        <div class="board_list">
+                            <table>
+                                <caption>공지사항 리스트</caption>
+                                <colgroup>
+                                    <col>
+                                    <col style="width:140px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tit">
+                                            <a href="#">
+                                                <strong>[말머리]</strong>
+                                                <span class="keyword">올림피아드</span> 교육 공지사항입니다.
+                                            </a>
+                                        </td>
+                                        <td class="date">9999.99.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tit">
+                                            <a href="#">
+                                                <strong>[말머리]</strong>
+                                                <span class="keyword">올림피아드</span> 교육 공지사항입니다.
+                                            </a>
+                                        </td>
+                                        <td class="date">9999.99.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tit">
+                                            <a href="#">
+                                                <strong>[말머리]</strong>
+                                                <span class="keyword">올림피아드</span> 교육 공지사항입니다.
+                                                긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                            </a>
+                                        </td>
+                                        <td class="date">9999.99.99</td>
+                                    </tr>
+                                    <!-- <tr>
+                                                <td colspan="2">검색된 게시글이 없습니다.</td>
+                                            </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //게시물 검색 결과 -->
+
+                    <!-- 페이징 -->
+                    <div class="pagenation">
+                        <div class="pager">
+                            <a class="first" href="#none">첫 페이지</a>
+                            <a class="prev" href="#none">이전 페이지</a>
+                            <ul>
+                                <li>
+                                    <span>1</span>
+                                </li>
+                                <li>
+                                    <a href="#none">2</a>
+                                </li>
+                                <li>
+                                    <a href="#none">3</a>
+                                </li>
+                                <li>
+                                    <a href="#none">4</a>
+                                </li>
+                                <li>
+                                    <a href="#none">5</a>
+                                </li>
+                                <li>
+                                    <a href="#none">6</a>
+                                </li>
+                                <li>
+                                    <a href="#none">7</a>
+                                </li>
+                                <li>
+                                    <a href="#none">8</a>
+                                </li>
+                                <li>
+                                    <a href="#none">9</a>
+                                </li>
+                                <li>
+                                    <a href="#none">999</a>
+                                </li>
+                            </ul>
+                            <a class="next" href="#none">다음 페이지</a>
+                            <a class="last" href="#none">끝 페이지</a>
+                        </div>
+                    </div>
+                    <!-- //페이징 -->
+
+                </div>
+                <!-- 서브 페이지 컨텐츠 끝 -->
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>
