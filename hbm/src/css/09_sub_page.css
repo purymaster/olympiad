@@ -532,7 +532,7 @@
     .search_result .result_wrap .board_list {border:0;}
     .search_result .result_wrap .board_list table tbody tr td {padding:0;}
     .search_result .result_wrap .board_list table tbody tr td.cate {display:inline-block; width:auto; padding:3px 10px; background:#00aeba; font-family:"Nanum Square"; font-size:16px; color:#fff;}
-    .search_result .result_wrap .board_list table tbody tr td.tit {padding:15px 0;}
+    .search_result .result_wrap .board_list table tbody tr td.tit {padding:0; padding-bottom:15px;}
     .search_result .result_wrap .board_list table tbody tr td.date {color:#333; text-align:left;}
 }
 

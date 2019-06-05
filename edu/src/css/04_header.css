@@ -5,7 +5,7 @@
 
 header {position:fixed; top:0; z-index:10; width:100%; height:100px; -webkit-transition:all 1s; -moz-transition:all 1s; -ms-transition:all 1s; -o-transition:all 1s; transition:all 1s; backface-visibility:hidden; -webkit-backface-visibility:hidden;}
 header.on {background:rgba(0,0,0,0.65);}
-.header_wrap {position:relative; padding-top:40px;}
+.header_wrap {position:relative; padding-top:30px;}
 .header_wrap h1 img {height:36px;}
 .header_wrap .menu_btn.pc {position:absolute; top:5px; right:-10px; font-size:0;}
 .header_wrap .menu_btn.pc a,.header_wrap .menu_btn.pc .member {display:inline-block; font-size:12px; line-height:30px; color:#fff;}
@@ -15,12 +15,12 @@ header.on {background:rgba(0,0,0,0.65);}
 .header_wrap .menu_btn.pc a:last-child:after {display:none;}
 .header_wrap .menu_btn.pc .member {margin-right:5px;}
 .header_wrap .menu_btn.pc strong {display:inline-block; overflow:hidden; max-width:100px; color:#00aeba; text-overflow:ellipsis; vertical-align:top; white-space:nowrap;}
-.header_wrap .search_wrap.pc {position:absolute; top:40px; right:50px; border-color:rgba(255,255,255,0.5);}
+.header_wrap .search_wrap.pc {position:absolute; top:30px; right:50px; border-color:rgba(255,255,255,0.5);}
 .header_wrap .search_wrap.pc input[type="text"] {width:150px; min-width:0; background:none; color:#fff;}
 .header_wrap .search_wrap.pc button {background:none;}
 .header_wrap .search_wrap.pc button:before {top:26px; left:24px; width:7px; background:#fff;}
 .header_wrap .search_wrap.pc button:after {border-color:#fff; background:none;}
-.header_wrap .menu {position:absolute; top:40px; right:0; width:40px; height:40px; border:1px solid rgba(255,255,255,0.5); text-indent:-9999px; -webkit-transition:top 0.2s; -moz-transition:top 0.2s; -ms-transition:top 0.2s; -o-transition:top 0.2s; transition:all 0.2s;}
+.header_wrap .menu {position:absolute; top:30px; right:0; width:40px; height:40px; border:1px solid rgba(255,255,255,0.5); text-indent:-9999px; -webkit-transition:top 0.2s; -moz-transition:top 0.2s; -ms-transition:top 0.2s; -o-transition:top 0.2s; transition:all 0.2s;}
 .header_wrap .menu:hover {border-color:#00aeba;}
 .header_wrap .menu span {position:absolute; left:50%; width:22px; height:2px; margin-left:-11px; background:#fff; transition:all 0.2s;}
 .header_wrap .menu span:nth-child(1) {top:11px;}

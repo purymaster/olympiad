@@ -30,33 +30,15 @@
 
 	<div class="wrap">
 		<header data-animation="">
-			<!-- 메인화면 최상단 배너 -->
-			<div class="upper_banner">
-				<div class="banner_wrapper">
-
-					<!-- PC 배너(1920px x 210px) -->
-					<a href="#"></a>
-					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
-					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
-
-					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
-					<div class="ctr_wrap">
-						<button class="today" type="button">
-							<span>오늘 하루 열지 않기</span>
-						</button>
-						<button class="close" type="button">
-							<span>닫기</span>
-						</button>
-					</div>
-				</div>
-			</div>
-			<!-- //메인화면 최상단 배너 -->
 			<div class="header">
 				<div class="grid_container">
 					<div class="header_wrap">
 						<h1>
 							<a href="#">
 								<img src="../img/img/img_logo.png" alt="말하는 수학의 교육혁명 유투엠">
+								<!-- [D] 학원명 빈 칸 없이 최대 9글자 한계 -->
+								<span>강남세곡캠퍼스</span>
+								<!-- [D] //학원명 빈 칸 없이 최대 9글자 한계 -->
 							</a>
 						</h1>
 						<button class="menu mobile" type="button">
@@ -72,9 +54,10 @@
 									<div class="group_nav">
 										<!-- <ul>
                                     <li><a href="#" target="_blank">올림피아드교육</a></li>
-                                    <li><a href="#" target="_blank">GLEC어학원</a></li>
-                                    <li><a href="#" target="_blank">올림피아드학원</a></li>
+                                    <li><a href="#" target="_blank">GLEC</a></li>
+                                    <li><a href="#" target="_blank">올림피아드 수학</a></li>
                                     <li><a href="#" target="_blank">하베르만</a></li>
+                                    <li><a href="#" target="_blank">유투엠</a></li>
                                 </ul> -->
 										<div class="search_wrap">
 											<input type="text" title="검색어 입력">
@@ -105,13 +88,9 @@
 											<li>
 												<a href="">유투엠 소개</a>
 												<ul class="menu_2depth">
-													<li><a href="#">인사말</a></li>
+													<li><a href="#">원장 인사말</a></li>
 													<li><a href="#">유투엠 스토리</a></li>
-													<li><a href="#">유투엠 사명</a></li>
-													<li><a href="#">유투엠 인재상</a></li>
-													<li><a href="#">기업수상</a></li>
-													<li><a href="#">명예의 전당</a></li>
-													<li><a href="#">전국 캠퍼스</a></li>
+													<li><a href="#">오시는길</a></li>
 												</ul>
 											</li>
 											<li>
@@ -144,15 +123,14 @@
 												<ul class="menu_2depth">
 													<li><a href="#">공지사항</a></li>
 													<li><a href="#">교육정보</a></li>
-													<li><a href="#">현장스케치</a></li>
 												</ul>
 											</li>
 											<li>
 												<a href="#">예약&amp;상담</a>
 												<ul class="menu_2depth">
 													<li><a href="#">입학안내</a></li>
-													<li><a href="#">상담 신청</a></li>
-													<li><a href="#">설명회 신청</a></li>
+													<li><a href="#">상담신청</a></li>
+													<li><a href="#">설명회신청</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -260,11 +238,51 @@
 										</tbody>
 									</table>
 								</div>
-								<a href="#" class="more">
-									총 <span>999,999</span>건 더보기
-								</a>
 							</div>
 							<!-- //게시물 검색 결과 -->
+
+							<!-- 페이징 -->
+							<div class="pagenation">
+								<div class="pager">
+									<a class="first" href="#none">첫 페이지</a>
+									<a class="prev" href="#none">이전 페이지</a>
+									<ul>
+										<li>
+											<span>1</span>
+										</li>
+										<li>
+											<a href="#none">2</a>
+										</li>
+										<li>
+											<a href="#none">3</a>
+										</li>
+										<li>
+											<a href="#none">4</a>
+										</li>
+										<li>
+											<a href="#none">5</a>
+										</li>
+										<li>
+											<a href="#none">6</a>
+										</li>
+										<li>
+											<a href="#none">7</a>
+										</li>
+										<li>
+											<a href="#none">8</a>
+										</li>
+										<li>
+											<a href="#none">9</a>
+										</li>
+										<li>
+											<a href="#none">999</a>
+										</li>
+									</ul>
+									<a class="next" href="#none">다음 페이지</a>
+									<a class="last" href="#none">끝 페이지</a>
+								</div>
+							</div>
+							<!-- //페이징 -->
 
 						</div>
 						<!-- //스태틱 페이지 컨텐츠 영역 -->
@@ -280,7 +298,7 @@
 				<div class="footer_upper">
 					<ul class="bottom_menu">
 						<!-- <li><a href="#">U2M 소개</a></li> -->
-						<!-- <li><a href="#">찾아오시는길</a></li> -->
+						<!-- <li><a href="#">찾아오시는 길</a></li> -->
 						<li><a href="#">사이트맵</a></li>
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
@@ -288,7 +306,7 @@
 						<li><a href="#">홈페이지 이용의견</a></li>
 						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
 					</ul>
-					<div class="select_form"><input type="hidden" name="">
+					<div class="select_form"><input type="hidden">
 						<button type="button">
 							<span lang="en">family site</span>
 						</button>
@@ -327,28 +345,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- 사이드 메뉴 -->
-		<div class="side_menu">
-			<ul>
-				<li class="mobile"><a href="#">홈으로</a></li>
-				<li><a href="#">상담 신청</a></li>
-				<li><a href="#">설명회 신청</a></li>
-				<li><a href="#">입학고사</a></li>
-				<li><a href="#">캠퍼스 안내</a></li>
-				<!-- [D] 로그인 한 회원에게 표시될 내용 -->
-				<li class="pc"><a href="#" target="_blank">재원생 학습</a></li>
-				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
-				<!-- <li class="counsel pc">
-            <span class="tit">상담문의</span>
-            <span class="phone">1899-0949</span>
-            <span class="date">평일 10:00~19:00</span>
-        </li> -->
-			</ul>
-			<div class="move_top pc">
-				<button type="button">페이지 맨 위로 이동</button>
-			</div>
-		</div>
-		<!-- //사이드 메뉴 -->
+
 	</div>
 
 </body>
