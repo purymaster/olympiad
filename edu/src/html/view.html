@@ -73,6 +73,29 @@
                             <!-- 1뎁스 -->
                             <div class="depth_1">
 
+                                <!-- 1뎁스 댓글 입력 -->
+                                <div class="input_wrap">
+                                    <strong class="hidden">작성자 정보</strong>
+                                    <ul class="author_info">
+                                        <li>
+                                            <input type="text" title="작성자 이름" placeholder="이름">
+                                        </li>
+                                        <li>
+                                            <input type="password" title="비밀번호" placeholder="비밀번호">
+                                        </li>
+                                    </ul>
+                                    <div class="author_txt">
+                                        <textarea cols="30" rows="10" placeholder="댓글을 입력해주세요."></textarea>
+                                        <!-- [D] 체크박스 id와 label의 for 속성은 반드시 매치, 값은 일정규칙에 따라 부여 필요 -->
+                                        <div class="txt_ctr">
+                                            <input type="checkbox" id="reply_004">
+                                            <label for="reply_004">비밀댓글</label>
+                                            <button type="submit"><span>등록</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //1뎁스 댓글 입력 -->
+
                                 <!-- 1뎁스 댓글 목록 -->
                                 <ul class="list">
 
@@ -90,7 +113,11 @@
                                             </div>
                                             <ul class="ctr">
                                                 <li>
-                                                    <button type="button" class="reply"><span>답글</span></button>
+													<button type="button"
+													class="reply cnt"><span>답글<strong>0</strong></span></button>
+												</li>
+                                                <li>
+                                                    <button type="button"><span>답글쓰기</span></button>
                                                 </li>
                                                 <li>
                                                     <button type="button" class="modify open_modal"
@@ -101,13 +128,61 @@
                                                         data-modal="delete"><span>삭제</span></button>
                                                 </li>
                                                 <li>
-                                                    <button type="button"><span>숨기기</span></button>
+                                                    <button type="button"><span>숨김
+                                                            <!-- 숨김해제 --></span></button>
                                                 </li>
                                             </ul>
-                                        </div>
+										</div>
+										
+										<!-- 1뎁스 댓글 수정 -->
+                                        <div class="input_wrap">
+											<strong class="hidden">작성자 정보</strong>
+											<ul class="author_info">
+												<li>
+													<input type="text" title="작성자 이름" placeholder="이름" value="작성자">
+												</li>
+												<li>
+													<input type="password" title="비밀번호" placeholder="비밀번호" value="1234">
+												</li>
+											</ul>
+											<div class="author_txt">
+												<textarea cols="30" rows="10"
+													placeholder="댓글을 입력해주세요.">수정할 댓글 내용입니다.</textarea>
+												<!-- [D] 체크박스 id와 label의 for 속성은 반드시 매치, 값은 일정규칙에 따라 부여 필요 -->
+												<div class="txt_ctr">
+													<input type="checkbox" id="reply_003">
+													<label for="reply_003">비밀댓글</label>
+													<button type="submit"><span>수정</span></button>
+												</div>
+											</div>
+										</div>
+										<!-- //1뎁스 댓글 수정 -->
 
                                         <!-- 2뎁스 일반 댓글 -->
                                         <div class="depth_2">
+
+                                            <!-- 2뎁스 댓글 입력 -->
+                                            <div class="input_wrap">
+                                                <strong class="hidden">작성자 정보</strong>
+                                                <ul class="author_info">
+                                                    <li>
+                                                        <input type="text" title="작성자 이름" placeholder="이름">
+                                                    </li>
+                                                    <li>
+                                                        <input type="password" title="비밀번호" placeholder="비밀번호">
+                                                    </li>
+                                                </ul>
+                                                <div class="author_txt">
+                                                    <textarea cols="30" rows="10" placeholder="댓글을 입력해주세요."></textarea>
+                                                    <!-- [D] 체크박스 id와 label의 for 속성은 반드시 매치, 값은 일정규칙에 따라 부여 필요 -->
+                                                    <div class="txt_ctr">
+                                                        <input type="checkbox" id="reply_001">
+                                                        <label for="reply_001">비밀댓글</label>
+                                                        <button type="submit"><span>등록</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //2뎁스 댓글 입력 -->
 
                                             <!-- 2뎁스 댓글 목록 -->
                                             <ul class="list">
@@ -134,65 +209,50 @@
                                                                     data-modal="delete"><span>삭제</span></button>
                                                             </li>
                                                             <li>
-                                                                <button type="button"><span>숨기기</span></button>
+                                                                <button type="button"><span>숨김
+                                                                        <!-- 숨김해제 --></span></button>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </li>
                                                 <!-- //2뎁스 일반 댓글 -->
 
+                                                <!-- 2뎁스 숨김 댓글 -->
+                                                <li>
+                                                    <div class="view">
+                                                        <div class="txt_wrap">
+                                                            <span class="author">
+                                                                긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름
+                                                            </span>
+                                                            <!-- [D] 비밀글일 때, secret 클래스 추가 -->
+															<p class="secret">
+																숨김처리된 댓글입니다.
+															</p>
+                                                            <span class="date">9999-99-99 99:99</span>
+                                                        </div>
+                                                        <ul class="ctr">
+                                                            <li>
+                                                                <button type="button" class="modify open_modal"
+                                                                    data-modal="modify"><span>수정</span></button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="delete open_modal"
+                                                                    data-modal="delete"><span>삭제</span></button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"><span>숨김해제
+                                                                        <!-- 숨김 --></span></button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <!-- //2뎁스 숨김 댓글 -->
+
                                             </ul>
                                             <!-- //2뎁스 댓글 목록 -->
 
-                                            <!-- 2뎁스 댓글 입력 -->
-                                            <div class="input_wrap">
-                                                <strong class="hidden">작성자 정보</strong>
-                                                <ul class="author_info">
-                                                    <li>
-                                                        <input type="text" title="작성자 이름" placeholder="이름">
-                                                    </li>
-                                                    <li>
-                                                        <input type="password" title="비밀번호" placeholder="비밀번호">
-                                                    </li>
-                                                </ul>
-                                                <div class="author_txt">
-                                                    <textarea cols="30" rows="10" placeholder="댓글을 입력해주세요."></textarea>
-                                                    <!-- [D] 체크박스 id와 label의 for 속성은 반드시 매치, 값은 일정규칙에 따라 부여 필요 -->
-                                                    <div class="txt_ctr">
-                                                        <input type="checkbox" id="reply_001">
-                                                        <label for="reply_001">비밀댓글</label>
-                                                        <button type="submit"><span>등록</span></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- //1뎁스 댓글 입력 -->
-
                                         </div>
                                         <!-- //2뎁스 일반 댓글 -->
-
-                                        <!-- 1뎁스 댓글 수정 -->
-                                        <div class="input_wrap">
-                                            <strong class="hidden">작성자 정보</strong>
-                                            <ul class="author_info">
-                                                <li>
-                                                    <input type="text" title="작성자 이름" placeholder="이름" value="작성자">
-                                                </li>
-                                                <li>
-                                                    <input type="password" title="비밀번호" placeholder="비밀번호" value="1234">
-                                                </li>
-                                            </ul>
-                                            <div class="author_txt">
-                                                <textarea cols="30" rows="10"
-                                                    placeholder="댓글을 입력해주세요.">수정할 댓글 내용입니다.</textarea>
-                                                <!-- [D] 체크박스 id와 label의 for 속성은 반드시 매치, 값은 일정규칙에 따라 부여 필요 -->
-                                                <div class="txt_ctr">
-                                                    <input type="checkbox" id="reply_003">
-                                                    <label for="reply_003">비밀댓글</label>
-                                                    <button type="submit"><span>수정</span></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- //1뎁스 댓글 입력 -->
 
                                     </li>
                                     <!-- //1뎁스 일반 댓글 -->
@@ -214,7 +274,11 @@
                                                 <li>
                                                     <!-- [D] 댓글이 있을 경우, cnt 클래스 추가 -->
                                                     <button type="button"
-                                                        class="reply cnt"><span>답글<strong>999,999</strong></span></button>
+                                                        class="reply cnt"><span>답글<strong>999,999</strong></span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"><span>답글쓰기</span></button>
                                                 </li>
                                                 <li>
                                                     <button type="button" class="modify open_modal"
@@ -225,41 +289,87 @@
                                                         data-modal="delete"><span>삭제</span></button>
                                                 </li>
                                                 <li>
-                                                    <button type="button"><span>숨기기</span></button>
+                                                    <button type="button"><span>숨김
+                                                            <!-- 숨김해제 --></span></button>
                                                 </li>
                                             </ul>
-                                        </div>
+										</div>
+										
+										<!-- 1뎁스 댓글 수정 -->
+                                        <div class="input_wrap">
+											<strong class="hidden">작성자 정보</strong>
+											<ul class="author_info">
+												<li>
+													<input type="text" title="작성자 이름" placeholder="이름" value="작성자">
+												</li>
+												<li>
+													<input type="password" title="비밀번호" placeholder="비밀번호" value="1234">
+												</li>
+											</ul>
+											<div class="author_txt">
+												<textarea cols="30" rows="10"
+													placeholder="댓글을 입력해주세요.">수정할 댓글 내용입니다.</textarea>
+												<!-- [D] 체크박스 id와 label의 for 속성은 반드시 매치, 값은 일정규칙에 따라 부여 필요 -->
+												<div class="txt_ctr">
+													<input type="checkbox" id="reply_003">
+													<label for="reply_003">비밀댓글</label>
+													<button type="submit"><span>수정</span></button>
+												</div>
+											</div>
+										</div>
+										<!-- //1뎁스 댓글 수정 -->
                                     </li>
                                     <!-- //1뎁스 비밀 댓글 -->
 
                                 </ul>
                                 <!-- //1뎁스 댓글 목록 -->
 
-                                <!-- 1뎁스 댓글 입력 -->
-                                <div class="input_wrap">
-                                    <strong class="hidden">작성자 정보</strong>
-                                    <ul class="author_info">
-                                        <li>
-                                            <input type="text" title="작성자 이름" placeholder="이름">
-                                        </li>
-                                        <li>
-                                            <input type="password" title="비밀번호" placeholder="비밀번호">
-                                        </li>
-                                    </ul>
-                                    <div class="author_txt">
-                                        <textarea cols="30" rows="10" placeholder="댓글을 입력해주세요."></textarea>
-                                        <!-- [D] 체크박스 id와 label의 for 속성은 반드시 매치, 값은 일정규칙에 따라 부여 필요 -->
-                                        <div class="txt_ctr">
-                                            <input type="checkbox" id="reply_004">
-                                            <label for="reply_004">비밀댓글</label>
-                                            <button type="submit"><span>등록</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- //1뎁스 댓글 입력 -->
-
                             </div>
-                            <!-- //1뎁스 -->
+							<!-- //1뎁스 -->
+							
+							<!-- 페이징 -->
+							<div class="pagenation">
+								<div class="pager">
+									<a class="first" href="#none">첫 페이지</a>
+									<a class="prev" href="#none">이전 페이지</a>
+									<ul>
+										<li>
+											<span>1</span>
+										</li>
+										<li>
+											<a href="#none">2</a>
+										</li>
+										<li>
+											<a href="#none">3</a>
+										</li>
+										<li>
+											<a href="#none">4</a>
+										</li>
+										<li>
+											<a href="#none">5</a>
+										</li>
+										<li>
+											<a href="#none">6</a>
+										</li>
+										<li>
+											<a href="#none">7</a>
+										</li>
+										<li>
+											<a href="#none">8</a>
+										</li>
+										<li>
+											<a href="#none">9</a>
+										</li>
+										<li>
+											<a href="#none">999</a>
+										</li>
+									</ul>
+									<a class="next" href="#none">다음 페이지</a>
+									<a class="last" href="#none">끝 페이지</a>
+								</div>
+							</div>
+							<!-- //페이징 -->
+
                         </div>
 
                         <div class="btn_wrap list_link">
