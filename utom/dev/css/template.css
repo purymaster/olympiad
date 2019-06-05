@@ -666,7 +666,7 @@ label {cursor:pointer;}
 .board_view .reply_wrap .list > li {border-bottom:1px solid #ddd;}
 .board_view .reply_wrap .list > li .view {position:relative; padding:20px 0;}
 .board_view .reply_wrap .depth_1 > .list {border-top:1px solid #ddd;}
-.board_view .reply_wrap .depth_2 {padding:10px 60px; border-top:1px solid #ddd; background:#f7fafb;}
+.board_view .reply_wrap .depth_2 {padding:15px 60px; border-top:1px solid #ddd; background:#f7fafb;}
 .board_view .reply_wrap .depth_2 > .list > li {position:relative;}
 .board_view .reply_wrap .depth_2 > .list > li:before {position:absolute; top:5px; left:-45px; width:25px; height:25px; border-bottom:1px solid #ddd; border-left:1px solid #ddd; content:"";}
 .board_view .reply_wrap .txt_wrap span,.board_view .reply_wrap .txt_wrap p {display:block; font-size:14px; line-height:1.7em;}
@@ -681,7 +681,7 @@ label {cursor:pointer;}
 .board_view .reply_wrap .ctr button:hover {border-color:#42adaa; color:#42adaa;}
 .board_view .reply_wrap .ctr button strong {margin-left:5px; font-weight:400; color:#42adaa;}
 .board_view .reply_wrap .input_wrap {margin:30px 0;}
-.board_view .reply_wrap .depth_2 .input_wrap {margin:0; margin-top:-1px; padding-top:30px; padding-bottom:20px; border-top:1px solid #ddd;}
+.board_view .reply_wrap .depth_2 .input_wrap {margin:0; padding-bottom:20px;}
 .board_view .reply_wrap .input_wrap .author_info {overflow:hidden;}
 .board_view .reply_wrap .input_wrap .author_info li {float:left;}
 .board_view .reply_wrap .input_wrap .author_info li input {width:160px; margin-right:6px;}
