@@ -94,7 +94,7 @@ header.animated:after {transform:scaleX(1);}
     .nav_wrap button.close:before {transform:rotate(-45deg);}
     .nav_wrap button.close:after {transform:rotate(45deg);}
     nav.on .nav_wrap button.close {visibility:visible; opacity:1;}
-    .navigation {overflow:auto; position:static; height:calc(100vh - 150px); margin-top:15px;}
+    .navigation {margin-top:15px;}
     .navigation .menu_1depth {float:none; margin:15px 0 0 0;}
     .navigation .menu_1depth > li {float:none; margin:0;}
     .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-size:16px; line-height:2em;}
@@ -111,5 +111,6 @@ header.animated:after {transform:scaleX(1);}
 }
 
 @media (max-width:599px) {
+    .navigation {overflow:auto; height:300px;}
     .nav_wrap {width:290px; padding:15px;}     
 }
