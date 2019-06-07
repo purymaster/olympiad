@@ -24,7 +24,7 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container">
 
-                        @@include('../inc/tab.html',{
+                        @@include('../inc/tab.html',{"type":"type2",
                         "context" : {
                         "has_tab" : true,
                         "tab_list" : ["질문식 수업","또래 가르치기","토론 발표 수업","거꾸로 설명하기"]
@@ -88,7 +88,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="img be_img">
+                                <div class="img be_img" data-animation="fadeInUp" data-delay="0">
                                     <ul class="hidden">
                                         <li>
                                             거꾸로 설명하기를 통해
@@ -143,17 +143,17 @@
                         </div>
                         <div class="check_list">
                             <ul class="qec_cont2_list">
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="0">
                                     <p>
                                         학생이 교사에게 문제의 해결과정을 거꾸로 설명
                                     </p>
                                 </li>
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="1">
                                     <p>
                                         학습자의 이해도를 파악할 수 있는 최고의 방법, 정확한 피드백과 첨삭
                                     </p>
                                 </li>
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="2">
                                     <p>
                                         설명할 수 있어야 진짜 아는 것, 학습내용의 장기기억화
                                     </p>

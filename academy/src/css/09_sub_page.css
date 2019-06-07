@@ -2121,7 +2121,7 @@
 }
 
 /* 검색결과 */
-.search .keyword {color:#00687f; font-family:inherit;}
+.search .highLight {color:#00687f; font-family:inherit;}
 .search .search_wrap {min-width:520px; margin-top:40px; margin-bottom:10px; padding-right:120px; border:3px solid #00687f; border-right:0;}
 .search .search_wrap input[type="text"] {height:42px; padding:0 18px; border:0; font-size:16px; line-height:42px;}
 .search .search_wrap button {top:0; right:0; width:120px; height:42px; background:#00687f; line-height:42px; text-indent:0;}
@@ -2129,7 +2129,7 @@
 .search .search_wrap button span {font-family:"Nanum Square"; font-size:18px; font-weight:700; color:#fff;}
 .search .sub_tit_wrap {text-align:left;}
 .search .sub_tit_wrap:after {left:0; margin-left:0;}
-.search .sub_tit_wrap .keyword:before,.search .sub_tit_wrap .keyword:after {content:"'";}
+.search .sub_tit_wrap .highLight:before,.search .sub_tit_wrap .highLight:after {content:"'";}
 .search .result_wrap {position:relative; margin-bottom:60px;}
 .search .result_wrap:last-child {margin-bottom:0;}
 .search .result_wrap h4 {margin-top:-4px; margin-bottom:15px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:28px;}

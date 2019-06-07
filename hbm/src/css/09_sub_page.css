@@ -498,7 +498,7 @@
 }
 
 /* 검색결과 */
-.search_result .keyword {color:#00aeba; font-family:inherit;}
+.search_result .highLight {color:#00aeba; font-family:inherit;}
 .search_result .search_wrap {min-width:520px; margin-top:40px; margin-bottom:10px; padding-right:120px; border:3px solid #00aeba; border-right:0;}
 .search_result .search_wrap input[type="text"] {height:42px; padding:0 18px; border:0; font-size:16px; line-height:42px;}
 .search_result .search_wrap button {top:0; right:0; width:120px; height:42px; background:#00aeba; line-height:42px; text-indent:0;}
@@ -506,7 +506,7 @@
 .search_result .search_wrap button span {font-family:"Nanum Square"; font-size:18px; font-weight:700; color:#fff;}
 .search_result .sub_tit_wrap {text-align:left;}
 .search_result .sub_tit_wrap:after {left:0; margin-left:0;}
-.search_result .sub_tit_wrap .keyword:before,.search_result .sub_tit_wrap .keyword:after {content:"'";}
+.search_result .sub_tit_wrap .highLight:before,.search_result .sub_tit_wrap .highLight:after {content:"'";}
 .search_result .result_wrap {position:relative; margin-top:50px; margin-bottom:60px;}
 .search_result .result_wrap:last-child {margin-bottom:0;}
 .search_result .result_wrap h4 {margin-top:-4px; margin-bottom:15px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:28px;}

@@ -24,7 +24,7 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container">
 
-                        @@include('../inc/tab.html',{
+                        @@include('../inc/tab.html',{"type":"type2",
                         "context" : {
                         "has_tab" : true,
                         "tab_list" : ["질문식 수업","또래 가르치기","토론 발표 수업","거꾸로 설명하기"]
@@ -85,7 +85,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="img tp_img">
+                                <div class="img tp_img" data-animation="fadeInUp" data-delay="0">
                                     <ul class="hidden">
                                         <li>
                                             친구와 짝을 지어 서로 가르쳐주고 토론하는
@@ -141,22 +141,22 @@
                         </div>
                         <div class="check_list">
                             <ul class="qec_cont2_list">
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="0">
                                     <p>
                                         문제를 각자 푼 후 짝과 함께 서로 풀이방법을 토론하기
                                     </p>
                                 </li>
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="1">
                                     <p>
                                         먼저 문제를 해결하거나 교사의 첨삭을 받은 학생이 친구에게 설명하기
                                     </p>
                                 </li>
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="2">
                                     <p>
                                         학습한 내용을 다시 인출하여 머릿속에 각인하는 효과
                                     </p>
                                 </li>
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="3">
                                     <p>
                                         친구를 가르치면서 소통하고 협력하는 핵심역량 키우기
                                     </p>

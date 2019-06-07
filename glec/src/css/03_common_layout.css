@@ -15,6 +15,7 @@
 }
 
 @media (max-width:599px) {
+    .wrap {padding-bottom:48px;}
     .grid_container {padding:0 15px;}
 }
 
@@ -93,6 +94,11 @@
     .side_menu ul li:after {display:none;}
     .side_menu ul li a {padding-top:54px;}
     .side_menu ul li a:after {top:10px;}
+}
+
+@media (max-width:599px) {
+    .side_menu ul li a {padding-top:30px; font-size:10px;}
+    .side_menu ul li a:after {transform:translateX(-50%) scale(0.66) translateY(-17px);}
 }
 
 /* 버튼 */
@@ -348,7 +354,7 @@ label {cursor:pointer;}
     .board_list table .notice td.tit a {font-size:16px;}
     .board_list table .notice .notice_icon {margin-bottom:15px;}
     .board_list table tr:not(.notice) th.num {display:none;}
-    .board_list table td.date,.board_list table td.view {font-size:14px; font-family:inherit;}
+    /*.board_list table td.date,.board_list table td.view {font-size:14px; font-family:inherit;}*/
     .board_list table td:before {margin-right:0;}
     .board_list table td.name,.board_list table td.date,.board_list table td.view,.board_list table td.legion,.board_list table td.campus,.board_list table td.target {font-family:"Lato","Nanum Gothic"; font-size:12px;}
     .board_list table td.name:before {content:"작성자 : ";}

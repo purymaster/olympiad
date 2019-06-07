@@ -24,7 +24,7 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container">
 
-                        @@include('../inc/tab.html',{
+                        @@include('../inc/tab.html',{"type":"type2",
                         "context" : {
                         "has_tab" : true,
                         "tab_list" : ["질문식 수업","또래 가르치기","토론 발표 수업","거꾸로 설명하기"]
@@ -83,7 +83,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="img da_img">
+                                <div class="img da_img" data-animation="fadeInUp" data-delay="0">
                                     <ul class="hidden">
                                         <li>
                                             토론하는 과정에서
@@ -140,18 +140,18 @@
                         </div>
                         <div class="check_list">
                             <ul class="qec_cont2_list">
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="0">
                                     <p>
                                         개별학습 → 협력학습 방식<br>
                                         먼저 개별적으로 문제를 풀어본 후에 팀원들끼리 풀이방식토론과 공유, 팀별 경쟁 발표
                                     </p>
                                 </li>
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="1">
                                     <p>
                                         협력과 경쟁을 통해 학습에 대한 재미와 몰입을 유도
                                     </p>
                                 </li>
-                                <li>
+                                <li data-animation="fadeInUp" data-delay="2">
                                     <p>
                                         무임승차, 활동을 하지만 학습이 제대로 일어나지 않는 문제에 유의
                                     </p>

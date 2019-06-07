@@ -127,6 +127,11 @@ button span {position:relative; font-family:inherit;}
 
 /* Hidden */
 .hidden {overflow:hidden; position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:0; clip:rect(0 0 0 0);}
+.hide {display:none;}
+
+/* Ajax loading */
+#ajaxProgressBar {position:fixed; top:0; left:0; z-index:99999999; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.7); _position:absolute;}
+#ajaxProgressBar img {position:absolute; top:50%; left:50%; margin:-93px 0 0 -93px;}
 
 /*=========================================================
 3. 공통 레이아웃
@@ -302,16 +307,18 @@ label {cursor:pointer;}
 }
 
 @media (max-width:1024px) {
-    .data_table {overflow:auto;}
-    .data_table:before {display:inline-block; font-size:12px; color:#00aeba; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
+    /* .data_table {overflow:auto;} */
+    .data_table.scroll:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
     .data_table table {width:100%; margin:0;}
-    .data_table table th,.data_table table td {padding:12px 15px;}
+    .data_table table th,.data_table table td {padding:12px 5px;}
+    .data_table.row table th {padding:12px 15px; font-size:14px;}
     .data_table table tr th:first-child,.data_table table tr td:first-child {border-left:0;}
 }
 
 @media (max-width:599px) {
     .data_table table thead th {font-size:14px;}    
-    .data_table table th,.data_table table td {padding:8px 15px;}
+    .data_table table th,.data_table table td {padding:8px 5px; font-size:12px;}
+    .data_table.row table th {padding:8px 15px;}
 }
 
 /* 입력폼 테이블 */
@@ -427,7 +434,7 @@ label {cursor:pointer;}
     .board_list table .notice td.tit a {font-size:16px;}
     .board_list table .notice .notice_icon {margin-bottom:15px;}
     .board_list table tr:not(.notice) th.num {display:none;}
-    .board_list table td.date,.board_list table td.view {font-size:14px; font-family:inherit;}
+    /*.board_list table td.date,.board_list table td.view {font-size:14px; font-family:inherit;}*/
     .board_list table td:before {margin-right:0;}
     .board_list table td.name,.board_list table td.date,.board_list table td.view,.board_list table td.legion,.board_list table td.campus,.board_list table td.target {font-family:"Lato","Nanum Gothic"; font-size:12px;}
     .board_list table td.name:before {content:"작성자 : ";}
@@ -1924,7 +1931,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 }
 
 /* 검색결과 */
-.search_result .keyword {color:#00aeba; font-family:inherit;}
+.search_result .highLight {color:#00aeba; font-family:inherit;}
 .search_result .search_wrap {min-width:520px; margin-top:40px; margin-bottom:10px; padding-right:120px; border:3px solid #00aeba; border-right:0;}
 .search_result .search_wrap input[type="text"] {height:42px; padding:0 18px; border:0; font-size:16px; line-height:42px;}
 .search_result .search_wrap button {top:0; right:0; width:120px; height:42px; background:#00aeba; line-height:42px; text-indent:0;}
@@ -1932,7 +1939,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 .search_result .search_wrap button span {font-family:"Nanum Square"; font-size:18px; font-weight:700; color:#fff;}
 .search_result .sub_tit_wrap {text-align:left;}
 .search_result .sub_tit_wrap:after {left:0; margin-left:0;}
-.search_result .sub_tit_wrap .keyword:before,.search_result .sub_tit_wrap .keyword:after {content:"'";}
+.search_result .sub_tit_wrap .highLight:before,.search_result .sub_tit_wrap .highLight:after {content:"'";}
 .search_result .result_wrap {position:relative; margin-top:50px; margin-bottom:60px;}
 .search_result .result_wrap:last-child {margin-bottom:0;}
 .search_result .result_wrap h4 {margin-top:-4px; margin-bottom:15px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:28px;}
@@ -2111,32 +2118,32 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
  */
 
  @-webkit-keyframes fadeInUp {
-    0% {-webkit-transform:translate3d(0, 30%, 0); transform:translate3d(0, 30%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(0, 50px, 0); transform:translate3d(0, 50px, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
 	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @keyframes fadeInUp {
-    0% {-webkit-transform:translate3d(0, 30%, 0); transform:translate3d(0, 30%, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(0, 50px, 0); transform:translate3d(0, 50px, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
     100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @-webkit-keyframes fadeInLeft {
-    0% {-webkit-transform:translate3d(-30%, 0, 0); transform:translate3d(-30%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(-50px, 0, 0); transform:translate3d(-50px, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
 	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @keyframes fadeInLeft {
-    0% {-webkit-transform:translate3d(-30%, 0, 0); transform:translate3d(-30%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(-50px, 0, 0); transform:translate3d(-50px, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
     100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @-webkit-keyframes fadeInRight {
-    0% {-webkit-transform:translate3d(30%, 0, 0); transform:translate3d(30%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(50px, 0, 0); transform:translate3d(50px, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
 	100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 
 @keyframes fadeInRight {
-    0% {-webkit-transform:translate3d(30%, 0, 0); transform:translate3d(30%, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
+    0% {-webkit-transform:translate3d(50px, 0, 0); transform:translate3d(50px, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:0;}
     100% {-webkit-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; opacity:1;}
 }
 

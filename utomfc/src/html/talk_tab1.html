@@ -24,7 +24,7 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container">
 
-                        @@include('../inc/tab.html',{
+                        @@include('../inc/tab.html',{"type":"type1",
                         "context" : {
                         "has_tab" : true,
                         "tab_list" : ["생각하는 힘을 키우는 말하는 수학","왜 하브루타인가?"]
@@ -118,7 +118,7 @@
                     <div class="grid_container">
 
                         <div class="before_after">
-                            <div class="cont before">
+                            <div class="cont before" data-animation="fadeInUp" data-delay="0">
                                 <div class="sub_col_tit">
                                     <p>듣는 공부</p>
                                 </div>
@@ -131,7 +131,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="cont after">
+                            <div class="cont after" data-animation="fadeInUp" data-delay="1">
                                 <div class="sub_col_tit">
                                     <p>말하는 공부</p>
                                 </div>

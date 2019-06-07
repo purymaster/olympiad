@@ -91,7 +91,9 @@
 @media (max-width:1024px) {
     .sub_upper_wrap .tab_menu {display:block; margin-top:0; margin-bottom:50px; background:none;}
     .sub_upper_wrap .tab_menu ul {display:block; overflow:hidden; border-top:1px solid #ddd; border-left:1px solid #ddd;}
-    .sub_upper_wrap .tab_menu ul li {float:left; width:100%; background:#fff;}
+    .sub_upper_wrap .tab_menu ul li {float:left; background:#fff;}
+    .sub_upper_wrap .tab_menu.type1 ul li {width:100%;}
+    .sub_upper_wrap .tab_menu.type2 ul li {width:50%;}
     .sub_upper_wrap .tab_menu ul li a {border:0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:16px; line-height:2.5em;}
 }
 
@@ -693,6 +695,8 @@
     .about_havruta .reason .txt_wrap {text-align:center;}
     .about_havruta .reason .txt_wrap .cont_txt .txt {margin-top:15px;}
     .about_havruta .your_think {width:calc(100% + 30px); margin-left:-15px; margin-bottom:-30px; padding:0;}
+    .about_havruta .your_think .cont_box {background:rgba(0,0,0,0.5);}
+    .about_havruta .your_think .sub_tit_wrap,.about_havruta .your_think .sub_cont_wrap p.txt {color:#fff;}
 }
 
 /* 뇌과학 기반의 메타인지 학습법 - 학습내용을 장기기억화하는 말하는 수학 */
@@ -718,8 +722,8 @@
     .meta_learning .brain {margin-bottom:-50px;}
     .meta_learning .brain .column {min-height:185px;}
     .meta_learning .brain .column .txt_wrap {background-size:209px 185px;}
-    .meta_learning .brain .program .txt_wrap {padding:0; padding-left:240px;}
-    .meta_learning .brain .result .txt_wrap {padding:0; padding-right:240px;}
+    .meta_learning .brain .program .txt_wrap {padding:0; padding-left:240px; animation-name:fadeInUp !important;}
+    .meta_learning .brain .result .txt_wrap {padding:0; padding-right:240px;  animation-name:fadeInUp !important;}
     .meta_learning .learning_pyramid .pyramid:before {display:none;}
 }
 
@@ -746,8 +750,8 @@
     .recognition .brain {margin-bottom:-50px;}
     .recognition .brain .column {min-height:185px;}
     .recognition .brain .column .txt_wrap {background-size:209px 185px;}
-    .recognition .brain .upgrade .txt_wrap {padding:0; padding-right:240px;}
-    .recognition .brain .talking .txt_wrap {padding:0; padding-left:240px;}
+    .recognition .brain .upgrade .txt_wrap {padding:0; padding-right:240px; animation-name:fadeInUp !important}
+    .recognition .brain .talking .txt_wrap {padding:0; padding-left:240px; animation-name:fadeInUp !important}
     .recognition .learning_pyramid .pyramid:before {display:none;}
 }
 
@@ -825,7 +829,7 @@
 .adv_custom .custom_wrap .setting {display:inline-block; width:356px; margin-bottom:30px; padding:0 44px 0 20px; vertical-align:top;}
 .adv_custom .custom_wrap .setting img {width:292px; margin-top:24px;}
 .adv_custom .custom_wrap .table_wrap {display:inline-block; width:844px; vertical-align:top;}
-.adv_custom .custom_wrap .table_wrap img {max-width:844px;}
+/* .adv_custom .custom_wrap .table_wrap img {max-width:844px;} */
 .adv_custom .perfect_wrap {margin:45px 0 65px; font-size:0; text-align:center;}
 .adv_custom .perfect_wrap img {width:30%; max-width:224px; margin-right:40px; border:1px solid #ddd;}
 .adv_custom .perfect_wrap .step {display:inline-block; width:calc(70% - 40px); max-width:580px; padding:15px 30px; border:3px solid #1fb6c1; background:#ebfeff; vertical-align:top;}
@@ -845,7 +849,7 @@
     .adv_custom .txt_wrap {margin-top:30px;}
     .adv_custom .custom_wrap {margin-top:30px;}
     .adv_custom .custom_wrap .table_wrap {overflow-x:auto; width:100%; text-align:left;}
-    .adv_custom .custom_wrap .table_wrap:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
+    /* .adv_custom .custom_wrap .table_wrap:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";} */
     .adv_custom .perfect_wrap {margin:30px 0;}
     .adv_custom .perfect_wrap img {display:block; width:224px; margin:0 auto;}
     .adv_custom .perfect_wrap .step {display:block; width:100%; max-width:100%; margin-top:30px; padding:30px;}
@@ -1025,27 +1029,30 @@
     .club_info .table_info {padding-bottom:15px;}
     .club_info .data_table {margin:0 -10px; padding:0;}
     .club_info .data_table:before {margin-left:10px;}
-    .club_info table {width:100%; margin:0;}
+    .club_info table {width:100%; margin:0; border-spacing:5px;}
     .club_info table tbody tr th:first-child {border-left:1px solid;}
-    .club_info table th, .club_info table td {font-size:16px !important; line-height:1.6em;}
+    .club_info table th, .club_info table td {padding:5px; font-size:14px !important; line-height:1.6em;}
 }
 
 @media (max-width:599px) {
+    .club_info table {border-spacing:3px;}
+    .club_info table colgroup col:nth-child(4) {width:10%;}
+    .club_info table colgroup col:nth-child(5) {width:20% !important;}
     .club_info .table_info > div {display:block;}
     .club_info .table_info dt,.club_info .table_info dd {font-size:14px;}
-    .club_info table th, .club_info table td {font-size:14px !important;}
+    .club_info table th, .club_info table td {padding:3px; font-size:12px !important;}
 }
 
 /* 프로그램 안내 - 표준시간표 */
 .time_table .table_wrap {padding:20px 0;}
-.time_table .table_wrap img {display:block; width:910px; max-width:910px; margin:0 auto;}
+.time_table .table_wrap img {display:block; width:910px; margin:0 auto;}
 .time_table .middle {margin-top:-50px;}
-.time_table .notice {max-width:910px; margin:0 auto; font-size:13px; line-height:1.5em; color:#00aeba;}
+.time_table .notice {margin:0 auto; font-size:13px; line-height:1.5em; color:#00aeba;}
 .time_table .notice:before {content:"*";}
 
 @media (max-width:1024px) {
     .time_table .table_wrap {overflow-x:auto; margin-bottom:30px; padding:0;}
-    .time_table .table_wrap:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
+    /* .time_table .table_wrap:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";} */
     .time_table .notice {font-size:12px;}
 }
 
@@ -1893,7 +1900,7 @@
 }
 
 /* 검색결과 */
-.search .keyword {color:#00687f; font-family:inherit;}
+.search .highLight {color:#00687f; font-family:inherit;}
 .search .search_wrap {min-width:520px; margin-top:40px; margin-bottom:10px; padding-right:120px; border:3px solid #00687f; border-right:0;}
 .search .search_wrap input[type="text"] {height:42px; padding:0 18px; border:0; font-size:16px; line-height:42px;}
 .search .search_wrap button {top:0; right:0; width:120px; height:42px; background:#00687f; line-height:42px; text-indent:0;}
@@ -1901,7 +1908,7 @@
 .search .search_wrap button span {font-family:"Nanum Square"; font-size:18px; font-weight:700; color:#fff;}
 .search .sub_tit_wrap {text-align:left;}
 .search .sub_tit_wrap:after {left:0; margin-left:0;}
-.search .sub_tit_wrap .keyword:before,.search .sub_tit_wrap .keyword:after {content:"'";}
+.search .sub_tit_wrap .highLight:before,.search .sub_tit_wrap .highLight:after {content:"'";}
 .search .result_wrap {position:relative; margin-bottom:60px;}
 .search .result_wrap:last-child {margin-bottom:0;}
 .search .result_wrap h4 {margin-top:-4px; margin-bottom:15px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:28px;}

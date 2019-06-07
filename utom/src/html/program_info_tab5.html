@@ -24,7 +24,7 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container">
 
-                        @@include('../inc/tab.html',{
+                        @@include('../inc/tab.html',{"type":"type2",
                         "context" : {
                         "has_tab" : true,
                         "tab_list" : ["클럽구성","표준시간표","학습 프로세스","평가관리","내신대비(Q팡)"]
@@ -47,7 +47,7 @@
                                 지루할 수 있는 내신 대비를 맞춤교재와 게임 미션 달성을 통해 주차별로 체계적으로 대비<br>
                                 문제를 풀면서 획득하는 코인 포인트로 자신의 랭킹을 확인하면서 수학 공부 동기 부여
                             </p>
-                            <div class="diagram">
+                            <div class="diagram" data-animation="fadeInUp" data-delay="0">
                                 <div class="hidden">
                                     <span>내신 대비 프로그램 4가지 특장점</span>
                                     <ul>
@@ -59,13 +59,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- 스태틱 페이지 컨텐츠 영역 -->
-                        <div class="sub_cont_wrap">
-
-                        </div>
-                        <!-- //스태틱 페이지 컨텐츠 영역 -->
-
                     </div>
                 </div>
                 <!-- //서브 페이지 내용 -->

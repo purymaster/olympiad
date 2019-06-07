@@ -24,7 +24,7 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container">
 
-                        @@include('../inc/tab.html',{
+                        @@include('../inc/tab.html',{"type":"type2",
                         "context" : {
                         "has_tab" : true,
                         "tab_list" : ["클럽구성","표준시간표","학습 프로세스","평가관리","내신대비(Q팡)"]
@@ -61,7 +61,7 @@
                                     <dd>progress</dd>
                                 </div>
                             </dl>
-                            <div class="data_table" data-width="600">
+                            <div class="data_table">
                                 <table>
                                     <colgroup>
                                         <col style="width:18%;">
