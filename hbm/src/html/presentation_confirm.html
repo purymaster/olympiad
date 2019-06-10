@@ -6,11 +6,13 @@
         @@include('../inc/header.html')
         <div class="sub_wrap confirm_page">
             @@include('../inc/sub_header.html',{
-            "type" : "1",
+            "type" : "3",
             "title" : "설명회 신청",
             "subtitle" : "",
             "context" : {
-            "has_tab" : false
+            "has_tab" : true,
+            "mobile_line" : 2,
+            "tab_list" : ["입학절차","검사안내","입학고사 신청","설명회 신청","상담 신청"]
             }
             })
             <div class="sub_content">
@@ -19,6 +21,18 @@
                 <div class="content">
                     <div class="sub_lower_wrap">
                         <div class="grid_container">
+
+                            <div class="subtab_menu upper">
+                                <!-- [D] 현재 페이지에 해당되는 li에 on 클래스 부여 -->
+                                <ul>
+                                    <li>
+                                        <a href="#">설명회 신청</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">신청내역 확인</a>
+                                    </li>
+                                </ul>
+                            </div>
 
                             <div class="sub_tit_wrap">
                                 <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">
@@ -40,8 +54,6 @@
                                                 <colgroup>
                                                     <col class="head">
                                                     <col>
-                                                    <col class="head">
-                                                    <col>
                                                 </colgroup>
                                                 <tbody>
                                                     <tr>
@@ -51,6 +63,8 @@
                                                         <td class="left">
                                                             고등학교 3학년
                                                         </td>
+                                                    </tr>
+                                                    <tr>
                                                         <th scope="row">
                                                             장소
                                                         </th>
@@ -65,6 +79,8 @@
                                                         <td class="left">
                                                             9999-99-99
                                                         </td>
+                                                    </tr>
+                                                    <tr>
                                                         <th scope="row">
                                                             시간
                                                         </th>
@@ -76,7 +92,7 @@
                                                         <th scope="row">
                                                             기타
                                                         </th>
-                                                        <td colspan="3" class="left">
+                                                        <td class="left">
                                                             기타내용은 삽입시 노출
                                                         </td>
                                                     </tr>

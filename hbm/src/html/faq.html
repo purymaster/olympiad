@@ -4,15 +4,15 @@
     @@include('../inc/ie9.html')
     <div class="wrap">
         @@include('../inc/header.html')
-        <div class="sub_wrap opinion">
+        <div class="sub_wrap">
             @@include('../inc/sub_header.html',{
-            "type" : "5",
+            "type" : "4",
             "title" : "하베르만, 알려주세요",
-            "subtitle" : "메타인지 기반의 질문 수학 <strong>하베르만</strong>",
+            "subtitle" : "",
             "context" : {
             "has_tab" : true,
-            "mobile_line" : 3,
-            "tab_list" : ["탭메뉴1","탭메뉴2","탭메뉴3","탭메뉴4"]
+            "mobile_line" : 4,
+            "tab_list" : ["공지사항","하베르만, 알려주세요","센터소식","센터안내"]
             }
             })
 
@@ -21,11 +21,6 @@
                 <!-- 서브 페이지 컨텐츠 영역 -->
                 <div class="content">
                     <div class="grid_container">
-                        <div class="sub_tit_wrap">
-                            <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">
-                                하베르만, 알려주세요
-                            </h3>
-                        </div>
 
                         <!-- FAQ 리스트 -->
                         <div class="faq_list">
@@ -61,6 +56,49 @@
                             </dl>
                         </div>
                         <!-- //FAQ 리스트 -->
+
+                        <!-- 페이징 -->
+                        <div class="pagenation">
+                            <div class="pager">
+                                <a class="first" href="#none">첫 페이지</a>
+                                <a class="prev" href="#none">이전 페이지</a>
+                                <ul>
+                                    <li>
+                                        <span>1</span>
+                                    </li>
+                                    <li>
+                                        <a href="#none">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">6</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">7</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">8</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">9</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">999</a>
+                                    </li>
+                                </ul>
+                                <a class="next" href="#none">다음 페이지</a>
+                                <a class="last" href="#none">끝 페이지</a>
+                            </div>
+                        </div>
+                        <!-- //페이징 -->
 
                     </div>
                 </div>

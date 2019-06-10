@@ -6,11 +6,13 @@
         @@include('../inc/header.html')
         <div class="sub_wrap exam_list">
             @@include('../inc/sub_header.html',{
-            "type" : "1",
+            "type" : "3",
             "title" : "설명회 신청",
             "subtitle" : "",
             "context" : {
-            "has_tab" : false
+            "has_tab" : true,
+            "mobile_line" : 2,
+            "tab_list" : ["입학절차","검사안내","입학고사 신청","설명회 신청","상담 신청"]
             }
             })
             <div class="sub_content">
@@ -20,8 +22,83 @@
                     <div class="sub_lower_wrap">
                         <div class="grid_container">
 
+                            <div class="subtab_menu upper">
+                                <!-- [D] 현재 페이지에 해당되는 li에 on 클래스 부여 -->
+                                <ul>
+                                    <li>
+                                        <a href="#">설명회 신청</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">신청내역 확인</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                             <!-- 스태틱 페이지 컨텐츠 영역 -->
                             <div class="sub_cont_wrap">
+
+                                <div class="list_search">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:45px">
+                                            <col style="width:150px">
+                                            <col style="width:70px">
+                                            <col style="width:210px">
+                                            <col style="width:45px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <label for="input_01">지역</label>
+                                                </th>
+                                                <td>
+                                                    <div class="select_form"><input type="hidden" name="">
+                                                        <button type="button" id="input_01">
+                                                            <span>지역</span>
+                                                        </button>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#none">서울특별시</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#none">제주특별자치도</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="input_02">캠퍼스명</label>
+                                                </th>
+                                                <td>
+                                                    <div class="select_form"><input type="hidden" name="">
+                                                        <button type="button" id="input_02">
+                                                            <span>브랜드명</span>
+                                                        </button>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#none">올림피아드학원</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#none">올림피아드학원</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <th scope="row">
+                                                    <label for="input_03">검색</label>
+                                                </th>
+                                                <td>
+                                                    <div class="search_box">
+                                                        <input type="text" id="input_03">
+                                                        <button type="button"><span>검색</span></button>
+                                                        <button type="button"><span>초기화</span></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
                                 <!-- 설명회 리스트 -->
                                 <div class="board_list">

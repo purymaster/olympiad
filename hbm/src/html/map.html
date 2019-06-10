@@ -1,0 +1,57 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "4",
+            "title" : "센터안내",
+            "subtitle" : "",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 4,
+            "tab_list" : ["공지사항","하베르만, 알려주세요","센터소식","센터안내"]
+            }
+            })
+
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 영역 -->
+                <div class="content">
+                    <div class="grid_container">
+
+                        <!-- 센터안내 -->
+                        <div class="map">
+                            <iframe src="" frameborder="0" style="background:#999" ;></iframe>
+                            <dl class="info">
+                                <div>
+                                    <dt>주소</dt>
+                                    <dd>
+                                        <span class="txt">서울특별시 중랑구 용마산로115길 108 이안빌딩3층</span>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>전화번호</dt>
+                                    <dd>
+                                        <a href="tel:1899-0949" class="txt">1899-0949</a>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <!-- //센터안내 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 컨텐츠 영역 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+
+    </div>
+
+</body>
+
+</html>

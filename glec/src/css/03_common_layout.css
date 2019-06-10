@@ -351,18 +351,24 @@ label {cursor:pointer;}
     .board_list table th, .board_list table td,.board_list table .notice th, .board_list table .notice td {padding:0;}
     .board_list table td.tit {padding-bottom:15px;}
     .board_list table td.tit a {font-weight:700;}
+    .board_list table td.reply.depth2 {padding-left:35px;}
+    .board_list table td.reply.depth3 {padding-left:45px;}
+    .board_list table td.reply.depth4 {padding-left:55px;}
+    .board_list table td.reply.depth5 {padding-left:65px;}
     .board_list table .notice td.tit a {font-size:16px;}
     .board_list table .notice .notice_icon {margin-bottom:15px;}
     .board_list table tr:not(.notice) th.num {display:none;}
     /*.board_list table td.date,.board_list table td.view {font-size:14px; font-family:inherit;}*/
     .board_list table td:before {margin-right:0;}
-    .board_list table td.name,.board_list table td.date,.board_list table td.view,.board_list table td.legion,.board_list table td.campus,.board_list table td.target {font-family:"Lato","Nanum Gothic"; font-size:12px;}
+    .board_list table td {font-family:"Lato","Nanum Gothic" !important; font-size:12px;}
     .board_list table td.name:before {content:"작성자 : ";}
     .board_list table td.date:before {content:"등록일 : ";}
     .board_list table td.view:before {content:"조회수 : ";}
-    .board_list table td.legion:before {content:"지역 : ";}
-    .board_list table td.campus:before {content:"캠퍼스명 : ";}
+    .board_list table td.legion,.board_list table td.campus {display:inline-block; width:auto; float:none;}
+    .board_list table td.legion:after {content:"|"; margin-left:4px;}
     .board_list table td.target:before {content:"대상 : ";}
+    .board_list table td.exam_date:before {content:"일시 : ";}
+    .board_list table td.spot:before {content:"장소 : ";}
     .board_list table td .btn {margin-top:10px;}
 }
 

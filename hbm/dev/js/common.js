@@ -218,7 +218,7 @@ $(function() {
         });
 
         //헤더 배경 제어
-        scroll ? $('.header').addClass('on') : $('.header').removeClass('on');
+        scroll ? $('.header,.search_keyword').addClass('on') : $('.header,.search_keyword').removeClass('on');
 
     });
 
@@ -233,6 +233,19 @@ $(function() {
         dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
         buttonText: "선택",
         yearSuffix: "년"
+    });
+
+    /******************** FAQ 제어 ********************/
+
+    var faq_list = $('.faq_list .faq');
+
+    faq_list.find('dt').on('click', function() {
+        $(this).parents('.faq').hasClass('on') ?
+            faq_list.removeClass('on').find('dd').stop().slideUp() :
+            (
+                faq_list.removeClass('on').find('dd').stop().slideUp(),
+                $(this).parents('.faq').addClass('on').find('dd').stop().slideDown()
+            );
     });
 
 });

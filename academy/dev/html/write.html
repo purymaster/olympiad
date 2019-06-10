@@ -296,34 +296,158 @@
 			</div>
 			<div class="sub_content">
 
-				<!-- 서브 페이지 상단 -->
-				<div class="sub_upper_wrap bg">
-					<!-- bg 클래스 추가시 배경색 추가 -->
-					<div class="grid_container inner">
-						<p class="main_tit">
-							<strong>올림피아드를 사랑해주시는 여러분들이 있기에</strong><br>
-                            이와 같은 수상을 받을 수 있었습니다.
-                        </p>
-							<p class="txt">
-								앞으로도 계속 지금보다 더 수준 높은 프로그램과<br>
-                            양질의 교육을 제공할 수 있도록 끈임없이 노력하겠습니다.
-                        </p>
-					</div>
-				</div>
-				<!-- //서브 페이지 상단 -->
-
 				<!-- 서브 페이지 내용 -->
 				<div class="sub_lower_wrap">
 					<div class="grid_container inner">
-						<div class="sub_tit_wrap">
-							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">게시판 제목</h3>
-						</div>
 
 						<!-- 스태틱 페이지 컨텐츠 영역 -->
 						<div class="sub_cont_wrap">
 
 							<div class="board_write">
-
+								<div class="cmt">
+									<span class="necessary">
+                                        필수입력사항
+                                    </span>
+									필수입력사항
+								</div>
+								<table>
+									<colgroup>
+										<col style="width:12%;">
+										<col>
+										<col style="width:15%;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">
+												<label for="write_01">
+													작성자
+													<span class="necessary">필수입력사항</span>
+												</label>
+											</th>
+											<td colspan="3">
+												<!-- [D] 비로그인 작성자 -->
+												<input type="text" id="write_01">
+												<!-- [D] 로그인 작성자 -->
+												<!-- <span class="txt">작성자이름</span> -->
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="write_02">
+													비밀번호
+												</label>
+											</th>
+											<td>
+												<input type="password" id="write_02">
+											</td>
+											<th scope="row">
+												<label for="write_03">
+													비밀번호 확인
+												</label>
+											</th>
+											<td>
+												<input type="password" id="write_03">
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="write_04">
+													글제목
+													<span class="necessary">필수입력사항</span>
+												</label>
+											</th>
+											<td colspan="3">
+												<input type="text" id="write_04">
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="write_05">
+													내용
+												</label>
+											</th>
+											<td colspan="3">
+												<!-- [D] 에디터 영역 -->
+												<div style="background:#999; height:300px; color:#fff;">
+													에디터 영역
+												</div>
+												<!-- //[D] 에디터 영역 -->
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="write_06">
+													PDF첨부
+												</label>
+											</th>
+											<td colspan="3">
+												<input type="file" name="" id="write_06">
+												<label for="write_06">파일 추가</label>
+												<ul class="file_list">
+													<li>
+														<span
+                                                            class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+														<button type="button">삭제</button>
+													</li>
+													<li>
+														<span class="tit">업로드 파일명.jpg</span>
+														<button type="button">삭제</button>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="write_07">
+													썸네일이미지
+												</label>
+											</th>
+											<td colspan="3">
+												<input type="file" name="" id="write_07">
+												<label for="write_07">파일 추가</label>
+												<ul class="file_list">
+													<li>
+														<span
+                                                            class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+														<button type="button">삭제</button>
+													</li>
+													<li>
+														<span class="tit">업로드 파일명.jpg</span>
+														<button type="button">삭제</button>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="write_08">
+													첨부파일
+												</label>
+											</th>
+											<td colspan="3">
+												<input type="file" name="" id="write_08">
+												<label for="write_08">파일 추가</label>
+												<ul class="file_list">
+													<li>
+														<span
+                                                            class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+														<button type="button">삭제</button>
+													</li>
+													<li>
+														<span class="tit">업로드 파일명.jpg</span>
+														<button type="button">삭제</button>
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="btn_wrap">
+									<a href="#" class="cancel">취소</a>
+									<button type="submit" class="submit">게시물 작성
+										<!-- 수정 --></button>
+								</div>
 							</div>
 
 						</div>

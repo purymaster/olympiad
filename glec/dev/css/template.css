@@ -491,18 +491,24 @@ label {cursor:pointer;}
     .board_list table th, .board_list table td,.board_list table .notice th, .board_list table .notice td {padding:0;}
     .board_list table td.tit {padding-bottom:15px;}
     .board_list table td.tit a {font-weight:700;}
+    .board_list table td.reply.depth2 {padding-left:35px;}
+    .board_list table td.reply.depth3 {padding-left:45px;}
+    .board_list table td.reply.depth4 {padding-left:55px;}
+    .board_list table td.reply.depth5 {padding-left:65px;}
     .board_list table .notice td.tit a {font-size:16px;}
     .board_list table .notice .notice_icon {margin-bottom:15px;}
     .board_list table tr:not(.notice) th.num {display:none;}
     /*.board_list table td.date,.board_list table td.view {font-size:14px; font-family:inherit;}*/
     .board_list table td:before {margin-right:0;}
-    .board_list table td.name,.board_list table td.date,.board_list table td.view,.board_list table td.legion,.board_list table td.campus,.board_list table td.target {font-family:"Lato","Nanum Gothic"; font-size:12px;}
+    .board_list table td {font-family:"Lato","Nanum Gothic" !important; font-size:12px;}
     .board_list table td.name:before {content:"작성자 : ";}
     .board_list table td.date:before {content:"등록일 : ";}
     .board_list table td.view:before {content:"조회수 : ";}
-    .board_list table td.legion:before {content:"지역 : ";}
-    .board_list table td.campus:before {content:"캠퍼스명 : ";}
+    .board_list table td.legion,.board_list table td.campus {display:inline-block; width:auto; float:none;}
+    .board_list table td.legion:after {content:"|"; margin-left:4px;}
     .board_list table td.target:before {content:"대상 : ";}
+    .board_list table td.exam_date:before {content:"일시 : ";}
+    .board_list table td.spot:before {content:"장소 : ";}
     .board_list table td .btn {margin-top:10px;}
 }
 
@@ -1093,22 +1099,27 @@ footer {background:#505354; color:#fff;}
 .modal.search .info .txt strong {font-family:inherit; color:#f78920;}
 .modal.search .info .ex {font-size:12px;}
 .modal.search .info .warning:before {content:"*";}
-.modal.search .result_wrap {margin-bottom:40px;}
+.modal.search .result_wrap {margin-top:20px; margin-bottom:40px;}
 .modal.search .tab_menu {position:relative; margin-top:20px;}
 .modal.search .tab_menu:after {position:absolute; bottom:-1px; left:0; width:100%; height:3px; background:#333; content:"";}
 .modal.search .tab_menu ul {border-bottom:3px solid #333;}
 .modal.search .tab_menu ul li button {background:#fff; font-weight:700;}
 .modal.search .tab_menu ul li button:after {display:none;}
 .modal.search .tab_menu ul li.on button {border-color:#333; background:#333; color:#fff;}
+.modal.search .address_list tr {-webkit-transition:all 0.5s;transition:all 0.5s;}
+.modal.search .address_list tr:hover {background:#fff5e7;}
 .modal.search .address_list th {background:#f5f5f5; font-family:"Nanum Square"; font-size:18px; font-weight:400;}
 .modal.search .address_list td {padding:0 5px;}
 .modal.search .address_list td label {display:block; padding:15px 0; line-height:20px; -webkit-transition:all 0.5s; transition:all 0.5s;}
-.modal.search .address_list tr:hover label,.modal.search .address_list tr.on label {font-weight:700; color:#f78920;}
 .modal.search .pagenation {margin-top:20px;}
 .modal.search .pagenation .pager > a {width:30px; height:30px;}
 .modal.search .pagenation .pager > a:before,.modal.search .pagenation .pager > a:after {top:10px; width:6px; height:6px;}
+.modal.search .pagenation .pager .first:before {left:9px;}
+.modal.search .pagenation .pager .first:after {left:15px;}
 .modal.search .pagenation .pager .prev:before {left:12px;}
 .modal.search .pagenation .pager .next:before {left:10px;}
+.modal.search .pagenation .pager .last:before {left:9px;}
+.modal.search .pagenation .pager .last:after {left:15px;}
 .modal.search .pagenation ul {margin:0 12px;}
 .modal.search .pagenation ul li span,.modal.search .pagenation ul li a {width:30px; font-size:12px; line-height:30px;}
 
@@ -1123,7 +1134,6 @@ footer {background:#505354; color:#fff;}
 }
 
 /* 주소 */
-.modal.address .result_address {padding:10px 0; border-top:3px solid #333; border-bottom:1px solid #333;}
 .modal.address .result_address li {margin:5px 0;}
 .modal.address .result_address strong,.modal.address .result_address p {display:inline-block; font-size:14px; line-height:1.5em;}
 .modal.address .detail {margin-top:20px;}
@@ -1135,9 +1145,6 @@ footer {background:#505354; color:#fff;}
     .modal.address .result_address strong, .modal.address .result_address p {font-size:12px;}
     .modal.address .detail {margin-top:15px;}
 }
-
-/* 학교 */
-.modal.school .result_wrap {margin-top:20px;}
 
 /*=========================================================
 8. 메인 페이지 스타일
@@ -2524,7 +2531,7 @@ br.not {display:block !important;}
     .exam_list .list_search table th label {line-height:2em;}
     .exam_list .list_search table td {margin-bottom:15px;}
     .exam_list .list_search .select_form {width:100%;}
-    .exam_list .board_list table td.tit {padding-top:15px;}
+    .exam_list .board_list table td.tit {padding-top:0;}
     .exam_list .board_list table td.tit a {font-size:16px; font-family:"Nanum Square";}
     .exam_list .btn_wrap {margin-top:30px;}
     .exam_list .btn_wrap a {font-size:16px; line-height:40px;}

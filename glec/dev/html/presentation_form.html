@@ -1005,18 +1005,12 @@
 									<!-- //[D] 검색 전 안내문구 출력, 검색 후 삭제 -->
 
 									<!-- [D] 검색 후, 검색 결과 출력 -->
-									<div class="tab_menu">
-										<ul>
-											<li><button type="button">도로명주소(0건)</button></li>
-											<li><button type="button">지번주소(0건)</button></li>
-										</ul>
-									</div>
 
 									<!-- 검색 결과 -->
 									<div class="result_wrap">
 
-										<!-- 도로명 주소 -->
-										<div class="tab_view" style="display:none;">
+										<!-- 주소 -->
+										<div class="tab_view">
 											<table class="address_list">
 												<colgroup>
 													<col>
@@ -1024,7 +1018,7 @@
 												</colgroup>
 												<thead>
 													<tr>
-														<th scope="col">도로명주소</th>
+														<th scope="col">주소</th>
 														<th scope="col">우편번호</th>
 													</tr>
 												</thead>
@@ -1033,7 +1027,18 @@
 														<td class="addr">
 															<input type="radio" name="address_a" id="address_a01" class="hidden">
 															<label for="address_a01">
-																서울특별시 강남구 언주로 130길 18(논현동)
+																<div class="result_address">
+																	<ul class="txt_list type1">
+																		<li>
+																			<strong>도로명주소</strong>
+																			<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+																		</li>
+																		<li>
+																			<strong>지번주소</strong>
+																			<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+																		</li>
+																	</ul>
+																</div>
 															</label>
 														</td>
 														<td class="zip">
@@ -1046,7 +1051,18 @@
 														<td class="addr">
 															<input type="radio" name="address_a" id="address_a02" class="hidden">
 															<label for="address_a02">
-																긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+																<div class="result_address">
+																	<ul class="txt_list type1">
+																		<li>
+																			<strong>도로명주소</strong>
+																			<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+																		</li>
+																		<li>
+																			<strong>지번주소</strong>
+																			<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
+																		</li>
+																	</ul>
+																</div>
 															</label>
 														</td>
 														<td class="zip">
@@ -1058,56 +1074,12 @@
 												</tbody>
 											</table>
 										</div>
-										<!-- //도로명 주소 -->
-
-										<!-- 지번 주소 -->
-										<div class="tab_view" style="display:none;">
-											<table class="address_list">
-												<colgroup>
-													<col>
-													<col style="width:100px;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th scope="col">지번주소</th>
-														<th scope="col">우편번호</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="addr">
-															<input type="radio" name="address_b" id="address_b01" class="hidden">
-															<label for="address_b01">
-																서울특별시 강남구 논현동
-															</label>
-														</td>
-														<td class="zip">
-															<label for="address_b01">
-																99999
-															</label>
-														</td>
-													</tr>
-													<tr>
-														<td class="addr">
-															<input type="radio" name="address_b" id="address_b02" class="hidden">
-															<label for="address_b02">
-																긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-															</label>
-														</td>
-														<td class="zip">
-															<label for="address_a02">
-																99999
-															</label>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<!-- //지번 주소 -->
+										<!-- //주소 -->
 
 										<!-- 페이징 -->
 										<div class="pagenation">
 											<div class="pager">
+												<a class="first" href="#none">첫 페이지</a>
 												<a class="prev" href="#none">이전 페이지</a>
 												<ul>
 													<li>
@@ -1127,6 +1099,7 @@
 													</li>
 												</ul>
 												<a class="next" href="#none">다음 페이지</a>
+												<a class="last" href="#none">끝 페이지</a>
 											</div>
 										</div>
 										<!-- //페이징 -->
@@ -1135,26 +1108,6 @@
 									<!-- //검색 결과 -->
 
 									<!-- //[D] 검색 후, 검색 결과 출력 -->
-
-									<!-- [D] 검색 결과에서 선택한 주소를 출력 -->
-									<div class="result_address">
-										<ul class="txt_list type1">
-											<li>
-												<strong>도로명주소</strong>
-												<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
-											</li>
-											<li>
-												<strong>지번주소</strong>
-												<p>[06098] 서울특별시 강남구 언주로130길 14 (논현동)</p>
-											</li>
-										</ul>
-									</div>
-									<!-- //[D] 검색 결과에서 선택한 주소를 출력 -->
-
-									<div class="search_box detail">
-										<input type="text" title="상세주소 입력" placeholder="상세주소를 입력해주세요.">
-										<button type="button"><span>주소 입력</span></button>
-									</div>
 
 									<button type="button" class="close" data-move="close">팝업닫기</button>
 								</div>

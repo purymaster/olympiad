@@ -1075,7 +1075,7 @@ br.not {display:block !important;}
     .exam_list .list_search table th label {line-height:2em;}
     .exam_list .list_search table td {margin-bottom:15px;}
     .exam_list .list_search .select_form {width:100%;}
-    .exam_list .board_list table td.tit {padding-top:15px;}
+    .exam_list .board_list table td.tit {padding-top:0;}
     .exam_list .board_list table td.tit a {font-size:16px; font-family:"Nanum Square";}
     .exam_list .btn_wrap {margin-top:30px;}
     .exam_list .btn_wrap a {font-size:16px; line-height:40px;}

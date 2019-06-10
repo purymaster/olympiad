@@ -10,7 +10,9 @@
             "title" : "입학고사 신청",
             "subtitle" : "",
             "context" : {
-            "has_tab" : false
+            "has_tab" : true,
+            "mobile_line" : 2,
+            "tab_list" : ["입학절차","검사안내","입학고사 신청","설명회 신청","상담 신청"]
             }
             })
             <div class="sub_content">
@@ -21,12 +23,29 @@
                         <!-- bg 클래스 추가시 배경색 추가 -->
                         <div class="grid_container">
 
-                            <p class="main_tit">
-                                <strong>입학고사 신청이 완료되었습니다.</strong>
-                            </p>
-                            <p class="txt">
-                                신청내역은 문자로 보내드렸으며, 신청화면에서도 확인하실 수 있습니다.
-                            </p>
+                            <div class="subtab_menu upper">
+                                <!-- [D] 현재 페이지에 해당되는 li에 on 클래스 부여 -->
+                                <ul>
+                                    <li>
+                                        <a href="#">정기 입학고사</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">수시 입학고사</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">신청내역 확인</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sub_tit_wrap">
+                                <h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">
+                                    입학고사 신청이 완료되었습니다.
+                                </h3>
+                                <p class="subpage_txt">
+                                    신청내역은 문자로 보내드렸으며, 신청화면에서도 확인하실 수 있습니다.
+                                </p>
+                            </div>
 
                             <div class="result">
                                 <p class="result_tit">입학고사 신청내역</p>
@@ -39,8 +58,6 @@
                                                 <colgroup>
                                                     <col class="head">
                                                     <col>
-                                                    <col class="head">
-                                                    <col>
                                                 </colgroup>
                                                 <tbody>
                                                     <tr>
@@ -50,6 +67,8 @@
                                                         <td class="left">
                                                             고등학교 3학년
                                                         </td>
+                                                    </tr>
+                                                    <tr>
                                                         <th scope="row">
                                                             장소
                                                         </th>
@@ -64,6 +83,8 @@
                                                         <td class="left">
                                                             9999-99-99
                                                         </td>
+                                                    </tr>
+                                                    <tr>
                                                         <th scope="row">
                                                             시간
                                                         </th>
@@ -75,7 +96,7 @@
                                                         <th scope="row">
                                                             기타
                                                         </th>
-                                                        <td colspan="3" class="left">
+                                                        <td class="left">
                                                             기타내용은 삽입시 노출
                                                         </td>
                                                     </tr>

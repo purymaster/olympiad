@@ -193,6 +193,7 @@ label {cursor:pointer;}
 .input_form dl .option dt {float:left; width:100px;}
 .input_form dl .option dt label {display:inline-block; position:relative; font-size:16px; font-family:"Nanum Square"; font-weight:700; line-height:40px; display:table-cell; vertical-align:middle;}
 .input_form dl .option dd {float:left; width:calc(100% - 100px);}
+.input_form dl .option dd span {display:inline-block; font-size:14px; line-height:40px;}
 .input_form dl .option input[type="text"],.input_form dl .option input[type="email"],.input_form dl .option .select_form {width:100%;}
 .input_form dl .option .tel {max-width:400px; font-size:0;}
 .input_form dl .option .tel input[type="text"],.input_form dl .tel .select_form {width:calc(33.33% - 10px); vertical-align:top;}
@@ -291,18 +292,24 @@ label {cursor:pointer;}
     .board_list table th, .board_list table td,.board_list table .notice th, .board_list table .notice td {padding:0;}
     .board_list table td.tit {padding-bottom:15px;}
     .board_list table td.tit a {font-weight:700;}
+    .board_list table td.reply.depth2 {padding-left:35px;}
+    .board_list table td.reply.depth3 {padding-left:45px;}
+    .board_list table td.reply.depth4 {padding-left:55px;}
+    .board_list table td.reply.depth5 {padding-left:65px;}
     .board_list table .notice td.tit a {font-size:16px;}
     .board_list table .notice .notice_icon {margin-bottom:15px;}
     .board_list table tr:not(.notice) th.num {display:none;}
     /*.board_list table td.date,.board_list table td.view {font-size:14px; font-family:inherit;}*/
     .board_list table td:before {margin-right:0;}
-    .board_list table td.name,.board_list table td.date,.board_list table td.view,.board_list table td.legion,.board_list table td.campus,.board_list table td.target {font-family:"Lato","Nanum Gothic"; font-size:12px;}
+    .board_list table td {font-family:"Lato","Nanum Gothic" !important; font-size:12px;}
     .board_list table td.name:before {content:"작성자 : ";}
     .board_list table td.date:before {content:"등록일 : ";}
     .board_list table td.view:before {content:"조회수 : ";}
-    .board_list table td.legion:before {content:"지역 : ";}
-    .board_list table td.campus:before {content:"캠퍼스명 : ";}
+    .board_list table td.legion,.board_list table td.campus {display:inline-block; width:auto; float:none;}
+    .board_list table td.legion:after {content:"|"; margin-left:4px;}
     .board_list table td.target:before {content:"대상 : ";}
+    .board_list table td.exam_date:before {content:"일시 : ";}
+    .board_list table td.spot:before {content:"장소 : ";}
     .board_list table td .btn {margin-top:10px;}
 }
 

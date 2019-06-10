@@ -350,7 +350,7 @@ label {cursor:pointer;}
 .board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"]:checked + label:before {background-position-x:-145px;}
 .board_view .reply_wrap .input_wrap .txt_ctr button {float:right; width:100px; background:#008398; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:50px; color:#fff;}
 .board_view .list_link {margin:60px 0 50px; text-align:right;}
-.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-family:"Nanum Square"; font-size:16px; line-height:46px; color:#666; text-align:left; transition:all 0.5s;}
+.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:46px; color:#666; text-align:left; transition:all 0.5s;}
 .board_view .list_link a:hover {background:#00aeba; color:#fff;}
 .board_view .list_link a span {position:absolute; right:15px; width:20px; height:2px; background:#00aeba; transition:all 0.5s;}
 .board_view .list_link a span:nth-child(1) {top:16px;}
