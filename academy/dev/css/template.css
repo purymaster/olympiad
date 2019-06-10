@@ -1166,6 +1166,8 @@ footer {background:#505354; color:#fff;}
 .modal.search .tab_menu ul li button {background:#fff; font-weight:700;}
 .modal.search .tab_menu ul li button:after {display:none;}
 .modal.search .tab_menu ul li.on button {border-color:#333; background:#333; color:#fff;}
+.modal.search .address_list tr {-webkit-transition:all 0.5s;transition:all 0.5s;}
+.modal.search .address_list tr:hover {background:#e6eff1;}
 .modal.search .address_list th {background:#f5f5f5; font-family:"Nanum Square"; font-size:18px; font-weight:400;}
 .modal.search .address_list td {padding:0 5px;}
 .modal.search .address_list td label {display:block; padding:15px 0; line-height:20px; -webkit-transition:all 0.5s; transition:all 0.5s;}
