@@ -225,14 +225,12 @@
     </div>
 
     <!-- fullpage.js -->
-    <!-- scrollOverflow 기능 사용시, 유료 라이센스 필요 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
+    <script src="../js/jquery.fullPage.min.js"></script>
     <script>
         $(function () {
             $('#fullpage').fullpage({
-                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-                //scrollOverflow: true,
+                // licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                scrollOverflow: true,
                 scrollBar: true,
                 anchors: ['Philosophy', 'Business', 'Research', 'Partner'],
                 navigationTooltips: ['교육철학', '사업영역', '연구개발', '가맹사업'],
@@ -246,19 +244,6 @@
             });
         });
     </script>
-
-    <!-- Masonry -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script>
-        $(window).load(function () {
-            $('.grid').masonry({
-                itemSelector: '.grid-item',
-                percentPosition: true
-            });
-        });
-    </script> -->
-
-
 
 </body>
 
