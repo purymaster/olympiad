@@ -11,7 +11,7 @@ footer {background:#333; color:#fff;}
 .footer_upper .bottom_menu li:last-child:after {display:none;}
 .footer_upper .bottom_menu li a {display:inline-block; font-size:14px; line-height:20px; color:inherit;}
 .footer_upper .bottom_menu li a strong {color:#00aeba;}
-.footer_upper .sns {overflow:hidden; float:right; margin:0 -5px; margin-top:16px;}
+.footer_upper .sns {overflow:hidden; float:right; margin:0 -5px; margin-top:16px; margin-left:30px;}
 .footer_upper .sns li {float:left; margin:0 5px;}
 .footer_upper .sns li a {display:block; background-image:url(../img/sprite/sprite.png); background-size:500px 500px; text-indent:-9999px;}
 .footer_upper .sns .blog a {width:15px; height:18px; background-position:-157px -123px;}
@@ -33,11 +33,15 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 .copyright {margin-top:15px; font-size:12px; opacity:0.5; text-transform:uppercase;}
 .copyright span {color:#00aeba;}
 
+@media (max-width:1366px) {
+    .footer_upper .bottom_menu li:after {padding:0 10px;}
+}
+
 @media (max-width:1024px) {
     .footer_upper .bottom_menu {font-size:0;}
     .footer_upper .bottom_menu li {display:inline-block; float:none;}
     .footer_upper .bottom_menu li a {font-size:12px;}
-    .footer_upper .bottom_menu li:after {padding:0 10px; font-size:12px;}
+    .footer_upper .bottom_menu li:after {font-size:12px;}
     .footer_lower {padding:30px 0;}
     .footer_lower .select_form {position:relative; margin-bottom:15px;}
 }

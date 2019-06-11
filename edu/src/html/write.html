@@ -1,0 +1,180 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "커뮤니티",
+            "sub_txt" : "Community",
+            "context" : {
+            "has_tab" : false
+            }
+            })
+            <div class="sub_content">
+                <div class="grid_container">
+
+                    <!-- 서브 페이지 컨텐츠 시작 -->
+                    <h3 data-animation="fadeInUp" data-delay="6" class="subpage_tit">게시물 작성
+                        <!--  수정 -->
+                    </h3>
+
+                    <div class="board_write">
+                        <div class="cmt">
+                            <span class="necessary">
+                                필수입력사항
+                            </span>
+                            필수입력사항
+                        </div>
+                        <table>
+                            <colgroup>
+                                <col style="width:12%;">
+                                <col>
+                                <col style="width:15%;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="write_01">
+                                            작성자
+                                            <span class="necessary">필수입력사항</span>
+                                        </label>
+                                    </th>
+                                    <td colspan="3">
+                                        <!-- [D] 비로그인 작성자 -->
+                                        <input type="text" id="write_01">
+                                        <!-- [D] 로그인 작성자 -->
+                                        <!-- <span class="txt">작성자이름</span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="write_02">
+                                            비밀번호
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="password" id="write_02">
+                                    </td>
+                                    <th scope="row">
+                                        <label for="write_03">
+                                            비밀번호 확인
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="password" id="write_03">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="write_04">
+                                            글제목
+                                            <span class="necessary">필수입력사항</span>
+                                        </label>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" id="write_04">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="write_05">
+                                            내용
+                                        </label>
+                                    </th>
+                                    <td colspan="3">
+                                        <!-- [D] 에디터 영역 -->
+                                        <div style="background:#999; height:300px; color:#fff;">
+                                            에디터 영역
+                                        </div>
+                                        <!-- //[D] 에디터 영역 -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="write_06">
+                                            PDF첨부
+                                        </label>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="file" name="" id="write_06">
+                                        <label for="write_06">파일 추가</label>
+                                        <ul class="file_list">
+                                            <li>
+                                                <span
+                                                    class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                                <button type="button">삭제</button>
+                                            </li>
+                                            <li>
+                                                <span class="tit">업로드 파일명.jpg</span>
+                                                <button type="button">삭제</button>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="write_07">
+                                            썸네일이미지
+                                        </label>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="file" name="" id="write_07">
+                                        <label for="write_07">파일 추가</label>
+                                        <ul class="file_list">
+                                            <li>
+                                                <span
+                                                    class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                                <button type="button">삭제</button>
+                                            </li>
+                                            <li>
+                                                <span class="tit">업로드 파일명.jpg</span>
+                                                <button type="button">삭제</button>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="write_08">
+                                            첨부파일
+                                        </label>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="file" name="" id="write_08">
+                                        <label for="write_08">파일 추가</label>
+                                        <ul class="file_list">
+                                            <li>
+                                                <span
+                                                    class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                                <button type="button">삭제</button>
+                                            </li>
+                                            <li>
+                                                <span class="tit">업로드 파일명.jpg</span>
+                                                <button type="button">삭제</button>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_wrap">
+                            <a href="#" class="cancel">취소</a>
+                            <button type="submit" class="submit">게시물 작성
+                                <!-- 수정 --></button>
+                        </div>
+                    </div>
+
+                    <!-- 서브 페이지 컨텐츠 끝 -->
+                </div>
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>

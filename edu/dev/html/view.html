@@ -192,6 +192,13 @@
 							</div>
 						</div>
 
+						<!-- [D] 권한 가진 회원에게만 노출 -->
+						<div class="btn_wrap article_ctr">
+							<a href="#" class="cancel">삭제</a>
+							<a href="#" class="modify">수정</a>
+						</div>
+						<!-- //[D] 권한 가진 회원에게만 노출 -->
+
 						<div class="reply_wrap">
 							<p class="total">
 								총 <strong>999,999</strong>개의 댓글이 있습니다.
@@ -283,29 +290,6 @@
 										<!-- 2뎁스 일반 댓글 -->
 										<div class="depth_2">
 
-											<!-- 2뎁스 댓글 입력 -->
-											<div class="input_wrap">
-												<strong class="hidden">작성자 정보</strong>
-												<ul class="author_info">
-													<li>
-														<input type="text" title="작성자 이름" placeholder="이름">
-													</li>
-													<li>
-														<input type="password" title="비밀번호" placeholder="비밀번호">
-													</li>
-												</ul>
-												<div class="author_txt">
-													<textarea cols="30" rows="10" placeholder="댓글을 입력해주세요."></textarea>
-													<!-- [D] 체크박스 id와 label의 for 속성은 반드시 매치, 값은 일정규칙에 따라 부여 필요 -->
-													<div class="txt_ctr">
-														<input type="checkbox" id="reply_001">
-														<label for="reply_001">비밀댓글</label>
-														<button type="submit"><span>등록</span></button>
-													</div>
-												</div>
-											</div>
-											<!-- //2뎁스 댓글 입력 -->
-
 											<!-- 2뎁스 댓글 목록 -->
 											<ul class="list">
 
@@ -333,6 +317,30 @@
                                                                         <!-- 숨김해제 --></span></button>
 															</li>
 														</ul>
+
+														<!-- 2뎁스 댓글 입력 -->
+														<div class="input_wrap">
+															<strong class="hidden">작성자 정보</strong>
+															<ul class="author_info">
+																<li>
+																	<input type="text" title="작성자 이름" placeholder="이름">
+																</li>
+																<li>
+																	<input type="password" title="비밀번호" placeholder="비밀번호">
+																</li>
+															</ul>
+															<div class="author_txt">
+																<textarea cols="30" rows="10" placeholder="댓글을 입력해주세요."></textarea>
+																<!-- [D] 체크박스 id와 label의 for 속성은 반드시 매치, 값은 일정규칙에 따라 부여 필요 -->
+																<div class="txt_ctr">
+																	<input type="checkbox" id="reply_001">
+																	<label for="reply_001">비밀댓글</label>
+																	<button type="submit"><span>등록</span></button>
+																</div>
+															</div>
+														</div>
+														<!-- //2뎁스 댓글 입력 -->
+
 													</div>
 												</li>
 												<!-- //2뎁스 일반 댓글 -->
@@ -537,6 +545,7 @@
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
 						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
 					</ul>
 					<ul class="sns">
 						<li class="blog"><a href="#">블로그</a></li>

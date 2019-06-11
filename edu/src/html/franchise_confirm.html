@@ -1,0 +1,44 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap confirm_page">
+            @@include('../inc/sub_header.html',{
+            "type" : "type4",
+            "title" : "가맹안내",
+            "sub_txt" : "Franchise",
+            "context" : {
+            "has_tab" : true,
+            "mobile_line" : 3,
+            "tab_list" : ["올림피아드 가맹안내","가맹 및 개원 절차","개원 및 운영지원","가맹사업 브랜드 소개","가맹상담 신청"]
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 컨텐츠 시작 -->
+                <div class="grid_container">
+
+                    <div class="sub_cont_wrap">
+                        <p class="tit">
+                            상담 신청이 접수되었습니다.
+                        </p>
+                        <p class="msg">
+                            문의하신 내용은 담당 직원이 확인하고 2~3일 안으로 연락드리겠습니다.
+                        </p>
+                        <div class="btn_wrap">
+                            <a href="#">메인으로</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 서브 페이지 컨텐츠 끝 -->
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+    </div>
+
+</body>
+
+</html>
