@@ -96,20 +96,19 @@
                                 <tr>
                                     <th scope="row">
                                         <label for="write_06">
-                                            PDF첨부
+                                            PDF뷰어
                                         </label>
                                     </th>
                                     <td colspan="3">
-                                        <input type="file" name="" id="write_06">
-                                        <label for="write_06">파일 추가</label>
+                                        <input type="text" class="file_name" readonly>
+                                        <label for="write_06">
+                                            찾아보기
+                                            <input type="file" name="" id="write_06">
+                                        </label>
                                         <ul class="file_list">
                                             <li>
                                                 <span
                                                     class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
-                                                <button type="button">삭제</button>
-                                            </li>
-                                            <li>
-                                                <span class="tit">업로드 파일명.jpg</span>
                                                 <button type="button">삭제</button>
                                             </li>
                                         </ul>
@@ -118,20 +117,19 @@
                                 <tr>
                                     <th scope="row">
                                         <label for="write_07">
-                                            썸네일이미지
+                                            썸네일 이미지
                                         </label>
                                     </th>
                                     <td colspan="3">
-                                        <input type="file" name="" id="write_07">
-                                        <label for="write_07">파일 추가</label>
+                                        <input type="text" class="file_name" readonly>
+                                        <label for="write_07">
+                                            찾아보기
+                                            <input type="file" name="" id="write_07">
+                                        </label>
                                         <ul class="file_list">
                                             <li>
                                                 <span
                                                     class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
-                                                <button type="button">삭제</button>
-                                            </li>
-                                            <li>
-                                                <span class="tit">업로드 파일명.jpg</span>
                                                 <button type="button">삭제</button>
                                             </li>
                                         </ul>
@@ -139,13 +137,31 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <label for="write_08">
-                                            첨부파일
+                                        <label for="file_000">
+                                            파일첨부
                                         </label>
                                     </th>
                                     <td colspan="3">
-                                        <input type="file" name="" id="write_08">
-                                        <label for="write_08">파일 추가</label>
+                                        <ul class="multi_upload">
+                                            <li>
+                                                <input type="text" class="file_name" readonly>
+                                                <label for="file_000">
+                                                    찾아보기
+                                                    <input type="file" name="" id="file_000">
+                                                </label>
+                                                <button type="button" class="add">첨부파일 업로드폼 추가</button>
+                                            </li>
+                                            <!-- [D] 반복 구조, label과 id 매칭 필요 -->
+                                            <li>
+                                                <input type="text" class="file_name" readonly>
+                                                <label for="file_001">
+                                                    찾아보기
+                                                    <input type="file" name="" id="file_001">
+                                                </label>
+                                                <button type="button" class="del">첨부파일 업로드폼 삭제</button>
+                                            </li>
+                                            <!-- //[D] 반복 구조, label과 id 매칭 필요 -->
+                                        </ul>
                                         <ul class="file_list">
                                             <li>
                                                 <span
