@@ -1,0 +1,207 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap">
+            @@include('../inc/sub_header.html',{
+            "type" : "type1",
+            "title" : "게시물 리스트",
+            "subtitle" : "나는야 게시물",
+            "context" : {
+            "depth1_current" : "올림피아드 소개",
+            "depth1_sublist" : ["올림피아드 소개","초/중등부","영재센터","고등부","커뮤니티","예약&상담"],
+            "depth2_current" : "학원소개",
+            "depth2_sublist" : ["학원소개","기업수상","명예의 전당","캠퍼스 안내"],
+            "depth3_current" : false
+            }
+            })
+            <div class="sub_content">
+
+                <!-- 서브 페이지 내용 -->
+                <div class="sub_lower_wrap">
+                    <div class="grid_container inner">
+
+                        <!-- 스태틱 페이지 컨텐츠 영역 -->
+                        <div class="sub_cont_wrap">
+
+                            <div class="board_write">
+                                <div class="cmt">
+                                    <span class="necessary">
+                                        필수입력사항
+                                    </span>
+                                    필수입력사항
+                                </div>
+                                <table>
+                                    <colgroup>
+                                        <col style="width:12%;">
+                                        <col>
+                                        <col style="width:15%;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="write_01">
+                                                    작성자
+                                                    <span class="necessary">필수입력사항</span>
+                                                </label>
+                                            </th>
+                                            <td colspan="3">
+                                                <!-- [D] 비로그인 작성자 -->
+                                                <input type="text" id="write_01">
+                                                <!-- [D] 로그인 작성자 -->
+                                                <!-- <span class="txt">작성자이름</span> -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="write_02">
+                                                    비밀번호
+                                                </label>
+                                            </th>
+                                            <td>
+                                                <input type="password" id="write_02">
+                                            </td>
+                                            <th scope="row">
+                                                <label for="write_03">
+                                                    비밀번호 확인
+                                                </label>
+                                            </th>
+                                            <td>
+                                                <input type="password" id="write_03">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="write_04">
+                                                    글제목
+                                                    <span class="necessary">필수입력사항</span>
+                                                </label>
+                                            </th>
+                                            <td colspan="3">
+                                                <input type="text" id="write_04">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="write_05">
+                                                    내용
+                                                </label>
+                                            </th>
+                                            <td colspan="3">
+                                                <!-- [D] 에디터 영역 -->
+                                                <div style="background:#999; height:300px; color:#fff;">
+                                                    에디터 영역
+                                                </div>
+                                                <!-- //[D] 에디터 영역 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="write_06">
+                                                    PDF뷰어
+                                                </label>
+                                            </th>
+                                            <td colspan="3">
+                                                <input type="text" class="file_name" readonly>
+                                                <label for="write_06">
+                                                    찾아보기
+                                                    <input type="file" name="" id="write_06">
+                                                </label>
+                                                <ul class="file_list">
+                                                    <li>
+                                                        <span
+                                                            class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                                        <button type="button">삭제</button>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="write_07">
+                                                    썸네일 이미지
+                                                </label>
+                                            </th>
+                                            <td colspan="3">
+                                                <input type="text" class="file_name" readonly>
+                                                <label for="write_07">
+                                                    찾아보기
+                                                    <input type="file" name="" id="write_07">
+                                                </label>
+                                                <ul class="file_list">
+                                                    <li>
+                                                        <span
+                                                            class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                                        <button type="button">삭제</button>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label for="file_000">
+                                                    파일첨부
+                                                </label>
+                                            </th>
+                                            <td colspan="3">
+                                                <ul class="multi_upload">
+                                                    <li>
+                                                        <input type="text" class="file_name" readonly>
+                                                        <label for="file_000">
+                                                            찾아보기
+                                                            <input type="file" name="" id="file_000">
+                                                        </label>
+                                                        <button type="button" class="add">첨부파일 업로드폼 추가</button>
+                                                    </li>
+                                                    <!-- [D] 반복 구조, label과 id 매칭 필요 -->
+                                                    <li>
+                                                        <input type="text" class="file_name" readonly>
+                                                        <label for="file_001">
+                                                            찾아보기
+                                                            <input type="file" name="" id="file_001">
+                                                        </label>
+                                                        <button type="button" class="del">첨부파일 업로드폼 삭제</button>
+                                                    </li>
+                                                    <!-- //[D] 반복 구조, label과 id 매칭 필요 -->
+                                                </ul>
+                                                <ul class="file_list">
+                                                    <li>
+                                                        <span
+                                                            class="tit">긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+                                                        <button type="button">삭제</button>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">업로드 파일명.jpg</span>
+                                                        <button type="button">삭제</button>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_wrap">
+                                    <a href="#" class="cancel">취소</a>
+                                    <button type="submit" class="submit">게시물 작성
+                                        <!-- 수정 --></button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- //스태틱 페이지 컨텐츠 영역 -->
+
+                    </div>
+                </div>
+                <!-- //서브 페이지 내용 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>

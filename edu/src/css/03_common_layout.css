@@ -38,7 +38,7 @@
 }
 
 /* 입력폼 초기화 */
-input[type="text"],input[type="email"],input[type="number"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],textarea {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; height:38px; margin:0; padding:0; padding:0 15px; border:none; border:1px solid #cdcdcd; border-radius:0; background:none; background:#fff; font-family:inherit; font-size:14px; line-height:38px; color:#666; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box;}
+input[type="text"],input[type="email"],input[type="number"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],textarea {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; height:40px; margin:0; padding:0; padding:0 15px; border:none; border:1px solid #cdcdcd; border-radius:0; background:none; background:#fff; font-family:inherit; font-size:14px; line-height:40px; color:#666; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box;}
 textarea {line-height:1.5em;}
 
 /* 셀렉트박스 */
@@ -72,7 +72,7 @@ textarea {line-height:1.5em;}
 
 /* 검색 */
 .search_wrap {display:inline-block; border:1px solid #cdcdcd; font-size:0;}
-.search_wrap input[type="text"] {min-width:190px; padding-right:0; border:none;}
+.search_wrap input[type="text"] {min-width:190px; height:38px; line-height:38px; padding-right:0; border:none;}
 .search_wrap button {position:relative; width:44px; height:38px; background:#fff; text-indent:-9999px; vertical-align:top;}
 .search_wrap button:before,.search_wrap button:after {position:absolute; content:"";}
 .search_wrap button:before {top:25px; left:22px; width:10px; height:2px; background:#008398; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg);}
@@ -107,7 +107,6 @@ label {cursor:pointer;}
 .form_table table th label .must:after {position:absolute; top:-5px; right:-7px; font-weight:700; color:#00aeba; text-indent:0; content:"*";}
 .form_table table td {padding:8px 0; padding-left:20px; font-size:0;}
 .form_table table td .select_form,.form_table table td input[type="text"],.form_table table td input[type="password"] {margin-right:10px;}
-.form_table table td .select_form button {line-height:36px;}
 .form_table table td .label {display:inline-block; margin-right:30px; font-size:16px; line-height:38px; color:#008398;}
 .form_table table td .check_form,.form_table table td .radio_form {display:inline-block; vertical-align:top;}
 
@@ -441,7 +440,7 @@ label {cursor:pointer;}
 .board_write td .txt {display:block; font-size:14px; line-height:20px;}
 .board_write td .multi_upload {margin:-5px 0;}
 .board_write td .multi_upload li {margin:5px 0;}
-.board_write td .multi_upload li button {display:inline-block; position:relative; width:40px; height:38px; margin-left:10px; background:#fff; border:1px solid #00687f; transition:all 0.5s;}
+.board_write td .multi_upload li button {display:inline-block; position:relative; width:40px; height:40px; margin-left:10px; background:#fff; border:1px solid #00687f; transition:all 0.5s;}
 .board_write td .multi_upload li button:hover {background:#00687f;}
 .board_write td .multi_upload li button:before,.board_write td .multi_upload li button:after {content:""; width:16px; height:2px; position:absolute; left:50%; top:50%; margin-left:-8px; margin-top:-1px; background:#00687f; transition:all 0.5s;}
 .board_write td .multi_upload li .add:before {transform:rotate(90deg);}
@@ -449,7 +448,7 @@ label {cursor:pointer;}
 .board_write td input[type="text"],.board_write td input[type="password"] {width:100%;}
 .board_write td input[type="file"] {position:absolute; width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
 .board_write td input[type="text"].file_name {display:inline-block; width:calc(100% - 190px); vertical-align:top;}
-.board_write td label {display:inline-block; width:130px; border:1px solid #00687f; font-family:"Nanum Square"; font-size:16px; font-weight:700; font-weight:700; line-height:36px; color:#00687f; text-align:center; transition:all 0.5s; margin-left:10px; vertical-align:top;}
+.board_write td label {display:inline-block; width:130px; border:1px solid #00687f; font-family:"Nanum Square"; font-size:16px; font-weight:700; font-weight:700; line-height:38px; color:#00687f; text-align:center; transition:all 0.5s; margin-left:10px; vertical-align:top;}
 .board_write td label:hover {background:#00687f; color:#fff;}
 .board_write td .file_list {padding:10px 0; vertical-align:top;}
 .board_write td .file_list li {display:inline-block; overflow:hidden; position:relative; margin-right:30px; padding-right:20px; font-size:14px; line-height:20px; transition:all 0.5s;}
