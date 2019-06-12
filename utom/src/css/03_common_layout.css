@@ -305,12 +305,20 @@ label {cursor:pointer;}
 .board_list table tbody tr:first-child th,.board_list table tbody tr:first-child td {border-color:#333;}
 .board_list table tbody tr:hover th,.board_list table tbody tr:hover td {background:#f5f5f5;}
 .board_list table td {text-align:center;}
-.board_list table td.tit {text-align:left;}
-.board_list table td.tit a {font-size:14px; line-height:1.5em; color:#333;}
+.board_list table td.tit {position:relative; text-align:left;}
+.board_list table td.tit a {position:relative; font-size:14px; line-height:1.5em; color:#333;}
 .board_list table td.tit a strong {color:#00687f;}
 .board_list table td.tit a:hover {color:#008398;}
+.board_list table td.tit .secret {display:block; padding-left:20px;}
+.board_list table td.tit .secret:before {position:absolute; top:3px; left:0; width:11px; height:16px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-164px -475px; content:"";}
 .board_list table td.tit .new {display:inline-block; width:30px; font-size:12px; color:#e7833f; text-transform:uppercase;}
 .board_list table td.tit .file {display:inline-block; position:relative; top:2px; width:21px; height:17px; background-image:url(../img/sprite/sprite.png); background-position:-5px -475px; background-size:500px; text-indent:-9999px;}
+.board_list table td.reply.depth1 {padding-left:25px;}
+.board_list table td.reply.depth2 {padding-left:50px;}
+.board_list table td.reply.depth3 {padding-left:75px;}
+.board_list table td.reply.depth4 {padding-left:100px;}
+.board_list table td.reply.depth5 {padding-left:125px;}
+.board_list table td.reply:before {position:absolute; width:16px; height:18px; margin-left:-20px; background-image:url(../img/sprite/sprite.png); background-position:-203px -475px; background-size:500px; text-indent:-9999px; content:"답글";}
 .board_list table td.name {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .board_list table td.date,.board_list table td.view {font-family:"Lato"; font-size:12px; color:#646f72;}
 .board_list table .notice th,.board_list table .notice td {padding:8px 5px;}
@@ -531,7 +539,7 @@ label {cursor:pointer;}
 .board_view .info .txt_info dd {overflow:hidden; max-width:200px; margin-right:16px; font-size:16px; color:#666; text-overflow:ellipsis; white-space:nowrap;}
 .board_view .content_wrap {border-top:1px solid #333; border-bottom:1px solid #333;}
 .board_view .content {padding:50px 30px; font-size:14px; line-height:2em; color:#666;}
-.board_view .content img,.board_view .content iframe {display:block; max-width:100%; margin:0 auto; margin-bottom:1em;}
+.board_view .content img {display:block; margin:0 auto; margin-bottom:1em;}
 .board_view .upload_file {border-top:1px solid #cdcdcd;}
 .board_view .upload_file ul {overflow:hidden; padding:15px 20px;}
 .board_view .upload_file ul li {overflow:hidden; float:left; position:relative; max-width:500px; margin-right:20px; padding-left:28px; text-overflow:ellipsis; white-space:nowrap;}
@@ -555,7 +563,7 @@ label {cursor:pointer;}
 .board_view .reply_wrap .txt_wrap .date {margin-top:7px; color:#666;}
 .board_view .reply_wrap .ctr {position:absolute; right:0; bottom:10px; font-size:0;}
 .board_view .reply_wrap .ctr li {display:inline-block; margin-left:5px;}
-.board_view .reply_wrap .ctr button {padding:0 14px; border:1px solid #ccc; background:#fff; font-size:14px; line-height:28px; color:#888; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.board_view .reply_wrap .ctr button {padding:0 14px; border:1px solid #ccc; background:#fff; font-size:14px; line-height:28px; color:#888; transition:all 0.5s;}
 .board_view .reply_wrap .ctr button:hover {border-color:#42adaa; color:#42adaa;}
 .board_view .reply_wrap .ctr button strong {margin-left:5px; font-weight:400; color:#42adaa;}
 .board_view .reply_wrap .input_wrap {margin:30px 0;}
@@ -572,8 +580,10 @@ label {cursor:pointer;}
 .board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"]:checked + label {color:#42adaa;}
 .board_view .reply_wrap .input_wrap .txt_ctr input[type="checkbox"]:checked + label:before {background-position-x:-145px;}
 .board_view .reply_wrap .input_wrap .txt_ctr button {float:right; width:100px; background:#008398; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:50px; color:#fff;}
+.board_view .article_ctr {margin-top:50px; text-align:center;}
+.board_view .article_ctr a,.board_view .article_ctr button {min-width:180px; margin:0 2px; padding:0 15px; background:#555; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; transition:all 0.5s;}
 .board_view .list_link {margin:60px 0 50px; text-align:right;}
-.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-family:"Nanum Square"; font-size:16px; font-weight:700;line-height:46px; color:#666; text-align:left; transition:all 0.5s;}
+.board_view .list_link a {position:relative; width:96px; padding:0 18px; border:1px solid #00aeba; background:#fff; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:46px; color:#666; text-align:left; transition:all 0.5s;}
 .board_view .list_link a:hover {background:#00aeba; color:#fff;}
 .board_view .list_link a span {position:absolute; right:15px; width:20px; height:2px; background:#00aeba; transition:all 0.5s;}
 .board_view .list_link a span:nth-child(1) {top:16px;}
@@ -610,6 +620,8 @@ label {cursor:pointer;}
     .board_view .reply_wrap .depth_2 > .list > li:before {top:15px; left:-20px; width:15px; height:15px;}
     .board_view .reply_wrap .input_wrap .txt_ctr label {margin-left:15px; font-size:14px; line-height:40px;}
     .board_view .reply_wrap .input_wrap .txt_ctr button {width:80px; font-size:14px; line-height:40px;}
+    .board_view .article_ctr {margin-top:30px;}
+    .board_view .article_ctr a,.board_view .article_ctr button {min-width:150px; font-size:16px; line-height:40px;} 
     .board_view .list_link {margin:30px 0;}
     .board_view .list_link a {font-size:14px; line-height:40px;}
     .board_view .paging_wrap dd {padding-left:45px; font-size:14px;}
@@ -630,10 +642,75 @@ label {cursor:pointer;}
     .board_view .reply_wrap .input_wrap .author_info li {float:none;}
     .board_view .reply_wrap .input_wrap .author_info li input {width:100%; margin:0; margin-bottom:5px;}
     .board_view .reply_wrap .input_wrap .author_txt {margin:0;}
+    .board_view .article_ctr a,.board_view .article_ctr button {width:100%; margin:5px 0; font-size:14px;}
     .board_view .list_link {text-align:center;}
     .board_view .list_link a {width:100%; text-align:center;}
     .board_view .list_link a span {display:none;}
     .board_view .paging_wrap dd {font-size:12px;}
+}
+
+/* 게시물 작성 페이지 */
+.board_write .necessary {display:inline-block; position:relative; width:1px; font-size:0; vertical-align:top;}
+.board_write .necessary:before {position:absolute; top:0; left:0; font-size:18px; line-height:12px; color:red; text-indent:0; content:"*";}
+.board_write .cmt {margin-top:30px; font-size:12px; text-align:right;}
+.board_write .cmt .necessary:before {top:3px; left:-8px;}
+.board_write table {border-top:3px solid #333;}
+.board_write th,.board_write td {padding:10px 20px; font-size:0; text-align:left;}
+.board_write th .necessary {top:8px;}
+.board_write label {display:inline-block; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:40px; white-space:nowrap;}
+.board_write td .txt {display:block; font-size:14px; line-height:20px;}
+.board_write td input[type="text"],.board_write td input[type="password"] {width:100%;}
+.board_write td input[type="file"] {position:absolute; width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
+.board_write td input[type="file"] + label {display:inline-block; width:130px; border:1px solid #00687f; font-family:"Nanum Square"; font-size:16px; font-weight:700; font-weight:700; line-height:38px; color:#00687f; text-align:center; transition:all 0.5s;}
+.board_write td input[type="file"] + label:hover {background:#00687f; color:#fff;}
+.board_write td .file_list {display:inline-block; width:calc(100% - 130px); padding:10px 0 10px 30px; vertical-align:top;}
+.board_write td .file_list li {display:inline-block; overflow:hidden; position:relative; margin-right:30px; padding-right:20px; font-size:14px; line-height:20px; transition:all 0.5s;}
+.board_write td .file_list li:hover {color:#00687f;}
+.board_write td .file_list li .tit {overflow:hidden; float:left; max-width:200px; text-overflow:ellipsis; white-space:nowrap;}
+.board_write td .file_list li button {overflow:hidden; position:absolute; top:4px; right:0; width:12px; height:12px; text-indent:-9999px;}
+.board_write td .file_list li button:before,.board_write td .file_list li button:after {position:absolute; top:-2px; left:50%; width:2px; height:16px; margin-left:-1px; background:#333; content:"";}
+.board_write td .file_list li button:before {transform:rotate(-45deg);}
+.board_write td .file_list li button:after {transform:rotate(45deg);}
+.board_write .btn_wrap {padding-top:50px; text-align:center;}
+.board_write .btn_wrap a,.board_write .btn_wrap button {min-width:180px; margin:0 2px; padding:0 15px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; transition:all 0.5s;}
+.board_write .btn_wrap .cancel {background:#555;}
+.board_write .btn_wrap .submit {background:#00687f;}
+
+@media (max-width:1024px) {
+    .board_write table,
+    .board_write tbody,
+    .board_write tr,
+    .board_write th,
+    .board_write td {display:block; float:left; clear:both; width:100%; border:none; text-align:left; padding:0;}
+    .board_write th,.board_write td {margin-bottom:15px;}
+    .board_write label {line-height:1.5em;}
+    .board_write th .necessary {top:3px;}
+    .board_write td input[type="file"] + label {font-size:14px; width:80px; line-height:28px;}
+    .board_write td .file_list {width:calc(100% - 80px); padding:5px 0 5px 15px;}
+    .board_write td .file_list li {margin-right:15px; font-size:12px;}
+    .board_write .btn_wrap {clear:both; padding-top:30px;}
+    .board_write .btn_wrap a,.board_write .btn_wrap button {min-width:150px; font-size:16px; line-height:40px;}
+}
+
+@media (max-width:599px) {
+    .board_write label {font-size:14px;}
+    .board_write td input[type="file"] + label {font-size:12px; width:60px;}
+    .board_write td .file_list {width:calc(100% - 60px); padding-left:10px;}
+    .board_write td .file_list li {margin-right:10px;}
+    .board_write .btn_wrap a,.board_write .btn_wrap button {width:100%; margin:5px 0; font-size:14px;}
+}
+
+/* 게시물 작성 버튼 */
+.board_ctr {margin-top:50px; text-align:center;}
+.board_ctr a {min-width:180px; margin:0 2px; padding:0 15px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; transition:all 0.5s; background:#00687f;}
+
+@media (max-width:1024px) {
+    .board_ctr {margin-top:30px;}
+    .board_ctr a {min-width:150px; font-size:16px; line-height:40px;}
+}
+
+@media (max-width:599px) {
+    .board_ctr a {width:100%; margin:5px 0; font-size:14px;}
 }
 
 /* 페이징 */

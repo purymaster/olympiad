@@ -662,11 +662,19 @@ label {cursor:pointer;}
 .board_write th .necessary {top:8px;}
 .board_write label {display:inline-block; font-family:"Nanum Square"; font-size:16px; font-weight:700; line-height:40px; white-space:nowrap;}
 .board_write td .txt {display:block; font-size:14px; line-height:20px;}
+.board_write td .multi_upload {margin:-5px 0;}
+.board_write td .multi_upload li {margin:5px 0;}
+.board_write td .multi_upload li button {display:inline-block; position:relative; width:40px; height:38px; margin-left:10px; background:#fff; border:1px solid #00687f; transition:all 0.5s;}
+.board_write td .multi_upload li button:hover {background:#00687f;}
+.board_write td .multi_upload li button:before,.board_write td .multi_upload li button:after {content:""; width:16px; height:2px; position:absolute; left:50%; top:50%; margin-left:-8px; margin-top:-1px; background:#00687f; transition:all 0.5s;}
+.board_write td .multi_upload li .add:before {transform:rotate(90deg);}
+.board_write td .multi_upload li button:hover:before,.board_write td .multi_upload li button:hover:after {background:#fff;}
 .board_write td input[type="text"],.board_write td input[type="password"] {width:100%;}
 .board_write td input[type="file"] {position:absolute; width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
-.board_write td input[type="file"] + label {display:inline-block; width:130px; border:1px solid #00687f; font-family:"Nanum Square"; font-size:16px; font-weight:700; font-weight:700; line-height:38px; color:#00687f; text-align:center; transition:all 0.5s;}
-.board_write td input[type="file"] + label:hover {background:#00687f; color:#fff;}
-.board_write td .file_list {display:inline-block; width:calc(100% - 130px); padding:10px 0 10px 30px; vertical-align:top;}
+.board_write td input[type="text"].file_name {display:inline-block; width:calc(100% - 190px); vertical-align:top;}
+.board_write td label {display:inline-block; width:130px; border:1px solid #00687f; font-family:"Nanum Square"; font-size:16px; font-weight:700; font-weight:700; line-height:36px; color:#00687f; text-align:center; transition:all 0.5s; margin-left:10px; vertical-align:top;}
+.board_write td label:hover {background:#00687f; color:#fff;}
+.board_write td .file_list {padding:10px 0; vertical-align:top;}
 .board_write td .file_list li {display:inline-block; overflow:hidden; position:relative; margin-right:30px; padding-right:20px; font-size:14px; line-height:20px; transition:all 0.5s;}
 .board_write td .file_list li:hover {color:#00687f;}
 .board_write td .file_list li .tit {overflow:hidden; float:left; max-width:200px; text-overflow:ellipsis; white-space:nowrap;}
@@ -688,8 +696,10 @@ label {cursor:pointer;}
     .board_write th,.board_write td {margin-bottom:15px;}
     .board_write label {line-height:1.5em;}
     .board_write th .necessary {top:3px;}
-    .board_write td input[type="file"] + label {font-size:14px; width:80px; line-height:28px;}
-    .board_write td .file_list {width:calc(100% - 80px); padding:5px 0 5px 15px;}
+    .board_write td .multi_upload li button {width:30px;}
+    .board_write td input[type="text"].file_name {width:calc(100% - 130px);}
+    .board_write td label {font-size:14px; width:80px;}
+    .board_write td .file_list {padding:5px 0;}
     .board_write td .file_list li {margin-right:15px; font-size:12px;}
     .board_write .btn_wrap {clear:both; padding-top:30px;}
     .board_write .btn_wrap a,.board_write .btn_wrap button {min-width:150px; font-size:16px; line-height:40px;}
@@ -697,8 +707,8 @@ label {cursor:pointer;}
 
 @media (max-width:599px) {
     .board_write label {font-size:14px;}
-    .board_write td input[type="file"] + label {font-size:12px; width:60px;}
-    .board_write td .file_list {width:calc(100% - 60px); padding-left:10px;}
+    .board_write td input[type="text"].file_name {width:calc(100% - 110px);}
+    .board_write td label {font-size:12px; width:60px;}
     .board_write td .file_list li {margin-right:10px;}
     .board_write .btn_wrap a,.board_write .btn_wrap button {width:100%; margin:5px 0; font-size:14px;}
 }
