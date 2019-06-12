@@ -17,14 +17,17 @@ section .slide .btn_wrap a:hover span:before,section .slide .btn_wrap a:hover sp
 .wrap .slide_scroll:hover:after {-webkit-transform:translateY(2px); -moz-transform:translateY(2px); -ms-transform:translateY(2px); -o-transform:translateY(2px); transform:translateY(2px);}
 section .slide_cate {position:relative; margin-bottom:30px; font-size:18px; font-weight:700; line-height:1.1em;}
 section .slide_cate:after {position:absolute; bottom:-10px; left:0; width:14px; height:1px; background:#fff; content:"";}
-article .grand_tit {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:300; line-height:1.4em; letter-spacing:-0.02em;}
+article .grand_tit {display:inline-block; position:relative; font-family:"Nanum Square"; font-size:50px; font-weight:300; line-height:1.4em; letter-spacing:-0.02em; animation-delay:.2s;}
 article .grand_tit span {font-family:inherit;}
 article .grand_tit i {position:absolute; bottom:10px; right:-66px; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-size:1000px 1000px;}
 /* article .grand_tit i {display:inline-block; width:66px; height:78px; background-image:url(../img/sprite/sprite.png); background-size:1000px 1000px; margin-left:-10px; margin-top:-20px; vertical-align:top;} */
+article .btn_wrap {animation-delay:.4s;}
 section .section:nth-child(1) article .grand_tit i {background-position:-10px -246px;}
 section .section:nth-child(2) article .grand_tit i {background-position:-86px -246px;}
 section .section:nth-child(3) article .grand_tit i {background-position:-162px -246px;}
 section .section:nth-child(4) article .grand_tit i {background-position:-238px -246px;}
+section .animate {animation-name:fadeInUp; animation-duration:1s; animation-fill-mode:both; animation-play-state:paused; opacity:0;}
+section .section.fp-completely .animate {animation-play-state:running;}
 
 /* 교육철학 */
 section .slide .ideology {margin-top:20px; padding-bottom:20px; font-size:0;}
@@ -40,6 +43,12 @@ section .slide .ideology .vision:after {content:"비전";}
 /* 사업영역 */
 section .slide .business {overflow:hidden; margin-top:40px;}
 section .slide .business li {float:left; margin-right:20px;}
+section .slide .business li:nth-child(1) {animation-delay:.1s;}
+section .slide .business li:nth-child(2) {animation-delay:.2s;}
+section .slide .business li:nth-child(3) {animation-delay:.3s;}
+section .slide .business li:nth-child(4) {animation-delay:.4s;}
+section .slide .business li:nth-child(5) {animation-delay:.5s;}
+section .slide .business li:nth-child(6) {animation-delay:.6s;}
 section .slide .business li a {display:block; position:relative; width:108px; padding-top:128px; color:inherit; text-align:center;}
 section .slide .business li a:before {position:absolute; top:50%; left:50%; margin-top:-23px; background-image:url(../img/sprite/sprite.png); background-size:500px 500px; -webkit-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); -o-transform:translate(-50%, -50%); transform:translate(-50%, -50%); content:"";}
 section .slide .business li:nth-child(1) a:before {width:55px; height:54px; margin-left:-5px; background-position:-5px -5px;}
@@ -62,6 +71,11 @@ section .slide .business li a:hover:after {border:2px solid #8ab113;}
 section .slide .research {margin-top:40px;}
 section .slide .research:after {display:block; clear:both; content:"";}
 section .slide .research li {float:left; margin-bottom:1px; margin-right:1px;}
+section .slide .research li:nth-child(1) {animation-delay:.1s;}
+section .slide .research li:nth-child(2) {animation-delay:.2s;}
+section .slide .research li:nth-child(3) {animation-delay:.3s;}
+section .slide .research li:nth-child(4) {animation-delay:.4s;}
+section .slide .research li:nth-child(5) {animation-delay:.5s;}
 section .slide .research li a {display:block; position:relative; z-index:0; width:112px; padding:30px 0; font-size:16px; line-height:1.3em; color:inherit; text-align:center;}
 section .slide .research li a:after {position:absolute; bottom:0; left:0; z-index:-1; width:100%; height:100%; background:rgba(0,0,0,0.2); -webkit-transition:height 0.2s; -moz-transition:height 0.2s; -ms-transition:height 0.2s; -o-transition:height 0.2s; transition:height 0.2s; content:"";}
 section .slide .research li a:hover:after {height:calc(100% + 5px); background:#e7833f;}
@@ -84,7 +98,7 @@ article .news ul li a .txt_wrap .tit strong {font-family:inherit; color:#00687f;
 article .news ul li a .txt_wrap .txt {overflow:hidden; height:3.4em; margin:10px 0 20px; font-size:12px; line-height:1.7em; color:#666;}
 article .news ul li a .txt_wrap .date {display:inline-block; padding:0 10px; border-radius:12px; background:#f2f2f2; font-size:12px; line-height:24px; color:#999; -webkit-border-radius:12px; -moz-border-radius:12px; -ms-border-radius:12px; -o-border-radius:12px;}
 section .section {background-attachment:fixed;}
-section .news_wrap {padding-top:30px;}
+/* section .news_wrap {padding-top:30px;} */
 section .slide {display:table; width:100%; height:100vh; table-layout:fixed;}
 section .slide > div {display:table-cell; vertical-align:middle;}
 section .news_wrap .menu_tit {margin-top:50px;}
