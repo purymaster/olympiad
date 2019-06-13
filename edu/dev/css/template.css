@@ -241,9 +241,9 @@ label {cursor:pointer;}
 .form_table table td .select_form,.form_table table td input[type="text"],.form_table table td input[type="password"] {margin-right:10px;}
 .form_table table td .label {display:inline-block; margin-right:30px; font-size:16px; line-height:38px; color:#008398;}
 .form_table table td .check_form,.form_table table td .radio_form {display:inline-block; vertical-align:top;}
-.form_table table td .calendar {display:inline-block; position:relative; background:#efefef;}
-.form_table table td .calendar:before {position:absolute; top:50%; right:18px; z-index:1; width:18px; height:18px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-180px -475px; content:"";}
-.form_table table td .calendar input[type="text"] {position:relative; margin:0;}
+.form_table table td .calendar {display:inline-block; position:relative;}
+.form_table table td .calendar:before {position:absolute; top:50%; right:18px; width:18px; height:18px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-180px -475px; content:"";}
+.form_table table td .calendar input[type="text"] {position:relative; margin:0; background:none;}
 
 @media (max-width:1024px) {
     .form_table {overflow:hidden;}

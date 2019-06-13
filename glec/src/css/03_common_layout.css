@@ -263,8 +263,8 @@ label {cursor:pointer;}
 .input_form dl .option .search_box input[type="text"] {width:calc(100% - 95px);}
 .input_form dl .option .search_box button {width:90px; margin-left:5px; background:#aaa; font-family:"Nanum Square"; font-size:14px; line-height:40px; color:#fff; vertical-align:top; transition:all 0.5s;}
 .input_form dl .option .search_box button:hover {background:#f78920;}
-.input_form dl .option .calendar {position:relative; background:#efefef;}
-.input_form dl .option .calendar:before {position:absolute; top:50%; right:18px; z-index:0; width:18px; height:17px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-180px -475px; content:"";}
+.input_form dl .option .calendar {position:relative;}
+.input_form dl .option .calendar:before {position:absolute; top:50%; right:18px; z-index:0; width:18px; height:18px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-180px -475px; content:"";}
 .input_form dl .option .calendar input[type="text"] {position:relative; z-index:1; background:none !important;}
 .input_form.address dl .option, .input_form.textarea dl .option,.input_form.radio dl .option {float:none; width:100%;}
 .input_form.textarea dl .option textarea {width:100%; height:130px; padding:12px;}

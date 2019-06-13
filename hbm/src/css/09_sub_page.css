@@ -136,61 +136,87 @@
 }
 
 /* 하베르만은? */
-.about_hbm .elite img { line-height: 0; }
-.about_hbm .about_elite { position: relative; margin-top: 30px;}
-.about_hbm .about_elite:after{ content:""; position: absolute; right: 20px; top: 20px; background-image: url(../img/bg/bg_figure_01.png); width: 376px; height: 441px;  background-repeat: no-repeat; }
-.about_hbm .elite .txt_wrap {  margin-top: 40px; }
-
-.about_hbm .elite .txt_wrap .tit { font-size: 24px; color: #333; line-height: 36px; font-family:"Nanum Square"; font-weight: 700; margin-bottom: 20px; }
-.about_hbm .elite .txt_wrap .txt { font-size: 16px; color: #555; line-height: 28px; margin-bottom: 20px;}
-.about_hbm .elite .txt_wrap .txt:last-child{ margin-bottom: 0;}
-.about_hbm .key_visual {background-image: url(../img/bg/bg_about_hbm_02.png); width: 100%;
-height: auto; background-size: cover; background-repeat: no-repeat; background-position: center top; padding: 60px 0; margin-top: 30px;} 
-.about_hbm .key_visual .txt { font-size: 24px; color: #fff; line-height: 36px; text-align: center; font-family:"Nanum Square"; margin-bottom: 20px;}
-.about_hbm .key_visual .txt strong { font-size: 36px; line-height: 1.4em; font-family:"Nanum Square"; }
-.about_hbm .diagram_img { line-height: 0; text-align: center; margin-top: 60px; }
-.about_hbm .key_point { background-image: url(../img/bg/bg_key_point_01.png); background-repeat: no-repeat; width: 100%; height: auto; background-position: center;}
-.about_hbm .key_point .about { overflow: hidden; padding: 20px 0;}
-.about_hbm .key_point .about .tit { font-size: 30px; color: #fff; line-height: 1.5em;  font-family:"Nanum Square"; font-weight: 700; margin-bottom: 20px; }
-.about_hbm .key_point .talent { float: left; width: 548px; text-align: center;} 
-.about_hbm .key_point .talent .talent_list li { border: 3px dotted #fff; border-radius: 50px; 
-margin: 0 auto 30px; background-color: #000; max-width: 346px; height: 60px;  padding: 10px 0; position: relative; }
-.about_hbm .key_point .talent .talent_list li:before{content: ""; position: absolute; right: -50%; top: 50%; width: 100%; border-top: 3px dotted #fff;  transform: translate(50%, 50%);}
-.about_hbm .key_point .talent .talent_list li:last-child { margin-bottom: 0;}
-
-.about_hbm .key_point .talent .talent_list li p { font-size: 24px; color: #fff; line-height: 36px; font-family:"Nanum Square"; opacity: 1;}
-.about_hbm .key_point .core_value { float: left; width: calc(100% - 548px); text-align: center;}
-.about_hbm .key_point .core_value .core_value_list li  { background-color: #fff; border-radius: 50px; margin: 0 auto 30px; max-width: 213px; height: 60px; padding: 13px 0; position: relative;}
-.about_hbm .key_point .core_value .core_value_list li:before { content: ""; position: absolute; left: -190px; top: 50%; width: 80px; height: 80px; background-color: red; border-radius: 50%; transform: translateY(-50%);}
-
-.about_hbm .key_point .core_value .core_value_list li:last-child{ margin-bottom: 0; }
-.about_hbm .key_point .core_value .core_value_list li p {  font-size: 24px; color: #000; line-height: 36px; font-family:"Nanum Square";  }
-
+.about_hbm .visual {position:relative; z-index:-1; margin-top:-164px; font-size:0;}
+.about_hbm .elite img {line-height:0;}
+.about_hbm .about_elite {position:relative; margin-top:30px;}
+.about_hbm .about_elite:after {position:absolute; top:20px; right:20px; width:376px; height:441px; background-image:url(../img/bg/bg_figure_01.png); background-repeat:no-repeat; content:"";}
+.about_hbm .elite .txt_wrap {margin-top:40px;}
+.about_hbm .elite .txt_wrap .tit {margin-bottom:1.25em; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.5em; color:#333;}
+.about_hbm .elite .txt_wrap .txt {margin-bottom:20px; font-size:16px; line-height:1.75em; color:#555;}
+.about_hbm .elite .txt_wrap .txt:last-child {margin-bottom:0;}
+.about_hbm .key_visual {width:100%; height:auto; margin-top:30px; padding:60px 0; background-image:url(../img/bg/bg_about_hbm_02.png); background-repeat:no-repeat; background-position:center; background-size:cover;}
+.about_hbm .key_visual .txt {font-family:"Nanum Square"; font-size:24px; line-height:1.5em; color:#fff; text-align:center;}
+.about_hbm .key_visual .txt + .txt {margin-top:0.8em;}
+.about_hbm .key_visual .txt strong {font-family:"Nanum Square"; font-size:1.5em; line-height:1.4em;}
+.about_hbm .diagram_img {margin-top:60px; line-height:0; text-align:center;}
+.about_hbm .key_point {width:100%; height:auto; background-image:url(../img/bg/bg_key_point_01.png); background-repeat:no-repeat; background-position:center;}
+.about_hbm .key_point .about:after {display:block; clear:both; content:"";}
+.about_hbm .key_point .about .tit_wrap {overflow:hidden;}
+.about_hbm .key_point .about .tit {margin-bottom:30px; font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.5em; color:#fff; max-width:66.66%;}
+.about_hbm .key_point .about br {display:none;}
+.about_hbm .key_point .about li {position:relative; margin-bottom:30px;}
+.about_hbm .key_point .about li:last-child {margin-bottom:0;}
+.about_hbm .key_point .about li:before {position:absolute; top:50%; width:calc(33.33% - 40px); height:1px; margin-top:-1px; border-top:3px dotted #fff; content:"";}
+.about_hbm .key_point .about li:after {content:""; display:block; clear:both;}
+.about_hbm .key_point .about li p {max-width:66.66%; border-radius:50px; font-size:24px; line-height:1.5em;}
+.about_hbm .key_point .talent,.about_hbm .key_point .core_value {float:left; width:50%; text-align:center;}
+.about_hbm .key_point .talent .tit {float:right; width:346px; margin-right:33.33%;}
+.about_hbm .key_point .talent li:before {right:40px;}
+.about_hbm .key_point .talent li p {float:right; width:346px; margin-right:33.33%; padding:9px 0; border:3px dotted #fff; background-color:rgba(0,0,0,0.4); font-family:"Nanum Square";  color:#fff;}
+.about_hbm .key_point .talent li i {position:absolute; width:80px; height:80px; border-radius:50%; top:50%; right:0; transform:translate(50%, -50%);}
+.about_hbm .key_point .talent li:nth-child(1) i {background-color:rgba(201,65,79,0.7);}
+.about_hbm .key_point .talent li:nth-child(2) i {background-color:rgba(246,178,64,0.6);}
+.about_hbm .key_point .talent li:nth-child(3) i {background-color:rgba(165,209,102,0.6);}
+.about_hbm .key_point .talent li:nth-child(4) i {background-color:rgba(76,189,240,0.5);}
+.about_hbm .key_point .core_value .tit {float:left; width:213px; margin-left:33.33%;}
+.about_hbm .key_point .core_value li:before {left:40px;}
+.about_hbm .key_point .core_value li p {float:left; width:213px; margin-left:33.33%; padding:12px 0; font-family:"Nanum Square"; background:#fff;}
 
 @media (max-width:1280px) {
-    .about_hbm .elite .txt_wrap .tit { font-size: 22px; line-height: 30px; }
-    .about_hbm .elite .txt_wrap .txt { font-size: 14px;} 
-    .about_hbm .elite .txt_wrap .txt { margin-bottom: 10px; }
-    .about_hbm .key_visual .txt { font-size: 22px;  } 
-    .about_hbm .key_visual .txt strong { font-size: 30px;}
-    .about_hbm .key_point .talent .talent_list li p { font-size: 22px;}
-    .about_hbm .key_point .core_value .core_value_list li p { font-size: 22px;}
+    .about_hbm .key_point .about li p {font-size:20px;}
 }
 
 @media (max-width:1024px) {
-    .about_hbm .elite .txt_wrap .tit {font-size: 20px; }
-    .about_hbm .key_visual .txt { font-size: 18px; } 
-    .about_hbm .key_visual .txt strong { font-size: 28px;}
-    .about_hbm .key_point .talent .talent_list li p { font-size:  20px;}
-    .about_hbm .key_point .core_value .core_value_list li p { font-size: 20px;}
+    .about_hbm .visual {height:0; margin:0; opacity:0.1;}
+    .about_hbm .about_elite:after {display:none;}
+    .about_hbm .about_elite img {height:39px;}
+    .about_hbm .elite .txt_wrap {margin-top:15px;}
+    .about_hbm .elite .txt_wrap .tit {font-size:18px;}
+    .about_hbm .elite .txt_wrap .txt {font-size:14px;}
+    .about_hbm .elite .txt_wrap .tit br,.about_hbm .elite .txt_wrap .txt br {display:none;}
+    .about_hbm .key_visual {padding:30px 0;}
+    .about_hbm .key_visual .txt {font-size:20px;}
+    .about_hbm .key_visual .txt strong {font-size:1.2em;}
+    .about_hbm .diagram_img {max-width:413px; margin:30px auto 0;}
+    .about_hbm .key_point .about li:before {width:calc(20% - 30px);}
+    .about_hbm .key_point .talent li:before {right:30px;}
+    .about_hbm .key_point .core_value li:before {left:30px;}
+    .about_hbm .key_point .about li p {font-size:16px;}
+    .about_hbm .key_point .about .tit,.about_hbm .key_point .about li p {max-width:80%;}
+    .about_hbm .key_point .talent .tit,.about_hbm .key_point .talent li p {margin-right:20%;}
+    .about_hbm .key_point .core_value .tit,.about_hbm .key_point .core_value li p {margin-left:20%;}
+    .about_hbm .key_point .talent li i {width:60px; height:60px;}
 }
 
-@media (max-width:1024px) { 
-    .about_hbm .key_visual .txt { font-size: 16px; } 
-    .about_hbm .key_visual .txt strong { font-size: 26px;}
-    .about_hbm .key_point .talent .talent_list li p { font-size:  18px;}
-    .about_hbm .key_point .core_value .core_value_list li p { font-size: 18px;}
+@media (max-width:599px) { 
+    .about_hbm .key_point .about .tit {font-size:20px;}
+    .about_hbm .elite .txt_wrap .tit {font-size:16px;}
+    .about_hbm .elite .txt_wrap .txt {font-size:12px;}
+    .about_hbm .key_visual .txt {font-size:14px;}
+    .about_hbm .key_visual .txt br {display:none;}
+    .about_hbm .key_point .about li {margin-bottom:15px;}
+    .about_hbm .key_point .about li p {font-size:14px;}
+    .about_hbm .key_point .about li p br {display:block;}
+    .about_hbm .key_point .about li:before {width:calc(33.33% - 30px);}
+    .about_hbm .key_point .about .tit,.about_hbm .key_point .about li p {max-width:66.66%;}
+    .about_hbm .key_point .talent .tit,.about_hbm .key_point .talent li p {margin-right:33.33%;}
+    .about_hbm .key_point .core_value .tit,.about_hbm .key_point .core_value li p {margin-left:33.33%;}
 }
+
+@media (max-width:320px) { 
+    .about_hbm .key_point .about li p {font-size:12px;}
+}
+
 /*  하베르만 프로그램 - 프로그램 특징 */
 .program_features .courses { margin-top: 50px; margin-bottom: -60px;}
 .program_features .courses:after{ content: ""; display: table; clear: both;}
