@@ -1736,7 +1736,8 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 }
 
 @media (max-width:599px) { 
-    .about_hbm .key_point .about .tit {font-size:20px;}
+    .about_hbm .about_elite img {display:block; margin:0 auto;}
+    .about_hbm .elite .txt_wrap p {text-align:center;}
     .about_hbm .elite .txt_wrap .tit {font-size:16px;}
     .about_hbm .elite .txt_wrap .txt {font-size:12px;}
     .about_hbm .key_visual .txt {font-size:14px;}
@@ -1745,6 +1746,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     .about_hbm .key_point .about li p {font-size:14px;}
     .about_hbm .key_point .about li p br {display:block;}
     .about_hbm .key_point .about li:before {width:calc(33.33% - 30px);}
+    .about_hbm .key_point .about .tit {font-size:20px;}
     .about_hbm .key_point .about .tit,.about_hbm .key_point .about li p {max-width:66.66%;}
     .about_hbm .key_point .talent .tit,.about_hbm .key_point .talent li p {margin-right:33.33%;}
     .about_hbm .key_point .core_value .tit,.about_hbm .key_point .core_value li p {margin-left:33.33%;}
