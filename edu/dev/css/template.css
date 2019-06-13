@@ -91,8 +91,6 @@ input[type="text"],input[type="email"],input[type="number"],button,input[type="s
 body {-webkit-text-size-adjust:none; -moz-text-size-adjust:none; position:relative; background:#fff; word-break:keep-all; word-wrap:break-word; font-size:14px; line-height:1.8; color:#4c5358;}
 blockquote,q {quotes:none;}
 /* input:focus,button:focus {border:none;} */
-input[type="text"]:-moz-read-only {background:#efefef; cursor:not-allowed;}
-input[type="text"]:read-only {background:#efefef; cursor:not-allowed;}
 table {border-collapse:collapse; border-spacing:0;}
 ul,ol,li {list-style:none;}
 a:focus {outline:none !important;}
@@ -243,6 +241,9 @@ label {cursor:pointer;}
 .form_table table td .select_form,.form_table table td input[type="text"],.form_table table td input[type="password"] {margin-right:10px;}
 .form_table table td .label {display:inline-block; margin-right:30px; font-size:16px; line-height:38px; color:#008398;}
 .form_table table td .check_form,.form_table table td .radio_form {display:inline-block; vertical-align:top;}
+.form_table table td .calendar {display:inline-block; position:relative; background:#efefef;}
+.form_table table td .calendar:before {position:absolute; top:50%; right:18px; z-index:1; width:18px; height:18px; margin-top:-9px; background:url(../img/sprite/sprite.png); background-size:500px; background-position:-180px -475px; content:"";}
+.form_table table td .calendar input[type="text"] {position:relative; margin:0;}
 
 @media (max-width:1024px) {
     .form_table {overflow:hidden;}
@@ -260,7 +261,8 @@ label {cursor:pointer;}
 @media (max-width:599px) {
     .form_table table td .select_form,
     .form_table table td input[type="text"],
-    .form_table table td input[type="password"] {width:100% !important; margin:0; margin-bottom:5px;}
+    .form_table table td input[type="password"],
+    .form_table table td input[type="email"] {width:100% !important; margin:0; margin-bottom:5px;}
     .form_table table td.divide_3 .select_form,
     .form_table table td.divide_3 input[type="text"],
     .form_table table td.divide_3 input[type="password"] {width:calc(33.33% - 4px) !important; margin-right:5px;}
@@ -301,6 +303,20 @@ label {cursor:pointer;}
     .data_table table thead th {font-size:14px;}    
     .data_table table th,.data_table table td {padding:8px 15px;}
 }
+
+/* Datepicker */
+.ui-datepicker {width:200px; border:1px solid #00687f; background:#fff; -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.2); box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
+.ui-datepicker th,.ui-datepicker td {padding:0; border:0; font-size:12px; line-height:20px;}
+.ui-datepicker th {border-bottom:1px solid #00687f; background:#e6eff1; color:#00687f;}
+.ui-datepicker td a {display:block; color:#999; -webkit-transition:all 0.5s; transition:all 0.5s; text-align:center;}
+.ui-datepicker td a:hover {background:#00687f; font-weight:700; color:#fff;}
+.ui-datepicker .ui-datepicker-prev,.ui-datepicker .ui-datepicker-next {position:absolute; top:5px; width:20px; height:20px; text-indent:-9999px; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.ui-datepicker .ui-datepicker-prev {left:5px;}
+.ui-datepicker .ui-datepicker-next {right:5px;}
+.ui-datepicker .ui-datepicker-prev:before,.ui-datepicker .ui-datepicker-next:before {content:""; width:10px; height:10px; border:2px solid #fff; -webkit-transform:translateX(-50%) rotate(45deg); transform:translateX(-50%) rotate(45deg); position:absolute; left:50%; top:5px;}
+.ui-datepicker .ui-datepicker-prev:before {margin-left:2px; border-top:0; border-right:0;}
+.ui-datepicker .ui-datepicker-next:before {margin-left:-2px; border-bottom:0; border-left:0;}
+.ui-datepicker .ui-datepicker-title {background:#00687f; font-size:14px; font-weight:700; line-height:30px; color:#fff; text-align:center;}
 
 /* 게시판(일반) 리스트 */
 .board_list table thead th {border-top:3px solid #333; font-size:16px; font-weight:700; color:#333;}

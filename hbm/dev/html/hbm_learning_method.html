@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>하베르만</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header>
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img class="pc" src="../img/img/img_logo.png" alt="">
+								<img class="alter" src="../img/img/img_logo_alter.png" alt="하브루타로 키우는 영재사고력 하베르만">
+							</a>
+						</h1>
+						<button class="open_menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+
+								<!-- 로그인 -->
+								<div class="menu club">
+									<h2 class="hidden">회원전용 메뉴</h2>
+									<div class="group_nav">
+
+										<!-- [D] 로그인 전 -->
+										<a class="btn login" href="#">로그인</a>
+										<!-- //[D] 로그인 전 -->
+
+										<!-- [D] 로그인 후 -->
+										<!-- <span class="member"><strong>회원회원회원회원회원회원회원회원회원회원회원회원회원회원</strong>님</span> -->
+										<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+										<!-- [D] 직원일 경우 관리자 + 로그아웃 -->
+										<!-- <a class="btn study" href="#">재원생 학습</a> -->
+										<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+										<!-- <a class="btn logout" href="#">로그아웃</a> -->
+										<!-- //[D] 로그인 후 -->
+
+									</div>
+								</div>
+								<!-- //로그인 -->
+
+								<!-- GNB -->
+								<div class="menu nav">
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">하베르만은?</a></li>
+													<li><a href="#">하베르만 학습법</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 프로그램</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">프로그램 구성</a></li>
+													<li><a href="#">학습 로드맵</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">입학안내</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학절차</a></li>
+													<li><a href="#">검사안내</a></li>
+													<li><a href="#">입학고사 신청</a></li>
+													<li><a href="#">설명회 신청</a></li>
+													<li><a href="#">상담 신청</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 체험관</a>
+												<ul class="menu_2depth">
+													<li><a href="#">하베르만 수업보기</a></li>
+													<li><a href="#">우리는 하베르만</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 소식</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">하베르만, 알려주세요</a></li>
+													<li><a href="#">센터소식</a></li>
+													<li><a href="#">센터안내</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //GNB -->
+
+								<div class="call_num mobile">
+									<a href="tel:1588-8282">
+										<dl>
+											<dt>상담문의</dt>
+											<dd>1588-8282</dd>
+										</dl>
+									</a>
+								</div>
+
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+
+						<!-- 검색창 -->
+						<div class="search">
+							<h2 class="hidden">정보검색</h2>
+							<div class="search_keyword">
+								<button type="button" class="search">검색창 여닫기</button>
+								<div class="search_box">
+									<div class="search_wrap">
+										<input type="text" title="검색어 입력">
+										<button type="submit">
+											<span>검색</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //검색창 -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap hbm_learning_method">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_subheader_01.jpg)" data-animation="">
+				<div class="grid_container sub_header_wrap">
+					<div class="tit_wrap">
+						<p class="sub_txt" data-animation="fadeInUp" data-delay="0">서브 페이지 텍스트 <strong>강조</strong></p>
+						<h2 data-animation="fadeInUp" data-delay="3">서브 페이지 타이틀</h2>
+					</div>
+
+
+					<!-- 서브 페이지 상단 탭메뉴 -->
+					<div class="tab_menu">
+						<ul class="type3">
+							<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+							<li><a href="#">탭메뉴1</a></li>
+
+							<li><a href="#">탭메뉴2</a></li>
+
+							<li><a href="#">탭메뉴3</a></li>
+
+						</ul>
+					</div>
+					<!-- //서브 페이지 상단 탭메뉴 -->
+
+				</div>
+			</div>
+
+			<div class="sub_content">
+				<!-- 서브 페이지 컨텐츠 영역 -->
+				<div class="content">
+					<div class="grid_container">
+						<img src="../img/img/img_hbm_learning_method_01.jpg" alt="">
+					</div>
+				</div>
+				<!-- //서브 페이지 컨텐츠 영역 -->
+				<!-- 서브 페이지 컨텐츠 영역 -->
+				<div class="content">
+					<div class="grid_container">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">하베르만 4가지 학습법</h3>
+						</div>
+						<div class="four_lm">
+							<ul class="four_lm_list">
+								<li>
+									<div class="four">
+										<p class="tit">메타인지 기반의<br> <strong>질문하는 수학</strong></p>
+										<p class="sec_tit">‘왜’라는 질문의 힘으로 <br>생각을 이끌어 내는 수학</p>
+											<p class="text">‘왜’라는 질문을 통해 생각이 깊어지고 <br>
+                                            다양한 생각을 말하며 <br>
+                                            사고의 폭이 넓어집니다. <br>
+                                            하베르만의 아이들은 질문을 통해 <br>
+                                            끊임없이 생각하고 <br> 몰입하며 메타인지를 <br>
+                                            활성화 시킬 수 있습니다.</p>
+									</div>
+								</li>
+								<li>
+									<div class="four">
+										<p class="tit">교구로 탐구하며<br> <strong>체험하는 수학</strong></p>
+										<p class="sec_tit">직접 조작하고 탐구하며 <br>
+                                            개념을 이해하는 체험수학</p>
+											<p class="text">구체적 조작기에 있는 우리 아이들은 <br>
+                                            수학적 지식과 개념을 어떻게 <br>
+                                            이해할 수 있을까요? <br>
+                                            하베르만의 아이들은 스스로 교구를 <br>
+                                            조작해보며 개념을 쉽게 이해하고 <br>
+                                            직접 체험하며 수학에 대한 흥미와 <br>
+                                            즐거움을 경험할 수 있습니다.</p>
+									</div>
+								<li>
+									<div class="four">
+										<p class="tit">하브루타 기반의<br> <strong>토론하는 수학</strong></p>
+										<p class="sec_tit">단계별 사고 훈련으로 <br>
+                                            영재성을 계발시키는 토론수학</p>
+											<p class="text">질문과 대화, 토론과 논쟁을 통해 <br>
+                                            비판적 사고와 창의적 사고를 키우며 <br>
+                                            영재성을 계발시킬 수 있습니다. <br>
+                                            하베르만의 아이들은 하브루타를 통해 <br>
+                                            융합적 문제해결 능력을 키우고 <br>
+                                            높은 수준의 사고력을 발달시켜 <br>
+                                            뛰어난 영재로 성장할 수 있습니다.</p>
+									</div>
+								</li>
+								<li>
+									<div class="four">
+										<p class="tit">인지과학 기반의<br> <strong>표현하는 수학</strong></p>
+										<p class="sec_tit">단생각과 지식을 <br>
+                                            인출해 표현하는 수학</p>
+											<p class="text">생각과 지식을 말이나 글로 <br>
+                                            표현하면 생각하는 힘이 커지고 <br>
+                                            배운 것을 더 오래 기억할 수 있습니다. <br>
+                                            하베르만의 아이들은 자신의 생각을 <br>
+                                            표현하고 친구에게 설명하는 과정을 통해 <br>
+                                            배움이 깊어지며 수학에 대한 성취감과 <br>
+                                            자신감을 기를 수 있습니다.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 컨텐츠 영역 -->
+
+				<!-- 서브 페이지 컨텐츠 영역 -->
+				<div class="content hasbg white lm_bg">
+					<div class="grid_container">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit">
+								하베르만 학습법의
+								<div class="emphasis">
+									<span data-animation="fadeInUp" data-delay="5">교</span>
+									<span data-animation="fadeInUp" data-delay="7">육</span>
+									<span data-animation="fadeInUp" data-delay="9">효</span>
+									<span data-animation="fadeInUp" data-delay="11">과</span>
+								</div>
+							</h3>
+						</div>
+						<p class="subpage_txt">
+							질문을 통한 몰입식 사고 과정을 통해 생각하는 힘을 길러 줍니다. <br>질문의 연결을 통해 뇌를 활성화해 학습동기를 높이고 교구로 체험하며 배우는 즐거움을 느낄 수
+                            있습니다. <br>생각을 인출하는 말하기 표현학습을 통해 배운 것을 오래 기억할 수 있습니다.
+                        </p>
+							<div class="effect">
+								<div class="line_cont">
+									<ol class="effect_list">
+										<li>
+											<p class="tit">질문&생각</p>
+											<span class="num">01</span>
+											<p class="sec_tit">문제 인지 단계</p>
+											<p class="text">질문을 통해 <br>
+                                            생각을 깨우고 몰입하기</p>
+										</li>
+										<li>
+											<p class="tit">짝 하브루타</p>
+											<span class="num">02</span>
+											<p class="sec_tit">문제 탐색 단계</p>
+											<p class="text">개념을 이해하고 <br>
+                                            생각을 공유하기</p>
+										</li>
+										<li>
+											<p class="tit">문제 해결 단계</p>
+											<span class="num">03</span>
+											<p class="sec_tit">문제 인지 단계</p>
+											<p class="text">토론과 논쟁하기</p>
+										</li>
+										<li>
+											<p class="tit">쉬우르</p>
+											<span class="num">04</span>
+											<p class="sec_tit">메타인지 단계</p>
+											<p class="text">아는 것과 모르는 것을 <br>
+                                            스스로 깨닫기</p>
+										</li>
+									</ol>
+								</div>
+								<div class="bg_text">
+									<p>영재사고력</p>
+								</div>
+							</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 컨텐츠 영역 -->
+
+				<!-- 서브 페이지 컨텐츠 영역 -->
+				<div class="content">
+					<div class="grid_container">
+						<div class="sub_tit_wrap">
+							<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit animated fadeInUp" style="animation-delay: 0ms;">하베르만 학습법의 차이점</h3>
+							<p class="subpage_txt">
+								왜 하브루타로 수학을 공부해야 할까요? <br>기존 사고력과 하베르만 사고력의 차이를 느껴보세요.
+                            </p>
+						</div>
+						<div class="difference">
+							<ul class="difference_list">
+								<li>
+									<div class="difference_cont">
+										<div class="difference_tit">
+											<p class="tit">설명식 수업</p>
+											<p class="text">연역적 사고방식의 접근</p>
+										</div>
+										<div class="difference_box">
+											<ul class="d_list">
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>추상적인 사고</li>
+															<li>구체적 사고</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>개념과 이론의 <br>강조</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>수동적 수업</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>강의 위주의 <br>지루한 수업</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>지식을 <br>
+                                                                축적하는 교육</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="difference_cont">
+										<div class="difference_tit">
+											<p class="tit">하베르만 사고력</p>
+											<p class="text">귀납적 사고방식의 접근</p>
+										</div>
+										<div class="difference_box">
+											<ul class="d_list">
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>구체적 사고</li>
+															<li>추상적 사고</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>사례와 경험의 <br>
+                                                                강조</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>능동적 수업</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>상호 소통의 <br>
+                                                                활기찬 수업</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="list_text">
+														<ul class="text_list">
+															<li>창의성을 <br>
+                                                                키우는 교육</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 컨텐츠 영역 -->
+				<!-- 서브 페이지 컨텐츠 영역 -->
+				<div class="content hasbg white lm_02_bg">
+					<div class="grid_container">
+						<div class="gifted_education">
+							<ul class="ge_list">
+								<li>
+									<div class="ge_box">
+										<div class="sub_tit_wrap">
+											<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit ge_title animated fadeInUp" style="animation-delay: 0ms;">하베르만
+												영재수학, <br>왜 좋을까요?</h3>
+										</div>
+										<div class="bgc_text">
+											<p class="tit">Why?</p>
+											<p class="text">하브루타는 짝을 지어 질문하고 대화하고 토론하고 논쟁하는 수업 방식입니다.</p>
+											<p class="text">수업시간 내내 질문식 대화를 통해 수학적 사고를 <br>
+                                                자극하고 두뇌를 활성화해 생각하는 힘을 길러줍니다.</p>
+												<p class="text">적극적으로 질문하고 토론하고 문제를 설명하는 <br>
+                                                과정에서 자신이 이해하고 있는 것과 이해하지 못한 것을 <br>
+                                                스스로 깨닫게 되며 메타인지 능력을 향상시킬 수 있습니다.</p>
+													<p class="text">하브루타는 수업은 질문과 짝토론을 통해 <br>
+                                                수학에 대한 개념과 원리를 이해하고 <br>
+                                                문제해결과정을 공유하고 다양한 방식으로 표현해 <br>
+                                                보면서 학습한 내용을 오랫동안 기억하게 해줍니다.</p>
+														<p class="text">
+															교사와의 쉬우르 과정을 통해 오개념을 수정하고 <br>
+                                                개념을 정교화하며 수학적 사고를 확장해 <br>
+                                                영재성을 키워줄 수 있습니다.
+                                            </p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ge_box">
+										<div class="sub_tit_wrap">
+											<h3 data-animation="fadeInUp" data-delay="0" class="subpage_tit ge_title animated fadeInUp" style="animation-delay: 0ms;">하베르만
+												영재수학, <br>어떻게 공부해야 할까요?</h3>
+										</div>
+										<div class="bgc_text">
+											<p class="tit">How?</p>
+											<p class="question">질문하게 해 주세요.</p>
+											<p class="text">“네 생각은 어때?”, “왜 그렇게 생각해?” 라는 질문의 <br>
+                                                연결 과정을 통해 생각을 열어나가게 하는 것이 중요합니다. <br>
+                                                질문이 많아질수록 사고가 확장됩니다. <br>
+                                                질문과 대답의 상호작용을 통해 지식을 점차적으로 구성하고 <br>
+                                                표현해보며 수학 사고력을 키워나갈 수 있습니다.</p>
+												<p class="question">짝을 지어 이야기 나누게 해 주세요.</p>
+												<p class="text">좋은 토론은 경청하기부터 시작됩니다. <br>
+                                                짝을 지어 이야기를 나누면 가장 많은 대화를 할 수 있습니다. <br>
+                                                짝 토론, 모둠 토론 등의 다양한 형태의 수업 방식을 통해 <br>
+                                                친구들의 생각을 들으면서 사고를 발전시키고 <br>
+                                                생각하는 힘을 키울 수 있습니다.</p>
+													<p class="question">친구에게 설명하게 해 주세요.</p>
+													<p class="text">구체적 조작기에 있는 우리 아이들 <br>
+                                                수학을 어떻게 설명 할 수 있을까요? <br>
+                                                스스로 교구를 조작해보며 수학에 대한 개념을 자연스럽게 <br>
+                                                알아가고 몸이 기억하고 말로 표현하는 과정을 통해 <br>
+                                                생각을 이끌어내고 배운 내용을 오래 기억할 수 있습니다.</p>
+
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 서브 페이지 컨텐츠 영역 -->
+			</div>
+
+		</div>
+		<footer>
+			<div class="footer_upper">
+				<div class="grid_container">
+					<ul class="bottom_menu">
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
+					</ul>
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_lower">
+				<div class="grid_container">
+					<div class="lower_wrap">
+						<div class="select_form">
+							<button type="button">
+								<span>브랜드 사이트</span>
+							</button>
+							<!-- [D] 선택항목에 따라 텍스트도 변경 -->
+							<ul>
+								<li>
+									<a href="#none">사이트A</a>
+								</li>
+								<li>
+									<a href="#none">사이트B</a>
+								</li>
+								<li>
+									<a href="#none">사이트C</a>
+								</li>
+							</ul>
+						</div>
+						<address>
+							<ul>
+								<li>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
+								<li>대표 : 양환주</li>
+								<li>Tel : <a href="tel:1899-0949">1899-0949</a></li>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+						</address>
+						<p class="copyright">
+							copyright ⓒ 2018 <span>olympiad</span>. all rights reserved
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

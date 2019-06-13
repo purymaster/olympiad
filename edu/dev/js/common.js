@@ -5,15 +5,23 @@ $(function() {
 
     /******************** 셀렉트박스 제어 ********************/
 
+    function changeSelectBox(object) {
+        return;
+    }
+
     var select_form = $('.select_form');
 
-    select_form.on('click', 'button', function() {
+    select_form.on('click', 'button[type="button"]', function() {
         ($(this).hasClass('on')) ?
         select_form.find('button').removeClass('on'):
             (select_form.find('button').removeClass('on'), $(this).addClass('on'));
     }).on('click', 'a', function() {
-        $(this).closest('ul').siblings('button').html($(this).text()).removeClass('on');
+        $(this).closest('ul').siblings('button').removeClass('on').find('span').html($(this).text());
+        $(this).closest('.select_form').find('input[type=hidden]').val($(this).attr('value'));
+        changeSelectBox($(this).closest('.select_form').find('input[type=hidden]'));
+        return false;
     });
+
     $(document).on('mouseup touchend', function(e) {
         if (!select_form.is(e.target) && select_form.has(e.target).length === 0)
             select_form.find('button').removeClass('on');
@@ -27,7 +35,7 @@ $(function() {
             table_width = $(this).data('width');
             window.outerWidth > 1024 ? $(this).find('table').css('min-width', '') : $(this).find('table').css('min-width', table_width);
         })
-    });
+    }).resize();
 
     /******************** 네비게이션 제어 ********************/
 
@@ -91,6 +99,19 @@ $(function() {
 
         //헤더 배경 제어
         scroll ? $('header').addClass('on') : $('header').removeClass('on');
+    });
+
+    /******************** Datepicker ********************/
+
+    $('.datepicker').datepicker({
+        dateFormat: 'yy-mm-dd',
+        showMonthAfterYear: true,
+        monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+        buttonText: "선택",
+        yearSuffix: "년"
     });
 
     /******************** FAQ 제어 ********************/

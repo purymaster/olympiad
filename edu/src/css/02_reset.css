@@ -12,7 +12,6 @@ input[type="text"],input[type="email"],input[type="number"],button,input[type="s
 body {-webkit-text-size-adjust:none; -moz-text-size-adjust:none; position:relative; background:#fff; word-break:keep-all; word-wrap:break-word; font-size:14px; line-height:1.8; color:#4c5358;}
 blockquote,q {quotes:none;}
 /* input:focus,button:focus {border:none;} */
-input[type="text"]:read-only {background:#efefef; cursor:not-allowed;}
 table {border-collapse:collapse; border-spacing:0;}
 ul,ol,li {list-style:none;}
 a:focus {outline:none !important;}

@@ -54,60 +54,11 @@
                                         <th scope="row">
                                             <label for="year">생년월일</label>
                                         </th>
-                                        <td class="divide_3">
-                                            <!-- 년도 -->
-                                            <div class="select_form" style="width:180px;">
-                                                <button type="button" id="year">
-                                                    <span>년도</span>
-                                                </button>
-                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
-                                                <ul>
-                                                    <li>
-                                                        <a href="#none">9999년</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#none">2000년</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#none">1999년</a>
-                                                    </li>
-                                                </ul>
+                                        <td>
+                                            <div class="calendar" style="width:220px;">
+                                                <input type="text" class="datepicker" id="year"
+                                                    readonly="" style="width:220px;">
                                             </div>
-                                            <!-- //년도 -->
-
-                                            <!-- 월 -->
-                                            <div class="select_form" style="width:110px;">
-                                                <button type="button">
-                                                    <span>월</span>
-                                                </button>
-                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
-                                                <ul>
-                                                    <li>
-                                                        <a href="#none">12월</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#none">1월</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- //월 -->
-
-                                            <!-- 일 -->
-                                            <div class="select_form" style="width:110px;">
-                                                <button type="button">
-                                                    <span>일</span>
-                                                </button>
-                                                <!-- [D] 선택항목에 따라 텍스트도 변경 -->
-                                                <ul>
-                                                    <li>
-                                                        <a href="#none">31일</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#none">1일</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- //일 -->
                                         </td>
                                     </tr>
                                     <!-- //생년월일 -->
@@ -178,7 +129,7 @@
                                             </label>
                                         </th>
                                         <td>
-                                            <input type="email" id="email" style="width:220px;">
+                                            <input type="email" id="email" style="width:500px;">
                                         </td>
                                     </tr>
                                     <!-- //이메일 -->
