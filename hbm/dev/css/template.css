@@ -1611,7 +1611,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 .sub_content .subpage_tit .emphasis span {position:relative; font-size:50px;}
 .sub_content .subpage_tit .emphasis span:before {position:absolute; top:-20px; left:50%; width:8px; height:8px; border-radius:50%; background:#333; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
 .sub_content .white .subpage_tit .emphasis span:before {background:#fff;}
-.sub_content .subpage_txt {margin-top:20px; font-family:"Nanum Sqaure"; font-size:18px; line-height:1.6em; text-align:center;}
+.sub_content .subpage_txt {margin-top:20px; font-family:"Nanum Square"; font-size:18px; line-height:1.6em; text-align:center;}
 
 @media (max-width:1024px) {
     .sub_content .content {padding:30px 0;}
@@ -1630,6 +1630,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     .sub_content .subpage_tit,.sub_content .subpage_tit .emphasis span {font-size:20px;}
     .sub_content .subpage_tit.small {font-size:18px;}
     .sub_content .subpage_txt {font-size:14px;}
+    .sub_content .subpage_txt br {display:none;}
 }
 
 /* 컨텐츠 탭 */
@@ -1754,6 +1755,176 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 
 @media (max-width:320px) { 
     .about_hbm .key_point .about li p {font-size:12px;}
+}
+
+/* 하베르만 학습법 */ 
+.hbm_learning_method .think {overflow:hidden; height:0; padding-top:38.33%; background:url(../img/img/img_hbm_learning_method_01.jpg); background-position:center; background-size:cover;}
+.hbm_learning_method .four_lm {margin-top:45px; text-align:center;}
+.hbm_learning_method .four_lm .four_lm_list {margin:0 -10px; font-size:0; line-height:0;}
+.hbm_learning_method .four_lm .four_lm_list li {display:inline-block; width:25%; margin-bottom:20px; padding:0 10px; text-align:left; vertical-align:top;}
+.hbm_learning_method .four_lm .four {position:relative; min-height:474px; padding:40px 10px 40px 20px; border-radius:50px;}
+.hbm_learning_method .four_lm .four:after {position:absolute; right:25px; bottom:40px; z-index:-1; width:70px; height:70px; background:red; content:"";}
+.hbm_learning_method .four_lm .four_lm_list li:nth-child(1) .four {border:10px solid #f06671;}
+.hbm_learning_method .four_lm .four_lm_list li:nth-child(2) .four {border:10px solid #f6bf65;}
+.hbm_learning_method .four_lm .four_lm_list li:nth-child(3) .four {border:10px solid #4cbef0;}
+.hbm_learning_method .four_lm .four_lm_list li:nth-child(4) .four {border:10px solid #a5d166;}
+.hbm_learning_method .four_lm .four .tit {margin-bottom:25px; font-family:"Nanum Square"; font-size:24px; line-height:1.5em;}
+.hbm_learning_method .four_lm .four .tit strong {display:block; font-family:"Nanum Square"; font-size:1.5em; line-height:1.3em;}
+.hbm_learning_method .four_lm .four_lm_list li:nth-child(1) .four .tit {color:#db505b;}
+.hbm_learning_method .four_lm .four_lm_list li:nth-child(2) .four .tit {color:#dd9f3d;}
+.hbm_learning_method .four_lm .four_lm_list li:nth-child(3) .four .tit {color:#2fa0d1;}
+.hbm_learning_method .four_lm .four_lm_list li:nth-child(4) .four .tit {color:#86ba3d;}
+.hbm_learning_method .four_lm .four .sec_tit {position:relative; margin-bottom:20px; padding-top:25px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:28px; color:#333;}
+.hbm_learning_method .four_lm .four .sec_tit:before {position:absolute; top:0; left:0; width:100%; height:1px; background-color:#ccc; content:"";}
+.hbm_learning_method .four_lm .four .text {font-size:14px; line-height:24px; color:#555;}
+.hbm_learning_method .lm_bg {background-image:url(../img/bg/bg_hbm_learning_method_01.jpg); background-position:center;}
+.hbm_learning_method .four_lm .four .text br {display:none;}
+.hbm_learning_method .effect {position:relative; margin-top:60px;}
+.hbm_learning_method .effect .line_cont {position:relative; width:calc(100% - 215px); text-align:center;}
+.hbm_learning_method .effect .line_cont .effect_list {overflow:hidden; position:relative;}
+.hbm_learning_method .effect .line_cont .effect_list:before {position:absolute; top:69px; left:0; width:97%; border-top:3px dotted #fff; content:"";}
+.hbm_learning_method .effect .line_cont .effect_list:after {position:absolute; top:52px; right:3%; width:35px; height:35px; border-top:2px solid #fff; border-right:2px solid #fff; -webkit-transform:rotate(45deg); transform:rotate(45deg); content:"";}
+.hbm_learning_method .effect .line_cont .effect_list li {float:left; width:23%;}
+.hbm_learning_method .effect .line_cont .effect_list li .tit {position:relative; padding-bottom:50px; font-family:"Nanum Square"; font-size:24px; line-height:1.5em;}
+.hbm_learning_method .effect .line_cont .effect_list li .tit:before {position:absolute; bottom:11px; left:50%; z-index:1; width:9px; height:9px; border-radius:50%; background-color:#fff; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.hbm_learning_method .effect .line_cont .effect_list li .tit:after {position:absolute; bottom:0; left:50%; width:33px; height:33px; border-radius:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%); opacity:0.6; content:"";}
+.hbm_learning_method .effect .line_cont .effect_list li:nth-child(1) .tit:after {background-color:#e60013;}
+.hbm_learning_method .effect .line_cont .effect_list li:nth-child(2) .tit:after {background-color:#f39800;}
+.hbm_learning_method .effect .line_cont .effect_list li:nth-child(3) .tit:after {background-color:#7fbe25;}
+.hbm_learning_method .effect .line_cont .effect_list li:nth-child(4) .tit:after {background-color:#00a1e9;}
+.hbm_learning_method .effect .line_cont .effect_list li .num {display:block; font-size:24px; font-weight:700; line-height:2em;}
+.hbm_learning_method .effect .line_cont .effect_list li .sec_tit {margin:20px 0 10px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em;}
+.hbm_learning_method .effect .line_cont .effect_list li .text {font-size:14px; line-height:1.7em;}
+.hbm_learning_method .effect .bg_text {position:absolute; top:-30px; right:0; width:202px; height:202px; padding:20px; border-radius:50%; background-color:rgba(0,174,186,0.9); text-align:center;}
+.hbm_learning_method .effect .bg_text p {width:164px; border-radius:50%; background-color:rgba(0,0,0,0.1); font-family:"Nanum Square"; font-size:24px; line-height:164px; color:#fff;}
+.hbm_learning_method .difference {margin-top:60px;}
+.hbm_learning_method .difference .difference_list > li {margin-bottom:45px;}
+.hbm_learning_method .difference .difference_list > li:last-child {margin-bottom:0;}
+.hbm_learning_method .difference .difference_cont {display:table; width:100%; table-layout:fixed;}
+.hbm_learning_method .difference .difference_cont .difference_tit {display:table-cell; width:calc(20% - 40px); margin-right:40px; text-align:center; vertical-align:middle;}
+.hbm_learning_method .difference .difference_cont .difference_tit .tit {font-family:"Nanum Square"; font-size:30px; font-weight:700; line-height:1.6em; color:#333;}
+.hbm_learning_method .difference .difference_cont .difference_tit .text {font-family:"Nanum Square"; font-size:18px; line-height:1.6em; color:#333;}
+.hbm_learning_method .difference .difference_cont .difference_box {display:table-cell; width:80%; vertical-align:middle;}
+.hbm_learning_method .difference .difference_cont .difference_box .d_list {padding-left:35px; font-size:0; line-height:0;}
+.hbm_learning_method .difference .difference_cont .difference_box .d_list > li {display:inline-block; margin-left:-35px;}
+.hbm_learning_method .difference .difference_cont .difference_box .d_list > li:last-child .list_text {width:238px; background-color:rgba(129,130,141,0.7);}
+.hbm_learning_method .difference .difference_cont .list_text {display:table-cell; width:208px; height:120px; border-radius:100px; background-color:rgba(129,130,141,0.2); text-align:center; vertical-align:middle;}
+.hbm_learning_method .difference .difference_cont .list_text .text_list li {position:relative; padding-bottom:32px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.6em; color:#333;}
+.hbm_learning_method .difference .difference_cont .list_text .text_list li:after {position:absolute; bottom:6px; left:50%; width:10px; height:23px; margin-left:-5px; background-color:#9e9ea0; content:"";}
+.hbm_learning_method .difference .difference_cont .list_text .text_list li:last-child:after {display:none;}
+.hbm_learning_method .difference .difference_cont .difference_box .d_list > li:last-child .list_text li {font-family:"Nanum Square"; font-size:24px; line-height:34px; color:#fff;}
+.hbm_learning_method .difference .difference_cont .list_text .text_list li:last-child {margin-bottom:0; padding-bottom:0;}
+.hbm_learning_method .difference .difference_list li:nth-child(2) .difference_cont .list_text {background-color:rgba(0,158,158,0.2);}
+.hbm_learning_method .difference .difference_list li:nth-child(2) .difference_box .d_list > li:nth-child(5) .list_text {background-color:rgba(0,174,186,0.8);}
+.hbm_learning_method .lm_02_bg {background-image:url(../img/bg/bg_hbm_learning_method_02.jpg);}
+.hbm_learning_method .gifted_education .ge_title {text-align:left;}
+.hbm_learning_method .gifted_education .ge_list {overflow:hidden; margin:0 -20px;}
+.hbm_learning_method .gifted_education .ge_list li {float:left; width:50%; padding:0 20px;}
+.hbm_learning_method .gifted_education .bgc_text {width:100%; min-height:765px; margin-top:40px; padding:40px 30px; background-color:rgba(0,0,0,0.4);}
+.hbm_learning_method .gifted_education .bgc_text .tit {margin-bottom:20px; font-size:50px; font-weight:700; line-height:1.6em;}
+.hbm_learning_method .gifted_education .bgc_text .text {margin-bottom:1.8em; font-size:16px; line-height:1.8em;}
+.hbm_learning_method .gifted_education .bgc_text .text:last-child {margin-bottom:0;}
+.hbm_learning_method .gifted_education .bgc_text .question {margin-bottom:5px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.5em;}
+
+@media (max-width:1366px) { 
+    .hbm_learning_method .difference .difference_cont {display:block;}
+    .hbm_learning_method .difference .difference_cont .difference_tit {display:block; width:100%; margin-bottom:20px;}
+    .hbm_learning_method .difference .difference_cont .difference_box {display:block; width:100%; text-align:center;}
+    .hbm_learning_method .difference .difference_cont .difference_box .d_list {padding:0;}
+    .hbm_learning_method .difference .difference_cont .difference_box .d_list > li {width:20%; margin:0;}
+    .hbm_learning_method .difference .difference_cont .difference_box .d_list > li:last-child .list_text li {font-size:18px; line-height:1.5em;}
+    .hbm_learning_method .difference .difference_cont .list_text {width:999px; height:100px;}
+    .hbm_learning_method .difference .difference_cont .list_text .text_list li {font-size:16px;}
+    .hbm_learning_method .gifted_education .ge_title {font-size:36px;}
+}
+
+@media (max-width:1024px) {
+    .hbm_learning_method .think {overflow:visible; height:auto; margin:0 -15px; padding:0; background:none; font-size:0;}
+    .hbm_learning_method .think img {display:block; width:100%; max-width:480px; margin:0 auto 30px;}
+    .hbm_learning_method .think .main_tit {display:block; max-width:200px; margin:0 auto; padding:5px 10px; border:5px solid #00aeba; border-radius:50px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:1.4em; text-align:center;}
+    .hbm_learning_method .think .main_tit strong {font-family:"Nanum Square"; font-size:1.2em; color:#00aeba;}
+    .hbm_learning_method .think .cont {display:inline-block; width:50%; margin-top:15px; padding:0 15px; font-size:14px; text-align:center; vertical-align:top;}
+    .hbm_learning_method .think .cont .cont_tit {display:inline-block; margin-bottom:15px; padding:0 5px; background:#00aeba; font-family:"Nanum Square"; font-size:18px; font-weight:700; color:#fff;}
+    .hbm_learning_method .think .cont .main_txt {font-size:1.1em; font-weight:700;}
+    .hbm_learning_method .four_lm {margin-top:30px; line-height:1.5em;}
+    .hbm_learning_method .four_lm .four_lm_list li {width:100%; min-height:auto; margin-bottom:15px;}
+    .hbm_learning_method .four_lm .four_lm_list li:last-child {margin-bottom:0;}
+    .hbm_learning_method .four_lm .four {min-height:0; padding:15px; text-align:center; border-width:5px !important;}
+    .hbm_learning_method .four_lm .four:after {top:20px; bottom:auto; width:35px; height:35px;}
+    .hbm_learning_method .four_lm .four .tit {margin-bottom:15px; font-size:20px;}
+    .hbm_learning_method .four_lm .four .tit strong {font-size:1.4em;}
+    .hbm_learning_method .four_lm .four .tit br {display:none;}
+    .hbm_learning_method .four_lm .four .sec_tit {margin-bottom:10px; padding-top:10px; font-size:16px; line-height:1.5em;}
+    .hbm_learning_method .four_lm .four .text {font-size:14px; line-height:1.6em;}
+    .hbm_learning_method .four_lm .four .text br {display:none;}
+    .hbm_learning_method .effect {margin-top:30px;}
+    .hbm_learning_method .effect .line_cont {width:calc(100% - 100px);}
+    .hbm_learning_method .effect .line_cont .effect_list:before {top:47px;}
+    .hbm_learning_method .effect .line_cont .effect_list:after {top:39px; width:20px; height:20px;}
+    .hbm_learning_method .effect .line_cont .effect_list li .tit {padding-bottom:40px; font-size:16px;}
+    .hbm_learning_method .effect .line_cont .effect_list li .num {font-size:20px;}
+    .hbm_learning_method .effect .line_cont .effect_list li .sec_tit {font-size:16px; margin:0;}
+    .hbm_learning_method .effect .line_cont .effect_list li .text {font-size:12px; line-height:1.6em;}
+    .hbm_learning_method .effect .line_cont .effect_list li .text br {display:none;}
+    .hbm_learning_method .effect .bg_text {top:0; width:100px; height:100px; padding:10px;}
+    .hbm_learning_method .effect .bg_text p {width:80px; line-height:80px; font-size:14px;}
+    .hbm_learning_method .difference {margin-top:30px;}
+    .hbm_learning_method .difference .difference_cont .difference_tit .tit {font-size:24px;}
+    .hbm_learning_method .difference .difference_cont .difference_tit .text {font-size:16px;}
+    .hbm_learning_method .difference .difference_cont .list_text .text_list li {font-size:16px;}
+    .hbm_learning_method .difference .difference_cont .difference_box .d_list > li:last-child .list_text li {font-size:20px;}
+    .hbm_learning_method .gifted_education .ge_title {font-size:30px; text-align:center;}
+    .hbm_learning_method .gifted_education .ge_list {margin:0;}
+    .hbm_learning_method .gifted_education .ge_list li {float:none; width:100%; margin-bottom:20px; padding:0;}
+    .hbm_learning_method .gifted_education .ge_list li:last-child {margin-bottom:0;}
+    .hbm_learning_method .gifted_education .bgc_text {padding:20px;}
+    .hbm_learning_method .gifted_education .bgc_text .tit {font-size:38px;}
+    .hbm_learning_method .gifted_education .bgc_text .question {font-size:16px;}
+    .hbm_learning_method .gifted_education .bgc_text {min-height:auto; margin-top:30px;}
+    .hbm_learning_method .gifted_education .bgc_text .text {font-size:14px; line-height:1.6em; margin-bottom:1.6em;}
+    .hbm_learning_method .gifted_education .bgc_text .text br {display:none;}
+}
+
+@media (max-width:599px) {
+    .hbm_learning_method .think {margin:0;}
+    .hbm_learning_method .think .cont {padding:0; width:100%;}
+    .hbm_learning_method .think .main_tit {max-width:150px; border-width:3px; font-size:16px;}
+    .hbm_learning_method .think .cont .cont_tit {font-size:16px;}
+    .hbm_learning_method .think .cont .main_txt {font-size:14px;}
+    .hbm_learning_method .think .cont .cont_txt {font-size:12px;}
+    .hbm_learning_method .four_lm .four .tit {font-size:18px;}
+    .hbm_learning_method .four_lm .four .tit strong {font-size:1.3em;}
+    .hbm_learning_method .four_lm .four .sec_tit {font-size:14px;}
+    .hbm_learning_method .four_lm .four .text {font-size:12px;}
+    .hbm_learning_method .effect {max-width:250px; margin:50px auto 0;}
+    .hbm_learning_method .effect .line_cont {width:100%;}
+    .hbm_learning_method .effect .line_cont .effect_list {overflow:visible; margin:0;}
+    .hbm_learning_method .effect .line_cont .effect_list:before,.hbm_learning_method .effect .line_cont .effect_list:after {display:none;}
+    .hbm_learning_method .effect .line_cont .effect_list li {float:none; position:relative; width:100%;padding:15px 0 25px; z-index:1;}
+    .hbm_learning_method .effect .line_cont .effect_list li:before,.hbm_learning_method .effect .line_cont .effect_list li:after {position:absolute; top:0; width:50%; height:100%; content:""; z-index:-1; opacity:0.5;}
+    .hbm_learning_method .effect .line_cont .effect_list li:nth-child(1):before,.hbm_learning_method .effect .line_cont .effect_list li:nth-child(1):after {background-color:#e60013;}
+    .hbm_learning_method .effect .line_cont .effect_list li:nth-child(2):before,.hbm_learning_method .effect .line_cont .effect_list li:nth-child(2):after {background-color:#f39800;}
+    .hbm_learning_method .effect .line_cont .effect_list li:nth-child(3):before,.hbm_learning_method .effect .line_cont .effect_list li:nth-child(3):after {background-color:#7fbe25;}
+    .hbm_learning_method .effect .line_cont .effect_list li:nth-child(4):before,.hbm_learning_method .effect .line_cont .effect_list li:nth-child(4):after {background-color:#00a1e9;}
+    .hbm_learning_method .effect .line_cont .effect_list li .num,.hbm_learning_method .effect .line_cont .effect_list li .sec_tit {display:inline-block; font-size:16px;}
+    .hbm_learning_method .effect .line_cont .effect_list li:before {left:0; -webkit-transform:skewY(10deg) translateY(-8px); transform:skewY(10deg) translateY(-8px);}
+    .hbm_learning_method .effect .line_cont .effect_list li:after {right:0; -webkit-transform:skewY(-10deg) translateY(-8px); transform:skewY(-10deg) translateY(-8px);}
+    .hbm_learning_method .effect .line_cont .effect_list li .tit {padding:0; font-size:14px;}
+    .hbm_learning_method .effect .line_cont .effect_list li .tit:before,.hbm_learning_method .effect .line_cont .effect_list li .tit:after {display:none;}
+    .hbm_learning_method .effect .bg_text {position:static; margin:30px auto 0;}
+    .hbm_learning_method .effect .bg_text p {font-size:16px;}
+    .hbm_learning_method .difference .difference_cont .difference_box .d_list > li {width:100%; margin-bottom:10px;}
+    .hbm_learning_method .difference .difference_cont .difference_box .d_list > li:last-child .list_text li {font-size:18px;}
+    .hbm_learning_method .difference .difference_cont .difference_tit .tit {font-size:18px;}
+    .hbm_learning_method .difference .difference_cont .difference_tit .text {font-size:14px;}
+    .hbm_learning_method .difference .difference_cont .list_text {display:block; width:100% !important; height:auto; padding:10px 15px; border-radius:30px;}
+    .hbm_learning_method .difference .difference_cont .list_text .text_list li {display:inline-block; font-size:14px; padding:0; padding:0 15px;}
+    .hbm_learning_method .difference .difference_cont .list_text .text_list li:after {right:0; bottom:50%; left:auto; margin:0; margin-right:-5px; margin-bottom:-11px; -webkit-transform:rotate(90deg); transform:rotate(90deg);}
+    .hbm_learning_method .difference .difference_cont .list_text .text_list li br {display:none;}
+    .hbm_learning_method .gifted_education .ge_title {font-size:20px;}
+    .hbm_learning_method .gifted_education .bgc_text {margin-top:20px;}
+    .hbm_learning_method .gifted_education .bgc_text .tit {font-size:24px;}
+    .hbm_learning_method .gifted_education .bgc_text .text {font-size:12px; line-height:20px;}
 }
 
 /*  하베르만 프로그램 - 프로그램 특징 */
@@ -1923,7 +2094,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 .admission_guide .admission_procedure .procedure .text_list {margin-top:25px; padding:0 40px 0 10px;}
 .admission_guide .admission_procedure .procedure .text_list ul li {position:relative; margin-bottom:10px; padding-left:15px; font-size:16px; line-height:24px; color:#333;}
 .admission_guide .admission_procedure .procedure .text_list li:last-child {margin-bottom:0;}
-.admission_guide .admission_procedure .procedure .text_list li:before {position:absolute; top:10px; left:0; width:4px; height:4px; background-color:#333; content:"";}
+.admission_guide .admission_procedure .procedure .text_list li:before {position:absolute; top:10px; left:0; width:4px; height:4px; background-color:#333; text-indent:-9999px; content:"에서";}
 .admission_guide .btn_wrap {margin-top:50px;}
 .admission_guide .btn_wrap a {display:inline-block; position:relative; width:340px; padding:0 35px; background:#00aeba; font-size:18px; line-height:70px; color:#fff; text-align:left;}
 .admission_guide .btn_wrap a:before,.admission_guide .btn_wrap a:after {position:absolute; top:50%; right:35px; height:1px; margin-top:-1px; background:#fff; content:""; -webkit-transition:all 0.5s; transition:all 0.5s;}
@@ -2062,159 +2233,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     .inspection_guide .line_box .line_text { font-size: 22px;}
     .inspection_guide .full_table { margin-top: 20px; }
 }
-/* 소개 - 하베르만 학습법*/ 
-.hbm_learning_method .four_lm { text-align: center; padding-top: 60px;}
-.hbm_learning_method .four_lm .four_lm_list {font-size: 0; line-height: 0; margin: 0 -10px; }
-.hbm_learning_method .four_lm .four_lm_list li { display: inline-block; padding: 0 10px; min-width: 300px; min-height: 474px; text-align: left; margin-bottom: 20px;}
-.hbm_learning_method .four_lm .four { border-radius: 50px; padding: 40px 10px 40px 20px; }
-.hbm_learning_method .four_lm .four_lm_list li:nth-child(1) .four { border: 10px solid #f06671; }
-.hbm_learning_method .four_lm .four_lm_list li:nth-child(2) .four { border: 10px solid #f6bf65; }
-.hbm_learning_method .four_lm .four_lm_list li:nth-child(3) .four { border: 10px solid #4cbef0; }
-.hbm_learning_method .four_lm .four_lm_list li:nth-child(4) .four { border: 10px solid #a5d166; }
-.hbm_learning_method .four_lm .four .tit {font-family:"Nanum Square"; font-size: 24px; line-height: 1.5em; margin-bottom: 25px; }
-.hbm_learning_method .four_lm .four .tit strong { font-family:"Nanum Square"; font-size: 36px; line-height: 1.5em;}
-.hbm_learning_method .four_lm .four_lm_list li:nth-child(1) .four .tit { color: #db505b;}
-.hbm_learning_method .four_lm .four_lm_list li:nth-child(2) .four .tit { color: #dd9f3d;}
-.hbm_learning_method .four_lm .four_lm_list li:nth-child(3) .four .tit { color: #2fa0d1;}
-.hbm_learning_method .four_lm .four_lm_list li:nth-child(4) .four .tit { color: #86ba3d;}
-.hbm_learning_method .four_lm .four .sec_tit { font-size: 18px; font-family:"Nanum Square"; line-height: 28px; color: #333; position: relative; padding-top: 25px; margin-bottom: 20px; font-weight: 700;}
-.hbm_learning_method .four_lm .four .sec_tit:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 1px; background-color: #cccccc;}
-.hbm_learning_method .four_lm .four .text { font-size: 14px; color: #555; line-height: 24px;}
-.hbm_learning_method .lm_bg {  background-image: url(../img/bg/bg_hbm_learning_method_01.jpg); background-position: center; }   
 
-.hbm_learning_method .effect { padding-top: 60px; }
-.hbm_learning_method .effect .line_cont { text-align: center; width: calc(100% - 245px); position: relative;}
-.hbm_learning_method .effect .line_cont .effect_list { overflow: hidden; position: relative;}
-.hbm_learning_method .effect .line_cont .effect_list:before {content: ""; position: absolute; right: 20px; top: 52px; width: 35px; height: 35px; border-top: 2px solid #fff; border-right: 2px solid #fff; -webkit-transform: rotate(45deg); transform: rotate(45deg);}
-.hbm_learning_method .effect .line_cont .effect_list:after { content: ""; position: absolute; left: 0; top: 69px; width: 97%; border-top: 3px dotted #fff;}
-.hbm_learning_method .effect .line_cont .effect_list li { float: left; width: 210px;} 
-.hbm_learning_method .effect .line_cont .effect_list li .tit {font-size: 24px; line-height: 1.5em; font-family:"Nanum Square"; padding-bottom: 50px;  position: relative;}
-.hbm_learning_method .effect .line_cont .effect_list li .tit:before { content: ""; position: absolute; left: 50%; bottom: 11px; width: 9px; height: 9px; background-color: #fff;  border-radius: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); z-index: 1; }
-.hbm_learning_method .effect .line_cont .effect_list li .tit:after { content: ""; position: absolute; left: 50%; bottom: 0; width: 33px; height: 33px; border-radius: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); opacity: 0.6;}
-.hbm_learning_method .effect .line_cont .effect_list li:nth-child(1) .tit:after { background-color: #e60013; }
-.hbm_learning_method .effect .line_cont .effect_list li:nth-child(2) .tit:after { background-color: #f39800; }
-.hbm_learning_method .effect .line_cont .effect_list li:nth-child(3) .tit:after { background-color: #7fbe25; }
-.hbm_learning_method .effect .line_cont .effect_list li:nth-child(4) .tit:after { background-color: #00a1e9; }
-.hbm_learning_method .effect .line_cont .effect_list li .num { font-size: 20px; line-height: 24px;font-family:"OpenSans"; padding-top: 12px; display: block;}
-.hbm_learning_method .effect .line_cont .effect_list li .sec_tit { font-size: 20px; line-height: 30px;font-family:"Nanum Square"; margin-bottom: 10px; } 
-.hbm_learning_method .effect .line_cont .effect_list li .text { font-size: 14px; line-height: 24px; font-weight: 700; }
-.hbm_learning_method .effect .bg_text { position: absolute; right: 120px; top: 50%;  text-align: center; width: 202px; height: 202px; background-color: rgba(0,174,186,0.7); border-radius: 50%; padding: 20px; margin-top: -10px;} 
-.hbm_learning_method .effect .bg_text p { font-size: 24px; line-height: 30px; color: #fff;  width: 164px; height: 164px; background-color: rgba(0,0,0,0.3); border-radius: 50%; display: table-cell; vertical-align: middle;}
-
-.hbm_learning_method .difference {padding-top: 60px; }
-.hbm_learning_method .difference .difference_list li { margin-bottom: 40px;}
-.hbm_learning_method .difference .difference_list li:last-child { margin-bottom: 0;}
-.hbm_learning_method .difference .difference_cont {display: table; width: 100%; table-layout: fixed;}
-.hbm_learning_method .difference .difference_cont .difference_tit { display: table-cell; vertical-align: middle; text-align: center; width: calc(20% - 40px); margin-right: 40px;}
-.hbm_learning_method .difference .difference_cont .difference_tit .tit { font-family:"Nanum Square"; font-size: 30px; line-height: 1.5em; color: #333; font-weight: 700;}
-.hbm_learning_method .difference .difference_cont .difference_tit .text {font-family:"Nanum Square"; font-size: 18px; line-height: 1.5em; color: #333; }
-.hbm_learning_method .difference .difference_cont .difference_box { display: table-cell; vertical-align: middle; width: 80%;}
-.hbm_learning_method .difference .difference_cont .difference_box .d_list { line-height: 0; font-size: 0; padding: 0 0 0 35px;}
-.hbm_learning_method .difference .difference_cont .difference_box .d_list > li { display: inline-block; margin:0 0 20px -35px;   }
-.hbm_learning_method .difference .difference_cont .difference_box .d_list > li:nth-child(5) .list_text { width: 238px;  background-color: rgba(129,130,141,0.8); }
-.hbm_learning_method .difference .difference_cont .list_text { width: 208px; height: 120px; background-color: rgba(129,130,141,0.2);  border-radius: 100px;  display: table-cell; vertical-align: middle;  text-align: center;}
-.hbm_learning_method .difference .difference_cont .list_text .text_list li {font-family:"Nanum Square"; font-size: 18px; color:#333; line-height:20px;  padding-bottom: 33px; position: relative; margin-bottom: 10px; }
-.hbm_learning_method .difference .difference_cont .list_text .text_list li:after {  content: ""; position: absolute; left: 50%; bottom: 0; width: 10px; height: 23px; background-color: #9e9ea0; -webkit-transform: translateX(-50%); transform: translateX(-50%);} 
-.hbm_learning_method .difference .difference_cont .list_text .text_list li:last-child:after { display: none }
-.hbm_learning_method .difference .difference_cont .difference_box .d_list > li:nth-child(5) .list_text li {font-size: 24px; line-height: 34px; font-family:"Nanum Square";  color: #fff;  }
-.hbm_learning_method .difference .difference_cont .list_text .text_list li:last-child { padding-bottom: 0; margin-bottom: 0;}
-.hbm_learning_method .difference .difference_list li:nth-child(2) .difference_cont .list_text {background-color: rgba(0,158,158,0.2);}
-.hbm_learning_method .difference .difference_list li:nth-child(2) .difference_box .d_list > li:nth-child(5) .list_text { background-color: rgba(0,174,186,0.8); }
-.hbm_learning_method .lm_02_bg { background-image: url(../img/bg/bg_hbm_learning_method_02.jpg);}
-.hbm_learning_method .gifted_education .ge_title { text-align: left;}
-.hbm_learning_method .gifted_education .ge_list {overflow: hidden; margin: 0 -20px; }
-.hbm_learning_method .gifted_education .ge_list li { float: left; width: 50%; padding: 0 20px;}
-.hbm_learning_method .gifted_education .bgc_text {width: 100%; min-height: 765px; background-color: rgba(0,0,0,0.4);  padding:40px 20px 20px 30px;  margin-top: 40px; }
-.hbm_learning_method .gifted_education .bgc_text .tit { font-size: 50px; font-family:"OpenSans"; font-weight: 700; line-height: 1.6em;}
-.hbm_learning_method .gifted_education .bgc_text .text { font-size: 16px; line-height: 30px; margin-bottom: 30px;}
-.hbm_learning_method .gifted_education .bgc_text .text:last-child {  margin-bottom: 0;}
-.hbm_learning_method .gifted_education .bgc_text .question { font-size: 20px; line-height: 30px;font-family:"Nanum Square"; }
-
-@media (max-width:1366px) { 
-    .hbm_learning_method .four_lm .four .tit { font-size: 22px; margin-bottom: 20px;}
-    .hbm_learning_method .four_lm .four .tit strong { font-size: 32px}
-    .hbm_learning_method .four_lm .four .sec_tit { font-size: 16px; padding-top: 20px;}
-    .hbm_learning_method .effect .line_cont .effect_list:before {right: 13px; top: 50px;}
-    .hbm_learning_method .effect .line_cont .effect_list:after { top: 66px;}
-    .hbm_learning_method .effect .line_cont .effect_list li { width: 25%;}
-    .hbm_learning_method .effect .line_cont .effect_list li .tit { font-size: 22px;}
-    .hbm_learning_method .effect .line_cont .effect_list li .num { font-size: 18px;}
-    .hbm_learning_method .effect .line_cont .effect_list li .sec_tit { font-size: 18px;}
-    .hbm_learning_method .effect .bg_text { width: 152px; height: 152px; margin-top: 15px;}
-    .hbm_learning_method .effect .bg_text p { width: 114px; height: 114px; font-size: 20px;}
-    .hbm_learning_method .difference .difference_cont { display: block;}
-    .hbm_learning_method .difference .difference_cont .difference_tit { display: block; width: 100%; margin-bottom: 20px;}
-    .hbm_learning_method .difference .difference_cont .difference_box { display: block; width: 100%; text-align: center;}
-    .hbm_learning_method .gifted_education .ge_title { font-size: 36px;}
-    .hbm_learning_method .gifted_education .bgc_text .tit { font-size: 44px;}
-    .hbm_learning_method .gifted_education .bgc_text .question { font-size: 18px;}
-    .hbm_learning_method .gifted_education .bgc_text .text { font-size: 14px; margin-bottom: 20px; line-height: 24px;}
-
-
-
-}
-@media (max-width:1024px) {
-    .hbm_learning_method .four_lm { padding-top: 50px;}
-    .hbm_learning_method .four_lm .four_lm_list li { width: 100%; min-height: auto;}
-    .hbm_learning_method .four_lm .four_lm_list li:last-child { margin-bottom: 0;}
-    .hbm_learning_method .four_lm .four { padding: 30px 20px;}
-    .hbm_learning_method .four_lm .four .tit { font-size: 20px; margin-bottom: 15px;}
-    .hbm_learning_method .four_lm .four .tit strong { font-size: 28px} 
-    .hbm_learning_method .four_lm .four .tit br { display: none;}
-    .hbm_learning_method .four_lm .four .sec_tit { font-size: 14px; line-height: 20px; margin-bottom: 10px;}
-    .hbm_learning_method .four_lm .four .sec_tit br { display: none;}
-    .hbm_learning_method .four_lm .four .text { font-size: 12px; line-height: 20px;}
-    .hbm_learning_method .four_lm .four .text br {display: none;}
-    .hbm_learning_method .effect .line_cont { max-width: 1000px; margin: 0 auto 20px;  }
-    .hbm_learning_method .effect .line_cont .effect_list { padding-bottom: 60px; margin: -20px -15px; }
-    .hbm_learning_method .effect .line_cont .effect_list:before { top: auto; bottom: 35px; right: 50%; -webkit-transform: translateX(50%) rotate(135deg); transform: translateX(50%) rotate(135deg); }
-    .hbm_learning_method .effect .line_cont .effect_list:after { display: none; }
-    .hbm_learning_method .effect .line_cont .effect_list li { width: 50%; padding:20px 15px;}
-    .hbm_learning_method .effect .line_cont .effect_list li:nth-child(3) { clear: both;}
-    .hbm_learning_method .effect .line_cont .effect_list li .tit { font-size: 20px; padding-bottom: 40px;} 
-    .hbm_learning_method .effect .line_cont .effect_list li .num { font-size: 16px;}
-    .hbm_learning_method .effect .line_cont .effect_list li .sec_tit { font-size: 16px; margin-bottom: 0;}
-    .hbm_learning_method .effect .line_cont .effect_list li .text { font-size: 12px; line-height: 20px;} 
-    .hbm_learning_method .effect .line_cont .effect_list li .text br {  display: none;}
-    .hbm_learning_method .effect .bg_text { position: static; margin: 0 auto;}
-    .hbm_learning_method .effect .bg_text p {  font-size:18px; }
-    .hbm_learning_method .difference .difference_cont .difference_tit .tit { font-size: 26px;}
-    .hbm_learning_method .difference .difference_cont .difference_tit .text { font-size: 16px;}
-    .hbm_learning_method .difference .difference_cont .list_text .text_list li { font-size: 16px;}
-    .hbm_learning_method .difference .difference_cont .difference_box .d_list > li:nth-child(5) .list_text li {font-size: 20px; line-height: 28px;}
-    .hbm_learning_method .gifted_education .ge_title { font-size: 32px;}
-    .hbm_learning_method .gifted_education .ge_list { margin: 0;}
-    .hbm_learning_method .gifted_education .ge_list li {float: none; width: 100%; margin-bottom: 40px; padding: 0;}
-    .hbm_learning_method .gifted_education .ge_list li:last-child {  margin-bottom: 0;}
-    .hbm_learning_method .gifted_education .bgc_text { padding: 20px;}
-    .hbm_learning_method .gifted_education .bgc_text .tit { font-size: 38px;}
-    .hbm_learning_method .gifted_education .bgc_text .question { font-size: 16px;}
-    .hbm_learning_method .gifted_education .bgc_text { min-height: auto; margin-top: 30px;}
-    .hbm_learning_method .gifted_education .bgc_text .text { margin-bottom: 10px;}
-    .hbm_learning_method .gifted_education .bgc_text .text br { display: none}
-}
-@media (max-width:599px) {
-    .hbm_learning_method .four_lm { padding-top: 30px;} 
-    .hbm_learning_method .four_lm .four .tit { font-size: 18px;}
-    .hbm_learning_method .four_lm .four .tit strong { font-size: 24px}
-    .hbm_learning_method .effect .line_cont { width: 100%; }
-    .hbm_learning_method .effect .line_cont .effect_list { margin: 0;}
-    .hbm_learning_method .effect .line_cont .effect_list:before { bottom: 10px;}
-    .hbm_learning_method .effect .line_cont .effect_list li { float: none; width: 100%; padding: 0; margin-bottom: 20px;}
-    .hbm_learning_method .effect .line_cont .effect_list li:last-child { margin-bottom: 0;}
-    .hbm_learning_method .effect .line_cont .effect_list li .tit { font-size: 18px;}
-    .hbm_learning_method .effect .line_cont .effect_list li .num { font-size: 14px;}
-    .hbm_learning_method .effect .line_cont .effect_list li .sec_tit { font-size: 14px;}
-    .hbm_learning_method .effect .bg_text p {  font-size:16px;} 
-    .hbm_learning_method .difference .difference_cont .difference_tit .tit { font-size: 24px; }
-    .hbm_learning_method .difference .difference_cont .difference_tit .text { font-size: 14px;}
-    .hbm_learning_method .difference .difference_cont .list_text .text_list li { font-size: 14px;} 
-    .hbm_learning_method .gifted_education .ge_title { font-size: 28px;}
-    .hbm_learning_method .gifted_education .bgc_text { margin-top: 20px;}
-    .hbm_learning_method .gifted_education .bgc_text .tit { font-size: 32px;}
-    .hbm_learning_method .gifted_education .bgc_text .text { font-size: 12px; line-height: 20px; } 
-
-}
 
 /* 하베르만 프로그램 - 프로그램 구성 - 하베르 Kids */ 
 .configuration .configuration_01_bg { background-image: url(../img/bg/bg_configuration_tab1_01.jpg); }
