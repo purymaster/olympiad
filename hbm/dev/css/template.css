@@ -1892,7 +1892,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     .hbm_learning_method .think .cont .cont_tit {font-size:16px;}
     .hbm_learning_method .think .cont .main_txt {font-size:14px;}
     .hbm_learning_method .think .cont .cont_txt {font-size:12px;}
-    .hbm_learning_method .four_lm .four .tit {font-size:18px;}
+    .hbm_learning_method .four_lm .four .tit {font-size:14px;}
     .hbm_learning_method .four_lm .four .tit strong {font-size:1.3em;}
     .hbm_learning_method .four_lm .four .sec_tit {font-size:14px;}
     .hbm_learning_method .four_lm .four .text {font-size:12px;}
@@ -1928,146 +1928,250 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 }
 
 /*  하베르만 프로그램 - 프로그램 특징 */
-.program_features .courses { margin-top: 50px; margin-bottom: -60px;}
-.program_features .courses:after{ content: ""; display: table; clear: both;}
-.program_features .courses .grid_container { background-image: url(../img/bg/bg_step.png); background-repeat: no-repeat; width: 100%; height: 0; padding-top: 385px; background-position: center;    position: relative; }
-.program_features .step .step_list { overflow: hidden;}
-.program_features .step .step_list li { float: left; width: 33.333%;}
-.program_features .step_text .tit { position: absolute; font-size: 18px; color: #333; font-family:"Nanum Square"; }
-.program_features .step .step_list li:nth-child(1) .step_text .tit  
-{top: 96px; left: 50%; margin-left: -443px;}
-.program_features .step .step_list li:nth-child(2) .step_text .tit  
-{left: 50%; top: 47px; margin-left: -189px;}
-.program_features .step .step_list li:nth-child(3) .step_text .tit 
-{left: 50%; top: -3px; margin-left: 65px;} 
-.program_features .step_text .tit strong { font-size: 24px; line-height: 30px;  font-family: "Nanum Square"; }
-.program_features .step_list li:nth-child(1) .tit strong { color: #e60013; }
-.program_features .step_list li:nth-child(2) .tit strong { color: #f7b74c; }
-.program_features .step_list li:nth-child(3) .tit strong { color: #a5d166; }
-.program_features .step .step_list li .step_text .text { font-size: 16px; color: #555; line-height: 28px; position: absolute; }
-.program_features .step .step_list li:nth-child(1) .step_text .text
-{bottom: -6px; left: 50%; margin-left: -342px;}
-.program_features .step .step_list li:nth-child(2) .step_text .text  
-{left: 50%; bottom: 44px; margin-left: -88px;}
-.program_features .step .step_list li:nth-child(3) .step_text .text 
-{left: 50%; bottom: 66px; margin-left: 167px;} 
-.program_features .key_visual {background-image: url(../img/bg/bg_program_features_01.jpg); width: 100%;
-    height: auto; background-size: cover; background-repeat: no-repeat; background-position: center top; padding: 60px 0; margin-top: 30px;}
-.program_features .key_visual .txt { font-size: 24px; color: #fff; line-height: 36px; text-align: center; font-family:"Nanum Square"; margin-bottom: 20px;}
-.program_features .key_visual .txt strong { font-size: 36px; line-height: 1.4em; font-family:"Nanum Square"; } 
-.program_features .dot_list { margin-top: -60px; margin-bottom: 60px; }
-.program_features .dot_list li{ font-size: 16px; color: #666; line-height: 28px; position: relative; padding-left: 15px; margin-bottom: 10px; } 
-.program_features .dot_list li:before { content: ""; position: absolute; left: 0; top: 10px; width: 3px; height: 3px; background-color: #00aeba; } 
-.program_features .dot_list li:last-child { margin-bottom: 0;}
-.program_features .characteristic .characteristic_list { overflow: hidden;}
-.program_features .characteristic .characteristic_list > li { float: left; width: 50%;}
-.program_features .characteristic .characteristic_list > li .img_cont { background-repeat: no-repeat; width: 100%;  background-size: cover;  height: 361px; text-align: center; padding: 100px 0; margin-bottom: 30px; background-position: center;}
-.program_features .characteristic .characteristic_list > li:nth-child(1) .img_cont { background-image: url(../img/bg/bg_program_features_02.jpg);}
-.program_features .characteristic .characteristic_list > li:nth-child(2) .img_cont { background-image: url(../img/bg/bg_program_features_03.jpg);}
-.program_features .img_cont .tit {position: relative; font-size: 40px; color: #fff;  line-height: 1.5em; font-family:"Nanum Square"; font-weight: 700; padding-bottom: 15px; margin-bottom: 24px; }
-.program_features .img_cont .tit:after { content: ""; position: absolute; left: 50%; bottom: 0; width: 25px; height: 1px; background-color: #fff;  -webkit-transform: translateX(-50%);  transform: translateX(-50%);}
-.program_features .img_cont .text { font-size: 18px; color: #fff; line-height:  1.5em; }
-.program_features .arrow_step .arrow_list { overflow: hidden; line-height: 0; font-size: 0;}
-.program_features .arrow_step .arrow_list li { float: left; width: 50%; text-align: center;}
-.program_features .characteristic .characteristic_list > li:nth-child(1) .border_text { border: 2px dotted #00aeba; color: #00aeba;}
-.program_features .characteristic .characteristic_list > li:nth-child(2)  .border_text { border: 2px dotted #dc8a00; color: #dc8a00;}
-.program_features .arrow_step .border_text { display: inline-block; font-size: 18px; color: #00aeba; line-height: 1.5em; border-radius: 50px;height: 45px; padding: 8px 20px; font-family:"Nanum Square";}
-.program_features .arrow_step .text { font-size: 16px; color: #555; line-height: 24px; position: relative; padding-top: 60px; padding-bottom: 60px;} 
-.program_features .arrow_step .text:before { content: ""; position: absolute; left: 50%; top: 16px; width: 20px; height: 30px;  -webkit-transform: translateX(-50%);  transform: translateX(-50%); }
-.program_features .arrow_step .text:after { content: ""; position: absolute; left: 50%; bottom: 16px; width: 20px; height: 30px;  -webkit-transform: translateX(-50%);  transform: translateX(-50%); }
-.program_features .characteristic .characteristic_list > li:nth-child(1) .text:before {background-color: #00aeba; }
-.program_features .characteristic .characteristic_list > li:nth-child(2) .text:before {background-color: #f39800; }
-.program_features .characteristic .characteristic_list > li:nth-child(1) .text:after {background-color: #00aeba; }
-.program_features .characteristic .characteristic_list > li:nth-child(2) .text:after {background-color: #f39800; }
-.program_features .arrow_step .bgc_text { font-size:  18px; color: #fff; line-height: 24px; border-radius: 50px; height: 45px; display: inline-block; padding: 10px 20px; font-family:"Nanum Square";  }
-.program_features .characteristic .characteristic_list > li:nth-child(1) .bgc_text { background-color: #00aeba;}
-.program_features .characteristic .characteristic_list > li:nth-child(2) .bgc_text { background-color: #dc8a00;}
-.program_features .bg_cont { background-image: url(../img/bg/bg_program_features_04.jpg); padding: 0; } 
-.program_features .num_icon .num_icon_list {overflow: hidden;}
-.program_features .num_icon .num_icon_list li {float: left; width: 20%; text-align: center; position: relative; padding: 30px 20px; min-height: 600px;} 
-.program_features .num_icon .num_icon_list li:before { content: ""; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background-color: #aeaeb1; }
-.program_features .num_icon .num_icon_list li:first-child:before { display: none;}
-.program_features .num_icon_mod .num { font-size: 55px; line-height: 1.6em; font-family:"OpenSans"; font-weight: 300; text-align: left; margin-bottom: 60px;}
-.program_features .num_icon_mod .icon { width: 136px; height: 136px; border-radius: 50%; border: 3px dotted #fff; margin: 0 auto 30px;  } 
-.program_features .num_icon .num_icon_list li:nth-child(1) .num_icon_mod .icon { background-color: red; } 
-.program_features .num_icon .num_icon_list li:nth-child(2) .num_icon_mod .icon { background-color: yellow; } 
-.program_features .num_icon .num_icon_list li:nth-child(3) .num_icon_mod .icon { background-color: green; } 
-.program_features .num_icon .num_icon_list li:nth-child(4) .num_icon_mod .icon { background-color: skyblue; } 
-.program_features .num_icon .num_icon_list li:nth-child(5) .num_icon_mod .icon { background-color: darkcyan } 
-.program_features .num_icon_mod .text {font-size: 18px; line-height: 28px; font-family:"Nanum Square";   }
-.program_features .num_icon_mod .text strong {font-size: 24px; line-height: 34px; font-family:"Nanum Square";  }
+.program_features .courses {margin-top:50px; margin-bottom:-60px;}
+.program_features .courses:after {display:table; clear:both; content:"";}
+.program_features .courses .grid_container {position:relative; width:100%; height:0; padding-top:385px; background-image:url(../img/bg/bg_step.png); background-repeat:no-repeat; background-position:center;}
+.program_features .step .step_list {overflow:hidden;}
+.program_features .step .step_list li {float:left; width:33.333%;}
+.program_features .step_text .tit {position:absolute; font-family:"Nanum Square"; font-size:18px; color:#333;}
+.program_features .step .step_list li:nth-child(1) .step_text .tit {top:96px; left:50%; margin-left:-443px;}
+.program_features .step .step_list li:nth-child(2) .step_text .tit {top:47px; left:50%; margin-left:-189px;}
+.program_features .step .step_list li:nth-child(3) .step_text .tit {top:-3px; left:50%; margin-left:65px;}
+.program_features .step_text .tit strong {font-family:"Nanum Square"; font-size:24px; line-height:30px;}
+.program_features .step_list li:nth-child(1) .tit strong {color:#e60013;}
+.program_features .step_list li:nth-child(2) .tit strong {color:#f7b74c;}
+.program_features .step_list li:nth-child(3) .tit strong {color:#a5d166;}
+.program_features .step .step_list li .step_text .text {position:absolute; font-size:16px; line-height:28px; color:#555;}
+.program_features .step .step_list li:nth-child(1) .step_text .text {bottom:-6px; left:50%; margin-left:-342px;}
+.program_features .step .step_list li:nth-child(2) .step_text .text {bottom:44px; left:50%; margin-left:-88px;}
+.program_features .step .step_list li:nth-child(3) .step_text .text {bottom:66px; left:50%; margin-left:167px;}
+.program_features .key_visual {width:100%; height:auto; margin-top:30px; padding:80px 0; background-image:url(../img/bg/bg_program_features_01.jpg); background-repeat:no-repeat; background-position:center top; background-size:cover;}
+.program_features .key_visual .txt {font-family:"Nanum Square"; font-size:24px; line-height:1.5em; color:#fff; text-align:center;}
+.program_features .key_visual .txt strong {display:block; font-family:"Nanum Square"; font-size:1.5em; line-height:1.4em; margin-bottom:20px;}
+.program_features .dot_list {margin:30px 0 50px;}
+.program_features .dot_list li {position:relative; margin-bottom:10px; padding-left:15px; font-size:16px; line-height:1.75em; color:#666;}
+.program_features .dot_list li:before {position:absolute; top:10px; left:0; width:4px; height:4px; background-color:#00aeba; content:"";}
+.program_features .dot_list li:last-child {margin-bottom:0;}
+.program_features .characteristic .characteristic_list {overflow:hidden; margin:0 -10px;}
+.program_features .characteristic .characteristic_list > li {float:left; width:50%; padding:0 10px;}
+.program_features .characteristic .characteristic_list > li .img_cont {width:100%; margin-bottom:30px; padding:100px 0; background-repeat:no-repeat; background-position:center; background-size:cover; text-align:center;}
+.program_features .characteristic .characteristic_list > li:nth-child(1) .img_cont {background-image:url(../img/bg/bg_program_features_02.jpg);}
+.program_features .characteristic .characteristic_list > li:nth-child(2) .img_cont {background-image:url(../img/bg/bg_program_features_03.jpg);}
+.program_features .img_cont .tit {position:relative; margin-bottom:24px; padding-bottom:15px; font-family:"Nanum Square"; font-size:40px; font-weight:700; line-height:1.5em; color:#fff;}
+.program_features .img_cont .tit:after {position:absolute; bottom:0; left:50%; width:25px; height:1px; background-color:#fff; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.program_features .img_cont .text {font-size:18px; line-height:1.5em; color:#fff;}
+.program_features .arrow_step .arrow_list {margin-bottom:30px;}
+.program_features .arrow_step .arrow_list {overflow:hidden; font-size:0; line-height:0;}
+.program_features .arrow_step .arrow_list li {float:left; width:50%; text-align:center;}
+.program_features .characteristic .characteristic_list > li:nth-child(1) .border_text {border:2px dotted #00aeba; color:#00aeba;}
+.program_features .characteristic .characteristic_list > li:nth-child(2)  .border_text {border:2px dotted #dc8a00; color:#dc8a00;}
+.program_features .arrow_step .border_text {display:inline-block; padding:7px 20px; border-radius:50px; font-family:"Nanum Square"; font-size:18px; line-height:1.5em; color:#00aeba;}
+.program_features .arrow_step .text {position:relative; padding-top:60px; padding-bottom:60px; font-size:16px; line-height:24px; color:#555;}
+.program_features .arrow_step .text:before {position:absolute; top:16px; left:50%; width:50px; height:25px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.program_features .arrow_step .text:after {position:absolute; bottom:16px; left:50%; width:50px; height:25px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.program_features .characteristic .characteristic_list > li:nth-child(1) .text:before,.program_features .characteristic .characteristic_list > li:nth-child(1) .text:after  {background-color:#00aeba;}
+.program_features .characteristic .characteristic_list > li:nth-child(2) .text:before, .program_features .characteristic .characteristic_list > li:nth-child(2) .text:after {background-color:#f39800;}
+.program_features .arrow_step .bgc_text {display:inline-block; padding:7px 45px; border-radius:50px; font-family:"Nanum Square"; font-size:18px; line-height:1.5em; color:#fff;}
+.program_features .characteristic .characteristic_list > li:nth-child(1) .bgc_text {background-color:#00aeba;}
+.program_features .characteristic .characteristic_list > li:nth-child(2) .bgc_text {background-color:#f39800;}
+.program_features .bg_cont {padding:0; background-image:url(../img/bg/bg_program_features_04.jpg);}
+.program_features .num_icon .num_icon_list {overflow:hidden;}
+.program_features .num_icon .num_icon_list li {float:left; position:relative; width:20%; min-height:600px; padding:30px 20px; text-align:center;}
+.program_features .num_icon .num_icon_list li:before {position:absolute; top:0; left:0; width:1px; height:100%; background-color:#aeaeb1; content:"";}
+.program_features .num_icon .num_icon_list li:first-child:before {display:none;}
+.program_features .num_icon_mod .num {margin-bottom:60px; font-family:"OpenSans"; font-size:55px; font-weight:300; line-height:1.6em; text-align:left;}
+.program_features .num_icon_mod .icon {width:136px; height:136px; margin:0 auto 35px; border:3px dotted #fff; border-radius:50%;}
+.program_features .num_icon .num_icon_list li:nth-child(1) .num_icon_mod .icon {background-color:rgba(230,0,19,0.3);}
+.program_features .num_icon .num_icon_list li:nth-child(2) .num_icon_mod .icon {background-color:rgba(243,152,0,0.4);}
+.program_features .num_icon .num_icon_list li:nth-child(3) .num_icon_mod .icon {background-color:rgba(127,190,37,0.5);}
+.program_features .num_icon .num_icon_list li:nth-child(4) .num_icon_mod .icon {background-color:rgba(0,161,233,0.5);}
+.program_features .num_icon .num_icon_list li:nth-child(5) .num_icon_mod .icon {background-color:rgba(0,174,186,0.4);}
+.program_features .num_icon_mod .text {font-family:"Nanum Square"; font-size:18px; line-height:1.5em;}
+.program_features .num_icon_mod .text strong {display:block; font-family:"Nanum Square"; font-size:1.3em; line-height:1.4em;}
 
-@media (max-width:1280px) {
-    .program_features .img_cont .tit { font-size: 38px;}
-    .program_features .img_cont .text { font-size: 16px;}
-    .program_features .arrow_step .border_text { font-size: 16px; }
-    .program_features .arrow_step .text { font-size: 14px; }
-    .program_features .arrow_step .bgc_text { font-size: 16px;}
-    .program_features .num_icon_mod .num { font-size: 50px;}
-    .program_features .num_icon_mod .text { font-size: 16px;}
-    .program_features .num_icon_mod .text strong { font-size: 22px;}
-}
+/* @media (max-width:1280px) {
+    .program_features .img_cont .tit {font-size:38px;}
+    .program_features .img_cont .text {font-size:16px;}
+    .program_features .arrow_step .border_text {font-size:16px;}
+    .program_features .arrow_step .text {font-size:14px;}
+    .program_features .arrow_step .bgc_text {font-size:16px;}
+    .program_features .num_icon_mod .num {font-size:50px;}
+    .program_features .num_icon_mod .text {font-size:16px;}
+    .program_features .num_icon_mod .text strong {font-size:22px;}
+} */
+
 @media (max-width:1024px) {
-    .program_features .courses { margin-top: 30px; margin-bottom: -30px; }
-    .program_features  .courses .grid_container {background-image: none; padding-top: 0; height: auto; }
-    .program_features .step_text .tit { position: static; text-align: center; font-size: 16px; }
-    .program_features .step_text .tit strong { font-size: 20px; }
-    .program_features .step .step_list li:nth-child(1) .step_text .tit {margin-left: 0; } 
-    .program_features .step .step_list li:nth-child(2) .step_text .tit {margin-left: 0; } 
-    .program_features .step .step_list li:nth-child(3) .step_text .tit {margin-left: 0; } 
-    .program_features .step .step_list li .step_text .text{ position: static; text-align: center; font-size: 14px; line-height: 24px; padding: 0 5px;}
-    .program_features .step .step_list li .step_text .text br { display: none; }
-    .program_features .step .step_list li:nth-child(1) .step_text .text { margin-left: 0;}
-    .program_features .step .step_list li:nth-child(2) .step_text .text { margin-left: 0;}
-    .program_features .step .step_list li:nth-child(3) .step_text .text { margin-left: 0;}
-    .program_features .step_text .step_txt { font-size: 18px; color: #fff; font-family:"Nanum Square";  font-weight: 700; text-align: center; padding: 20px 0; margin-bottom: 20px;}
-    .program_features .step .step_list li:nth-child(1) .step_text .step_txt { background-color:#e60013; }
-    .program_features .step .step_list li:nth-child(2) .step_text .step_txt { background-color:#f7b74c; }
-    .program_features .step .step_list li:nth-child(3) .step_text .step_txt { background-color:#a5d166; }
-    .program_features .key_visual .txt { font-size: 20px; }
-    .program_features .key_visual .txt strong  { font-size: 30px;}
-    .program_features .dot_list { margin-top: -30px; margin-bottom: 30px; } 
-    .program_features .dot_list li { font-size: 14px;}
-    .program_features .dot_list li:before { top: 12px; }
-    .program_features .arrow_step .arrow_list li { float: none; width: 100%; margin-bottom: 30px; padding: 0 15px;}
-    .program_features .arrow_step .arrow_list li:last-child { margin-bottom: 0; }
-    .program_features .img_cont .tit { font-size: 34px;}
-    .program_features .img_cont .text { font-size: 16px;}
-    .program_features .arrow_step .border_text { display: block;}
-    .program_features .arrow_step .bgc_text { display: block;}
-    .program_features .num_icon .num_icon_list li { float: none; width: 100%; min-height: auto; padding: 20px 20px;}
-    .program_features .num_icon .num_icon_list li:before { width: 100%; height: 1px; }
-    .program_features .num_icon_mod .text br { display: none;} 
-    .program_features .num_icon_mod .text strong br { display: block;} 
-    .program_features .num_icon_mod .num { text-align: center; margin-bottom: 0; font-size: 40px;}
-    .program_features .num_icon_mod .text { font-size: 14px;}
-    .program_features .num_icon_mod .text strong { font-size: 18px;}
+    .program_features .courses {margin-top:30px; margin-bottom:-30px;}
+    .program_features  .courses .grid_container {height:auto; padding-top:0; background-image:none;}
+    .program_features .step_text .tit {position:static; font-size:16px; line-height:1.2em; text-align:center;}
+    .program_features .step_text .tit strong {font-size:20px;}
+    .program_features .step .step_list li:nth-child(1) .step_text .tit {margin-left:0;}
+    .program_features .step .step_list li:nth-child(2) .step_text .tit {margin-left:0;}
+    .program_features .step .step_list li:nth-child(3) .step_text .tit {margin-left:0;}
+    .program_features .step .step_list li .step_text .text {position:static; margin-top:15px; padding:0 5px; font-size:14px; line-height:1.5em; text-align:center;}
+    .program_features .step .step_list li .step_text .text br {display:none;}
+    .program_features .step .step_list li:nth-child(1) .step_text .text {margin-left:0;}
+    .program_features .step .step_list li:nth-child(2) .step_text .text {margin-left:0;}
+    .program_features .step .step_list li:nth-child(3) .step_text .text {margin-left:0;}
+    .program_features .step_text .step_txt {margin-bottom:15px; font-family:"Nanum Square"; font-family:"Lato"; font-size:18px; font-weight:700; line-height:2em; color:#fff; letter-spacing:0; text-align:center; text-transform:uppercase;}
+    .program_features .step .step_list li:nth-child(1) .step_text .step_txt {background-color:#e60013;}
+    .program_features .step .step_list li:nth-child(2) .step_text .step_txt {background-color:#f7b74c;}
+    .program_features .step .step_list li:nth-child(3) .step_text .step_txt {background-color:#a5d166;}
+    .program_features .key_visual {padding:30px 0;}
+    .program_features .key_visual .txt {font-size:16px;}
+    .program_features .key_visual .txt strong {font-size:1.4em;}
+    .program_features .dot_list {margin:30px 0;}
+    .program_features .dot_list li {margin:0; font-size:14px;}
+    .program_features .dot_list li:before {top:12px;}
+    .program_features .characteristic {width:calc(100% + 60px); margin-left:-30px;}
+    .program_features .characteristic .characteristic_list > li {float:none; width:100%; margin-bottom:30px;}
+    .program_features .characteristic .characteristic_list > li:last-child {margin:0;}
+    .program_features .characteristic .characteristic_list > li .img_cont {padding:15px 0;}
+    .program_features .arrow_step .arrow_list {max-width:500px; margin:0 auto;}
+    .program_features .arrow_step .arrow_list li:last-child {margin-bottom:0;}
+    .program_features .img_cont .tit {font-size:30px; margin-bottom:15px;}
+    .program_features .img_cont .text {font-size:14px;}
+    .program_features .arrow_step .border_text,.program_features .arrow_step .bgc_text {padding:5px 10px; font-size:16px;}
+    .program_features .arrow_step .text {font-size:14px;}
+    .program_features .num_icon .num_icon_list li {min-height:auto; padding:15px 5px;}
+    .program_features .num_icon .num_icon_list li:before {width:100%; height:1px;}
+    .program_features .num_icon_mod .icon {width:60px; height:60px; margin-bottom:15px; border:0;}
+    .program_features .num_icon_mod .text br {display:none;}
+    .program_features .num_icon_mod .text strong br {display:block;}
+    .program_features .num_icon_mod .num {margin-bottom:0; font-size:24px; text-align:center;}
+    .program_features .num_icon_mod .text {font-size:14px;}
+    .program_features .num_icon_mod .text strong {font-size:16px;}
+}
 
-}
 @media (max-width:599px) { 
-    .program_features .step .step_list li { width: 100%; margin-bottom: 20px; }
-    .program_features .step .step_list li:last-child { margin-bottom: 0;}
-    .program_features .step_text .tit { font-size: 14px;}
-    .program_features .step_text .tit strong { font-size: 18px; line-height: 22px;}
-    .program_features .step .step_list li .step_text .text { font-size: 12px;line-height: 20px;  padding: 0;}
-    .program_features .key_visual .txt { font-size: 18px; }
-    .program_features .key_visual .txt br { display: none;}
-    .program_features .key_visual .txt strong  { font-size: 26px;}
-    .program_features .dot_list li { font-size: 12px; line-height: 20px;}
-    .program_features .dot_list li:before { top: 7px;  }
-    .program_features .characteristic .characteristic_list > li { float: none; width: 100%; margin-bottom: 30px;}
-    .program_features .characteristic .characteristic_list > li:last-child { margin-bottom: 0;}
-    .program_features .characteristic .characteristic_list > li .img_cont { padding: 120px 0;}
-    .program_features .img_cont .tit { font-size: 30px;} 
-    .program_features .img_cont .text { font-size: 14px;}
-    .program_features .arrow_step .border_text { font-size: 14px;  padding: 10px 20px; }
-    .program_features .arrow_step .text { font-size: 12px;  line-height: 22px;}
-    .program_features .arrow_step .bgc_text { font-size: 14px;}
-    .program_features .num_icon_mod .num { font-size: 36px;}
-    .program_features .num_icon_mod .text { font-size: 12px;}
-    .program_features .num_icon_mod .text strong { font-size: 16px;}
-    .program_features .arrow_step .arrow_list li { padding: 0;}
+    .program_features .step .step_list li {width:100%; margin-bottom:30px;}
+    .program_features .step .step_list li:last-child {margin-bottom:0;}
+    .program_features .step_text .step_txt {max-width:120px; margin:0 auto 15px; border-radius:50px; font-size:14px;}
+    .program_features .step_text .tit {font-size:14px;}
+    .program_features .step_text .tit strong {font-size:16px;}
+    .program_features .step .step_list li .step_text .text {padding:0; font-size:12px; line-height:20px;}
+    .program_features .key_visual {margin-top:15px;}
+    .program_features .key_visual .txt {font-size:12px;}
+    .program_features .key_visual .txt br {display:none;}
+    .program_features .key_visual .txt strong {margin-bottom:10px; font-size:1.3em;}
+    .program_features .dot_list li {font-size:12px; line-height:20px;}
+    .program_features .dot_list li:before {top:7px;}
+    .program_features .characteristic .characteristic_list > li {float:none; width:100%; margin-bottom:30px;}
+    .program_features .img_cont .tit {font-size:20px;}
+    .program_features .img_cont .text {font-size:12px;}
+    .program_features .arrow_step .arrow_list li {float:none; width:100%; margin-bottom:30px;}
+    .program_features .arrow_step .border_text {padding:3px 10px; font-size:14px;}
+    .program_features .arrow_step .text {font-size:12px; line-height:22px; padding:40px 0;}
+    .program_features .arrow_step .text:before {top:9px;}
+    .program_features .arrow_step .text:after {bottom:9px;}
+    .program_features .arrow_step .bgc_text {font-size:14px;}
+    .program_features .num_icon .num_icon_list li {float:none; width:100%;}
+    .program_features .num_icon_mod .num {font-size:16px;}
+    .program_features .num_icon_mod .text {font-size:12px;}
+    .program_features .num_icon_mod .text strong {font-size:14px;}
+    .program_features .num_icon_mod .text strong br {display:none;}
+    .program_features .arrow_step .arrow_list li {padding:0;}
 }
+
+/* 프로그램 구성(공통)) */ 
+.configuration .configuration_01_bg {background-image:url(../img/bg/bg_configuration_tab1_01.jpg);}
+.configuration .configuration_cont {margin-bottom:20px; padding:0 50px;}
+.configuration .configuration_cont:after {display:block; clear:both; content:"";}
+.configuration .configuration_cont .left_cont {float:left; width:36%; text-align:center;}
+.configuration .configuration_cont .left_cont .bgc_text {width:calc(100% + 20px); height:65px; margin-bottom:30px; margin-left:-10px; padding:16px 0; border-radius:50px; background-color:rgba(0,174,186,0.6); font-family:"Nanum Square"; font-size:24px; line-height:36px; text-align:center;}
+.configuration .configuration_cont .left_cont .border_text {max-width:350px; min-height:320px; margin:0 auto; padding:50px 10px; padding-bottom:40px; border:3px dotted #fff; border-radius:50px; background-color:rgba(0,0,0,0.2); text-align:center;}
+.configuration .configuration_cont .left_cont .border_text .text {margin-bottom:15px; font-family:"Nanum Square"; font-size:18px; line-height:1.6em;}
+.configuration .configuration_cont .left_cont .border_text .tab_tit {font-family:"Nanum Square"; font-size:30px; line-height:1.5em;}
+.configuration .configuration_cont .right_cont {float:left; position:relative; width:64%;}
+.configuration .configuration_cont .right_cont .book:after {display:block; clear:both; content:"";}
+.configuration .configuration_cont .right_cont .book li {float:left; width:50%;}
+.configuration .configuration_cont .book_info .bgc_tit {width:calc(100% + 20px); height:65px; margin-bottom:50px; margin-left:-10px; padding:16px 0; border-radius:50px; font-family:"Nanum Square"; font-size:24px; line-height:36px; text-align:center;}
+.configuration .configuration_cont .right_cont .book li:nth-child(1) .book_info .bgc_tit {background-color:rgba(243,152,0,0.6);}
+.configuration .configuration_cont .right_cont .book li:nth-child(2) .book_info .bgc_tit {background-color:rgba(161,108,139,0.6);}
+.configuration .configuration_cont .book_info .book_img {padding-top:30px; line-height:0; text-align:center;}
+.configuration .configuration_cont .right_cont .dot_line {position:absolute; top:75px; left:0; width:100%;}
+.configuration .configuration_cont .right_cont .dot_line:after {position:absolute; bottom:0; left:0; width:100%; border-top:3px dotted #fff; content:"";}
+.configuration .configuration_cont .right_cont .dot_line .line_text {display:block; position:relative; padding-bottom:5px; font-size:16px; line-height:36px; text-align:center;}
+.configuration .configuration_cont .right_cont .dot_line .line_text:before,.configuration .configuration_cont .right_cont .dot_line .line_text:after {position:absolute; top:27px; width:25px; height:25px; content:"";}
+.configuration .configuration_cont .right_cont .dot_line .line_text:before {left:0; border-top:2px solid #fff; border-left:2px solid #fff; -webkit-transform:rotate(-45deg); transform:rotate(-45deg);}
+.configuration .configuration_cont .right_cont .dot_line .line_text:after {right:0px; border-top:2px solid #fff; border-right:2px solid #fff; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.configuration .textbook_features {text-align:center;}
+.configuration .textbook_features .line_tit {display:inline-block; position:relative; text-align:center;}
+.configuration .textbook_features .line_tit:before {position:absolute; top:0; left:0; width:100%; height:1px; background-color:#333; content:"";}
+.configuration .textbook_features .line_tit:after {position:absolute; bottom:0; left:0; width:100%; height:1px; background-color:#333; content:"";}
+.configuration .features_cont {max-width:960px; margin:0 auto; padding-top:60px;}
+.configuration .features_cont .features_list li {margin-bottom:30px;}
+.configuration .features_cont .features_list li:last-child {margin-bottom:0;}
+.configuration .features_cont .features_list li .mod {overflow:hidden;}
+.configuration .features_cont .features_list li:nth-child(odd) .mod .img {float:left; width:50%; text-align:right;}
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx {float:right; padding:40px 0 0 140px; text-align:left;}
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:before {position:absolute; top:55px; left:-2px; width:110px; border-top:3px dotted #999; content:"";}
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:after {position:absolute; top:50px; left:95px; width:13px; height:13px; border:3px solid #00aeba; border-radius:50%; background-color:#fff; content:"";}
+.configuration .features_cont .features_list li:nth-child(even) .mod .img {float:right; width:50%; text-align:left;}
+.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx {float:left; padding:40px 140px 0 0; text-align:right;}
+.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:before {position:absolute; top:55px; right:-2px; width:110px; border-top:3px dotted #999; content:"";}
+.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:after {position:absolute; top:50px; right:95px; width:13px; height:13px; border:3px solid #00aeba; border-radius:50%; background-color:#fff; content:"";}
+.configuration .features_cont .mod .text_bx {position:relative; width:50%;}
+.configuration .features_cont .mod .text_bx .color_tit {position:relative; margin-bottom:10px; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:36px; color:#00aeba;}
+.configuration .features_cont .mod .text_bx .text {font-size:14px; line-height:24px; color:#555;}
+
+@media (max-width:1024px) {
+    .configuration .configuration_cont .left_cont { float: none; width: 100%; margin-bottom: 50px;}
+    .configuration .configuration_cont .left_cont .bgc_text { width: 415px; margin: 0 auto 30px; font-size: 20px;}
+    .configuration .configuration_cont .left_cont .border_text { min-height: auto; padding: 30px 20px;} 
+    .configuration .configuration_cont .right_cont { float: none; width: 100%}
+    .configuration .configuration_cont .book_info .bgc_tit { font-size: 20px;}
+    .configuration .configuration_cont .left_cont .border_text .text { font-size: 16px;}
+    .configuration .configuration_cont .left_cont .border_text .tab_tit { font-size: 24px;}
+    .configuration .configuration_cont .right_cont .dot_line { width: 100%;}
+    .configuration .configuration_cont .right_cont .dot_line .line_text { font-size: 14px;}
+.configuration .features_cont {padding-top: 50px; }
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx { padding: 20px 0 0 80px;}
+.configuration .features_cont .mod .text_bx .color_tit { font-size: 20px; }
+.configuration .features_cont .mod .text_bx .text { font-size: 12px; line-height: 20px;}
+.configuration .features_cont .mod .text_bx .text br { display: none;}
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx { padding: 20px 0 0 80px;}
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:before {left: -2px; top: 36px; width: 50px;  }
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:after { left: 45px; top: 31px; }
+.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx { padding: 20px 80px 0 0;}
+.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:before {right: -2px; top: 36px; width: 50px;  }
+.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:after { right: 45px; top: 31px; }
+}
+
+@media (max-width:599px) {
+    .configuration .configuration_cont .left_cont .bgc_text { width: 100%; font-size: 18px; margin-bottom: 20px;}
+    .configuration .configuration_cont .book_info .bgc_tit {margin-bottom: 20px; font-size: 18px;}
+    .configuration .configuration_cont .book_info .book_img { padding-top: 0;}
+    .configuration .configuration_cont .left_cont .border_text .text { font-size: 14px; line-height: 20px;}
+    .configuration .configuration_cont .left_cont .border_text .tab_tit { font-size: 20px;}
+    .configuration .configuration_cont .right_cont .dot_line { position: static; }
+    .configuration .configuration_cont .right_cont .dot_line:after { display: none;}
+    .configuration .configuration_cont .right_cont .dot_line .line_text:before { display: none;}
+    .configuration .configuration_cont .right_cont .dot_line .line_text:after { display: none;}
+/* -------------------------------------------------- */    
+.configuration .features_cont {padding-top: 30px; } 
+.configuration .features_cont .features_list li:nth-child(odd) .mod .img{ float: none; text-align: center; width: 100%;}
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx { float: none; text-align: center;     padding: 0;}
+.configuration .features_cont .features_list li:nth-child(even) .mod .img { float: none;  text-align: center; width: 100%;}
+.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx { float: none; text-align: center; padding: 0;}
+.configuration .features_cont .mod .text_bx { width: 100%; }
+.configuration .features_cont .mod img { margin-bottom: 15px; }
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:before { display: none;} 
+.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:after { display: none;}
+.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:before { display: none;} 
+.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:after { display: none;}
+.configuration .features_cont .mod .text_bx .color_tit { font-size: 16px; line-height: 24px; }
+}
+
+/* 하베르만 프로그램 - 프로그램 구성 - 하베르 Junior */ 
+.configuration .configuration_02_bg { background-image: url(../img/bg/bg_configuration_tab2_01.jpg);}
+
+.configuration .tab_02 .left_cont .border_text  {max-width: 354px; }
+
+.configuration .tab_02 .right_cont .book li { width: 33.333%; }
+.configuration .tab_02 .right_cont .book li:nth-child(1) .book_info .bgc_tit { background-color: rgba(230,68,58,0.6);}
+.configuration .tab_02 .right_cont .book li:nth-child(2) .book_info .bgc_tit { background-color: rgba(154,175,33,0.6);}
+.configuration .tab_02 .right_cont .book li:nth-child(3) .book_info .bgc_tit { background-color: rgba(51,125,156,0.6);}
 
 /* 입학안내 - 입학절차 */
 .admission_guide .bg_img {background-image:url(../img/bg/bg_admission_guide_01.png); background-position:bottom right; background-size:contain; background-repeat:no-repeat;}
@@ -2233,112 +2337,6 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     .inspection_guide .line_box .line_text { font-size: 22px;}
     .inspection_guide .full_table { margin-top: 20px; }
 }
-
-
-/* 하베르만 프로그램 - 프로그램 구성 - 하베르 Kids */ 
-.configuration .configuration_01_bg { background-image: url(../img/bg/bg_configuration_tab1_01.jpg); }
-.configuration .configuration_cont:after { content: ""; display: block; clear: both;}
-.configuration .configuration_cont .left_cont { float: left; width: 40%;}
-.configuration .configuration_cont .left_cont .bgc_text {font-family:"Nanum Square"; font-size: 24px; line-height: 36px; background-color: rgba(0,174,186,0.6); border-radius: 50px; height: 65px; padding: 16px 0; text-align: center; margin-bottom: 30px;} 
-.configuration .configuration_cont .left_cont .border_text { border: 3px dotted #fff; border-radius: 50px; text-align: center; background-color: rgba(0,0,0,0.2); min-height: 320px;  max-width: 320px; margin: 0 auto;  padding: 50px 30px;  }
-.configuration .configuration_cont .left_cont .border_text .text { font-size: 18px; line-height: 30px; font-family:"Nanum Square"; margin-bottom: 15px;}
-.configuration .configuration_cont .left_cont .border_text .tab_tit { font-family:"Nanum Square"; font-size: 30px; line-height: 1.5em; } 
-.configuration .configuration_cont .right_cont { float:  left; width: 60%; position: relative;}
-.configuration .configuration_cont .right_cont .book:after { content: ""; display: block; clear: both; }
-.configuration .configuration_cont .right_cont .book li { float: left; width: 50%;}
-.configuration .configuration_cont .book_info .bgc_tit {font-family:"Nanum Square"; text-align: center; font-size: 24px; line-height: 36px; border-radius: 50px; height: 65px; padding: 16px 0; margin-bottom: 50px; width: calc(100% + 20px); margin-left: -10px;}
-.configuration .configuration_cont .right_cont .book li:nth-child(1) .book_info .bgc_tit { background-color: rgba(243,152,0,0.6); }
-.configuration .configuration_cont .right_cont .book li:nth-child(2) .book_info .bgc_tit { background-color: rgba(161,108,139,0.6); }
-.configuration .configuration_cont .book_info .book_img { line-height: 0; text-align: center; padding-top: 30px;} 
-
-
-.configuration .configuration_cont .right_cont .dot_line { position: absolute; left: 0; top: 75px; width: 96%;}
-.configuration .configuration_cont .right_cont .dot_line:after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; border-top: 3px dotted #fff; }
-.configuration .configuration_cont .right_cont .dot_line .line_text {display: block; font-size: 16px; line-height: 36px; position: relative; text-align: center; padding-bottom: 5px; }
-.configuration .configuration_cont .right_cont .dot_line .line_text:before { content: ""; position: absolute; left: -9px; top: 27px; width: 25px; height: 25px; border-left: 2px solid #fff; border-top: 2px solid #fff;  -webkit-transform: rotate(-45deg);  transform: rotate(-45deg);}
-.configuration .configuration_cont .right_cont .dot_line .line_text:after { content:""; position: absolute; right: -8px; top: 27px; width: 25px; height: 25px;  border-top: 2px solid #fff; border-right: 2px solid #fff; -webkit-transform: rotate(45deg); transform: rotate(45deg);}
-.configuration .textbook_features { text-align: center;}
-.configuration .textbook_features .line_tit { position: relative; display: inline-block; text-align: center; }
-.configuration .textbook_features .line_tit:before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background-color: #333;}
-.configuration .textbook_features .line_tit:after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #333; }
-.configuration .features_cont { max-width: 960px; margin: 0 auto; padding-top: 60px;}
-.configuration .features_cont .features_list li { margin-bottom: 30px;}
-.configuration .features_cont .features_list li:last-child { margin-bottom: 0;}
-.configuration .features_cont .features_list li .mod { overflow: hidden;}
-.configuration .features_cont .features_list li:nth-child(odd) .mod .img{ float: left; text-align: right; width: 50%;}
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx { float: right; text-align: left;     padding: 40px 0 0 140px;}
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:before { content: ""; position: absolute; left: -2px; top: 55px; width: 110px; border-top: 3px dotted #999; }
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:after { content: ""; position: absolute; left: 95px; top: 50px; width: 13px; height: 13px; background-color: #fff; border:3px solid #00aeba;border-radius: 50%;}
-
-
-.configuration .features_cont .features_list li:nth-child(even) .mod .img { float: right;  text-align: left; width: 50%;}
-.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx { float: left; text-align: right; padding: 40px 140px 0 0;}
-.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:before {content: ""; position: absolute; right: -2px; top: 55px; width: 110px; border-top: 3px dotted #999;  }
-.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:after { content: ""; position: absolute; right: 95px; top: 50px; width: 13px; height: 13px; background-color: #fff; border:3px solid #00aeba;border-radius: 50%;}
-
-.configuration .features_cont .mod .text_bx {width: 50%;  position: relative; }
-.configuration .features_cont .mod .text_bx .color_tit { font-size: 24px; line-height: 36px; color: #00aeba; font-family:"Nanum Square"; font-weight: 700; margin-bottom: 10px; position: relative; }
-.configuration .features_cont .mod .text_bx .text { font-size: 14px; color: #555; line-height: 24px; }
-
-
-@media (max-width:1024px) {
-    .configuration .configuration_cont .left_cont { float: none; width: 100%; margin-bottom: 50px;}
-    .configuration .configuration_cont .left_cont .bgc_text { width: 415px; margin: 0 auto 30px; font-size: 20px;}
-    .configuration .configuration_cont .left_cont .border_text { min-height: auto; padding: 30px 20px;} 
-    .configuration .configuration_cont .right_cont { float: none; width: 100%}
-    .configuration .configuration_cont .book_info .bgc_tit { font-size: 20px;}
-    .configuration .configuration_cont .left_cont .border_text .text { font-size: 16px;}
-    .configuration .configuration_cont .left_cont .border_text .tab_tit { font-size: 24px;}
-    .configuration .configuration_cont .right_cont .dot_line { width: 100%;}
-    .configuration .configuration_cont .right_cont .dot_line .line_text { font-size: 14px;}
-/* -------------------------------------------------- */
-.configuration .features_cont {padding-top: 50px; }
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx { padding: 20px 0 0 80px;}
-.configuration .features_cont .mod .text_bx .color_tit { font-size: 20px; }
-.configuration .features_cont .mod .text_bx .text { font-size: 12px; line-height: 20px;}
-.configuration .features_cont .mod .text_bx .text br { display: none;}
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx { padding: 20px 0 0 80px;}
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:before {left: -2px; top: 36px; width: 50px;  }
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:after { left: 45px; top: 31px; }
-.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx { padding: 20px 80px 0 0;}
-.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:before {right: -2px; top: 36px; width: 50px;  }
-.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:after { right: 45px; top: 31px; }
-}
-
-@media (max-width:599px) {
-    .configuration .configuration_cont .left_cont .bgc_text { width: 100%; font-size: 18px; margin-bottom: 20px;}
-    .configuration .configuration_cont .book_info .bgc_tit {margin-bottom: 20px; font-size: 18px;}
-    .configuration .configuration_cont .book_info .book_img { padding-top: 0;}
-    .configuration .configuration_cont .left_cont .border_text .text { font-size: 14px; line-height: 20px;}
-    .configuration .configuration_cont .left_cont .border_text .tab_tit { font-size: 20px;}
-    .configuration .configuration_cont .right_cont .dot_line { position: static; }
-    .configuration .configuration_cont .right_cont .dot_line:after { display: none;}
-    .configuration .configuration_cont .right_cont .dot_line .line_text:before { display: none;}
-    .configuration .configuration_cont .right_cont .dot_line .line_text:after { display: none;}
-/* -------------------------------------------------- */    
-.configuration .features_cont {padding-top: 30px; } 
-.configuration .features_cont .features_list li:nth-child(odd) .mod .img{ float: none; text-align: center; width: 100%;}
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx { float: none; text-align: center;     padding: 0;}
-.configuration .features_cont .features_list li:nth-child(even) .mod .img { float: none;  text-align: center; width: 100%;}
-.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx { float: none; text-align: center; padding: 0;}
-.configuration .features_cont .mod .text_bx { width: 100%; }
-.configuration .features_cont .mod img { margin-bottom: 15px; }
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:before { display: none;} 
-.configuration .features_cont .features_list li:nth-child(odd) .mod .text_bx:after { display: none;}
-.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:before { display: none;} 
-.configuration .features_cont .features_list li:nth-child(even) .mod .text_bx:after { display: none;}
-.configuration .features_cont .mod .text_bx .color_tit { font-size: 16px; line-height: 24px; }
-}
-
-/* 하베르만 프로그램 - 프로그램 구성 - 하베르 Junior */ 
-.configuration .configuration_02_bg { background-image: url(../img/bg/bg_configuration_tab2_01.jpg);}
-
-.configuration .tab_02 .left_cont .border_text  {max-width: 354px; }
-
-.configuration .tab_02 .right_cont .book li { width: 33.333%; }
-.configuration .tab_02 .right_cont .book li:nth-child(1) .book_info .bgc_tit { background-color: rgba(230,68,58,0.6);}
-.configuration .tab_02 .right_cont .book li:nth-child(2) .book_info .bgc_tit { background-color: rgba(154,175,33,0.6);}
-.configuration .tab_02 .right_cont .book li:nth-child(3) .book_info .bgc_tit { background-color: rgba(51,125,156,0.6);}
 
 /* 예약&상담 리스트 공통 */
 .exam_list .list_search {margin-top:50px; padding:10px 20px; background:#d1dfe2;}
