@@ -1572,22 +1572,25 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 .sub_wrap .tab_menu ul {display:table-row; background:rgba(51,51,51,0.7);}
 .sub_wrap .tab_menu ul li {display:table-cell; border-right:1px solid rgba(255,255,255,0.5);}
 .sub_wrap .tab_menu ul li:last-child {border:0;}
-.sub_wrap .tab_menu ul li a {display:block; position:relative; font-family:"Nanum Square"; font-size:17px; line-height:55px; color:inherit; text-align:center; -webkit-transition:all 0.5s; transition:all 0.5s;}
-.sub_wrap .tab_menu ul li.on,.sub_wrap .tab_menu ul li a:hover {background:#fff; font-size:16px; font-weight:700; color:#333;}
+.sub_wrap .tab_menu ul li a {display:block; position:relative; font-family:"Nanum Square"; font-size:16px; line-height:55px; color:inherit; text-align:center; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.sub_wrap .tab_menu ul li.on,.sub_wrap .tab_menu ul li a:hover {background:#fff; font-weight:700; color:#333;}
 
 @media (max-width:1024px) {
-    .sub_wrap .tab_menu {padding:0;}
-    .sub_wrap .tab_menu ul li a {font-size:15px; line-height:2.5em;}
+    .sub_wrap .tab_menu {display:block; padding:0;}
+    .sub_wrap .tab_menu ul {display:block; overflow:hidden;}
+    .sub_wrap .tab_menu ul li {display:block; float:left;}
+    .sub_wrap .tab_menu ul.type2 li {width:50%;}
+    .sub_wrap .tab_menu ul.type3 li {width:33.33%;}
+    .sub_wrap .tab_menu ul.type4 li {width:25%;}
+    .sub_wrap .tab_menu ul li a {font-size:14px; line-height:2.5em;}
 }
 
 @media (max-width:599px) {
-    .sub_wrap .tab_menu {display:block; padding:0; background:none;}
-    .sub_wrap .tab_menu ul {display:block; overflow:hidden;}
+    .sub_wrap .tab_menu {background:none;}
     .sub_wrap .tab_menu ul li {float:left; width:50% !important; border-bottom:1px solid rgba(255,255,255,0.5);}
     .sub_wrap .tab_menu ul li:last-child {border-right:1px solid rgba(255,255,255,0.5);}
     .sub_wrap .tab_menu ul li:nth-child(even) {border-right:0;}
     .sub_wrap .tab_menu ul li a {font-size:12px;}
-    .sub_wrap .tab_menu ul li.on,.sub_wrap .tab_menu ul li a:hover {font-size:12px;}
 }
 
 /* 컨텐츠 공통 영역 */
