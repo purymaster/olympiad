@@ -58,9 +58,13 @@ footer {background:#505354; color:#fff;}
     .footer_upper .select_form button:after {right:15px;}
     .footer_upper .select_form button.on + ul {bottom:40px; width:100%; border:1px solid #fff; background:#505354;}
     .footer_upper .select_form ul li a {color:#fff;}
-    .footer_lower {padding-top:15px;}
-    .footer_lower .sns {position:static; margin-bottom:15px; text-align:center;}
+    .footer_lower {padding:15px 0;}
+    /* .footer_lower .sns {position:static; margin-bottom:15px; text-align:center;} */
+    .footer_lower .sns {top:15px;}
     .footer_lower .sns li {display:inline-block; float:none;}
-    .footer_lower .lower_wrap address li {display:block !important;}
-    .footer_lower .lower_wrap address li:after {display:none !important;}
+    .footer_lower .lower_wrap address {font-size:10px; line-height:1.5em;}
+    .footer_lower .lower_wrap address li {display:inline-block !important;}
+    .footer_lower .lower_wrap address .copyright {font-size:10px;}
+    /* .footer_lower .lower_wrap address li {display:block !important;}
+    .footer_lower .lower_wrap address li:after {display:none !important;} */
 }

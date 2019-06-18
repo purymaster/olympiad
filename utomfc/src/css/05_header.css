@@ -82,11 +82,10 @@ header.animated:after {transform:scaleX(1);}
     .group_nav {padding:0; text-align:left;} 
     .group_nav ul {display:none;}
     .group_nav .search_wrap {width:100%;}
-    .group_nav .menu_btn {margin:0 -5px; margin-top:15px;}
+    .group_nav .menu_btn {display:none; margin:0 -5px; margin-top:15px;}
     .group_nav .menu_btn .member {line-height:24px; margin-left:5px;}
     .group_nav .btn {margin:0 5px; line-height:25px;}
     .group_nav .study,.group_nav .admin {display:none;}
-    .navigation {overflow:auto; height:calc(100vh - 150px); margin-top:15px;}
     nav {visibility:hidden; position:fixed; top:0; left:0; width:100%; height:100%; transition:all 0.5s; opacity:0;}
     nav.on {visibility:visible; background:rgba(0,0,0,0.2); opacity:1;}
     .nav_wrap {right:auto; left:0; width:50%; height:100%; padding:15px 30px; background:#fff; transform:translateX(-100%); box-shadow:10px 0 10px -5px rgba(0,0,0,0.2);}
@@ -96,8 +95,8 @@ header.animated:after {transform:scaleX(1);}
     .nav_wrap button.close:before {transform:rotate(-45deg);}
     .nav_wrap button.close:after {transform:rotate(45deg);}
     nav.on .nav_wrap button.close {visibility:visible; opacity:1;}
-    .navigation {margin-top:15px;}
-    .navigation .menu_1depth {float:none; margin:15px 0 0 0;}
+    .navigation {overflow:auto; position:absolute; left:0; width:100%; height:calc(100% - 60px); padding:15px 30px; top:60px;}
+    .navigation .menu_1depth {float:none; margin:0;}
     .navigation .menu_1depth > li {float:none; margin:0;}
     .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-size:16px; line-height:2em;}
     .navigation .menu_1depth > li:hover:after {display:none;}
@@ -112,6 +111,6 @@ header.animated:after {transform:scaleX(1);}
 }
 
 @media (max-width:599px) {
-    .navigation {overflow:auto; height:300px;}
+    .navigation {overflow:auto; padding:15px;}
     .nav_wrap {width:290px; padding:15px;}     
 }

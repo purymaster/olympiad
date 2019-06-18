@@ -90,7 +90,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 input[type="text"],input[type="email"],input[type="number"],input[type="submit"],input[type="reset"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-box-sizing:border-box;box-sizing:border-box; margin:0; padding:0; border:none; border-radius:0; background:none; font-family:"Nanum Gothic","Apple SD Gothic Neo","Droid Sans",sans-serif; font-size:100%; letter-spacing:-0.025em; resize:none; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none;}
 
-
 :focus {outline:none;}
 body {position:relative; background:#fff; font-size:14px; line-height:1.8; color:#333; word-wrap:break-word; word-break:keep-all; -webkit-text-size-adjust:none; -moz-text-size-adjust:none;}
 blockquote,q {quotes:none;}
@@ -1048,7 +1047,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
     .group_nav .search_wrap {width:100%;}
     .group_nav .menu_btn {margin:0 -5px; margin-top:15px;}
     .group_nav .menu_btn .member {line-height:24px; margin-left:5px;}
-    .group_nav .btn {margin:0 5px; line-height:25px;}
+    .group_nav .btn {display:none; margin:0 5px; line-height:25px;}
     .group_nav .study,.group_nav .admin {display:none;}
     nav {visibility:hidden; position:fixed; top:0; left:0; width:100%; height:100%; -webkit-transition:all 0.5s; transition:all 0.5s; opacity:0;}
     nav.on {visibility:visible; background:rgba(0,0,0,0.2); opacity:1;}
@@ -1059,8 +1058,8 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
     .nav_wrap button.close:before {-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
     .nav_wrap button.close:after {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
     nav.on .nav_wrap button.close {visibility:visible; opacity:1;}
-    .navigation {margin-top:15px;}
-    .navigation .menu_1depth {float:none; margin:15px 0 0 0;}
+    .navigation {overflow:auto; position:absolute; left:0; width:100%; height:calc(100% - 60px); padding:15px 30px; top:60px;}
+    .navigation .menu_1depth {float:none; margin:0;}
     .navigation .menu_1depth > li {float:none; margin:0;}
     .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-size:16px; line-height:2em;}
     .navigation .menu_1depth > li:hover:after {display:none;}
@@ -1076,7 +1075,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
 }
 
 @media (max-width:599px) {
-    .navigation {overflow:auto; height:300px;}
+    .navigation {overflow:auto; padding:15px;}
     .nav_wrap {width:290px; padding:15px;}     
 }
 
@@ -1138,11 +1137,15 @@ footer {background:#505354; color:#fff;}
     .footer_upper .select_form button:after {right:15px;}
     .footer_upper .select_form button.on + ul {bottom:40px; width:100%; border:1px solid #fff; background:#505354;}
     .footer_upper .select_form ul li a {color:#fff;}
-    .footer_lower {padding-top:15px;}
-    .footer_lower .sns {position:static; margin-bottom:15px; text-align:center;}
+    .footer_lower {padding:15px 0;}
+    /* .footer_lower .sns {position:static; margin-bottom:15px; text-align:center;} */
+    .footer_lower .sns {top:15px;}
     .footer_lower .sns li {display:inline-block; float:none;}
-    .footer_lower .lower_wrap address li {display:block !important;}
-    .footer_lower .lower_wrap address li:after {display:none !important;}
+    .footer_lower .lower_wrap address {font-size:10px; line-height:1.5em;}
+    .footer_lower .lower_wrap address li {display:inline-block !important;}
+    .footer_lower .lower_wrap address .copyright {font-size:10px;}
+    /* .footer_lower .lower_wrap address li {display:block !important;}
+    .footer_lower .lower_wrap address li:after {display:none !important;} */
 }
 
 /*=========================================================
@@ -3546,15 +3549,15 @@ footer {background:#505354; color:#fff;}
     .exam_form .term_agree .check_form input[type='checkbox'] + label {font-size:10px;}
 }
 
-/* 완료 페이지 공통 */
+/***** 완료 페이지 공통 *****/
 .confirm_page .sub_upper_wrap {min-height:740px; margin-bottom:-100px;}
 .confirm_page .result {margin-top:60px; text-align:left;}
 .confirm_page .result .result_tit {padding:0 30px; background:#666; font-size:16px; font-weight:700; line-height:40px; color:#fff;}
-.confirm_page .result .exam_tit {padding:25px 30px; background:#f5f5f5; font-family:"Nanum Square"; font-size:24px; line-height:1.5em;}
+.confirm_page .result .exam_tit {padding:25px 30px; background:#f5f5f5; font-family:"Nanum Square"; font-size:24px; line-height:1.5em; text-align:center;}
 .confirm_page .result .table_wrap {padding:30px; background:#fff;}
+.confirm_page .result .table_wrap .data_table {max-width:50%; margin:0 auto;}
 .confirm_page .result .table_wrap .data_table:before {display:none;}
 .confirm_page .result .table_wrap .data_table .head {width:120px;}
-.confirm_page .result th {padding:5px;}
 .confirm_page .btn_wrap {margin-top:100px;}
 .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {min-width:180px; margin:0 2px; padding:0 15px; background:#00687f; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .confirm_page .btn_wrap a.grey,.confirm_page .btn_wrap button.grey {background:#555;}
@@ -3566,16 +3569,18 @@ footer {background:#505354; color:#fff;}
     .confirm_page .sub_upper_wrap {margin-bottom:-50px;}
     .confirm_page .btn_wrap {margin-top:50px;}
     .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {font-size:16px; line-height:40px;}
+    .confirm_page .result .table_wrap .data_table {max-width:100%;}
     .confirm_page .result .table_wrap .data_table .head {width:80px;}
 }
 
 @media (max-width:599px) {
-    .confirm_page .result .result_tit {padding:0 15px; text-align:center;}
-    .confirm_page .result .exam_tit {font-size:16px; padding:15px; text-align:center;}
+    .confirm_page .result .result_tit {padding:0 15px;}
+    .confirm_page .result .exam_tit {font-size:16px; padding:15px;}
     .confirm_page .sub_upper_wrap {min-height:0; margin-bottom:-30px;}
     .confirm_page .btn_wrap {margin-top:30px;}
     .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {margin:5px 0; width:100%; font-size:14px;}
-    .confirm_page .result .table_wrap {overflow:hidden; padding:15px;}
+    .confirm_page .result .table_wrap {padding:15px;}
+    /* .confirm_page .result .table_wrap {overflow:hidden; padding:15px;}
     .confirm_page .result .table_wrap .data_table table {width:200%; border:0;}
     .confirm_page .result .table_wrap .data_table table,
 	.confirm_page .result .table_wrap .data_table thead,
@@ -3585,7 +3590,7 @@ footer {background:#505354; color:#fff;}
     .confirm_page .result .table_wrap .data_table td {display:block; float:left; clear:both; width:100%; padding:0; border:none; background:none; text-align:center; font-family:"Nanum Square";}
     .confirm_page .result .table_wrap .data_table .head {width:100%;}
     .confirm_page .result .table_wrap .data_table th {margin-bottom:5px;}
-    .confirm_page .result .table_wrap .data_table td {margin-bottom:10px;}
+    .confirm_page .result .table_wrap .data_table td {margin-bottom:10px;} */
 }
 
 /* 로그인, 신청확인 페이지 공통 */

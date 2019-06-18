@@ -1538,12 +1538,13 @@
     .exam_form .term_agree .check_form input[type='checkbox'] + label {font-size:10px;}
 }
 
-/* 완료 페이지 공통 */
+/***** 완료 페이지 공통 *****/
 .confirm_page .sub_upper_wrap {min-height:740px; margin-bottom:-100px;}
 .confirm_page .result {margin-top:60px; text-align:left;}
 .confirm_page .result .result_tit {padding:0 30px; background:#666; font-size:16px; font-weight:700; line-height:40px; color:#fff;}
-.confirm_page .result .exam_tit {padding:25px 30px; background:#f5f5f5; font-family:"Nanum Square"; font-size:24px; line-height:1.5em;}
+.confirm_page .result .exam_tit {padding:25px 30px; background:#f5f5f5; font-family:"Nanum Square"; font-size:24px; line-height:1.5em; text-align:center;}
 .confirm_page .result .table_wrap {padding:30px; background:#fff;}
+.confirm_page .result .table_wrap .data_table {max-width:50%; margin:0 auto;}
 .confirm_page .result .table_wrap .data_table:before {display:none;}
 .confirm_page .result .table_wrap .data_table .head {width:120px;}
 .confirm_page .btn_wrap {margin-top:100px;}
@@ -1557,6 +1558,7 @@
     .confirm_page .sub_upper_wrap {margin-bottom:-50px;}
     .confirm_page .btn_wrap {margin-top:50px;}
     .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {font-size:16px; line-height:40px;}
+    .confirm_page .result .table_wrap .data_table {max-width:100%;}
     .confirm_page .result .table_wrap .data_table .head {width:80px;}
 }
 
@@ -1566,7 +1568,8 @@
     .confirm_page .sub_upper_wrap {min-height:0; margin-bottom:-30px;}
     .confirm_page .btn_wrap {margin-top:30px;}
     .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {margin:5px 0; width:100%; font-size:14px;}
-    .confirm_page .result .table_wrap {overflow:hidden; padding:15px;}
+    .confirm_page .result .table_wrap {padding:15px;}
+    /* .confirm_page .result .table_wrap {overflow:hidden; padding:15px;}
     .confirm_page .result .table_wrap .data_table table {width:200%; border:0;}
     .confirm_page .result .table_wrap .data_table table,
 	.confirm_page .result .table_wrap .data_table thead,
@@ -1576,7 +1579,7 @@
     .confirm_page .result .table_wrap .data_table td {display:block; float:left; clear:both; width:100%; padding:0; border:none; background:none; text-align:center; font-family:"Nanum Square";}
     .confirm_page .result .table_wrap .data_table .head {width:100%;}
     .confirm_page .result .table_wrap .data_table th {margin-bottom:5px;}
-    .confirm_page .result .table_wrap .data_table td {margin-bottom:10px;}
+    .confirm_page .result .table_wrap .data_table td {margin-bottom:10px;} */
 }
 
 /* 로그인, 신청확인 페이지 공통 */
