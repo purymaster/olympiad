@@ -24,11 +24,10 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container inner">
 
-                        @@include('../inc/tab.html',{"type":"type2",
-                        "context" : {
+                        @@include('../inc/tab.html',{
                         "has_tab" : true,
-                        "tab_list" : ["정기 입학고사","수시 입학고사","신청 확인"]
-                        }
+                        "tab_list" : ["정기 입학고사","수시 입학고사","신청 확인"],
+                        "type" : "type3"
                         })
 
                         <p class="main_tit">
@@ -166,7 +165,7 @@
             </div>
         </div>
         @@include('../inc/footer.html')
-
+        
     </div>
 
 </body>

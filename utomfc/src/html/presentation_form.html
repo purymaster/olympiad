@@ -24,11 +24,10 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container inner">
 
-                        @@include('../inc/tab.html',{"type":"type2",
-                        "context" : {
+                        @@include('../inc/tab.html',{
                         "has_tab" : true,
-                        "tab_list" : ["설명회 신청","신청내역 확인"]
-                        }
+                        "tab_list" : ["설명회 신청","신청내역 확인"],
+                        "type" : "type2"
                         })
 
                         <p class="main_tit">
@@ -712,7 +711,6 @@
                             <!-- //약관 -->
 
                             <div class="btn_wrap">
-                                <a href="#" class="cancel">취소</a>
                                 <button type="submit" class="submit">설명회 신청</button>
                             </div>
 
