@@ -904,10 +904,17 @@ label {cursor:pointer;}
 }
 
 @media (max-width:599px) {
-    .pagenation .pager > a {display:inline-block; float:none;}
+    /* .pagenation .pager > a {display:inline-block; float:none;}
     .pagenation ul {float:none; margin:10px; text-align:left;}
-    .pagenation ul li {display:inline-block; float:none; margin:3px;}
+    .pagenation ul li {display:inline-block; float:none; margin:3px;} */
+    .pagenation .pager > a {width:22px;}
     .pagenation ul li span, .pagenation ul li a {font-size:12px;}
+    .pagenation .pager .first:before {left:6px;}
+    .pagenation .pager .first:after {left:12px;}
+    .pagenation .pager .prev:before {left:8px;}
+    .pagenation .pager .next:before {left:5px;}
+    .pagenation .pager .last:before {left:1px;}
+    .pagenation .pager .last:after {left:7px;}
 }
 
 /* 공통요소 추가 by KJH */
@@ -1672,19 +1679,27 @@ footer {background:#505354; color:#fff;}
 .sub_upper_wrap .tab_menu {display:table; width:100%; margin-bottom:75px; background:#fff; table-layout:fixed;}
 .sub_upper_wrap .tab_menu ul {display:table-row;}
 .sub_upper_wrap .tab_menu ul li {display:table-cell;}
-.sub_upper_wrap .tab_menu ul li a {display:block; position:relative; border:1px solid #ddd; border-right:0; font-family:"Nanum Square"; font-size:18px; line-height:48px; color:inherit; text-align:center; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.sub_upper_wrap .tab_menu ul li a {display:block; position:relative; border:1px solid #ddd; border-right:0; font-family:"Nanum Square"; font-size:18px; line-height:48px; color:inherit; text-align:center; white-space:nowrap; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .sub_upper_wrap .tab_menu ul li:last-child a {border-right:1px solid #ddd;}
 .sub_upper_wrap .tab_menu ul li.on,.sub_upper_wrap .tab_menu ul li a:hover {background:#1b8fa2; font-weight:700; color:#fff;}
 
 @media (max-width:1024px) {
-    .sub_upper_wrap .tab_menu {display:block; margin-bottom:50px; background:none;}
-    .sub_upper_wrap .tab_menu ul {display:block; overflow:hidden; border-top:1px solid #ddd; border-left:1px solid #ddd;}
-    .sub_upper_wrap .tab_menu ul li {float:left; width:50%; background:#fff;}
-    .sub_upper_wrap .tab_menu ul li a {border:0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:16px; line-height:2.5em;}
+    .sub_upper_wrap .tab_menu ul li a {font-size:16px; line-height:2.5em;}
 }
 
 @media (max-width:599px) {
-    .sub_upper_wrap .tab_menu ul li a {font-size:14px;}
+    .sub_upper_wrap .tab_menu {display:block; margin-bottom:50px; background:none;}
+    .sub_upper_wrap .tab_menu ul {display:block; overflow:hidden; border-top:1px solid #ddd; border-left:1px solid #ddd;}
+    .sub_upper_wrap .tab_menu ul li {float:left; width:100%; background:#fff;}
+    .sub_upper_wrap .tab_menu ul.type2 li {width:50%;}
+    .sub_upper_wrap .tab_menu ul.type3 li {width:33.33%;}
+    .sub_upper_wrap .tab_menu ul.type4 li {width:25%;}
+    .sub_upper_wrap .tab_menu ul.type5 li {width:20%;}
+    .sub_upper_wrap .tab_menu ul li a {border:0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:14px;}
+}
+
+@media (max-width:320px) {
+    .sub_upper_wrap .tab_menu ul li a {font-size:12px;}
 }
 
 /* 서브 페이지 내용 */

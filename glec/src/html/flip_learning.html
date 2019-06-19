@@ -32,11 +32,14 @@
                         </p>
                         <ol class="grammar_list">
                             <li data-animation="fadeInUp" data-delay="0">
-                                <span class="tit">1. 동영상 강의 예습</span>
-                                <ul class="txt_list type1">
-                                    <li>온라인 예습강의 시청</li>
-                                    <li>전 레벨의 교재 온라인강의 탑재</li>
-                                </ul>
+                                <a href="https://youtu.be/01-aPg6ufxg" target="_blank">
+                                    <span class="tit">1. 동영상 강의 예습</span>
+                                    <ul class="txt_list type1">
+                                        <li>온라인 예습강의 시청</li>
+                                        <li>전 레벨의 교재 온라인강의 탑재</li>
+                                    </ul>
+                                    <span href="#" class="link">유튜브 보기</span>
+                                </a>
                             </li>
                             <li data-animation="fadeInUp" data-delay="1">
                                 <span class="tit">2. 문제풀이</span>
@@ -60,11 +63,14 @@
                                 </ul>
                             </li>
                             <li data-animation="fadeInUp" data-delay="4">
-                                <span class="tit">5. My PT</span>
-                                <ul class="txt_list type1">
-                                    <li>공부한 문법을 설명하며 영상찍기</li>
-                                    <li>유튜브 업로드</li>
-                                </ul>
+                                <a href="#">
+                                    <span class="tit">5. My PT</span>
+                                    <ul class="txt_list type1">
+                                        <li>공부한 문법을 설명하며 영상찍기</li>
+                                        <li>유튜브 업로드</li>
+                                    </ul>
+                                    <span href="#" class="link">자세히 보기</span>
+                                </a>
                             </li>
                         </ol>
                     </div>
@@ -100,14 +106,58 @@
                             <div class="sub_cont_wrap">
                                 <img src="../img/img/img_fr_rc.png"
                                     alt="내용파악 중심의 토론 수업, 문장구조 파악, 사고력 향상이 GLEC 플립러닝 수업유형에 반영됩니다.">
-                                <dl>
-                                    <dt>GLEC FR 수업유형</dt>
-                                    <dd>Making Questions</dd>
-                                    <dd>JigSaw Puzzle</dd>
-                                    <dd>Finding the point</dd>
-                                    <dd>Summarizing</dd>
-                                    <dd>Guess what!</dd>
-                                </dl>
+                                <div class="case_wrap">
+                                    <div class="tit">GLEC FR 수업유형</div>
+                                    <dt>Making Questions</dt>
+                                    <dd>
+                                        <ul class="txt_list type1">
+                                            <li>팀별 다른 지문을 가지고 각자 문제를 만들어 상대편 팀과 함께 풀어보는 활동</li>
+                                            <li>답의 근거 유추 및 다양한 문제유형 파악에 대한 실력 향상을 목표로 함</li>
+                                        </ul>
+                                    </dd>
+                                    <dt>JigSaw Puzzle</dt>
+                                    <dd>
+                                        <ul class="txt_list type1">
+                                            <li>퍼즐문장을 문맥에 맞게 배열하여 발표하는 팀별 활동</li>
+                                            <li>글의 흐름 파악, 접속사 구분, 문장배열 식 수능유형 실력 향상을 목표로 함</li>
+                                        </ul>
+                                    </dd>
+                                    <dt>Finding the point</dt>
+                                    <dd>
+                                        <ul class="txt_list type1">
+                                            <li>지문 내에서 쓰이는 주요 문법 포인트를 팀별로 찾아내고 발표하는 활동</li>
+                                            <li>Reading과 Grammar의 통합학습으로, 주요 구문들을 쉽게 익힐 수 있도록 함</li>
+                                        </ul>
+                                    </dd>
+                                    <dt>Summarizing</dt>
+                                    <dd>
+                                        <ul class="txt_list type1">
+                                            <li>장문의 지문을 팀별로 요약하여 발표하는 활동</li>
+                                            <li>Summary 활동을 통해 장문의 주요내용을 쉽게 파악 해 속독속해가 가능하도록 함</li>
+                                        </ul>
+                                    </dd>
+                                    <dt>Guess what!</dt>
+                                    <dd>
+                                        <ul class="txt_list type1">
+                                            <li>팀별 Collocation 활동 (문장 내에서 쓰이는 단어 및 숙어의 의미 유추 → 예문 만들기)</li>
+                                            <li>영어의 다양한 표현들을 학습하여 문장 내에서 쓰이는 진짜 의미를 파악하도록 함</li>
+                                        </ul>
+                                    </dd>
+                                </div>
+
+                                <!-- 수업유형 아코디언 -->
+                                <script>
+                                    var case_list = $('.case_wrap dt');
+
+                                    case_list.on('click', function () {
+                                        $(this).hasClass('on') ? case_list.removeClass('on').next('dd').stop().slideUp() :
+                                            (
+                                                case_list.removeClass('on').next('dd').stop().slideUp(),
+                                                $(this).addClass('on').next('dd').stop().slideDown()
+                                            );
+                                    });
+                                </script>
+                                <!-- //수업유형 아코디언 -->
                             </div>
                             <!-- //스태틱 페이지 컨텐츠 영역 -->
 

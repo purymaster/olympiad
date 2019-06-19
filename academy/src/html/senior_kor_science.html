@@ -24,22 +24,11 @@
                     <!-- bg 클래스 추가시 배경색 추가 -->
                     <div class="grid_container inner">
 
-
-                        <!-- 서브 페이지 상단 탭메뉴 -->
-                        <div class="tab_menu">
-                            <ul>
-                                <!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
-
-                                <li><a href="#">수학</a></li>
-
-                                <li><a href="#">영어</a></li>
-
-                                <li><a href="#">국어/과학</a></li>
-
-                            </ul>
-                        </div>
-                        <!-- //서브 페이지 상단 탭메뉴 -->
-
+                        @@include('../inc/tab.html',{
+                        "has_tab" : true,
+                        "tab_list" : ["수학","영어","국어/과학"],
+                        "type" : "type3"
+                        })
 
                         <p class="main_tit">
                             <strong>국어</strong>
@@ -506,7 +495,7 @@
                     </div>
                 </div>
                 <!-- //서브 페이지 상단 -->
-                
+
                 <!-- 서브 페이지 내용 -->
                 <div class="sub_lower_wrap science_bg_gray">
                     <div class="grid_container inner">

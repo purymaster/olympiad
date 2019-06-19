@@ -762,8 +762,15 @@ label {cursor:pointer;}
 }
 
 @media (max-width:599px) {
-    .pagenation .pager > a {display:inline-block; float:none;}
+    /* .pagenation .pager > a {display:inline-block; float:none;}
     .pagenation ul {float:none; margin:10px; text-align:left;}
-    .pagenation ul li {display:inline-block; float:none; margin:3px;}
+    .pagenation ul li {display:inline-block; float:none; margin:3px;} */
+    .pagenation .pager > a {width:22px;}
     .pagenation ul li span, .pagenation ul li a {font-size:12px;}
+    .pagenation .pager .first:before {left:6px;}
+    .pagenation .pager .first:after {left:12px;}
+    .pagenation .pager .prev:before {left:8px;}
+    .pagenation .pager .next:before {left:5px;}
+    .pagenation .pager .last:before {left:1px;}
+    .pagenation .pager .last:after {left:7px;}
 }

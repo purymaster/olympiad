@@ -903,10 +903,17 @@ label {cursor:pointer;}
 }
 
 @media (max-width:599px) {
-    .pagenation .pager > a {display:inline-block; float:none;}
+    /* .pagenation .pager > a {display:inline-block; float:none;}
     .pagenation ul {float:none; margin:10px; text-align:left;}
-    .pagenation ul li {display:inline-block; float:none; margin:3px;}
+    .pagenation ul li {display:inline-block; float:none; margin:3px;} */
+    .pagenation .pager > a {width:22px;}
     .pagenation ul li span, .pagenation ul li a {font-size:12px;}
+    .pagenation .pager .first:before {left:6px;}
+    .pagenation .pager .first:after {left:12px;}
+    .pagenation .pager .prev:before {left:8px;}
+    .pagenation .pager .next:before {left:5px;}
+    .pagenation .pager .last:before {left:1px;}
+    .pagenation .pager .last:after {left:7px;}
 }
 
 /*=========================================================
@@ -2178,6 +2185,13 @@ br.not {display:block !important;}
 .tbl_textbx .text_bx .ab_bullet li {margin-bottom:1px; font-size:16px;}
 .tbl_textbx .text_bx p.text {padding-left:12px; font-size:14px;}
 
+/* 중등부 표준시간표 플립러닝 링크 */
+.tbl_textbx .link {position:relative;}
+.tbl_textbx .link a {position:absolute; top:97px; left:16%; width:84%; border:3px solid #f78920; font-weight:700; line-height:40px; text-align:center; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.tbl_textbx .link a span {opacity:0; visibility:hidden; -webkit-transition:all 0.5s; transition:all 0.5s; font-size:18px; text-transform:uppercase; color:#fff;}
+.tbl_textbx .link a:hover {background:#f78920;}
+.tbl_textbx .link a:hover span {opacity:1; visibility:visible;}
+
 @media (max-width:1024px) {
 
     /* 리스트 */
@@ -2203,6 +2217,10 @@ br.not {display:block !important;}
     .tbl_textbx .text_bx {padding:20px 20px;}
     .tbl_textbx .text_bx .ab_bullet li {font-size:14px;}
     .tbl_textbx .text_bx p.text {font-size:13px;}
+
+    /* 중등부 표준시간표 플립러닝 링크 */
+    .tbl_textbx .link a {top:84px; line-height:33px;}
+    .tbl_textbx .link a span {font-size:16px;}
 }
 
 @media (max-width:767px) {
@@ -2236,6 +2254,10 @@ br.not {display:block !important;}
     .tbl_textbx .text_bx {padding:15px 15px;}
     .tbl_textbx .text_bx .ab_bullet li {font-size:13px;}
     .tbl_textbx .text_bx p.text {font-size:12px;}
+
+    /* 중등부 표준시간표 플립러닝 링크 */
+    .tbl_textbx .link a {top:73px; line-height:29px;}
+    .tbl_textbx .link a span {font-size:14px;}
 }
 
 /***** 초등부 - 영어도서관 *****/
@@ -2436,20 +2458,32 @@ br.not {display:block !important;}
 .flip_learning .grammar_list > li:nth-child(1) .txt_list,.flip_learning .grammar_list > li:nth-child(5) .txt_list {display:inline-block; margin:0; margin-left:23px; vertical-align:top;}
 .flip_learning .grammar_list .txt_list li {font-size:16px; line-height:1.6em;}
 .flip_learning .grammar_list .txt_list li:before {width:6px; height:6px;}
+.flip_learning .grammar_list > li .link {display:inline-block; position:absolute; width:130px; padding-right:13px; border-radius:15px; background:#f97e1b; font-size:12px; line-height:30px; color:#fff; text-align:center;}
+.flip_learning .grammar_list > li:nth-child(1) .link {top:40px; left:0;}
+.flip_learning .grammar_list > li:nth-child(5) .link {top:64px; left:95px;}
+.flip_learning .grammar_list > li .link:after {position:absolute; top:12px; right:17px; width:7px; height:7px; border-top:1px solid #fff; border-right:1px solid #fff; -webkit-transform:rotate(45deg); transform:rotate(45deg); -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
+.flip_learning .grammar_list > li a {display:inline-block;}
+.flip_learning .grammar_list > li a:hover .link:after {right:13px;}
 .flip_learning .reading .img_wrap {position:relative; height:0; margin-top:50px; margin-bottom:-65px; padding-top:21.43%;}
 .flip_learning .reading .img_wrap img {position:absolute; top:0; left:0; width:100%;}
 .flip_learning .rc .cont_wrap {margin-top:21.43%;}
-.flip_learning .rc dl {max-width:480px; margin:10px auto 0; font-size:16px; text-align:center;}
-.flip_learning .rc dt {background:#ffab33; background:-webkit-gradient(linear, left top, right top, from(#ffab33),to(#ff6d33)); background:linear-gradient(to right, #ffab33 0%,#ff6d33 100%); font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:60px; color:#fff; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffab33', endColorstr='#ff6d33',GradientType=1 );}
-.flip_learning .rc dd {margin-top:5px; background:#f0f0f0; font-family:"Lato"; line-height:50px;}
+.flip_learning .rc .case_wrap {max-width:480px; margin:10px auto 0; font-size:16px; text-align:center;}
+.flip_learning .rc .case_wrap .tit {background:#ffab33; background:-webkit-gradient(linear, left top, right top, from(#ffab33),to(#ff6d33)); background:linear-gradient(to right, #ffab33 0%,#ff6d33 100%); font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:60px; color:#fff; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffab33', endColorstr='#ff6d33',GradientType=1 );}
+.flip_learning .rc dt {position:relative; margin-top:5px; background:#f0f0f0; font-family:"Lato"; line-height:50px; cursor:pointer;}
+.flip_learning .rc dt:before,.flip_learning .rc dt:after {position:absolute; top:50%; right:15px; width:10px; height:2px; margin-top:-1px; border-radius:1px; background:#333; -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
+.flip_learning .rc dt:after {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
+.flip_learning .rc dt.on:after {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+.flip_learning .rc dd {display:none; padding:10px 0 5px;}
 
 @media (max-width:1024px) {
     .flip_learning .grammar {background:none;}
     .flip_learning .grammar .list_wrap {height:auto;}
     .flip_learning .grammar_list {overflow:hidden; max-width:450px; margin:0 auto;}
-    .flip_learning .grammar_list > li {float:left; position:relative; top:auto !important; left:auto; width:50%; margin-top:30px; margin-left:0 !important; padding-top:30px;}
+    .flip_learning .grammar_list > li {float:none; position:relative; top:auto !important; left:auto; width:100%; margin-top:30px; margin-left:0 !important; padding-top:30px; text-align:center;}
     .flip_learning .grammar_list > li:before {top:0; left:50%; -webkit-transform:translateX(-50%) scale(0.5); transform:translateX(-50%) scale(0.5); -webkit-transform-origin:top; transform-origin:top;}
     .flip_learning .grammar_list > li .tit {display:block !important; font-size:18px; text-align:center;}
+    .flip_learning .grammar_list > li .link {position:static; margin-top:15px; padding:0;}
+    .flip_learning .grammar_list > li .link:after {display:none;}
     .flip_learning .grammar_list .txt_list {display:block !important; margin-top:10px !important; margin-left:0 !important;}
     .flip_learning .grammar_list .txt_list li {padding-left:0; font-size:14px; text-align:center;}
     .flip_learning .grammar_list .txt_list li:before {display:none;}
