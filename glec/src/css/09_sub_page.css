@@ -77,23 +77,30 @@
 }
 
 /* 서브 페이지 상단 탭메뉴 */
-.sub_upper_wrap .tab_menu {display:table; width:100%; margin-top:-30px; margin-bottom:75px; background:#fff; table-layout:fixed;}
+.sub_upper_wrap .tab_menu {display:table; width:100%; margin-bottom:75px; background:#fff; table-layout:fixed;}
 .sub_upper_wrap .tab_menu ul {display:table-row;}
 .sub_upper_wrap .tab_menu ul li {display:table-cell;}
-.sub_upper_wrap .tab_menu ul li a {display:block; position:relative; border:1px solid #ddd; border-right:0; font-family:"Nanum Square"; font-size:18px; line-height:48px; color:inherit; text-align:center; transition:all 0.5s;}
+.sub_upper_wrap .tab_menu ul li a {display:block; position:relative; border:1px solid #ddd; border-right:0; font-family:"Nanum Square"; font-size:18px; line-height:48px; color:inherit; text-align:center; white-space:nowrap; transition:all 0.5s;}
 .sub_upper_wrap .tab_menu ul li:last-child a {border-right:1px solid #ddd;}
 .sub_upper_wrap .tab_menu ul li.on,.sub_upper_wrap .tab_menu ul li a:hover {background:#f78920; font-weight:700; color:#fff;}
 
 @media (max-width:1024px) {
-    .sub_upper_wrap .tab_menu {display:block; margin-top:0; margin-bottom:50px; background:none;}
-    .sub_upper_wrap .tab_menu ul {display:block; overflow:hidden; border-top:1px solid #ddd; border-left:1px solid #ddd;}
-    .sub_upper_wrap .tab_menu ul li {float:left; width:50%; background:#fff;}
-    .sub_upper_wrap .tab_menu ul li a {border:0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:16px; line-height:2.5em;}
+    .sub_upper_wrap .tab_menu ul li a {font-size:16px; line-height:2.5em;}
 }
 
 @media (max-width:599px) {
-    .sub_upper_wrap .tab_menu ul li {width:100%;}
-    .sub_upper_wrap .tab_menu ul li a {font-size:14px;}
+    .sub_upper_wrap .tab_menu {display:block; margin-bottom:50px; background:none;}
+    .sub_upper_wrap .tab_menu ul {display:block; overflow:hidden; border-top:1px solid #ddd; border-left:1px solid #ddd;}
+    .sub_upper_wrap .tab_menu ul li {float:left; width:100%; background:#fff;}
+    .sub_upper_wrap .tab_menu ul.type2 li {width:50%;}
+    .sub_upper_wrap .tab_menu ul.type3 li {width:33.33%;}
+    .sub_upper_wrap .tab_menu ul.type4 li {width:25%;}
+    .sub_upper_wrap .tab_menu ul.type5 li {width:20%;}
+    .sub_upper_wrap .tab_menu ul li a {border:0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; font-size:14px;}
+}
+
+@media (max-width:320px) {
+    .sub_upper_wrap .tab_menu ul li a {font-size:12px;}
 }
 
 /* 서브 페이지 내용 */
