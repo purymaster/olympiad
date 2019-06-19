@@ -324,8 +324,8 @@ label {cursor:pointer;}
 
 /* 게시판(일반) 뷰 */
 .board_view .info {padding:22px 30px; border-top:3px solid #333;}
-.board_view .info .tit {font-size:24px; font-weight:700; line-height:1.5em; color:#333;}
-.board_view .info .tit strong {color:#00687f;}
+.board_view .info .tit {font-size:24px; font-weight:700; font-family:"Nanum Square"; line-height:1.5em; color:#333;}
+.board_view .info .tit strong {font-family:inherit; color:#00687f;}
 .board_view .info .txt_info {margin-top:15px; font-size:0;}
 .board_view .info .txt_info > div,.board_view .info .txt_info dt,.board_view .info .txt_info dd {display:inline-block; position:relative; line-height:1.5em; vertical-align:middle;}
 .board_view .info .txt_info dt {width:17px; height:17px; margin-right:5px; background-image:url(../img/sprite/sprite.png); background-size:500px; text-indent:-9999px;}

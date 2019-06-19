@@ -367,7 +367,7 @@ label {cursor:pointer;}
 
 @media (max-width:1024px) {
     /* .data_table {overflow:auto;} */
-    .data_table.scroll:before {display:inline-block; font-size:12px; color:#00687f; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
+    .data_table.scroll:before {display:inline-block; font-size:12px; color:#f78920; -webkit-animation:scroll_txt 1s linear infinite; animation:scroll_txt 1s linear infinite; content:"↔︎ 좌우로 스크롤하여 확인하세요.";}
     .data_table table {width:100%; margin:0;}
     .data_table table th,.data_table table td {padding:12px 5px;}
     .data_table.row table th {padding:12px 15px; font-size:14px;}
@@ -390,7 +390,7 @@ label {cursor:pointer;}
 .input_form dl .option {float:left; width:50%; padding:5px 10px;}
 .input_form dl .option:after {display:block; clear:both; content:"";}
 .input_form dl .option dt {float:left; width:100px;}
-.input_form dl .option dt label {display:inline-block; position:relative; font-size:16px; font-family:"Nanum Square"; font-weight:700; line-height:40px; display:table-cell; vertical-align:middle;}
+.input_form dl .option dt label {display:inline-block; position:relative; font-size:16px; font-family:"Nanum Square"; font-weight:700; line-height:40px; display:table-cell; vertical-align:middle; white-space:nowrap;}
 .input_form dl .option dd {float:left; width:calc(100% - 100px);}
 .input_form dl .option dd span {display:inline-block; font-size:14px; line-height:40px;}
 .input_form dl .option input[type="text"],.input_form dl .option input[type="email"],.input_form dl .option .select_form {width:100%;}
@@ -423,7 +423,7 @@ label {cursor:pointer;}
 }
 
 @media (max-width:599px) {
-    .input_form dl .option dt label {font-size:14px;}
+    .input_form dl .option dt label {}
     .input_form dl .option dt,.input_form dl .option dd {float:none; width:100%;}
 }
 
@@ -669,8 +669,8 @@ label {cursor:pointer;}
 
 /* 게시판(일반) 뷰 */
 .board_view .info {padding:22px 30px; border-top:3px solid #333;}
-.board_view .info .tit {font-size:24px; font-weight:700; line-height:1.5em; color:#333;}
-.board_view .info .tit strong {color:#f78920;}
+.board_view .info .tit {font-size:24px; font-weight:700; font-family:"Nanum Square"; line-height:1.5em; color:#333;}
+.board_view .info .tit strong {font-family:inherit; color:#f78920;}
 .board_view .info .txt_info {margin-top:15px; font-size:0;}
 .board_view .info .txt_info > div,.board_view .info .txt_info dt,.board_view .info .txt_info dd {display:inline-block; position:relative; line-height:1.5em; vertical-align:middle;}
 .board_view .info .txt_info dt {width:17px; height:17px; margin-right:5px; background-image:url(../img/sprite/sprite.png); background-size:500px; text-indent:-9999px;}
@@ -1750,9 +1750,9 @@ footer {background:#505354; color:#fff;}
     .static_ro .mb50 {margin-bottom:45px;}
     .static_ro .mb60 {margin-bottom:50px;}
     .static_ro .mb80 {margin-bottom:60px;}
-    .static_ro .bs_btnbx .bs_btn_item {font-size:15px;}
     .bg_st_lsbx .thum {width:35%;}
     .static_ro .ro_sub_tit br {display:none;}
+    .static_ro .bs_btnbx {margin:0 -2px;}
     .static_ro .bs_btnbx .bs_btn_item {font-size:16px; line-height:40px;}
 }
 
@@ -1770,7 +1770,7 @@ footer {background:#505354; color:#fff;}
     .bg_st_lsbx {display:block;}
     .bg_st_lsbx .thum {display:block; width:100%; margin-bottom:15px;}
     .bg_st_lsbx .cont {display:block; padding-left:0; background-position:right 0; background-size:auto 80%;}
-    .static_ro .bs_btnbx .bs_btn_item {width:100%; margin:5px 0; font-size:14px;}
+    .static_ro .bs_btnbx .bs_btn_item {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
 
 /***** 캠퍼스 안내 *****/
@@ -1832,7 +1832,7 @@ footer {background:#505354; color:#fff;}
 .campus_find .cate_select ul li {display:inline-block; margin:5px;}
 .campus_find .cate_select ul li input[type="radio"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
 .campus_find .cate_select ul li label {display:inline-block; line-height:30px; padding:0 10px; font-size:14px; color:#fff; background:#bbb; -webkit-transition:all 0.5s; transition:all 0.5s;}
-.campus_find .cate_select ul li input[type="radio"]:checked + label {background:#008398;}
+.campus_find .cate_select ul li input[type="radio"]:checked + label {background:#f78920;}
 .campus_find .cate_select ul li label:before {content:"#";}
 
 .campus_find .fold_list {padding-top:20px;}
@@ -2194,10 +2194,10 @@ br.not {display:block !important;}
 
 /* 중등부 표준시간표 플립러닝 링크 */
 .tbl_textbx .link {position:relative;}
-.tbl_textbx .link a {position:absolute; top:97px; left:16%; width:84%; border:3px solid #f78920; font-weight:700; line-height:40px; text-align:center; -webkit-transition:all 0.5s; transition:all 0.5s;}
-.tbl_textbx .link a span {opacity:0; visibility:hidden; -webkit-transition:all 0.5s; transition:all 0.5s; font-size:18px; text-transform:uppercase; color:#fff;}
+.tbl_textbx .link a {position:absolute; top:97px; left:16%; width:84%; border:3px solid #f78920; font-weight:700; line-height:40px; text-align:center; -webkit-transition:all 0.5s; transition:all 0.5s; background:rgba(247,137,32,0.3);}
+.tbl_textbx .link a span {font-size:18px; color:#f78920; -webkit-transition:all 0.5s; transition:all 0.5s; opacity:0.4; text-transform:uppercase;}
 .tbl_textbx .link a:hover {background:#f78920;}
-.tbl_textbx .link a:hover span {opacity:1; visibility:visible;}
+.tbl_textbx .link a:hover span {color:#fff; opacity:1;}
 
 @media (max-width:1024px) {
 
@@ -2545,15 +2545,7 @@ br.not {display:block !important;}
     .color_no_ls_item dd {padding-right:15px; padding-left:50px; font-size:14px;}
 
     /* 이미지 */
-    .color_no_lsbx .icon.one {right:-10px; bottom:-60px; width:200px;}
-    .color_no_lsbx .icon.two {right:-25px; bottom:-60px; width:190px;}
-}
-
-@media (max-width:700px) {
-
-    /* 이미지 */
-    .color_no_lsbx .icon.one {display:none;}
-    .color_no_lsbx .icon.two {display:none;}
+    .color_no_lsbx .icon.one,.color_no_lsbx .icon.two {display:none;}
 }
 
 @media (max-width:599px) {
@@ -2716,7 +2708,7 @@ br.not {display:block !important;}
 .exam_form .form_list.select .campus_link li button:hover {color:#f78920;}
 .exam_form .form_list.select .campus_link li button:hover:after {border-color:#f78920;}
 .exam_form .form_list.root .radio_form input[type='text'] {display:none; position:relative; top:-7px; margin-left:10px;}
-.exam_form .warning {margin-top:30px; font-size:14px; line-height:1.6em; color:#008398;}
+.exam_form .warning {margin-top:30px; font-size:14px; line-height:1.6em; color:#f78920;}
 .exam_form .warning:before {content:"*";}
 .exam_form .term_viewer {margin-top:50px;}
 .exam_form .term_agree .check_form ul > li {float:right;}

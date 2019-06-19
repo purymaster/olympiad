@@ -744,9 +744,9 @@
 .map .info dt {width:150px; font-family:"Nanum Square"; font-size:20px; font-weight:700; line-height:45px;}
 .map .info dd {position:relative; width:calc(100% - 150px);}
 .map .info dd .txt {display:inline-block; padding:10px 0; padding-left:35px; font-size:16px; line-height:25px; color:#666;}
-.map .info dd .txt:before {position:absolute; top:9px; left:0; background:red; content:"";}
-.map .info > div:nth-child(1) dd .txt:before {width:21px; height:26px;}
-.map .info > div:nth-child(2) dd .txt:before {width:27px; height:27px;}
+.map .info dd .txt:before {position:absolute; top:9px; left:0; background-image:url(../img/sprite/sprite.png); background-size:500px; background-position-y:-194px; content:"";}
+.map .info > div:nth-child(1) dd .txt:before {width:21px; height:26px; background-position-x:-5px;}
+.map .info > div:nth-child(2) dd .txt:before {width:27px; height:27px; background-position-x:-31px;}
 
 @media (max-width:1024px) { 
     .map iframe {height:350px;}

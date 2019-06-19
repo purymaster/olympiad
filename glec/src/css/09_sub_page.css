@@ -197,9 +197,9 @@
     .static_ro .mb50 {margin-bottom:45px;}
     .static_ro .mb60 {margin-bottom:50px;}
     .static_ro .mb80 {margin-bottom:60px;}
-    .static_ro .bs_btnbx .bs_btn_item {font-size:15px;}
     .bg_st_lsbx .thum {width:35%;}
     .static_ro .ro_sub_tit br {display:none;}
+    .static_ro .bs_btnbx {margin:0 -2px;}
     .static_ro .bs_btnbx .bs_btn_item {font-size:16px; line-height:40px;}
 }
 
@@ -217,7 +217,7 @@
     .bg_st_lsbx {display:block;}
     .bg_st_lsbx .thum {display:block; width:100%; margin-bottom:15px;}
     .bg_st_lsbx .cont {display:block; padding-left:0; background-position:right 0; background-size:auto 80%;}
-    .static_ro .bs_btnbx .bs_btn_item {width:100%; margin:5px 0; font-size:14px;}
+    .static_ro .bs_btnbx .bs_btn_item {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
 
 /***** 캠퍼스 안내 *****/
@@ -279,7 +279,7 @@
 .campus_find .cate_select ul li {display:inline-block; margin:5px;}
 .campus_find .cate_select ul li input[type="radio"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
 .campus_find .cate_select ul li label {display:inline-block; line-height:30px; padding:0 10px; font-size:14px; color:#fff; background:#bbb; transition:all 0.5s;}
-.campus_find .cate_select ul li input[type="radio"]:checked + label {background:#008398;}
+.campus_find .cate_select ul li input[type="radio"]:checked + label {background:#f78920;}
 .campus_find .cate_select ul li label:before {content:"#";}
 
 .campus_find .fold_list {padding-top:20px;}
@@ -641,10 +641,10 @@ br.not {display:block !important;}
 
 /* 중등부 표준시간표 플립러닝 링크 */
 .tbl_textbx .link {position:relative;}
-.tbl_textbx .link a {position:absolute; top:97px; left:16%; width:84%; border:3px solid #f78920; font-weight:700; line-height:40px; text-align:center; transition:all 0.5s;}
-.tbl_textbx .link a span {opacity:0; visibility:hidden; transition:all 0.5s; font-size:18px; text-transform:uppercase; color:#fff;}
+.tbl_textbx .link a {position:absolute; top:97px; left:16%; width:84%; border:3px solid #f78920; font-weight:700; line-height:40px; text-align:center; transition:all 0.5s; background:rgba(247,137,32,0.3);}
+.tbl_textbx .link a span {font-size:18px; color:#f78920; transition:all 0.5s; opacity:0.4; text-transform:uppercase;}
 .tbl_textbx .link a:hover {background:#f78920;}
-.tbl_textbx .link a:hover span {opacity:1; visibility:visible;}
+.tbl_textbx .link a:hover span {color:#fff; opacity:1;}
 
 @media (max-width:1024px) {
 
@@ -992,15 +992,7 @@ br.not {display:block !important;}
     .color_no_ls_item dd {padding-right:15px; padding-left:50px; font-size:14px;}
 
     /* 이미지 */
-    .color_no_lsbx .icon.one {right:-10px; bottom:-60px; width:200px;}
-    .color_no_lsbx .icon.two {right:-25px; bottom:-60px; width:190px;}
-}
-
-@media (max-width:700px) {
-
-    /* 이미지 */
-    .color_no_lsbx .icon.one {display:none;}
-    .color_no_lsbx .icon.two {display:none;}
+    .color_no_lsbx .icon.one,.color_no_lsbx .icon.two {display:none;}
 }
 
 @media (max-width:599px) {
@@ -1163,7 +1155,7 @@ br.not {display:block !important;}
 .exam_form .form_list.select .campus_link li button:hover {color:#f78920;}
 .exam_form .form_list.select .campus_link li button:hover:after {border-color:#f78920;}
 .exam_form .form_list.root .radio_form input[type='text'] {display:none; position:relative; top:-7px; margin-left:10px;}
-.exam_form .warning {margin-top:30px; font-size:14px; line-height:1.6em; color:#008398;}
+.exam_form .warning {margin-top:30px; font-size:14px; line-height:1.6em; color:#f78920;}
 .exam_form .warning:before {content:"*";}
 .exam_form .term_viewer {margin-top:50px;}
 .exam_form .term_agree .check_form ul > li {float:right;}
