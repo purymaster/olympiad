@@ -681,7 +681,7 @@ label {cursor:pointer;}
 .board_view .info .txt_info dd {overflow:hidden; max-width:200px; margin-right:16px; font-size:16px; color:#666; text-overflow:ellipsis; white-space:nowrap;}
 .board_view .content_wrap {border-top:1px solid #333; border-bottom:1px solid #333;}
 .board_view .content {padding:50px 30px; font-size:14px; line-height:2em; color:#666;}
-.board_view .content img {display:block; margin:0 auto; margin-bottom:1em;}
+.board_view .content img,.board_view .content iframe {display:block; max-width:100%; margin:0 auto; margin-bottom:1em;}
 .board_view .upload_file {border-top:1px solid #cdcdcd;}
 .board_view .upload_file ul {overflow:hidden; padding:15px 20px;}
 .board_view .upload_file ul li {overflow:hidden; float:left; position:relative; max-width:500px; margin-right:20px; padding-left:28px; text-overflow:ellipsis; white-space:nowrap;}
@@ -756,15 +756,15 @@ label {cursor:pointer;}
     .board_view .reply_wrap {margin-top:30px;}
     .board_view .reply_wrap .txt_wrap .date {font-size:12px;}
     .board_view .reply_wrap .ctr {position:static; margin-top:15px;}
-    .board_view .reply_wrap .ctr li {margin:0; margin-right:5px;}
+    .board_view .reply_wrap .ctr li {margin:0; margin-right:5px; margin-top:5px;}
     .board_view .reply_wrap .ctr button {padding:0 10px; font-size:12px; line-height:2em;}
     .board_view .reply_wrap .depth_2 {padding:10px 30px;}
     .board_view .reply_wrap .depth_2 > .list > li:before {top:15px; left:-20px; width:15px; height:15px;}
     .board_view .reply_wrap .input_wrap .txt_ctr label {margin-left:15px; font-size:14px; line-height:40px;}
     .board_view .reply_wrap .input_wrap .txt_ctr button {width:80px; font-size:14px; line-height:40px;}
-    .board_view .article_ctr {margin-top:30px;}
-    .board_view .article_ctr a,.board_view .article_ctr button {min-width:150px; font-size:16px; line-height:40px;} 
-    .board_view .list_link {margin:30px 0;}
+    .board_view .article_ctr {margin:30px -2px 0; font-size:0;}
+    .board_view .article_ctr a,.board_view .article_ctr button {width:calc(50% - 4px); min-width:0; font-size:14px;}
+    .board_view .list_link {margin:30px -2px 30px; font-size:0;}
     .board_view .list_link a {font-size:14px; line-height:40px;}
     .board_view .paging_wrap dd {padding-left:45px; font-size:14px;}
     .board_view .paging_wrap dd a {max-width:calc(100% - 65px); line-height:40px;}
@@ -784,9 +784,9 @@ label {cursor:pointer;}
     .board_view .reply_wrap .input_wrap .author_info li {float:none;}
     .board_view .reply_wrap .input_wrap .author_info li input {width:100%; margin:0; margin-bottom:5px;}
     .board_view .reply_wrap .input_wrap .author_txt {margin:0;}
-    .board_view .article_ctr a,.board_view .article_ctr button {width:100%; margin:5px 0; font-size:14px;}
+    .board_view .article_ctr a,.board_view .article_ctr button {width:calc(50% - 4px); min-width:0; font-size:14px;}
     .board_view .list_link {text-align:center;}
-    .board_view .list_link a {width:100%; text-align:center;}
+    .board_view .list_link a {width:calc(50% - 4px); text-align:center;}
     .board_view .list_link a span {display:none;}
     .board_view .paging_wrap dd {font-size:12px;}
 }
@@ -840,8 +840,8 @@ label {cursor:pointer;}
     .board_write td label {font-size:14px; width:80px;}
     .board_write td .file_list {padding:5px 0;}
     .board_write td .file_list li {margin-right:15px; font-size:12px;}
-    .board_write .btn_wrap {clear:both; padding-top:30px;}
-    .board_write .btn_wrap a,.board_write .btn_wrap button {min-width:150px; font-size:16px; line-height:40px;}
+    .board_write .btn_wrap {clear:both; margin:0 -2px; padding-top:30px; font-size:0;}
+    .board_write .btn_wrap a,.board_write .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
 
 @media (max-width:599px) {
@@ -854,15 +854,15 @@ label {cursor:pointer;}
 
 /* 게시물 작성 버튼 */
 .board_ctr {margin-top:50px; text-align:center;}
-.board_ctr a {min-width:180px; margin:0 2px; padding:0 15px;  font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; -webkit-transition:all 0.5s; transition:all 0.5s; background:#00687f;}
+.board_ctr a {min-width:180px; margin:0 2px; padding:0 15px; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; -webkit-transition:all 0.5s; transition:all 0.5s; background:#00687f;}
 
 @media (max-width:1024px) {
-    .board_ctr {margin-top:30px;}
+    .board_ctr {margin:30px -2px 0; font-size:0;}
     .board_ctr a {min-width:150px; font-size:16px; line-height:40px;}
 }
 
 @media (max-width:599px) {
-    .board_ctr a {width:100%; margin:5px 0; font-size:14px;}
+    .board_ctr a {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
 
 /* 페이징 */
@@ -1896,9 +1896,9 @@ footer {background:#505354; color:#fff;}
 .campus_find .cate_select {padding-top:30px;}
 .campus_find .cate_select ul {font-size:0; text-align:center; margin:-5px 0;}
 .campus_find .cate_select ul li {display:inline-block; margin:5px;}
-.campus_find .cate_select ul li input[type="checkbox"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
+.campus_find .cate_select ul li input[type="radio"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
 .campus_find .cate_select ul li label {display:inline-block; line-height:30px; padding:0 10px; font-size:14px; color:#fff; background:#bbb; -webkit-transition:all 0.5s; transition:all 0.5s;}
-.campus_find .cate_select ul li input[type="checkbox"]:checked + label {background:#008398;}
+.campus_find .cate_select ul li input[type="radio"]:checked + label {background:#008398;}
 .campus_find .cate_select ul li label:before {content:"#";}
 
 .campus_find .fold_list {padding-top:20px;}
@@ -3540,7 +3540,7 @@ footer {background:#505354; color:#fff;}
     .exam_form .form_list.select .campus_link li {float:none !important; width:100%; padding:0;}
     .exam_form .warning {font-size:12px;}
     .exam_form .term_viewer {margin-top:30px;}
-    .exam_form .btn_wrap {margin-top:30px;}
+    .exam_form .btn_wrap {margin:30px -2px 0; font-size:0;}
     .exam_form .btn_wrap a,.exam_form .btn_wrap button {min-width:150px; font-size:16px; line-height:40px;}
 }
 
@@ -3557,7 +3557,7 @@ footer {background:#505354; color:#fff;}
     .exam_form .form_list.select .campus_link li input[type="radio"] + label {display:block; float:none; font-size:12px;}
     .exam_form .form_list.select .campus_link li button {margin-left:23px;}
     .exam_form .term_agree .check_form input[type='checkbox'] + label {font-size:12px;}
-    .exam_form .btn_wrap a,.exam_form .btn_wrap button {width:100%; margin:5px 0; font-size:14px;}
+    .exam_form .btn_wrap a,.exam_form .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
 
 @media (max-width:320px) {
@@ -3582,7 +3582,7 @@ footer {background:#505354; color:#fff;}
     .confirm_page .result .result_tit {font-size:14px; line-height:30px;}
     .confirm_page .result .exam_tit {font-size:18px; padding:15px 30px;}
     .confirm_page .sub_upper_wrap {margin-bottom:-50px;}
-    .confirm_page .btn_wrap {margin-top:50px;}
+    .confirm_page .btn_wrap {margin:50px -2px 0; font-size:0;}
     .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {font-size:16px; line-height:40px;}
     .confirm_page .result .table_wrap .data_table {max-width:100%;}
     .confirm_page .result .table_wrap .data_table .head {width:80px;}
@@ -3593,7 +3593,7 @@ footer {background:#505354; color:#fff;}
     .confirm_page .result .exam_tit {font-size:16px; padding:15px;}
     .confirm_page .sub_upper_wrap {min-height:0; margin-bottom:-30px;}
     .confirm_page .btn_wrap {margin-top:30px;}
-    .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {margin:5px 0; width:100%; font-size:14px;}
+    .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
     .confirm_page .result .table_wrap {padding:15px;}
     /* .confirm_page .result .table_wrap {overflow:hidden; padding:15px;}
     .confirm_page .result .table_wrap .data_table table {width:200%; border:0;}
@@ -3868,7 +3868,7 @@ footer {background:#505354; color:#fff;}
 .opinion .ps {margin-top:30px; text-align:center;}
 .opinion .ps p {display:inline-block; font-size:14px; line-height:1.5em;}
 .opinion .ps p:before {margin-right:0.2em; content:"※";}
-.opinion .btn_wrap {margin-top:30px; text-align:center;}
+.opinion .btn_wrap {margin:30px -2px 0; text-align:center;}
 .opinion .btn_wrap button {min-width:180px; margin:0 2px; padding:0 15px; background:#00687f; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; -webkit-transition:all 0.5s; transition:all 0.5s;}
 
 @media (max-width:1024px) {
@@ -3905,7 +3905,7 @@ footer {background:#505354; color:#fff;}
     .opinion .survey_column .select_form {width:100%;}
     .opinion .ps {margin-top:15px;}
     .opinion .ps p {font-size:12px;}
-    .opinion .btn_wrap button {width:100%; font-size:14px;}
+    .opinion .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
 
 /*=========================================================

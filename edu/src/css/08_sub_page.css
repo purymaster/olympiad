@@ -932,7 +932,7 @@
 .opinion .ps {margin-top:30px; text-align:center;}
 .opinion .ps p {display:inline-block; font-size:14px; line-height:1.5em;}
 .opinion .ps p:before {margin-right:0.2em; content:"※";}
-.opinion .btn_wrap {margin-top:30px; text-align:center;}
+.opinion .btn_wrap {margin:30px -2px 0; text-align:center;}
 .opinion .btn_wrap button {min-width:180px; margin:0 2px; padding:0 15px; background:#00687f; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; text-align:center; vertical-align:top; -webkit-transition:all 0.5s; transition:all 0.5s;}
 
 @media (max-width:1024px) {
@@ -969,7 +969,7 @@
     .opinion .survey_column .select_form {width:100%;}
     .opinion .ps {margin-top:15px;}
     .opinion .ps p {font-size:12px;}
-    .opinion .btn_wrap button {width:100%; font-size:14px;}
+    .opinion .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
 
 /* 완료 페이지 공통 */
@@ -981,12 +981,12 @@
 
 @media (max-width:1024px) {
     .confirm_page .tit {margin-bottom:30px; font-size:24px;}
-    .confirm_page .btn_wrap {margin-top:50px;}
+    .confirm_page .btn_wrap {margin:50px -2px 0; font-size:0;}
     .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {font-size:16px; line-height:40px;}
 }
 
 @media (max-width:599px) {
     .confirm_page .tit {font-size:20px;}
     .confirm_page .btn_wrap {margin-top:30px;}
-    .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {margin:5px 0; width:100%; font-size:14px;}
+    .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }

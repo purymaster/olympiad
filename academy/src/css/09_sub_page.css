@@ -299,9 +299,9 @@
 .campus_find .cate_select {padding-top:30px;}
 .campus_find .cate_select ul {font-size:0; text-align:center; margin:-5px 0;}
 .campus_find .cate_select ul li {display:inline-block; margin:5px;}
-.campus_find .cate_select ul li input[type="checkbox"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
+.campus_find .cate_select ul li input[type="radio"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
 .campus_find .cate_select ul li label {display:inline-block; line-height:30px; padding:0 10px; font-size:14px; color:#fff; background:#bbb; transition:all 0.5s;}
-.campus_find .cate_select ul li input[type="checkbox"]:checked + label {background:#008398;}
+.campus_find .cate_select ul li input[type="radio"]:checked + label {background:#008398;}
 .campus_find .cate_select ul li label:before {content:"#";}
 
 .campus_find .fold_list {padding-top:20px;}
@@ -1937,7 +1937,7 @@
     .exam_form .form_list.select .campus_link li {float:none !important; width:100%; padding:0;}
     .exam_form .warning {font-size:12px;}
     .exam_form .term_viewer {margin-top:30px;}
-    .exam_form .btn_wrap {margin-top:30px;}
+    .exam_form .btn_wrap {margin:30px -2px 0; font-size:0;}
     .exam_form .btn_wrap a,.exam_form .btn_wrap button {min-width:150px; font-size:16px; line-height:40px;}
 }
 
@@ -1954,7 +1954,7 @@
     .exam_form .form_list.select .campus_link li input[type="radio"] + label {display:block; float:none; font-size:12px;}
     .exam_form .form_list.select .campus_link li button {margin-left:23px;}
     .exam_form .term_agree .check_form input[type='checkbox'] + label {font-size:12px;}
-    .exam_form .btn_wrap a,.exam_form .btn_wrap button {width:100%; margin:5px 0; font-size:14px;}
+    .exam_form .btn_wrap a,.exam_form .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
 
 @media (max-width:320px) {
@@ -1979,7 +1979,7 @@
     .confirm_page .result .result_tit {font-size:14px; line-height:30px;}
     .confirm_page .result .exam_tit {font-size:18px; padding:15px 30px;}
     .confirm_page .sub_upper_wrap {margin-bottom:-50px;}
-    .confirm_page .btn_wrap {margin-top:50px;}
+    .confirm_page .btn_wrap {margin:50px -2px 0; font-size:0;}
     .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {font-size:16px; line-height:40px;}
     .confirm_page .result .table_wrap .data_table {max-width:100%;}
     .confirm_page .result .table_wrap .data_table .head {width:80px;}
@@ -1990,7 +1990,7 @@
     .confirm_page .result .exam_tit {font-size:16px; padding:15px;}
     .confirm_page .sub_upper_wrap {min-height:0; margin-bottom:-30px;}
     .confirm_page .btn_wrap {margin-top:30px;}
-    .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {margin:5px 0; width:100%; font-size:14px;}
+    .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
     .confirm_page .result .table_wrap {padding:15px;}
     /* .confirm_page .result .table_wrap {overflow:hidden; padding:15px;}
     .confirm_page .result .table_wrap .data_table table {width:200%; border:0;}
@@ -2265,7 +2265,7 @@
 .opinion .ps {margin-top:30px; text-align:center;}
 .opinion .ps p {display:inline-block; font-size:14px; line-height:1.5em;}
 .opinion .ps p:before {margin-right:0.2em; content:"※";}
-.opinion .btn_wrap {margin-top:30px; text-align:center;}
+.opinion .btn_wrap {margin:30px -2px 0; text-align:center;}
 .opinion .btn_wrap button {min-width:180px; margin:0 2px; padding:0 15px; background:#00687f; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; transition:all 0.5s;}
 
 @media (max-width:1024px) {
@@ -2302,5 +2302,5 @@
     .opinion .survey_column .select_form {width:100%;}
     .opinion .ps {margin-top:15px;}
     .opinion .ps p {font-size:12px;}
-    .opinion .btn_wrap button {width:100%; font-size:14px;}
+    .opinion .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
