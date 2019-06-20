@@ -1577,7 +1577,7 @@ footer {background:#505354; color:#fff;}
     .sub_header h2 {font-size:30px;}
     .sub_header h2:after {right:-40px; bottom:10px; width:33px; height:39px; background-position:-5px -123px; background-size:500px 500px;}
     .sub_header .sub_tit {margin-bottom:50px; font-size:18px;}
-    .sub_content {min-height:0; padding-bottom:50px;}
+    .sub_content {padding-bottom:50px;}
 }
 
 @media (max-width:599px) {
@@ -1586,7 +1586,7 @@ footer {background:#505354; color:#fff;}
     .sub_header h2 {font-size:24px;}
     .sub_header h2:after {display:none;}
     .sub_header .sub_tit {font-size:14px;}
-    .sub_content {padding-bottom:30px;}
+    .sub_content {min-height:0; padding-bottom:30px;}
 }
 
 /* 빵가루 */
