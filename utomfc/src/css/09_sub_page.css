@@ -1714,7 +1714,7 @@
 }
 
 /* 검색결과 */
-.search .highLight {color:#00687f; font-family:inherit;}
+.search .highLight {background:rgba(255,255,0,0.5); color:#00687f; font-family:inherit;}
 .search .search_wrap {min-width:520px; margin-top:40px; margin-bottom:10px; padding-right:120px; border:3px solid #00687f; border-right:0;}
 .search .search_wrap input[type="text"] {height:42px; padding:0 18px; border:0; font-size:16px; line-height:42px;}
 .search .search_wrap button {top:0; right:0; width:120px; height:42px; background:#00687f; line-height:42px; text-indent:0;}

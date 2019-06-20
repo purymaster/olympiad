@@ -42,7 +42,7 @@ input[type="text"],input[type="email"],input[type="number"],input[type="tel"],in
 textarea {line-height:1.5em;}
 
 /* 셀렉트박스 */
-.select_form {display:inline-block; position:relative; background:#fff; font-size:14px; text-align:left;}
+.select_form {display:inline-block; position:relative; max-width:100%; background:#fff; font-size:14px; text-align:left;}
 .select_form button {display:block; overflow:hidden; position:relative; width:100%; padding:0 35px 0 15px; border:1px solid #cdcdcd; background:#fff; line-height:38px; color:#666; text-align:inherit; text-overflow:ellipsis; white-space:nowrap; -webkit-transition:border 0.2s; -moz-transition:border 0.2s; -ms-transition:border 0.2s; -o-transition:border 0.2s; transition:border 0.2s;}
 .select_form button:after {position:absolute; top:50%; right:15px; width:10px; height:10px; margin-top:-8px; border-right:2px solid #333; border-bottom:2px solid #333; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg); -webkit-transition:all 0.2s; -moz-transition:all 0.2s; -ms-transition:all 0.2s; -o-transition:all 0.2s; transition:all 0.2s; content:"";}
 .select_form button.on:after {margin-top:-4px; -webkit-transform:rotate(225deg); -moz-transform:rotate(225deg); -ms-transform:rotate(225deg); -o-transform:rotate(225deg); transform:rotate(225deg);}
@@ -496,7 +496,7 @@ label {cursor:pointer;}
     .board_write td .file_list {padding:5px 0;}
     .board_write td .file_list li {margin-right:15px; font-size:12px;}
     .board_write .btn_wrap {clear:both; margin:0 -2px; padding-top:30px; font-size:0;}
-    .board_write .btn_wrap a,.board_write .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
+    .board_write .btn_wrap a,.board_write .btn_wrap button {font-size:16px; line-height:40px;}
 }
 
 @media (max-width:599px) {
@@ -504,7 +504,7 @@ label {cursor:pointer;}
     .board_write td input[type="text"].file_name {width:calc(100% - 110px);}
     .board_write td label {font-size:12px; width:60px;}
     .board_write td .file_list li {margin-right:10px;}
-    .board_write .btn_wrap a,.board_write .btn_wrap button {width:100%; margin:5px 0; font-size:14px;}
+    .board_write .btn_wrap a,.board_write .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
 
 /* 게시물 작성 버튼 */

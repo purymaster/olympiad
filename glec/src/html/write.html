@@ -44,16 +44,30 @@
                                         <tr>
                                             <th scope="row">
                                                 <label for="write_01">
-                                                    작성자
+                                                    구분
                                                     <span class="necessary">필수입력사항</span>
                                                 </label>
                                             </th>
-                                            <td colspan="3">
-                                                <!-- [D] 비로그인 작성자 -->
-                                                <input type="text" id="write_01">
-                                                <!-- [D] 로그인 작성자 -->
-                                                <!-- <span class="txt">작성자이름</span> -->
-                                            </td>
+											<td colspan="3">
+												<div class="select_form" id="write_01" style="width:200px;">
+													<input type="hidden">
+													<button type="button">
+														<span>구분</span>
+													</button>
+													<!-- [D] 선택항목에 따라 텍스트도 변경 -->
+													<ul>
+														<li>
+															<a href="#none">구분A</a>
+														</li>
+														<li>
+															<a href="#none">구분B</a>
+														</li>
+														<li>
+															<a href="#none">구분C</a>
+														</li>
+													</ul>
+												</div>
+											</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">

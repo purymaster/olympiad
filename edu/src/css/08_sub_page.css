@@ -576,7 +576,7 @@
 @media (max-width:1024px) {
     .franchise_step .step_wrap {margin-top:-30px; padding-bottom:0;}
 	.franchise_step .step_wrap .step_tit {padding-top:30px;}
-	.franchise_step .step_wrap ol {margin:0; margin-top:30px;}
+	.franchise_step .step_wrap ol {max-width:420px; margin:0 auto; margin-top:30px;}
 	.franchise_step .step_wrap ol li {float:left !important; width:33.33%; margin-right:0 !important; margin-bottom:30px;}
 	.franchise_step .step_wrap ol li:before,.franchise_step .step_wrap ol li:after {display:none;}
 	.franchise_step .step_wrap ol li .step {width:120px; height:120px;}
@@ -735,7 +735,7 @@
 }
 
 /* 검색결과 */
-.search .highLight {color:#00687f; font-family:inherit;}
+.search .highLight {background:rgba(255,255,0,0.5); color:#00687f; font-family:inherit; font-weight:700;}
 .search .search_wrap {display:block; position:relative; width:520px; margin:0 auto 30px; padding-right:120px; border:3px solid #00687f; border-right:0;}
 .search .search_wrap input[type="text"] {width:100%; min-width:0; height:42px; padding:0 18px; border:0; font-size:16px; line-height:42px;}
 .search .search_wrap button {position:absolute; top:0; right:0; width:120px; height:42px; background:#00687f; font-family:"Nanum Square"; font-size:18px; line-height:42px; color:#fff; text-indent:0;}

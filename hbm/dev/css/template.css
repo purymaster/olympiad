@@ -1299,7 +1299,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 .event_cover {overflow:hidden; width:100%; margin-bottom:50px;}
 .event_slide .slide li {width:480px; height:330px; background-size:cover; background-position:center;}
 .event_slide .slide li a {display:block; position:relative; height:100%;}
-.event_slide .slide li a:after {visibility:hidden; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); -webkit-transition:all 0.3s; transition:all 0.3s; opacity:0; content:"";}
+.event_slide .slide li a:after {visibility:hidden; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); -webkit-transition:all 0.3s; transition:all 0.3s; opacity:0; content:"";}
 .event_slide .slide li.swiper-slide-prev a:after,.event_slide .slide li.swiper-slide-next a:after {visibility:visible; opacity:1;}
 .event_slide .ctr button {position:absolute; top:50%; z-index:1; width:60px; height:60px; margin-top:-30px; background:#fff; text-indent:-9999px; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .event_slide .ctr button:hover {background:#00aeba;}
