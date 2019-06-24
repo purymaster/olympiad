@@ -26,7 +26,7 @@ header:hover .header_wrap h1 .alter {opacity:1; visibility:visible;}
 .group_nav {margin-left:15px; font-size:0;}
 .group_nav:after {display:block; clear:both; content:"";}
 .group_nav .btn {float:left; position:relative; margin:0 5px; padding:0 15px 0 25px; border:1px solid #fff; border-radius:14px; font-size:12px; line-height:26px; color:#fff; transition:all 0.5s;}
-header:hover .group_nav .btn {border-color:#008398; background:#00aeba;}
+header:hover .group_nav .btn {border-color:#00aeba; background:#00aeba;}
 .group_nav .btn:before {position:absolute; top:50%; left:12px; width:9px; height:12px; margin-top:-6px; background-image:url(../img/sprite/sprite.png); background-size:500px; background-position:-5px -458px;content:"";}
 .group_nav .member {position:absolute; top:0; right:5px; font-size:14px; line-height:20px; color:#fff;}
 header:hover .group_nav .member {color:#333;}
@@ -57,7 +57,7 @@ header:hover .search_keyword .search_box {background:#eee; border-color:#eee;}
 .search_keyword .search_box.on {visibility:visible; opacity:1;}
 .search_keyword .search_wrap {min-width:285px;}
 .search_keyword .search_wrap input[type="text"] {line-height:43px; height:43px; color:#333; padding-right:46px; transition:all 0.5s; font-size:16px;}
-.search_keyword .search_wrap input[type="text"]:focus {border-color:#008398;}
+.search_keyword .search_wrap input[type="text"]:focus {border-color:#00aeba;}
 .search_keyword .search_wrap button {top:10px; width:24px; height:24px; background-image:url(../img/sprite/sprite.png); background-size:500px; background-position:-135px -446px;}
 .search_keyword .search_wrap button:before,.search_keyword .search_wrap button:after {display:none;}
 
@@ -107,16 +107,19 @@ header:hover .search_keyword .search_box {background:#eee; border-color:#eee;}
     .nav_wrap .call_num dl {width:100%; font-size:0;}
     .nav_wrap .call_num dt,.nav_wrap .call_num dd {display:inline-block; font-family:"Nanum Square"; font-weight:700; line-height:20px; vertical-align:middle;}
     .nav_wrap .call_num dt {font-size:14px;}
-    .nav_wrap .call_num dd {margin-left:10px; font-size:18px; color:#008398;}
+    .nav_wrap .call_num dd {margin-left:10px; font-size:18px; color:#00aeba;}
 
     .group_nav {margin:0 -5px;}
-    .group_nav .btn {display:inline-block; float:none; border-color:#008398; background:#00aeba;}
+    .group_nav .btn {display:inline-block; float:none; border-color:#00aeba; background:#00aeba;}
     .group_nav .btn.admin,.group_nav .btn.study {display:none;}
-
+    .navigation a.has_sub {position:relative;}
+    .navigation a.has_sub:before,.navigation a.has_sub:after {position:absolute; top:50%; right:0; width:10px; height:2px; margin-top:-1px; background:#00aeba; transition:all 0.5s; content:"";}
+    .navigation a.has_sub:before {transform:rotate(90deg);}
+    .navigation a.has_sub.on:before {transform:rotate(0deg);}
     .navigation .menu_1depth {float:none; margin:0;}
     .navigation .menu_1depth > li {float:none; margin:0;}
     .navigation .menu_1depth > li:hover:after {display:none;}
-    .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-weight:700; line-height:2em; color:#333;}
+    .navigation .menu_1depth > li > a {border-bottom:1px dashed #e6eff1; font-family:"Nanum Square"; font-weight:700; line-height:2em; color:#333;}
     .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; transform:none; transition:none !important; opacity:1;}
     .navigation .menu_2depth li a {padding:0.3em 0; font-size:12px; line-height:1.4em;}
     .navigation .menu_2depth li a:hover {text-decoration:none;}

@@ -1,4 +1,5 @@
 
+
 /*=========================================================
 6. 푸터
 =========================================================*/
@@ -8,26 +9,25 @@ footer {background:#505354; color:#fff;}
 .footer_upper .bottom_menu {overflow:hidden; margin:0 -30px;}
 .footer_upper .bottom_menu li {float:left; margin:0 30px;}
 .footer_upper .bottom_menu li a {display:inline-block; font-size:16px; font-weight:700; line-height:60px; color:rgba(255,255,255,0.7);}
-.footer_upper .bottom_menu li a:hover,.footer_upper .bottom_menu li a strong {font-weight:700; color:#248d8e;}
+.footer_upper .bottom_menu li a:hover,.footer_upper .bottom_menu li a strong {font-weight:700; color:#00aeba;}
 .footer_upper .select_form {position:absolute; top:0; right:0; min-width:150px; background:none; font-size:16px;}
-.footer_upper .select_form button {padding-right:30px; border:none; background:none; line-height:60px; color:rgba(255,255,255,0.7); text-transform:uppercase;}
+.footer_upper .select_form button {padding-right:30px; border:none; background:none; line-height:60px; color:rgba(255,255,255,0.7); text-transform:uppercase; font-family:"Nanum Square";}
 .footer_upper .select_form button:after {right:3px; border-color:#999;}
 .footer_upper .select_form button.on + ul {bottom:60px; border:0; background:#505354;}
 .footer_upper .select_form ul li a {font-size:14px; color:rgba(255,255,255,0.7);}
-.footer_upper .select_form ul li a:hover {color:#248d8e;}
+.footer_upper .select_form ul li a:hover {color:#00aeba;}
 .footer_lower {overflow:hidden; position:relative; padding:25px 0; color:rgba(255,255,255,0.9);}
 .footer_lower .sns {overflow:hidden; position:absolute; top:30px; right:0; margin:0 -5px;}
 .footer_lower .sns li {float:left; margin:0 5px;}
 .footer_lower .sns li a {display:block; position:relative; width:40px; height:40px; background:#2f3435; text-indent:-9999px;}
-.footer_lower .sns li a:after {position:absolute; top:50%; left:50%; background-image:url(../img/sprite/sprite.png); background-size:500px; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); content:"";}
+.footer_lower .sns li a:after {position:absolute; top:50%; left:50%; background-image:url(../img/sprite/sprite.png); background-size:500px; transform:translate(-50%, -50%); content:"";}
 .footer_lower .sns li:nth-child(1) a:after {width:24px; height:22px; background-position:-471px -5px;}
-.footer_lower .logo {float:left; height:80px; margin-top:7px; margin-right:100px;}
-.footer_lower .lower_wrap {float:left; font-size:14px; line-height:1.8em;}
+.footer_lower .logo {float:left; height:70px; margin-right:70px; margin-bottom:30px;}
+.footer_lower .lower_wrap {padding-right:60px; font-size:14px; line-height:1.8em;}
 .footer_lower .lower_wrap address a {color:inherit;}
 .footer_lower .lower_wrap address li {display:inline-block;}
 .footer_lower .lower_wrap address li:after {margin:0 8px 0 12px; color:rgba(255,255,255,0.2); content:"|";}
-.footer_lower .lower_wrap address li:last-child:after,.footer_lower .lower_wrap address .corp li:first-child:after {display:none;}
-.footer_lower .lower_wrap address .corp li:first-child {display:block;}
+.footer_lower .lower_wrap address li:last-child:after {display:none;}
 .footer_lower .lower_wrap address .copyright {font-size:12px;}
 
 @media (max-width:1280px) {
@@ -39,14 +39,13 @@ footer {background:#505354; color:#fff;}
 @media (max-width:1024px) {
     .footer_upper {border:0;}
     .footer_upper .bottom_menu {display:inline-block; max-width:calc(100% - 130px); margin:0 -10px; padding:10px 0;}
-    .footer_upper .bottom_menu li {margin:0 10px;}
-    .footer_upper .bottom_menu li a {line-height:30px;}
+    .footer_upper .bottom_menu li a {font-size:14px; line-height:30px;}
     .footer_upper .select_form button {line-height:50px;}
     .footer_upper .select_form button.on + ul {bottom:50px;}
     .footer_lower {padding-top:0;}
     .footer_lower .sns {top:0;}
-    .footer_lower .logo {display:block; float:none; height:40px; margin:0 auto 15px;}
-    .footer_lower .lower_wrap {float:none; text-align:center;}
+    .footer_lower .logo {display:block; float:none; height:35px; margin:0 auto 15px;}
+    .footer_lower .lower_wrap {padding:0; text-align:center;}
     .footer_lower .lower_wrap address {font-size:12px; line-height:1.7em;}
 }
 
