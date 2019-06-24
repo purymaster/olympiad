@@ -1077,7 +1077,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
     .navigation .menu_1depth > li:hover:after {display:none;}
     .navigation .menu_2depth {display:block; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; -webkit-transform:none; transform:none; -webkit-transition:none !important; transition:none !important; opacity:1;}
     .navigation .menu_2depth li a {font-size:13px;}
-    .navigation .menu_3depth {display:block; visibility:visible; position:static; width:auto; padding:5px 15px; background:#fff; text-align:left; -webkit-transform:none; transform:none; -webkit-transition:none !important; transition:none !important; opacity:1;}
+    .navigation .menu_3depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#fff; text-align:left; -webkit-transform:none; transform:none; -webkit-transition:none !important; transition:none !important; opacity:1;}
     .navigation .menu_3depth li a {font-size:12px;}
     .nav_wrap .call_num {position:absolute; left:0; bottom:0; padding:15px;}
     .nav_wrap .call_num dl {width:100%; font-size:0;}
@@ -2254,45 +2254,45 @@ footer {background:#505354; color:#fff;}
 
 /* 중등수학 - 레벨구성 */
 .middle_level .level_schedule_bx {overflow:hidden; position:relative; max-width:980px; margin:0 auto;}
-.middle_level .level_schedule_bx:after {position:absolute; top:0; left:0; z-index:0; width:100%; height:100%; background:-webkit-gradient(linear, left top, right top, from(rgba(249,249,249,0)),to(rgba(249,249,249,1))); background:linear-gradient(to right, rgba(249,249,249,0) 0%,rgba(249,249,249,1) 100%); -webkit-transform:skewY(-7deg) translateY(65px); transform:skewY(-7deg) translateY(65px); content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f9f9f9', endColorstr='#f9f9f9',GradientType=1 );}
+.middle_level .level_schedule_bx:after {position:absolute; top:0; left:0; z-index:0; width:100%; height:100%; background:-webkit-gradient(linear, left top, right top, from(rgba(249,249,249,1)),to(rgba(249,249,249,0))); background:linear-gradient(to right, rgba(249,249,249,1) 0%,rgba(249,249,249,0) 100%); -webkit-transform:skewY(7deg) translateY(65px); transform:skewY(7deg) translateY(65px); content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#00f9f9f9',GradientType=1 );}
 .middle_level .level_schedule {overflow:hidden; position:relative; z-index:1;}
 .middle_level .level_schedule li {float:left; position:relative; width:20%; height:330px;}
 .middle_level .level_schedule_mod {text-align:center;}
 .middle_level .level_schedule_mod .top_text {position:relative;}
-.middle_level .level_schedule li:nth-child(1) .level_schedule_mod .top_text {padding-top:84px;}
-.middle_level .level_schedule li:nth-child(2) .level_schedule_mod .top_text {padding-top:64px;}
+.middle_level .level_schedule li:nth-child(5) .level_schedule_mod .top_text {padding-top:84px;}
+.middle_level .level_schedule li:nth-child(4) .level_schedule_mod .top_text {padding-top:64px;}
 .middle_level .level_schedule li:nth-child(3) .level_schedule_mod .top_text {padding-top:45px;}
-.middle_level .level_schedule li:nth-child(4) .level_schedule_mod .top_text {padding-top:24px;}
-.middle_level .level_schedule li:nth-child(5) .level_schedule_mod .top_text {padding-top:0px;}
+.middle_level .level_schedule li:nth-child(2) .level_schedule_mod .top_text {padding-top:24px;}
+.middle_level .level_schedule li:nth-child(1) .level_schedule_mod .top_text {padding-top:0px;}
 .middle_level .level_schedule_mod .top_text .num {display:block; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:26px;}
-.middle_level .level_schedule li:nth-child(1) .level_schedule_mod .top_text .num {color:#8ab113;}
-.middle_level .level_schedule li:nth-child(2) .level_schedule_mod .top_text .num {color:#469950;}
+.middle_level .level_schedule li:nth-child(5) .level_schedule_mod .top_text .num {color:#8ab113;}
+.middle_level .level_schedule li:nth-child(4) .level_schedule_mod .top_text .num {color:#469950;}
 .middle_level .level_schedule li:nth-child(3) .level_schedule_mod .top_text .num {color:#00aeba;}
-.middle_level .level_schedule li:nth-child(4) .level_schedule_mod .top_text .num {color:#008398;}
-.middle_level .level_schedule li:nth-child(5) .level_schedule_mod .top_text .num {color:#005967;}
+.middle_level .level_schedule li:nth-child(2) .level_schedule_mod .top_text .num {color:#008398;}
+.middle_level .level_schedule li:nth-child(1) .level_schedule_mod .top_text .num {color:#005967;}
 .middle_level .level_schedule_mod .top_text .top_txt {font-size:14px; line-height:24px; color:#333;}
 .middle_level .level_schedule_mod a {position:absolute; bottom:0; left:0; width:100%;}
 .middle_level .level_schedule_mod a:before {visibility:hidden; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); -webkit-transition:all 0.5s; transition:all 0.5s; opacity:0; content:"";}
 .middle_level .level_schedule_mod a:hover:before {visibility:visible; opacity:1;}
 .middle_level .level_schedule_mod a:after {content:""; position:absolute; width:1px; height:100%; right:0; top:0; background:rgba(255,255,255,0.5);}
-.middle_level .level_schedule li:nth-child(1) a {background:#8ab113;}
-.middle_level .level_schedule li:nth-child(2) a {background:#469950;}
+.middle_level .level_schedule li:nth-child(5) a {background:#8ab113;}
+.middle_level .level_schedule li:nth-child(4) a {background:#469950;}
 .middle_level .level_schedule li:nth-child(3) a {background:#00aeba;}
-.middle_level .level_schedule li:nth-child(4) a {background:#008398;}
-.middle_level .level_schedule li:nth-child(5) a {background:#005967;}
+.middle_level .level_schedule li:nth-child(2) a {background:#008398;}
+.middle_level .level_schedule li:nth-child(1) a {background:#005967;}
 .middle_level .level_schedule_mod .bottom_text {display:block; position:relative; padding:20px 10px; cursor:pointer;}
 .middle_level .level_schedule_mod .bottom_text:after {position:absolute; left:50%; bottom:0; width:10px; height:10px; margin-left:-5px; border-radius:50%; content:"";}
-.middle_level .level_schedule li:nth-child(1) .level_schedule_mod .bottom_text:after {bottom:120px; background:#8ab113;}
-.middle_level .level_schedule li:nth-child(2) .level_schedule_mod .bottom_text:after {bottom:140px; background:#469950;}
+.middle_level .level_schedule li:nth-child(5) .level_schedule_mod .bottom_text:after {bottom:120px; background:#8ab113;}
+.middle_level .level_schedule li:nth-child(4) .level_schedule_mod .bottom_text:after {bottom:140px; background:#469950;}
 .middle_level .level_schedule li:nth-child(3) .level_schedule_mod .bottom_text:after {bottom:160px; background:#00aeba;}
-.middle_level .level_schedule li:nth-child(4) .level_schedule_mod .bottom_text:after {bottom:180px; background:#008398;}
-.middle_level .level_schedule li:nth-child(5) .level_schedule_mod .bottom_text:after {bottom:200px; background:#005967;}
+.middle_level .level_schedule li:nth-child(2) .level_schedule_mod .bottom_text:after {bottom:180px; background:#008398;}
+.middle_level .level_schedule li:nth-child(1) .level_schedule_mod .bottom_text:after {bottom:200px; background:#005967;}
 .middle_level .level_schedule_mod .bottom_text:before {position:absolute; bottom:0; left:50%; z-index:-1; width:4px; margin-left:-2px; background-image:url(../img/bg/bg_middlestep_line.png); background-repeat:repeat-y; content:"";}
-.middle_level .level_schedule li:nth-child(1) .level_schedule_mod .bottom_text:before {height:120px;}
-.middle_level .level_schedule li:nth-child(2) .level_schedule_mod .bottom_text:before {height:140px;}
+.middle_level .level_schedule li:nth-child(5) .level_schedule_mod .bottom_text:before {height:120px;}
+.middle_level .level_schedule li:nth-child(4) .level_schedule_mod .bottom_text:before {height:140px;}
 .middle_level .level_schedule li:nth-child(3) .level_schedule_mod .bottom_text:before {height:160px;}
-.middle_level .level_schedule li:nth-child(4) .level_schedule_mod .bottom_text:before {height:180px;}
-.middle_level .level_schedule li:nth-child(5) .level_schedule_mod .bottom_text:before {height:200px;}
+.middle_level .level_schedule li:nth-child(2) .level_schedule_mod .bottom_text:before {height:180px;}
+.middle_level .level_schedule li:nth-child(1) .level_schedule_mod .bottom_text:before {height:200px;}
 .middle_level .level_schedule_mod .bottom_text .bottom_txt {font-family:"Nanum Square"; font-size:18px; font-weight:700; color:#fff;}
 .middle_level .level_schedule_mod .bottom_text .arrow {position:relative; padding-right:10px; font-size:12px; line-height:26px; color:#fff;}
 .middle_level .level_schedule_mod .bottom_text .arrow:after {position:absolute; top:50%; right:0; width:8px; height:8px; margin-top:-4px; border:1px solid #fff; border-bottom:0; border-left:0; -webkit-transform:rotate(45deg); transform:rotate(45deg); -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
@@ -3429,7 +3429,9 @@ footer {background:#505354; color:#fff;}
 
 @media (max-width:599px){
     .admission_guide .circle_cont {margin-bottom:20px;}
-    .admission_guide .circle_cont ol li {width:100%; -webkit-transform:translateX(0) scale(0.8) !important; transform:translateX(0) scale(0.8) !important; margin-top:-50px;}
+    .admission_guide .circle_cont ol {max-width:300px;}
+    .admission_guide .circle_cont ol li {width:50%; -webkit-transform:translateX(0) scale(0.8) !important; transform:translateX(0) scale(0.8) !important; margin-top:-50px;}
+    .admission_guide .circle_cont ol li:last-child {-webkit-transform:translateX(50%) scale(0.8) !important;transform:translateX(50%) scale(0.8) !important;}
     .admission_guide .circle_cont ol li:before,
     .admission_guide .circle_cont ol li:after {display:none;}
     .admission_guide .step_info {padding:15px 0;}

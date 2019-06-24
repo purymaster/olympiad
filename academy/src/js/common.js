@@ -126,6 +126,7 @@ $(function () {
                 screen_fix = true) :
             (screen.removeClass('fixed'),
                 nav.removeClass('on'),
+                $('.navigation a').removeClass('on'),
                 screen_fix = false)
     });
 
@@ -172,7 +173,8 @@ $(function () {
                     $('.header_wrap .menu').blur(),
                     $('.group_nav').find('input').val === '',
                     nav_2depth.hide(),
-                    nav_3depth.hide()) :
+                    nav_3depth.hide(),
+                    $('.navigation a').removeClass('on')) :
                 (nav_2depth.show(),
                     screen.removeClass('fixed'),
                     screen_fix = false,
