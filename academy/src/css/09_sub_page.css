@@ -702,7 +702,7 @@
 @media (max-width:1024px) {
     .middle_level .level_schedule_bx {padding:0 30px;}
     .middle_level .level_schedule_bx:after {display:none;}
-    .middle_level .level_schedule_bx ul li {display:block; float:none; width:100%; max-width:480px; height:170px; margin:0 auto; margin-bottom:30px;}
+    .middle_level .level_schedule_bx ul li {display:block; float:none; width:100%; max-width:400px; height:140px; margin:0 auto; margin-bottom:50px;}
     .middle_level .level_schedule_mod a:after {display:none;}
     .middle_level .level_schedule_mod .top_text {padding-top:0 !important;}
     .middle_level .level_schedule_mod .top_text:before {bottom:30px;}
@@ -832,6 +832,8 @@
     .middle_credit .other_subject ul li {float:none; width:100%; padding:15px 0;}
 
     .middle_credit .plan .tit {font-size:16px;}
+    .middle_credit .plan td dt {font-size:14px;}
+    .middle_credit .plan td dd {font-size:12px;}
 }
 
 /* 중등수학 - 특목고입시 */
@@ -1598,12 +1600,14 @@
 
 @media (max-width:1024px) { 
     .senior_eng .sub_tit {font-size:20px;}
-    .senior_eng .list_table {display:block;}
-    .senior_eng .list_table .left_tit {display:block; width:100%; margin-bottom:20px; padding-right:0; border-right:0;}
-    .senior_eng .list_table .left_tit span {font-size:16px;}
+    .senior_eng .textbook_lineup {margin:-15px;}
+    .senior_eng .textbook_lineup > li {padding:15px;}
+    .senior_eng .list_table {display:block; text-align:center;}
+    .senior_eng .list_table .left_tit {display:inline-block; margin-bottom:20px; padding-right:0; border-right:0;}
+    .senior_eng .list_table .left_tit span {height:auto; padding:5px 0; font-size:16px;}
     .senior_eng .list_table .right_text {display:block; width:100%; padding-left:0;}
-    .senior_eng .textbook_lineup_list .bgc_tit {padding:17px 15px; font-size:16px;}
-    .senior_eng .textbook_lineup_list .lineup_list {padding:10px 15px;}
+    .senior_eng .textbook_lineup_list .bgc_tit {padding:10px 15px; min-height:0; font-size:14px;}
+    .senior_eng .textbook_lineup_list .lineup_list {padding:10px 15px; min-height:0 !important;}
     .senior_eng .go3_entrance_management {margin-bottom:-50px;}
     .senior_eng .go3_entrance_management .em_list .num {font-size:50px;} 
     .senior_eng .go3_entrance_management .em_list .txt_box {padding-left:55px;}
@@ -1637,7 +1641,7 @@
 .senior_kor_sci .class_guide_list .step ul li:before {position:absolute; top:66px; left:-10px; width:0; height:0; margin-top:-12px; border-top:7px solid transparent; border-bottom:7px solid transparent; border-left:14px solid #0c95ab; content:"";}
 .senior_kor_sci .class_guide_list .step ul li:first-child:before {display:none;}
 .senior_kor_sci .class_guide_list .step ul li:after {position:absolute; top:66px; left:-10px; width:0; height:0; margin-top:-12px; margin-left:-1px; border-top:7px solid transparent; border-bottom:7px solid transparent; border-left:13px solid #ccc; border-left-color:#fff; -webkit-transform:scale(0.5); transform:scale(0.5); content:"";}
-.senior_kor_sci .class_guide_list .step ul li p {position:relative; width:100%; height:70px; padding:23px 0; border-radius:50px; font-size:18px; line-height:26px; color:#fff; text-align:center;}
+.senior_kor_sci .class_guide_list .step ul li p {position:relative; width:100%; height:70px; padding:23px 0; border-radius:50px; font-size:18px; line-height:26px; color:#fff; text-align:center; font-weight:700; font-family:"Nanum Square";}
 .senior_kor_sci .class_guide_list .step ul li:first-child p:after {display:none;}
 .senior_kor_sci .class_guide_list .step ul li:nth-child(1) p {background-color:#3cb3c6;}
 .senior_kor_sci .class_guide_list .step ul li:nth-child(2) p {background-color:#1c9db3;}
@@ -1658,7 +1662,8 @@
 .senior_kor_sci .class_guide .class_guide_bx > li:nth-child(n+2) .class_guide_list .step ul li p {padding:10px 5px;}
 .senior_kor_sci .class_guide .class_guide_bx > li:nth-child(n+2) .class_guide_list .step ul li:nth-child(2) p {padding:23px 5px;}
 /* .senior_kor_sci .data_table table th,.senior_kor_sci .data_table table td {padding:15px;} */
-.senior_kor_sci .data_table table th {background:#e5e5e5 !important;}
+.senior_kor_sci .data_table table thead th {background:#e5e5e5 !important;}
+.senior_kor_sci .data_table table th,.senior_kor_sci .data_table table td {padding:10px 30px;}
 .senior_kor_sci .science_bg_gray {margin-bottom:-100px; padding-bottom:100px; background-color:#f5f5f5;}
 .senior_kor_sci .science .science_list > li {margin-bottom:30px;}
 .senior_kor_sci .science .science_list > li:last-child {margin-bottom:0;}
@@ -1667,12 +1672,13 @@
 .senior_kor_sci .science .science_grade .grade_list > li {float:left; padding-right:15px;}
 .senior_kor_sci .science .science_grade .grade_list > li:nth-child(1) span {background-color:#3cb3c6;}
 .senior_kor_sci .science .science_grade .grade_list > li:nth-child(2) span {background-color:#018499;}
-.senior_kor_sci .science .science_grade span {display:block; width:120px; height:70px; padding:22px 10px; border-radius:50px; font-size:24px; line-height:28px; color:#fff; text-align:center;}
+.senior_kor_sci .science .science_grade span {display:block; width:120px; height:70px; padding:22px 10px; border-radius:50px; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:28px; color:#fff; text-align:center;}
 .senior_kor_sci .science .science_cont .table_list > li {margin-bottom:30px;}
 .senior_kor_sci .science .science_cont .table_list > li:last-chlid {margin-bottom:0;}
 .senior_kor_sci .science .science_grade p {padding:16px 0; font-family:"Nanum Square"; font-size:18px; line-height:36px; color:#018499;}
 .senior_kor_sci .science .science_cont .table_tit {padding-bottom:10px; border-bottom:1px solid #ccc; font-family:"Nanum Square"; font-size:18px; line-height:1.4em; color:#333;}
 .senior_kor_sci .science .science_cont .science_table {margin-top:20px;}
+.senior_kor_sci .science .science_cont .science_table th {background:#e5e5e5;}
 .senior_kor_sci .science .science_cont .color_text {font-size:14px; font-weight:700; line-height:1.6em; color:#018499;}
 
 @media (max-width:1167px){ 
@@ -1703,7 +1709,8 @@
 
 @media (max-width:599px){
     .senior_kor_sci .class_guide_list .grade p {font-size:18px;} 
-    .senior_kor_sci .class_guide_list .step ul li p {font-size:14px;}
+    .senior_kor_sci .class_guide_list .step ul li {text-align:center;}
+    .senior_kor_sci .class_guide_list .step ul li p {display:inline-block; width:auto; height:auto; padding:0 10px; font-size:14px; line-height:2.5em;}
     .senior_kor_sci .square_bx span {font-size:16px;}
     .senior_kor_sci .class_guide_list .step ul li {float:none; width:100%;}
     .senior_kor_sci .class_guide_list .step ul li:before {top:7px; left:50%; transform:translate(-50%) rotate(90deg);}
@@ -1716,6 +1723,7 @@
     .senior_kor_sci .square_bx .text p {font-size:14px;}
     .senior_kor_sci .science .science_grade span {font-size:18px;}
     .senior_kor_sci .science .science_cont .table_tit {font-size:14px;}
+    .senior_kor_sci .science .science_cont .color_text {font-size:12px;}
 }
 
 /* 대입정보센터 - 대입컨설팅 */

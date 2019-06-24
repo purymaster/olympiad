@@ -95,9 +95,14 @@ header.animated:after {transform:scaleX(1);}
     .nav_wrap button.close:after {transform:rotate(45deg);}
     nav.on .nav_wrap button.close {visibility:visible; opacity:1;}
     .navigation {overflow:auto; position:absolute; left:0; width:100%; height:calc(100% - 60px); padding:15px 30px; top:60px;}
+
+    .navigation a.has_sub {position:relative;}
+    .navigation a.has_sub:before,.navigation a.has_sub:after {position:absolute; top:50%; right:0; width:10px; height:2px; margin-top:-1px; background:#008398; transition:all 0.5s; content:"";}
+    .navigation a.has_sub:before {transform:rotate(90deg);}
+    .navigation a.has_sub.on:before {transform:rotate(0deg);}
     .navigation .menu_1depth {float:none; margin:0;}
     .navigation .menu_1depth > li {float:none; margin:0;}
-    .navigation .menu_1depth > li > a {font-family:"Nanum Square"; font-size:16px; line-height:2em;}
+    .navigation .menu_1depth > li > a {border-bottom:1px dashed #e6eff1; font-family:"Nanum Square"; font-size:16px; line-height:2em;}
     .navigation .menu_1depth > li:hover:after {display:none;}
     .navigation .menu_2depth {display:block; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; transform:none; transition:none !important; opacity:1;}
     .navigation .menu_2depth li a {font-size:13px;}
