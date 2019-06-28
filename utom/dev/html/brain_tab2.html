@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>유투엠</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header data-animation="">
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img src="../img/img/img_logo.png" alt="말하는 수학의 교육혁명 유투엠">
+							</a>
+						</h1>
+						<button class="menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+								<div>
+									<h2 class="hidden">올림피아드그룹 메뉴</h2>
+									<div class="group_nav">
+										<!-- <ul>
+                                    <li><a href="#" target="_blank">올림피아드교육</a></li>
+                                    <li><a href="#" target="_blank">GLEC어학원</a></li>
+                                    <li><a href="#" target="_blank">올림피아드학원</a></li>
+                                    <li><a href="#" target="_blank">하베르만</a></li>
+                                </ul> -->
+										<div class="search_wrap">
+											<input type="text" title="검색어 입력">
+											<button type="submit">검색</button>
+										</div>
+										<div class="menu_btn">
+
+											<!-- [D] 로그인 전 -->
+											<a class="btn login" href="#">로그인</a>
+											<!-- //[D] 로그인 전 -->
+
+											<!-- [D] 로그인 후 -->
+											<!-- <span class="member"><strong>회원회원회원회원회원회원회원회원회원회원회원회원회원회원</strong>님</span> -->
+											<!-- [D] 학생일 경우 재원생 학습 + 로그아웃 -->
+											<!-- [D] 직원일 경우 관리자 + 로그아웃 -->
+											<!-- <a class="btn study" href="#">재원생 학습</a> -->
+											<!-- <a class="btn admin" href="#" target="_blank">관리자</a> -->
+											<!-- <a class="btn logout" href="#">로그아웃</a> -->
+											<!-- //[D] 로그인 후 -->
+
+										</div>
+									</div>
+								</div>
+								<div>
+									<h2 class="hidden">유투엠 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">유투엠 소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">인사말</a></li>
+													<li><a href="#">유투엠 스토리</a></li>
+													<li><a href="#">유투엠 사명</a></li>
+													<li><a href="#">유투엠 인재상</a></li>
+													<li><a href="#">기업수상</a></li>
+													<li><a href="#">명예의 전당</a></li>
+													<li><a href="#">전국 캠퍼스</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">유투엠 학습법</a>
+												<ul class="menu_2depth">
+													<li><a href="#">플립러닝 기반<br> 학생중심 참여수업</a></li>
+													<li><a href="#">하브루타 기반<br> 말하는 수학</a></li>
+													<li><a href="#">뇌과학 기반의<br> 메타인지 학습법</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">유투엠 프로그램</a>
+												<ul class="menu_2depth">
+													<li><a href="#">3가지 특장점</a></li>
+													<li><a href="#">4가지 말하기 학습전략</a></li>
+													<li><a href="#">프로그램 안내</a></li>
+													<li><a href="#">교재구성</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">유투엠 체험관</a>
+												<ul class="menu_2depth">
+													<li><a href="#">말하는 수학 맛보기</a></li>
+													<li><a href="#">체험 수기</a></li>
+													<li><a href="#">언론보도</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">커뮤니티</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">교육정보</a></li>
+													<li><a href="#">현장스케치</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">예약&amp;상담</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학안내</a></li>
+													<li><a href="#">상담 신청</a></li>
+													<li><a href="#">설명회 신청</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- <div>
+                            <div class="call_num mobile">
+                                <a href="tel:1588-8282">
+                                    <dl>
+                                        <dt>상담문의</dt>
+                                        <dd>1588-8282</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                        </div> -->
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap recognition">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_sub_type2.png)" data-animation="">
+				<div class="grid_container">
+					<p class="sub_txt" data-animation="fadeInUp" data-delay="0">유투엠 학습법</p>
+					<h2 data-animation="fadeInUp" data-delay="3">뇌과학 기반의 메타인지 학습법</h2>
+				</div>
+				<div class="breadcrumb">
+					<ol class="hyper">
+						<li class="home"><a href="#">홈</a></li>
+
+						<li>
+							<div class="select_form"><input type="hidden" name="">
+								<button type="button">
+									<span>유투엠 학습법</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">유투엠 소개</a>
+									</li>
+
+									<li>
+										<a href="#none">유투엠 학습법</a>
+									</li>
+
+									<li>
+										<a href="#none">유투엠 프로그램</a>
+									</li>
+
+									<li>
+										<a href="#none">유투엠 체험관</a>
+									</li>
+
+									<li>
+										<a href="#none">커뮤니티</a>
+									</li>
+
+									<li>
+										<a href="#none">예약&상담</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="select_form"><input type="hidden" name="">
+								<button type="button">
+									<span>뇌과학 기반의 메타인지 학습법</span>
+								</button>
+								<ul>
+
+									<li>
+										<a href="#none">플립러닝 기반 학생중심 참여수업</a>
+									</li>
+
+									<li>
+										<a href="#none">하브루타 기반 말하는 수학</a>
+									</li>
+
+									<li>
+										<a href="#none">뇌과학 기반의 메타인지 학습법</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+					</ol>
+				</div>
+			</div>
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="sub_upper_wrap bg">
+					<!-- bg 클래스 추가시 배경색 추가 -->
+					<div class="grid_container">
+
+
+						<!-- 서브 페이지 상단 탭메뉴 -->
+						<div class="tab_menu">
+							<ul class="@@type">
+								<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+
+								<li><a href="#">학습내용을 장기기억화 하는 말하는 수학</a></li>
+
+								<li><a href="#">메타인지를 키우는 말하는 수학</a></li>
+
+							</ul>
+						</div>
+						<!-- //서브 페이지 상단 탭메뉴 -->
+
+
+						<p class="main_tit">
+							최상위 0.1%학생들이 갖고 있는 메타인지는 <br>
+                            훈련을 통해 충분히 키울 수 있습니다.<br>
+							<strong>말하는 공부를 통해 학생들의 메타인지 능력을 향상</strong>시킵니다.
+						</p>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap about_meta">
+					<div class="grid_container">
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<img src="../img/img/img_talking_math_diagram.png" alt="" data-animation="fadeInUp" data-delay="0">
+							<div class="hidden">
+								<span>학습효과를 극대화하는 메타인지 학습법</span>
+								<p>
+									최상위 0.1% 학생들이 갖고 있는 핵심적인 능력<strong>메타인지!</strong>
+								</p>
+								<dl>
+									<dt>말로 설명할 수 있는 경우의 학습 순서</dt>
+									<dd>
+										<ol>
+											<li>아는 것</li>
+											<li>각인효과(재구조화)</li>
+										</ol>
+										<ol>
+											<li>모르는 것</li>
+											<li>피드백 학습</li>
+											<li>재인지</li>
+										</ol>
+									</dd>
+								</dl>
+								<dl>
+									<dt>메타인지란?</dt>
+									<dd>자신이 아는지 모르는지 성찰하는 능력, 자신의 생각에 대해 생각하는 능력입니다.</dd>
+								</dl>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+				<!-- 서브 페이지 내용 -->
+				<div class="sub_lower_wrap brain">
+					<div class="grid_container">
+
+						<!-- 스태틱 페이지 컨텐츠 영역 -->
+						<div class="sub_cont_wrap">
+							<div class="column upgrade">
+								<div class="txt_wrap" data-animation="fadeInLeft" data-delay="0">
+									<p class="tit">
+										학습능력을 키우고 성적을 향상시키는 데서
+										가장 중요한 결정적 요인이 <strong>메타인지</strong> 능력입니다.
+									</p>
+									<p class="txt">
+										말하는 공부가 학습효과를 높이는 또 다른 비밀은 바로 메타인지에 있습니다. 말하는 공부는 메타인지를 키우는 가장 확실한 공부법입니다.
+									</p>
+								</div>
+							</div>
+							<div class="column talking">
+								<div class="txt_wrap" data-animation="fadeInRight" data-delay="0">
+									<p class="tit">
+										말로 설명하는 과정에서 학습자는 <strong>자신이 아는 것과 모르는 것을 스스로 구별하고 성찰</strong>해냅니다.
+									</p>
+									<p class="txt">
+										어떤 것을 말로 설명해보면 자신의 인지상태 를 정확하게 파악할 수 있습니다. 말로 확실하게 설명할 수 있는 지식만이 진짜 지식이고, 설명할 수
+										없는 지식은 제대로 아는 것이 아닙니다. 말하는 공부는 자신의 인지상태를 깨닫게 하여 잘 모르는 것을 잡아내어 다시 확실하게 알고 넘어가게
+										만드는 뇌과학적 학습전략입니다.
+										유투엠은 말하는 공부를 통해 메타인지를 키우고 학습효과를 극대화하는 과학적인 수학교육
+										프로그램입니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- //스태틱 페이지 컨텐츠 영역 -->
+
+					</div>
+				</div>
+				<!-- //서브 페이지 내용 -->
+
+			</div>
+		</div>
+		<footer>
+			<div class="grid_container">
+				<div class="footer_upper">
+					<ul class="bottom_menu">
+						<!-- <li><a href="#">U2M 소개</a></li> -->
+						<!-- <li><a href="#">찾아오시는길</a></li> -->
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
+					</ul>
+					<div class="select_form"><input type="hidden" name="">
+						<button type="button">
+							<span lang="en">family site</span>
+						</button>
+						<ul>
+							<li><a href="#none">올림피아드교육</a></li>
+							<li><a href="#none">GLEC</a></li>
+							<li><a href="#none">유투엠</a></li>
+							<li><a href="#none">하베르만</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_lower">
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+					<img class="logo" src="../img/img/img_footer_logo.png" alt="말하는 수학의 교육혁명 유투엠">
+					<div class="lower_wrap">
+						<address>
+							<span class="hidden">회사정보</span>
+							<ul class="corp">
+								<li><span class="hidden">주소 : </span>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
+								<li><span class="hidden">상호 : </span>㈜올림피아드교육</li>
+								<li>대표 : 양환주</li>
+								<li>TEL : <a href="tel:1899-0949">1899-0949</a></li>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+								<li>개인정보책임자 : 양환승</li>
+								<li>Copyright(c) 2018 OLYMPIAD All Rights reserved.</li>
+							</ul>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 사이드 메뉴 -->
+		<div class="side_menu">
+			<ul>
+				<li class="mobile"><a href="#">홈으로</a></li>
+				<li><a href="#">상담 신청</a></li>
+				<li><a href="#">설명회 신청</a></li>
+				<li><a href="#">입학고사</a></li>
+				<li><a href="#">캠퍼스 안내</a></li>
+				<!-- [D] 로그인 한 회원에게 표시될 내용 -->
+				<li class="pc"><a href="#" target="_blank">재원생 학습</a></li>
+				<!-- // [D] 로그인 한 회원에게 표시될 내용 -->
+				<!-- <li class="counsel pc">
+            <span class="tit">상담문의</span>
+            <span class="phone">1899-0949</span>
+            <span class="date">평일 10:00~19:00</span>
+        </li> -->
+			</ul>
+			<div class="move_top pc">
+				<button type="button">페이지 맨 위로 이동</button>
+			</div>
+		</div>
+		<!-- //사이드 메뉴 -->
+	</div>
+
+</body>
+
+</html>
