@@ -124,7 +124,7 @@ textarea {line-height:1.5em;}
 .search_wrap button:after {top:0; left:0; width:13px; height:13px; border:2px solid #333; border-radius:50%;}
 
 /* 검색 메뉴(셀렉트박스 + 검색) */
-.board_util {margin-bottom:10px; text-align:right;}
+.board_util {margin-top:10px; text-align:right;}
 .search_form {margin-right:-5px; font-size:0;}
 .search_form > div {margin-right:5px; vertical-align:middle;}
 
@@ -567,7 +567,7 @@ label {cursor:pointer;}
     .board_view .reply_wrap .input_wrap .txt_ctr label {margin-left:15px; font-size:14px; line-height:40px;}
     .board_view .reply_wrap .input_wrap .txt_ctr button {width:80px; font-size:14px; line-height:40px;}
     .board_view .article_ctr {margin:30px -2px 0; font-size:0;}
-    .board_view .article_ctr a,.board_view .article_ctr button {width:calc(50% - 4px); min-width:0; font-size:14px;}
+    .board_view .article_ctr a,.board_view .article_ctr button {min-width:150px; font-size:16px; line-height:40px;}
     .board_view .list_link {margin:30px -2px 30px; font-size:0;}
     .board_view .list_link a {font-size:14px; line-height:40px;}
     .board_view .paging_wrap dd {padding-left:45px; font-size:14px;}
@@ -588,7 +588,7 @@ label {cursor:pointer;}
     .board_view .reply_wrap .input_wrap .author_info li {float:none;}
     .board_view .reply_wrap .input_wrap .author_info li input {width:100%; margin:0; margin-bottom:5px;}
     .board_view .reply_wrap .input_wrap .author_txt {margin:0;}
-    .board_view .article_ctr a,.board_view .article_ctr button {width:calc(50% - 4px); min-width:0; font-size:14px;}
+    .board_view .article_ctr a,.board_view .article_ctr button {width:calc(33.33% - 4px); min-width:0; font-size:14px;}
     .board_view .list_link {text-align:center;}
     .board_view .list_link a {width:calc(50% - 4px); text-align:center;}
     .board_view .list_link a span {display:none;}

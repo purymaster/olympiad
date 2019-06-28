@@ -46,7 +46,7 @@ $(function () {
         $(this).closest('ul').siblings('button').removeClass('on').find('span').html($(this).text());
         $(this).closest('.select_form').find('input[type=hidden]').val($(this).attr('value'));
         changeSelectBox($(this).closest('.select_form').find('input[type=hidden]'));
-        return false;
+        if (!$(this).parents('ol').hasClass('hyper')) return false;
     });
 
     $(document).on('mouseup touchend', function (e) {
@@ -123,6 +123,7 @@ $(function () {
                 screen_fix = true) :
             (screen.removeClass('fixed'),
                 nav.removeClass('on'),
+                $('.navigation a').removeClass('on'),
                 screen_fix = false)
     });
 
@@ -154,7 +155,8 @@ $(function () {
                 (nav.removeClass('on'),
                     $('.header_wrap .menu').blur(),
                     $('.group_nav').find('input').val === '',
-                    nav_2depth.hide()) :
+                    nav_2depth.hide(),
+                    $('.navigation a').removeClass('on')) :
                 (nav_2depth.show(),
                     screen.removeClass('fixed'),
                     screen_fix = false,

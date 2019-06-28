@@ -16,18 +16,18 @@
 
 /* 메인 슬라이드 */
 .main_visual {position:relative;}
-.main_slide .slide li {visibility:hidden; position:relative; width:100%; height:100vh; min-height:640px; background-position:center; background-size:cover; transition:all 0.5s; opacity:0; pointer-events:auto;}
-.main_slide .slide li.on {visibility:visible; opacity:1;}
+.main_slide .slide li {position:relative; width:100%; height:100vh; min-height:640px; background-position:center; background-size:cover; transition:all 0.5s; pointer-events:auto;}
+/* .main_slide .slide li.on {visibility:visible; opacity:1;} */
 .main_slide .slide li a {position:absolute; top:0; right:0; bottom:0; left:0;}
 .main_slide .slide .txt_view {position:relative; height:100vh; min-height:640px;}
 .main_slide .slide .txt_wrap {position:absolute; bottom:260px; left:0; color:#fff;}
 .main_slide .slide .txt_wrap span,.main_slide .slide .txt_wrap p {animation-play-state:paused;}
 .main_slide .slide li.on .txt_wrap span,.main_slide .slide li.on .txt_wrap p {animation:1s both fadeInUp; -ms-animation-play-state:running;}
-.main_slide .slide .txt_wrap .cate {display:inline-block; border-top:1px solid #fff; border-bottom:1px solid #fff; font-size:18px; line-height:33px;}
-.main_slide .slide .txt_wrap .tit {overflow:hidden; margin-top:10px; font-family:"Nanum Square"; font-size:50px; font-weight:300; line-height:1.4em; text-overflow:ellipsis; white-space:nowrap; animation-delay:0.2s !important;}
+.main_slide .slide .txt_wrap .cate {display:inline-block; border-top:1px solid #fff; border-bottom:1px solid #fff; font-size:18px; line-height:33px; animation-delay:2s !important;}
+.main_slide .slide .txt_wrap .tit {overflow:hidden; margin-top:10px; font-family:"Nanum Square"; font-size:50px; font-weight:300; line-height:1.4em; text-overflow:ellipsis; white-space:nowrap; animation-delay:2.2s !important;}
 .main_slide .slide .txt_wrap .tit strong {font-family:inherit; font-weight:400;}
-.main_slide .slide .txt_wrap .sub_txt {overflow:hidden; margin-top:20px; font-family:"Nanum Square"; font-size:24px; line-height:1.5em; text-overflow:ellipsis; white-space:nowrap; animation-delay:0.4s !important;}
-.main_slide .slide .txt_wrap .txt {overflow:hidden; height:3.2em; margin-top:5px; font-size:16px; line-height:1.6em; animation-delay:0.6s !important;}
+.main_slide .slide .txt_wrap .sub_txt {overflow:hidden; margin-top:20px; font-family:"Nanum Square"; font-size:24px; line-height:1.5em; text-overflow:ellipsis; white-space:nowrap; animation-delay:2.4s !important;}
+.main_slide .slide .txt_wrap .txt {overflow:hidden; height:3.2em; margin-top:5px; font-size:16px; line-height:1.6em; animation-delay:2.6s !important;}
 .main_slide_pager {position:absolute; bottom:45px; left:0; z-index:2; width:100%;}
 .main_slide_pager .pager {overflow:hidden; margin:0 -6px;}
 .main_slide_pager .pager li {display:table; overflow:hidden; float:left; width:calc(25% - 12px); height:110px; margin:0 6px; border:1px solid #fff; transition:all 0.2s; table-layout:fixed; cursor:pointer;}
@@ -49,11 +49,11 @@
     .main_slide .slide li {min-height:0;}
     .main_slide .slide .txt_view {display:table; width:100%; min-height:0; table-layout:fixed;}
     .main_slide .slide .txt_wrap {display:table-cell; position:static; text-align:center; vertical-align:middle;}
-    .main_slide .slide .txt_wrap .cate {font-size:14px; line-height:2em;}
+    .main_slide .slide .txt_wrap .cate {font-size:14px; line-height:2em; animation-delay:0s !important;}
     .main_slide .slide .txt_wrap p {overflow:visible !important; text-overflow:clip !important; white-space:normal !important;}
-    .main_slide .slide .txt_wrap .tit {font-size:40px; line-height:1.2em;}
-    .main_slide .slide .txt_wrap .sub_txt {font-size:18px; line-height:1.4em;}
-    .main_slide .slide .txt_wrap .txt {height:auto; margin-top:15px; font-size:14px;}
+    .main_slide .slide .txt_wrap .tit {font-size:40px; line-height:1.2em; animation-delay:0.2s !important;}
+    .main_slide .slide .txt_wrap .sub_txt {font-size:18px; line-height:1.4em; animation-delay:0.4s !important;}
+    .main_slide .slide .txt_wrap .txt {height:auto; margin-top:15px; font-size:14px; animation-delay:0.6s !important;}
     .main_slide .slide .txt_wrap .txt br {display:none;}
     .main_slide_pager {bottom:30px;}
     .main_slide_pager .pager {line-height:0; text-align:center;}

@@ -181,7 +181,7 @@ textarea {line-height:1.5em;}
 .search_wrap button:after {top:0; left:0; width:13px; height:13px; border:2px solid #333; border-radius:50%;}
 
 /* 검색 메뉴(셀렉트박스 + 검색) */
-.board_util {margin-bottom:10px; text-align:right;}
+.board_util {margin-top:10px; text-align:right;}
 .search_form {margin-right:-5px; font-size:0;}
 .search_form > div {margin-right:5px; vertical-align:middle;}
 
@@ -624,7 +624,7 @@ label {cursor:pointer;}
     .board_view .reply_wrap .input_wrap .txt_ctr label {margin-left:15px; font-size:14px; line-height:40px;}
     .board_view .reply_wrap .input_wrap .txt_ctr button {width:80px; font-size:14px; line-height:40px;}
     .board_view .article_ctr {margin:30px -2px 0; font-size:0;}
-    .board_view .article_ctr a,.board_view .article_ctr button {width:calc(50% - 4px); min-width:0; font-size:14px;}
+    .board_view .article_ctr a,.board_view .article_ctr button {min-width:150px; font-size:16px; line-height:40px;}
     .board_view .list_link {margin:30px -2px 30px; font-size:0;}
     .board_view .list_link a {font-size:14px; line-height:40px;}
     .board_view .paging_wrap dd {padding-left:45px; font-size:14px;}
@@ -645,7 +645,7 @@ label {cursor:pointer;}
     .board_view .reply_wrap .input_wrap .author_info li {float:none;}
     .board_view .reply_wrap .input_wrap .author_info li input {width:100%; margin:0; margin-bottom:5px;}
     .board_view .reply_wrap .input_wrap .author_txt {margin:0;}
-    .board_view .article_ctr a,.board_view .article_ctr button {width:calc(50% - 4px); min-width:0; font-size:14px;}
+    .board_view .article_ctr a,.board_view .article_ctr button {width:calc(33.33% - 4px); min-width:0; font-size:14px;}
     .board_view .list_link {text-align:center;}
     .board_view .list_link a {width:calc(50% - 4px); text-align:center;}
     .board_view .list_link a span {display:none;}
@@ -779,37 +779,39 @@ label {cursor:pointer;}
 }
 
 /* 공통요소 추가 by KJH */
-.three_col > ul{margin:-10px}
-.three_col > ul:after {content:""; display:block; clear:both;}
+.three_col > ul {margin:-10px;}
+.three_col > ul:after {display:block; clear:both; content:"";}
 .three_col > ul > li {display:block; float:left; width:33.33333%; padding:10px;}
-ul.tit_borderbx_list > li .tit_txt {font-family: "Nanum Square"; color:#fff; font-size:20px; font-weight:bold; text-align:center; margin-bottom:6px; padding: 12px 0;}
-.tit_txt.color_tur1 {background-color:#3db4c7}
-.tit_txt.color_tur2 {background-color:#1d9eb4}
-.tit_txt.color_tur3 {background-color:#008399}
-ul.tit_borderbx_list > li > ul > li {border:3px solid #dddddd; margin-bottom:4px; padding: 14px 0;font-size:16px; text-align:center;}
-ul.tit_borderbx_list > li > ul > li:last-child{margin-bottom:0;}
+ul.tit_borderbx_list > li .tit_txt {margin-bottom:6px; padding:12px 0; font-family:"Nanum Square"; font-size:20px; font-weight:bold; color:#fff; text-align:center;}
+.tit_txt.color_tur1 {background-color:#3db4c7;}
+.tit_txt.color_tur2 {background-color:#1d9eb4;}
+.tit_txt.color_tur3 {background-color:#008399;}
+ul.tit_borderbx_list > li > ul {margin-bottom:4px; padding:14px 0; border:3px solid #ddd; font-size:16px; text-align:center;}
 .three_col.other_space > ul {margin:-12px;}
 .three_col.other_space > ul > li {padding:12px;}
 ul.tit_dgraybx_list {text-align:left;}
 ul.tit_dgraybx_list > li span {font-size:14px; line-height:1.4em;}
-.tit_txt.marker_tit {font-size:22px; font-weight:bold; text-align:left; position:relative; display:inline-block; padding-right:8px;}
-.tit_txt.marker_tit:after {content:"";display:block;width:100%; height:18px; background-color:rgba(29, 158, 180, 0.5); position:absolute; top:0; left:0;}
-.decoration_title .text{font-family: "Nanum Square";font-size:22px;background: url(../img/bg/bg_marker.png) repeat-x;background-size: auto 60%; background-position: left top;font-size:22px; font-weight:bold; text-align:left; position:relative; display:inline-block; padding-right:8px; padding-top:5px; line-height:1.4em; margin-bottom:6px;}
-ul.dgray_bx {background-color:rgba(55, 55, 55, 0.7); padding:23px 15px 16px; min-height:140px;}
-.tb_border_bx {border-top:3px solid #333; border-bottom:1px solid #333; padding:20px 0;}
-.oval_bx {color:#fff; font-size:18px; font-weight:bold; line-height:1.4em; display:inline-block; width:100%; text-align:center;border-radius:34px; padding: 22px 0;vertical-align: middle;}
+.tit_txt.marker_tit {display:inline-block; position:relative; padding-right:8px; font-size:22px; font-weight:bold; text-align:left;}
+.tit_txt.marker_tit:after {display:block; position:absolute; top:0; left:0; width:100%; height:18px; background-color:rgba(29, 158, 180, 0.5); content:"";}
+.decoration_title .text {display:inline-block; position:relative; margin-bottom:6px; padding-top:5px; padding-right:8px; background:url(../img/bg/bg_marker.png) repeat-x; background-position:left top; background-size:auto 60%; font-family:"Nanum Square"; font-size:22px; font-size:22px; font-weight:bold; line-height:1.4em; text-align:left;}
+ul.dgray_bx {min-height:140px; padding:23px 15px 16px; background-color:rgba(55, 55, 55, 0.7);}
+.tb_border_bx {padding:20px 0; border-top:3px solid #333; border-bottom:1px solid #333;}
+.oval_bx {display:inline-block; width:100%; padding:22px 0; border-radius:34px; font-size:18px; font-weight:bold; line-height:1.4em; color:#fff; text-align:center; vertical-align:middle;}
 .oval_bx.color_tur1 {background-color:#3cb3c6;}
 .oval_bx.color_tur2 {background-color:#1d9eb4;}
 .oval_bx.color_tur3 {background-color:#008399;}
 
+@media (max-width:1024px) {
+    ul.tit_borderbx_list > li > ul {font-size:14px;}
+}
+
 @media (max-width:599px) {
     .three_col > ul > li {float:none; width:100%;}
-    ul.tit_borderbx_list > li .tit_txt {font-size:16px; padding: 8px 0;}
-    ul.tit_borderbx_list > li > ul > li {font-size:12px;padding: 7px 0;}
+    ul.tit_borderbx_list > li .tit_txt {padding:8px 0; font-size:16px;}
+    ul.tit_borderbx_list > li > ul {padding:7px 0; font-size:12px;}
     .three_col.other_space > ul {margin:-10px;}
     .three_col.other_space > ul > li {padding:10px;}
     .decoration_title .text {font-size:16px;}
     ul.dgray_bx {min-height:inherit; padding:15px;}
     .oval_bx {padding:10px 0; font-size:14px;}
-    
 }

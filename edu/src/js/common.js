@@ -19,7 +19,7 @@ $(function () {
         $(this).closest('ul').siblings('button').removeClass('on').find('span').html($(this).text());
         $(this).closest('.select_form').find('input[type=hidden]').val($(this).attr('value'));
         changeSelectBox($(this).closest('.select_form').find('input[type=hidden]'));
-        return false;
+        if (!$(this).parents('ol').hasClass('hyper')) return false;
     });
 
     $(document).on('mouseup touchend', function (e) {

@@ -102,7 +102,7 @@ header.animated:after {transform:scaleX(1);}
     .navigation a.has_sub.on:before {transform:rotate(0deg);}
     .navigation .menu_1depth {float:none; margin:0;}
     .navigation .menu_1depth > li {float:none; margin:0;}
-    .navigation .menu_1depth > li > a {border-bottom:1px dashed #e6eff1; font-family:"Nanum Square"; font-size:16px; line-height:2em;}
+    .navigation .menu_1depth > li > a {border-bottom:1px dashed #ddd; font-family:"Nanum Square"; font-size:16px; line-height:2em;}
     .navigation .menu_1depth > li:hover:after {display:none;}
     .navigation .menu_2depth {display:none; visibility:visible; position:static; width:auto; padding:5px 15px; background:#e6eff1; text-align:left; transform:none; transition:none !important; opacity:1;}
     .navigation .menu_2depth li a {font-size:12px;}

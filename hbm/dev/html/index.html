@@ -299,11 +299,12 @@
 					$(function () {
                         var main_slide = new Swiper('.main_slide.swiper-container', {
                             allowTouchMove: true,
+                            speed: 2000,
                             autoplay: {
                                 delay: 5000,
                             },
                             slideActiveClass: 'on',
-                            effect: 'fade',
+                            // effect: 'fade',
                             loop: true,
                             pagination: {
                                 el: '.main_slide .pagination',
@@ -326,6 +327,11 @@
                                         ]
                                     return '<li class="bullet"><div class="txt_wrap"><span class="sub_txt">' + main_slide_txt[idx] + '</span><strong>' + main_slide_tit[idx] + '</strong></div></li>';
                                 }
+                            },
+                            breakpoints: {
+                                1024: {
+                                    speed: 300
+                                },
                             }
                         })
                     });

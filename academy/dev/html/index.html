@@ -239,26 +239,28 @@
 								</div>
 							</a>
 						</li>
-						<li class="swiper-slide" style="background-image:url('https://picsum.photos/1920/635/?random')" ;>
+						<li class="swiper-slide" style="background-image:url('../img/sample/sample_mainlist_01.png')" ;>
 							<a href="#">
 								<div class="grid_container txt_view">
 									<div class="txt_wrap">
-										<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+										<p class="tit">수학이 즐거운 올림피아드</p>
 										<p class="txt">
-											긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-										</p>
+											함께 문제를 해결해 나가는 수업 과정을 통해 협동심과<br>
+                                            커뮤니케이션 능력은 물론, 발표력, 창의력까지 향상됩니다.
+                                        </p>
 									</div>
 								</div>
 							</a>
 						</li>
-						<li class="swiper-slide" style="background-image:url('https://via.placeholder.com/1920x635')" ;>
+						<li class="swiper-slide" style="background-image:url('../img/sample/sample_mainlist_01.png')" ;>
 							<a href="#">
 								<div class="grid_container txt_view">
 									<div class="txt_wrap">
-										<p class="tit">긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</p>
+										<p class="tit">수학이 즐거운 올림피아드</p>
 										<p class="txt">
-											긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-										</p>
+											함께 문제를 해결해 나가는 수업 과정을 통해 협동심과<br>
+                                            커뮤니케이션 능력은 물론, 발표력, 창의력까지 향상됩니다.
+                                        </p>
 									</div>
 								</div>
 							</a>
@@ -280,11 +282,12 @@
 					$(function () {
                         var main_slide = new Swiper('.main_slide.swiper-container', {
                             allowTouchMove: true,
+                            speed: 2000,
                             autoplay: {
                                 delay: 5000,
                             },
                             slideActiveClass: 'on',
-                            effect: 'fade',
+                            // effect: 'fade',
                             loop: true,
                             pagination: {
                                 el: '.pagination',
@@ -295,11 +298,16 @@
                                 renderBullet: function (idx) {
                                     var main_slide_txt = [
                                         '수학이 즐거운 올림피아드',
-                                        '긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목',
-                                        '긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목'
+                                        '수학이 즐거운 올림피아드',
+                                        '수학이 즐거운 올림피아드'
                                     ]
                                     return '<li class="bullet">' + main_slide_txt[idx] + '</li>';
                                 }
+                            },
+                            breakpoints: {
+                                1024: {
+                                    speed: 300,
+                                },
                             }
                         })
                     });
@@ -330,12 +338,10 @@
 										<div class="txt_wrap">
 											<p class="tit">
 												<strong>[말머리]</strong>
-												긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+												올림피아드교육 입시정책 분석 설명회
 											</p>
 											<hr>
-											<p class="txt">
-												긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-											</p>
+											<p class="txt">무엇이, 어떻게 변했을까? 초,중등 우리 아이 입시전략 이대로 괜찮을까?</p>
 											<a href="#">더보기</a>
 										</div>
 									</li>
@@ -343,12 +349,10 @@
 										<div class="txt_wrap">
 											<p class="tit">
 												<strong>[말머리]</strong>
-												긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+												올림피아드교육 입시정책 분석 설명회
 											</p>
 											<hr>
-											<p class="txt">
-												긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-											</p>
+											<p class="txt">무엇이, 어떻게 변했을까? 초,중등 우리 아이 입시전략 이대로 괜찮을까?</p>
 											<a href="#">더보기</a>
 										</div>
 									</li>
@@ -407,7 +411,7 @@
                                                 delay: 5000,
                                             },
                                             slideActiveClass: 'on',
-                                            effect: 'fade',
+                                            // effect: 'fade',
                                             loop: true,
                                             pagination: {
                                                 el: '.pagination',
@@ -467,49 +471,45 @@
 														<p class="txt" style="color:#fff">
 															실제 합격생의 데이터와 사례들을 토대로 영재학교 입시의 최적화된 솔루션을 제시합니다.
 														</p>
-														<!-- <p class="tit" style="color:red" ;>
-                                                        2019 올림피아드교육<br>
+												</div>
+											</a>
+										</li>
+										<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_01.png);">
+											<a href="#">
+												<div class="txt_wrap">
+													<p class="tit" style="color:#fff">
+														2019 올림피아드교육<br>
                                                         영재,과고,전국자사,외고,국제고 입시분석 설명회
                                                     </p>
-                                                    <p class="txt" style="color:blue" ;>
-                                                        실제 합격생의 데이터와 사례들을 토대로 영재학교 입시의 최적화된 솔루션을 제시합니다.
-                                                    </p> -->
+														<p class="txt" style="color:#fff">
+															실제 합격생의 데이터와 사례들을 토대로 영재학교 입시의 최적화된 솔루션을 제시합니다.
+														</p>
 												</div>
 											</a>
 										</li>
-										<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+										<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_01.png);">
 											<a href="#">
 												<div class="txt_wrap">
-													<p class="tit">
-														긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-													</p>
-													<p class="txt">
-														긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-													</p>
+													<p class="tit" style="color:#fff">
+														2019 올림피아드교육<br>
+                                                        영재,과고,전국자사,외고,국제고 입시분석 설명회
+                                                    </p>
+														<p class="txt" style="color:#fff">
+															실제 합격생의 데이터와 사례들을 토대로 영재학교 입시의 최적화된 솔루션을 제시합니다.
+														</p>
 												</div>
 											</a>
 										</li>
-										<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
+										<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_01.png);">
 											<a href="#">
 												<div class="txt_wrap">
-													<p class="tit">
-														긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-													</p>
-													<p class="txt">
-														긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-													</p>
-												</div>
-											</a>
-										</li>
-										<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
-											<a href="#">
-												<div class="txt_wrap">
-													<p class="tit">
-														긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-													</p>
-													<p class="txt">
-														긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-													</p>
+													<p class="tit" style="color:#fff">
+														2019 올림피아드교육<br>
+                                                        영재,과고,전국자사,외고,국제고 입시분석 설명회
+                                                    </p>
+														<p class="txt" style="color:#fff">
+															실제 합격생의 데이터와 사례들을 토대로 영재학교 입시의 최적화된 솔루션을 제시합니다.
+														</p>
 												</div>
 											</a>
 										</li>
@@ -536,50 +536,50 @@
 										<ul class="slide swiper-wrapper">
 											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_05.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_05.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_05.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_05.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
 											<!-- <li style="width:100%;">
@@ -602,50 +602,50 @@
 										<ul class="slide swiper-wrapper">
 											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_06.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_06.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_06.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_06.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
 											<!-- <li style="width:100%;">
@@ -686,50 +686,50 @@
 										<ul class="slide swiper-wrapper">
 											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_03.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_03.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_03.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_03.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
 											<!-- <li style="width:100%;">
@@ -752,50 +752,50 @@
 										<ul class="slide swiper-wrapper">
 											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_04.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_04.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_04.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
-											<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+											<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_04.png);">
 												<a href="#">
-													<div class="txt_wrap">
-														<p class="tit">
-															긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
-														</p>
-														<p class="txt">
-															긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
-														</p>
-													</div>
+													<!-- <div class="txt_wrap">
+                                                        <p class="tit">
+                                                            긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+                                                        </p>
+                                                        <p class="txt">
+                                                            긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+                                                        </p>
+                                                    </div> -->
 												</a>
 											</li>
 											<!-- <li style="width:100%;">
@@ -846,39 +846,57 @@
 												</div>
 											</a>
 										</li>
-										<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+										<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_02.png);">
 											<a href="#">
 												<div class="txt_wrap">
-													<p class="tit">
-														긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+													<p class="tit" style="color:#fff">
+														초 중 고등부 봄학기 개강
 													</p>
-													<p class="txt">
-														긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+													<p class="txt" style="color:#fff">
+														새 학년, 꼭 일어났으며 하는 일!
 													</p>
+													<!-- <p class="tit" style="color:red" ;>
+                                                        초 중 고등부 봄학기 개강
+                                                    </p>
+                                                    <p class="txt" style="color:blue" ;>
+                                                        새 학년, 꼭 일어났으며 하는 일!
+                                                    </p> -->
 												</div>
 											</a>
 										</li>
-										<li class="swiper-slide" style="background-image:url(https://via.placeholder.com/800x600);">
+										<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_02.png);">
 											<a href="#">
 												<div class="txt_wrap">
-													<p class="tit">
-														긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+													<p class="tit" style="color:#fff">
+														초 중 고등부 봄학기 개강
 													</p>
-													<p class="txt">
-														긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+													<p class="txt" style="color:#fff">
+														새 학년, 꼭 일어났으며 하는 일!
 													</p>
+													<!-- <p class="tit" style="color:red" ;>
+                                                        초 중 고등부 봄학기 개강
+                                                    </p>
+                                                    <p class="txt" style="color:blue" ;>
+                                                        새 학년, 꼭 일어났으며 하는 일!
+                                                    </p> -->
 												</div>
 											</a>
 										</li>
-										<li class="swiper-slide" style="background-image:url(https://picsum.photos/800/600/?random);">
+										<li class="swiper-slide" style="background-image:url(../img/sample/sample_banner_02.png);">
 											<a href="#">
 												<div class="txt_wrap">
-													<p class="tit">
-														긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+													<p class="tit" style="color:#fff">
+														초 중 고등부 봄학기 개강
 													</p>
-													<p class="txt">
-														긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용긴내용
+													<p class="txt" style="color:#fff">
+														새 학년, 꼭 일어났으며 하는 일!
 													</p>
+													<!-- <p class="tit" style="color:red" ;>
+                                                        초 중 고등부 봄학기 개강
+                                                    </p>
+                                                    <p class="txt" style="color:blue" ;>
+                                                        새 학년, 꼭 일어났으며 하는 일!
+                                                    </p> -->
 												</div>
 											</a>
 										</li>
@@ -929,30 +947,27 @@
 									<li class="swiper-slide">
 										<a href="#">
 											<p class="tit">
-												<strong>[말머리]</strong>
-												1긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+												꿈에도 그리던 서울대에 삼수끝에 합격했습니다.
 											</p>
-											<span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+											<span class="author">서울대 합격생</span>
 											<span class="date">9999.99.99</span>
 										</a>
 									</li>
 									<li class="swiper-slide">
 										<a href="#">
 											<p class="tit">
-												<strong>[말머리]</strong>
-												2긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+												꿈에도 그리던 서울대에 삼수끝에 합격했습니다.
 											</p>
-											<span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+											<span class="author">서울대 합격생</span>
 											<span class="date">9999.99.99</span>
 										</a>
 									</li>
 									<li class="swiper-slide">
 										<a href="#">
 											<p class="tit">
-												<strong>[말머리]</strong>
-												3긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+												꿈에도 그리던 서울대에 삼수끝에 합격했습니다.
 											</p>
-											<span class="author">9999학년도 이름이긴대학 긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름긴이름</span>
+											<span class="author">서울대 합격생</span>
 											<span class="date">9999.99.99</span>
 										</a>
 									</li>
@@ -1013,8 +1028,7 @@
 							<li>
 								<a href="#">
 									<p>
-										<strong>[말머리]</strong>
-										긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+										2019학년도 의대 수시선발 1820명 역대 최대…학종 비중 가장 높아
 									</p>
 								</a>
 								<span class="date">9999.99.99</span>
@@ -1022,8 +1036,7 @@
 							<li>
 								<a href="#">
 									<p>
-										<strong>[말머리]</strong>
-										긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+										2022수능 수학 '문·이과 통합형'으로…문과도 과학탐구 응시
 									</p>
 								</a>
 								<span class="date">9999.99.99</span>
@@ -1031,8 +1044,7 @@
 							<li>
 								<a href="#">
 									<p>
-										<strong>[말머리]</strong>
-										긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+										‘문-이과 통합’ 2021 수능 대변혁 예고
 									</p>
 								</a>
 								<span class="date">9999.99.99</span>
@@ -1040,8 +1052,7 @@
 							<li>
 								<a href="#">
 									<p>
-										<strong>[말머리]</strong>
-										긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+										수능 한달 앞, 평정심 유지하면서 실전 연습 충분히 해야
 									</p>
 								</a>
 								<span class="date">9999.99.99</span>
@@ -1049,8 +1060,7 @@
 							<li>
 								<a href="#">
 									<p>
-										<strong>[말머리]</strong>
-										긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목
+										서울대 더 보낸 세화고 … 대성고는 수능 1등급 줄어
 									</p>
 								</a>
 								<span class="date">9999.99.99</span>
