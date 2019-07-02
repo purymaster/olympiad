@@ -1,3 +1,7 @@
+function changeSelectBox(object) {
+    return;
+}
+
 $(function () {
 
     var screen = $('html,body'),
@@ -31,10 +35,6 @@ $(function () {
     });
 
     /******************** 셀렉트박스 제어 ********************/
-
-    function changeSelectBox(object) {
-        return;
-    }
 
     var select_form = $('.select_form');
 

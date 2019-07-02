@@ -1,0 +1,44 @@
+@@include('../inc/head.html')
+
+<body>
+    @@include('../inc/ie9.html')
+    <div class="wrap">
+        @@include('../inc/header.html')
+        <div class="sub_wrap no_sub_header confirm_page">
+            <div class="sub_content">
+
+                <!-- 서브 페이지 상단 -->
+                <div class="sub_upper_wrap bg">
+                    <!-- bg 클래스 추가시 배경색 추가 -->
+                    <div class="grid_container inner">
+
+                        <p class="main_tit">
+                            <strong>아이디, 비밀번호 찾기</strong>
+                        </p>
+
+                        <p class="txt">
+                            회원가입시 입력하신 이메일로 아이디가 <!-- 임시 비밀번호가 -->전송되었습니다.
+                            <!-- [D] 입력정보가 올바르지 않을 경우 -->
+                            <!-- 입력하신 정보와 일치하는 회원 아이디가 존재하지 않습니다.<br>
+                            입력하신 정보를 다시 확인해주시길 바랍니다. -->
+                            <!-- //[D] 입력정보가 올바르지 않을 경우 -->
+                        </p>
+                        <div class="btn_wrap">
+                            <!-- [D] 입력정보가 올바르지 않을 경우 -->
+                            <!-- <a href="#">다시 조회하기</a> -->
+                            <!-- //[D] 입력정보가 올바르지 않을 경우 -->
+                            <a href="#">메인으로</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //서브 페이지 상단 -->
+
+            </div>
+        </div>
+        @@include('../inc/footer.html')
+        @@include('../inc/side_menu.html')
+    </div>
+
+</body>
+
+</html>
