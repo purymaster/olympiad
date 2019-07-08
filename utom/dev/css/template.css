@@ -285,6 +285,20 @@ textarea {line-height:1.5em;}
     .check_form input[type="checkbox"] + label {margin-right:5px; font-size:12px;}
 }
 
+/* 카테고리 선택 */
+.cate_select {margin-bottom:30px;}
+.cate_select ul {font-size:0; text-align:center; margin:-5px 0;}
+.cate_select ul li {display:inline-block; margin:5px;}
+.cate_select ul li input[type="radio"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
+.cate_select ul li label {display:inline-block; line-height:30px; padding:0 10px; font-size:14px; color:#fff; background:#bbb; -webkit-transition:all 0.5s; transition:all 0.5s;}
+.cate_select ul li input[type="radio"]:checked + label {background:#008398;}
+.cate_select ul li label:before {content:"#";}
+
+@media (max-width:599px) {
+    .cate_select {margin-bottom:15px;}
+    .cate_select ul li label {font-size:12px; line-height:2em;}
+}
+
 /* 라디오버튼 */
 .radio_form ul {margin-bottom:-10px; padding:5px 0; font-size:0;}
 .radio_form ul > li {float:left; margin-bottom:10px; line-height:1;}
@@ -961,7 +975,7 @@ header.animated:after {-webkit-transform:scaleX(1);transform:scaleX(1);}
 .group_nav .btn {display:inline-block; margin:3px 0 0 10px; padding:0 10px; background:#00687f; font-size:12px; line-height:26px; color:#fff; text-align:center; vertical-align:top;}
 .navigation {border-top:1px solid #eee;}
 .navigation a:hover {color:#00687f !important;}
-.navigation .menu_1depth {float:right; margin:4px -35px 0;}
+.navigation .menu_1depth {float:right; margin:4px -45px 0;}
 .navigation .menu_1depth:after {display:block; clear:both; content:"";}
 .navigation .menu_1depth > li {float:left; position:relative; margin: 0 45px; -webkit-transition:margin 0.5s; transition:margin 0.5s;}
 .navigation .menu_1depth > li:after {visibility:hidden; position:absolute; top:45px; left:50%; width:8px; height:8px; margin-left:-4px; background:#00687f; -webkit-transition:all 0.5s; transition:all 0.5s; opacity:0; content:"";}
@@ -2010,14 +2024,7 @@ footer {background:#505354; color:#fff;}
 .campus_find .campus_option .option_wrap .select_form {display:inline-block; width:100%}
 .campus_find .campus_option .option_wrap .select_form:last-child {margin:0;}
 .campus_find .campus_option .search_wrap {width:100%; margin-top:10px;}
-.campus_find .cate_select {padding-top:30px;}
-.campus_find .cate_select ul {font-size:0; text-align:center; margin:-5px 0;}
-.campus_find .cate_select ul li {display:inline-block; margin:5px;}
-.campus_find .cate_select ul li input[type="radio"] {width:0; height:0; margin:0; padding:0; font-size:0; line-height:0; opacity:0;}
-.campus_find .cate_select ul li label {display:inline-block; line-height:30px; padding:0 10px; font-size:14px; color:#fff; background:#bbb; -webkit-transition:all 0.5s; transition:all 0.5s;}
-.campus_find .cate_select ul li input[type="radio"]:checked + label {background:#008398;}
-.campus_find .cate_select ul li label:before {content:"#";}
-
+.campus_find .cate_select {margin:0; padding-top:30px;}
 .campus_find .fold_list {padding-top:20px;}
 .campus_find .fold_list ul {border-top:3px solid #333;}
 .campus_find .fold_list ul li {position:relative; border-bottom:1px solid #ddd; background:#fff; cursor:pointer;}
@@ -2048,6 +2055,7 @@ footer {background:#505354; color:#fff;}
     .campus_find .campus_option_wrap .tit br {display:none;}
     .campus_find .campus_option {width:100%;}
     .campus_find .campus_option .option_wrap .select_form {margin:0; margin-bottom:10px;}
+    .campus_find .cate_select {padding-top:15px;}
     .campus_find .fold_list ul li .data {padding:15px 33px 15px 0;}
     .campus_find .fold_list ul li .data span {display:block; margin:0 !important; width:100% !important;}
     .campus_find .fold_list ul li .data .name {font-size:16px;}
@@ -3330,9 +3338,13 @@ footer {background:#505354; color:#fff;}
 
 /* 로그인, 신청확인 페이지 공통 */
 .input_mini_form .sub_upper_wrap {min-height:740px; margin-bottom:-100px;}
+.input_mini_form .column {overflow:hidden; margin-top:40px;}
 .input_mini_form .form_wrap {position:relative; max-width:100%; margin:40px auto 0; padding:30px 0; border-top:3px solid #333; border-bottom:1px solid #333;}
 .input_mini_form .form_wrap:after {display:block; clear:both; content:"";}
-.input_mini_form .form_wrap.login {width:500px; height:180px;} 
+.input_mini_form .form_wrap.login {max-width:500px;} 
+.input_mini_form .column .column_form {float:left; width:calc(50% - 30px); margin:0 15px;}
+.input_mini_form .column .column_form .form_tit {font-family:"Nanum Square"; font-size:24px; font-weight:700;}
+.input_mini_form .column .form_wrap.login {width:100%; margin-top:10px;}
 .input_mini_form .form_wrap.find {width:450px;}
 .input_mini_form .form_wrap table {margin:-5px 0; border:0; background:none;}
 .input_mini_form .form_wrap table .head {width:90px;}
@@ -3343,12 +3355,12 @@ footer {background:#505354; color:#fff;}
 .input_mini_form .form_wrap table .tel {font-size:0;}
 .input_mini_form .form_wrap table .tel .select_form,.input_mini_form .form_wrap table .tel input[type="text"] {width:calc(33.33% - 10px);}
 .input_mini_form .form_wrap table .tel .dash {display:inline-block; width:15px; font-size:14px; line-height:40px; text-align:center; vertical-align:top;}
-.input_mini_form .form_wrap.login table {float:left; width:370px;}
+.input_mini_form .form_wrap.login table {float:left; width:calc(100% - 130px);}
 .input_mini_form .form_wrap.login .login_btn {float:right; width:120px; background:#00687f; font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:90px; color:#fff;}
 .input_mini_form .form_wrap.login .check_form {position:absolute; bottom:32px; left:88px;}
 .input_mini_form .form_wrap.login .check_form li {margin:0;}
 .input_mini_form .form_wrap.login .check_form label {font-size:14px;}
-.input_mini_form .form_wrap.login .misc {padding-top:20px; clear:both; font-size:0; text-align:right; padding-right:115px;}
+.input_mini_form .form_wrap.login .misc {padding-top:6px; clear:both; font-size:0; text-align:right; padding-right:115px;}
 .input_mini_form .form_wrap.login .misc li {display:inline-block; line-height:0; padding:0 15px; border-right:1px solid #ddd;}
 .input_mini_form .form_wrap.login .misc li:last-child {border:0;}
 .input_mini_form .form_wrap.login .misc li a {display:inline-block; font-size:14px; line-height:20px; color:#333; -webkit-transition:all 0.5s; transition:all 0.5s;}
@@ -3358,13 +3370,14 @@ footer {background:#505354; color:#fff;}
 
 @media (max-width:1024px) {
     .input_mini_form .sub_upper_wrap {margin-bottom:-50px;}
+    .input_mini_form .column .column_form {float:none; width:auto;}
+    .input_mini_form .column .column_form .form_tit {font-size:18px;}
+    .input_mini_form .column .form_wrap.login {margin-bottom:30px;}
     .input_mini_form .form_wrap {margin-top:30px; padding:15px 0;}
     .input_mini_form .form_wrap table th label {font-size:16px;}
-    .input_mini_form .form_wrap.login {height:150px;}
     .input_mini_form .form_wrap.login .login_btn {font-size:16px;}
     .input_mini_form .form_wrap table .head {width:70px;}
     .input_mini_form .form_wrap.login .check_form {bottom:17px; left:68px;}
-    .input_mini_form .form_wrap.login .misc {padding-top:10px;}
 }
 
 @media (max-width:599px) {
@@ -3376,7 +3389,7 @@ footer {background:#505354; color:#fff;}
     .input_mini_form .form_wrap.login .check_form {position:static;}
     .input_mini_form .form_wrap.login .check_form ul {margin:0;}
     .input_mini_form .form_wrap.login .check_form li {float:right;}
-    .input_mini_form .form_wrap.login .login_btn {float:none; clear:both; width:100%; line-height:40px;}
+    .input_mini_form .form_wrap.login .login_btn {float:none; clear:both; width:100%; line-height:40px; margin-top:10px;}
     .input_mini_form .form_wrap.login .check_form label {font-size:12px;}
     .input_mini_form .form_wrap.login .misc {margin-top:10px; padding:0; text-align:center;}
     .input_mini_form .form_wrap.login .misc li a {font-size:12px;}

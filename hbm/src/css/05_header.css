@@ -7,7 +7,7 @@ header {position:fixed; top:0; left:0; z-index:5; width:100%;}
 header:before {content:""; position:absolute; left:0; top:0; width:100%; height:100%; transition:all 0.5s;}
 header:hover:before {background:#fff; box-shadow:0 5px 10px 0 rgba(0,0,0,0.2);}
 .header {position:relative;}
-.header:before {visibility:hidden; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.65); transition:all 0.5s; opacity:0; content:"";}
+.header:before {visibility:hidden; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.75); transition:all 0.5s; opacity:0; content:"";}
 /* .header:before {visibility:hidden; position:absolute; top:0; left:0; width:100%; height:100%; background:-moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); background:-webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); background:linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); transition:all 0.5s; opacity:0; content:""; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );} */
 .header.on:before {visibility:visible; opacity:1;}
 header:hover .header:before {visibility:hidden; opacity:0;}
@@ -21,7 +21,7 @@ header:hover .header_wrap:after {background:#dcdcdc;}
 .header_wrap h1 .alter {opacity:0; visibility:hidden;}
 header:hover .header_wrap h1 .alter {opacity:1; visibility:visible;}
 .nav_wrap {position:absolute; top:20px; right:30px; padding:25px 0;}
-.nav_wrap .menu {float:right;}
+.nav_wrap .menu {float:right; margin-right:50px;}
 
 .group_nav {margin-left:15px; font-size:0;}
 .group_nav:after {display:block; clear:both; content:"";}
@@ -52,7 +52,7 @@ header:hover .search_keyword .search {background-position-x:-48px;}
 .search_keyword .search.on {background-position-x:-77px;}
 header:hover .search_keyword .search.on {background-position-x:-106px;}
 .search_keyword .search_box {visibility:hidden; position:absolute; right:0; top:53px; z-index:1; padding:16px; background:none; transition:all 0.5s; opacity:0; border:1px solid rgba(255,255,255,0.5);}
-.search_keyword.on .search_box {background:rgba(0,0,0,0.65);}
+.search_keyword.on .search_box {background:rgba(0,0,0,0.75);}
 header:hover .search_keyword .search_box {background:#eee; border-color:#eee;}
 .search_keyword .search_box.on {visibility:visible; opacity:1;}
 .search_keyword .search_wrap {min-width:285px;}

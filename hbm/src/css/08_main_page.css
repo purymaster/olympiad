@@ -24,8 +24,8 @@
 .main_slide .slide .txt_wrap span,.main_slide .slide .txt_wrap p {animation-play-state:paused;}
 .main_slide .slide li.on .txt_wrap span,.main_slide .slide li.on .txt_wrap p {animation:1s both fadeInUp; -ms-animation-play-state:running;}
 .main_slide .slide .txt_wrap .cate {display:inline-block; border-top:1px solid #fff; border-bottom:1px solid #fff; font-size:18px; line-height:33px; animation-delay:2s !important;}
-.main_slide .slide .txt_wrap .tit {overflow:hidden; margin-top:10px; font-family:"Nanum Square"; font-size:50px; font-weight:300; line-height:1.4em; text-overflow:ellipsis; white-space:nowrap; animation-delay:2.2s !important;}
-.main_slide .slide .txt_wrap .tit strong {font-family:inherit; font-weight:400;}
+.main_slide .slide .txt_wrap .tit {overflow:hidden; margin-top:30px; font-family:"Nanum Square"; font-size:30px; font-weight:300; line-height:2em; text-overflow:ellipsis; white-space:nowrap; animation-delay:2.2s !important;}
+.main_slide .slide .txt_wrap .tit strong {font-family:inherit; font-weight:400; font-size:1.65em;}
 .main_slide .slide .txt_wrap .sub_txt {overflow:hidden; margin-top:20px; font-family:"Nanum Square"; font-size:24px; line-height:1.5em; text-overflow:ellipsis; white-space:nowrap; animation-delay:2.4s !important;}
 .main_slide .slide .txt_wrap .txt {overflow:hidden; height:3.2em; margin-top:5px; font-size:16px; line-height:1.6em; animation-delay:2.6s !important;}
 .main_slide_pager {position:absolute; bottom:45px; left:0; z-index:2; width:100%;}
@@ -51,7 +51,7 @@
     .main_slide .slide .txt_wrap {display:table-cell; position:static; text-align:center; vertical-align:middle;}
     .main_slide .slide .txt_wrap .cate {font-size:14px; line-height:2em; animation-delay:0s !important;}
     .main_slide .slide .txt_wrap p {overflow:visible !important; text-overflow:clip !important; white-space:normal !important;}
-    .main_slide .slide .txt_wrap .tit {font-size:40px; line-height:1.2em; animation-delay:0.2s !important;}
+    .main_slide .slide .txt_wrap .tit {font-size:24px; line-height:1.2em; animation-delay:0.2s !important;}
     .main_slide .slide .txt_wrap .sub_txt {font-size:18px; line-height:1.4em; animation-delay:0.4s !important;}
     .main_slide .slide .txt_wrap .txt {height:auto; margin-top:15px; font-size:14px; animation-delay:0.6s !important;}
     .main_slide .slide .txt_wrap .txt br {display:none;}
@@ -62,7 +62,7 @@
 
 @media (max-width:599px) {
     .main_slide .slide .txt_wrap .cate {font-size:12px;}
-    .main_slide .slide .txt_wrap .tit {font-size:24px;}
+    .main_slide .slide .txt_wrap .tit {font-size:20px;}
     .main_slide .slide .txt_wrap .sub_txt {font-size:14px;}
     .main_slide .slide .txt_wrap .txt {font-size:12px;}
     .main_slide_pager {bottom:15px;}
@@ -163,6 +163,7 @@
 .hbm_grade ul li:nth-child(5) {background-image:url(../img/bg/bg_main_grade_05.jpg);} /* 10세 */
 .hbm_grade ul li:after {position:absolute; top:0; right:0; z-index:1; width:1px; height:100%; background:#fff; content:"";}
 .hbm_grade ul li strong {display:block; padding-bottom:20px; font-family:"Nanum Square"; font-size:30px; font-weight:400; line-height:1.35em;}
+.hbm_grade ul li strong span {font-size:1.5em; font-weight:900;}
 .hbm_grade ul li .sub_txt {padding-top:20px; border-top:1px solid rgba(255,255,255,0.5); font-size:18px; line-height:1.5em;}
 .hbm_grade ul li a {position:absolute; bottom:0; left:0; width:100%; padding:0 30px; background:rgba(0,0,0,0.2); font-size:16px; line-height:80px; color:inherit; transition:all 0.5s;}
 .hbm_grade ul li a:hover {background:rgba(0,174,186,0.9); color:#fff;}
@@ -180,6 +181,7 @@
     .hbm_story .story_wrap .txt_wrap .date {font-size:12px;}
     .hbm_story .story_wrap .link {width:30px; height:30px;}
     .hbm_grade {margin-top:-30px;}
+    .hbm_grade ul {padding-top:30px;}
     .hbm_grade ul li {width:50%; height:250px; padding:30px;}
     .hbm_grade ul li:nth-child(n+3) {width:33.33%;}
     .hbm_grade ul li:after {display:none;}
@@ -194,7 +196,7 @@
     .hbm_story .story_wrap ul {margin:-15px 0;}
     .hbm_story .story_wrap ul li {width:100%; margin:15px 0;}
     .hbm_grade ul {margin-bottom:0;}
-    .hbm_grade ul li {float:none; width:100% !important; height:auto; padding:15px; padding-bottom:60px; background-position-y:40%;}
+    .hbm_grade ul li {float:none; width:100% !important; height:auto; padding:15px; padding-bottom:60px; background-position-y:40%; border-bottom:1px solid #fff;}
     .hbm_grade ul li strong br {display:none;}
     .hbm_grade ul li a {padding:0 15px; font-size:12px;}
 }
@@ -228,7 +230,7 @@
 .hbm_news .bottom_menu ul {overflow:hidden;}
 .hbm_news .bottom_menu ul li {float:left; width:calc(33.33% - 1px); height:230px; border-right:1px solid #fff; background-position:center; background-size:cover;}
 .hbm_news .bottom_menu ul li:nth-child(1) {background-image:url(../img/bg/bg_main_recruit.jpg);} /* 입학고사 */
-.hbm_news .bottom_menu ul li:nth-child(2) {background-image:url(../img/bg/bg_main_join.jpg);} /* 설명회 */
+.hbm_news .bottom_menu ul li:nth-child(2) {background-image:url(../img/bg/bg_main_join.jpg);} /* 간담회 */
 .hbm_news .bottom_menu ul li:nth-child(3) {background-image:url(../img/bg/bg_main_counsel.jpg);} /* 상담 */
 .hbm_news .bottom_menu ul li a {display:block; position:relative; height:100%;}
 .hbm_news .bottom_menu ul li a:hover .txt_wrap {background-color:#00aeba;}

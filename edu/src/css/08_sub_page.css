@@ -116,7 +116,7 @@
 @media (max-width:599px) {
     .sub_visual .sub_txt {font-size:18px;}
 	.sub_visual .sub_tit {font-size:24px;}
-    .subtab_menu ul li a {min-width:0; font-size:12px;}
+    .subtab_menu ul li a {min-width:95px; font-size:12px;}
 }
 
 /* 컨텐츠 영역 일반 텍스트 */
@@ -319,10 +319,10 @@
 .directions .directions_list .directions_text dd ul li {padding:5px 0;}
 .directions .directions_list .directions_text dd ul li:last-child {margin-bottom:0;}
 .directions .directions_list .directions_text dd span {display:inline-block; vertical-align:top;}
-.directions .directions_list .directions_text dd .infor_tit {font-size:18px; line-height:30px; color:#333;}
-.directions .directions_list .directions_text.tel dd {display:inline-block; padding:0; vertical-align:top;}
-.directions .directions_list .directions_text.tel dd:first-of-type {margin-right:100px;}
-.directions .directions_list .directions_text dd .color_text a {display:inline-block; font-size:24px; line-height:30px; color:#00aeba;}
+.directions .directions_list .directions_text dd .infor_tit {font-size:14px; line-height:20px; color:#333;}
+.directions .directions_list .directions_text.tel dd {display:inline-block; padding:5px 0; vertical-align:top;}
+.directions .directions_list .directions_text.tel dd:first-of-type {margin-right:30px;}
+.directions .directions_list .directions_text dd .color_text a {display:inline-block; color:#00aeba;}
 
 @media (max-width:1024px) {
     .directions .directions_map {height:350px; margin-top:-30px;}
@@ -332,7 +332,6 @@
 	.directions .directions_list .directions_text dd ul {margin:-3px 0;}
 	.directions .directions_list .directions_text dd ul li {padding:3px 0;}
 	.directions .directions_list .directions_text dd .infor_tit {font-size:14px;}
-	.directions .directions_list .directions_text dd .color_text {font-size:18px;}
     .directions .directions_list .directions_text.tel dd {display:block; padding-left:120px;}
 }
 
@@ -341,8 +340,6 @@
 	.directions .directions_list .directions_text dt {float:none; min-width:0; margin-bottom:10px;}
 	.directions .directions_list .directions_text .cont_tit_lh {padding:0;}
 	.directions .directions_list .directions_text dd {float:none; padding:0;}
-	.directions .directions_list .directions_text dd .infor_tit {font-size:14px;}
-	.directions .directions_list .directions_text dd .color_text {font-size:18px;}
     .directions .directions_list .directions_text.tel dd {padding:0;}
 }
 
@@ -633,12 +630,13 @@
 .franchise_brand .info_wrap ul li .info_txt .txt {margin-bottom:15px; font-size:15px; line-height:1.85em; color:#555;}
 .franchise_brand .info_wrap ul li .info_txt .txt:last-child {margin-bottom:0;}
 .franchise_brand .counsel {overflow:hidden; position:relative; padding-top:40px; border-top:1px solid #dcdcdc;}
-.franchise_brand .counsel .txt_wrap {float:left; position:relative; padding-left:85px; font-family:"Nanum Square";}
+.franchise_brand .counsel .txt_wrap {float:left; position:relative; margin-bottom:15px; padding-left:85px; font-family:"Nanum Square";}
 .franchise_brand .counsel .txt_wrap:before {position:absolute; top:0; left:0; width:66px; height:65px; background-image:url(../img/sprite/sprite.png); background-position:-5px -216px; background-size:500px; content:"";}
 .franchise_brand .counsel .txt_wrap .tit {margin-top:-6px; font-family:inherit; font-size:24px; font-weight:700; line-height:1.5em; color:#222;}
 .franchise_brand .counsel .txt_wrap .txt {margin-top:10px; font-family:inherit; font-size:16px; line-height:20px; color:#555;}
 .franchise_brand .counsel .txt_wrap .tel {margin-left:15px; font-family:inherit; font-size:30px; line-height:20px;}
 .franchise_brand .counsel .txt_wrap .tel a {font-weight:700; color:#00aeba;}
+.franchise_brand .counsel .txt_wrap .tel small {margin-right:15px; font-size:14px;}
 .franchise_brand .counsel .btn_wrap {float:right;}
 .franchise_brand .counsel .btn_wrap a {width:250px; border:0; background:#00aeba; font-size:18px; font-weight:700; line-height:70px; color:#fff;}
 .franchise_brand .counsel .btn_wrap .link span:before,.franchise_brand .counsel .btn_wrap .link span:after {right:20px;}
@@ -658,14 +656,16 @@
 	.franchise_brand .counsel .txt_wrap .tit {font-size:18px;}
 	.franchise_brand .counsel .txt_wrap .txt {margin-top:5px;}
 	.franchise_brand .counsel .txt_wrap .tel {font-size:24px;}}
-@media (max-width:599px) {.franchise_brand .info_wrap ul li .logo {float:none; width:auto; margin:0 auto 15px; line-height:0;text-align:center;}
-	.franchise_brand .info_wrap ul li .info_txt {padding-top:15px; padding-left:0; border:0; border-top:2px dotted #dcdcdc; text-align:center;}
+@media (max-width:599px) {
+    .franchise_brand .info_wrap ul li .logo {float:none; width:auto; margin:0 auto 30px; line-height:0;text-align:center;}
+	.franchise_brand .info_wrap ul li .info_txt {padding-top:30px; padding-left:0; border:0; border-top:2px dotted #dcdcdc; text-align:center;}
 	.franchise_brand .info_wrap ul li .info_txt .txt {font-size:12px; line-height:1.6em;}
 	.franchise_brand .counsel .txt_wrap {padding:0; padding-top:80px; text-align:center;}
 	.franchise_brand .counsel .txt_wrap:before {left:50%; transform:translateX(-50%);}
 	.franchise_brand .counsel .txt_wrap .tit {margin:0;}
 	.franchise_brand .counsel .txt_wrap .txt {margin-top:15px; font-size:14px; line-height:1.5em;}
-	.franchise_brand .counsel .txt_wrap .tel {display:block; margin:0; font-size:18px;line-height:1.5em;}
+    .franchise_brand .counsel .txt_wrap .tel {display:block; margin:0; font-size:18px;line-height:1.5em;}
+    .franchise_brand .counsel .txt_wrap .tel small {margin:0; font-size:12px;}
 	.franchise_brand .counsel .btn_wrap {text-align:center;}
     .franchise_brand .counsel .btn_wrap a {font-size:14px; line-height:40px;}
 }
@@ -723,15 +723,13 @@
 }
 
 @media (max-width:599px) {
-    .sitemap_list a {text-align:center;}
-	.sitemap_list .menu_1depth > li > a {float:none; margin-bottom:8px;padding:0; font-size:16px; line-height:1.6em;}
-	.sitemap_list .menu_2depth {padding-left:0;}
-	.sitemap_list .menu_2depth > li > a {font-size:14px; line-height:1.8em;}
-	.sitemap_list .menu_2depth > li {float:none;}
-	.sitemap_list .menu_3depth {margin:8px 0;}
-	.sitemap_list .menu_3depth > li {padding:0; text-align:center;}
-	.sitemap_list .menu_3depth > li > a {display:inline-block; font-size:12px; line-height:1.6em;}
-    .sitemap_list .menu_3depth > li > a:before {top:7px;}
+    .sitemap_list .menu_1depth > li > a {padding:0; font-size:16px;}
+    .sitemap_list .menu_2depth {margin:0 !important; padding-left:50%;}
+    .sitemap_list .menu_2depth > li {float:none; margin:0 !important;}
+    .sitemap_list .menu_2depth > li > a {font-size:14px;}
+    .sitemap_list .menu_3depth {margin:0; margin-bottom:10px;}
+    .sitemap_list .menu_3depth > li > a {display:block; font-size:12px; line-height:1.5em; padding-left:0;}
+    .sitemap_list .menu_3depth > li > a:before {display:none;} 
 }
 
 /* 검색결과 */

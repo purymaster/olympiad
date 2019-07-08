@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>하베르만</title>
+
+	<script src="../js/jquery-1.12.4.min.js"></script> <!-- JQuery v1.12.4 -->
+	<script src="../js/jquery-ui.min.js"></script> <!-- JQuery UI v1.12.1 -->
+	<script src="../js/TweenMax.min.js"></script> <!-- TweenMax -->
+	<script src="../js/swiper.min.js"></script> <!-- Swiper -->
+	<script src="../js/common.js"></script> <!-- 통합 기능 JS -->
+	<link rel="stylesheet" href="../css/template.css"> <!-- 통합 스타일 CSS -->
+
+</head>
+
+<body>
+	<!-- 하위 브라우저 접속시 화면 -->
+	<!--[if lte IE 9]>
+<div class="ie9">
+    <p>
+        본 사이트는 인터넷 익스플로러10 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+        최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+</div>
+<![endif]-->
+
+	<div class="wrap">
+		<header>
+			<!-- 메인화면 최상단 배너 -->
+			<div class="upper_banner">
+				<div class="banner_wrapper">
+
+					<!-- PC 배너(1920px x 210px) -->
+					<a href="#"></a>
+					<img src="https://via.placeholder.com/1920x210" class="banner" alt="대체텍스트">
+					<!-- <img src="https://picsum.photos/1920/210/?random" class="banner pc" alt="대체텍스트"> -->
+
+					<!-- [D] ctr에 white 클래스 부여시, 닫기 버튼 흰색 변경 -->
+					<div class="ctr_wrap">
+						<button class="today" type="button">
+							<span>오늘 하루 열지 않기</span>
+						</button>
+						<button class="close" type="button">
+							<span>닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //메인화면 최상단 배너 -->
+			<div class="header">
+				<div class="grid_container">
+					<div class="header_wrap">
+						<h1>
+							<a href="#">
+								<img class="pc" src="../img/img/img_logo.png" alt="">
+								<img class="alter" src="../img/img/img_logo_alter.png" alt="하브루타로 키우는 영재사고력 하베르만">
+							</a>
+						</h1>
+						<button class="open_menu mobile" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							메뉴 열기
+						</button>
+						<nav>
+							<div class="nav_wrap">
+
+								<!-- 로그인 -->
+								<!-- <div class="menu club">
+                            <h2 class="hidden">회원전용 메뉴</h2>
+                            <div class="group_nav">
+
+                                <a class="btn login" href="#">로그인</a>
+
+                                <span class="member"><strong>회원회원회원회원회원회원회원회원회원회원회원회원회원회원</strong>님</span>
+                                <a class="btn study" href="#">재원생 학습</a>
+                                <a class="btn admin" href="#" target="_blank">관리자</a>
+                                <a class="btn logout" href="#">로그아웃</a>
+
+                            </div>
+                        </div> -->
+								<!-- //로그인 -->
+
+								<!-- GNB -->
+								<div class="menu nav">
+									<h2 class="hidden">올림피아드학원 주요 메뉴</h2>
+									<div class="navigation">
+										<ul class="menu_1depth">
+											<li>
+												<a href="#">소개</a>
+												<ul class="menu_2depth">
+													<li><a href="#">하베르만은?</a></li>
+													<li><a href="#">하베르만 학습법</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 프로그램</a>
+												<ul class="menu_2depth">
+													<li><a href="#">프로그램 특징</a></li>
+													<li><a href="#">프로그램 구성</a></li>
+													<li><a href="#">학습 로드맵</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">입학안내</a>
+												<ul class="menu_2depth">
+													<li><a href="#">입학절차</a></li>
+													<li><a href="#">검사안내</a></li>
+													<li><a href="#">입학고사 신청</a></li>
+													<li><a href="#">간담회 신청</a></li>
+													<li><a href="#">상담 신청</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 체험관</a>
+												<ul class="menu_2depth">
+													<li><a href="#">하베르만 수업보기</a></li>
+													<li><a href="#">우리는 하베르만</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">하베르만 소식</a>
+												<ul class="menu_2depth">
+													<li><a href="#">공지사항</a></li>
+													<li><a href="#">하베르만, 알려주세요</a></li>
+													<li><a href="#">센터소식</a></li>
+													<li><a href="#">센터안내</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //GNB -->
+
+								<!-- <div class="call_num mobile">
+                            <a href="tel:1588-8282">
+                                <dl>
+                                    <dt>상담문의</dt>
+                                    <dd>1588-8282</dd>
+                                </dl>
+                            </a>
+                        </div> -->
+
+								<button class="close mobile" type="button">메뉴 닫기</button>
+							</div>
+						</nav>
+
+						<!-- 검색창 -->
+						<div class="search">
+							<h2 class="hidden">정보검색</h2>
+							<div class="search_keyword">
+								<button type="button" class="search">검색창 여닫기</button>
+								<div class="search_box">
+									<div class="search_wrap">
+										<input type="text" title="검색어 입력">
+										<button type="submit">
+											<span>검색</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //검색창 -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="sub_wrap confirm_page">
+			<div class="sub_header" style="background-image:url(../img/bg/bg_subheader_01.jpg)" data-animation="">
+				<div class="grid_container sub_header_wrap">
+					<div class="tit_wrap">
+						<p class="sub_txt" data-animation="fadeInUp" data-delay="0"></p>
+						<h2 data-animation="fadeInUp" data-delay="3">아이디, 비밀번호 찾기</h2>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="sub_content">
+
+				<!-- 서브 페이지 상단 -->
+				<div class="content">
+					<div class="sub_lower_wrap">
+						<div class="grid_container">
+							<div class="sub_tit_wrap">
+								<p class="subpage_txt">
+									회원가입시 입력하신 이메일로 아이디가
+									<!-- 임시 비밀번호가 -->전송되었습니다.
+									<!-- [D] 입력정보가 올바르지 않을 경우 -->
+									<!-- 입력하신 정보와 일치하는 회원 아이디가 존재하지 않습니다.<br>
+                                입력하신 정보를 다시 확인해주시길 바랍니다. -->
+									<!-- //[D] 입력정보가 올바르지 않을 경우 -->
+								</p>
+							</div>
+							<div class="btn_wrap">
+								<!-- [D] 입력정보가 올바르지 않을 경우 -->
+								<!-- <a href="#">다시 조회하기</a> -->
+								<!-- //[D] 입력정보가 올바르지 않을 경우 -->
+								<a href="#">메인으로</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 페이지 상단 -->
+
+			</div>
+
+		</div>
+		<footer>
+			<div class="footer_upper">
+				<div class="grid_container">
+					<ul class="bottom_menu">
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">홈페이지 이용의견</a></li>
+						<li class="pc"><a href="#" target="_blank">원격지원서비스</a></li>
+					</ul>
+					<ul class="sns">
+						<li class="blog"><a href="#">블로그</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_lower">
+				<div class="grid_container">
+					<div class="lower_wrap">
+						<div class="select_form"><input type="hidden">
+							<button type="button">
+								<span>브랜드 사이트</span>
+							</button>
+							<!-- [D] 선택항목에 따라 텍스트도 변경 -->
+							<ul>
+								<li>
+									<a href="#none">사이트A</a>
+								</li>
+								<li>
+									<a href="#none">사이트B</a>
+								</li>
+								<li>
+									<a href="#none">사이트C</a>
+								</li>
+							</ul>
+						</div>
+						<address>
+							<ul>
+								<li>서울특별시 중랑구 용마산로115길 108 이안빌딩3층</li>
+								<li>대표 : 양환주</li>
+								<li>Tel : <a href="tel:1899-0949">1899-0949</a></li>
+								<li>사업자등록번호 : 206-81-24574</li>
+								<li>통신판매업신고 : 제2012-서울중랑-0082호</li>
+							</ul>
+						</address>
+						<p class="copyright">
+							copyright ⓒ 2018 <span>olympiad</span>. all rights reserved
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>
