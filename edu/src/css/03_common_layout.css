@@ -86,7 +86,7 @@ textarea {line-height:1.5em;}
 .board_util {margin-top:10px; text-align:right;}
 .search_form {margin-right:-5px; font-size:0;}
 .search_form > div {margin-right:5px; vertical-align:middle;}
-.search_form .select_form {width:165px;}
+.search_form .select_form {width:120px;}
 
 @media (max-width:599px) {
     .search_form {margin:0;}
@@ -114,7 +114,7 @@ label {cursor:pointer;}
 .form_table table td .calendar input[type="text"] {position:relative; margin:0; background:none;}
 
 @media (max-width:1024px) {
-    .form_table {overflow:hidden;}
+    .form_table:after {display:block; clear:both; content:"";}
     .form_table table,
 	.form_table table thead,
 	.form_table table tbody,
@@ -130,12 +130,15 @@ label {cursor:pointer;}
     .form_table table td .select_form,
     .form_table table td input[type="text"],
     .form_table table td input[type="password"],
-    .form_table table td input[type="email"] {width:100% !important; margin:0; margin-bottom:5px;}
+    .form_table table td input[type="email"],
+	.form_table table td input[type="tel"],
+	.form_table table td .calendar {width:100% !important; margin:0; margin-bottom:5px;}
+	/*
     .form_table table td.divide_3 .select_form,
     .form_table table td.divide_3 input[type="text"],
     .form_table table td.divide_3 input[type="password"] {width:calc(33.33% - 4px) !important; margin-right:5px;}
     .form_table table td.divide_3 .select_form:last-child,
-    .form_table table td.divide_3 input[type="text"]:last-child {margin-right:0;}
+    .form_table table td.divide_3 input[type="text"]:last-child {margin-right:0;}*/
 }
 
 /* 데이터 테이블 */
@@ -277,7 +280,7 @@ label {cursor:pointer;}
 .news_list ul li .img_view .tit {overflow:hidden; position:absolute; bottom:0; left:0; z-index:1; width:calc(100% - 24px); height:3em; max-height:3em; margin:10px 12px; font-family:"Nanum Square"; font-size:20px; line-height:1.5em; color:#fff;}
 .news_list ul li .img_view .tit strong {font-family:inherit; color:#00687f;}
 .news_list ul li .txt_view {padding:10px; padding-bottom:15px;}
-.news_list ul li .txt_view p {overflow:hidden; max-height:40px; font-size:12px; line-height:20px; color:#666; transition:all 0.5s;}
+.news_list ul li .txt_view p {overflow:hidden; height:40px; font-size:12px; line-height:20px; color:#666; transition:all 0.5s;}
 .news_list ul li:hover .txt_view p {color:#008398;}
 .news_list ul li .txt_view .date {display:inline-block; margin-top:20px; padding:0 8px; border:1px solid #ccc; border-radius:12px; background:#fff; font-size:12px; line-height:24px; -webkit-border-radius:12px; -moz-border-radius:12px; -ms-border-radius:12px; -o-border-radius:12px;}
 
@@ -509,7 +512,7 @@ label {cursor:pointer;}
 
 /* 게시물 작성 버튼 */
 .board_ctr {margin-top:50px; text-align:center;}
-.board_ctr a {min-width:180px; margin:0 2px; padding:0 15px;  font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:50px; color:#fff; vertical-align:top; transition:all 0.5s; background:#00687f;}
+.board_ctr a {min-width:180px; margin:0 2px; padding:0 15px;  font-family:"Nanum Square"; font-size:18px; font-weight:700; text-align:center; line-height:50px; color:#fff; vertical-align:top; transition:all 0.5s; background:#00687f;}
 
 @media (max-width:1024px) {
     .board_ctr {margin:30px -2px 0; font-size:0;}

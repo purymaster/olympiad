@@ -645,7 +645,7 @@
     .franchise_brand .franchise_mod_cont .txt_wrap {transform:none;}
 	.franchise_brand .info_wrap {width:100%; margin:0 auto 30px; padding:0;}
 	.franchise_brand .info_wrap ul li {margin-bottom:30px;}
-	.franchise_brand .info_wrap ul li .logo {width:250px;padding:0;}
+	.franchise_brand .info_wrap ul li .logo {width:250px; padding:0;}
 	.franchise_brand .info_wrap ul li .info_txt {padding-left:30px;}
 	.franchise_brand .info_wrap ul li .info_txt .tit {margin-bottom:15px;font-size:18px; line-height:28px;}
 	.franchise_brand .info_wrap ul li .info_txt .txt {font-size:14px;}
@@ -655,10 +655,11 @@
 	.franchise_brand .counsel .btn_wrap a {width:220px; font-size:16px; line-height:50px;}
 	.franchise_brand .counsel .txt_wrap .tit {font-size:18px;}
 	.franchise_brand .counsel .txt_wrap .txt {margin-top:5px;}
-	.franchise_brand .counsel .txt_wrap .tel {font-size:24px;}}
+    .franchise_brand .counsel .txt_wrap .tel {font-size:24px;}}
+    
 @media (max-width:599px) {
-    .franchise_brand .info_wrap ul li .logo {float:none; width:auto; margin:0 auto 30px; line-height:0;text-align:center;}
-	.franchise_brand .info_wrap ul li .info_txt {padding-top:30px; padding-left:0; border:0; border-top:2px dotted #dcdcdc; text-align:center;}
+    .franchise_brand .info_wrap ul li .logo {float:none; width:auto; margin:0 auto 15px; line-height:0;text-align:center;}
+	.franchise_brand .info_wrap ul li .info_txt {padding-top:15px; padding-left:0; border:0; border-top:2px dotted #dcdcdc; text-align:center;}
 	.franchise_brand .info_wrap ul li .info_txt .txt {font-size:12px; line-height:1.6em;}
 	.franchise_brand .counsel .txt_wrap {padding:0; padding-top:80px; text-align:center;}
 	.franchise_brand .counsel .txt_wrap:before {left:50%; transform:translateX(-50%);}

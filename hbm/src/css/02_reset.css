@@ -27,7 +27,8 @@ a:hover,button:hover {cursor:pointer;}
 button {background:transparent;}
 em,address,i {font-style:normal;}
 .sprite {display:inline-block;}
-button span {position:relative; font-family:inherit;}
+span {font-family:inherit;}
+button span {position:relative;}
 
 /* PC, 모바일 제어 */
 .pc {display:block !important;}

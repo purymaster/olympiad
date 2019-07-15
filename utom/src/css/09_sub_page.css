@@ -1852,8 +1852,8 @@
 .mypage .my_menu .support .menu_tit {top:50%; right:110px; transform:translateY(-50%);}
 .mypage .my_menu .menu .menu_tit:before,.mypage .my_menu .menu .menu_tit:after {position:absolute; top:50%; right:-33px; width:16px; height:4px; margin-top:-2px; border-radius:2px; background:#00687f; content:"";}
 .mypage .my_menu .menu .menu_tit:after {transform:rotate(90deg);}
-.mypage .my_menu .menu .menu_name {display:table-cell; position:relative; padding:0 30px; line-height:1.5em; color:#333; text-align:left; vertical-align:middle;}
-.mypage .my_menu .menu .menu_name:after {position:absolute; top:50%; right:30px; width:18px; height:18px; border:3px solid #ddd; border-bottom:0; border-left:0; transform:translateY(-50%) rotate(45deg); transition:all 0.5s; content:"";}
+.mypage .my_menu .menu .menu_name {display:table-cell; padding:0 30px; line-height:1.5em; color:#333; text-align:left; vertical-align:middle;}
+.mypage .my_menu .menu .menu_name:after {position:absolute; top:50%; right:35px; width:18px; height:18px; border:3px solid #ddd; border-bottom:0; border-left:0; transform:translateY(-50%) rotate(45deg); transition:all 0.5s; content:"";}
 .mypage .my_menu .menu .menu_name .tit {display:block; font-family:"Nanum Square"; font-size:20px; font-weight:700; transition:all 0.5s;}
 .mypage .my_menu .menu a:hover .menu_name .tit {color:#00687f;}
 .mypage .my_menu .menu a:hover .menu_name:after {right:25px; border-color:#00687f;}
@@ -1881,7 +1881,7 @@
     .mypage .my_menu .sub_menu {width:75%;}
     .mypage .my_menu .menu .menu_tit:before, .mypage .my_menu .menu .menu_tit:after {display:none;}
     .mypage .my_menu .support:before {transform:translateY(-50%) scale(0.5); transform-origin:right;}
-    .mypage .my_menu .menu .menu_name:after {right:15px;}
+    .mypage .my_menu .menu .menu_name:after {right:20px;}
     .mypage .my_menu .menu a:hover .menu_name:after {right:10px;}
     .mypage .my_menu .my_info:before, .mypage .my_menu .my_info:after {transform:translateX(-50%) scale(0.5);}
     .mypage .my_menu .my_info .menu_tit {top:160px;}

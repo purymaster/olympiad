@@ -107,7 +107,8 @@ a:hover,button:hover {cursor:pointer;}
 button {background:transparent;}
 em,address,i {font-style:normal;}
 .sprite {display:inline-block;}
-button span {position:relative; font-family:inherit;}
+span {font-family:inherit;}
+button span {position:relative;}
 
 /* PC, 모바일 제어 */
 .pc {display:block !important;}
@@ -2644,8 +2645,8 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
 .mypage .my_menu .support .menu_tit {top:50%; right:110px; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
 .mypage .my_menu .menu .menu_tit:before,.mypage .my_menu .menu .menu_tit:after {position:absolute; top:50%; right:-33px; width:16px; height:4px; margin-top:-2px; border-radius:2px; background:#00aeba; content:"";}
 .mypage .my_menu .menu .menu_tit:after {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
-.mypage .my_menu .menu .menu_name {display:table-cell; position:relative; padding:0 30px; line-height:1.5em; color:#333; text-align:left; vertical-align:middle;}
-.mypage .my_menu .menu .menu_name:after {position:absolute; top:50%; right:30px; width:18px; height:18px; border:3px solid #ddd; border-bottom:0; border-left:0; -webkit-transform:translateY(-50%) rotate(45deg); transform:translateY(-50%) rotate(45deg); -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
+.mypage .my_menu .menu .menu_name {display:table-cell; padding:0 30px; line-height:1.5em; color:#333; text-align:left; vertical-align:middle;}
+.mypage .my_menu .menu .menu_name:after {position:absolute; top:50%; right:35px; width:18px; height:18px; border:3px solid #ddd; border-bottom:0; border-left:0; -webkit-transform:translateY(-50%) rotate(45deg); transform:translateY(-50%) rotate(45deg); -webkit-transition:all 0.5s; transition:all 0.5s; content:"";}
 .mypage .my_menu .menu .menu_name .tit {display:block; font-family:"Nanum Square"; font-size:20px; font-weight:700; -webkit-transition:all 0.5s; transition:all 0.5s;}
 .mypage .my_menu .menu a:hover .menu_name .tit {color:#00aeba;}
 .mypage .my_menu .menu a:hover .menu_name:after {right:25px; border-color:#00aeba;}
@@ -2673,7 +2674,7 @@ address ul li:nth-child(2):after,address ul li:nth-child(5):after {content:"";}
     .mypage .my_menu .sub_menu {width:75%;}
     .mypage .my_menu .menu .menu_tit:before, .mypage .my_menu .menu .menu_tit:after {display:none;}
     .mypage .my_menu .support:before {-webkit-transform:translateY(-50%) scale(0.5);transform:translateY(-50%) scale(0.5); -webkit-transform-origin:right; transform-origin:right;}
-    .mypage .my_menu .menu .menu_name:after {right:15px;}
+    .mypage .my_menu .menu .menu_name:after {right:20px;}
     .mypage .my_menu .menu a:hover .menu_name:after {right:10px;}
     .mypage .my_menu .my_info:before, .mypage .my_menu .my_info:after {-webkit-transform:translateX(-50%) scale(0.5);transform:translateX(-50%) scale(0.5);}
     .mypage .my_menu .my_info .menu_tit {top:160px;}
