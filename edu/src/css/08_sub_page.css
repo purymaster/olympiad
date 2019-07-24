@@ -989,3 +989,29 @@
     .confirm_page .btn_wrap {margin-top:30px;}
     .confirm_page .btn_wrap a,.confirm_page .btn_wrap button {width:calc(50% - 4px); min-width:0; font-size:14px;}
 }
+
+/* 시스템 점검 */
+.system_check {text-align:center;}
+.system_check .notice_header {padding:60px 0 30px; background:#00687f; font-size:0; color:#fff;}
+.system_check .notice_header h1 {position:relative; margin-top:40px; padding-top:40px; font-family:"Nanum Square"; font-size:24px; font-weight:700;}
+.system_check .notice_header h1:before {position:absolute; top:0; left:50%; width:24px; height:1px; margin-left:-12px; background:#fff; content:"";}
+.system_check .notice_info {padding:25px 0 50px;}
+.system_check .notice_info .txt {font-size:14px; line-height:1.7em;}
+.system_check .notice_date {margin:35px 0;}
+.system_check .notice_date .tit {font-family:"Nanum Square"; font-size:18px; font-weight:700;}
+.system_check .notice_date .time {margin:5px 0 15px; font-size:16px; font-weight:700; line-height:1.4em; color:#666; color:#00687f; text-decoration:underline;}
+.system_check .notice_date .ps li {font-size:13px; line-height:1.75em; color:#666;}
+.system_check .notice_date .ps li:before {margin-right:0.3em; content:"*";}
+
+@media (max-width:1024px) {
+	.system_check .notice_header {padding:15px 0;}
+	.system_check .notice_header img {max-height:20px;}
+	.system_check .notice_header h1 {margin-top:15px; padding-top:15px; font-size:20px;}
+}
+
+@media (max-width:599px) {
+	.system_check .notice_header h1 {font-size:16px;}
+	.system_check .notice_date .tit {font-size:16px;}
+	.system_check .notice_date .time {font-size:14px;}
+	.system_check .notice_info .txt,.system_check .notice_date .ps li {font-size:12px; line-height:1.7em;}
+}

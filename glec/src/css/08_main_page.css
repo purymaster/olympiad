@@ -129,7 +129,7 @@
 .banner_wrap .slide li a {position:absolute; top:0; right:0; bottom:0; left:0;}
 .banner_wrap .slide li .txt_wrap {position:absolute; bottom:55px; left:0; width:100%; padding:0 30px;}
 .banner_wrap .slide li .txt_wrap .tit {overflow:hidden; max-height:2.6em; font-family:"Nanum Square"; font-size:24px; font-weight:700; line-height:1.3em;}
-.banner_wrap .slide li .txt_wrap .txt {overflow:hidden; margin-top:10px; font-size:14px; line-height:1.7em; text-overflow:ellipsis; white-space:nowrap;}
+.banner_wrap .slide li .txt_wrap .txt {overflow:hidden; max-height:3.4em; margin-top:10px; font-size:14px; line-height:1.7em; text-overflow:ellipsis; white-space:nowrap;}
 .banner_wrap .large .slide li {padding-top:74.95762711864%;}
 .banner_wrap .small {overflow:hidden;}
 .banner_wrap .small .small_cont {float:left; width:50%;}
