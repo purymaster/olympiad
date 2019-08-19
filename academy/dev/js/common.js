@@ -1,20 +1,14 @@
-var move_el = $('*[data-animation]'), //무빙 요소
-	move_name, //무빙 정의
-	move_delay, //순차무빙 딜레이
-	move_duration, //순차무빙 시간
-	scroll, //스크롤 값
-	start_point = $(window).height() * 0.95, //애니메이션 시작 높이(밑에서부터 화면 높이의 5%)
-	top_btn = $('.move_top'), //TOP 버튼
-	top_btn_flag = 0; //TOP 버튼 상태
-	
-
-var screen = $('html,body'),
-	screen_fix = false,
-	is_mobile = false, //모바일 판별 변수
-	is_mobile_user = false, //useragent 모바일 판별 변수
-	table_width;
+function changeSelectBox(object) {
+    return;
+}
 
 $(function() {
+
+    var screen = $('html,body'),
+        screen_fix = false,
+        is_mobile = false, //모바일 판별 변수
+        is_mobile_user = false, //useragent 모바일 판별 변수
+        table_width;
 
     /******************** Useragent 체크 ********************/
 
@@ -41,6 +35,7 @@ $(function() {
     });
 
     /******************** 셀렉트박스 제어 ********************/
+
     var select_form = $('.select_form');
 
     select_form.on('click', 'button[type="button"]', function() {
@@ -51,7 +46,7 @@ $(function() {
         $(this).closest('ul').siblings('button').removeClass('on').find('span').html($(this).text());
         $(this).closest('.select_form').find('input[type=hidden]').val($(this).attr('value'));
         changeSelectBox($(this).closest('.select_form').find('input[type=hidden]'));
-        if (!$(this).parents('ol').hasClass('hyper')) { return false; }
+        if (!$(this).parents('ol').hasClass('hyper')) return false;
     });
 
     $(document).on('mouseup touchend', function(e) {
@@ -117,12 +112,14 @@ $(function() {
     /******************** 네비게이션 제어 ********************/
 
     var nav = $('nav'),
-        nav_2depth = $('.header_wrap .menu_2depth'); //모바일 2뎁스 메뉴
+        nav_2depth = $('.header_wrap .menu_2depth'), //모바일 2뎁스 메뉴
+        nav_3depth = $('.header_wrap .menu_3depth'); //모바일 3뎁스 메뉴
 
     //네비게이션 제어
     $('.header_wrap').on('click', 'button[type="button"]', function() {
         $('.group_nav').find('input').val('');
         nav_2depth.hide();
+        nav_3depth.hide();
         $(this).hasClass('menu') ?
             (screen.addClass('fixed'),
                 nav.addClass('on'),
@@ -147,12 +144,26 @@ $(function() {
         if (is_mobile) {
             $(this).next('.menu_2depth').css('display') === 'block' ?
                 (nav_2depth.stop().slideUp(),
+                    nav_3depth.stop().slideUp(),
                     $('.menu_1depth').find('a').removeClass('on')) :
                 (nav_2depth.stop().slideUp(),
+                    nav_3depth.stop().slideUp(),
                     $('.menu_1depth').find('a').removeClass('on'),
                     $(this).addClass('on').next('.menu_2depth').stop().slideDown());
             return false;
         }
+    });
+
+    $('.header_wrap .menu_2depth > li > a').on('click', function() {
+        if (is_mobile) {
+            $(this).next('.menu_3depth').css('display') === 'block' ?
+                (nav_3depth.stop().slideUp(),
+                    $('.menu_2depth').find('a').removeClass('on')) :
+                (nav_3depth.stop().slideUp(),
+                    $('.menu_2depth').find('a').removeClass('on'),
+                    $(this).addClass('on').next('.menu_3depth').stop().slideDown());
+            return false;
+        };
     });
 
     $(window).on('resize', function() {
@@ -162,6 +173,7 @@ $(function() {
                 $('.header_wrap .menu').blur(),
                 $('.group_nav').find('input').val === '',
                 nav_2depth.hide(),
+                nav_3depth.hide(),
                 $('.navigation a').removeClass('on')) :
             (nav_2depth.show(),
                 screen.removeClass('fixed'),
@@ -194,7 +206,16 @@ $(function() {
 
     /******************** 스크롤 애니메이션 정의 ********************/
 
-    waitAnimation();
+    var move_el = $('*[data-animation]'), //무빙 요소
+        move_name, //무빙 정의
+        move_delay, //순차무빙 딜레이
+        move_duration, //순차무빙 시간
+        scroll, //스크롤 값
+        start_point = $(window).height() * 0.95, //애니메이션 시작 높이(밑에서부터 화면 높이의 5%)
+        top_btn = $('.move_top'), //TOP 버튼
+        top_btn_flag = 0; //TOP 버튼 상태
+
+    move_el.addClass('wait-animation');
     $(window).on('load scroll', function() {
         scroll = $(this).scrollTop();
 
@@ -254,33 +275,16 @@ $(function() {
         yearSuffix: "년"
     });
 
+    /******************** FAQ 제어 ********************/
 
-	/******************** FAQ 제어 ********************/
-	jQuery(document).on('click', '.faq_list .faq dt', function () {
-		if ( $(this).parents('.faq').hasClass('on') ){
-			$('.faq_list .faq').removeClass('on').find('dd').stop().slideUp();
-		} else {
-			$('.faq_list .faq').removeClass('on').find('dd').stop().slideUp();
-			$(this).parents('.faq').addClass('on').find('dd').stop().slideDown();
-		}
-	});
+    var faq_list = $('.faq_list .faq');
+
+    faq_list.find('dt').on('click', function() {
+        $(this).parents('.faq').hasClass('on') ?
+            faq_list.removeClass('on').find('dd').stop().slideUp() :
+            (
+                faq_list.removeClass('on').find('dd').stop().slideUp(),
+                $(this).parents('.faq').addClass('on').find('dd').stop().slideDown()
+            );
+    });
 });
-
-//셀렉트 박스 수정용
-function changeSelectBox(object) {
-    return;
-}
-
-
-//스크롤 애니메이션
-function waitAnimation(){
-	move_el = $('*[data-animation]'), //무빙 요소
-	move_name, //무빙 정의
-	move_delay, //순차무빙 딜레이
-	move_duration, //순차무빙 시간
-	scroll, //스크롤 값
-	start_point = $(window).height() * 0.95, //애니메이션 시작 높이(밑에서부터 화면 높이의 5%)
-	top_btn = $('.move_top'), //TOP 버튼
-	top_btn_flag = 0; //TOP 버튼 상태
-	move_el.addClass('wait-animation');
-}
