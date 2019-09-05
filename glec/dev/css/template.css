@@ -445,7 +445,7 @@ label {cursor:pointer;}
 /* 게시판(일반) 리스트 */
 .board_list table thead th {border-top:3px solid #333; font-family:"Nanum Square"; font-size:18px; font-weight:700; color:#333;}
 .board_list table tbody tr:first-child th,.board_list table tbody tr:first-child td {border-color:#333;}
-.board_list table tbody tr:hover th,.board_list table tbody tr:hover td {background:#f5f5f5;}
+.board_list table tbody tr:hover {background:#f5f5f5;}
 .board_list table td {text-align:center;}
 .board_list table td.tit {position:relative; text-align:left;}
 .board_list table td.tit a {position:relative; font-size:14px; line-height:1.5em; color:#333;}
