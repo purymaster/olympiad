@@ -199,7 +199,11 @@
                                             },
                                             slideActiveClass: 'on',
                                             // effect: 'fade',
-                                            loop: true,
+											loop: true,
+											navigation: {
+                                                nextEl: $(this).find('.ctr .next'),
+                                                prevEl: $(this).find('.ctr .prev'),
+                                            },
                                             pagination: {
                                                 el: '.pagination',
                                                 type: 'bullets',
@@ -314,7 +318,17 @@
                                         <li class="bullet">3</li>
                                         <li class="bullet">4</li> -->
                                     </ul>
+								</div>
+								
+								<!-- 2배 사이즈 슬라이드 제어 -->
+                                <div class="ctr">
+                                    <ul>
+                                        <li><button class="prev">이전</button></li>
+                                        <li><button class="next">다음</button></li>
+                                    </ul>
                                 </div>
+                                <!-- //2배 사이즈 슬라이드 제어 -->
+
                             </div>
                             <!-- //1번 슬라이드. 2배 사이즈 슬라이드(텍스트 있음) -->
 
@@ -721,7 +735,17 @@
                                         <li class="bullet">3</li>
                                         <li class="bullet">4</li> -->
                                     </ul>
+								</div>
+								
+								<!-- 2배 사이즈 슬라이드 제어 -->
+                                <div class="ctr">
+                                    <ul>
+                                        <li><button class="prev">이전</button></li>
+                                        <li><button class="next">다음</button></li>
+                                    </ul>
                                 </div>
+								<!-- //2배 사이즈 슬라이드 제어 -->
+								
                             </div>
                             <!-- //2번 슬라이드, 2배 사이즈 슬라이드(텍스트 있음) -->
 
